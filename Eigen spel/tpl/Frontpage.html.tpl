@@ -15,8 +15,9 @@
     Dus hoe ga je nu de stad ontvluchten.
     Dacht je bij jezelf.</p>
     <ul>
-        <li><a href="#"> Start het spel </a></li>
-        <li><a href="index.php"> Go back to the Homepage</a></li>
+        <li><a href="sleeproom.php"> Go to the sleeping room </a></li>
+        <li><a href="#"> Go Outside </a></li>
+        <li><a href="#"> Go to the kichten  </a></li>
     </ul>
     <ul>
         <li> 1 Key</li>
