@@ -9,13 +9,15 @@
 <div>
     <h1> Welkom Thuis </h1>
     <img src="img/woonkamer.png">
-    <p> Je staat in de woonkamer van je huis in New York. <br>
-    Opeens hoor je een bericht van de radio dat de stad wordt ontruimt.<br>
-    Maar je was al te laat, want dat was een half uur gelden.<br>
-    Dus hoe ga je nu de stad ontvluchten.
-    Dacht je bij jezelf.</p>
+    <p> You`re standing in the living room of your home in New York. <br>
+    Suddenly you hear a message on the radio about:<br>
+        "The city has been evacuated because of a deadly virus."<br>
+    But you were too late.<br>
+        The message has been broadcasted a half hour ago. <br>
+    So how you are gonna escape the city now.<br>
+    You`re were thinking about it.</p>
     <ul>
-        <li><a href="sleeproom.php"> Go to the sleeping room </a></li>
+        <li><a href="sleeproom.php"> Go to the Bed room </a></li>
         <li><a href="#"> Go Outside </a></li>
         <li><a href="#"> Go to the kichten  </a></li>
     </ul>

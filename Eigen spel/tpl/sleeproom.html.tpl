@@ -9,9 +9,9 @@
 <div>
     <h1> The sleeping room </h1>
     <img src="img/BT11_ModernSerenity_Slaapkamer.jpg">
-    <p> Bij jezelf denk wat kan ik meenemen op reis. <br>
-        Want je weet dat je de stad uit moet. <br>
-        En de weg naar vrijheid is een lange tocht.<br>
+    <p> You`re thinking about what you're taking on your trip. <br>
+        You're thinking about getting out of town. <br>
+        And the road to freedom is a long journey.<br>
         </p>
     <ul>
         <li><a href="#"> Take a nap </a></li>

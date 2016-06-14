@@ -1,9 +1,4 @@
 <?php
-include_once( "inc/class.TemplatePower.inc.php" );
+require_once ('inc/loadsmarty.php');
 
-$tpl = new TemplatePower( "tpl/sleeproom.html.tpl" );
-$tpl->prepare();
-
-$tpl->assign( "name", "Ron" );
-
-$tpl->printToScreen();
+$smarty->display("../tpl/sleeproom.html.tpl");
