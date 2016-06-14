@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-14 14:59:22
+/* Smarty version 3.1.29, created on 2016-06-14 15:42:35
   from "C:\wamp64\www\Eigen spel\tpl\Frontpage.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_575fffaaae1da3_34669636',
+  'unifunc' => 'content_576009cb238a69_96890094',
   'file_dependency' => 
   array (
     '87dbe2184f34ab60d2186f57f423b0e5e4d06909' => 
     array (
       0 => 'C:\\wamp64\\www\\Eigen spel\\tpl\\Frontpage.html.tpl',
-      1 => 1465909160,
+      1 => 1465911753,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_575fffaaae1da3_34669636 ($_smarty_tpl) {
+function content_576009cb238a69_96890094 ($_smarty_tpl) {
 ?>
 <html>
 <head>
@@ -41,8 +41,9 @@ function content_575fffaaae1da3_34669636 ($_smarty_tpl) {
     You`re were thinking about it.</p>
     <ul>
         <li><a href="sleeproom.php"> Go to the Bed room </a></li>
-        <li><a href="#"> Go Outside </a></li>
+        <li><a href="#"> Go to the garden </a></li>
         <li><a href="#"> Go to the kichten  </a></li>
+        <li><a href="#"> Go on to the street  </a></li>
     </ul>
     <ul>
         <li> 1 Key</li>

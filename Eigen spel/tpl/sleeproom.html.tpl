@@ -17,6 +17,7 @@
         <li><a href="#"> Take a nap </a></li>
         <li><a href="index.php"> Go back to the livingroom </a></li>
         <li><a href="#"> Check the closet </a></li>
+        <li><a href="#"> Pick up the gun </a></li>
     </ul>
     <ul>
         <li> 1 Key</li>

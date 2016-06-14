@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-14 14:59:25
+/* Smarty version 3.1.29, created on 2016-06-14 15:42:38
   from "C:\wamp64\www\Eigen spel\tpl\sleeproom.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_575fffad1b4aa0_68797360',
+  'unifunc' => 'content_576009ce041e81_80065467',
   'file_dependency' => 
   array (
     'bdb7aa39df3270c0e6436727ff5a9ec79a534189' => 
     array (
       0 => 'C:\\wamp64\\www\\Eigen spel\\tpl\\sleeproom.html.tpl',
-      1 => 1465908803,
+      1 => 1465911753,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_575fffad1b4aa0_68797360 ($_smarty_tpl) {
+function content_576009ce041e81_80065467 ($_smarty_tpl) {
 ?>
 <html>
 <head>
@@ -40,6 +40,7 @@ function content_575fffad1b4aa0_68797360 ($_smarty_tpl) {
         <li><a href="#"> Take a nap </a></li>
         <li><a href="index.php"> Go back to the livingroom </a></li>
         <li><a href="#"> Check the closet </a></li>
+        <li><a href="#"> Pick up the gun </a></li>
     </ul>
     <ul>
         <li> 1 Key</li>

@@ -18,8 +18,9 @@
     You`re were thinking about it.</p>
     <ul>
         <li><a href="sleeproom.php"> Go to the Bed room </a></li>
-        <li><a href="#"> Go Outside </a></li>
+        <li><a href="#"> Go to the garden </a></li>
         <li><a href="#"> Go to the kichten  </a></li>
+        <li><a href="#"> Go on to the street  </a></li>
     </ul>
     <ul>
         <li> 1 Key</li>
