@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-14 15:42:35
+/* Smarty version 3.1.29, created on 2016-06-15 15:33:51
   from "C:\wamp64\www\Eigen spel\tpl\Frontpage.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_576009cb238a69_96890094',
+  'unifunc' => 'content_5761593f9e2531_44799249',
   'file_dependency' => 
   array (
     '87dbe2184f34ab60d2186f57f423b0e5e4d06909' => 
     array (
       0 => 'C:\\wamp64\\www\\Eigen spel\\tpl\\Frontpage.html.tpl',
-      1 => 1465911753,
+      1 => 1465997621,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_576009cb238a69_96890094 ($_smarty_tpl) {
+function content_5761593f9e2531_44799249 ($_smarty_tpl) {
 ?>
 <html>
 <head>
@@ -30,7 +30,7 @@ function content_576009cb238a69_96890094 ($_smarty_tpl) {
 <body>
 
 <div>
-    <h1> Welkom Thuis </h1>
+    <h1> Welcome Home </h1>
     <img src="img/woonkamer.png">
     <p> You`re standing in the living room of your home in New York. <br>
     Suddenly you hear a message on the radio about:<br>
@@ -43,7 +43,7 @@ function content_576009cb238a69_96890094 ($_smarty_tpl) {
         <li><a href="sleeproom.php"> Go to the Bed room </a></li>
         <li><a href="#"> Go to the garden </a></li>
         <li><a href="#"> Go to the kichten  </a></li>
-        <li><a href="#"> Go on to the street  </a></li>
+        <li><a href="outside.php"> Go on to the street  </a></li>
     </ul>
     <ul>
         <li> 1 Key</li>

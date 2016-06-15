@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-14 15:42:38
+/* Smarty version 3.1.29, created on 2016-06-14 19:08:35
   from "C:\wamp64\www\Eigen spel\tpl\sleeproom.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_576009ce041e81_80065467',
+  'unifunc' => 'content_57603a13e0ea63_68614089',
   'file_dependency' => 
   array (
     'bdb7aa39df3270c0e6436727ff5a9ec79a534189' => 
     array (
       0 => 'C:\\wamp64\\www\\Eigen spel\\tpl\\sleeproom.html.tpl',
-      1 => 1465911753,
+      1 => 1465924112,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_576009ce041e81_80065467 ($_smarty_tpl) {
+function content_57603a13e0ea63_68614089 ($_smarty_tpl) {
 ?>
 <html>
 <head>
@@ -30,7 +30,7 @@ function content_576009ce041e81_80065467 ($_smarty_tpl) {
 <body>
 
 <div>
-    <h1> The sleeping room </h1>
+    <h1> The bed room </h1>
     <img src="img/BT11_ModernSerenity_Slaapkamer.jpg">
     <p> You`re thinking about what you're taking on your trip. <br>
         You're thinking about getting out of town. <br>

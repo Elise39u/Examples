@@ -7,7 +7,7 @@
 <body>
 
 <div>
-    <h1> The sleeping room </h1>
+    <h1> The bed room </h1>
     <img src="img/BT11_ModernSerenity_Slaapkamer.jpg">
     <p> You`re thinking about what you're taking on your trip. <br>
         You're thinking about getting out of town. <br>

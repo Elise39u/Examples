@@ -7,7 +7,7 @@
 <body>
 
 <div>
-    <h1> Welkom Thuis </h1>
+    <h1> Welcome Home </h1>
     <img src="img/woonkamer.png">
     <p> You`re standing in the living room of your home in New York. <br>
     Suddenly you hear a message on the radio about:<br>
@@ -20,7 +20,7 @@
         <li><a href="sleeproom.php"> Go to the Bed room </a></li>
         <li><a href="#"> Go to the garden </a></li>
         <li><a href="#"> Go to the kichten  </a></li>
-        <li><a href="#"> Go on to the street  </a></li>
+        <li><a href="outside.php"> Go on to the street  </a></li>
     </ul>
     <ul>
         <li> 1 Key</li>
