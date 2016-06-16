@@ -6,7 +6,7 @@
 
 <body>
 
-<div>
+<div class="plaatje">
     <h1> The garden </h1>
     <img src="img/download.jpg" width="1000px"; height="155px";>
     <p> You`re standing in the garden of your home <br>

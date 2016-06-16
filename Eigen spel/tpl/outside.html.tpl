@@ -6,7 +6,7 @@
 
 <body>
 
-<div>
+<div class="plaatje">
     <h1> Out on the street </h1>
     <img src="img/montage.jpg" width="1000px"; height="225px";>
     <p> You`re out on the street.<br>
@@ -15,11 +15,12 @@
         and right you see that road goes on. <br>
         Wich way wil you go. </p>
     <ul>
-        <li><a href="Pass.php"> Go to the rivir </a></li>
+        <li><a href="Pass.php"> Go to the river </a></li>
         <li><a href="index.php"> Go back inside </a></li>
-        <li><a href="#"> Go to the wood store </a></li>
+        <li><a href="outsidewood.php"> Go to the wood store </a></li>
         <li><a href="#"> Go to the electro store </a></li>
-        <li><a href="#"> Check the sand path </a></li>
+        <li><a href="sandpath.php"> Check the sand path </a></li>
+        <li><a href="#"> Go futher on the street </a></li>
     </ul>
     <ul>
         <li> 1 Key</li>

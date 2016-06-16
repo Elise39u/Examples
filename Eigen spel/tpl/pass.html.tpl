@@ -6,12 +6,12 @@
 
 <body>
 
-<div>
+<div class="plaatje">
     <h1> river bank </h1>
     <img src="img/river1.jpg" width="1000px"; height="155px";>
     <p> You`re standing near a river <br>
      You can see a police station on the other side. <br>
-    You see even a shop.<br>
+    You even see a shop.<br>
     But you dont now how to cross.</p>
     <ul>
         <li><a href="outside.php"> Go back </a></li>

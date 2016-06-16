@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-16 09:58:39
+/* Smarty version 3.1.29, created on 2016-06-16 11:15:14
   from "C:\wamp64\www\Eigen spel\tpl\Frontpage.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_57625c2f758179_11071157',
+  'unifunc' => 'content_57626e2294d959_27315361',
   'file_dependency' => 
   array (
     '87dbe2184f34ab60d2186f57f423b0e5e4d06909' => 
     array (
       0 => 'C:\\wamp64\\www\\Eigen spel\\tpl\\Frontpage.html.tpl',
-      1 => 1466063756,
+      1 => 1466068510,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_57625c2f758179_11071157 ($_smarty_tpl) {
+function content_57626e2294d959_27315361 ($_smarty_tpl) {
 ?>
 <html>
 <head>
@@ -29,7 +29,7 @@ function content_57625c2f758179_11071157 ($_smarty_tpl) {
 
 <body>
 
-<div>
+<div class="plaatje">
     <h1> Welcome Home </h1>
     <img src="img/woonkamer.png">
     <p> You`re standing in the living room of your home in New York. <br>
@@ -40,9 +40,9 @@ function content_57625c2f758179_11071157 ($_smarty_tpl) {
     So how you are gonna escape the city now.<br>
     You`re were thinking about it.</p>
     <ul>
-        <li><a href="sleeproom.php"> Go to the Bed room </a></li>
+        <li><a href="sleeproom.php"> Go to the bed room </a></li>
         <li><a href="garden.php"> Go to the garden </a></li>
-        <li><a href="#"> Go to the kichten  </a></li>
+        <li><a href="kichten.php"> Go to the kichten  </a></li>
         <li><a href="outside.php"> Go on to the street  </a></li>
     </ul>
     <ul>
