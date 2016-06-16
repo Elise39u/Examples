@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-15 16:54:17
+/* Smarty version 3.1.29, created on 2016-06-16 09:28:20
   from "C:\wamp64\www\Eigen spel\tpl\outside.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_57616c19c0cf81_97380956',
+  'unifunc' => 'content_576255145c3c40_83517192',
   'file_dependency' => 
   array (
     '81ed80e4f0418136da55049c5b453b85f30bbe50' => 
     array (
       0 => 'C:\\wamp64\\www\\Eigen spel\\tpl\\outside.html.tpl',
-      1 => 1466002456,
+      1 => 1466061514,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_57616c19c0cf81_97380956 ($_smarty_tpl) {
+function content_576255145c3c40_83517192 ($_smarty_tpl) {
 ?>
 <html>
 <head>
@@ -38,7 +38,7 @@ function content_57616c19c0cf81_97380956 ($_smarty_tpl) {
         and right you see that road goes on. <br>
         Wich way wil you go. </p>
     <ul>
-        <li><a href="#"> Go to the rivir </a></li>
+        <li><a href="Pass.php"> Go to the rivir </a></li>
         <li><a href="index.php"> Go back inside </a></li>
         <li><a href="#"> Go to the wood store </a></li>
         <li><a href="#"> Go to the electro store </a></li>

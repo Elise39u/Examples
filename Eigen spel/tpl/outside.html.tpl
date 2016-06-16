@@ -15,7 +15,7 @@
         and right you see that road goes on. <br>
         Wich way wil you go. </p>
     <ul>
-        <li><a href="#"> Go to the rivir </a></li>
+        <li><a href="Pass.php"> Go to the rivir </a></li>
         <li><a href="index.php"> Go back inside </a></li>
         <li><a href="#"> Go to the wood store </a></li>
         <li><a href="#"> Go to the electro store </a></li>

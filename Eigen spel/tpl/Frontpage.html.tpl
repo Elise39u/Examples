@@ -18,7 +18,7 @@
     You`re were thinking about it.</p>
     <ul>
         <li><a href="sleeproom.php"> Go to the Bed room </a></li>
-        <li><a href="#"> Go to the garden </a></li>
+        <li><a href="garden.php"> Go to the garden </a></li>
         <li><a href="#"> Go to the kichten  </a></li>
         <li><a href="outside.php"> Go on to the street  </a></li>
     </ul>
