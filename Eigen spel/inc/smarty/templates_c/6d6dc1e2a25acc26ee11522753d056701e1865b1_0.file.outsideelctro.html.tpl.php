@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-16 14:30:46
-  from "C:\wamp64\www\Eigen spel\tpl\outsidewood.html.tpl" */
+/* Smarty version 3.1.29, created on 2016-06-16 14:40:06
+  from "C:\wamp64\www\Eigen spel\tpl\outsideelctro.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_57629bf69163c2_87304373',
+  'unifunc' => 'content_57629e269c2d27_07837793',
   'file_dependency' => 
   array (
-    'bd220c94bb18d95e35aed43573128bac6974443e' => 
+    '6d6dc1e2a25acc26ee11522753d056701e1865b1' => 
     array (
-      0 => 'C:\\wamp64\\www\\Eigen spel\\tpl\\outsidewood.html.tpl',
-      1 => 1466080244,
+      0 => 'C:\\wamp64\\www\\Eigen spel\\tpl\\outsideelctro.html.tpl',
+      1 => 1466080784,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_57629bf69163c2_87304373 ($_smarty_tpl) {
+function content_57629e269c2d27_07837793 ($_smarty_tpl) {
 ?>
 <html>
 <head>
@@ -30,16 +30,16 @@ function content_57629bf69163c2_87304373 ($_smarty_tpl) {
 <body>
 
 <div class="plaatje">
-    <h1> The wood store </h1>
-    <img src="img/shop.png">
-    <p> There you`re standing in front of the wood store.<br>
+    <h1> The elctro store </h1>
+    <img src="img/electro.jpg">
+    <p> There you`re standing in front of the elctro store.<br>
         and you`re think should i go in.<br>
         You dont now what is in the store present.<br>
         But do you want to go inside.<br>
         What should i do now.</p>
     <ul>
         <li><a href="outside.php"> Go back on the street </a></li>
-        <li><a href="#"> Go the wood store in </a></li>
+        <li><a href="#"> Go the elctro store in </a></li>
     </ul>
     <ul>
         <li> 1 Key</li>

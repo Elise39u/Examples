@@ -1,5 +1,5 @@
 <?php
 require_once ('inc/loadsmarty.php');
 
-$smarty->display("tpl/index.html.tpl");
+$smarty->display("tpl/Frontpage.html.tpl");
 

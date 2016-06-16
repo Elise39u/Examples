@@ -22,6 +22,7 @@ div.plaatje {
     opacity: 0.8;
     background-color: white;
     padding: 1em;
+    border: solid #000000;
 }
 
 ul {
@@ -52,4 +53,9 @@ a:hover {
 
 h1 {
     font-family: Dslater;
+}
+
+input {
+    font-family: Arial;
+    margin-left: 2%;
 }
