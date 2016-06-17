@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-16 10:00:00
+/* Smarty version 3.1.29, created on 2016-06-17 12:25:46
   from "C:\wamp64\www\Eigen spel\tpl\garden.htm.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_57625c806c3672_77179792',
+  'unifunc' => 'content_5763d02ad8a927_30330095',
   'file_dependency' => 
   array (
     '90cb572d49858d23c09987af4eb8cb0c40aa1ee0' => 
     array (
       0 => 'C:\\wamp64\\www\\Eigen spel\\tpl\\garden.htm.tpl',
-      1 => 1466063997,
+      1 => 1466159145,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_57625c806c3672_77179792 ($_smarty_tpl) {
+function content_5763d02ad8a927_30330095 ($_smarty_tpl) {
 ?>
 <html>
 <head>
@@ -28,8 +28,7 @@ function content_57625c806c3672_77179792 ($_smarty_tpl) {
 </head>
 
 <body>
-
-<div>
+<div class="plaatje">
     <h1> The garden </h1>
     <img src="img/download.jpg" width="1000px"; height="155px";>
     <p> You`re standing in the garden of your home <br>
@@ -37,7 +36,7 @@ function content_57625c806c3672_77179792 ($_smarty_tpl) {
         Because almost everthing has grown as a jungel.<br>
         What wil you do.</p>
     <ul>
-        <li><a href="index.php"> Go back inside </a></li>
+        <li><a href="frontpage.php"> Go back inside </a></li>
     </ul>
     <ul>
         <li> 1 Key</li>

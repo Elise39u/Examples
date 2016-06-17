@@ -19,7 +19,7 @@
         So what wil you do now? </p>
     <ul>
         <li><a href="street2.php"> Go back  </a></li>
-        <li><a href="#"> Go to the army  </a></li>
+        <li><a href="escape2.php"> Go to the army  </a></li>
     </ul>
     <ul>
         <li> 1 Key</li>

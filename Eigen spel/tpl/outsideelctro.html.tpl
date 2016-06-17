@@ -16,7 +16,7 @@
         What should i do now.</p>
     <ul>
         <li><a href="outside.php"> Go back on the street </a></li>
-        <li><a href="#"> Go the elctro store in </a></li>
+        <li><a href="ielectro.php"> Go the elctro store in </a></li>
     </ul>
     <ul>
         <li> 1 Key</li>

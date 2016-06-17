@@ -17,7 +17,7 @@
     <ul>
         <li><a href="nbridge.php"> Go to the bridge </a></li>
         <li><a href="outside.php"> Go back </a></li>
-        <li><a href="#"> Go futher on </a></li>
+        <li><a href="street4.php"> Go futher on </a></li>
         <li><a href="street3.php"> Go to the right </a></li>
     </ul>
     <ul>

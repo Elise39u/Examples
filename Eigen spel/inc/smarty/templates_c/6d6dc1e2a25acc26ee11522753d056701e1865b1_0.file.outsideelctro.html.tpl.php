@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-16 14:40:06
+/* Smarty version 3.1.29, created on 2016-06-17 12:35:51
   from "C:\wamp64\www\Eigen spel\tpl\outsideelctro.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_57629e269c2d27_07837793',
+  'unifunc' => 'content_5763d287bd0e16_31009188',
   'file_dependency' => 
   array (
     '6d6dc1e2a25acc26ee11522753d056701e1865b1' => 
     array (
       0 => 'C:\\wamp64\\www\\Eigen spel\\tpl\\outsideelctro.html.tpl',
-      1 => 1466080784,
+      1 => 1466159750,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_57629e269c2d27_07837793 ($_smarty_tpl) {
+function content_5763d287bd0e16_31009188 ($_smarty_tpl) {
 ?>
 <html>
 <head>
@@ -39,7 +39,7 @@ function content_57629e269c2d27_07837793 ($_smarty_tpl) {
         What should i do now.</p>
     <ul>
         <li><a href="outside.php"> Go back on the street </a></li>
-        <li><a href="#"> Go the elctro store in </a></li>
+        <li><a href="ielectro.php"> Go the elctro store in </a></li>
     </ul>
     <ul>
         <li> 1 Key</li>

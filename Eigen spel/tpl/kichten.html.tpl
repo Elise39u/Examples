@@ -16,7 +16,7 @@
         Or do we go on?</p>
     <ul>
         <li><a href="sleeproom.php"> Go to the bed room </a></li>
-        <li><a href="index.php"> Go to the living room</a></li>
+        <li><a href="frontpage.php"> Go to the living room</a></li>
         <li><a href="#"> Check the stove  </a></li>
         <li><a href="#"> Check the fridge  </a></li>
     </ul>

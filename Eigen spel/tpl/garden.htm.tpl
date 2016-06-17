@@ -5,7 +5,6 @@
 </head>
 
 <body>
-
 <div class="plaatje">
     <h1> The garden </h1>
     <img src="img/download.jpg" width="1000px"; height="155px";>
@@ -14,7 +13,7 @@
         Because almost everthing has grown as a jungel.<br>
         What wil you do.</p>
     <ul>
-        <li><a href="index.php"> Go back inside </a></li>
+        <li><a href="frontpage.php"> Go back inside </a></li>
     </ul>
     <ul>
         <li> 1 Key</li>

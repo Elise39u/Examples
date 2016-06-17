@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-16 15:32:10
+/* Smarty version 3.1.29, created on 2016-06-17 11:03:34
   from "C:\wamp64\www\Eigen spel\tpl\nbridge.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5762aa5a4d55d0_09602684',
+  'unifunc' => 'content_5763bce6b0abc3_75943411',
   'file_dependency' => 
   array (
     '540f2855eede272414854df21399872d5a285df8' => 
     array (
       0 => 'C:\\wamp64\\www\\Eigen spel\\tpl\\nbridge.html.tpl',
-      1 => 1466083926,
+      1 => 1466154193,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5762aa5a4d55d0_09602684 ($_smarty_tpl) {
+function content_5763bce6b0abc3_75943411 ($_smarty_tpl) {
 ?>
 <html>
 <head>
@@ -42,7 +42,7 @@ function content_5762aa5a4d55d0_09602684 ($_smarty_tpl) {
         So what wil you do now? </p>
     <ul>
         <li><a href="street2.php"> Go back  </a></li>
-        <li><a href="#"> Go to the army  </a></li>
+        <li><a href="escape2.php"> Go to the army  </a></li>
     </ul>
     <ul>
         <li> 1 Key</li>
