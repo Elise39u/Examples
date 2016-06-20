@@ -1,0 +1,13 @@
+body{
+    background: #696969;
+    text-align: center;
+}
+
+#main{
+    width: 1000px;
+    height: 600px;
+    background: #FFFAF0;
+    margin: 25px auto;
+    border: solid 2px #ff3819;
+
+}
