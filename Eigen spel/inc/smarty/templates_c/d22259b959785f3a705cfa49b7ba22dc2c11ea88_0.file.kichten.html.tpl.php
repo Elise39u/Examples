@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-16 11:25:28
+/* Smarty version 3.1.29, created on 2016-06-19 15:33:29
   from "C:\wamp64\www\Eigen spel\tpl\kichten.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_57627088ed1890_09554622',
+  'unifunc' => 'content_57669f2967cf76_66358981',
   'file_dependency' => 
   array (
     'd22259b959785f3a705cfa49b7ba22dc2c11ea88' => 
     array (
       0 => 'C:\\wamp64\\www\\Eigen spel\\tpl\\kichten.html.tpl',
-      1 => 1466069108,
+      1 => 1466156840,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_57627088ed1890_09554622 ($_smarty_tpl) {
+function content_57669f2967cf76_66358981 ($_smarty_tpl) {
 ?>
 <html>
 <head>
@@ -39,7 +39,7 @@ function content_57627088ed1890_09554622 ($_smarty_tpl) {
         Or do we go on?</p>
     <ul>
         <li><a href="sleeproom.php"> Go to the bed room </a></li>
-        <li><a href="index.php"> Go to the living room</a></li>
+        <li><a href="frontpage.php"> Go to the living room</a></li>
         <li><a href="#"> Check the stove  </a></li>
         <li><a href="#"> Check the fridge  </a></li>
     </ul>

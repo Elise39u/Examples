@@ -7,7 +7,7 @@
 <body>
 
 <div class="plaatje">
-    <h1> On the road agian </h1>
+    <h1> Inside the Metal store </h1>
     <img src="img/metaal.jpg" width="1000px"; height="160px";>
     <p> And there you`re standing inside the mental store.<br>
         You look around. <br>

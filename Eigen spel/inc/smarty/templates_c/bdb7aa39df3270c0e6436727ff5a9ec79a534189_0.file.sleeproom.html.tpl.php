@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-16 11:25:26
+/* Smarty version 3.1.29, created on 2016-06-19 15:33:24
   from "C:\wamp64\www\Eigen spel\tpl\sleeproom.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_57627086457f98_63808594',
+  'unifunc' => 'content_57669f24278a01_97633310',
   'file_dependency' => 
   array (
     'bdb7aa39df3270c0e6436727ff5a9ec79a534189' => 
     array (
       0 => 'C:\\wamp64\\www\\Eigen spel\\tpl\\sleeproom.html.tpl',
-      1 => 1466069123,
+      1 => 1466156808,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_57627086457f98_63808594 ($_smarty_tpl) {
+function content_57669f24278a01_97633310 ($_smarty_tpl) {
 ?>
 <html>
 <head>
@@ -38,7 +38,7 @@ function content_57627086457f98_63808594 ($_smarty_tpl) {
         </p>
     <ul>
         <li><a href="#"> Take a nap </a></li>
-        <li><a href="index.php"> Go back to the livingroom </a></li>
+        <li><a href="frontpage.php"> Go back to the livingroom </a></li>
         <li><a href="#"> Check the closet </a></li>
         <li><a href="kichten.php"> Go to the kichten </a></li>
     </ul>

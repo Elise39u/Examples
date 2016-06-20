@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-17 13:23:50
+/* Smarty version 3.1.29, created on 2016-06-20 10:16:06
   from "C:\wamp64\www\Eigen spel\tpl\street4.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5763ddc6156343_38925210',
+  'unifunc' => 'content_5767a6469f0717_26873445',
   'file_dependency' => 
   array (
     'b5907220bbeb0080661e17191aa3aa8b0eb466ae' => 
     array (
       0 => 'C:\\wamp64\\www\\Eigen spel\\tpl\\street4.html.tpl',
-      1 => 1466162591,
+      1 => 1466410562,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5763ddc6156343_38925210 ($_smarty_tpl) {
+function content_5767a6469f0717_26873445 ($_smarty_tpl) {
 ?>
 <html>
 <head>
@@ -30,7 +30,7 @@ function content_5763ddc6156343_38925210 ($_smarty_tpl) {
 <body>
 
 <div class="plaatje">
-    <h1> On the road agian </h1>
+    <h1> On the road again </h1>
     <img src="img/street4.png" width="1000px"; height="225px";>
     <p> And there you`re standing at the end of the street.<br>
         You look down to the left and see a store. <br>
