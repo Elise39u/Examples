@@ -5,17 +5,30 @@
 </head>
 
 <body>
+    <div class="plaatje">
+    {if isset($errors) }
+        <p style="border: 1px solid red;">
+        <ul>
+            {foreach $errors as $error}
+                <li>{$error}</li>
+            {/foreach}
+        </ul>
+        </p>
+    {/if}
 
-<div class="plaatje">
-    <h1> Do you wanna play? </h1>
-    <img src="img/image-3747618.jpg"  width="1000px"; height="140px";>
-    <p> Welcome to my internet game.<br>
-        Do you want to escape this abonded city?<br>
-        So yes click the button below<br>
-        No then i say close the page</p>
-    <form action="frontpage.php">
-        <input type="submit" value="Start the game">
-    </form>
-</div>
+    {if isset($location) }
+        <p>{$location->Title }</p>
+        <p>{$location->Story }</p>
+        {$location->Foto_url }
+
+        <ul>
+            {foreach $location->Choices as $choice }
+            <li><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a></li>
+            <p> Hallo dit is een test regel </p>
+            {/foreach}
+        </ul>
+    {/if}
+
+    </div>
 </body>
 </html>
