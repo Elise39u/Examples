@@ -1,3 +1,5 @@
 <?php 
 
-$Get
+$_POST['Number'];
+
+echo $_POST['Number'];
