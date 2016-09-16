@@ -7,19 +7,70 @@ div {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    background-color: aqua;
-    border: solid 1px; 
-    border-color: red;
+    background-color: rgb( 90, 200, 47);
+    opacity: 0.95;
+    border: 1px solid red;
 }
 
-li a {
-    color: yellow;
-    text-decoration: none;
-    text-align: start;
+.container {
+    background-image: url("img/download.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-weight: bold;
 }
 
-li a:hover {
-    color: black;
-    text-decoration: line-through;
+.header {
+    text-align: center;
+    color: #00ff00;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
     display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 50%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #000}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
