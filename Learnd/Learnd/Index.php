@@ -27,6 +27,8 @@
             <input title="dollar" type="text" value="" name="Price"> <br>
             Date: <br>
             <input title="Bye" type="datetime-local" value="" name="Date"> <br>
+            Color-team: <br>
+            <input title="color" type="color" value="" name="Color"><br>
             <input type="submit" value="Submit" name="submit" />
             </form>
         </div>

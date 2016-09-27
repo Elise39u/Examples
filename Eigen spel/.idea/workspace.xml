@@ -12,9 +12,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -25,9 +32,11 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="36">
+              <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+              <folding>
+                <marker date="1474968373060" expanded="true" signature="1239:1401" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -35,8 +44,8 @@
       <file leaf-file-name="index.html.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tpl/index.html.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+            <state relative-caret-position="155">
+              <caret line="28" column="80" selection-start-line="28" selection-start-column="80" selection-end-line="28" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -45,8 +54,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
-              <caret line="62" column="10" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
+            <state relative-caret-position="495">
+              <caret line="69" column="22" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -55,11 +64,15 @@
       <file leaf-file-name="Location.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inc/Location.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="74" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="74" />
+            <state relative-caret-position="172">
+              <caret line="39" column="69" selection-start-line="39" selection-start-column="69" selection-end-line="39" selection-end-column="69" />
               <folding>
-                <marker date="1467279667603" expanded="true" signature="223:256" ph="SELECT * FRO... locations" />
-                <marker date="1467279667603" expanded="true" signature="672:703" ph="SELECT * FRO... choices" />
+                <marker date="1474957682485" expanded="true" signature="344:377" ph="SELECT * FRO... locations" />
+                <marker date="1474957682485" expanded="true" signature="776:812" ph="SELECT * FRO... choices" />
+                <marker date="1474957682485" expanded="true" signature="776:823" ph="SELECT * FRO... choices" />
+                <marker date="1474957682485" expanded="true" signature="811:812" ph="SELECT * FRO... choices" />
+                <marker date="1474957682485" expanded="true" signature="1365:1388" ph="SELECT * FRO... items" />
+                <marker date="1474957682485" expanded="true" signature="1365:1431" ph="SELECT * FRO... inventory" />
               </folding>
             </state>
           </provider>
@@ -70,10 +83,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tpl/Frontpage.tpl.html" />
-        <option value="$PROJECT_DIR$/inc/loadsmarty.php" />
-        <option value="$PROJECT_DIR$/sleeproom.php" />
-        <option value="$PROJECT_DIR$/../Examplecode/Smarty install/tpl/frontpage.html.tpl" />
         <option value="$PROJECT_DIR$/../Examplecode/Smarty install/index.php" />
         <option value="$PROJECT_DIR$/outside.php" />
         <option value="$PROJECT_DIR$/Pass.php" />
@@ -117,9 +126,13 @@
         <option value="$PROJECT_DIR$/inc/DBconnection.php" />
         <option value="$PROJECT_DIR$/inc/Choice.class.php" />
         <option value="$PROJECT_DIR$/inc/smarty/templates_c/29ae8891fc630520e20aaae1471271f4418e19a7_0.file.index.html.tpl.php" />
+        <option value="$PROJECT_DIR$/inc/smarty/ItemList.php" />
+        <option value="$PROJECT_DIR$/inc/ItemList.php" />
+        <option value="$PROJECT_DIR$/inc/Inventory.class.php" />
+        <option value="$PROJECT_DIR$/inc/smarty/Smarty.class.php" />
         <option value="$PROJECT_DIR$/inc/Location.class.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/tpl/index.html.tpl" />
       </list>
     </option>
@@ -139,6 +152,31 @@
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Code SmellPHP</id>
+          </State>
+          <State>
+            <id>PHP</id>
+          </State>
+          <State>
+            <id>Probable bugsPHP</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PhpForeachArrayIsUsedAsValueInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -165,7 +203,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -181,20 +219,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Eigen spel" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Eigen spel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Eigen spel" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tpl" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -228,22 +252,28 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Examplecode/Learnd/Learnd" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/wamp64/www/Eigen spel/inc/Inventory.class.php" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Eigen spel\inc" />
+      <recent name="C:\wamp64\www\Eigen spel" />
       <recent name="C:\wamp64\www\Eigen spel\tpl" />
     </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
       <method />
     </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -271,6 +301,19 @@
       <scripts />
       <node-interpreter value="project" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
       <method />
     </configuration>
   </component>
@@ -317,11 +360,32 @@
       <workItem from="1467185041026" duration="5413000" />
       <workItem from="1467274165348" duration="8206000" />
       <workItem from="1467289016382" duration="551000" />
+      <workItem from="1467622347229" duration="65000" />
+      <workItem from="1467718419707" duration="457000" />
+      <workItem from="1469049140432" duration="1277000" />
+      <workItem from="1473772241284" duration="321000" />
+      <workItem from="1473772785619" duration="3954000" />
+      <workItem from="1473833350628" duration="1567000" />
+      <workItem from="1473836331877" duration="7774000" />
+      <workItem from="1473942251007" duration="37000" />
+      <workItem from="1474006618317" duration="1422000" />
+      <workItem from="1474008751972" duration="588000" />
+      <workItem from="1474010113642" duration="36000" />
+      <workItem from="1474013309912" duration="18000" />
+      <workItem from="1474281255165" duration="1329000" />
+      <workItem from="1474283906674" duration="6076000" />
+      <workItem from="1474371083231" duration="6991000" />
+      <workItem from="1474438754330" duration="1245000" />
+      <workItem from="1474526740239" duration="8557000" />
+      <workItem from="1474536452872" duration="7750000" />
+      <workItem from="1474611800238" duration="6960000" />
+      <workItem from="1474870123518" duration="22333000" />
+      <workItem from="1474956338135" duration="12813000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80554000" />
+    <option name="totallyTimeSpent" value="172124000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -360,46 +424,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/garden.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kichten.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pass.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sandpath.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/pass.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tpl/escape1.php" />
     <entry file="file://$PROJECT_DIR$/escape1.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -659,55 +688,93 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="18" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/inc/ItemList.php" />
     <entry file="file://$PROJECT_DIR$/inc/smarty/templates_c/29ae8891fc630520e20aaae1471271f4418e19a7_0.file.index.html.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="81" column="25" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="25" />
+        <state relative-caret-position="368">
+          <caret line="103" column="12" selection-start-line="103" selection-start-column="12" selection-end-line="103" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inc/Choice.class.php">
+    <entry file="file://$PROJECT_DIR$/inc/smarty/Smarty.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        <state relative-caret-position="17">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/smarty/sysplugins/smarty_internal_templatecompilerbase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15759">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Javascript/Scripts/Arrays.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" column="10" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
+        <state relative-caret-position="495">
+          <caret line="69" column="22" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/Choice.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/Inventory.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/inc/Location.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="74" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="74" />
+        <state relative-caret-position="172">
+          <caret line="39" column="69" selection-start-line="39" selection-start-column="69" selection-end-line="39" selection-end-column="69" />
           <folding>
-            <marker date="1467279667603" expanded="true" signature="223:256" ph="SELECT * FRO... locations" />
-            <marker date="1467279667603" expanded="true" signature="672:703" ph="SELECT * FRO... choices" />
+            <marker date="1474957682485" expanded="true" signature="344:377" ph="SELECT * FRO... locations" />
+            <marker date="1474957682485" expanded="true" signature="776:812" ph="SELECT * FRO... choices" />
+            <marker date="1474957682485" expanded="true" signature="776:823" ph="SELECT * FRO... choices" />
+            <marker date="1474957682485" expanded="true" signature="811:812" ph="SELECT * FRO... choices" />
+            <marker date="1474957682485" expanded="true" signature="1365:1388" ph="SELECT * FRO... items" />
+            <marker date="1474957682485" expanded="true" signature="1365:1431" ph="SELECT * FRO... inventory" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="36">
+          <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+          <folding>
+            <marker date="1474968373060" expanded="true" signature="1239:1401" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tpl/index.html.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        <state relative-caret-position="155">
+          <caret line="28" column="80" selection-start-line="28" selection-start-column="80" selection-end-line="28" selection-end-column="80" />
           <folding />
         </state>
       </provider>

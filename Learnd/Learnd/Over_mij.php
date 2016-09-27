@@ -19,6 +19,9 @@
 
     <h1> Fill it in</h1>
     <p> ALs bewijs dat dit pagina 2 is</p>
+    <a href="https://davinci.itslearning.com/index.aspx">
+    <img src="img/download.jpg" width="auto";>
+    </a>
 </div>
 </body>
 </html>
