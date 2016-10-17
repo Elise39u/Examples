@@ -28,7 +28,7 @@ class Location
         }
 
         // load choices
-        $sql = "SELECT * FROM choices WHERE from_id=" . $id . ";";
+        $sql = "SELECT * FROM choices WHERE from_id=" . $id . ";"; // or need_item_id IS NOT NULL
         $results2 = $mysqli->query($sql);
 
         while ($record = $results2->fetch_assoc()) {

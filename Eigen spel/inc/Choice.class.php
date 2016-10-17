@@ -6,5 +6,4 @@ class Choice {
     public $to_id;
     public $title;
     public $need_item_id;
-
 }

@@ -69,3 +69,27 @@ input {
     color: red;
     font-weight: bold;
 }
+
+.hai {
+  display: none;
+}
+
+.item {
+    color: #f00;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.Got {
+    font-size: larger;
+    color: #923847;
+    font-weight: 900;
+    font-family: "Arial Black";
+}
+
+.haha {
+    font-size: smaller;
+    color: #8f00fa;
+    font-weight: 200;
+    font-family: "Berlin Sans FB";
+}
