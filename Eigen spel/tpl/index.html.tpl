@@ -27,7 +27,7 @@
                 <!-- change the string output to a int value  -->
                 {$choice->to_id|intval}
                  <!-- looks of  Choice->to_id  is equal to 22 or 23 or 24 or 25 then change them
-                 First looks of $_SESSION['Pickup'] Exist -->
+                 First looks of $_SESSION['Paddle'] Exist -->
                 {if isset($smarty.session.Paddle)}
                 {if $choice->to_id == 22}
                     <p class="hide"> Nothing Here Friend</p>

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Gegenereerd op: 17 okt 2016 om 13:01
+-- Gegenereerd op: 18 okt 2016 om 08:49
 -- Serverversie: 5.7.9
 -- PHP-versie: 5.6.16
 
@@ -97,7 +97,7 @@ INSERT INTO `choices` (`id`, `from_id`, `to_id`, `title`, `need_item_id`) VALUES
 (56, 27, 7, 'Drive to the pass', 6),
 (57, 7, 28, 'GO on the river ', 7),
 (58, 28, 7, 'Row Back to the city', 7),
-(59, 17, 29, 'Yes', NULL),
+(59, 17, 29, 'Yes', 12),
 (60, 29, 1, 'Start over', NULL);
 
 -- --------------------------------------------------------
@@ -139,7 +139,7 @@ CREATE TABLE IF NOT EXISTS `items` (
   `Number` varchar(127) NOT NULL,
   `Place` varchar(254) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=33 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `items`
@@ -155,7 +155,29 @@ INSERT INTO `items` (`id`, `Name`, `Attack`, `Defense`, `Number`, `Place`) VALUE
 (7, 'Boat', '0', '1500', '1', 'The river\r\n'),
 (8, 'Key (Graveyard)', '0', '0', '1', 'Bank'),
 (9, 'Key (Police Station) ', '0', '0', '1', 'Roof Electro Store'),
-(10, 'key (Bank)', '0', '0', '1', 'Roof of the Police Station');
+(10, 'key (Bank)', '0', '0', '1', 'Roof of the Police Station'),
+(11, 'JerryCan', '50', '0', '1', 'Garage'),
+(12, 'Gold', '0', '0', '1000000000', 'Bank'),
+(13, 'M4', '60', '0', '10', 'Gun store And Police Station '),
+(14, 'Scar', '48', '0', '8', 'Gun store and Police Station'),
+(15, 'DRS 50', '95', '0', '7', 'Gun store and Police Station '),
+(16, 'Spas', '80', '0', '10', 'Gun store and Police Station '),
+(17, 'Usp-s', '30', '5', '25', 'Gun store and Police Station'),
+(18, 'Silncer ', '-5', '20', '20', 'Gun store '),
+(19, 'Dragounv', '65', '0', '5', 'Gun store '),
+(20, 'PSG1', '85', '0', '5', 'Gun Store'),
+(21, 'XM1014', '60', '0', '5', 'Gun Store'),
+(22, 'Ranger', '75', '0', '5', 'Gun store '),
+(23, 'Striker', '90', '0', '5', 'Gun Store'),
+(24, 'Five-Seven', '45', '0', '5', 'Gun Store'),
+(25, 'Tec9', '40', '0', '5', 'Gun store'),
+(26, 'P250', '30', '0', '5', 'Gun Store'),
+(27, 'Tar-21', '55', '0', '5', 'Gun store'),
+(28, 'FaL (Semi)', '60', '0', '5', 'Gun store'),
+(29, 'Rpg', '250', '0', '5', 'Gun Store '),
+(30, 'M27-Law', '250', '0', '5', 'Gun Store'),
+(31, 'Javelin', '400', '-10', '5', 'Gun store'),
+(32, 'CrossBow', '150', '0', '5', 'Gun store');
 
 -- --------------------------------------------------------
 

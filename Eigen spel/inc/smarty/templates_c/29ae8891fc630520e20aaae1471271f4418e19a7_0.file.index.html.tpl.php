@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-10-17 14:48:29
+/* Smarty version 3.1.29, created on 2016-10-17 16:12:17
   from "C:\wamp64\www\Eigen spel\tpl\index.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5804c89db13cf8_11443784',
+  'unifunc' => 'content_5804dc411c8cc1_24006420',
   'file_dependency' => 
   array (
     '29ae8891fc630520e20aaae1471271f4418e19a7' => 
     array (
       0 => 'C:\\wamp64\\www\\Eigen spel\\tpl\\index.html.tpl',
-      1 => 1476708507,
+      1 => 1476713535,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5804c89db13cf8_11443784 ($_smarty_tpl) {
+function content_5804dc411c8cc1_24006420 ($_smarty_tpl) {
 ?>
 <html>
 <head>
@@ -86,7 +86,7 @@ $__foreach_choice_1_saved_local_item = $_smarty_tpl->tpl_vars['choice'];
                 <?php echo intval($_smarty_tpl->tpl_vars['choice']->value->to_id);?>
 
                  <!-- looks of  Choice->to_id  is equal to 22 or 23 or 24 or 25 then change them
-                 First looks of $_SESSION['Pickup'] Exist -->
+                 First looks of $_SESSION['Paddle'] Exist -->
                 <?php if (isset($_SESSION['Paddle'])) {?>
                 <?php if ($_smarty_tpl->tpl_vars['choice']->value->to_id == 22) {?>
                     <p class="hide"> Nothing Here Friend</p>
