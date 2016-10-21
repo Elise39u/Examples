@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-10-17 16:12:17
+/* Smarty version 3.1.29, created on 2016-10-20 16:24:21
   from "C:\wamp64\www\Eigen spel\tpl\index.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5804dc411c8cc1_24006420',
+  'unifunc' => 'content_5808d3955e2c00_66099709',
   'file_dependency' => 
   array (
     '29ae8891fc630520e20aaae1471271f4418e19a7' => 
     array (
       0 => 'C:\\wamp64\\www\\Eigen spel\\tpl\\index.html.tpl',
-      1 => 1476713535,
+      1 => 1476973460,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5804dc411c8cc1_24006420 ($_smarty_tpl) {
+function content_5808d3955e2c00_66099709 ($_smarty_tpl) {
 ?>
 <html>
 <head>
@@ -34,7 +34,7 @@ function content_5804dc411c8cc1_24006420 ($_smarty_tpl) {
 <body>
     <div class="plaatje">
     <?php if (isset($_smarty_tpl->tpl_vars['errors']->value)) {?>
-        <p style="border: 1px solid red;">
+        <p style="border: 1px solid #ff0000;"></p>
         <ul>
             <?php
 $_from = $_smarty_tpl->tpl_vars['errors']->value;
@@ -160,12 +160,6 @@ $_smarty_tpl->tpl_vars['Hai'] = $__foreach_Hai_2_saved_item;
 "><?php echo $_smarty_tpl->tpl_vars['choice']->value->title;?>
 </a> </li>
                 <?php }?>
-                <?php if ($_smarty_tpl->tpl_vars['location']->value->id == 25 || $_smarty_tpl->tpl_vars['location']->value->id == 29) {?>
-                    <?php echo session_unset();?>
-
-                    <?php echo session_destroy();?>
-
-                <?php }?>
                 <!-- <li><a href="index.php?location_id=<?php echo $_smarty_tpl->tpl_vars['choice']->value->to_id;?>
 "><?php echo $_smarty_tpl->tpl_vars['choice']->value->title;?>
 </a></li> -->
@@ -176,6 +170,12 @@ if ($__foreach_choice_1_saved_item) {
 $_smarty_tpl->tpl_vars['choice'] = $__foreach_choice_1_saved_item;
 }
 ?>
+            <?php if ($_smarty_tpl->tpl_vars['location']->value->id == 25 || $_smarty_tpl->tpl_vars['location']->value->id == 29 || $_smarty_tpl->tpl_vars['location']->value->id == 51 || $_smarty_tpl->tpl_vars['location']->value->id == 52) {?>
+                <?php echo session_unset();?>
+
+                <?php echo session_destroy();?>
+
+            <?php }?>
         </ul>
 
         <ul>

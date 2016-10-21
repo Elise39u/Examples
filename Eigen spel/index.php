@@ -10,7 +10,7 @@ $location_id =  (isset($_GET['location_id']) ? $_GET['location_id'] : 1);   // k
 $errors = [];       // hou fouten bij in deze array
 $loc = new Location();  // maak lege locatie aan
 $did_load_work = $loc->LoadFromDb($mysqli, $location_id);       // laad locatie en choices vanuit de database
-if ($did_load_work == false) {    // als het laden fout ging, voeg dan een error toe aan de array $errors
+if ($did_load_work == FALSE) {    // als het laden fout ging, voeg dan een error toe aan de array $errors
     array_push($errors, "This location does not exist in the database");
 }
 

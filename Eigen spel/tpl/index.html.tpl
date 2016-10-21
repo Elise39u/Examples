@@ -8,7 +8,7 @@
 <body>
     <div class="plaatje">
     {if isset($errors) }
-        <p style="border: 1px solid red;">
+        <p style="border: 1px solid #ff0000;"></p>
         <ul>
             {foreach $errors as $error}
                 <li>{$error}</li>
@@ -69,12 +69,12 @@
                 {else}
                     <li><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a> </li>
                 {/if}
-                {if $location->id == 25 || $location->id == 29}
-                    {session_unset()}
-                    {session_destroy()}
-                {/if}
                 <!-- <li><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a></li> -->
             {/foreach}
+            {if $location->id == 25 || $location->id == 29 || $location->id == 51 || $location->id == 52}
+                {session_unset()}
+                {session_destroy()}
+            {/if}
         </ul>
 
         <ul>
