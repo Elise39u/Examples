@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-10-20 16:24:21
+/* Smarty version 3.1.29, created on 2016-10-25 16:06:25
   from "C:\wamp64\www\Eigen spel\tpl\index.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5808d3955e2c00_66099709',
+  'unifunc' => 'content_580f66e1dd9656_48647816',
   'file_dependency' => 
   array (
     '29ae8891fc630520e20aaae1471271f4418e19a7' => 
     array (
       0 => 'C:\\wamp64\\www\\Eigen spel\\tpl\\index.html.tpl',
-      1 => 1476973460,
+      1 => 1477404296,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5808d3955e2c00_66099709 ($_smarty_tpl) {
+function content_580f66e1dd9656_48647816 ($_smarty_tpl) {
 ?>
 <html>
 <head>
@@ -85,50 +85,8 @@ $__foreach_choice_1_saved_local_item = $_smarty_tpl->tpl_vars['choice'];
                 <!-- change the string output to a int value  -->
                 <?php echo intval($_smarty_tpl->tpl_vars['choice']->value->to_id);?>
 
-                 <!-- looks of  Choice->to_id  is equal to 22 or 23 or 24 or 25 then change them
-                 First looks of $_SESSION['Paddle'] Exist -->
-                <?php if (isset($_SESSION['Paddle'])) {?>
-                <?php if ($_smarty_tpl->tpl_vars['choice']->value->to_id == 22) {?>
-                    <p class="hide"> Nothing Here Friend</p>
-                <?php } else { ?>
-                    <li><a href="index.php?location_id=<?php echo $_smarty_tpl->tpl_vars['choice']->value->to_id;?>
-"><?php echo $_smarty_tpl->tpl_vars['choice']->value->title;?>
-</a></li>
-                <?php }?>
-                    <?php } elseif (isset($_SESSION['End2'])) {?>
-                    <?php if ($_smarty_tpl->tpl_vars['choice']->value->to_id == 25) {?>
-                        <p class="hide"> Nothing Here Friend </p>
-                        <?php } else { ?>
-                        <li><a href="index.php?location_id=<?php echo $_smarty_tpl->tpl_vars['choice']->value->to_id;?>
-"><?php echo $_smarty_tpl->tpl_vars['choice']->value->title;?>
-</a></li>
-                    <?php }?>
-                    <?php } elseif (isset($_SESSION['Basebalbat'])) {?>
-                    <?php if ($_smarty_tpl->tpl_vars['choice']->value->to_id == 23) {?>
-                        <p class="hide"> Nothing Here friend</p>
-                    <?php } else { ?>
-                        <li><a href="index.php?location_id=<?php echo $_smarty_tpl->tpl_vars['choice']->value->to_id;?>
-"><?php echo $_smarty_tpl->tpl_vars['choice']->value->title;?>
-</a></li>
-                        <?php }?>
-                    <?php } elseif (isset($_SESSION['Axe'])) {?>
-                    <?php if ($_smarty_tpl->tpl_vars['choice']->value->to_id == 24) {?>
-                        <p class="hide"> Nothing Here friend</p>
-                    <?php } else { ?>
-                        <li><a href="index.php?location_id=<?php echo $_smarty_tpl->tpl_vars['choice']->value->to_id;?>
-"><?php echo $_smarty_tpl->tpl_vars['choice']->value->title;?>
-</a></li>
-                        <?php }?>
-                    <?php } elseif (isset($_SESSION['Hammer'])) {?>
-                    <?php if ($_smarty_tpl->tpl_vars['choice']->value->to_id == 26) {?>
-                        <p class="hide"> Nothing Here friend</p>
-                    <?php } else { ?>
-                        <li><a href="index.php?location_id=<?php echo $_smarty_tpl->tpl_vars['choice']->value->to_id;?>
-"><?php echo $_smarty_tpl->tpl_vars['choice']->value->title;?>
-</a></li>
-                        <?php }?>
-                    <?php } elseif (isset($_smarty_tpl->tpl_vars['choice']->value->need_item_id)) {?>
-                    <?php
+                <?php if (isset($_smarty_tpl->tpl_vars['choice']->value->need_item_id)) {?>
+                <?php
 $_from = $_smarty_tpl->tpl_vars['location']->value->Inventory;
 if (!is_array($_from) && !is_object($_from)) {
 settype($_from, 'array');
@@ -143,18 +101,85 @@ $__foreach_Hai_2_saved_local_item = $_smarty_tpl->tpl_vars['Hai'];
                     <?php if ($_smarty_tpl->tpl_vars['Hai']->value->item_id == $_smarty_tpl->tpl_vars['choice']->value->need_item_id) {?>
                         <li><a href="index.php?location_id=<?php echo $_smarty_tpl->tpl_vars['choice']->value->to_id;?>
 "><?php echo $_smarty_tpl->tpl_vars['choice']->value->title;?>
-</a></li>
+</a> </li>
                         <p class="Got"> Dorker You have the item <?php echo $_smarty_tpl->tpl_vars['choice']->value->need_item_id;?>
   </p>
                         <!-- <p class="Haha"> Nothing Here to find</p> -->
                     <?php }?>
-                    <?php
+                <?php
 $_smarty_tpl->tpl_vars['Hai'] = $__foreach_Hai_2_saved_local_item;
 }
 if ($__foreach_Hai_2_saved_item) {
 $_smarty_tpl->tpl_vars['Hai'] = $__foreach_Hai_2_saved_item;
 }
 ?>
+                <?php }?>
+                 <!-- looks of  Choice->to_id  is equal to 22 or 23 or 24 or 25 then change them
+                 First looks of $_SESSION['Paddle'] Exist -->
+                <?php if (isset($_SESSION['Paddle'])) {?>
+                <?php if ($_smarty_tpl->tpl_vars['choice']->value->to_id == 22) {?>
+                    <p class="hide"> Nothing Here Friend</p>
+                <?php } elseif (isset($_smarty_tpl->tpl_vars['choice']->value->need_item_id)) {?>
+                    <li class="Gone"><a href="index.php?location_id=<?php echo $_smarty_tpl->tpl_vars['choice']->value->to_id;?>
+"><?php echo $_smarty_tpl->tpl_vars['choice']->value->title;?>
+</a></li>
+                <?php } else { ?>
+                    <li><a href="index.php?location_id=<?php echo $_smarty_tpl->tpl_vars['choice']->value->to_id;?>
+"><?php echo $_smarty_tpl->tpl_vars['choice']->value->title;?>
+</a> </li>
+                <?php }?>
+                    <?php } elseif (isset($_SESSION['End2'])) {?>
+                    <?php if ($_smarty_tpl->tpl_vars['choice']->value->to_id == 25) {?>
+                        <p class="hide"> Nothing Here Friend </p>
+                    <?php } elseif (isset($_smarty_tpl->tpl_vars['choice']->value->need_item_id)) {?>
+                        <li class="Gone"><a href="index.php?location_id=<?php echo $_smarty_tpl->tpl_vars['choice']->value->to_id;?>
+"><?php echo $_smarty_tpl->tpl_vars['choice']->value->title;?>
+</a></li>
+                    <?php } else { ?>
+                        <li><a href="index.php?location_id=<?php echo $_smarty_tpl->tpl_vars['choice']->value->to_id;?>
+"><?php echo $_smarty_tpl->tpl_vars['choice']->value->title;?>
+</a> </li>
+                    <?php }?>
+                    <?php } elseif (isset($_SESSION['Basebalbat'])) {?>
+                    <?php if ($_smarty_tpl->tpl_vars['choice']->value->to_id == 23) {?>
+                        <p class="hide"> Nothing Here friend</p>
+                    <?php } elseif (isset($_smarty_tpl->tpl_vars['choice']->value->need_item_id)) {?>
+                        <li class="Gone"><a href="index.php?location_id=<?php echo $_smarty_tpl->tpl_vars['choice']->value->to_id;?>
+"><?php echo $_smarty_tpl->tpl_vars['choice']->value->title;?>
+</a></li>
+                    <?php } else { ?>
+                        <li><a href="index.php?location_id=<?php echo $_smarty_tpl->tpl_vars['choice']->value->to_id;?>
+"><?php echo $_smarty_tpl->tpl_vars['choice']->value->title;?>
+</a> </li>
+                    <?php }?>
+                    <?php } elseif (isset($_SESSION['Axe'])) {?>
+                    <?php if ($_smarty_tpl->tpl_vars['choice']->value->to_id == 24) {?>
+                        <p class="hide"> Nothing Here friend</p>
+                    <?php } elseif (isset($_smarty_tpl->tpl_vars['choice']->value->need_item_id)) {?>
+                        <li class="Gone"><a href="index.php?location_id=<?php echo $_smarty_tpl->tpl_vars['choice']->value->to_id;?>
+"><?php echo $_smarty_tpl->tpl_vars['choice']->value->title;?>
+</a></li>
+                    <?php } else { ?>
+                        <li><a href="index.php?location_id=<?php echo $_smarty_tpl->tpl_vars['choice']->value->to_id;?>
+"><?php echo $_smarty_tpl->tpl_vars['choice']->value->title;?>
+</a> </li>
+                    <?php }?>
+                    <?php } elseif (isset($_SESSION['Hammer'])) {?>
+                    <?php if ($_smarty_tpl->tpl_vars['choice']->value->to_id == 26) {?>
+                        <p class="hide"> Nothing Here friend</p>
+                    <?php } elseif (isset($_smarty_tpl->tpl_vars['choice']->value->need_item_id)) {?>
+                        <li class="Gone"><a href="index.php?location_id=<?php echo $_smarty_tpl->tpl_vars['choice']->value->to_id;?>
+"><?php echo $_smarty_tpl->tpl_vars['choice']->value->title;?>
+</a></li>
+                    <?php } else { ?>
+                        <li><a href="index.php?location_id=<?php echo $_smarty_tpl->tpl_vars['choice']->value->to_id;?>
+"><?php echo $_smarty_tpl->tpl_vars['choice']->value->title;?>
+</a> </li>
+                    <?php }?>
+                    <?php } elseif (isset($_smarty_tpl->tpl_vars['choice']->value->need_item_id)) {?>
+                    <li class="Gone"><a href="index.php?location_id=<?php echo $_smarty_tpl->tpl_vars['choice']->value->to_id;?>
+"><?php echo $_smarty_tpl->tpl_vars['choice']->value->title;?>
+</a></li>
                 <?php } else { ?>
                     <li><a href="index.php?location_id=<?php echo $_smarty_tpl->tpl_vars['choice']->value->to_id;?>
 "><?php echo $_smarty_tpl->tpl_vars['choice']->value->title;?>
@@ -216,6 +241,7 @@ $_smarty_tpl->tpl_vars['hello'] = $__foreach_hello_3_saved_item;
                 $(".Display").hide();
             });
 
+            document.getElementsByClassName('Gone').style.display = 'none';
         <?php echo '</script'; ?>
 >
     </div>

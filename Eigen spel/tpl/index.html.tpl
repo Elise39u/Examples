@@ -26,46 +26,59 @@
             {foreach $location->Choices as $choice}
                 <!-- change the string output to a int value  -->
                 {$choice->to_id|intval}
+                {if isset($choice->need_item_id)}
+                {foreach $location->Inventory as $Hai}
+                    {if $Hai->item_id == $choice->need_item_id}
+                        <li><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a> </li>
+                        <p class="Got"> Dorker You have the item {$choice->need_item_id}  </p>
+                        <!-- <p class="Haha"> Nothing Here to find</p> -->
+                    {/if}
+                {/foreach}
+                {/if}
                  <!-- looks of  Choice->to_id  is equal to 22 or 23 or 24 or 25 then change them
                  First looks of $_SESSION['Paddle'] Exist -->
                 {if isset($smarty.session.Paddle)}
                 {if $choice->to_id == 22}
                     <p class="hide"> Nothing Here Friend</p>
+                {elseif isset($choice->need_item_id)}
+                    <li class="Gone"><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a></li>
                 {else}
-                    <li><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a></li>
+                    <li><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a> </li>
                 {/if}
                     {elseif isset($smarty.session.End2)}
                     {if $choice->to_id == 25}
                         <p class="hide"> Nothing Here Friend </p>
-                        {else}
-                        <li><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a></li>
+                    {elseif isset($choice->need_item_id)}
+                        <li class="Gone"><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a></li>
+                    {else}
+                        <li><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a> </li>
                     {/if}
                     {elseif isset($smarty.session.Basebalbat)}
                     {if $choice->to_id == 23}
                         <p class="hide"> Nothing Here friend</p>
+                    {elseif isset($choice->need_item_id)}
+                        <li class="Gone"><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a></li>
                     {else}
-                        <li><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a></li>
-                        {/if}
+                        <li><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a> </li>
+                    {/if}
                     {elseif isset($smarty.session.Axe)}
                     {if $choice->to_id == 24}
                         <p class="hide"> Nothing Here friend</p>
+                    {elseif isset($choice->need_item_id)}
+                        <li class="Gone"><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a></li>
                     {else}
-                        <li><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a></li>
-                        {/if}
+                        <li><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a> </li>
+                    {/if}
                     {elseif isset($smarty.session.Hammer)}
                     {if $choice->to_id == 26}
                         <p class="hide"> Nothing Here friend</p>
-                    {else}
-                        <li><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a></li>
-                        {/if}
                     {elseif isset($choice->need_item_id)}
-                    {foreach $location->Inventory as $Hai}
-                    {if $Hai->item_id == $choice->need_item_id}
-                        <li><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a></li>
-                        <p class="Got"> Dorker You have the item {$choice->need_item_id}  </p>
-                        <!-- <p class="Haha"> Nothing Here to find</p> -->
+                        <li class="Gone"><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a></li>
+                    {else}
+                        <li><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a> </li>
                     {/if}
-                    {/foreach}
+                    {elseif isset($choice->need_item_id)}
+                    <li class="Gone"><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a></li>
                 {else}
                     <li><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a> </li>
                 {/if}
@@ -94,6 +107,7 @@
                 $(".Display").hide();
             });
 
+            document.getElementsByClassName('Gone').style.display = 'none';
         </script>
     </div>
 </body>

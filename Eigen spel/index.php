@@ -5,6 +5,7 @@ require_once ('inc/Location.class.php');
 require_once ('inc/DBconnection.php');
 require_once ('inc/Choice.class.php');
 require_once ('inc/Inventory.class.php');
+require_once ('inc/Items.class.php');
 
 $location_id =  (isset($_GET['location_id']) ? $_GET['location_id'] : 1);   // kijk welke locatie wordt gevraagd
 $errors = [];       // hou fouten bij in deze array
@@ -34,45 +35,6 @@ if ($location_id == 26) {
 if($location_id == 27) {
     $_SESSION['End2'] = true;
 }
-
-/*
-if (isset($loc)) {
-    if (is_null($loc->Choices)) {
-        //  Load choice->to_id 25
-        echo "Hello Friend";
-    }
-    var_dump($loc);
-}
-
-
-$obj = new Choice();
-$refObj = new ReflectionObject($obj);
-$refProp1 = $refObj->getProperty("need_item_id");
-$refProp1->setAccessible(TRUE);
-
-                {if $choice->need_item_id}
-                    {foreach $location->Inventory as $itm}
-                      {if $itm->item_id == $choice->need_item_id}
-                            <p class="Got"> Dorker You have the item {$choice->need_item_id}  </p>
-                            <div class="Lel"> {$choice->to_id} </div>
-                          {else}
-                          <!--
-                          <p class="hello"> You have nothing</p>
-                          <button class="Gone">Click me!!!!!!!</button> --> <br>
-                      {/if}
-                    {/foreach}
-                {/if}
-
-                {foreach $location->Inventory as $test}
-                    {if $choice->need_item_id == $test->item_id}
-                        <p class="Got"> You Have the item {$test->item_id} Dorker</p>
-                    {elseif isset($choice->need_item_id)}
-                        <p class="haha"> Go look for the item {$choice->need_item_id} Dorker</p>
-                    {else}
-                        <li class="Display"><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a></li>
-                    {/if}
-                {/foreach}
-*/
 
 $smarty->assign('pagetitle', 'Games to play');
 $smarty->assign('errors', $errors);         // geef lege of gevulde array $errors mee
