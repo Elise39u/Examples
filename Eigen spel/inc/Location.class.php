@@ -10,6 +10,7 @@ class Location
     public $Title;
     public $Foto_url;
     public $Story;
+    public $item_id;
     public $Choices = [];
     public $Inventory = [];
     public $items = [];
@@ -25,6 +26,7 @@ class Location
             $this->Title = $record['Title'];
             $this->Foto_url = ('<img src="' . $record['Foto_url'] . '">');
             $this->Story = $record['Story'];
+            $this->item_id = $record['item_id'];
 
         }
 

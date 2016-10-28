@@ -71,3 +71,45 @@ if (isset($_SESSION['Paddle']) || isset($_SESSION['End2']) || isset($_SESSION['H
             echo "<br />";
     }
 }
+
+echo "<div id=\"msg\">";
+if(isset($loc->item_id)) {
+    print_r($loc->item_id); echo "</br>";
+    if (isset($loc->item_id)) {
+        if($loc->Inventory == NULL) {
+            $sql = "INSERT INTO Inventory(player_id, item_id, space) VALUES ('1', '$loc->item_id', '20')";
+            if ($mysqli->query($sql) === TRUE) {
+                echo "New record created successfully";
+            } else {
+                echo "Error: " . $sql . "<br>" . $mysqli->error;
+            }
+        }
+        elseif(isset($loc->item_id)) {
+            $result = $mysqli->query("SELECT item_id FROM Inventory WHERE item_id = $loc->item_id");
+            if($result->num_rows > 0) {
+                echo "Exsist already Dork";
+            } else {
+                $sql = "INSERT INTO Inventory(player_id, item_id, space) VALUES ('1', '$loc->item_id', '20')";
+                if ($mysqli->query($sql) === TRUE) {
+                    echo "New record created successfully";
+                } else {
+                    echo "Error: " . $sql . "<br>" . $mysqli->error;
+                }
+            }
+        }
+        else {
+            echo "Wuuuttttt";
+        }
+    }
+    else {
+        echo "Nothing here";
+    }
+}
+else {
+    echo "Ehheeee so now......";
+}
+
+if ($location_id == 25 || $location_id == 29 || $location_id == 51 || $location_id == 52) {
+    $sql = "TRUNCATE TABLE inventory";
+    mysqli_query($mysqli, $sql);
+}
