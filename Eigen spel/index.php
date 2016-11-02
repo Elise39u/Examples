@@ -1,5 +1,7 @@
 <?php
 session_start();
+global $space;
+$space = 1;
 require_once ('inc/loadsmarty.php');
 require_once ('inc/Location.class.php');
 require_once ('inc/DBconnection.php');
@@ -34,6 +36,10 @@ if ($location_id == 26) {
 // Make Session End 2 when you reached location 27
 if($location_id == 27) {
     $_SESSION['End2'] = true;
+}
+
+if (isset($loc->item_id)) {
+    $_SESSION["Space"] = true;
 }
 
 $smarty->assign('pagetitle', 'Games to play');
@@ -77,7 +83,8 @@ if(isset($loc->item_id)) {
     print_r($loc->item_id); echo "</br>";
     if (isset($loc->item_id)) {
         if($loc->Inventory == NULL) {
-            $sql = "INSERT INTO Inventory(player_id, item_id, space) VALUES ('1', '$loc->item_id', '20')";
+            $sql = "INSERT INTO Inventory(player_id, item_id, space) VALUES ('1', '$loc->item_id', '$space')";
+            echo "this $space left </br>";
             if ($mysqli->query($sql) === TRUE) {
                 echo "New record created successfully";
             } else {
@@ -89,7 +96,12 @@ if(isset($loc->item_id)) {
             if($result->num_rows > 0) {
                 echo "Exsist already Dork";
             } else {
-                $sql = "INSERT INTO Inventory(player_id, item_id, space) VALUES ('1', '$loc->item_id', '20')";
+                foreach ($loc->Inventory as $Ok) {
+                    $Ok = $space;
+                    $space++;
+                }
+                $sql = "INSERT INTO Inventory(player_id, item_id, space) VALUES ('1', '$loc->item_id', '$space')";
+                echo "this $space left </br>";
                 if ($mysqli->query($sql) === TRUE) {
                     echo "New record created successfully";
                 } else {
@@ -108,6 +120,13 @@ if(isset($loc->item_id)) {
 else {
     echo "Ehheeee so now......";
 }
+
+/*
+while ($Ok > 0) {
+    $Ok++;
+    echo "$Ok less space :( </br> ";
+}
+*/
 
 if ($location_id == 25 || $location_id == 29 || $location_id == 51 || $location_id == 52) {
     $sql = "TRUNCATE TABLE inventory";

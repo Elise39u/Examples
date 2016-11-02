@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Gegenereerd op: 28 okt 2016 om 08:02
+-- Gegenereerd op: 02 nov 2016 om 07:59
 -- Serverversie: 5.7.9
 -- PHP-versie: 5.6.16
 
@@ -85,9 +85,9 @@ INSERT INTO `choices` (`id`, `from_id`, `to_id`, `title`, `need_item_id`) VALUES
 (43, 21, 20, 'go back outside\r\n', NULL),
 (45, 9, 23, 'Pick up Basebalbat', NULL),
 (46, 9, 24, 'Pick up a Axe', NULL),
-(48, 22, 9, 'Go back', 4),
-(49, 23, 9, 'Go back', 1),
-(50, 24, 9, 'Go back', 3),
+(48, 22, 9, 'Go back', NULL),
+(49, 23, 9, 'Go back', NULL),
+(50, 24, 9, 'Go back', NULL),
 (51, 13, 25, 'Escape the city ', 4),
 (52, 25, 1, 'Start over', NULL),
 (53, 9, 26, 'Pick up a hammer', NULL),
@@ -240,9 +240,18 @@ CREATE TABLE IF NOT EXISTS `inventory` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `player_id` varchar(127) NOT NULL,
   `item_id` int(127) NOT NULL,
-  `space` int(200) NOT NULL,
+  `space` int(254) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `inventory`
+--
+
+INSERT INTO `inventory` (`id`, `player_id`, `item_id`, `space`) VALUES
+(1, '1', 36, 1),
+(2, '1', 5, 2),
+(3, '1', 4, 3);
 
 -- --------------------------------------------------------
 

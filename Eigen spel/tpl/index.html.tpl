@@ -16,6 +16,12 @@
         </ul>
     {/if}
 
+        {if $location->id == 2}
+            <script type="text/javascript">
+                window.alert("Fooled You Friend There is no Button");
+            </script>
+        {/if}
+
     {if isset($location) }
         <h1>{$location->Title }</h1>
         <p>{$location->Story }</p>
@@ -35,54 +41,11 @@
                     {/if}
                 {/foreach}
                 {/if}
-                 <!-- looks of  Choice->to_id  is equal to 22 or 23 or 24 or 25 then change them
-                 First looks of $_SESSION['Paddle'] Exist -->
-                {if isset($smarty.session.Paddle)}
-                {if $choice->to_id == 22}
-                    <p class="hide"> Nothing Here Friend</p>
-                {elseif isset($choice->need_item_id)}
+                {if isset($choice->need_item_id)}
                     <li class="Gone"><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a></li>
                 {else}
                     <li><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a> </li>
                 {/if}
-                    {elseif isset($smarty.session.End2)}
-                    {if $choice->to_id == 25}
-                        <p class="hide"> Nothing Here Friend </p>
-                    {elseif isset($choice->need_item_id)}
-                        <li class="Gone"><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a></li>
-                    {else}
-                        <li><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a> </li>
-                    {/if}
-                    {elseif isset($smarty.session.Basebalbat)}
-                    {if $choice->to_id == 23}
-                        <p class="hide"> Nothing Here friend</p>
-                    {elseif isset($choice->need_item_id)}
-                        <li class="Gone"><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a></li>
-                    {else}
-                        <li><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a> </li>
-                    {/if}
-                    {elseif isset($smarty.session.Axe)}
-                    {if $choice->to_id == 24}
-                        <p class="hide"> Nothing Here friend</p>
-                    {elseif isset($choice->need_item_id)}
-                        <li class="Gone"><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a></li>
-                    {else}
-                        <li><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a> </li>
-                    {/if}
-                    {elseif isset($smarty.session.Hammer)}
-                    {if $choice->to_id == 26}
-                        <p class="hide"> Nothing Here friend</p>
-                    {elseif isset($choice->need_item_id)}
-                        <li class="Gone"><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a></li>
-                    {else}
-                        <li><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a> </li>
-                    {/if}
-                    {elseif isset($choice->need_item_id)}
-                    <li class="Gone"><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a></li>
-                {else}
-                    <li><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a> </li>
-                {/if}
-                <!-- <li><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a></li> -->
             {/foreach}
             {if $location->id == 25 || $location->id == 29 || $location->id == 51 || $location->id == 52}
                 {session_unset()}
