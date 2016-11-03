@@ -60,17 +60,9 @@
         </ul>
 
         <script type="text/javascript">
-            $(".Lel").each(function(){
-                $('.Lel').hide();
-            });
-
             $(document).ready(function(){
-                $(".Hello").hide();
                 $(".Gone").hide();
-                $(".Display").hide();
             });
-
-            document.getElementsByClassName('Gone').style.display = 'none';
         </script>
     </div>
 </body>

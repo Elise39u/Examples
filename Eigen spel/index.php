@@ -1,7 +1,7 @@
 <?php
 session_start();
 global $space;
-$space = 1;
+$space = 35;
 require_once ('inc/loadsmarty.php');
 require_once ('inc/Location.class.php');
 require_once ('inc/DBconnection.php');
@@ -98,9 +98,13 @@ if(isset($loc->item_id)) {
             } else {
                 foreach ($loc->Inventory as $Ok) {
                     $Ok = $space;
-                    $space++;
+                    $space--;
                 }
                 $sql = "INSERT INTO Inventory(player_id, item_id, space) VALUES ('1', '$loc->item_id', '$space')";
+                if ($space <= 0) {
+                     echo "<font color=white> Because you have no space left </font>";
+                    die($space);
+                }
                 echo "this $space left </br>";
                 if ($mysqli->query($sql) === TRUE) {
                     echo "New record created successfully";
@@ -120,13 +124,6 @@ if(isset($loc->item_id)) {
 else {
     echo "Ehheeee so now......";
 }
-
-/*
-while ($Ok > 0) {
-    $Ok++;
-    echo "$Ok less space :( </br> ";
-}
-*/
 
 if ($location_id == 25 || $location_id == 29 || $location_id == 51 || $location_id == 52) {
     $sql = "TRUNCATE TABLE inventory";

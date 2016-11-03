@@ -29,30 +29,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="100" column="29" selection-start-line="100" selection-start-column="29" selection-end-line="100" selection-end-column="29" />
+            <state relative-caret-position="304">
+              <caret line="105" column="30" selection-start-line="105" selection-start-column="30" selection-end-line="105" selection-end-column="30" />
               <folding>
-                <marker date="1478073285890" expanded="true" signature="1555:1567" ph="..." />
-                <marker date="1478073285890" expanded="true" signature="1744:1822" ph="..." />
-                <marker date="1478073285890" expanded="true" signature="1744:1906" ph="..." />
-                <marker date="1478073285890" expanded="true" signature="2718:2797" ph="INSERT INTO Inventory... " />
-                <marker date="1478073285890" expanded="true" signature="2718:2798" ph="INSERT INTO Inventory... " />
-                <marker date="1478073285890" expanded="true" signature="2718:2806" ph="INSERT INTO Inventory... " />
-                <marker date="1478073285890" expanded="true" signature="3144:3190" ph="SELECT item_... Inventory" />
-                <marker date="1478073285890" expanded="true" signature="3469:3557" ph="INSERT INTO Inventory... " />
+                <marker date="1478159660060" expanded="true" signature="1556:1568" ph="..." />
+                <marker date="1478159660060" expanded="true" signature="1745:1823" ph="..." />
+                <marker date="1478159660060" expanded="true" signature="1745:1907" ph="..." />
+                <marker date="1478159660060" expanded="true" signature="2719:2798" ph="INSERT INTO Inventory... " />
+                <marker date="1478159660060" expanded="true" signature="2719:2799" ph="INSERT INTO Inventory... " />
+                <marker date="1478159660060" expanded="true" signature="2719:2807" ph="INSERT INTO Inventory... " />
+                <marker date="1478159660060" expanded="true" signature="3145:3191" ph="SELECT item_... Inventory" />
+                <marker date="1478159660060" expanded="true" signature="3470:3558" ph="INSERT INTO Inventory... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.tpl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tpl/index.html.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+            <state relative-caret-position="1015">
+              <caret line="63" column="34" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -172,8 +172,8 @@
         <option value="$PROJECT_DIR$/inc/Items.class.php" />
         <option value="$PROJECT_DIR$/inc/Location.class.php" />
         <option value="$USER_HOME$/Desktop/fullcalendar-3.0.1/fullcalendar.js" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/tpl/index.html.tpl" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -249,6 +249,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -311,8 +313,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -482,15 +482,17 @@
       <workItem from="1477656256673" duration="604000" />
       <workItem from="1477898273457" duration="6014000" />
       <workItem from="1477993301770" duration="17476000" />
-      <workItem from="1478071330337" duration="2221000" />
+      <workItem from="1478071330337" duration="3650000" />
+      <workItem from="1478078161734" duration="26000" />
+      <workItem from="1478157480207" duration="2172000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="441358000" />
+    <option name="totallyTimeSpent" value="444985000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -874,28 +876,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/tpl/index.html.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="100" column="29" selection-start-line="100" selection-start-column="29" selection-end-line="100" selection-end-column="29" />
-          <folding>
-            <marker date="1478073285890" expanded="true" signature="1555:1567" ph="..." />
-            <marker date="1478073285890" expanded="true" signature="1744:1822" ph="..." />
-            <marker date="1478073285890" expanded="true" signature="1744:1906" ph="..." />
-            <marker date="1478073285890" expanded="true" signature="2718:2797" ph="INSERT INTO Inventory... " />
-            <marker date="1478073285890" expanded="true" signature="2718:2798" ph="INSERT INTO Inventory... " />
-            <marker date="1478073285890" expanded="true" signature="2718:2806" ph="INSERT INTO Inventory... " />
-            <marker date="1478073285890" expanded="true" signature="3144:3190" ph="SELECT item_... Inventory" />
-            <marker date="1478073285890" expanded="true" signature="3469:3557" ph="INSERT INTO Inventory... " />
-          </folding>
+        <state relative-caret-position="1015">
+          <caret line="63" column="34" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/index.html.tpl">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="304">
+          <caret line="105" column="30" selection-start-line="105" selection-start-column="30" selection-end-line="105" selection-end-column="30" />
+          <folding>
+            <marker date="1478159660060" expanded="true" signature="1556:1568" ph="..." />
+            <marker date="1478159660060" expanded="true" signature="1745:1823" ph="..." />
+            <marker date="1478159660060" expanded="true" signature="1745:1907" ph="..." />
+            <marker date="1478159660060" expanded="true" signature="2719:2798" ph="INSERT INTO Inventory... " />
+            <marker date="1478159660060" expanded="true" signature="2719:2799" ph="INSERT INTO Inventory... " />
+            <marker date="1478159660060" expanded="true" signature="2719:2807" ph="INSERT INTO Inventory... " />
+            <marker date="1478159660060" expanded="true" signature="3145:3191" ph="SELECT item_... Inventory" />
+            <marker date="1478159660060" expanded="true" signature="3470:3558" ph="INSERT INTO Inventory... " />
+          </folding>
         </state>
       </provider>
     </entry>

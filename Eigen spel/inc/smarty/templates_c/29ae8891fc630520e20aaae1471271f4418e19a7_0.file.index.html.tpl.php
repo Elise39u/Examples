@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-11-02 08:56:58
+/* Smarty version 3.1.29, created on 2016-11-03 08:19:26
   from "C:\wamp64\www\Eigen spel\tpl\index.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58199c4a8a0392_85855284',
+  'unifunc' => 'content_581ae4fe1c04a7_49837868',
   'file_dependency' => 
   array (
     '29ae8891fc630520e20aaae1471271f4418e19a7' => 
     array (
       0 => 'C:\\wamp64\\www\\Eigen spel\\tpl\\index.html.tpl',
-      1 => 1478073417,
+      1 => 1478157565,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58199c4a8a0392_85855284 ($_smarty_tpl) {
+function content_581ae4fe1c04a7_49837868 ($_smarty_tpl) {
 ?>
 <html>
 <head>
@@ -174,17 +174,9 @@ $_smarty_tpl->tpl_vars['hello'] = $__foreach_hello_3_saved_item;
 
         <?php echo '<script'; ?>
  type="text/javascript">
-            $(".Lel").each(function(){
-                $('.Lel').hide();
-            });
-
             $(document).ready(function(){
-                $(".Hello").hide();
                 $(".Gone").hide();
-                $(".Display").hide();
             });
-
-            document.getElementsByClassName('Gone').style.display = 'none';
         <?php echo '</script'; ?>
 >
     </div>
