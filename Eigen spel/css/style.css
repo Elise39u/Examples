@@ -93,3 +93,9 @@ input {
     font-weight: 200;
     font-family: "Berlin Sans FB";
 }
+
+input {
+    background-color: #eeeeee;
+    width: auto;
+    margin: auto;
+}

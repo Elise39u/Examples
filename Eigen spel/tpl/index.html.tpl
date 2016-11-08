@@ -16,13 +16,67 @@
         </ul>
     {/if}
 
+        {if $location->id == 97}
+        {if $combat == ''}
+            <p>You've encountered a {$monster}!</p>
+            <form action='index.php?location_id=97' method='post'>
+                <input type='submit' name='action' value='Attack' /> or
+                <input type='submit' name='action' value='Run Away' />
+                <input type='hidden' name='monster' value='{$monster}' />
+            </form>
+        {else}
+            <ul>
+                {foreach from=$combat key=id item=i}
+                    <li><strong>{$i.attacker}</strong> attacks {$i.defender} for {$i.damage} damage!</li>
+                {/foreach}
+            </ul>
+        {/if}
+        {/if}
+
+        {if $smarty.post}
+        {if $won eq 1}
+            <p>You killed <strong>{$smarty.post.monster}</strong>! You gained <strong>{$gold}</strong> gold.</p>
+            <p><a href='index.php?location_id=44'>go on</a></p>
+        {elseif $lost eq 1}
+            <p>You were killed by <strong>{$smarty.post.monster}</strong>.</p>
+            <p><a href='index.php?location_id=1'><strong> Game Over</strong></a></p>
+        {/if}
+        {/if}
+
         {if $location->id == 2}
+            <li><a href="index.php?location_id=1"> Log out </a></li>
             <script type="text/javascript">
                 window.alert("Fooled You Friend There is no Button");
             </script>
         {/if}
 
-    {if isset($location) }
+        {if $location->id == 1}
+            <form method="post" action="index.php?location_id=2">
+                <h1> Register to save stats</h1> <br>
+                First name:<br>
+                <input type="text" name="FirstName" id="FirstName" value=""><br>
+                Last name:<br>
+                <input type="text" name="LastName" id="LastName" value=""><br>
+                Email: <br>
+                <input type="text" name="Email" id="Email" value=""><br>
+                Password:<br>
+                <input type="text" name="Password" id="Password" onblur="verifyMinLength(this, 10)" value=""><br>
+                Username:<br>
+                <input type="text" name="Username" id="Username" value=""><br>
+                <input type="submit" name="Submit" value="Submit">
+            </form>
+        {/if}
+
+        <script type="text/javascript">
+        function verifyMinLength(o, len) {
+        if (o.value.length < len) {
+            alert('The password must be 10 characters in length.');
+            location.href = "http://localhost/Eigen%20spel/index.php?location_id=96";
+                }
+            }
+        </script>
+
+    {if isset($location)}
         <h1>{$location->Title }</h1>
         <p>{$location->Story }</p>
         {$location->Foto_url }
@@ -57,6 +111,14 @@
             {foreach $location->Inventory as $hello}
                <li> {$hello->player_id} {$hello->item_id} {$hello->space}</li>
             {/foreach}
+        </ul>
+
+        <ul>
+            <li>Attack: <strong>{$attack}</strong></li>
+            <li>Defence: <strong>{$defence}</strong></li>
+            <li>Magic: <strong>{$magic}</strong></li>
+            <li>Gold in hand: <strong>{$gold}</strong></li>
+            <li>Current HP: <strong>{$currentHP}/{$maximumHP}</strong>
         </ul>
 
         <script type="text/javascript">

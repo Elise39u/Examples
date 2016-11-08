@@ -14,6 +14,7 @@ class Location
     public $Choices = [];
     public $Inventory = [];
     public $items = [];
+    public $player = [];
 
     function LoadFromDb($mysqli, $id)
     {
@@ -70,6 +71,7 @@ class Location
         $dude->Place = $row1['Place'];
         array_push($this->items, $dude);
         }
+
         return true;
     }
 }

@@ -1,13 +1,18 @@
 <?php
 session_start();
 global $space;
+global $combat;
+global $userID;
 $space = 35;
+$_SESSION["username"] = $query = ("SELECT Username FROM player");
 require_once ('inc/loadsmarty.php');
 require_once ('inc/Location.class.php');
 require_once ('inc/DBconnection.php');
 require_once ('inc/Choice.class.php');
 require_once ('inc/Inventory.class.php');
 require_once ('inc/Items.class.php');
+include_once ('inc/Monster.php');
+include_once ('inc/playerstats.php');
 
 $location_id =  (isset($_GET['location_id']) ? $_GET['location_id'] : 1);   // kijk welke locatie wordt gevraagd
 $errors = [];       // hou fouten bij in deze array
@@ -42,6 +47,105 @@ if (isset($loc->item_id)) {
     $_SESSION["Space"] = true;
 }
 
+if ($loc->id == 97) {
+    $query = sprintf("SELECT name FROM monsters ORDER BY RAND() LIMIT 1");
+    $result = mysqli_query($mysqli, $query);
+    list($monster) = mysqli_fetch_row($result);
+    $smarty->assign('monster',$monster);
+
+    $query = sprintf("SELECT id FROM player WHERE UPPER(username) = UPPER('%s')",
+        mysqli_real_escape_string($mysqli, $_SESSION['username']));
+    $result = mysqli_query($mysqli, $query);
+    list($userID) = mysqli_fetch_row($result);
+
+    $setHP = getStat('sethp',$userID);
+    if($userID == NULL) {
+        // haven't set up the user's HP values yet - let's set those!
+        setStat('atk',$userID,25);
+        setStat('def',$userID,100);
+        setStat('mag',$userID,50);
+        setStat('curhp',$userID,100);
+        setStat('maxhp',$userID,100);
+        setStat('sethp',$userID,100);
+    }
+    $smarty->assign('currentHP',getStat('curhp',$userID));
+    $smarty->assign('maximumHP',getStat('maxhp',$userID));
+
+    if($_POST['action']) {
+        if($_POST['action'] == 'Attack') {
+            require_once 'inc/playerstats.php';			// player stats
+            require_once 'inc/Monster.php';	// monster stats
+            // to begin with, we'll retrieve our player and our monster stats
+            $query = sprintf("SELECT id FROM player WHERE UPPER(username) = UPPER('%s')",
+                mysqli_real_escape_string($mysqli, $_SESSION['username']));
+            $result = mysqli_query($mysqli, $query);
+            list($userID) = mysqli_fetch_row($result);
+            $player = array (
+                "name"		=>	$_SESSION['username'],
+                "attack" 		=>	getStat('atk',$userID),
+                "defence"		=>	getStat('def',$userID),
+                "curhp"		=>	getStat('curhp',$userID)
+            );
+            $query = sprintf("SELECT id FROM monsters WHERE name = '%s'",
+                mysqli_real_escape_string($mysqli, $_POST['monster']));
+            $result = mysqli_query($mysqli, $query);
+            list($monsterID) = mysqli_fetch_row($result);
+            $monster = array (
+                "name"		=>	$_POST['monster'],
+                "attack"		=>	getMonsterStat('atk',$monsterID),
+                "defence"		=>	getMonsterStat('def',$monsterID),
+                "curhp"		=>	getMonsterStat('maxhp',$monsterID)
+            );
+            $combat = array();
+            $turns = 0;
+            while($player['curhp'] > 0 && $monster['curhp'] > 0) {
+                if($turns % 2 != 0) {
+                    $attacker = &$monster;
+                    $defender = &$player;
+                } else {
+                    $attacker = &$player;
+                    $defender = &$monster;
+                }
+                $damage = 0;
+                if($attacker['attack'] > $defender['defence']) {
+                    $damage = $attacker['attack'] - $defender['defence'];
+                }
+                $defender['curhp'] -= $damage;
+                $combat[$turns] = array(
+                    "attacker"	=>	$attacker['name'],
+                    "defender"	=>	$defender['name'],
+                    "damage"		=>	$damage
+                );
+                $turns++;
+            }
+            setStat('curhp',$userID,$player['curhp']);
+            if($player['curhp'] > 0) {
+                // player won
+                setStat('gc',$userID,getStat('gc',$userID)+getMonsterStat('gc',$monsterID));
+                $smarty->assign('won',1);
+                $smarty->assign('gold',getMonsterStat('gc',$monsterID));
+            } else {
+                // monster won
+                $smarty->assign('lost',1);
+            }
+            $smarty->assign('combat',$combat);
+        }
+
+        else {
+            // Running away! Send them back to the main page
+            header('Location: index.php?location_id=34');
+        }
+    }
+}
+
+$smarty->assign('name', $_SESSION['username']);
+$smarty->assign('attack',getStat('atk',$userID));
+$smarty->assign('magic',getStat('mag',$userID));
+$smarty->assign('defence',getStat('def',$userID));
+$smarty->assign('gold',getStat('gc',$userID));
+$smarty->assign('currentHP',getStat('curhp',$userID));
+$smarty->assign('maximumHP',getStat('maxhp',$userID));
+$smarty->assign('combat',$combat);
 $smarty->assign('pagetitle', 'Games to play');
 $smarty->assign('errors', $errors);         // geef lege of gevulde array $errors mee
 $smarty->assign('location', $loc);          // geef locatie (en daarin de choices) mee
@@ -129,3 +233,35 @@ if ($location_id == 25 || $location_id == 29 || $location_id == 51 || $location_
     $sql = "TRUNCATE TABLE inventory";
     mysqli_query($mysqli, $sql);
 }
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $FirstName =  $_POST["FirstName"];
+    $LastName =  $_POST["LastName"];
+    $Email    = $_POST["Email"] ;
+    $Password = $_POST["Password"] ;
+    $Username = $_POST["username"] ;
+    $required = array('FirstName', 'LastName', 'Email', 'Password', 'Username');
+
+    $error = false;
+    foreach($required as $field) {
+        if (empty($_POST[$field])) {
+            $error = true;
+        }
+    }
+
+    $result2 = mysqli_query($mysqli, "SELECT * FROM player");
+    $num_rows = mysqli_num_rows($result2);
+    if ($num_rows > 0) {
+        echo "Exist alreday And you`re logged in";
+    }
+    else {
+        $sql = " INSERT INTO player (FirstName, LastName, Email, Password, Username) 
+        VALUES ('$FirstName', '$LastName', '$Email', '$Password', '$Username')";
+        if ($mysqli->query($sql) === TRUE) {
+            echo "New record created successfully";
+        } else {
+            echo "Error: " . $sql . "<br>" . $mysqli->error;
+        }
+    }
+}
+
