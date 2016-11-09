@@ -27,7 +27,7 @@ function createMonsterStatIfNotExists($statName,$monsterID) {
             mysqli_real_escape_string($conn, $statName),
             mysqli_real_escape_string($conn, $statName),
             mysqli_real_escape_string($conn, $monsterID),
-            '0');
+            '100');
         mysqli_query($conn,$query);
     }
 }

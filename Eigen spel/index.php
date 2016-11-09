@@ -4,7 +4,8 @@ global $space;
 global $combat;
 global $userID;
 $space = 35;
-$_SESSION["username"] = $query = ("SELECT Username FROM player");
+// $_SESSION['username'] = $query = ("SELECT Username FROM player WHERE id = 1");
+$userID = // Dat $userid de correct player selecteert
 require_once ('inc/loadsmarty.php');
 require_once ('inc/Location.class.php');
 require_once ('inc/DBconnection.php');
@@ -47,55 +48,110 @@ if (isset($loc->item_id)) {
     $_SESSION["Space"] = true;
 }
 
+    // $userID = 1;
+    $setHP = getStat('sethp',$userID);
+    if($setHP == 0) {
+        // haven't set up the user's HP values yet - let's set those!
+        getStat('atk',$userID);
+        getStat('def',$userID);
+        getStat('mdef',$userID);
+        getStat('curhp',$userID);
+        getStat('maxhp',$userID);
+        getStat('sethp',$userID);
+        getStat('gd', $userID);
+    }
+
 if ($loc->id == 97) {
     $query = sprintf("SELECT name FROM monsters ORDER BY RAND() LIMIT 1");
     $result = mysqli_query($mysqli, $query);
     list($monster) = mysqli_fetch_row($result);
     $smarty->assign('monster',$monster);
 
+    switch ($monster) {
+        case "Fire Margawa":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/FireMargwa.png'>";
+            break;
+        case "Shadow Margawa":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/ShadowMargwa.png'>";
+            break;
+        case "Margawa":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Margawa.png'>";
+            break;
+        case "Hard Hitting Louis":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Louis.png'>";
+            break;
+        case "Crazy Eric":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Eric.png'>";
+            break;
+        case "Walker":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Walker.png'>";
+            break;
+        case "Panzer Soldat":
+            echo "<img  class='Monster' src='http://localhost/Eigen%20spel/img/Panzer.png'>";
+            break;
+        case "Floater":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Floater.png'>";
+            break;
+        case "Goliath":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Goliath.png'>";
+            break;
+        case "Insane Baker":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Baker.png'>";
+            break;
+        case "Tank":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Tank.png'>";
+            break;
+        case "Breeder":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Breeder.png'>";
+            break;
+        case "Posion Zombie":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/PosionZombie.png'>";
+            break;
+        case "Ancestor":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Ancestor.png'>";
+            break;
+        case "Smoker":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Smoker.png' width='60%'>";
+            break;
+        case "Gang Member":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/GangMember.png'>";
+            break;
+        default:
+            echo "<span style=\"color:#129898;\">Not the correct monster is showing";
+    }
+
     $query = sprintf("SELECT id FROM player WHERE UPPER(username) = UPPER('%s')",
         mysqli_real_escape_string($mysqli, $_SESSION['username']));
     $result = mysqli_query($mysqli, $query);
     list($userID) = mysqli_fetch_row($result);
 
-    $setHP = getStat('sethp',$userID);
-    if($userID == NULL) {
-        // haven't set up the user's HP values yet - let's set those!
-        setStat('atk',$userID,25);
-        setStat('def',$userID,100);
-        setStat('mag',$userID,50);
-        setStat('curhp',$userID,100);
-        setStat('maxhp',$userID,100);
-        setStat('sethp',$userID,100);
-    }
-    $smarty->assign('currentHP',getStat('curhp',$userID));
-    $smarty->assign('maximumHP',getStat('maxhp',$userID));
-
     if($_POST['action']) {
         if($_POST['action'] == 'Attack') {
-            require_once 'inc/playerstats.php';			// player stats
-            require_once 'inc/Monster.php';	// monster stats
+            require_once 'inc/playerstats.php';       // player stats
+            require_once 'inc/Monster.php'; // monster stats
             // to begin with, we'll retrieve our player and our monster stats
             $query = sprintf("SELECT id FROM player WHERE UPPER(username) = UPPER('%s')",
                 mysqli_real_escape_string($mysqli, $_SESSION['username']));
             $result = mysqli_query($mysqli, $query);
             list($userID) = mysqli_fetch_row($result);
+            // $userID = 1;
             $player = array (
-                "name"		=>	$_SESSION['username'],
-                "attack" 		=>	getStat('atk',$userID),
-                "defence"		=>	getStat('def',$userID),
-                "curhp"		=>	getStat('curhp',$userID)
+                'name'    => $_SESSION['username'],
+                'Attack'      => getStat('atk',$userID),
+                'Defence'     => getStat('def',$userID),
+                'curhp'       => getStat('curhp',$userID)
             );
             $query = sprintf("SELECT id FROM monsters WHERE name = '%s'",
                 mysqli_real_escape_string($mysqli, $_POST['monster']));
             $result = mysqli_query($mysqli, $query);
             list($monsterID) = mysqli_fetch_row($result);
             $monster = array (
-                "name"		=>	$_POST['monster'],
-                "attack"		=>	getMonsterStat('atk',$monsterID),
-                "defence"		=>	getMonsterStat('def',$monsterID),
-                "curhp"		=>	getMonsterStat('maxhp',$monsterID)
+                'name'     => $_POST['monster'],
+                'attack'       => getMonsterStat('atk',$monsterID),
+                'defence'     => getMonsterStat('def',$monsterID),
+                'curhp'       => getMonsterStat('maxhp',$monsterID)
             );
+            var_dump($player);
             $combat = array();
             $turns = 0;
             while($player['curhp'] > 0 && $monster['curhp'] > 0) {
@@ -112,18 +168,18 @@ if ($loc->id == 97) {
                 }
                 $defender['curhp'] -= $damage;
                 $combat[$turns] = array(
-                    "attacker"	=>	$attacker['name'],
-                    "defender"	=>	$defender['name'],
-                    "damage"		=>	$damage
+                    'attacker'  => $attacker['name'],
+                    'defender'  => $defender['name'],
+                    'damage'    => $damage
                 );
                 $turns++;
             }
             setStat('curhp',$userID,$player['curhp']);
             if($player['curhp'] > 0) {
                 // player won
-                setStat('gc',$userID,getStat('gc',$userID)+getMonsterStat('gc',$monsterID));
+                setStat('gd',$userID,getStat('gd',$userID)+getMonsterStat('gd',$monsterID));
                 $smarty->assign('won',1);
-                $smarty->assign('gold',getMonsterStat('gc',$monsterID));
+                $smarty->assign('gold',getMonsterStat('gd',$monsterID));
             } else {
                 // monster won
                 $smarty->assign('lost',1);
@@ -138,11 +194,12 @@ if ($loc->id == 97) {
     }
 }
 
+// $userID = 1;
 $smarty->assign('name', $_SESSION['username']);
 $smarty->assign('attack',getStat('atk',$userID));
-$smarty->assign('magic',getStat('mag',$userID));
+$smarty->assign('magic',getStat('mdef',$userID));
 $smarty->assign('defence',getStat('def',$userID));
-$smarty->assign('gold',getStat('gc',$userID));
+$smarty->assign('gold',getStat('gd',$userID));
 $smarty->assign('currentHP',getStat('curhp',$userID));
 $smarty->assign('maximumHP',getStat('maxhp',$userID));
 $smarty->assign('combat',$combat);

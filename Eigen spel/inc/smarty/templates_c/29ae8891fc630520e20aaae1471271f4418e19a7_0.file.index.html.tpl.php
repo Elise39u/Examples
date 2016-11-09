@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-11-08 12:51:13
+/* Smarty version 3.1.29, created on 2016-11-09 15:16:32
   from "C:\wamp64\www\Eigen spel\tpl\index.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5821bc310ee557_32657887',
+  'unifunc' => 'content_58232fc07708e0_35702879',
   'file_dependency' => 
   array (
     '29ae8891fc630520e20aaae1471271f4418e19a7' => 
     array (
       0 => 'C:\\wamp64\\www\\Eigen spel\\tpl\\index.html.tpl',
-      1 => 1478605868,
+      1 => 1478700990,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5821bc310ee557_32657887 ($_smarty_tpl) {
+function content_58232fc07708e0_35702879 ($_smarty_tpl) {
 ?>
 <html>
 <head>
@@ -61,7 +61,7 @@ $_smarty_tpl->tpl_vars['error'] = $__foreach_error_0_saved_item;
     <?php }?>
 
         <?php if ($_smarty_tpl->tpl_vars['location']->value->id == 97) {?>
-        <?php if ($_smarty_tpl->tpl_vars['combat']->value == '') {?>
+            <?php if ($_smarty_tpl->tpl_vars['combat']->value == '') {?>
             <p>You've encountered a <?php echo $_smarty_tpl->tpl_vars['monster']->value;?>
 !</p>
             <form action='index.php?location_id=97' method='post'>
@@ -71,8 +71,8 @@ $_smarty_tpl->tpl_vars['error'] = $__foreach_error_0_saved_item;
 ' />
             </form>
         <?php } else { ?>
-            <ul>
-                <?php
+                <ul>
+                    <?php
 $_from = $_smarty_tpl->tpl_vars['combat']->value;
 if (!is_array($_from) && !is_object($_from)) {
 settype($_from, 'array');
@@ -86,11 +86,11 @@ foreach ($_from as $_smarty_tpl->tpl_vars['id']->value => $_smarty_tpl->tpl_vars
 $_smarty_tpl->tpl_vars['i']->_loop = true;
 $__foreach_i_1_saved_local_item = $_smarty_tpl->tpl_vars['i'];
 ?>
-                    <li><strong><?php echo $_smarty_tpl->tpl_vars['i']->value['attacker'];?>
+                        <li><strong><?php echo $_smarty_tpl->tpl_vars['i']->value['attacker'];?>
 </strong> attacks <?php echo $_smarty_tpl->tpl_vars['i']->value['defender'];?>
  for <?php echo $_smarty_tpl->tpl_vars['i']->value['damage'];?>
  damage!</li>
-                <?php
+                    <?php
 $_smarty_tpl->tpl_vars['i'] = $__foreach_i_1_saved_local_item;
 }
 if ($__foreach_i_1_saved_item) {
@@ -100,21 +100,20 @@ if ($__foreach_i_1_saved_key) {
 $_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
 }
 ?>
-            </ul>
-        <?php }?>
-        <?php }?>
-
-        <?php if ($_POST) {?>
-        <?php if ($_smarty_tpl->tpl_vars['won']->value == 1) {?>
-            <p>You killed <strong><?php echo $_POST['monster'];?>
+                </ul>
+                <?php if ($_smarty_tpl->tpl_vars['won']->value == 1) {?>
+                    <p>You killed <strong><?php echo $_POST['monster'];?>
 </strong>! You gained <strong><?php echo $_smarty_tpl->tpl_vars['gold']->value;?>
 </strong> gold.</p>
-            <p><a href='index.php?location_id=44'>go on</a></p>
-        <?php } elseif ($_smarty_tpl->tpl_vars['lost']->value == 1) {?>
-            <p>You were killed by <strong><?php echo $_POST['monster'];?>
+                    <p><a href='index.php?location_id=44'>Go on Friend</a></p>
+                    <p><a href="index.php?location_id=34">Go back to the station </a> </p>
+                <?php }?>
+                <?php if ($_smarty_tpl->tpl_vars['lost']->value == 1) {?>
+                    <p>You were killed by <strong><?php echo $_POST['monster'];?>
 </strong>.</p>
-            <p><a href='index.php?location_id=1'><strong> Game Over</strong></a></p>
-        <?php }?>
+                <?php }?>
+                <p><a href='index.php'>Game over</a></p>
+            <?php }?>
         <?php }?>
 
         <?php if ($_smarty_tpl->tpl_vars['location']->value->id == 2) {?>

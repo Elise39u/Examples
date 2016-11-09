@@ -17,7 +17,7 @@
     {/if}
 
         {if $location->id == 97}
-        {if $combat == ''}
+            {if $combat eq ''}
             <p>You've encountered a {$monster}!</p>
             <form action='index.php?location_id=97' method='post'>
                 <input type='submit' name='action' value='Attack' /> or
@@ -25,22 +25,21 @@
                 <input type='hidden' name='monster' value='{$monster}' />
             </form>
         {else}
-            <ul>
-                {foreach from=$combat key=id item=i}
-                    <li><strong>{$i.attacker}</strong> attacks {$i.defender} for {$i.damage} damage!</li>
-                {/foreach}
-            </ul>
-        {/if}
-        {/if}
-
-        {if $smarty.post}
-        {if $won eq 1}
-            <p>You killed <strong>{$smarty.post.monster}</strong>! You gained <strong>{$gold}</strong> gold.</p>
-            <p><a href='index.php?location_id=44'>go on</a></p>
-        {elseif $lost eq 1}
-            <p>You were killed by <strong>{$smarty.post.monster}</strong>.</p>
-            <p><a href='index.php?location_id=1'><strong> Game Over</strong></a></p>
-        {/if}
+                <ul>
+                    {foreach from=$combat key=id item=i}
+                        <li><strong>{$i.attacker}</strong> attacks {$i.defender} for {$i.damage} damage!</li>
+                    {/foreach}
+                </ul>
+                {if $won eq 1}
+                    <p>You killed <strong>{$smarty.post.monster}</strong>! You gained <strong>{$gold}</strong> gold.</p>
+                    <p><a href='index.php?location_id=44'>Go on Friend</a></p>
+                    <p><a href="index.php?location_id=34">Go back to the station </a> </p>
+                {/if}
+                {if $lost eq 1}
+                    <p>You were killed by <strong>{$smarty.post.monster}</strong>.</p>
+                {/if}
+                <p><a href='index.php'>Game over</a></p>
+            {/if}
         {/if}
 
         {if $location->id == 2}

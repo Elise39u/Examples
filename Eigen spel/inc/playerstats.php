@@ -17,17 +17,13 @@ function getStat($statName,$userID) {
 function setStat($statName,$userID,$value) {
     $conn = new mysqli('localhost', 'root', '', 'game');
     createIfNotExists($statName,$userID);
-    $query = sprintf("UPDATE user_stats SET content = '%s' WHERE stat_id = (SELECT id FROM stats WHERE display_name = '%s' OR short_name = '%s') AND user_id = '%s'",
+    $query = sprintf("UPDATE user_stats SET content = '50' WHERE stat_id = (SELECT id FROM stats WHERE display_name = 'curhp' OR short_name = 'curhp') AND user_id = '1'",
         mysqli_real_escape_string($conn, $value),
         mysqli_real_escape_string($conn, $statName),
         mysqli_real_escape_string($conn, $statName),
         mysqli_real_escape_string($conn, $userID));
-    var_dump($query);
-    var_dump($statName);
-    var_dump($value);
-        $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
-    var_dump($result);
-    list($value) = mysqli_fetch_row($result);
+    $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
+    list($value) = $result;
     return $value;
 }
 
@@ -44,7 +40,7 @@ function createIfNotExists($statName,$userID) {
         $query = sprintf("INSERT INTO user_stats(stat_id,user_id,content) VALUES ((SELECT id FROM stats WHERE display_name = '%s' OR short_name = '%s'),'%s','%s')",
             mysqli_real_escape_string($conn, $statName),
             mysqli_real_escape_string($conn, $statName),
-            mysqli_real_escape_string($conn, $userID), '0');
+            mysqli_real_escape_string($conn, $userID), '100');
         mysqli_query($conn, $query);
     }
     return $count;
