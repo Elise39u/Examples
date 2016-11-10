@@ -3,8 +3,8 @@
 include_once ('DBconnection.php');
 
 function getStat($statName,$userID) {
-    createIfNotExists($statName,$userID);
     $conn = new mysqli('localhost', 'root', '', 'game');;
+    createMonsterStatIfNotExists($statName,$userID);
     $query = sprintf("SELECT content FROM user_stats WHERE stat_id = (SELECT id FROM stats WHERE display_name = '%s' OR short_name = '%s') AND user_id = '%s'",
         mysqli_real_escape_string($conn, $statName),
         mysqli_real_escape_string($conn, $statName),
@@ -14,10 +14,11 @@ function getStat($statName,$userID) {
     return $value;
 }
 
+
 function setStat($statName,$userID,$value) {
     $conn = new mysqli('localhost', 'root', '', 'game');
     createIfNotExists($statName,$userID);
-    $query = sprintf("UPDATE user_stats SET content = '50' WHERE stat_id = (SELECT id FROM stats WHERE display_name = 'curhp' OR short_name = 'curhp') AND user_id = '1'",
+    $query = sprintf("UPDATE user_stats SET content = '%s' WHERE stat_id = (SELECT id FROM stats WHERE display_name = '%s' OR short_name = '%s') AND user_id = '%s'",
         mysqli_real_escape_string($conn, $value),
         mysqli_real_escape_string($conn, $statName),
         mysqli_real_escape_string($conn, $statName),

@@ -37,8 +37,8 @@
                 {/if}
                 {if $lost eq 1}
                     <p>You were killed by <strong>{$smarty.post.monster}</strong>.</p>
+                    <p><a href='index.php'>Game over</a></p>
                 {/if}
-                <p><a href='index.php'>Game over</a></p>
             {/if}
         {/if}
 
@@ -50,7 +50,7 @@
         {/if}
 
         {if $location->id == 1}
-            <form method="post" action="index.php?location_id=2">
+            <form method="post" action="index.php?location_id=1">
                 <h1> Register to save stats</h1> <br>
                 First name:<br>
                 <input type="text" name="FirstName" id="FirstName" value=""><br>
@@ -95,6 +95,8 @@
                 {/foreach}
                 {/if}
                 {if isset($choice->need_item_id)}
+                    <li class="Gone"><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a></li>
+                    {elseif $location->id == 1}
                     <li class="Gone"><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a></li>
                 {else}
                     <li><a href="index.php?location_id={$choice->to_id}">{$choice->title}</a> </li>

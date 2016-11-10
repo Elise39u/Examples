@@ -2,10 +2,10 @@
 session_start();
 global $space;
 global $combat;
-global $userID;
+// global $userID;
 $space = 35;
-// $_SESSION['username'] = $query = ("SELECT Username FROM player WHERE id = 1");
 $userID = // Dat $userid de correct player selecteert
+    // var_dump $userid cause it to crash the code --> $userid becomes after this above automaticly 1
 require_once ('inc/loadsmarty.php');
 require_once ('inc/Location.class.php');
 require_once ('inc/DBconnection.php');
@@ -48,18 +48,17 @@ if (isset($loc->item_id)) {
     $_SESSION["Space"] = true;
 }
 
-    // $userID = 1;
-    $setHP = getStat('sethp',$userID);
-    if($setHP == 0) {
-        // haven't set up the user's HP values yet - let's set those!
-        getStat('atk',$userID);
-        getStat('def',$userID);
-        getStat('mdef',$userID);
-        getStat('curhp',$userID);
-        getStat('maxhp',$userID);
-        getStat('sethp',$userID);
-        getStat('gd', $userID);
-    }
+// $userID = 1;
+$setHP = getStat('curhp',$userID);
+if($setHP <= 0) {
+    // haven't set up the user's HP values yet - let's set those!
+    setStat('curhp',$userID,100);
+    setStat('maxhp',$userID,250);
+    setStat('sethp',$userID,25);
+}
+var_dump($setHP);
+$smarty->assign('currentHP',getStat('curhp',$userID));
+$smarty->assign('maximumHP',getStat('maxhp',$userID));
 
 if ($loc->id == 97) {
     $query = sprintf("SELECT name FROM monsters ORDER BY RAND() LIMIT 1");
@@ -119,9 +118,8 @@ if ($loc->id == 97) {
         default:
             echo "<span style=\"color:#129898;\">Not the correct monster is showing";
     }
-
-    $query = sprintf("SELECT id FROM player WHERE UPPER(username) = UPPER('%s')",
-        mysqli_real_escape_string($mysqli, $_SESSION['username']));
+    $query = sprintf("SELECT id FROM player WHERE UPPER(Username) = UPPER('%s')",
+        mysqli_real_escape_string($mysqli, $_SESSION['username'][0]));
     $result = mysqli_query($mysqli, $query);
     list($userID) = mysqli_fetch_row($result);
 
@@ -130,17 +128,17 @@ if ($loc->id == 97) {
             require_once 'inc/playerstats.php';       // player stats
             require_once 'inc/Monster.php'; // monster stats
             // to begin with, we'll retrieve our player and our monster stats
-            $query = sprintf("SELECT id FROM player WHERE UPPER(username) = UPPER('%s')",
+            $query = sprintf("SELECT id FROM player WHERE UPPER(Username) = UPPER('%s')",
                 mysqli_real_escape_string($mysqli, $_SESSION['username']));
             $result = mysqli_query($mysqli, $query);
             list($userID) = mysqli_fetch_row($result);
             // $userID = 1;
             $player = array (
                 'name'    => $_SESSION['username'],
-                'Attack'      => getStat('atk',$userID),
-                'Defence'     => getStat('def',$userID),
+                'attack'      => getStat('atk',$userID),
+                'defence'     => getStat('def',$userID),
                 'curhp'       => getStat('curhp',$userID)
-            );
+            ); var_dump($player);
             $query = sprintf("SELECT id FROM monsters WHERE name = '%s'",
                 mysqli_real_escape_string($mysqli, $_POST['monster']));
             $result = mysqli_query($mysqli, $query);
@@ -151,7 +149,7 @@ if ($loc->id == 97) {
                 'defence'     => getMonsterStat('def',$monsterID),
                 'curhp'       => getMonsterStat('maxhp',$monsterID)
             );
-            var_dump($player);
+            var_dump($monster);
             $combat = array();
             $turns = 0;
             while($player['curhp'] > 0 && $monster['curhp'] > 0) {
@@ -296,7 +294,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $LastName =  $_POST["LastName"];
     $Email    = $_POST["Email"] ;
     $Password = $_POST["Password"] ;
-    $Username = $_POST["username"] ;
+    $Username = $_POST["Username"] ;
     $required = array('FirstName', 'LastName', 'Email', 'Password', 'Username');
 
     $error = false;
@@ -308,13 +306,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $result2 = mysqli_query($mysqli, "SELECT * FROM player");
     $num_rows = mysqli_num_rows($result2);
-    if ($num_rows > 0) {
-        echo "Exist alreday And you`re logged in";
+    if ($num_rows == 1) {
+        $_SESSION['authenticated'] = true;
+        $_SESSION['username'] = $Username;
+        $link_hyper = 'index.php?location_id=2';
+        echo "correct Friend"; echo "</br>";
+        echo "<a class='item' href='". $link_hyper . "'> Logged in </a>";
+    }
+    elseif ($num_rows > 0) {
+        echo "Already logged in once so";
     }
     else {
         $sql = " INSERT INTO player (FirstName, LastName, Email, Password, Username) 
         VALUES ('$FirstName', '$LastName', '$Email', '$Password', '$Username')";
         if ($mysqli->query($sql) === TRUE) {
+            $link_hyper = 'index.php?location_id=2';
+            echo "correct Friend"; echo "</br>";
+            echo "<a class='item' href='". $link_hyper . "'> Register Succesfull</a>";
             echo "New record created successfully";
         } else {
             echo "Error: " . $sql . "<br>" . $mysqli->error;
@@ -322,3 +330,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 
+/*
+			<div style="display:none">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLNc-vlTat7vjSsH5K5WQSa-U2hyl-IEWL&autoplay=1&autohide=2" frameborder="0" allowfullscreen></iframe>
+			</div>
+ */

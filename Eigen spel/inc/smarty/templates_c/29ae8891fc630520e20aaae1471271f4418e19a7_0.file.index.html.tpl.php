@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-11-09 15:16:32
+/* Smarty version 3.1.29, created on 2016-11-10 15:56:19
   from "C:\wamp64\www\Eigen spel\tpl\index.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58232fc07708e0_35702879',
+  'unifunc' => 'content_58248a93918fe0_46170042',
   'file_dependency' => 
   array (
     '29ae8891fc630520e20aaae1471271f4418e19a7' => 
     array (
       0 => 'C:\\wamp64\\www\\Eigen spel\\tpl\\index.html.tpl',
-      1 => 1478700990,
+      1 => 1478789778,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58232fc07708e0_35702879 ($_smarty_tpl) {
+function content_58248a93918fe0_46170042 ($_smarty_tpl) {
 ?>
 <html>
 <head>
@@ -111,8 +111,8 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
                 <?php if ($_smarty_tpl->tpl_vars['lost']->value == 1) {?>
                     <p>You were killed by <strong><?php echo $_POST['monster'];?>
 </strong>.</p>
+                    <p><a href='index.php'>Game over</a></p>
                 <?php }?>
-                <p><a href='index.php'>Game over</a></p>
             <?php }?>
         <?php }?>
 
@@ -126,7 +126,7 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
         <?php }?>
 
         <?php if ($_smarty_tpl->tpl_vars['location']->value->id == 1) {?>
-            <form method="post" action="index.php?location_id=2">
+            <form method="post" action="index.php?location_id=1">
                 <h1> Register to save stats</h1> <br>
                 First name:<br>
                 <input type="text" name="FirstName" id="FirstName" value=""><br>
@@ -208,6 +208,10 @@ $_smarty_tpl->tpl_vars['Hai'] = $__foreach_Hai_3_saved_item;
 ?>
                 <?php }?>
                 <?php if (isset($_smarty_tpl->tpl_vars['choice']->value->need_item_id)) {?>
+                    <li class="Gone"><a href="index.php?location_id=<?php echo $_smarty_tpl->tpl_vars['choice']->value->to_id;?>
+"><?php echo $_smarty_tpl->tpl_vars['choice']->value->title;?>
+</a></li>
+                    <?php } elseif ($_smarty_tpl->tpl_vars['location']->value->id == 1) {?>
                     <li class="Gone"><a href="index.php?location_id=<?php echo $_smarty_tpl->tpl_vars['choice']->value->to_id;?>
 "><?php echo $_smarty_tpl->tpl_vars['choice']->value->title;?>
 </a></li>
