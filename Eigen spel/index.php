@@ -12,8 +12,8 @@ require_once ('inc/DBconnection.php');
 require_once ('inc/Choice.class.php');
 require_once ('inc/Inventory.class.php');
 require_once ('inc/Items.class.php');
-include_once ('inc/Monster.php');
 include_once ('inc/playerstats.php');
+include_once ('inc/Monster.php');
 
 $location_id =  (isset($_GET['location_id']) ? $_GET['location_id'] : 1);   // kijk welke locatie wordt gevraagd
 $errors = [];       // hou fouten bij in deze array
@@ -52,11 +52,10 @@ if (isset($loc->item_id)) {
 $setHP = getStat('curhp',$userID);
 if($setHP <= 0) {
     // haven't set up the user's HP values yet - let's set those!
-    setStat('curhp',$userID,100);
-    setStat('maxhp',$userID,250);
+    setStat('curhp',$userID,175);
+    setStat('maxhp',$userID,300);
     setStat('sethp',$userID,25);
 }
-var_dump($setHP);
 $smarty->assign('currentHP',getStat('curhp',$userID));
 $smarty->assign('maximumHP',getStat('maxhp',$userID));
 
@@ -116,10 +115,10 @@ if ($loc->id == 97) {
             echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/GangMember.png'>";
             break;
         default:
-            echo "<span style=\"color:#129898;\">Not the correct monster is showing";
+            echo "<span style=\"color:#982356;\">Not the correct monster is showing";
     }
     $query = sprintf("SELECT id FROM player WHERE UPPER(Username) = UPPER('%s')",
-        mysqli_real_escape_string($mysqli, $_SESSION['username'][0]));
+        mysqli_real_escape_string($mysqli, $_SESSION['username']));
     $result = mysqli_query($mysqli, $query);
     list($userID) = mysqli_fetch_row($result);
 
@@ -128,17 +127,19 @@ if ($loc->id == 97) {
             require_once 'inc/playerstats.php';       // player stats
             require_once 'inc/Monster.php'; // monster stats
             // to begin with, we'll retrieve our player and our monster stats
-            $query = sprintf("SELECT id FROM player WHERE UPPER(Username) = UPPER('%s')",
+            $query = sprintf("SELECT id FROM player WHERE UPPER(username) = UPPER('%s')",
                 mysqli_real_escape_string($mysqli, $_SESSION['username']));
             $result = mysqli_query($mysqli, $query);
             list($userID) = mysqli_fetch_row($result);
             // $userID = 1;
             $player = array (
-                'name'    => $_SESSION['username'],
+                'name'        => $_SESSION['username'],
                 'attack'      => getStat('atk',$userID),
-                'defence'     => getStat('def',$userID),
+                'defense'     => getStat('def',$userID),
                 'curhp'       => getStat('curhp',$userID)
-            ); var_dump($player);
+            );
+            var_dump($player);
+
             $query = sprintf("SELECT id FROM monsters WHERE name = '%s'",
                 mysqli_real_escape_string($mysqli, $_POST['monster']));
             $result = mysqli_query($mysqli, $query);
@@ -146,7 +147,7 @@ if ($loc->id == 97) {
             $monster = array (
                 'name'     => $_POST['monster'],
                 'attack'       => getMonsterStat('atk',$monsterID),
-                'defence'     => getMonsterStat('def',$monsterID),
+                'defense'     => getMonsterStat('def',$monsterID),
                 'curhp'       => getMonsterStat('maxhp',$monsterID)
             );
             var_dump($monster);
@@ -161,8 +162,11 @@ if ($loc->id == 97) {
                     $defender = &$monster;
                 }
                 $damage = 0;
-                if($attacker['attack'] > $defender['defence']) {
-                    $damage = $attacker['attack'] - $defender['defence'];
+                if($attacker['attack'] > $defender['defense']) {
+                    $damage = $attacker['attack'] - $defender['defense'];
+                }
+                if($attacker['attack'] < $defender['defense']) {
+                    $damage = $attacker['attack'] = 55;
                 }
                 $defender['curhp'] -= $damage;
                 $combat[$turns] = array(
@@ -289,19 +293,20 @@ if ($location_id == 25 || $location_id == 29 || $location_id == 51 || $location_
     mysqli_query($mysqli, $sql);
 }
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+if (isset($_POST['submit'])) {
     $FirstName =  $_POST["FirstName"];
     $LastName =  $_POST["LastName"];
     $Email    = $_POST["Email"] ;
     $Password = $_POST["Password"] ;
     $Username = $_POST["Username"] ;
-    $required = array('FirstName', 'LastName', 'Email', 'Password', 'Username');
+    $required = array($FirstName, $LastName, $Email, $Password, $Username);
 
-    $error = false;
-    foreach($required as $field) {
-        if (empty($_POST[$field])) {
-            $error = true;
-        }
+    var_dump($required);
+    if (in_array('', $required)) {
+        echo "YOU MISS SOMETHING GO FIL IT IN"; echo "</br>";
+        echo '<script type="text/javascript">';
+        echo 'location.href = "http://localhost/Eigen%20spel/index.php?location_id=96";';
+        echo '</script>';
     }
 
     $result2 = mysqli_query($mysqli, "SELECT * FROM player");
@@ -320,6 +325,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $sql = " INSERT INTO player (FirstName, LastName, Email, Password, Username) 
         VALUES ('$FirstName', '$LastName', '$Email', '$Password', '$Username')";
         if ($mysqli->query($sql) === TRUE) {
+            $_SESSION['authenticated'] = true;
+            $_SESSION['username'] = $Username;
             $link_hyper = 'index.php?location_id=2';
             echo "correct Friend"; echo "</br>";
             echo "<a class='item' href='". $link_hyper . "'> Register Succesfull</a>";
@@ -329,6 +336,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     }
 }
+
 
 /*
 			<div style="display:none">

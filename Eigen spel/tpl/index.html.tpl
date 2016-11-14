@@ -18,7 +18,7 @@
 
         {if $location->id == 97}
             {if $combat eq ''}
-            <p>You've encountered a {$monster}!</p>
+            <p>You've encountered a <strong>{$monster}! </strong></p>
             <form action='index.php?location_id=97' method='post'>
                 <input type='submit' name='action' value='Attack' /> or
                 <input type='submit' name='action' value='Run Away' />
@@ -62,7 +62,7 @@
                 <input type="text" name="Password" id="Password" onblur="verifyMinLength(this, 10)" value=""><br>
                 Username:<br>
                 <input type="text" name="Username" id="Username" value=""><br>
-                <input type="submit" name="Submit" value="Submit">
+                <input type="submit" name="submit" value="Submit">
             </form>
         {/if}
 

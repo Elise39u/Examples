@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-11-10 15:56:19
+/* Smarty version 3.1.29, created on 2016-11-14 14:47:33
   from "C:\wamp64\www\Eigen spel\tpl\index.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58248a93918fe0_46170042',
+  'unifunc' => 'content_5829c0752e9747_82444772',
   'file_dependency' => 
   array (
     '29ae8891fc630520e20aaae1471271f4418e19a7' => 
     array (
       0 => 'C:\\wamp64\\www\\Eigen spel\\tpl\\index.html.tpl',
-      1 => 1478789778,
+      1 => 1479131242,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58248a93918fe0_46170042 ($_smarty_tpl) {
+function content_5829c0752e9747_82444772 ($_smarty_tpl) {
 ?>
 <html>
 <head>
@@ -62,8 +62,8 @@ $_smarty_tpl->tpl_vars['error'] = $__foreach_error_0_saved_item;
 
         <?php if ($_smarty_tpl->tpl_vars['location']->value->id == 97) {?>
             <?php if ($_smarty_tpl->tpl_vars['combat']->value == '') {?>
-            <p>You've encountered a <?php echo $_smarty_tpl->tpl_vars['monster']->value;?>
-!</p>
+            <p>You've encountered a <strong><?php echo $_smarty_tpl->tpl_vars['monster']->value;?>
+! </strong></p>
             <form action='index.php?location_id=97' method='post'>
                 <input type='submit' name='action' value='Attack' /> or
                 <input type='submit' name='action' value='Run Away' />
@@ -138,7 +138,7 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
                 <input type="text" name="Password" id="Password" onblur="verifyMinLength(this, 10)" value=""><br>
                 Username:<br>
                 <input type="text" name="Username" id="Username" value=""><br>
-                <input type="submit" name="Submit" value="Submit">
+                <input type="submit" name="submit" value="Submit">
             </form>
         <?php }?>
 
