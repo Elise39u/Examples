@@ -56,20 +56,11 @@ class Location
             array_push($this->Inventory, $item);
         }
 
-        $sql = "SELECT * FROM items";
-        $results4 = $mysqli->query($sql);
-
-        while ($row1 = $results4->fetch_assoc())  {
-        $dude = new Item();
-        $dude->id = $row1['id'];
-        $dude->Name = $row1['Name'];
-        $dude->Attack = $row1['Attack'];
-        $dude->Defense = $row1['Defense'];
-        $dude->Number = $row1['Number'];
-        $dude->Place = $row1['Place'];
-        array_push($this->items, $dude);
-        }
-
         return true;
     }
 }
+
+/*
+ * INSERT INTO item_stats(item_id,stat_id,content) VALUES ((SELECT id FROM items WHERE name = 'Sword'),(SELECT id FROM stats WHERE short_name = 'atk'),200);
+INSERT INTO item_stats(item_id,stat_id,content) VALUES ((SELECT id FROM items WHERE name = 'Sword'),(SELECT id FROM stats WHERE short_name = 'def'),50);
+ */

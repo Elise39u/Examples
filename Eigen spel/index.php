@@ -1,7 +1,7 @@
 <?php
 session_start();
-global $space;
 global $combat;
+global $space;
 // global $userID;
 $space = 35;
 $userID = // Dat $userid de correct player selecteert
@@ -11,9 +11,9 @@ require_once ('inc/Location.class.php');
 require_once ('inc/DBconnection.php');
 require_once ('inc/Choice.class.php');
 require_once ('inc/Inventory.class.php');
-require_once ('inc/Items.class.php');
 include_once ('inc/playerstats.php');
 include_once ('inc/Monster.php');
+include_once ('inc/ItemStats.php');
 
 $location_id =  (isset($_GET['location_id']) ? $_GET['location_id'] : 1);   // kijk welke locatie wordt gevraagd
 $errors = [];       // hou fouten bij in deze array
@@ -138,6 +138,9 @@ if ($loc->id == 97) {
                 'defense'     => getStat('def',$userID),
                 'curhp'       => getStat('curhp',$userID)
             );
+            $phand = getStat('phand',$userID);
+            $atk = getItemStat('atk', $userID);
+            $player['attack'] += $atk;
             var_dump($player);
 
             $query = sprintf("SELECT id FROM monsters WHERE name = '%s'",
@@ -166,7 +169,7 @@ if ($loc->id == 97) {
                     $damage = $attacker['attack'] - $defender['defense'];
                 }
                 if($attacker['attack'] < $defender['defense']) {
-                    $damage = $attacker['attack'] = 55;
+                    $damage = $attacker['attack'] = 15;
                 }
                 $defender['curhp'] -= $damage;
                 $combat[$turns] = array(
@@ -179,9 +182,19 @@ if ($loc->id == 97) {
             setStat('curhp',$userID,$player['curhp']);
             if($player['curhp'] > 0) {
                 // player won
-                setStat('gd',$userID,getStat('gd',$userID)+getMonsterStat('gd',$monsterID));
+                setStat('
+                ',$userID,getStat('gc',$userID)+getMonsterStat('gc',$monsterID));
                 $smarty->assign('won',1);
-                $smarty->assign('gold',getMonsterStat('gd',$monsterID));
+                $smarty->assign('gold',getMonsterStat('gc',$monsterID));
+                $random = rand(0, 41);
+                $item = getItem($random);
+
+                echo 'name: ' .$item['name'];
+                echo '<br />type: ' .$item['type'];
+                echo '<br />ID: ' .$item['id'];
+
+                $item['atk'] = getItemStat('atk',$item['id']);
+                echo '<br />Attack: ' . $item['atk'];
             } else {
                 // monster won
                 $smarty->assign('lost',1);
@@ -201,7 +214,7 @@ $smarty->assign('name', $_SESSION['username']);
 $smarty->assign('attack',getStat('atk',$userID));
 $smarty->assign('magic',getStat('mdef',$userID));
 $smarty->assign('defence',getStat('def',$userID));
-$smarty->assign('gold',getStat('gd',$userID));
+$smarty->assign('gold',getStat('gc',$userID));
 $smarty->assign('currentHP',getStat('curhp',$userID));
 $smarty->assign('maximumHP',getStat('maxhp',$userID));
 $smarty->assign('combat',$combat);
@@ -265,7 +278,7 @@ if(isset($loc->item_id)) {
                 }
                 $sql = "INSERT INTO Inventory(player_id, item_id, space) VALUES ('1', '$loc->item_id', '$space')";
                 if ($space <= 0) {
-                     echo "<font color=white> Because you have no space left </font>";
+                     echo "<span style=\"color: white; \"> Because you have no space left </span>";
                     die($space);
                 }
                 echo "this $space left </br>";
@@ -317,6 +330,9 @@ if (isset($_POST['submit'])) {
         $link_hyper = 'index.php?location_id=2';
         echo "correct Friend"; echo "</br>";
         echo "<a class='item' href='". $link_hyper . "'> Logged in </a>";
+        setStat('atk',$userID,'80');
+        setStat('def',$userID,'100');
+        setStat('mdef',$userID,'50');
     }
     elseif ($num_rows > 0) {
         echo "Already logged in once so";
@@ -331,6 +347,9 @@ if (isset($_POST['submit'])) {
             echo "correct Friend"; echo "</br>";
             echo "<a class='item' href='". $link_hyper . "'> Register Succesfull</a>";
             echo "New record created successfully";
+            setStat('atk',$userID,'80');
+            setStat('def',$userID,'100');
+            setStat('mdef',$userID,'50');
         } else {
             echo "Error: " . $sql . "<br>" . $mysqli->error;
         }
@@ -340,6 +359,6 @@ if (isset($_POST['submit'])) {
 
 /*
 			<div style="display:none">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLNc-vlTat7vjSsH5K5WQSa-U2hyl-IEWL&autoplay=1&autohide=2" frameborder="0" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLNc-vlTat7vjSsH5K5WQSa-U2hyl-IEWL&autoplay=1&autohide=2&start=7" frameborder="0" allowfullscreen></iframe>
 			</div>
  */
