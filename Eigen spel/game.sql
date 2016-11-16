@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Gegenereerd op: 15 nov 2016 om 15:04
+-- Gegenereerd op: 16 nov 2016 om 11:11
 -- Serverversie: 5.7.9
 -- PHP-versie: 5.6.16
 
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `choices` (
   `title` varchar(254) NOT NULL,
   `need_item_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=193 DEFAULT CHARSET=latin1 COMMENT='Choice';
+) ENGINE=MyISAM AUTO_INCREMENT=196 DEFAULT CHARSET=latin1 COMMENT='Choice';
 
 --
 -- Gegevens worden geëxporteerd voor tabel `choices`
@@ -104,8 +104,6 @@ INSERT INTO `choices` (`id`, `from_id`, `to_id`, `title`, `need_item_id`) VALUES
 (64, 31, 30, 'Walk back', NULL),
 (65, 31, 32, 'Go to the store ', NULL),
 (66, 32, 31, 'Go back', NULL),
-(67, 32, 33, 'GO inside the store', NULL),
-(68, 33, 32, 'Go outside', NULL),
 (69, 31, 34, 'GO to the big building ', NULL),
 (70, 34, 31, 'GO back', NULL),
 (71, 11, 50, 'Back room???', NULL),
@@ -144,52 +142,12 @@ INSERT INTO `choices` (`id`, `from_id`, `to_id`, `title`, `need_item_id`) VALUES
 (104, 51, 1, 'Start Over', NULL),
 (105, 52, 1, 'Start over', NULL),
 (106, 38, 36, 'GO back inside', NULL),
-(107, 33, 57, 'Crossbow', NULL),
-(108, 57, 33, 'Go back', NULL),
-(109, 33, 58, 'Dragounv', NULL),
-(110, 58, 33, 'Go back', NULL),
 (111, 58, 59, 'SVD dragounv??', NULL),
-(112, 59, 33, 'Go back??', NULL),
-(113, 33, 60, 'Drs', NULL),
-(114, 60, 33, 'Go back', NULL),
-(115, 33, 61, 'Fal', NULL),
-(116, 61, 33, 'Go back', NULL),
-(117, 33, 62, 'Five-seven', NULL),
-(118, 62, 33, 'Go back', NULL),
-(119, 33, 69, 'M4', NULL),
-(120, 69, 33, 'Go back', NULL),
-(121, 33, 70, 'M4A1-s', NULL),
-(122, 70, 33, 'Go back', NULL),
-(123, 33, 71, 'M27-law', NULL),
-(124, 71, 33, 'Go back', NULL),
 (125, 9, 72, 'Nail gun', NULL),
 (126, 72, 9, 'Go back', NULL),
-(127, 33, 73, 'P250', NULL),
-(128, 73, 33, 'Go back', NULL),
-(129, 33, 74, 'Psg1', NULL),
-(130, 74, 33, 'Go back', NULL),
-(131, 33, 75, 'SVD Psg1', NULL),
-(132, 75, 33, 'GO back', NULL),
-(133, 33, 76, 'Ranger', NULL),
-(134, 76, 33, 'Go back', NULL),
-(135, 33, 78, 'Rpg', NULL),
-(136, 78, 33, 'Go back', NULL),
-(137, 33, 79, 'Scar', NULL),
-(138, 79, 33, 'Scar', NULL),
 (139, 32, 81, 'Silencer?', NULL),
 (140, 81, 32, 'Go back', NULL),
-(141, 33, 82, 'Spas', NULL),
-(142, 82, 33, 'Go back', NULL),
-(143, 33, 83, 'Strike!!', NULL),
-(144, 83, 33, 'GO strike them ', NULL),
-(145, 33, 84, 'Tar21', NULL),
-(146, 84, 33, 'Go back', NULL),
-(147, 33, 85, 'Smgg or pistol?', NULL),
-(148, 85, 33, 'Hunt time', NULL),
-(149, 33, 86, 'Police', NULL),
-(150, 86, 33, 'Ok then', NULL),
-(151, 33, 88, 'SHOTTIEE', NULL),
-(152, 88, 33, 'Xm1014??', NULL),
+(195, 32, 33, 'Go inside the store ', NULL),
 (153, 19, 56, 'Take the car', NULL),
 (154, 19, 65, 'A jerrycan', NULL),
 (155, 56, 13, 'Go get the boat', 11),
@@ -228,7 +186,8 @@ INSERT INTO `choices` (`id`, `from_id`, `to_id`, `title`, `need_item_id`) VALUES
 (188, 37, 95, 'Usps-s', NULL),
 (189, 95, 37, 'Back', NULL),
 (190, 49, 48, 'Go back', NULL),
-(191, 96, 1, 'Fill something normal in ', NULL);
+(191, 96, 1, 'Fill something normal in ', NULL),
+(193, 180, 98, 'Go swap weapons', NULL);
 
 -- --------------------------------------------------------
 
@@ -243,7 +202,7 @@ CREATE TABLE IF NOT EXISTS `inventory` (
   `item_id` int(127) NOT NULL,
   `space` int(254) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `inventory`
@@ -251,7 +210,10 @@ CREATE TABLE IF NOT EXISTS `inventory` (
 
 INSERT INTO `inventory` (`id`, `player_id`, `item_id`, `space`) VALUES
 (1, '1', 34, 35),
-(2, '1', 1, 34);
+(2, '1', 1, 34),
+(3, '1', 11, 33),
+(4, '1', 6, 32),
+(5, '1', 7, 31);
 
 -- --------------------------------------------------------
 
@@ -264,6 +226,7 @@ CREATE TABLE IF NOT EXISTS `items` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` text,
   `type` enum('Weapon','Armor','Usable','Drop') DEFAULT NULL,
+  `price` int(11) NOT NULL DEFAULT '10',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=42 DEFAULT CHARSET=latin1;
 
@@ -271,48 +234,48 @@ CREATE TABLE IF NOT EXISTS `items` (
 -- Gegevens worden geëxporteerd voor tabel `items`
 --
 
-INSERT INTO `items` (`id`, `name`, `type`) VALUES
-(1, 'Baseballbat', 'Weapon'),
-(2, 'Sword', 'Weapon'),
-(3, 'Axe', 'Weapon'),
-(4, 'Paddle', 'Usable'),
-(5, 'Hammer', 'Weapon'),
-(6, 'Car', 'Usable'),
-(7, 'Boat', 'Usable'),
-(8, 'KeyGV', 'Usable'),
-(9, 'KeyPS', 'Usable'),
-(10, 'KeyBK', 'Usable'),
-(11, 'Jerrycan', 'Usable'),
-(12, 'Gold', 'Usable'),
-(13, 'M4', 'Weapon'),
-(14, 'Scar', 'Weapon'),
-(15, 'DRS50', 'Weapon'),
-(16, 'Spas', 'Weapon'),
-(17, 'Usp-s', 'Weapon'),
-(18, 'Silincer', 'Usable'),
-(19, 'Dragounv', 'Weapon'),
-(20, 'PSG1', 'Weapon'),
-(21, 'XM1014', 'Weapon'),
-(22, 'Ranger', 'Weapon'),
-(23, 'Striker', 'Weapon'),
-(24, 'Five-Seven', 'Weapon'),
-(25, 'Tec-9', 'Weapon'),
-(26, 'P250', 'Weapon'),
-(27, 'Tar-21', 'Weapon'),
-(28, 'Fal', 'Weapon'),
-(29, 'RPG', 'Weapon'),
-(30, 'M27-Law', 'Weapon'),
-(31, 'Javelin', 'Weapon'),
-(32, 'Crossbow', 'Weapon'),
-(33, 'SecurityCard', 'Usable'),
-(34, 'Nailgun', 'Weapon'),
-(35, 'Versterker', 'Usable'),
-(36, 'Receiver', 'Usable'),
-(37, 'Antenne', 'Usable'),
-(38, 'Flare', 'Usable'),
-(39, 'M4A1-s', 'Weapon'),
-(40, 'DragounvSVD', 'Weapon'),
-(41, 'PSG1SVD', 'Weapon');
+INSERT INTO `items` (`id`, `name`, `type`, `price`) VALUES
+(1, 'Baseballbat', 'Weapon', 50),
+(2, 'Sword', 'Weapon', 500),
+(3, 'Axe', 'Weapon', 150),
+(4, 'Paddle', 'Usable', 50),
+(5, 'Hammer', 'Weapon', 200),
+(6, 'Car', 'Usable', 50),
+(7, 'Boat', 'Usable', 50),
+(8, 'KeyGV', 'Usable', 50),
+(9, 'KeyPS', 'Usable', 50),
+(10, 'KeyBK', 'Usable', 50),
+(11, 'Jerrycan', 'Usable', 50),
+(12, 'Gold', 'Usable', 50),
+(13, 'M4', 'Weapon', 500),
+(14, 'Scar', 'Weapon', 500),
+(15, 'DRS50', 'Weapon', 750),
+(16, 'Spas', 'Weapon', 350),
+(17, 'Usp-s', 'Weapon', 150),
+(18, 'Silincer', 'Usable', 50),
+(19, 'Dragounv', 'Weapon', 750),
+(20, 'PSG1', 'Weapon', 750),
+(21, 'XM1014', 'Weapon', 350),
+(22, 'Ranger', 'Weapon', 350),
+(23, 'Striker', 'Weapon', 650),
+(24, 'Five-Seven', 'Weapon', 250),
+(25, 'Tec-9', 'Weapon', 250),
+(26, 'P250', 'Weapon', 150),
+(27, 'Tar-21', 'Weapon', 550),
+(28, 'Fal', 'Weapon', 550),
+(29, 'RPG', 'Weapon', 1250),
+(30, 'M27-Law', 'Weapon', 1250),
+(31, 'Javelin', 'Weapon', 1750),
+(32, 'Crossbow', 'Weapon', 850),
+(33, 'SecurityCard', 'Usable', 50),
+(34, 'Nailgun', 'Weapon', 100),
+(35, 'Versterker', 'Usable', 50),
+(36, 'Receiver', 'Usable', 50),
+(37, 'Antenne', 'Usable', 50),
+(38, 'Flare', 'Usable', 50),
+(39, 'M4A1-s', 'Weapon', 450),
+(40, 'DragounvSVD', 'Weapon', 950),
+(41, 'PSG1SVD', 'Weapon', 950);
 
 -- --------------------------------------------------------
 
@@ -605,7 +568,7 @@ INSERT INTO `locations` (`id`, `Title`, `Foto_url`, `Story`, `modhealth`, `modfi
 (95, 'Usps (Cache)', 'http://localhost/Eigen%20spel/img/Usps.png', 'As a quick choice by the police <br> does it means the standards for surive ', '100', NULL, 17),
 (96, 'Password to damm short', 'http://localhost/Eigen%20spel/img/password.png', 'Go back and fill a normal password in', '0', '0', NULL),
 (97, 'You''ve encountered a  monster!', 'http://localhost/Eigen%20spel/img/Monster.jpg', '\r\n		', '100', NULL, NULL),
-(98, 'You''ve encountered a  monster!', 'http://localhost/Eigen%20spel/img/Monster.jpg', '\r\n		', '100', NULL, NULL);
+(98, 'What do you want to equip', 'http://localhost/Eigen%20spel/img/Equip.png', '', '100', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -681,7 +644,7 @@ CREATE TABLE IF NOT EXISTS `monster_stats` (
   `stat_id` int(11) DEFAULT NULL,
   `content` text,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=1973 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=1975 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `monster_stats`
@@ -756,7 +719,9 @@ INSERT INTO `monster_stats` (`id`, `monster_id`, `stat_id`, `content`) VALUES
 (68, 1, 7, '100'),
 (69, 1, 5, '100'),
 (1763, 1, 9, '100'),
-(1968, 1, 11, '100');
+(1968, 1, 11, '100'),
+(1974, 1, 8, '100'),
+(1973, 1, 10, '100');
 
 -- --------------------------------------------------------
 
@@ -794,23 +759,23 @@ CREATE TABLE IF NOT EXISTS `stats` (
   `display_name` varchar(1024) NOT NULL,
   `short_name` varchar(1024) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `stats`
 --
 
 INSERT INTO `stats` (`id`, `display_name`, `short_name`) VALUES
-(1, 'Attack ', 'atk'),
+(1, 'Attack', 'atk'),
 (2, 'Defense', 'def'),
-(12, 'Item Use Token', 'token'),
+(3, 'Gold', 'gc'),
 (4, 'Maximum HP', 'maxhp'),
 (5, 'Current HP', 'curhp'),
 (6, 'Set Default HP Values', 'sethp'),
 (7, 'Magic Defence', 'mdef'),
-(9, 'Primary Hand Weapon', 'phand'),
-(10, 'Secondary Hand Weapon', 'shand'),
-(3, 'Gold', 'gc');
+(8, 'Primary Hand Weapon', 'phand'),
+(9, 'Secondery Hand Weapon', 'shand'),
+(10, 'Item Use Token', 'token');
 
 -- --------------------------------------------------------
 
@@ -840,20 +805,37 @@ CREATE TABLE IF NOT EXISTS `user_stats` (
   `stat_id` int(11) DEFAULT NULL,
   `content` text,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=493 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=510 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `user_stats`
 --
 
 INSERT INTO `user_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
-(1, 1, 5, '175'),
+(1, 1, 5, '10'),
 (2, 1, 1, '80'),
 (3, 1, 2, '100'),
-(4, 1, 3, '100'),
+(4, 1, 3, '18195'),
 (5, 1, 4, '300'),
 (6, 1, 7, '50'),
 (7, 1, 6, '25'),
+(509, 1, NULL, '100'),
+(508, 1, NULL, '100'),
+(507, 1, NULL, '100'),
+(505, 1, NULL, '100'),
+(504, 1, NULL, '100'),
+(503, 1, NULL, '100'),
+(502, 1, NULL, '100'),
+(501, 1, NULL, '100'),
+(500, 1, NULL, '100'),
+(499, 1, NULL, '100'),
+(498, 1, NULL, '100'),
+(506, 1, 8, '13'),
+(497, 1, NULL, '100'),
+(496, 1, 10, ''),
+(495, 1, 9, '29'),
+(494, 1, NULL, '100'),
+(493, 1, NULL, '100'),
 (492, 1, NULL, '100'),
 (491, 1, NULL, '100'),
 (490, 1, NULL, '100'),

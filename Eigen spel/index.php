@@ -59,6 +59,79 @@ if($setHP <= 0) {
 $smarty->assign('currentHP',getStat('curhp',$userID));
 $smarty->assign('maximumHP',getStat('maxhp',$userID));
 
+if ($loc->id == 33) {
+
+    $phand = getStat('phand',$userID);
+    $query = "SELECT DISTINCT(id), name, price FROM items WHERE type = 'Weapon' ORDER BY RAND() LIMIT 5 ;";
+    $result = mysqli_query($mysqli, $query);
+    $weapons = array();
+    while($row = mysqli_fetch_assoc($result)) {
+        array_push($weapons,$row);
+    }
+
+    $shand = getStat('shand',$userID);
+    $phand_query = sprintf("SELECT name FROM items WHERE id = %s",
+        mysqli_real_escape_string($mysqli, $phand));
+    $result = mysqli_query($mysqli, $phand_query);
+    if($result) {
+        list($phand_name) = mysqli_fetch_row($result);
+        $smarty->assign('phand',$phand_name);
+    }
+    $shand_query = sprintf("SELECT name FROM items WHERE id = %s",
+        mysqli_real_escape_string($mysqli, $shand));
+    $result = mysqli_query($mysqli, $shand_query);
+    if($result) {
+        list($shand_name) = mysqli_fetch_row($result);
+        $smarty->assign('shand',$shand_name);
+    }
+
+    if(isset($_POST['swap'])) {
+        setStat('phand',$userID,$shand);
+        setStat('shand',$userID,$phand);
+        $temp = $shand;
+        $shand = $phand;
+        $phand = $temp;
+    }
+    if (isset($_POST['sell'])) {
+        $weaponID = getStat($_POST['sell'],$userID);
+        $query = sprintf("SELECT price FROM items WHERE id = %s",mysqli_real_escape_string($mysqli, $weaponID));
+        $result = mysqli_query($mysqli, $query);
+        list($price) = mysqli_fetch_row($result);
+        $gold = getStat('gc',$userID);
+        setStat('gc',$userID,($gold + $price));
+        setStat($_POST['sell'],$userID,'');
+        $phand = getStat('phand',$userID);
+        $shand = getStat('shand',$userID);
+    }
+    if(isset($_POST['weapon-id'])) {
+        $weaponID = $_POST['weapon-id'];
+        $query = sprintf("SELECT price FROM items WHERE id = %s",mysqli_real_escape_string($mysqli, $weaponID));
+        $result = mysqli_query($mysqli, $query);
+        list($cost) = mysqli_fetch_row($result);
+        $gold = getStat('gc',$userID);
+        if($gold > $cost) {
+            // subtract gold, equip weapon, go from there.
+            if(!$phand) {
+                setStat('phand',$userID,$weaponID);
+                setStat('gc',$userID,($gold - $cost));
+                $phand = $weaponID;
+                $smarty->assign('message','You equipped the weapon in your primary hand.');
+            } else {
+                if(!$shand) {
+                    setStat('shand',$userID,$weaponID);
+                    setStat('gc',$userID,($gold - $cost));
+                    $shand = $weaponID;
+                    $smarty->assign('message','You equipped the weapon in your secondary hand.');
+                } else {
+                    $smarty->assign('error','You already have two weapons! You must sell one before equipping another one.');
+                }
+            }
+        } else {
+            $smarty->assign('error','You cannot afford that weapon!');
+        }
+    }
+}
+
 if ($loc->id == 97) {
     $query = sprintf("SELECT name FROM monsters ORDER BY RAND() LIMIT 1");
     $result = mysqli_query($mysqli, $query);
@@ -141,7 +214,6 @@ if ($loc->id == 97) {
             $phand = getStat('phand',$userID);
             $atk = getItemStat('atk', $userID);
             $player['attack'] += $atk;
-            var_dump($player);
 
             $query = sprintf("SELECT id FROM monsters WHERE name = '%s'",
                 mysqli_real_escape_string($mysqli, $_POST['monster']));
@@ -153,7 +225,6 @@ if ($loc->id == 97) {
                 'defense'     => getMonsterStat('def',$monsterID),
                 'curhp'       => getMonsterStat('maxhp',$monsterID)
             );
-            var_dump($monster);
             $combat = array();
             $turns = 0;
             while($player['curhp'] > 0 && $monster['curhp'] > 0) {
@@ -182,19 +253,9 @@ if ($loc->id == 97) {
             setStat('curhp',$userID,$player['curhp']);
             if($player['curhp'] > 0) {
                 // player won
-                setStat('
-                ',$userID,getStat('gc',$userID)+getMonsterStat('gc',$monsterID));
+                setStat('gc',$userID,getStat('gc',$userID)+getMonsterStat('gc',$monsterID));
                 $smarty->assign('won',1);
                 $smarty->assign('gold',getMonsterStat('gc',$monsterID));
-                $random = rand(0, 41);
-                $item = getItem($random);
-
-                echo 'name: ' .$item['name'];
-                echo '<br />type: ' .$item['type'];
-                echo '<br />ID: ' .$item['id'];
-
-                $item['atk'] = getItemStat('atk',$item['id']);
-                echo '<br />Attack: ' . $item['atk'];
             } else {
                 // monster won
                 $smarty->assign('lost',1);
@@ -209,6 +270,9 @@ if ($loc->id == 97) {
     }
 }
 
+$phand = getStat('phand',$userID);
+$shand = getStat('shand',$userID);
+
 // $userID = 1;
 $smarty->assign('name', $_SESSION['username']);
 $smarty->assign('attack',getStat('atk',$userID));
@@ -217,6 +281,11 @@ $smarty->assign('defence',getStat('def',$userID));
 $smarty->assign('gold',getStat('gc',$userID));
 $smarty->assign('currentHP',getStat('curhp',$userID));
 $smarty->assign('maximumHP',getStat('maxhp',$userID));
+$smarty->assign('phand',$phand);
+$smarty->assign('shand',$shand);
+if (isset($weapons)) {
+    $smarty->assign('weapons', $weapons);
+}
 $smarty->assign('combat',$combat);
 $smarty->assign('pagetitle', 'Games to play');
 $smarty->assign('errors', $errors);         // geef lege of gevulde array $errors mee
@@ -333,6 +402,7 @@ if (isset($_POST['submit'])) {
         setStat('atk',$userID,'80');
         setStat('def',$userID,'100');
         setStat('mdef',$userID,'50');
+        setStat('gc',$userID,'75');
     }
     elseif ($num_rows > 0) {
         echo "Already logged in once so";
@@ -350,6 +420,7 @@ if (isset($_POST['submit'])) {
             setStat('atk',$userID,'80');
             setStat('def',$userID,'100');
             setStat('mdef',$userID,'50');
+            setStat('gc',$userID,'150');
         } else {
             echo "Error: " . $sql . "<br>" . $mysqli->error;
         }

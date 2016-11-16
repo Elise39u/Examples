@@ -76,6 +76,55 @@
         </script>
 
     {if isset($location)}
+        {if $location->id == 33}
+        <h3>Current Equipment:</h3>
+        <p><a href='index.php?location_id=32'>Back outside</a></p>
+        <ul>
+        <li>
+        Primary Hand:
+            {if $phand ne ''}
+                {$phand}
+            <form action='index.php?location_id=33' method='post'>
+            <input type='hidden' name='sell' value='phand' />
+            <input type='submit' value='Sell' />
+            </form>
+            {else}
+            None
+            {/if}
+        </li>
+        <li>
+        Secondary Hand:
+            {if $shand ne ''}
+                {$shand}
+            <form action='index.php?location_id=33' method='post'>
+            <input type='hidden' name='sell' value='shand' />
+            <input type='submit' value='Sell' />
+            </form>
+            {else}
+            None
+            {/if}
+        </li>
+        </ul>
+
+        <p>
+        <form action='index.php?location_id=33' method='post'>
+        <input type='submit' value='Swap' name='swap' />
+        </form>
+        </p>
+
+            <p>Below are the weapons currently available for purchase.</p>
+            <ul>
+                {foreach from=$weapons key=id item=i}
+                <li>
+                    <strong>{$i.name}</strong> - <em>{$i.price} gold coins</em>
+                    <form action='index.php?location_id=33' method='post'>
+                        <input type='hidden' name='weapon-id' value='{$i.id}' />
+                        <input type='submit' value='Buy' />
+                    </form>
+                    {/foreach}
+            </ul>
+
+        {/if}
         <h1>{$location->Title }</h1>
         <p>{$location->Story }</p>
         {$location->Foto_url }
