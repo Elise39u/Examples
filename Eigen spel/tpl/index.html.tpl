@@ -82,6 +82,7 @@
         <ul>
         <li>
         Primary Hand:
+            {if isset($phand)}
             {if $phand ne ''}
                 {$phand}
             <form action='index.php?location_id=33' method='post'>
@@ -91,9 +92,11 @@
             {else}
             None
             {/if}
+            {/if}
         </li>
         <li>
         Secondary Hand:
+            {if isset($shand)}
             {if $shand ne ''}
                 {$shand}
             <form action='index.php?location_id=33' method='post'>
@@ -102,6 +105,7 @@
             </form>
             {else}
             None
+            {/if}
             {/if}
         </li>
         </ul>
@@ -124,6 +128,37 @@
                     {/foreach}
             </ul>
 
+            {if isset($error)}
+            {if $error ne ''}
+                <p style='color:red'>{$error}</p>
+            {/if}
+            {/if}
+            {if isset($message)}
+            {if $message ne ''}
+                <p style='color:green'>{$message}</p>
+            {/if}
+                {/if}
+
+        {/if}
+
+        {if $location->id == 98}
+            <p>Welcome to the bank </p>   <p> You currently have <strong>{$inbank}</strong> gold in the bank, and <strong>{$gold}</strong> gold in hand.</p>
+            <form action='index.php?location_id=98' method='post'>
+                <input type='text' name='amount' /><br />
+                <input type='submit' name='action' value='Deposit' /> or
+                <input type='submit' name='action' value='Withdraw' /> 	</form>
+            <p><a href='index.php?location_id=46'>Back to the hall</a></p>
+
+            {if isset($deposited)}
+            {if $deposited ne 0}
+                <p>You deposited <strong>{$deposited}</strong> gold into your bank account. Your total in the bank is now <strong>{$inbank}</strong>.</p>
+            {/if}
+            {/if}
+            {if isset($withdrawn)}
+            {if $withdrawn ne 0}
+                <p>You withdraw <strong>{$withdrawn}</strong> gold from your bank account. Your total gold in hand is now <strong>{$gold}</strong>.</p>
+            {/if}
+           {/if}
         {/if}
         <h1>{$location->Title }</h1>
         <p>{$location->Story }</p>
@@ -169,6 +204,7 @@
             <li>Magic: <strong>{$magic}</strong></li>
             <li>Gold in hand: <strong>{$gold}</strong></li>
             <li>Current HP: <strong>{$currentHP}/{$maximumHP}</strong>
+            <li>Gold Inbank: <strong>{$inbank}</strong></li>
         </ul>
 
         <script type="text/javascript">

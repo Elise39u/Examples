@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-11-16 11:58:57
+/* Smarty version 3.1.29, created on 2016-11-16 15:48:12
   from "C:\wamp64\www\Eigen spel\tpl\index.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_582c3bf124f700_75799838',
+  'unifunc' => 'content_582c71acb652b7_91683667',
   'file_dependency' => 
   array (
     '29ae8891fc630520e20aaae1471271f4418e19a7' => 
     array (
       0 => 'C:\\wamp64\\www\\Eigen spel\\tpl\\index.html.tpl',
-      1 => 1479293934,
+      1 => 1479307689,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_582c3bf124f700_75799838 ($_smarty_tpl) {
+function content_582c71acb652b7_91683667 ($_smarty_tpl) {
 ?>
 <html>
 <head>
@@ -160,6 +160,7 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
         <ul>
         <li>
         Primary Hand:
+            <?php if (isset($_smarty_tpl->tpl_vars['phand']->value)) {?>
             <?php if ($_smarty_tpl->tpl_vars['phand']->value != '') {?>
                 <?php echo $_smarty_tpl->tpl_vars['phand']->value;?>
 
@@ -170,9 +171,11 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
             <?php } else { ?>
             None
             <?php }?>
+            <?php }?>
         </li>
         <li>
         Secondary Hand:
+            <?php if (isset($_smarty_tpl->tpl_vars['shand']->value)) {?>
             <?php if ($_smarty_tpl->tpl_vars['shand']->value != '') {?>
                 <?php echo $_smarty_tpl->tpl_vars['shand']->value;?>
 
@@ -182,6 +185,7 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
             </form>
             <?php } else { ?>
             None
+            <?php }?>
             <?php }?>
         </li>
         </ul>
@@ -229,6 +233,45 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_2_saved_key;
 ?>
             </ul>
 
+            <?php if (isset($_smarty_tpl->tpl_vars['error']->value)) {?>
+            <?php if ($_smarty_tpl->tpl_vars['error']->value != '') {?>
+                <p style='color:red'><?php echo $_smarty_tpl->tpl_vars['error']->value;?>
+</p>
+            <?php }?>
+            <?php }?>
+            <?php if (isset($_smarty_tpl->tpl_vars['message']->value)) {?>
+            <?php if ($_smarty_tpl->tpl_vars['message']->value != '') {?>
+                <p style='color:green'><?php echo $_smarty_tpl->tpl_vars['message']->value;?>
+</p>
+            <?php }?>
+                <?php }?>
+
+        <?php }?>
+
+        <?php if ($_smarty_tpl->tpl_vars['location']->value->id == 98) {?>
+            <p>Welcome to the bank </p>   <p> You currently have <strong><?php echo $_smarty_tpl->tpl_vars['inbank']->value;?>
+</strong> gold in the bank, and <strong><?php echo $_smarty_tpl->tpl_vars['gold']->value;?>
+</strong> gold in hand.</p>
+            <form action='index.php?location_id=98' method='post'>
+                <input type='text' name='amount' /><br />
+                <input type='submit' name='action' value='Deposit' /> or
+                <input type='submit' name='action' value='Withdraw' /> 	</form>
+            <p><a href='index.php?location_id=46'>Back to the hall</a></p>
+
+            <?php if (isset($_smarty_tpl->tpl_vars['deposited']->value)) {?>
+            <?php if ($_smarty_tpl->tpl_vars['deposited']->value != 0) {?>
+                <p>You deposited <strong><?php echo $_smarty_tpl->tpl_vars['deposited']->value;?>
+</strong> gold into your bank account. Your total in the bank is now <strong><?php echo $_smarty_tpl->tpl_vars['inbank']->value;?>
+</strong>.</p>
+            <?php }?>
+            <?php }?>
+            <?php if (isset($_smarty_tpl->tpl_vars['withdrawn']->value)) {?>
+            <?php if ($_smarty_tpl->tpl_vars['withdrawn']->value != 0) {?>
+                <p>You withdraw <strong><?php echo $_smarty_tpl->tpl_vars['withdrawn']->value;?>
+</strong> gold from your bank account. Your total gold in hand is now <strong><?php echo $_smarty_tpl->tpl_vars['gold']->value;?>
+</strong>.</p>
+            <?php }?>
+           <?php }?>
         <?php }?>
         <h1><?php echo $_smarty_tpl->tpl_vars['location']->value->Title;?>
 </h1>
@@ -349,6 +392,8 @@ $_smarty_tpl->tpl_vars['hello'] = $__foreach_hello_5_saved_item;
             <li>Current HP: <strong><?php echo $_smarty_tpl->tpl_vars['currentHP']->value;?>
 /<?php echo $_smarty_tpl->tpl_vars['maximumHP']->value;?>
 </strong>
+            <li>Gold Inbank: <strong><?php echo $_smarty_tpl->tpl_vars['inbank']->value;?>
+</strong></li>
         </ul>
 
         <?php echo '<script'; ?>

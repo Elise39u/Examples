@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Gegenereerd op: 16 nov 2016 om 11:11
+-- Gegenereerd op: 16 nov 2016 om 15:33
 -- Serverversie: 5.7.9
 -- PHP-versie: 5.6.16
 
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `choices` (
   `title` varchar(254) NOT NULL,
   `need_item_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=196 DEFAULT CHARSET=latin1 COMMENT='Choice';
+) ENGINE=MyISAM AUTO_INCREMENT=197 DEFAULT CHARSET=latin1 COMMENT='Choice';
 
 --
 -- Gegevens worden geëxporteerd voor tabel `choices`
@@ -147,6 +147,7 @@ INSERT INTO `choices` (`id`, `from_id`, `to_id`, `title`, `need_item_id`) VALUES
 (126, 72, 9, 'Go back', NULL),
 (139, 32, 81, 'Silencer?', NULL),
 (140, 81, 32, 'Go back', NULL),
+(196, 46, 98, 'The counter', NULL),
 (195, 32, 33, 'Go inside the store ', NULL),
 (153, 19, 56, 'Take the car', NULL),
 (154, 19, 65, 'A jerrycan', NULL),
@@ -202,7 +203,7 @@ CREATE TABLE IF NOT EXISTS `inventory` (
   `item_id` int(127) NOT NULL,
   `space` int(254) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `inventory`
@@ -213,7 +214,10 @@ INSERT INTO `inventory` (`id`, `player_id`, `item_id`, `space`) VALUES
 (2, '1', 1, 34),
 (3, '1', 11, 33),
 (4, '1', 6, 32),
-(5, '1', 7, 31);
+(5, '1', 7, 31),
+(6, '1', 36, 30),
+(7, '1', 35, 29),
+(8, '1', 18, 28);
 
 -- --------------------------------------------------------
 
@@ -225,10 +229,10 @@ DROP TABLE IF EXISTS `items`;
 CREATE TABLE IF NOT EXISTS `items` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` text,
-  `type` enum('Weapon','Armor','Usable','Drop') DEFAULT NULL,
+  `type` enum('Weapon','Armor','Usable','Drop','Potion') DEFAULT NULL,
   `price` int(11) NOT NULL DEFAULT '10',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=42 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=57 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `items`
@@ -275,7 +279,22 @@ INSERT INTO `items` (`id`, `name`, `type`, `price`) VALUES
 (38, 'Flare', 'Usable', 50),
 (39, 'M4A1-s', 'Weapon', 450),
 (40, 'DragounvSVD', 'Weapon', 950),
-(41, 'PSG1SVD', 'Weapon', 950);
+(41, 'PSG1SVD', 'Weapon', 950),
+(42, 'Light Red Potion', 'Potion', 550),
+(43, 'Dark Red Potion ', 'Potion', 450),
+(44, 'Light Purple Potion ', 'Potion', 850),
+(45, 'Purple Potion', 'Potion', 1500),
+(46, 'Dark Purple Potion', 'Potion', 650),
+(47, 'Light Cyan Potion', 'Potion', 780),
+(48, 'Dark Cyan Potion', 'Potion', 390),
+(49, 'Light Orange Potion', 'Potion', 680),
+(50, 'Dark Orange Potion', 'Potion', 340),
+(51, 'Light Yellow Potion', 'Potion', 220),
+(52, 'Dark Yellow Potion', 'Potion', 110),
+(53, 'Light Green Potion', 'Potion', 45),
+(54, 'Green Potion', 'Potion', 120),
+(55, 'Dark Green Potion', 'Potion', 980),
+(56, 'Rainbow Potion', 'Potion', 25000);
 
 -- --------------------------------------------------------
 
@@ -568,7 +587,7 @@ INSERT INTO `locations` (`id`, `Title`, `Foto_url`, `Story`, `modhealth`, `modfi
 (95, 'Usps (Cache)', 'http://localhost/Eigen%20spel/img/Usps.png', 'As a quick choice by the police <br> does it means the standards for surive ', '100', NULL, 17),
 (96, 'Password to damm short', 'http://localhost/Eigen%20spel/img/password.png', 'Go back and fill a normal password in', '0', '0', NULL),
 (97, 'You''ve encountered a  monster!', 'http://localhost/Eigen%20spel/img/Monster.jpg', '\r\n		', '100', NULL, NULL),
-(98, 'What do you want to equip', 'http://localhost/Eigen%20spel/img/Equip.png', '', '100', NULL, NULL);
+(98, 'Depoist or WithDraw?', 'http://localhost/Eigen%20spel/img/Bank2.png', '', '100', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -759,7 +778,7 @@ CREATE TABLE IF NOT EXISTS `stats` (
   `display_name` varchar(1024) NOT NULL,
   `short_name` varchar(1024) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `stats`
@@ -775,7 +794,8 @@ INSERT INTO `stats` (`id`, `display_name`, `short_name`) VALUES
 (7, 'Magic Defence', 'mdef'),
 (8, 'Primary Hand Weapon', 'phand'),
 (9, 'Secondery Hand Weapon', 'shand'),
-(10, 'Item Use Token', 'token');
+(10, 'Item Use Token', 'token'),
+(11, 'Gold In Bank', 'bankgc');
 
 -- --------------------------------------------------------
 
@@ -805,69 +825,24 @@ CREATE TABLE IF NOT EXISTS `user_stats` (
   `stat_id` int(11) DEFAULT NULL,
   `content` text,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=510 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=511 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `user_stats`
 --
 
 INSERT INTO `user_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
-(1, 1, 5, '10'),
+(1, 1, 5, '25'),
 (2, 1, 1, '80'),
 (3, 1, 2, '100'),
-(4, 1, 3, '18195'),
+(4, 1, 3, '134550'),
 (5, 1, 4, '300'),
 (6, 1, 7, '50'),
 (7, 1, 6, '25'),
-(509, 1, NULL, '100'),
-(508, 1, NULL, '100'),
-(507, 1, NULL, '100'),
-(505, 1, NULL, '100'),
-(504, 1, NULL, '100'),
-(503, 1, NULL, '100'),
-(502, 1, NULL, '100'),
-(501, 1, NULL, '100'),
-(500, 1, NULL, '100'),
-(499, 1, NULL, '100'),
-(498, 1, NULL, '100'),
 (506, 1, 8, '13'),
-(497, 1, NULL, '100'),
 (496, 1, 10, ''),
-(495, 1, 9, '29'),
-(494, 1, NULL, '100'),
-(493, 1, NULL, '100'),
-(492, 1, NULL, '100'),
-(491, 1, NULL, '100'),
-(490, 1, NULL, '100'),
-(489, 1, NULL, '100'),
-(488, 1, NULL, '100'),
-(487, 1, NULL, '100'),
-(486, 1, NULL, '100'),
-(485, 1, NULL, '100'),
-(484, 1, NULL, '100'),
-(483, 1, NULL, '100'),
-(482, 1, NULL, '100'),
-(481, 1, NULL, '100'),
-(480, 1, NULL, '100'),
-(479, 1, NULL, '100'),
-(478, 1, NULL, '100'),
-(477, 1, NULL, '100'),
-(476, 1, NULL, '100'),
-(475, 1, NULL, '100'),
-(474, 1, NULL, '100'),
-(473, 1, NULL, '100'),
-(472, 1, NULL, '100'),
-(471, 1, NULL, '100'),
-(470, 1, NULL, '100'),
-(469, 1, NULL, '100'),
-(468, 1, NULL, '100'),
-(467, 1, NULL, '100'),
-(466, 1, NULL, '100'),
-(465, 1, NULL, '100'),
-(464, 1, NULL, '100'),
-(463, 1, NULL, '100'),
-(462, 1, NULL, '100'),
-(461, 1, NULL, '100');
+(495, 1, 9, '21'),
+(510, 1, 11, '21615');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

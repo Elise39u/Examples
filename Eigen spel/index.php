@@ -14,6 +14,7 @@ require_once ('inc/Inventory.class.php');
 include_once ('inc/playerstats.php');
 include_once ('inc/Monster.php');
 include_once ('inc/ItemStats.php');
+include_once ('inc/WeaponStat.php');
 
 $location_id =  (isset($_GET['location_id']) ? $_GET['location_id'] : 1);   // kijk welke locatie wordt gevraagd
 $errors = [];       // hou fouten bij in deze array
@@ -97,6 +98,7 @@ if ($loc->id == 33) {
         $query = sprintf("SELECT price FROM items WHERE id = %s",mysqli_real_escape_string($mysqli, $weaponID));
         $result = mysqli_query($mysqli, $query);
         list($price) = mysqli_fetch_row($result);
+
         $gold = getStat('gc',$userID);
         setStat('gc',$userID,($gold + $price));
         setStat($_POST['sell'],$userID,'');
@@ -195,7 +197,7 @@ if ($loc->id == 97) {
     $result = mysqli_query($mysqli, $query);
     list($userID) = mysqli_fetch_row($result);
 
-    if($_POST['action']) {
+    if(isset($_POST['action'])) {
         if($_POST['action'] == 'Attack') {
             require_once 'inc/playerstats.php';       // player stats
             require_once 'inc/Monster.php'; // monster stats
@@ -212,8 +214,10 @@ if ($loc->id == 97) {
                 'curhp'       => getStat('curhp',$userID)
             );
             $phand = getStat('phand',$userID);
-            $atk = getItemStat('atk', $userID);
+            $atk = getWeaponStat('atk', $userID);
             $player['attack'] += $atk;
+            var_dump($atk);
+            var_dump($player);
 
             $query = sprintf("SELECT id FROM monsters WHERE name = '%s'",
                 mysqli_real_escape_string($mysqli, $_POST['monster']));
@@ -270,8 +274,31 @@ if ($loc->id == 97) {
     }
 }
 
-$phand = getStat('phand',$userID);
-$shand = getStat('shand',$userID);
+if ($loc->id == 98 ) {
+
+    $gold = getStat('gc',$userID);
+    if(isset($_POST['amount'])) {
+        $amount = $_POST['amount'];
+        if($_POST['action'] == 'Deposit') {
+            if($amount > $gold || $amount == '') {
+                // the user input something weird - assume the maximum
+                $amount = $gold;
+            }
+            setStat('gc',$userID,getStat('gc',$userID) - $amount);
+            setStat('bankgc',$userID,getStat('bankgc',$userID)+$amount);
+            $smarty->assign('deposited',$amount);
+        } else {
+            $bankGold = getStat('bankgc',$userID);
+            if($amount > $bankGold || $amount == '') {
+                // the user input something weird again - again, assume the maximum
+                $amount = $bankGold;
+            }
+            setStat('gc',$userID,getStat('gc',$userID) + $amount);
+            setStat('bankgc',$userID,getStat('bankgc',$userID)-$amount);
+            $smarty->assign('withdrawn',$amount);
+        }
+    }
+}
 
 // $userID = 1;
 $smarty->assign('name', $_SESSION['username']);
@@ -279,10 +306,15 @@ $smarty->assign('attack',getStat('atk',$userID));
 $smarty->assign('magic',getStat('mdef',$userID));
 $smarty->assign('defence',getStat('def',$userID));
 $smarty->assign('gold',getStat('gc',$userID));
+$smarty->assign('inbank',getStat('bankgc',$userID));
 $smarty->assign('currentHP',getStat('curhp',$userID));
 $smarty->assign('maximumHP',getStat('maxhp',$userID));
-$smarty->assign('phand',$phand);
-$smarty->assign('shand',$shand);
+if (isset($phand_name)) {
+    $smarty->assign('phand', $phand_name);
+}
+if (isset($shand_name)) {
+    $smarty->assign('shand', $shand_name);
+}
 if (isset($weapons)) {
     $smarty->assign('weapons', $weapons);
 }
@@ -394,37 +426,23 @@ if (isset($_POST['submit'])) {
     $result2 = mysqli_query($mysqli, "SELECT * FROM player");
     $num_rows = mysqli_num_rows($result2);
     if ($num_rows == 1) {
+        $sql = " INSERT INTO player (FirstName, LastName, Email, Password, Username) 
+        VALUES ('$FirstName', '$LastName', '$Email', '$Password', '$Username')";
         $_SESSION['authenticated'] = true;
         $_SESSION['username'] = $Username;
         $link_hyper = 'index.php?location_id=2';
         echo "correct Friend"; echo "</br>";
-        echo "<a class='item' href='". $link_hyper . "'> Logged in </a>";
+        echo "<a class='item' href='". $link_hyper . "'> Logged in  </a>"; echo "</br>";
+        echo "Or registerd sucessfull";
         setStat('atk',$userID,'80');
         setStat('def',$userID,'100');
         setStat('mdef',$userID,'50');
         setStat('gc',$userID,'75');
-    }
-    elseif ($num_rows > 0) {
-        echo "Already logged in once so";
+        setStat('bankgc',$userID,'5000');
     }
     else {
-        $sql = " INSERT INTO player (FirstName, LastName, Email, Password, Username) 
-        VALUES ('$FirstName', '$LastName', '$Email', '$Password', '$Username')";
-        if ($mysqli->query($sql) === TRUE) {
-            $_SESSION['authenticated'] = true;
-            $_SESSION['username'] = $Username;
-            $link_hyper = 'index.php?location_id=2';
-            echo "correct Friend"; echo "</br>";
-            echo "<a class='item' href='". $link_hyper . "'> Register Succesfull</a>";
-            echo "New record created successfully";
-            setStat('atk',$userID,'80');
-            setStat('def',$userID,'100');
-            setStat('mdef',$userID,'50');
-            setStat('gc',$userID,'150');
-        } else {
             echo "Error: " . $sql . "<br>" . $mysqli->error;
         }
-    }
 }
 
 
