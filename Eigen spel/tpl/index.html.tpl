@@ -30,14 +30,18 @@
                         <li><strong>{$i.attacker}</strong> attacks {$i.defender} for {$i.damage} damage!</li>
                     {/foreach}
                 </ul>
+                {if isset($won)}
                 {if $won eq 1}
                     <p>You killed <strong>{$smarty.post.monster}</strong>! You gained <strong>{$gold}</strong> gold.</p>
                     <p><a href='index.php?location_id=44'>Go on Friend</a></p>
                     <p><a href="index.php?location_id=34">Go back to the station </a> </p>
                 {/if}
+                {/if}
+                {if isset($lost)}
                 {if $lost eq 1}
                     <p>You were killed by <strong>{$smarty.post.monster}</strong>.</p>
                     <p><a href='index.php'>Game over</a></p>
+                {/if}
                 {/if}
             {/if}
         {/if}

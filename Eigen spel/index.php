@@ -214,10 +214,8 @@ if ($loc->id == 97) {
                 'curhp'       => getStat('curhp',$userID)
             );
             $phand = getStat('phand',$userID);
-            $atk = getWeaponStat('atk', $userID);
+            $atk = getWeaponStat('atk', $phand);
             $player['attack'] += $atk;
-            var_dump($atk);
-            var_dump($player);
 
             $query = sprintf("SELECT id FROM monsters WHERE name = '%s'",
                 mysqli_real_escape_string($mysqli, $_POST['monster']));
@@ -301,7 +299,9 @@ if ($loc->id == 98 ) {
 }
 
 // $userID = 1;
-$smarty->assign('name', $_SESSION['username']);
+if (isset($_SESSION['username'])) {
+    $smarty->assign('name', $_SESSION['username']);
+}
 $smarty->assign('attack',getStat('atk',$userID));
 $smarty->assign('magic',getStat('mdef',$userID));
 $smarty->assign('defence',getStat('def',$userID));
@@ -415,7 +415,6 @@ if (isset($_POST['submit'])) {
     $Username = $_POST["Username"] ;
     $required = array($FirstName, $LastName, $Email, $Password, $Username);
 
-    var_dump($required);
     if (in_array('', $required)) {
         echo "YOU MISS SOMETHING GO FIL IT IN"; echo "</br>";
         echo '<script type="text/javascript">';

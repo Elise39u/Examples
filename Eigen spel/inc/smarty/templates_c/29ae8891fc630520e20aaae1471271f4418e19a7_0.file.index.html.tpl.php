@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-11-16 15:48:12
+/* Smarty version 3.1.29, created on 2016-11-17 08:31:19
   from "C:\wamp64\www\Eigen spel\tpl\index.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_582c71acb652b7_91683667',
+  'unifunc' => 'content_582d5cc754a909_97178642',
   'file_dependency' => 
   array (
     '29ae8891fc630520e20aaae1471271f4418e19a7' => 
     array (
       0 => 'C:\\wamp64\\www\\Eigen spel\\tpl\\index.html.tpl',
-      1 => 1479307689,
+      1 => 1479367875,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_582c71acb652b7_91683667 ($_smarty_tpl) {
+function content_582d5cc754a909_97178642 ($_smarty_tpl) {
 ?>
 <html>
 <head>
@@ -101,6 +101,7 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
 }
 ?>
                 </ul>
+                <?php if (isset($_smarty_tpl->tpl_vars['won']->value)) {?>
                 <?php if ($_smarty_tpl->tpl_vars['won']->value == 1) {?>
                     <p>You killed <strong><?php echo $_POST['monster'];?>
 </strong>! You gained <strong><?php echo $_smarty_tpl->tpl_vars['gold']->value;?>
@@ -108,10 +109,13 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
                     <p><a href='index.php?location_id=44'>Go on Friend</a></p>
                     <p><a href="index.php?location_id=34">Go back to the station </a> </p>
                 <?php }?>
+                <?php }?>
+                <?php if (isset($_smarty_tpl->tpl_vars['lost']->value)) {?>
                 <?php if ($_smarty_tpl->tpl_vars['lost']->value == 1) {?>
                     <p>You were killed by <strong><?php echo $_POST['monster'];?>
 </strong>.</p>
                     <p><a href='index.php'>Game over</a></p>
+                <?php }?>
                 <?php }?>
             <?php }?>
         <?php }?>
