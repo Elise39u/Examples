@@ -27,6 +27,8 @@ function setItemStat($statName,$itemID,$value) {
         mysqli_real_escape_string($conn, $statName),
         mysqli_real_escape_string($conn, $itemID));
     $result = mysqli_query($conn, $query);
+    list($value) = mysqli_fetch_row($result);
+    return $value;
 }
 
 function createIfNotExistsItem($statName,$itemID) {

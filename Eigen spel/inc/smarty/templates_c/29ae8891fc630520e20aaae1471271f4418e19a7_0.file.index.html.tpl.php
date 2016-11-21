@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-11-17 08:31:19
+/* Smarty version 3.1.29, created on 2016-11-21 14:49:14
   from "C:\wamp64\www\Eigen spel\tpl\index.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_582d5cc754a909_97178642',
+  'unifunc' => 'content_5832fb5a5597f8_61234580',
   'file_dependency' => 
   array (
     '29ae8891fc630520e20aaae1471271f4418e19a7' => 
     array (
       0 => 'C:\\wamp64\\www\\Eigen spel\\tpl\\index.html.tpl',
-      1 => 1479367875,
+      1 => 1479736150,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_582d5cc754a909_97178642 ($_smarty_tpl) {
+function content_5832fb5a5597f8_61234580 ($_smarty_tpl) {
 ?>
 <html>
 <head>
@@ -120,6 +120,136 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
             <?php }?>
         <?php }?>
 
+        <?php if ($_smarty_tpl->tpl_vars['location']->value->id == 100) {?>
+            <?php if ($_smarty_tpl->tpl_vars['combat']->value == '') {?>
+                <p>You've encountered a <strong><?php echo $_smarty_tpl->tpl_vars['monster']->value;?>
+! </strong></p>
+                <form action='index.php?location_id=100' method='post'>
+                    <input type='submit' name='action' value='Attack' /> or
+                    <input type='submit' name='action' value='Run Away' />
+                    <input type='hidden' name='monster' value='<?php echo $_smarty_tpl->tpl_vars['monster']->value;?>
+' />
+                </form>
+            <?php } else { ?>
+                <ul>
+                    <?php
+$_from = $_smarty_tpl->tpl_vars['combat']->value;
+if (!is_array($_from) && !is_object($_from)) {
+settype($_from, 'array');
+}
+$__foreach_i_2_saved_item = isset($_smarty_tpl->tpl_vars['i']) ? $_smarty_tpl->tpl_vars['i'] : false;
+$__foreach_i_2_saved_key = isset($_smarty_tpl->tpl_vars['id']) ? $_smarty_tpl->tpl_vars['id'] : false;
+$_smarty_tpl->tpl_vars['i'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['id'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['i']->_loop = false;
+foreach ($_from as $_smarty_tpl->tpl_vars['id']->value => $_smarty_tpl->tpl_vars['i']->value) {
+$_smarty_tpl->tpl_vars['i']->_loop = true;
+$__foreach_i_2_saved_local_item = $_smarty_tpl->tpl_vars['i'];
+?>
+                        <li><strong><?php echo $_smarty_tpl->tpl_vars['i']->value['attacker'];?>
+</strong> attacks <?php echo $_smarty_tpl->tpl_vars['i']->value['defender'];?>
+ for <?php echo $_smarty_tpl->tpl_vars['i']->value['damage'];?>
+ damage!</li>
+                    <?php
+$_smarty_tpl->tpl_vars['i'] = $__foreach_i_2_saved_local_item;
+}
+if ($__foreach_i_2_saved_item) {
+$_smarty_tpl->tpl_vars['i'] = $__foreach_i_2_saved_item;
+}
+if ($__foreach_i_2_saved_key) {
+$_smarty_tpl->tpl_vars['id'] = $__foreach_i_2_saved_key;
+}
+?>
+                </ul>
+                <?php if (isset($_smarty_tpl->tpl_vars['won']->value)) {?>
+                    <?php if ($_smarty_tpl->tpl_vars['won']->value == 1) {?>
+                        <p>You killed <strong><?php echo $_POST['monster'];?>
+</strong>! You gained <strong><?php echo $_smarty_tpl->tpl_vars['gold']->value;?>
+</strong> gold.</p>
+                        <p><a href='index.php?location_id=13'>Go to the lake</a></p>
+                        <p><a href="index.php?location_id=12">Go back on the street </a> </p>
+                    <?php }?>
+                <?php }?>
+                <?php if (isset($_smarty_tpl->tpl_vars['lost']->value)) {?>
+                    <?php if ($_smarty_tpl->tpl_vars['lost']->value == 1) {?>
+                        <p>You were killed by <strong><?php echo $_POST['monster'];?>
+</strong>.</p>
+                        <p><a href='index.php'>Game over</a></p>
+                    <?php }?>
+                <?php }?>
+            <?php }?>
+        <?php }?>
+
+        <?php if ($_smarty_tpl->tpl_vars['location']->value->id == 99) {?>
+            <p>Welcome to the healer. You currently have <strong><?php echo $_smarty_tpl->tpl_vars['curhp']->value;?>
+</strong> HP out of a maximum of <strong><?php echo $_smarty_tpl->tpl_vars['maxhp']->value;?>
+</strong>.</p>
+            <p>You have <strong><?php echo $_smarty_tpl->tpl_vars['gold']->value;?>
+</strong> gold to heal yourself with, and it will cost you <strong>1 gold per HP healed</strong> to heal yourself.</p>
+            <?php if (isset($_smarty_tpl->tpl_vars['healed']->value)) {?>
+            <?php if ($_smarty_tpl->tpl_vars['healed']->value != 0) {?>
+                <p>You have been healed for <strong><?php echo $_smarty_tpl->tpl_vars['healed']->value;?>
+</strong> HP.</p>
+            <?php }?>
+            <?php }?>
+            <form action='index.php?location_id=99' method='post'>
+                <input type='text' name='amount' id='amount' /><br />
+                <input type='submit' name='action' value='Heal Me' />
+            </form>
+
+            <p>Below are the Potions currently available for purchase.</p>
+            <?php if (isset($_smarty_tpl->tpl_vars['error']->value)) {?>
+            <?php if ($_smarty_tpl->tpl_vars['error']->value != '') {?>
+                <p style='color:red'><?php echo $_smarty_tpl->tpl_vars['error']->value;?>
+</p>
+            <?php }?>
+             <?php }?>
+            <?php if (isset($_smarty_tpl->tpl_vars['message']->value)) {?>
+            <?php if ($_smarty_tpl->tpl_vars['message']->value != '') {?>
+                <p style='color:green'><?php echo $_smarty_tpl->tpl_vars['message']->value;?>
+</p>
+            <?php }?>
+             <?php }?>
+
+            <ul>
+                <?php
+$_from = $_smarty_tpl->tpl_vars['potion']->value;
+if (!is_array($_from) && !is_object($_from)) {
+settype($_from, 'array');
+}
+$__foreach_i_3_saved_item = isset($_smarty_tpl->tpl_vars['i']) ? $_smarty_tpl->tpl_vars['i'] : false;
+$__foreach_i_3_saved_key = isset($_smarty_tpl->tpl_vars['id']) ? $_smarty_tpl->tpl_vars['id'] : false;
+$_smarty_tpl->tpl_vars['i'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['id'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['i']->_loop = false;
+foreach ($_from as $_smarty_tpl->tpl_vars['id']->value => $_smarty_tpl->tpl_vars['i']->value) {
+$_smarty_tpl->tpl_vars['i']->_loop = true;
+$__foreach_i_3_saved_local_item = $_smarty_tpl->tpl_vars['i'];
+?>
+                <li>
+                    <strong><?php echo $_smarty_tpl->tpl_vars['i']->value['name'];?>
+</strong> - <em><?php echo $_smarty_tpl->tpl_vars['i']->value['price'];?>
+ gold coins</em>
+                    <form action='index.php?location_id=99' method='post'>
+                        <input type='hidden' name='potion-id' value='<?php echo $_smarty_tpl->tpl_vars['i']->value['id'];?>
+' />
+                        <input type='submit' value='Buy' />
+                    </form>
+                    <?php
+$_smarty_tpl->tpl_vars['i'] = $__foreach_i_3_saved_local_item;
+}
+if ($__foreach_i_3_saved_item) {
+$_smarty_tpl->tpl_vars['i'] = $__foreach_i_3_saved_item;
+}
+if ($__foreach_i_3_saved_key) {
+$_smarty_tpl->tpl_vars['id'] = $__foreach_i_3_saved_key;
+}
+?>
+            </ul>
+
+            <p><a href='index.php?location_id=18'>Back outside </a></p>
+        <?php }?>
+
         <?php if ($_smarty_tpl->tpl_vars['location']->value->id == 2) {?>
             <li><a href="index.php?location_id=1"> Log out </a></li>
             <?php echo '<script'; ?>
@@ -133,15 +263,25 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
             <form method="post" action="index.php?location_id=1">
                 <h1> Register to save stats</h1> <br>
                 First name:<br>
-                <input type="text" name="FirstName" id="FirstName" value=""><br>
+                <input type="text" name="FirstName" id="FirstName" value="<?php if (isset($_POST['FirstName'])) {
+echo $_POST['FirstName'];
+}?>"><br>
                 Last name:<br>
-                <input type="text" name="LastName" id="LastName" value=""><br>
+                <input type="text" name="LastName" id="LastName" value="<?php if (isset($_POST['LastName'])) {
+echo $_POST['LastName'];
+}?>"><br>
                 Email: <br>
-                <input type="text" name="Email" id="Email" value=""><br>
+                <input type="text" name="Email" id="Email" value="<?php if (isset($_POST['Email'])) {
+echo $_POST['Email'];
+}?>"><br>
                 Password:<br>
-                <input type="text" name="Password" id="Password" onblur="verifyMinLength(this, 10)" value=""><br>
+                <input type="text" name="Password" id="Password" onblur="verifyMinLength(this, 10)" value="<?php if (isset($_POST['Password'])) {
+echo $_POST['Password'];
+}?>"><br>
                 Username:<br>
-                <input type="text" name="Username" id="Username" value=""><br>
+                <input type="text" name="Username" id="Username" value="<?php if (isset($_POST['Username'])) {
+echo $_POST['Username'];
+}?>"><br>
                 <input type="submit" name="submit" value="Submit">
             </form>
         <?php }?>
@@ -207,14 +347,14 @@ $_from = $_smarty_tpl->tpl_vars['weapons']->value;
 if (!is_array($_from) && !is_object($_from)) {
 settype($_from, 'array');
 }
-$__foreach_i_2_saved_item = isset($_smarty_tpl->tpl_vars['i']) ? $_smarty_tpl->tpl_vars['i'] : false;
-$__foreach_i_2_saved_key = isset($_smarty_tpl->tpl_vars['id']) ? $_smarty_tpl->tpl_vars['id'] : false;
+$__foreach_i_4_saved_item = isset($_smarty_tpl->tpl_vars['i']) ? $_smarty_tpl->tpl_vars['i'] : false;
+$__foreach_i_4_saved_key = isset($_smarty_tpl->tpl_vars['id']) ? $_smarty_tpl->tpl_vars['id'] : false;
 $_smarty_tpl->tpl_vars['i'] = new Smarty_Variable();
 $_smarty_tpl->tpl_vars['id'] = new Smarty_Variable();
 $_smarty_tpl->tpl_vars['i']->_loop = false;
 foreach ($_from as $_smarty_tpl->tpl_vars['id']->value => $_smarty_tpl->tpl_vars['i']->value) {
 $_smarty_tpl->tpl_vars['i']->_loop = true;
-$__foreach_i_2_saved_local_item = $_smarty_tpl->tpl_vars['i'];
+$__foreach_i_4_saved_local_item = $_smarty_tpl->tpl_vars['i'];
 ?>
                 <li>
                     <strong><?php echo $_smarty_tpl->tpl_vars['i']->value['name'];?>
@@ -226,13 +366,13 @@ $__foreach_i_2_saved_local_item = $_smarty_tpl->tpl_vars['i'];
                         <input type='submit' value='Buy' />
                     </form>
                     <?php
-$_smarty_tpl->tpl_vars['i'] = $__foreach_i_2_saved_local_item;
+$_smarty_tpl->tpl_vars['i'] = $__foreach_i_4_saved_local_item;
 }
-if ($__foreach_i_2_saved_item) {
-$_smarty_tpl->tpl_vars['i'] = $__foreach_i_2_saved_item;
+if ($__foreach_i_4_saved_item) {
+$_smarty_tpl->tpl_vars['i'] = $__foreach_i_4_saved_item;
 }
-if ($__foreach_i_2_saved_key) {
-$_smarty_tpl->tpl_vars['id'] = $__foreach_i_2_saved_key;
+if ($__foreach_i_4_saved_key) {
+$_smarty_tpl->tpl_vars['id'] = $__foreach_i_4_saved_key;
 }
 ?>
             </ul>
@@ -285,18 +425,56 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_2_saved_key;
 
         <?php }?>
 
+        <?php if ($_smarty_tpl->tpl_vars['location']->value->id == 101) {?>
+            <ul>
+                <?php
+$_from = $_smarty_tpl->tpl_vars['inventory']->value;
+if (!is_array($_from) && !is_object($_from)) {
+settype($_from, 'array');
+}
+$__foreach_i_5_saved_item = isset($_smarty_tpl->tpl_vars['i']) ? $_smarty_tpl->tpl_vars['i'] : false;
+$__foreach_i_5_saved_key = isset($_smarty_tpl->tpl_vars['id']) ? $_smarty_tpl->tpl_vars['id'] : false;
+$_smarty_tpl->tpl_vars['i'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['id'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['i']->_loop = false;
+foreach ($_from as $_smarty_tpl->tpl_vars['id']->value => $_smarty_tpl->tpl_vars['i']->value) {
+$_smarty_tpl->tpl_vars['i']->_loop = true;
+$__foreach_i_5_saved_local_item = $_smarty_tpl->tpl_vars['i'];
+?>
+                    <li>
+                        <strong><?php echo $_smarty_tpl->tpl_vars['i']->value['name'];?>
+ x <?php echo $_smarty_tpl->tpl_vars['i']->value['quantity'];?>
+</strong>
+                        <form action='index.php?location_id=101' method='post'>
+                            <input type='hidden' name='item-id' value='<?php echo $_smarty_tpl->tpl_vars['i']->value['id'];?>
+' />
+                            <input type='submit' value='Use' />
+                        </form>
+                    </li>
+                <?php
+$_smarty_tpl->tpl_vars['i'] = $__foreach_i_5_saved_local_item;
+}
+if ($__foreach_i_5_saved_item) {
+$_smarty_tpl->tpl_vars['i'] = $__foreach_i_5_saved_item;
+}
+if ($__foreach_i_5_saved_key) {
+$_smarty_tpl->tpl_vars['id'] = $__foreach_i_5_saved_key;
+}
+?>
+            </ul>
+        <?php }?>
         <ul>
             <?php
 $_from = $_smarty_tpl->tpl_vars['location']->value->Choices;
 if (!is_array($_from) && !is_object($_from)) {
 settype($_from, 'array');
 }
-$__foreach_choice_3_saved_item = isset($_smarty_tpl->tpl_vars['choice']) ? $_smarty_tpl->tpl_vars['choice'] : false;
+$__foreach_choice_6_saved_item = isset($_smarty_tpl->tpl_vars['choice']) ? $_smarty_tpl->tpl_vars['choice'] : false;
 $_smarty_tpl->tpl_vars['choice'] = new Smarty_Variable();
 $_smarty_tpl->tpl_vars['choice']->_loop = false;
 foreach ($_from as $_smarty_tpl->tpl_vars['choice']->value) {
 $_smarty_tpl->tpl_vars['choice']->_loop = true;
-$__foreach_choice_3_saved_local_item = $_smarty_tpl->tpl_vars['choice'];
+$__foreach_choice_6_saved_local_item = $_smarty_tpl->tpl_vars['choice'];
 ?>
                 <!-- change the string output to a int value  -->
                 <?php echo intval($_smarty_tpl->tpl_vars['choice']->value->to_id);?>
@@ -307,12 +485,12 @@ $_from = $_smarty_tpl->tpl_vars['location']->value->Inventory;
 if (!is_array($_from) && !is_object($_from)) {
 settype($_from, 'array');
 }
-$__foreach_Hai_4_saved_item = isset($_smarty_tpl->tpl_vars['Hai']) ? $_smarty_tpl->tpl_vars['Hai'] : false;
+$__foreach_Hai_7_saved_item = isset($_smarty_tpl->tpl_vars['Hai']) ? $_smarty_tpl->tpl_vars['Hai'] : false;
 $_smarty_tpl->tpl_vars['Hai'] = new Smarty_Variable();
 $_smarty_tpl->tpl_vars['Hai']->_loop = false;
 foreach ($_from as $_smarty_tpl->tpl_vars['Hai']->value) {
 $_smarty_tpl->tpl_vars['Hai']->_loop = true;
-$__foreach_Hai_4_saved_local_item = $_smarty_tpl->tpl_vars['Hai'];
+$__foreach_Hai_7_saved_local_item = $_smarty_tpl->tpl_vars['Hai'];
 ?>
                     <?php if ($_smarty_tpl->tpl_vars['Hai']->value->item_id == $_smarty_tpl->tpl_vars['choice']->value->need_item_id) {?>
                         <li><a href="index.php?location_id=<?php echo $_smarty_tpl->tpl_vars['choice']->value->to_id;?>
@@ -323,10 +501,10 @@ $__foreach_Hai_4_saved_local_item = $_smarty_tpl->tpl_vars['Hai'];
                         <!-- <p class="Haha"> Nothing Here to find</p> -->
                     <?php }?>
                 <?php
-$_smarty_tpl->tpl_vars['Hai'] = $__foreach_Hai_4_saved_local_item;
+$_smarty_tpl->tpl_vars['Hai'] = $__foreach_Hai_7_saved_local_item;
 }
-if ($__foreach_Hai_4_saved_item) {
-$_smarty_tpl->tpl_vars['Hai'] = $__foreach_Hai_4_saved_item;
+if ($__foreach_Hai_7_saved_item) {
+$_smarty_tpl->tpl_vars['Hai'] = $__foreach_Hai_7_saved_item;
 }
 ?>
                 <?php }?>
@@ -344,10 +522,10 @@ $_smarty_tpl->tpl_vars['Hai'] = $__foreach_Hai_4_saved_item;
 </a> </li>
                 <?php }?>
             <?php
-$_smarty_tpl->tpl_vars['choice'] = $__foreach_choice_3_saved_local_item;
+$_smarty_tpl->tpl_vars['choice'] = $__foreach_choice_6_saved_local_item;
 }
-if ($__foreach_choice_3_saved_item) {
-$_smarty_tpl->tpl_vars['choice'] = $__foreach_choice_3_saved_item;
+if ($__foreach_choice_6_saved_item) {
+$_smarty_tpl->tpl_vars['choice'] = $__foreach_choice_6_saved_item;
 }
 ?>
             <?php if ($_smarty_tpl->tpl_vars['location']->value->id == 25 || $_smarty_tpl->tpl_vars['location']->value->id == 29 || $_smarty_tpl->tpl_vars['location']->value->id == 51 || $_smarty_tpl->tpl_vars['location']->value->id == 52) {?>
@@ -364,22 +542,23 @@ $_from = $_smarty_tpl->tpl_vars['location']->value->Inventory;
 if (!is_array($_from) && !is_object($_from)) {
 settype($_from, 'array');
 }
-$__foreach_hello_5_saved_item = isset($_smarty_tpl->tpl_vars['hello']) ? $_smarty_tpl->tpl_vars['hello'] : false;
+$__foreach_hello_8_saved_item = isset($_smarty_tpl->tpl_vars['hello']) ? $_smarty_tpl->tpl_vars['hello'] : false;
 $_smarty_tpl->tpl_vars['hello'] = new Smarty_Variable();
 $_smarty_tpl->tpl_vars['hello']->_loop = false;
 foreach ($_from as $_smarty_tpl->tpl_vars['hello']->value) {
 $_smarty_tpl->tpl_vars['hello']->_loop = true;
-$__foreach_hello_5_saved_local_item = $_smarty_tpl->tpl_vars['hello'];
+$__foreach_hello_8_saved_local_item = $_smarty_tpl->tpl_vars['hello'];
 ?>
                <li> <?php echo $_smarty_tpl->tpl_vars['hello']->value->player_id;?>
  <?php echo $_smarty_tpl->tpl_vars['hello']->value->item_id;?>
  <?php echo $_smarty_tpl->tpl_vars['hello']->value->space;?>
-</li>
+ <?php echo $_smarty_tpl->tpl_vars['hello']->value->quantity;?>
+ </li>
             <?php
-$_smarty_tpl->tpl_vars['hello'] = $__foreach_hello_5_saved_local_item;
+$_smarty_tpl->tpl_vars['hello'] = $__foreach_hello_8_saved_local_item;
 }
-if ($__foreach_hello_5_saved_item) {
-$_smarty_tpl->tpl_vars['hello'] = $__foreach_hello_5_saved_item;
+if ($__foreach_hello_8_saved_item) {
+$_smarty_tpl->tpl_vars['hello'] = $__foreach_hello_8_saved_item;
 }
 ?>
         </ul>

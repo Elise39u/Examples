@@ -46,6 +46,75 @@
             {/if}
         {/if}
 
+        {if $location->id == 100}
+            {if $combat eq ''}
+                <p>You've encountered a <strong>{$monster}! </strong></p>
+                <form action='index.php?location_id=100' method='post'>
+                    <input type='submit' name='action' value='Attack' /> or
+                    <input type='submit' name='action' value='Run Away' />
+                    <input type='hidden' name='monster' value='{$monster}' />
+                </form>
+            {else}
+                <ul>
+                    {foreach from=$combat key=id item=i}
+                        <li><strong>{$i.attacker}</strong> attacks {$i.defender} for {$i.damage} damage!</li>
+                    {/foreach}
+                </ul>
+                {if isset($won)}
+                    {if $won eq 1}
+                        <p>You killed <strong>{$smarty.post.monster}</strong>! You gained <strong>{$gold}</strong> gold.</p>
+                        <p><a href='index.php?location_id=13'>Go to the lake</a></p>
+                        <p><a href="index.php?location_id=12">Go back on the street </a> </p>
+                    {/if}
+                {/if}
+                {if isset($lost)}
+                    {if $lost eq 1}
+                        <p>You were killed by <strong>{$smarty.post.monster}</strong>.</p>
+                        <p><a href='index.php'>Game over</a></p>
+                    {/if}
+                {/if}
+            {/if}
+        {/if}
+
+        {if $location->id == 99}
+            <p>Welcome to the healer. You currently have <strong>{$curhp}</strong> HP out of a maximum of <strong>{$maxhp}</strong>.</p>
+            <p>You have <strong>{$gold}</strong> gold to heal yourself with, and it will cost you <strong>1 gold per HP healed</strong> to heal yourself.</p>
+            {if isset($healed)}
+            {if $healed ne 0}
+                <p>You have been healed for <strong>{$healed}</strong> HP.</p>
+            {/if}
+            {/if}
+            <form action='index.php?location_id=99' method='post'>
+                <input type='text' name='amount' id='amount' /><br />
+                <input type='submit' name='action' value='Heal Me' />
+            </form>
+
+            <p>Below are the Potions currently available for purchase.</p>
+            {if isset($error)}
+            {if $error ne ''}
+                <p style='color:red'>{$error}</p>
+            {/if}
+             {/if}
+            {if isset($message)}
+            {if $message ne ''}
+                <p style='color:green'>{$message}</p>
+            {/if}
+             {/if}
+
+            <ul>
+                {foreach from=$potion key=id item=i}
+                <li>
+                    <strong>{$i.name}</strong> - <em>{$i.price} gold coins</em>
+                    <form action='index.php?location_id=99' method='post'>
+                        <input type='hidden' name='potion-id' value='{$i.id}' />
+                        <input type='submit' value='Buy' />
+                    </form>
+                    {/foreach}
+            </ul>
+
+            <p><a href='index.php?location_id=18'>Back outside </a></p>
+        {/if}
+
         {if $location->id == 2}
             <li><a href="index.php?location_id=1"> Log out </a></li>
             <script type="text/javascript">
@@ -57,15 +126,15 @@
             <form method="post" action="index.php?location_id=1">
                 <h1> Register to save stats</h1> <br>
                 First name:<br>
-                <input type="text" name="FirstName" id="FirstName" value=""><br>
+                <input type="text" name="FirstName" id="FirstName" value="{if isset($smarty.post.FirstName)}{$smarty.post.FirstName}{/if}"><br>
                 Last name:<br>
-                <input type="text" name="LastName" id="LastName" value=""><br>
+                <input type="text" name="LastName" id="LastName" value="{if isset($smarty.post.LastName)}{$smarty.post.LastName}{/if}"><br>
                 Email: <br>
-                <input type="text" name="Email" id="Email" value=""><br>
+                <input type="text" name="Email" id="Email" value="{if isset($smarty.post.Email)}{$smarty.post.Email}{/if}"><br>
                 Password:<br>
-                <input type="text" name="Password" id="Password" onblur="verifyMinLength(this, 10)" value=""><br>
+                <input type="text" name="Password" id="Password" onblur="verifyMinLength(this, 10)" value="{if isset($smarty.post.Password)}{$smarty.post.Password}{/if}"><br>
                 Username:<br>
-                <input type="text" name="Username" id="Username" value=""><br>
+                <input type="text" name="Username" id="Username" value="{if isset($smarty.post.Username)}{$smarty.post.Username}{/if}"><br>
                 <input type="submit" name="submit" value="Submit">
             </form>
         {/if}
@@ -169,6 +238,19 @@
         {$location->Foto_url }
         {/if}
 
+        {if $location->id == 101}
+            <ul>
+                {foreach from=$inventory key=id item=i}
+                    <li>
+                        <strong>{$i.name} x {$i.quantity}</strong>
+                        <form action='index.php?location_id=101' method='post'>
+                            <input type='hidden' name='item-id' value='{$i.id}' />
+                            <input type='submit' value='Use' />
+                        </form>
+                    </li>
+                {/foreach}
+            </ul>
+        {/if}
         <ul>
             {foreach $location->Choices as $choice}
                 <!-- change the string output to a int value  -->
@@ -198,7 +280,7 @@
 
         <ul>
             {foreach $location->Inventory as $hello}
-               <li> {$hello->player_id} {$hello->item_id} {$hello->space}</li>
+               <li> {$hello->player_id} {$hello->item_id} {$hello->space} {$hello->quantity} </li>
             {/foreach}
         </ul>
 

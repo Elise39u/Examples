@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Gegenereerd op: 16 nov 2016 om 15:33
+-- Gegenereerd op: 21 nov 2016 om 13:52
 -- Serverversie: 5.7.9
 -- PHP-versie: 5.6.16
 
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `choices` (
   `title` varchar(254) NOT NULL,
   `need_item_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=197 DEFAULT CHARSET=latin1 COMMENT='Choice';
+) ENGINE=MyISAM AUTO_INCREMENT=200 DEFAULT CHARSET=latin1 COMMENT='Choice';
 
 --
 -- Gegevens worden geëxporteerd voor tabel `choices`
@@ -63,9 +63,9 @@ INSERT INTO `choices` (`id`, `from_id`, `to_id`, `title`, `need_item_id`) VALUES
 (20, 10, 11, 'Go inside the electro store', NULL),
 (21, 11, 10, 'Go back outside ', NULL),
 (22, 6, 12, 'The sandpath', NULL),
-(23, 12, 13, 'TO the river ', NULL),
+(23, 12, 100, 'TO the river ', NULL),
 (24, 12, 6, 'Go back ?', NULL),
-(25, 13, 12, 'Go back on the path', NULL),
+(25, 13, 100, 'Go back on the path', NULL),
 (44, 9, 22, 'Pick up Paddle ', NULL),
 (27, 6, 14, 'Go futher on ', NULL),
 (28, 14, 6, 'Go back ', NULL),
@@ -147,6 +147,9 @@ INSERT INTO `choices` (`id`, `from_id`, `to_id`, `title`, `need_item_id`) VALUES
 (126, 72, 9, 'Go back', NULL),
 (139, 32, 81, 'Silencer?', NULL),
 (140, 81, 32, 'Go back', NULL),
+(199, 101, 15, 'Go back outside', NULL),
+(198, 15, 101, 'A door????', NULL),
+(197, 18, 99, 'Werid Shop?', NULL),
 (196, 46, 98, 'The counter', NULL),
 (195, 32, 33, 'Go inside the store ', NULL),
 (153, 19, 56, 'Take the car', NULL),
@@ -202,22 +205,21 @@ CREATE TABLE IF NOT EXISTS `inventory` (
   `player_id` varchar(127) NOT NULL,
   `item_id` int(127) NOT NULL,
   `space` int(254) NOT NULL,
+  `quantity` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=43 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `inventory`
 --
 
-INSERT INTO `inventory` (`id`, `player_id`, `item_id`, `space`) VALUES
-(1, '1', 34, 35),
-(2, '1', 1, 34),
-(3, '1', 11, 33),
-(4, '1', 6, 32),
-(5, '1', 7, 31),
-(6, '1', 36, 30),
-(7, '1', 35, 29),
-(8, '1', 18, 28);
+INSERT INTO `inventory` (`id`, `player_id`, `item_id`, `space`, `quantity`) VALUES
+(32, '1', 53, 46, 1),
+(37, '1', 47, 44, 1),
+(35, '1', 52, 46, 1),
+(36, '1', 50, 45, 1),
+(40, '1', 46, 41, 1),
+(41, '1', 42, 40, 1);
 
 -- --------------------------------------------------------
 
@@ -232,7 +234,7 @@ CREATE TABLE IF NOT EXISTS `items` (
   `type` enum('Weapon','Armor','Usable','Drop','Potion') DEFAULT NULL,
   `price` int(11) NOT NULL DEFAULT '10',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=57 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=60 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `items`
@@ -294,7 +296,10 @@ INSERT INTO `items` (`id`, `name`, `type`, `price`) VALUES
 (53, 'Light Green Potion', 'Potion', 45),
 (54, 'Green Potion', 'Potion', 120),
 (55, 'Dark Green Potion', 'Potion', 980),
-(56, 'Rainbow Potion', 'Potion', 25000);
+(56, 'Rainbow Potion', 'Potion', 25000),
+(57, 'Light Pink Potion', 'Potion', 1200),
+(58, 'Dark Pink Potion', 'Potion', 350),
+(59, 'Stinger', 'Weapon', 25000);
 
 -- --------------------------------------------------------
 
@@ -374,7 +379,7 @@ CREATE TABLE IF NOT EXISTS `item_stats` (
   `stat_id` int(11) DEFAULT NULL,
   `content` text,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=86 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=148 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `item_stats`
@@ -465,7 +470,41 @@ INSERT INTO `item_stats` (`id`, `item_id`, `stat_id`, `content`) VALUES
 (82, 41, 2, '0'),
 (83, 100, 1, '0'),
 (84, 25, 1, '0'),
-(85, 50, 1, '0');
+(85, 50, 1, '0'),
+(86, 59, 1, '1500'),
+(87, 59, 2, '250'),
+(88, 55, 10, '0'),
+(125, 37, 12, 'potion'),
+(124, 36, 12, 'potion'),
+(121, 18, 12, 'potion'),
+(120, 12, 12, 'potion'),
+(119, 11, 12, 'potion'),
+(118, 10, 12, 'potion'),
+(123, 35, 12, 'potion'),
+(122, 33, 12, 'potion'),
+(113, 4, 12, 'potion'),
+(114, 6, 12, 'potion'),
+(115, 7, 12, 'potion'),
+(116, 8, 12, 'potion'),
+(117, 9, 12, 'potion'),
+(126, 38, 12, 'potion'),
+(127, 42, 12, 'potion'),
+(128, 43, 12, 'potion'),
+(129, 44, 12, 'potion'),
+(130, 45, 12, 'potion'),
+(131, 46, 12, 'potion'),
+(132, 47, 12, 'potion'),
+(133, 48, 12, 'potion'),
+(134, 49, 12, 'potion'),
+(135, 50, 12, 'potion'),
+(136, 51, 12, 'potion'),
+(137, 52, 12, 'potion'),
+(139, 53, 12, 'potion'),
+(140, 54, 12, 'potion'),
+(141, 55, 12, 'potion'),
+(142, 56, 12, 'potion'),
+(143, 57, 12, 'potion'),
+(144, 58, 12, 'potion');
 
 -- --------------------------------------------------------
 
@@ -483,7 +522,7 @@ CREATE TABLE IF NOT EXISTS `locations` (
   `modfire` varchar(254) DEFAULT NULL,
   `item_id` int(120) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=99 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=102 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `locations`
@@ -587,7 +626,10 @@ INSERT INTO `locations` (`id`, `Title`, `Foto_url`, `Story`, `modhealth`, `modfi
 (95, 'Usps (Cache)', 'http://localhost/Eigen%20spel/img/Usps.png', 'As a quick choice by the police <br> does it means the standards for surive ', '100', NULL, 17),
 (96, 'Password to damm short', 'http://localhost/Eigen%20spel/img/password.png', 'Go back and fill a normal password in', '0', '0', NULL),
 (97, 'You''ve encountered a  monster!', 'http://localhost/Eigen%20spel/img/Monster.jpg', '\r\n		', '100', NULL, NULL),
-(98, 'Depoist or WithDraw?', 'http://localhost/Eigen%20spel/img/Bank2.png', '', '100', NULL, NULL);
+(98, 'Depoist or WithDraw?', 'http://localhost/Eigen%20spel/img/Bank2.png', '', '100', NULL, NULL),
+(99, 'Healing And Potions? ', 'http://localhost/Eigen%20spel/img/Healer.png', 'As you standing there thinking need i a healing or potions its op to you', '', NULL, NULL),
+(100, 'You''ve encountered a  monster!', 'http://localhost/Eigen%20spel/img/Monster.jpg', '\r\n		', '100', NULL, NULL),
+(101, 'A warehouse ', 'http://localhost/Eigen%20spel/img/Warehous.png', 'Why can i use items here?', '100', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -663,7 +705,7 @@ CREATE TABLE IF NOT EXISTS `monster_stats` (
   `stat_id` int(11) DEFAULT NULL,
   `content` text,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=1975 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=1990 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `monster_stats`
@@ -673,22 +715,22 @@ INSERT INTO `monster_stats` (`id`, `monster_id`, `stat_id`, `content`) VALUES
 (1, 1, 1, '2'),
 (2, 1, 2, '2'),
 (3, 1, 4, '8'),
-(4, 1, 3, '5'),
-(5, 2, 1, '250'),
-(6, 2, 2, '200'),
+(4, 1, 3, '15'),
+(5, 2, 1, '225'),
+(6, 2, 2, '450'),
 (7, 2, 4, '800'),
 (8, 2, 3, '5000'),
 (9, 3, 1, '2'),
 (10, 3, 2, '5'),
 (11, 3, 3, '10'),
-(12, 3, 4, '15'),
-(13, 4, 1, '50'),
+(12, 3, 4, '30'),
+(13, 4, 1, '70'),
 (14, 4, 2, '100'),
-(15, 4, 3, '75'),
+(15, 4, 3, '50'),
 (16, 4, 4, '150'),
-(17, 5, 1, '15'),
-(18, 5, 2, '50'),
-(19, 5, 3, '40'),
+(17, 5, 1, '60'),
+(18, 5, 2, '100'),
+(19, 5, 3, '75'),
 (20, 5, 4, '100'),
 (21, 6, 1, '200'),
 (22, 6, 2, '450'),
@@ -738,6 +780,21 @@ INSERT INTO `monster_stats` (`id`, `monster_id`, `stat_id`, `content`) VALUES
 (68, 1, 7, '100'),
 (69, 1, 5, '100'),
 (1763, 1, 9, '100'),
+(1989, 1, NULL, '100'),
+(1988, 1, NULL, '100'),
+(1987, 1, NULL, '100'),
+(1986, 1, NULL, '100'),
+(1985, 1, NULL, '100'),
+(1984, 1, NULL, '100'),
+(1983, 1, NULL, '100'),
+(1982, 1, NULL, '100'),
+(1981, 1, NULL, '100'),
+(1980, 1, NULL, '100'),
+(1979, 1, NULL, '100'),
+(1978, 1, NULL, '100'),
+(1977, 1, NULL, '100'),
+(1976, 1, NULL, '100'),
+(1975, 1, NULL, '100'),
 (1968, 1, 11, '100'),
 (1974, 1, 8, '100'),
 (1973, 1, 10, '100');
@@ -778,7 +835,7 @@ CREATE TABLE IF NOT EXISTS `stats` (
   `display_name` varchar(1024) NOT NULL,
   `short_name` varchar(1024) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `stats`
@@ -794,8 +851,8 @@ INSERT INTO `stats` (`id`, `display_name`, `short_name`) VALUES
 (7, 'Magic Defence', 'mdef'),
 (8, 'Primary Hand Weapon', 'phand'),
 (9, 'Secondery Hand Weapon', 'shand'),
-(10, 'Item Use Token', 'token'),
-(11, 'Gold In Bank', 'bankgc');
+(11, 'Gold In Bank', 'bankgc'),
+(12, 'Item Use Token', 'token');
 
 -- --------------------------------------------------------
 
@@ -825,24 +882,34 @@ CREATE TABLE IF NOT EXISTS `user_stats` (
   `stat_id` int(11) DEFAULT NULL,
   `content` text,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=511 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=521 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `user_stats`
 --
 
 INSERT INTO `user_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
-(1, 1, 5, '25'),
+(1, 1, 5, '300'),
 (2, 1, 1, '80'),
 (3, 1, 2, '100'),
-(4, 1, 3, '134550'),
+(4, 1, 3, '17675'),
 (5, 1, 4, '300'),
 (6, 1, 7, '50'),
 (7, 1, 6, '25'),
-(506, 1, 8, '13'),
+(516, 1, NULL, '100'),
+(515, 1, NULL, '100'),
+(514, 1, NULL, '100'),
+(513, 1, NULL, '100'),
+(512, 1, NULL, '100'),
+(511, 1, NULL, '100'),
+(506, 1, 8, '59'),
 (496, 1, 10, ''),
-(495, 1, 9, '21'),
-(510, 1, 11, '21615');
+(495, 1, 9, '31'),
+(520, 1, NULL, '100'),
+(519, 1, NULL, '100'),
+(518, 1, NULL, '100'),
+(517, 1, NULL, '100'),
+(510, 1, 11, '5000');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

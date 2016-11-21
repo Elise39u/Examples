@@ -2,8 +2,10 @@
 session_start();
 global $combat;
 global $space;
+global $count;
 // global $userID;
-$space = 35;
+$space = 50;
+$count = 1;
 $userID = // Dat $userid de correct player selecteert
     // var_dump $userid cause it to crash the code --> $userid becomes after this above automaticly 1
 require_once ('inc/loadsmarty.php');
@@ -22,27 +24,6 @@ $loc = new Location();  // maak lege locatie aan
 $did_load_work = $loc->LoadFromDb($mysqli, $location_id);       // laad locatie en choices vanuit de database
 if ($did_load_work == FALSE) {    // als het laden fout ging, voeg dan een error toe aan de array $errors
     array_push($errors, "This location does not exist in the database");
-}
-
-if($location_id == 22 ) {
-    $_SESSION['Paddle'] = true;
-}
-
-if ($location_id == 23) {
-    $_SESSION['Basebalbat'] = true;
-}
-
-if ($location_id == 24) {
-    $_SESSION['Axe'] = true;
-}
-
-if ($location_id == 26) {
-    $_SESSION['Hammer'] = true;
-}
-
-// Make Session End 2 when you reached location 27
-if($location_id == 27) {
-    $_SESSION['End2'] = true;
 }
 
 if (isset($loc->item_id)) {
@@ -134,7 +115,7 @@ if ($loc->id == 33) {
     }
 }
 
-if ($loc->id == 97) {
+if ($loc->id == 97 || $loc->id == 100) {
     $query = sprintf("SELECT name FROM monsters ORDER BY RAND() LIMIT 1");
     $result = mysqli_query($mysqli, $query);
     list($monster) = mysqli_fetch_row($result);
@@ -217,6 +198,10 @@ if ($loc->id == 97) {
             $atk = getWeaponStat('atk', $phand);
             $player['attack'] += $atk;
 
+            $phand = getStat('phand',$userID);
+            $def = getWeaponStat('def', $phand);
+            $player['defense'] += $def;
+
             $query = sprintf("SELECT id FROM monsters WHERE name = '%s'",
                 mysqli_real_escape_string($mysqli, $_POST['monster']));
             $result = mysqli_query($mysqli, $query);
@@ -264,10 +249,14 @@ if ($loc->id == 97) {
             }
             $smarty->assign('combat',$combat);
         }
-
         else {
-            // Running away! Send them back to the main page
-            header('Location: index.php?location_id=34');
+            if ($loc->id == 97) {
+                // Running away! Send them back to the main page
+                header('Location: index.php?location_id=34');
+            }
+            else {
+                header('Location: index.php?location_id=12');
+            }
         }
     }
 }
@@ -298,9 +287,110 @@ if ($loc->id == 98 ) {
     }
 }
 
+
+if ($loc->id == 99 ) {
+
+    if(isset($_POST['amount'])) {
+        $amount = $_POST['amount'];
+        $gold = getStat('gc',$userID);
+        $needed = getStat('maxhp',$userID) - getStat('curhp',$userID);
+        if($amount > $needed || $amount == '') {
+            $amount = $needed;
+        }
+        if($amount > $gold) {
+            $amount = $gold;
+        }
+        setStat('gc',$userID,getStat('gc',$userID) - $amount);
+        setStat('curhp',$userID,getStat('curhp',$userID) + $amount);
+        $smarty->assign('healed',$amount);
+    }
+
+    if(isset($_POST['potion-id'])) {
+            $potionID = $_POST['potion-id'];
+            $query = sprintf("SELECT price FROM items WHERE id = %s",mysqli_real_escape_string($mysqli, $potionID));
+            $result = mysqli_query($mysqli, $query);
+            list($cost) = mysqli_fetch_row($result);
+            $gold = getStat('gc',$userID);
+            if($gold > $cost) {
+                $query = sprintf("SELECT item_id FROM Inventory WHERE item_id = '%s'",
+                    mysqli_real_escape_string($mysqli, $potionID));
+                $result = mysqli_query($mysqli, $query);
+                mysqli_fetch_row($result);
+                if ($result->num_rows > 0) {
+                    $sql = "UPDATE Inventory SET quantity = quantity + 1 WHERE item_id=$potionID";
+                    mysqli_query($mysqli, $sql);
+                    setStat('gc', $userID, ($gold - $cost));
+                    $smarty->assign('message', '1 more Potion added!');
+                } else {
+                    foreach ($loc->Inventory as $Ok) {
+                        $Ok = $space;
+                        $space--;
+                    }
+                    $sql = "INSERT INTO Inventory(player_id, item_id, space, quantity) VALUES ($userID, '$potionID', '$space', $count)";
+                    mysqli_query($mysqli, $sql);
+                    setStat('gc', $userID, ($gold - $cost));
+                    $smarty->assign('message', 'You Bought that Potion!');
+                }
+            }
+            else {
+                $smarty->assign('error','You cannot afford that Potion!');
+            }
+    }
+    $query = "SELECT DISTINCT(id), name, price FROM items WHERE type = 'Potion' ORDER BY RAND() LIMIT 5;";
+    $result = mysqli_query($mysqli, $query);
+    $Potion = array();
+    while($row = mysqli_fetch_assoc($result)) {
+        array_push($Potion,$row);
+    }
+
+    $smarty->assign('curhp',getStat('curhp',$userID));
+    $smarty->assign('maxhp',getStat('maxhp',$userID));
+    $smarty->assign('gold',getStat('gc',$userID));
+    $smarty->assign('potion',$Potion);
+}
+
+if ($location_id == 101) {
+    $actions = array('potion' => 'use_potion', 'crystal_ball' => 'use_crystal_ball');
+
+    if (isset($_POST['item-id'])) {
+        $query = sprintf("SELECT item_id FROM inventory WHERE player_id = '%s' AND id = '%s'",
+            mysqli_real_escape_string($mysqli, $userID),
+            mysqli_real_escape_string($mysqli, $_POST['item-id']));
+        $result = mysqli_query($mysqli, $query);
+        list($itemID) = mysqli_fetch_row($result);
+        $token = getItemStat('token', $itemID);
+        call_user_func($actions[$token]);
+    }
+
+    $inventory = array();
+    $query = sprintf("SELECT id, item_id, quantity FROM inventory WHERE player_id = '%s'",
+        mysqli_real_escape_string($mysqli, $userID));
+    $result = mysqli_query($mysqli, $query);
+
+    while ($row = mysqli_fetch_assoc($result)) {
+        $item_query = sprintf("SELECT name FROM items WHERE id = '%s'",
+            mysqli_real_escape_string($mysqli, $row['item_id']));
+        $item_result = mysqli_query($mysqli, $item_query);
+        list($row['name']) = mysqli_fetch_row($item_result);
+        array_push($inventory, $row);
+    }
+    $smarty->assign('inventory',$inventory);
+}
+
+function use_potion() {
+    echo ' <div id="msg"> This is code that would run when the user used a potion. </div>';
+}
+
+
 // $userID = 1;
 if (isset($_SESSION['username'])) {
     $smarty->assign('name', $_SESSION['username']);
+}
+if (isset($inventory)) {
+    $smarty->assign('inventory',$inventory);
+}
+if (isset($Potion)) {
+    $smarty->assign('potion',$Potion);
 }
 $smarty->assign('attack',getStat('atk',$userID));
 $smarty->assign('magic',getStat('mdef',$userID));
@@ -318,6 +408,9 @@ if (isset($shand_name)) {
 if (isset($weapons)) {
     $smarty->assign('weapons', $weapons);
 }
+if (isset($amount)) {
+    $smarty->assign('healed',$amount);
+}
 $smarty->assign('combat',$combat);
 $smarty->assign('pagetitle', 'Games to play');
 $smarty->assign('errors', $errors);         // geef lege of gevulde array $errors mee
@@ -325,42 +418,11 @@ $smarty->assign('location', $loc);          // geef locatie (en daarin de choice
 $smarty->assign('location', $loc);          // geef locatie (en daarin de choices) mee
 $smarty->display("tpl/index.html.tpl");
 
-if (isset($_SESSION['Paddle']) || isset($_SESSION['End2']) || isset($_SESSION['Hammer']) || isset($_SESSION['Axe']) || isset($_SESSION['Basebalbat'])) {
-
-            echo "<div id=\"msg\"> You have picked up the item";
-            $converted = settype($location_id, 'integer');
-            $converted = settype($loc->id, 'integer');
-            echo "<br />";
-
-    switch ($location_id) {
-        case $location_id == 22:
-            echo "You picked up the paddle";
-            echo "<br />";
-        break;
-        case $location_id == 23;
-            echo "You picked up the Basebalbat";
-            echo "<br />";
-        break;
-        case $location_id == 24;
-            echo "You picked up the Axe";
-            echo "<br />";
-            break;
-        case $location_id == 26;
-            echo "You picked up a hammer";
-            echo "<br />";
-            break;
-        default:
-            echo "no items has been picked up";
-            echo "<br />";
-    }
-}
-
 echo "<div id=\"msg\">";
 if(isset($loc->item_id)) {
-    print_r($loc->item_id); echo "</br>";
     if (isset($loc->item_id)) {
         if($loc->Inventory == NULL) {
-            $sql = "INSERT INTO Inventory(player_id, item_id, space) VALUES ('1', '$loc->item_id', '$space')";
+            $sql = "INSERT INTO Inventory(player_id, item_id, space, quantity) VALUES ('1', '$loc->item_id', '$space', $count)";
             echo "this $space left </br>";
             if ($mysqli->query($sql) === TRUE) {
                 echo "New record created successfully";
@@ -371,13 +433,15 @@ if(isset($loc->item_id)) {
         elseif(isset($loc->item_id)) {
             $result = $mysqli->query("SELECT item_id FROM Inventory WHERE item_id = $loc->item_id");
             if($result->num_rows > 0) {
+                $sql = "UPDATE Inventory SET quantity = quantity + 1 WHERE item_id=$loc->item_id";
+                mysqli_query($mysqli, $sql);
                 echo "Exsist already Dork";
             } else {
                 foreach ($loc->Inventory as $Ok) {
                     $Ok = $space;
                     $space--;
                 }
-                $sql = "INSERT INTO Inventory(player_id, item_id, space) VALUES ('1', '$loc->item_id', '$space')";
+                $sql = "INSERT INTO Inventory(player_id, item_id, space, quantity) VALUES ($userID, '$loc->item_id', '$space', $count)";
                 if ($space <= 0) {
                      echo "<span style=\"color: white; \"> Because you have no space left </span>";
                     die($space);
@@ -397,9 +461,6 @@ if(isset($loc->item_id)) {
     else {
         echo "Nothing here";
     }
-}
-else {
-    echo "Ehheeee so now......";
 }
 
 if ($location_id == 25 || $location_id == 29 || $location_id == 51 || $location_id == 52) {
@@ -443,8 +504,6 @@ if (isset($_POST['submit'])) {
             echo "Error: " . $sql . "<br>" . $mysqli->error;
         }
 }
-
-
 /*
 			<div style="display:none">
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLNc-vlTat7vjSsH5K5WQSa-U2hyl-IEWL&autoplay=1&autohide=2&start=7" frameborder="0" allowfullscreen></iframe>

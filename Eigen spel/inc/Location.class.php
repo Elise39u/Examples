@@ -53,6 +53,7 @@ class Location
             $item->player_id = $row['player_id'];
             $item->item_id = $row['item_id'];
             $item->space = $row['space'];
+            $item->quantity = $row['quantity'];
             array_push($this->Inventory, $item);
         }
 

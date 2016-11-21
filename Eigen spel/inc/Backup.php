@@ -90,6 +90,10 @@ if ($location_id == 25 || $location_id == 29 || $location_id == 51 || $location_
     }
 } --> Vorige 2 verwijderen
 
+
+INSERT INTO item_stats(item_id,stat_id,content) VALUES ((SELECT id FROM items WHERE type IN ('Usable', 'Potion')), (SELECT id FROM stats WHERE short_name = 'token'), 'item');
+INSERT INTO item_stats(item_id,stat_id,content) VALUES ((SELECT id FROM items WHERE type = 'Potion'), (SELECT id FROM stats WHERE short_name = 'token'), 'potion');
+
  * INSERT INTO item_stats(item_id,stat_id,content) VALUES ((SELECT id FROM items WHERE name = 'Sword'),(SELECT id FROM stats WHERE short_name = 'atk'),200);
 INSERT INTO item_stats(item_id,stat_id,content) VALUES ((SELECT id FROM items WHERE name = 'Sword'),(SELECT id FROM stats WHERE short_name = 'def'),50);
  */
