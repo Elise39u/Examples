@@ -32,38 +32,41 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="352" column="85" selection-start-line="352" selection-start-column="85" selection-end-line="352" selection-end-column="85" />
+            <state relative-caret-position="63">
+              <caret line="571" column="0" selection-start-line="571" selection-start-column="0" selection-end-line="571" selection-end-column="0" />
               <folding>
-                <marker date="1479736150087" expanded="true" signature="1606:1695" ph="SELECT DISTI... items" />
-                <marker date="1479736150087" expanded="true" signature="1926:1962" ph="SELECT name items" />
-                <marker date="1479736150087" expanded="true" signature="2222:2258" ph="SELECT name items" />
-                <marker date="1479736150087" expanded="true" signature="2796:2833" ph="SELECT price... items" />
-                <marker date="1479736150087" expanded="true" signature="3310:3347" ph="SELECT price... items" />
-                <marker date="1479736150087" expanded="true" signature="4539:4588" ph="SELECT name monsters" />
-                <marker date="1479736150087" expanded="true" signature="7052:7066" ph="..." />
-                <marker date="1479736150087" expanded="true" signature="7134:7191" ph="SELECT id FR... player" />
-                <marker date="1479736150087" expanded="true" signature="7671:7728" ph="SELECT id FR... player" />
-                <marker date="1479736150087" expanded="true" signature="8519:8560" ph="SELECT id FR... monsters" />
-                <marker date="1479736150087" expanded="true" signature="12499:12536" ph="SELECT price... items" />
-                <marker date="1479736150087" expanded="true" signature="12801:12851" ph="SELECT item_... Inventory" />
-                <marker date="1479736150087" expanded="true" signature="13095:13163" ph="UPDATE Inven... " />
-                <marker date="1479736150087" expanded="true" signature="13102:13163" ph="INSERT INTO Inventory... " />
-                <marker date="1479736150087" expanded="true" signature="13550:13656" ph="INSERT INTO Inventory... " />
-                <marker date="1479736150087" expanded="true" signature="14004:14093" ph="SELECT DISTI... items" />
-                <marker date="1479736150087" expanded="true" signature="14633:14699" ph="SELECT item_... inventory" />
-                <marker date="1479736150087" expanded="true" signature="15072:15138" ph="SELECT id, i... inventory" />
-                <marker date="1479736150087" expanded="true" signature="15321:15359" ph="SELECT name items" />
-                <marker date="1479736150087" expanded="true" signature="17159:17265" ph="INSERT INTO Inventory... " />
-                <marker date="1479736150087" expanded="true" signature="17603:17649" ph="SELECT item_... Inventory" />
-                <marker date="1479736150087" expanded="true" signature="17730:17789" ph="UPDATE Inven... " />
-                <marker date="1479736150087" expanded="true" signature="17730:17795" ph="UPDATE Inven... " />
-                <marker date="1479736150087" expanded="true" signature="18072:18182" ph="INSERT INTO Inventory... " />
-                <marker date="1479736150087" expanded="true" signature="18261:18275" ph="..." />
-                <marker date="1479736150087" expanded="true" signature="19542:19562" ph="SELECT * FRO... player" />
-                <marker date="1479736150087" expanded="true" signature="19652:19799" ph="INSERT INTO player... " />
-                <marker date="1479736150087" expanded="true" signature="20410:20422" ph="..." />
-                <marker date="1479736150087" expanded="true" signature="20423:20629" ph="..." />
+                <marker date="1479809408995" expanded="true" signature="1606:1695" ph="SELECT DISTI... items" />
+                <marker date="1479809408995" expanded="true" signature="1926:1962" ph="SELECT name items" />
+                <marker date="1479809408995" expanded="true" signature="2222:2258" ph="SELECT name items" />
+                <marker date="1479809408995" expanded="true" signature="2796:2833" ph="SELECT price... items" />
+                <marker date="1479809408995" expanded="true" signature="3310:3347" ph="SELECT price... items" />
+                <marker date="1479809408995" expanded="true" signature="4539:4588" ph="SELECT name monsters" />
+                <marker date="1479809408995" expanded="true" signature="7052:7066" ph="..." />
+                <marker date="1479809408995" expanded="true" signature="7134:7191" ph="SELECT id FR... player" />
+                <marker date="1479809408995" expanded="true" signature="7671:7728" ph="SELECT id FR... player" />
+                <marker date="1479809408995" expanded="true" signature="8519:8560" ph="SELECT id FR... monsters" />
+                <marker date="1479809408995" expanded="true" signature="12499:12536" ph="SELECT price... items" />
+                <marker date="1479809408995" expanded="true" signature="12801:12851" ph="SELECT item_... Inventory" />
+                <marker date="1479809408995" expanded="true" signature="13095:13163" ph="UPDATE Inven... " />
+                <marker date="1479809408995" expanded="true" signature="13102:13163" ph="INSERT INTO Inventory... " />
+                <marker date="1479809408995" expanded="true" signature="13550:13656" ph="INSERT INTO Inventory... " />
+                <marker date="1479809408995" expanded="true" signature="14004:14093" ph="SELECT DISTI... items" />
+                <marker date="1479809408995" expanded="true" signature="15313:15379" ph="SELECT item_... inventory" />
+                <marker date="1479809408995" expanded="true" signature="15724:15796" ph="SELECT quant... inventory" />
+                <marker date="1479809408995" expanded="true" signature="16064:16150" ph="UPDATE inven... " />
+                <marker date="1479809408995" expanded="true" signature="16384:16447" ph="DELETE FROM " />
+                <marker date="1479809408995" expanded="true" signature="16677:16743" ph="SELECT id, i... inventory" />
+                <marker date="1479809408995" expanded="true" signature="16926:16964" ph="SELECT name items" />
+                <marker date="1479809408995" expanded="true" signature="22830:22936" ph="INSERT INTO Inventory... " />
+                <marker date="1479809408995" expanded="true" signature="23274:23320" ph="SELECT item_... Inventory" />
+                <marker date="1479809408995" expanded="true" signature="23401:23460" ph="UPDATE Inven... " />
+                <marker date="1479809408995" expanded="true" signature="23401:23466" ph="UPDATE Inven... " />
+                <marker date="1479809408995" expanded="true" signature="23743:23853" ph="INSERT INTO Inventory... " />
+                <marker date="1479809408995" expanded="true" signature="23932:23946" ph="..." />
+                <marker date="1479809408995" expanded="true" signature="25213:25233" ph="SELECT * FRO... player" />
+                <marker date="1479809408995" expanded="true" signature="25323:25470" ph="INSERT INTO player... " />
+                <marker date="1479809408995" expanded="true" signature="26081:26093" ph="..." />
+                <marker date="1479809408995" expanded="true" signature="26094:26300" ph="..." />
               </folding>
             </state>
           </provider>
@@ -72,7 +75,7 @@
       <file leaf-file-name="Backup.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inc/Backup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
+            <state relative-caret-position="1581">
               <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="174" />
               <folding />
             </state>
@@ -82,7 +85,7 @@
       <file leaf-file-name="index.html.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tpl/index.html.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="4199">
               <caret line="247" column="63" selection-start-line="247" selection-start-column="63" selection-end-line="247" selection-end-column="63" />
               <folding />
             </state>
@@ -124,7 +127,7 @@
       <file leaf-file-name="ItemStats.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inc/ItemStats.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
+            <state relative-caret-position="236">
               <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
               <folding>
                 <marker date="1479381750199" expanded="true" signature="111:155" ph="SELECT name,... items" />
@@ -331,7 +334,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -412,6 +414,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -610,15 +613,16 @@
       <workItem from="1479312643833" duration="1367000" />
       <workItem from="1479367154044" duration="16441000" />
       <workItem from="1479453520810" duration="7692000" />
-      <workItem from="1479712844947" duration="12960000" />
+      <workItem from="1479712844947" duration="17988000" />
+      <workItem from="1479798930494" duration="9741000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="644371000" />
+    <option name="totallyTimeSpent" value="659140000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -908,17 +912,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inc/Monster.php">
+    <entry file="file://$PROJECT_DIR$/inc/Location.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+        <state relative-caret-position="935">
+          <caret line="55" column="44" selection-start-line="55" selection-start-column="44" selection-end-line="55" selection-end-column="44" />
           <folding>
-            <marker date="1479292672993" expanded="true" signature="226:367" ph="SELECT value... monster_stats" />
-            <marker date="1479292672993" expanded="true" signature="277:344" ph="SELECT id FR... stats" />
-            <marker date="1479292672993" expanded="true" signature="784:932" ph="SELECT count... monster_stats" />
-            <marker date="1479292672993" expanded="true" signature="842:909" ph="SELECT id FR... stats" />
-            <marker date="1479292672993" expanded="true" signature="1296:1438" ph="INSERT INTO monster_stats... " />
-            <marker date="1479292672993" expanded="true" signature="1359:1426" ph="SELECT id FR... stats" />
+            <marker date="1479393478670" expanded="true" signature="321:354" ph="SELECT * FRO... locations" />
+            <marker date="1479393478670" expanded="true" signature="802:838" ph="SELECT * FRO... choices" />
+            <marker date="1479393478670" expanded="true" signature="802:847" ph="SELECT * FRO... choices" />
+            <marker date="1479393478670" expanded="true" signature="802:849" ph="SELECT * FRO... choices" />
+            <marker date="1479393478670" expanded="true" signature="802:851" ph="SELECT * FRO... choices" />
+            <marker date="1479393478670" expanded="true" signature="837:838" ph="SELECT * FRO... choices" />
+            <marker date="1479393478670" expanded="true" signature="1366:1389" ph="SELECT * FRO... inventory" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/index.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4199">
+          <caret line="247" column="63" selection-start-line="247" selection-start-column="63" selection-end-line="247" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/Backup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="174" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/ItemStats.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+          <folding>
+            <marker date="1479381750199" expanded="true" signature="111:155" ph="SELECT name,... items" />
+            <marker date="1479381750199" expanded="true" signature="506:641" ph="SELECT conte... item_stats" />
+            <marker date="1479381750199" expanded="true" signature="554:621" ph="SELECT id FR... stats" />
+            <marker date="1479381750199" expanded="true" signature="1083:1224" ph="UPDATE item_... " />
+            <marker date="1479381750199" expanded="true" signature="1137:1204" ph="SELECT id FR... stats" />
+            <marker date="1479381750199" expanded="true" signature="1674:1816" ph="SELECT count... item_stats" />
+            <marker date="1479381750199" expanded="true" signature="1729:1796" ph="SELECT id FR... stats" />
+            <marker date="1479381750199" expanded="true" signature="2178:2314" ph="INSERT INTO item_stats... " />
+            <marker date="1479381750199" expanded="true" signature="2235:2302" ph="SELECT id FR... stats" />
           </folding>
         </state>
       </provider>
@@ -944,6 +983,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/inc/Monster.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+          <folding>
+            <marker date="1479292672993" expanded="true" signature="226:367" ph="SELECT value... monster_stats" />
+            <marker date="1479292672993" expanded="true" signature="277:344" ph="SELECT id FR... stats" />
+            <marker date="1479292672993" expanded="true" signature="784:932" ph="SELECT count... monster_stats" />
+            <marker date="1479292672993" expanded="true" signature="842:909" ph="SELECT id FR... stats" />
+            <marker date="1479292672993" expanded="true" signature="1296:1438" ph="INSERT INTO monster_stats... " />
+            <marker date="1479292672993" expanded="true" signature="1359:1426" ph="SELECT id FR... stats" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/inc/WeaponStat.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -956,90 +1010,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inc/Location.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="44" selection-start-line="55" selection-start-column="44" selection-end-line="55" selection-end-column="44" />
-          <folding>
-            <marker date="1479393478670" expanded="true" signature="321:354" ph="SELECT * FRO... locations" />
-            <marker date="1479393478670" expanded="true" signature="802:838" ph="SELECT * FRO... choices" />
-            <marker date="1479393478670" expanded="true" signature="802:847" ph="SELECT * FRO... choices" />
-            <marker date="1479393478670" expanded="true" signature="802:849" ph="SELECT * FRO... choices" />
-            <marker date="1479393478670" expanded="true" signature="802:851" ph="SELECT * FRO... choices" />
-            <marker date="1479393478670" expanded="true" signature="837:838" ph="SELECT * FRO... choices" />
-            <marker date="1479393478670" expanded="true" signature="1366:1389" ph="SELECT * FRO... inventory" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/ItemStats.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-          <folding>
-            <marker date="1479381750199" expanded="true" signature="111:155" ph="SELECT name,... items" />
-            <marker date="1479381750199" expanded="true" signature="506:641" ph="SELECT conte... item_stats" />
-            <marker date="1479381750199" expanded="true" signature="554:621" ph="SELECT id FR... stats" />
-            <marker date="1479381750199" expanded="true" signature="1083:1224" ph="UPDATE item_... " />
-            <marker date="1479381750199" expanded="true" signature="1137:1204" ph="SELECT id FR... stats" />
-            <marker date="1479381750199" expanded="true" signature="1674:1816" ph="SELECT count... item_stats" />
-            <marker date="1479381750199" expanded="true" signature="1729:1796" ph="SELECT id FR... stats" />
-            <marker date="1479381750199" expanded="true" signature="2178:2314" ph="INSERT INTO item_stats... " />
-            <marker date="1479381750199" expanded="true" signature="2235:2302" ph="SELECT id FR... stats" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/Backup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="174" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/index.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="247" column="63" selection-start-line="247" selection-start-column="63" selection-end-line="247" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="352" column="85" selection-start-line="352" selection-start-column="85" selection-end-line="352" selection-end-column="85" />
+        <state relative-caret-position="63">
+          <caret line="571" column="0" selection-start-line="571" selection-start-column="0" selection-end-line="571" selection-end-column="0" />
           <folding>
-            <marker date="1479736150087" expanded="true" signature="1606:1695" ph="SELECT DISTI... items" />
-            <marker date="1479736150087" expanded="true" signature="1926:1962" ph="SELECT name items" />
-            <marker date="1479736150087" expanded="true" signature="2222:2258" ph="SELECT name items" />
-            <marker date="1479736150087" expanded="true" signature="2796:2833" ph="SELECT price... items" />
-            <marker date="1479736150087" expanded="true" signature="3310:3347" ph="SELECT price... items" />
-            <marker date="1479736150087" expanded="true" signature="4539:4588" ph="SELECT name monsters" />
-            <marker date="1479736150087" expanded="true" signature="7052:7066" ph="..." />
-            <marker date="1479736150087" expanded="true" signature="7134:7191" ph="SELECT id FR... player" />
-            <marker date="1479736150087" expanded="true" signature="7671:7728" ph="SELECT id FR... player" />
-            <marker date="1479736150087" expanded="true" signature="8519:8560" ph="SELECT id FR... monsters" />
-            <marker date="1479736150087" expanded="true" signature="12499:12536" ph="SELECT price... items" />
-            <marker date="1479736150087" expanded="true" signature="12801:12851" ph="SELECT item_... Inventory" />
-            <marker date="1479736150087" expanded="true" signature="13095:13163" ph="UPDATE Inven... " />
-            <marker date="1479736150087" expanded="true" signature="13102:13163" ph="INSERT INTO Inventory... " />
-            <marker date="1479736150087" expanded="true" signature="13550:13656" ph="INSERT INTO Inventory... " />
-            <marker date="1479736150087" expanded="true" signature="14004:14093" ph="SELECT DISTI... items" />
-            <marker date="1479736150087" expanded="true" signature="14633:14699" ph="SELECT item_... inventory" />
-            <marker date="1479736150087" expanded="true" signature="15072:15138" ph="SELECT id, i... inventory" />
-            <marker date="1479736150087" expanded="true" signature="15321:15359" ph="SELECT name items" />
-            <marker date="1479736150087" expanded="true" signature="17159:17265" ph="INSERT INTO Inventory... " />
-            <marker date="1479736150087" expanded="true" signature="17603:17649" ph="SELECT item_... Inventory" />
-            <marker date="1479736150087" expanded="true" signature="17730:17789" ph="UPDATE Inven... " />
-            <marker date="1479736150087" expanded="true" signature="17730:17795" ph="UPDATE Inven... " />
-            <marker date="1479736150087" expanded="true" signature="18072:18182" ph="INSERT INTO Inventory... " />
-            <marker date="1479736150087" expanded="true" signature="18261:18275" ph="..." />
-            <marker date="1479736150087" expanded="true" signature="19542:19562" ph="SELECT * FRO... player" />
-            <marker date="1479736150087" expanded="true" signature="19652:19799" ph="INSERT INTO player... " />
-            <marker date="1479736150087" expanded="true" signature="20410:20422" ph="..." />
-            <marker date="1479736150087" expanded="true" signature="20423:20629" ph="..." />
+            <marker date="1479809408995" expanded="true" signature="1606:1695" ph="SELECT DISTI... items" />
+            <marker date="1479809408995" expanded="true" signature="1926:1962" ph="SELECT name items" />
+            <marker date="1479809408995" expanded="true" signature="2222:2258" ph="SELECT name items" />
+            <marker date="1479809408995" expanded="true" signature="2796:2833" ph="SELECT price... items" />
+            <marker date="1479809408995" expanded="true" signature="3310:3347" ph="SELECT price... items" />
+            <marker date="1479809408995" expanded="true" signature="4539:4588" ph="SELECT name monsters" />
+            <marker date="1479809408995" expanded="true" signature="7052:7066" ph="..." />
+            <marker date="1479809408995" expanded="true" signature="7134:7191" ph="SELECT id FR... player" />
+            <marker date="1479809408995" expanded="true" signature="7671:7728" ph="SELECT id FR... player" />
+            <marker date="1479809408995" expanded="true" signature="8519:8560" ph="SELECT id FR... monsters" />
+            <marker date="1479809408995" expanded="true" signature="12499:12536" ph="SELECT price... items" />
+            <marker date="1479809408995" expanded="true" signature="12801:12851" ph="SELECT item_... Inventory" />
+            <marker date="1479809408995" expanded="true" signature="13095:13163" ph="UPDATE Inven... " />
+            <marker date="1479809408995" expanded="true" signature="13102:13163" ph="INSERT INTO Inventory... " />
+            <marker date="1479809408995" expanded="true" signature="13550:13656" ph="INSERT INTO Inventory... " />
+            <marker date="1479809408995" expanded="true" signature="14004:14093" ph="SELECT DISTI... items" />
+            <marker date="1479809408995" expanded="true" signature="15313:15379" ph="SELECT item_... inventory" />
+            <marker date="1479809408995" expanded="true" signature="15724:15796" ph="SELECT quant... inventory" />
+            <marker date="1479809408995" expanded="true" signature="16064:16150" ph="UPDATE inven... " />
+            <marker date="1479809408995" expanded="true" signature="16384:16447" ph="DELETE FROM " />
+            <marker date="1479809408995" expanded="true" signature="16677:16743" ph="SELECT id, i... inventory" />
+            <marker date="1479809408995" expanded="true" signature="16926:16964" ph="SELECT name items" />
+            <marker date="1479809408995" expanded="true" signature="22830:22936" ph="INSERT INTO Inventory... " />
+            <marker date="1479809408995" expanded="true" signature="23274:23320" ph="SELECT item_... Inventory" />
+            <marker date="1479809408995" expanded="true" signature="23401:23460" ph="UPDATE Inven... " />
+            <marker date="1479809408995" expanded="true" signature="23401:23466" ph="UPDATE Inven... " />
+            <marker date="1479809408995" expanded="true" signature="23743:23853" ph="INSERT INTO Inventory... " />
+            <marker date="1479809408995" expanded="true" signature="23932:23946" ph="..." />
+            <marker date="1479809408995" expanded="true" signature="25213:25233" ph="SELECT * FRO... player" />
+            <marker date="1479809408995" expanded="true" signature="25323:25470" ph="INSERT INTO player... " />
+            <marker date="1479809408995" expanded="true" signature="26081:26093" ph="..." />
+            <marker date="1479809408995" expanded="true" signature="26094:26300" ph="..." />
           </folding>
         </state>
       </provider>

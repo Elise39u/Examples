@@ -350,7 +350,12 @@ if ($loc->id == 99 ) {
 }
 
 if ($location_id == 101) {
-    $actions = array('potion' => 'use_potion', 'crystal_ball' => 'use_crystal_ball');
+    $actions = array('L_Red_potion' => 'use_L_Red_potion', 'D_Red_potion' => 'use_D_Red_potion', 'L_Purple_potion' => 'use_L_Purple_potion',
+        'Purple_potion' => 'use_Purple_potion', 'D_Purple_potion' => 'use_D_Purple_potion', 'L_Cyan_potion' => 'use_L_Cyan_potion',
+        'D_Cyan_potion' => 'use_D_Cyan_potion', 'L_Orange_potion' => 'use_L_Orange_potion', 'D_Orange_potion' => 'use_D_Orange_potion',
+        'L_Yellow_potion' => 'use_L_Yellow_potion', 'D_Yellow_potion' => 'use_D_Yellow_potion', 'L_Green_potion' => 'use_L_Green_potion',
+        'Green_potion' => 'use_Green_potion', 'D_Green_potion' => 'use_D_Green_potion', 'L_Pink_potion' => 'use_L_Pink_potion',
+        'D_Pink_potion' => 'use_D_Pink_potion', 'Rainbow_potion' => 'use_Rainbow_potion');
 
     if (isset($_POST['item-id'])) {
         $query = sprintf("SELECT item_id FROM inventory WHERE player_id = '%s' AND id = '%s'",
@@ -360,6 +365,24 @@ if ($location_id == 101) {
         list($itemID) = mysqli_fetch_row($result);
         $token = getItemStat('token', $itemID);
         call_user_func($actions[$token]);
+
+        $query = sprintf("SELECT quantity FROM inventory WHERE player_id = '%s' AND item_id = '%s'",
+            mysqli_real_escape_string($mysqli, $userID), mysqli_real_escape_string($mysqli, $itemID));
+        $result = mysqli_query($mysqli, $query);
+        list($quantity) = mysqli_fetch_row($result);
+
+        if ($quantity > 1) {
+            $query = sprintf("UPDATE inventory SET quantity = quantity - 1 WHERE player_id = '%s' AND item_id = '%s'",
+                mysqli_real_escape_string($mysqli, $userID),
+                mysqli_real_escape_string($mysqli, $itemID));
+            $result = mysqli_query($mysqli, $query);
+        }
+        else {
+            $query = sprintf("DELETE FROM inventory WHERE player_id = '%s' AND item_id = '%s'",
+                mysqli_real_escape_string($mysqli, $userID),
+                mysqli_real_escape_string($mysqli, $itemID));
+        }
+        mysqli_query($mysqli, $query);
     }
 
     $inventory = array();
@@ -377,10 +400,201 @@ if ($location_id == 101) {
     $smarty->assign('inventory',$inventory);
 }
 
-function use_potion() {
-    echo ' <div id="msg"> This is code that would run when the user used a potion. </div>';
+function use_D_Red_potion(){
+    global $userID;
+    $DecAtk = getStat('atk', $userID);
+    $Hai = $DecAtk - 50;
+    if (isset($Hai)) {
+        setStat('atk', $userID, $Hai);
+    }
 }
 
+function use_L_Red_potion(){
+    global $userID;
+    $IncAtk = getStat('atk', $userID);
+    $Hai = $IncAtk + 50;
+    if (isset($Hai)) {
+        setStat('atk', $userID, $Hai);
+    }
+}
+
+function use_L_Purple_potion() {
+    global $userID;
+    $IncHP = getStat('curhp', $userID);
+    $Hai = $IncHP + 50;
+    if (isset($Hai)) {
+        setStat('curhp', $userID, $Hai);
+    }
+}
+
+function use_Purple_potion() {
+    global $userID;
+    $Inv = getStat('def', $userID);
+    $Hai = $Inv + 80;
+    if (isset($Hai)) {
+        setStat('def', $userID, $Hai);
+    }
+}
+
+function use_D_Purple_potion() {
+    global $userID;
+    $DecHP = getStat('curhp', $userID);
+    $Hai = $DecHP - 50;
+    if (isset($Hai)) {
+        setStat('curhp', $userID, $Hai);
+    }
+}
+
+function use_L_Cyan_potion() {
+    global $userID;
+    $Dmg = getStat('atk', $userID);
+    $Hai = $Dmg * 2.5;
+    if (isset($Hai)) {
+        setStat('atk', $userID, $Hai);
+    }
+}
+
+function use_D_Cyan_potion() {
+    global $userID;
+    $Dmg = getStat('atk', $userID);
+    $Hai = $Dmg / 2.5;
+    if (isset($Hai)) {
+        setStat('atk', $userID, $Hai);
+    }
+}
+
+function use_L_Orange_potion() {
+    global $userID;
+    $BANK = getStat('bankgc',$userID);
+    $Hai = $BANK * 2;
+    if (isset($Hai)) {
+        setStat('bankgc', $userID, $Hai);
+    }
+}
+
+function use_D_Orange_potion() {
+    global $userID;
+    $BANK = getStat('bankgc',$userID);
+    $Hai = $BANK / 2;
+    if (isset($Hai)) {
+        setStat('bankgc', $userID, $Hai);
+    }
+}
+
+function use_L_Yellow_potion() {
+    global $userID;
+    $money = getStat('gc', $userID);
+    $Hai = $money + 1000;
+    if (isset($Hai)) {
+        setStat('gc', $userID, $Hai);
+    }
+}
+
+function use_D_Yellow_potion() {
+    global $userID;
+    $money = getStat('gc', $userID);
+    $Hai = $money - 250;
+    if (isset($Hai)) {
+        setStat('gc', $userID, $Hai);
+    }
+}
+
+function use_L_Green_potion(){
+    global $userID;
+    $HP = getStat('curhp', $userID);
+    $Hai = $HP = 1;
+    if (isset($Hai)) {
+        setStat('curhp', $userID, $Hai);
+    }
+}
+
+function use_Green_potion(){
+    global $userID;
+    $HP = getStat('curhp', $userID);
+    $Hai = $HP = 175;
+    if (isset($Hai)) {
+        setStat('curhp', $userID, $Hai);
+    }
+}
+
+function use_D_Green_potion(){
+    global $userID;
+    $HP = getStat('curhp', $userID);
+    $Hai = $HP = 300;
+    if (isset($Hai)) {
+        setStat('curhp', $userID, $Hai);
+    }
+}
+
+function use_D_Pink_potion(){
+    global $userID;
+    $Max = getStat('maxhp', $userID);
+    $Hai = $Max - 75;
+    if (isset($Hai)) {
+        setStat('maxhp', $userID, $Hai);
+    }
+}
+
+function use_L_Pink_potion(){
+    global $userID;
+    $Max = getStat('maxhp', $userID);
+    $Hai = $Max + 75;
+    if (isset($Hai)) {
+        setStat('maxhp', $userID, $Hai);
+    }
+}
+
+function use_Rainbow_potion() {
+    global $userID;
+    $Max = getStat('maxhp', $userID);
+    $MaxHP = $Max + 75;
+    if (isset($MaxHP)) {
+        setStat('maxhp', $userID, $MaxHP);
+    }
+
+    $HP = getStat('curhp', $userID);
+    $SetHP = $HP = 300;
+    if (isset($SetHP)) {
+        setStat('curhp', $userID, $SetHP);
+    }
+
+    $money = getStat('gc', $userID);
+    $Gold = $money + 1000;
+    if (isset($Gold)) {
+        setStat('gc', $userID, $Gold);
+    }
+
+    $BANK = getStat('bankgc',$userID);
+    $BankGold = $BANK * 2;
+    if (isset($BankGold)) {
+        setStat('bankgc', $userID, $BankGold);
+    }
+
+    $Dmg = getStat('atk', $userID);
+    $IncDmg = $Dmg * 2.5;
+    if (isset($IncDmg)) {
+        setStat('atk', $userID, $IncDmg);
+    }
+
+    $IncHP = getStat('curhp', $userID);
+    $Hai = $IncHP + 50;
+    if (isset($Hai)) {
+        setStat('curhp', $userID, $Hai);
+    }
+
+    $IncAtk = getStat('atk', $userID);
+    $Atk = $IncAtk + 50;
+    if (isset($Atk)) {
+        setStat('atk', $userID, $Atk);
+    }
+
+    $Inv = getStat('def', $userID);
+    $Def = $Inv + 80;
+    if (isset($Def)) {
+        setStat('def', $userID, $Def);
+    }
+    echo "<div id='msg'> This bit of code would run when the user uses a rainbow potion </div>";
+}
 
 // $userID = 1;
 if (isset($_SESSION['username'])) {
