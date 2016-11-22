@@ -116,10 +116,18 @@ if ($loc->id == 33) {
 }
 
 if ($loc->id == 97 || $loc->id == 100) {
-    $query = sprintf("SELECT name FROM monsters ORDER BY RAND() LIMIT 1");
-    $result = mysqli_query($mysqli, $query);
-    list($monster) = mysqli_fetch_row($result);
-    $smarty->assign('monster',$monster);
+    global $monster;
+    if ($loc->id == 97) {
+        $query = sprintf("SELECT name FROM monsters ORDER BY RAND() LIMIT 1");
+        $result = mysqli_query($mysqli, $query);
+        list($monster) = mysqli_fetch_row($result);
+        $smarty->assign('monster', $monster);
+    } elseif ($loc->id == 100) {
+        $query = sprintf("SELECT name FROM monsters WHERE id IN (1, 3, 4, 5, 7, 8, 16, 20, 22, 23, 24, 25, 26, 27) ORDER BY RAND() LIMIT 1");
+        $result = mysqli_query($mysqli, $query);
+        list($monster) = mysqli_fetch_row($result);
+        $smarty->assign('monster', $monster);
+    }
 
     switch ($monster) {
         case "Fire Margawa":
@@ -169,6 +177,42 @@ if ($loc->id == 97 || $loc->id == 100) {
             break;
         case "Gang Member":
             echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/GangMember.png'>";
+            break;
+        case "Alien":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Alien.png'>";
+            break;
+        case "Brute":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Brute.png'>";
+            break;
+        case "Brutus":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Brutus.png'>";
+            break;
+        case "Clown":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Clown.png'>";
+            break;
+        case "Cosmunat":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Cosmunat.png'>";
+            break;
+        case "Grenadier":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Grenadier.png'>";
+            break;
+        case "Prison Zombie":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/PrisonZombie.png'>";
+            break;
+        case "Ram":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Ram.png'>";
+            break;
+        case "Spiker":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Spiker.png'>";
+            break;
+        case "Thrasher":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Thrasher.png'>";
+            break;
+        case "Wresteler":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Wresteler.png'>";
+            break;
+        case "Orge":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Orge.png'>";
             break;
         default:
             echo "<span style=\"color:#982356;\">Not the correct monster is showing";
@@ -375,7 +419,6 @@ if ($location_id == 101) {
             $query = sprintf("UPDATE inventory SET quantity = quantity - 1 WHERE player_id = '%s' AND item_id = '%s'",
                 mysqli_real_escape_string($mysqli, $userID),
                 mysqli_real_escape_string($mysqli, $itemID));
-            $result = mysqli_query($mysqli, $query);
         }
         else {
             $query = sprintf("DELETE FROM inventory WHERE player_id = '%s' AND item_id = '%s'",
@@ -593,7 +636,6 @@ function use_Rainbow_potion() {
     if (isset($Def)) {
         setStat('def', $userID, $Def);
     }
-    echo "<div id='msg'> This bit of code would run when the user uses a rainbow potion </div>";
 }
 
 // $userID = 1;
