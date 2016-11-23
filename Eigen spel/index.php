@@ -44,6 +44,11 @@ if($setHP <= 0) {
     setStat('curhp',$userID,175);
     setStat('maxhp',$userID,300);
     setStat('sethp',$userID,25);
+    setStat('atk', $userID, '80');
+    setStat('def', $userID, '100');
+    setStat('mdef', $userID, '50');
+    setStat('gc', $userID, '250');
+    setStat('bankgc', $userID, '5000');
 }
 $smarty->assign('currentHP',getStat('curhp',$userID));
 $smarty->assign('maximumHP',getStat('maxhp',$userID));
@@ -406,7 +411,7 @@ if ($location_id == 101) {
         'D_Cyan_potion' => 'use_D_Cyan_potion', 'L_Orange_potion' => 'use_L_Orange_potion', 'D_Orange_potion' => 'use_D_Orange_potion',
         'L_Yellow_potion' => 'use_L_Yellow_potion', 'D_Yellow_potion' => 'use_D_Yellow_potion', 'L_Green_potion' => 'use_L_Green_potion',
         'Green_potion' => 'use_Green_potion', 'D_Green_potion' => 'use_D_Green_potion', 'L_Pink_potion' => 'use_L_Pink_potion',
-        'D_Pink_potion' => 'use_D_Pink_potion', 'Rainbow_potion' => 'use_Rainbow_potion');
+        'D_Pink_potion' => 'use_D_Pink_potion', 'Rainbow_potion' => 'use_Rainbow_potion', 'item' => 'use_item');
 
     if (isset($_POST['item-id'])) {
         global $itemID;
@@ -448,6 +453,94 @@ if ($location_id == 101) {
         list($row['name']) = mysqli_fetch_row($item_result);
         array_push($inventory, $row);
     }
+    $smarty->assign('inventory',$inventory);
+}
+
+if ($loc->id == 103) {
+
+    if(isset($_POST['item-id'])) {
+        $itemID = $_POST['item-id'];
+        $query = sprintf("SELECT price FROM items WHERE id = %s",mysqli_real_escape_string($mysqli, $itemID));
+        $result = mysqli_query($mysqli, $query);
+        list($cost) = mysqli_fetch_row($result);
+        $gold = getStat('gc',$userID);
+        if($gold > $cost) {
+            setStat('gc',$userID,($gold - $cost));
+            $query = sprintf("SELECT count(id) FROM Inventory WHERE player_id = '%s' AND item_id = '%s'",
+                mysqli_real_escape_string($mysqli, $userID),
+                mysqli_real_escape_string($mysqli, $itemID));
+            $result = mysqli_query($mysqli, $query);
+            list($Apple) = mysqli_fetch_row($result);
+            if ($Apple > 0) {
+                $sql = "UPDATE Inventory SET quantity = quantity + 1 WHERE item_id=$itemID";
+                mysqli_query($mysqli, $sql);
+                setStat('gc', $userID, ($gold - $cost));
+                $smarty->assign('message', '1 more Item added!');
+            } else {
+                foreach ($loc->Inventory as $Ok) {
+                    $Ok = $space;
+                    $space--;
+                }
+                $sql = "INSERT INTO Inventory(player_id, item_id, space, quantity) VALUES ($userID, '$itemID', '$space', $count)";
+                mysqli_query($mysqli, $sql);
+                setStat('gc', $userID, ($gold - $cost));
+                $smarty->assign('message', 'You Bought that Item!');
+            }
+        }
+        else {
+            $smarty->assign('error','You cannot afford that item!');
+        }
+    }
+
+  if(isset($_POST['sell-id'])) {
+      if ($_POST['sell-id']) {
+          $itemID = $_POST['sell-id'];
+          $query = sprintf("SELECT price FROM items WHERE id = '%s'", mysqli_real_escape_string($mysqli, $itemID));
+          $result = mysqli_query($mysqli, $query);
+          list($cost) = mysqli_fetch_row($result);
+          $gold = getStat('gc', $userID);
+          setStat('gc', $userID, ($gold + $cost));
+          $query = sprintf("SELECT quantity FROM Inventory WHERE player_id = '%s' AND item_id = '%s'",
+              mysqli_real_escape_string($mysqli, $userID),
+              mysqli_real_escape_string($mysqli, $itemID));
+          $result = mysqli_query($mysqli, $query);
+          list($quantity) = mysqli_fetch_row($result);
+          if ($quantity > 1) {
+              $query = sprintf("UPDATE inventory SET quantity = quantity - 1 WHERE player_id = '%s' AND item_id = '%s'",
+                  mysqli_real_escape_string($mysqli, $userID),
+                  mysqli_real_escape_string($mysqli, $itemID));
+          } else {
+              $query = sprintf("DELETE FROM inventory WHERE player_id = '%s' AND item_id = '%s'",
+                  mysqli_real_escape_string($mysqli, $userID),
+                  mysqli_real_escape_string($mysqli, $itemID));
+          }
+          mysqli_query($mysqli, $query);
+          $smarty->assign('message', 'You sold the item.');
+      }
+  }
+
+
+    $query = "SELECT DISTINCT(id), name, price FROM items WHERE type = 'Usable' ORDER BY RAND() LIMIT 5;";
+    $result = mysqli_query($mysqli, $query);
+    $items = array();
+    while($row = mysqli_fetch_assoc($result)) {
+        array_push($items,$row);
+    }
+
+    $inventory = array();
+    $query = sprintf("SELECT id, item_id, quantity FROM inventory WHERE player_id = '%s'",
+        mysqli_real_escape_string($mysqli, $userID));
+    $result = mysqli_query($mysqli, $query);
+
+    while ($row = mysqli_fetch_assoc($result)) {
+        $item_query = sprintf("SELECT name FROM items WHERE id = '%s'",
+            mysqli_real_escape_string($mysqli, $row['item_id']));
+        $item_result = mysqli_query($mysqli, $item_query);
+        list($row['name']) = mysqli_fetch_row($item_result);
+        array_push($inventory, $row);
+    }
+
+    $smarty->assign('items',$items);
     $smarty->assign('inventory',$inventory);
 }
 
@@ -646,7 +739,19 @@ function use_Rainbow_potion() {
     }
 }
 
+function use_item() {
+    global $userID;
+    $gold = getStat('gc', $userID);
+    $Hai = $gold + 2500;
+    if (isset($Hai)) {
+        setStat('gc', $userID, $Hai);
+    }
+}
+
 // $userID = 1;
+if (isset($items)) {
+    $smarty->assign('items',$items);
+}
 if (isset($_SESSION['username'])) {
     $smarty->assign('name', $_SESSION['username']);
 }
@@ -757,6 +862,7 @@ if (isset($_POST['submit'])) {
         $link_hyper = 'index.php?location_id=2';
         echo "<a class='item' href='" . $link_hyper . "'> GO ON PLEASE  </a>";
         echo "</br>";
+        $_SESSION['username'] = $Username;
     } else {
         $sql = " INSERT INTO player (FirstName, LastName, Email, Password, Username) 
         VALUES ('$FirstName', '$LastName', '$Email', '$Password', '$Username')";
@@ -772,7 +878,6 @@ if (isset($_POST['submit'])) {
         setStat('def', $userID, '100');
         setStat('mdef', $userID, '50');
         setStat('gc', $userID, '250');
-        setStat('curhp', $userID, '175');
         setStat('bankgc', $userID, '5000');
     }
 }
