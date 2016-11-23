@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-11-21 14:49:14
+/* Smarty version 3.1.29, created on 2016-11-23 09:24:23
   from "C:\wamp64\www\Eigen spel\tpl\index.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5832fb5a5597f8_61234580',
+  'unifunc' => 'content_583552379e4f11_35967029',
   'file_dependency' => 
   array (
     '29ae8891fc630520e20aaae1471271f4418e19a7' => 
     array (
       0 => 'C:\\wamp64\\www\\Eigen spel\\tpl\\index.html.tpl',
-      1 => 1479736150,
+      1 => 1479889221,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5832fb5a5597f8_61234580 ($_smarty_tpl) {
+function content_583552379e4f11_35967029 ($_smarty_tpl) {
 ?>
 <html>
 <head>

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Gegenereerd op: 22 nov 2016 om 14:48
+-- Gegenereerd op: 23 nov 2016 om 09:32
 -- Serverversie: 5.7.9
 -- PHP-versie: 5.6.16
 
@@ -207,16 +207,7 @@ CREATE TABLE IF NOT EXISTS `inventory` (
   `space` int(254) NOT NULL,
   `quantity` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
-
---
--- Gegevens worden geëxporteerd voor tabel `inventory`
---
-
-INSERT INTO `inventory` (`id`, `player_id`, `item_id`, `space`, `quantity`) VALUES
-(7, '1', 7, 48, 2),
-(6, '1', 11, 49, 1),
-(5, '1', 6, 50, 2);
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -714,7 +705,7 @@ CREATE TABLE IF NOT EXISTS `monster_stats` (
   `stat_id` int(11) DEFAULT NULL,
   `content` text,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2038 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=2048 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `monster_stats`
@@ -789,6 +780,16 @@ INSERT INTO `monster_stats` (`id`, `monster_id`, `stat_id`, `content`) VALUES
 (68, 1, 7, '100'),
 (69, 1, 5, '100'),
 (1763, 1, 9, '100'),
+(2047, 2, 8, '100'),
+(2046, 9, 11, '100'),
+(2045, 9, 7, '100'),
+(2044, 9, 5, '100'),
+(2043, 8, 11, '100'),
+(2042, 8, 7, '100'),
+(2041, 8, 5, '100'),
+(2040, 2, 11, '100'),
+(2039, 2, 7, '100'),
+(2038, 2, 5, '100'),
 (2037, 28, 3, '18000'),
 (2036, 28, 4, '1000'),
 (2035, 28, 2, '350'),
@@ -863,7 +864,7 @@ CREATE TABLE IF NOT EXISTS `player` (
 --
 
 INSERT INTO `player` (`id`, `FirstName`, `LastName`, `Email`, `Password`, `Username`) VALUES
-(1, 'Justin', 'Van de Laar', 'justin555@live.nl', 'lololololo', 'juju125');
+(1, 'Ellen', 'Van de Laar', 'EllenLaar@hotmail,com', 'lololololo', 'EllenJustin');
 
 -- --------------------------------------------------------
 
@@ -924,7 +925,7 @@ CREATE TABLE IF NOT EXISTS `user_stats` (
   `stat_id` int(11) DEFAULT NULL,
   `content` text,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=522 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=536 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `user_stats`
@@ -934,7 +935,7 @@ INSERT INTO `user_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
 (1, 1, 5, '175'),
 (2, 1, 1, '80'),
 (3, 1, 2, '100'),
-(4, 1, 3, '3860'),
+(4, 1, 3, '430'),
 (5, 1, 4, '300'),
 (6, 1, 7, '50'),
 (7, 1, 6, '25'),
@@ -948,6 +949,20 @@ INSERT INTO `user_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
 (506, 1, 8, '26'),
 (496, 1, 10, ''),
 (495, 1, 9, ''),
+(535, 9, 6, '25'),
+(534, 9, 4, '300'),
+(533, 9, 5, '175'),
+(532, 8, 6, '25'),
+(531, 8, 4, '300'),
+(530, 8, 5, '175'),
+(529, 2, 11, '5000'),
+(528, 2, 3, '255'),
+(527, 2, 7, '50'),
+(526, 2, 2, '100'),
+(525, 2, 1, '80'),
+(524, 2, 6, '25'),
+(523, 2, 4, '300'),
+(522, 2, 5, '145'),
 (520, 1, NULL, '100'),
 (519, 1, NULL, '100'),
 (518, 1, NULL, '100'),

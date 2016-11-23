@@ -6,7 +6,7 @@ global $count;
 // global $userID;
 $space = 50;
 $count = 1;
-$userID = // Dat $userid de correct player selecteert
+// $userID = // Dat $userid de correct player selecteert
     // var_dump $userid cause it to crash the code --> $userid becomes after this above automaticly 1
 require_once ('inc/loadsmarty.php');
 require_once ('inc/Location.class.php');
@@ -29,6 +29,13 @@ if ($did_load_work == FALSE) {    // als het laden fout ging, voeg dan een error
 if (isset($loc->item_id)) {
     $_SESSION["Space"] = true;
 }
+
+// $userID = "";
+$query = sprintf("SELECT id FROM player WHERE UPPER(username) = UPPER('%s')",
+    mysqli_real_escape_string($mysqli, $_SESSION['username']));
+    $result = mysqli_query($mysqli, $query);
+    list($count) = mysqli_fetch_row($result);
+    $userID = $count;
 
 // $userID = 1;
 $setHP = getStat('curhp',$userID);
@@ -402,13 +409,14 @@ if ($location_id == 101) {
         'D_Pink_potion' => 'use_D_Pink_potion', 'Rainbow_potion' => 'use_Rainbow_potion');
 
     if (isset($_POST['item-id'])) {
+        global $itemID;
         $query = sprintf("SELECT item_id FROM inventory WHERE player_id = '%s' AND id = '%s'",
             mysqli_real_escape_string($mysqli, $userID),
             mysqli_real_escape_string($mysqli, $_POST['item-id']));
         $result = mysqli_query($mysqli, $query);
         list($itemID) = mysqli_fetch_row($result);
         $token = getItemStat('token', $itemID);
-        call_user_func($actions[$token]);
+            call_user_func($actions[$token]);
 
         $query = sprintf("SELECT quantity FROM inventory WHERE player_id = '%s' AND item_id = '%s'",
             mysqli_real_escape_string($mysqli, $userID), mysqli_real_escape_string($mysqli, $itemID));
@@ -725,40 +733,48 @@ if ($location_id == 25 || $location_id == 29 || $location_id == 51 || $location_
 }
 
 if (isset($_POST['submit'])) {
-    $FirstName =  $_POST["FirstName"];
-    $LastName =  $_POST["LastName"];
-    $Email    = $_POST["Email"] ;
-    $Password = $_POST["Password"] ;
-    $Username = $_POST["Username"] ;
+    $FirstName = $_POST["FirstName"];
+    $LastName = $_POST["LastName"];
+    $Email = $_POST["Email"];
+    $Password = $_POST["Password"];
+    $Username = $_POST["Username"];
     $required = array($FirstName, $LastName, $Email, $Password, $Username);
 
     if (in_array('', $required)) {
-        echo "YOU MISS SOMETHING GO FIL IT IN"; echo "</br>";
+        echo "YOU MISS SOMETHING GO FIL IT IN";
+        echo "</br>";
         echo '<script type="text/javascript">';
         echo 'location.href = "http://localhost/Eigen%20spel/index.php?location_id=96";';
         echo '</script>';
     }
 
-    $result2 = mysqli_query($mysqli, "SELECT * FROM player");
+    $sql = sprintf("SELECT Username From player WHERE Username = '%s'",
+    mysqli_escape_string($mysqli, $Username));
+    $result2 = mysqli_query($mysqli, $sql);
     $num_rows = mysqli_num_rows($result2);
-    if ($num_rows == 1) {
+    if ($num_rows >= 1) {
+        echo "<div id='msg'> ALREADY REGISTERD ONCE </div>";
+        $link_hyper = 'index.php?location_id=2';
+        echo "<a class='item' href='" . $link_hyper . "'> GO ON PLEASE  </a>";
+        echo "</br>";
+    } else {
         $sql = " INSERT INTO player (FirstName, LastName, Email, Password, Username) 
         VALUES ('$FirstName', '$LastName', '$Email', '$Password', '$Username')";
+        mysqli_query($mysqli, $sql);
         $_SESSION['authenticated'] = true;
         $_SESSION['username'] = $Username;
         $link_hyper = 'index.php?location_id=2';
-        echo "correct Friend"; echo "</br>";
-        echo "<a class='item' href='". $link_hyper . "'> Logged in  </a>"; echo "</br>";
-        echo "Or registerd sucessfull";
-        setStat('atk',$userID,'80');
-        setStat('def',$userID,'100');
-        setStat('mdef',$userID,'50');
-        setStat('gc',$userID,'75');
-        setStat('bankgc',$userID,'5000');
+        echo "correct Friend";
+        echo "</br>";
+        echo "<a class='item' href='" . $link_hyper . "'> Regsiterd Succesfull  </a>";
+        echo "</br>";
+        setStat('atk', $userID, '80');
+        setStat('def', $userID, '100');
+        setStat('mdef', $userID, '50');
+        setStat('gc', $userID, '250');
+        setStat('curhp', $userID, '175');
+        setStat('bankgc', $userID, '5000');
     }
-    else {
-            echo "Error: " . $sql . "<br>" . $mysqli->error;
-        }
 }
 /*
 			<div style="display:none">
