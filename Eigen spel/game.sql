@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Gegenereerd op: 24 nov 2016 om 13:46
+-- Gegenereerd op: 24 nov 2016 om 15:22
 -- Serverversie: 5.7.9
 -- PHP-versie: 5.6.16
 
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `choices` (
   `title` varchar(254) NOT NULL,
   `need_item_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=216 DEFAULT CHARSET=latin1 COMMENT='Choice';
+) ENGINE=MyISAM AUTO_INCREMENT=218 DEFAULT CHARSET=latin1 COMMENT='Choice';
 
 --
 -- Gegevens worden geëxporteerd voor tabel `choices`
@@ -207,7 +207,9 @@ INSERT INTO `choices` (`id`, `from_id`, `to_id`, `title`, `need_item_id`) VALUES
 (189, 95, 37, 'Back', NULL),
 (190, 49, 48, 'Go back', NULL),
 (191, 96, 1, 'Fill something normal in ', NULL),
-(193, 180, 98, 'Go swap weapons', NULL);
+(193, 180, 98, 'Go swap weapons', NULL),
+(216, 108, 111, 'A jar?', NULL),
+(217, 111, 108, 'Look for something eles', NULL);
 
 -- --------------------------------------------------------
 
@@ -223,7 +225,7 @@ CREATE TABLE IF NOT EXISTS `inventory` (
   `space` int(254) NOT NULL,
   `quantity` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=31 DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -238,7 +240,7 @@ CREATE TABLE IF NOT EXISTS `items` (
   `type` enum('Weapon','Armor','Usable','Drop','Potion','Flare','SeaMonster') DEFAULT NULL,
   `price` int(11) NOT NULL DEFAULT '10',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=101 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=102 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `items`
@@ -344,7 +346,8 @@ INSERT INTO `items` (`id`, `name`, `type`, `price`) VALUES
 (97, 'Flesh', 'SeaMonster', 250),
 (98, 'Bullet', 'SeaMonster', 750),
 (99, 'LightGreenPotion', 'SeaMonster', 25),
-(100, 'DarkCyanPotion', 'SeaMonster', 650);
+(100, 'DarkCyanPotion', 'SeaMonster', 650),
+(101, 'Black Potion', 'Potion', 10000);
 
 -- --------------------------------------------------------
 
@@ -424,7 +427,7 @@ CREATE TABLE IF NOT EXISTS `item_stats` (
   `stat_id` int(11) DEFAULT NULL,
   `content` text,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=221 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=222 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `item_stats`
@@ -622,7 +625,8 @@ INSERT INTO `item_stats` (`id`, `item_id`, `stat_id`, `content`) VALUES
 (217, 5, 12, '0'),
 (218, 1, 12, '0'),
 (219, 2, 12, '0'),
-(220, 28, 12, '0');
+(220, 28, 12, '0'),
+(221, 101, 12, 'Blackpotion');
 
 -- --------------------------------------------------------
 
@@ -640,7 +644,7 @@ CREATE TABLE IF NOT EXISTS `locations` (
   `modfire` varchar(254) DEFAULT NULL,
   `item_id` int(120) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=111 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=112 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `locations`
@@ -756,7 +760,8 @@ INSERT INTO `locations` (`id`, `Title`, `Foto_url`, `Story`, `modhealth`, `modfi
 (107, '<strong> Locked </strong>', 'http://localhost/Eigen%20spel/img/ShipDoor.png', 'Are you kidding, wel i need to go look for the key then', '100', NULL, NULL),
 (108, 'Cockpit', 'http://localhost/Eigen%20spel/img/cockpit.png', 'Empty? <br> At least i found a potion.', '100', NULL, NULL),
 (109, 'Cafetaria', 'http://localhost/Eigen%20spel/img/cafetaria.png', 'Whaat can i do here. <br> perhaps go back or look out the window :)', '100', NULL, NULL),
-(110, 'You''ve encountered a  monster!', 'http://localhost/Eigen%20spel/img/Monster.jpg', '\r\n		', '100', NULL, NULL);
+(110, 'You''ve encountered a  monster!', 'http://localhost/Eigen%20spel/img/Monster.jpg', '\r\n		', '100', NULL, NULL),
+(111, 'Rainbow ah disgusting >.<', 'http://localhost/Eigen%20spel/img/Rainbowpotion.png', 'nice jar but >.<', '100', NULL, 56);
 
 -- --------------------------------------------------------
 
@@ -1195,7 +1200,7 @@ INSERT INTO `user_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
 (512, 1, NULL, '100'),
 (511, 1, NULL, '100'),
 (521, 26, 1, '40'),
-(506, 1, 8, '86'),
+(506, 1, 8, ''),
 (536, 3, 5, '175'),
 (496, 1, 10, ''),
 (495, 1, 9, ''),
@@ -1206,14 +1211,14 @@ INSERT INTO `user_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
 (532, 8, 6, '25'),
 (531, 8, 4, '300'),
 (530, 8, 5, '175'),
-(529, 2, 11, '10000'),
-(528, 2, 3, '78070'),
+(529, 2, 11, '5000'),
+(528, 2, 3, '250'),
 (527, 2, 7, '50'),
-(526, 2, 2, '180'),
-(525, 2, 1, '5128.125'),
+(526, 2, 2, '100'),
+(525, 2, 1, '80'),
 (524, 2, 6, '25'),
-(523, 2, 4, '600'),
-(522, 2, 5, '350'),
+(523, 2, 4, '300'),
+(522, 2, 5, '175'),
 (520, 1, NULL, '100'),
 (519, 1, NULL, '100'),
 (518, 1, NULL, '100'),

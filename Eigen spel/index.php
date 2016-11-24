@@ -474,10 +474,10 @@ if ($location_id == 101) {
         'D_Cyan_potion' => 'use_D_Cyan_potion', 'L_Orange_potion' => 'use_L_Orange_potion', 'D_Orange_potion' => 'use_D_Orange_potion',
         'L_Yellow_potion' => 'use_L_Yellow_potion', 'D_Yellow_potion' => 'use_D_Yellow_potion', 'L_Green_potion' => 'use_L_Green_potion',
         'Green_potion' => 'use_Green_potion', 'D_Green_potion' => 'use_D_Green_potion', 'L_Pink_potion' => 'use_L_Pink_potion',
-        'D_Pink_potion' => 'use_D_Pink_potion', 'Rainbow_potion' => 'use_Rainbow_potion', 'item' => 'use_item');
+        'D_Pink_potion' => 'use_D_Pink_potion', 'Rainbow_potion' => 'use_Rainbow_potion', 'item' => 'use_item', 'Blackpotion' => 'use_Blackpotion');
 
     if (isset($_POST['item-id'])) {
-        global $itemID;
+        // $itemID = $_POST['item-id'];
         $query = sprintf("SELECT item_id FROM inventory WHERE player_id = '%s' AND id = '%s'",
             mysqli_real_escape_string($mysqli, $userID),
             mysqli_real_escape_string($mysqli, $_POST['item-id']));
@@ -809,6 +809,18 @@ function use_item() {
     if (isset($Hai)) {
         setStat('gc', $userID, $Hai);
     }
+}
+
+function use_Blackpotion() {
+    global  $userID;
+    setStat('curhp',$userID,175);
+    setStat('maxhp',$userID,300);
+    setStat('sethp',$userID,25);
+    setStat('atk', $userID, '80');
+    setStat('def', $userID, '100');
+    setStat('mdef', $userID, '50');
+    setStat('gc', $userID, '250');
+    setStat('bankgc', $userID, '5000');
 }
 
 // $userID = 1;
