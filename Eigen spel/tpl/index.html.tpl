@@ -7,7 +7,7 @@
 
 <body>
     <div class="plaatje">
-    {if isset($errors) }
+    {if !isset($errors) }
         <p style="border: 1px solid #ff0000;"></p>
         <ul>
             {foreach $errors as $error}
@@ -27,11 +27,12 @@
         {else}
                 <ul>
                     {foreach from=$combat key=id item=i}
-                        <li><strong>{$i.attacker}</strong> attacks {$i.defender} for {$i.damage} damage!</li>
+                        <li><strong>{$i.attacker}</strong> attacks <strong>{$i.defender}</strong> for {$i.damage} damage!</li>
                     {/foreach}
                 </ul>
                 {if isset($won)}
                 {if $won eq 1}
+                    <p>You found a <strong>{$item}</strong>!</p>
                     <p>You killed <strong>{$smarty.post.monster}</strong>! You gained <strong>{$gold}</strong> gold.</p>
                     <p><a href='index.php?location_id=44'>Go on Friend</a></p>
                     <p><a href="index.php?location_id=34">Go back to the station </a> </p>
@@ -57,11 +58,12 @@
             {else}
                 <ul>
                     {foreach from=$combat key=id item=i}
-                        <li><strong>{$i.attacker}</strong> attacks {$i.defender} for {$i.damage} damage!</li>
+                        <li><strong>{$i.attacker}</strong> attacks <strong>{$i.defender}</strong> for {$i.damage} damage!</li>
                     {/foreach}
                 </ul>
                 {if isset($won)}
                     {if $won eq 1}
+                        <p>You found a <strong>{$item}</strong>!</p>
                         <p>You killed <strong>{$smarty.post.monster}</strong>! You gained <strong>{$gold}</strong> gold.</p>
                         <p><a href='index.php?location_id=13'>Go to the lake</a></p>
                         <p><a href="index.php?location_id=12">Go back on the street </a> </p>
@@ -148,6 +150,36 @@
             }
         </script>
 
+     {if $location->id == 110}
+         {if $combat eq ''}
+             <p>You've encountered a <strong>{$monster}! </strong></p>
+             <form action='index.php?location_id=110' method='post'>
+                 <input type='submit' name='action' value='Attack' /> or
+                 <input type='submit' name='action' value='Run Away' />
+                 <input type='hidden' name='monster' value='{$monster}' />
+             </form>
+         {else}
+             <ul>
+                 {foreach from=$combat key=id item=i}
+                     <li><strong>{$i.attacker}</strong> attacks <strong>{$i.defender}</strong> for {$i.damage} damage!</li>
+                 {/foreach}
+             </ul>
+             {if isset($won)}
+                 {if $won eq 1}
+                     <p>You found a <strong>{$item}</strong>!</p>
+                     <p>You killed <strong>{$smarty.post.monster}</strong>! You gained <strong>{$gold}</strong> gold.</p>
+                     <p><a href='index.php?location_id=105'>Go on the ship</a></p>
+                     <p><a href="index.php?location_id=104">Go back to the boat </a> </p>
+                 {/if}
+             {/if}
+             {if isset($lost)}
+                 {if $lost eq 1}
+                     <p>You were killed by <strong>{$smarty.post.monster}</strong>.</p>
+                     <p><a href='index.php'>Game over</a></p>
+                 {/if}
+             {/if}
+         {/if}
+     {/if}
     {if isset($location)}
         {if $location->id == 33}
         <h3>Current Equipment:</h3>

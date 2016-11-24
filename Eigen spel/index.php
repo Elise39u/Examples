@@ -34,8 +34,8 @@ if (isset($loc->item_id)) {
 $query = sprintf("SELECT id FROM player WHERE UPPER(username) = UPPER('%s')",
     mysqli_real_escape_string($mysqli, $_SESSION['username']));
     $result = mysqli_query($mysqli, $query);
-    list($count) = mysqli_fetch_row($result);
-    $userID = $count;
+    list($value) = mysqli_fetch_row($result);
+    $userID = $value;
 
 // $userID = 1;
 $setHP = getStat('curhp',$userID);
@@ -127,7 +127,7 @@ if ($loc->id == 33) {
     }
 }
 
-if ($loc->id == 97 || $loc->id == 100) {
+if ($loc->id == 97 || $loc->id == 100 || $loc->id == 110) {
     global $monster;
     if ($loc->id == 97) {
         $query = sprintf("SELECT name FROM monsters ORDER BY RAND() LIMIT 1");
@@ -136,6 +136,12 @@ if ($loc->id == 97 || $loc->id == 100) {
         $smarty->assign('monster', $monster);
     } elseif ($loc->id == 100) {
         $query = sprintf("SELECT name FROM monsters WHERE id IN (1, 3, 4, 5, 7, 8, 16, 20, 22, 23, 24, 25, 26, 27) ORDER BY RAND() LIMIT 1");
+        $result = mysqli_query($mysqli, $query);
+        list($monster) = mysqli_fetch_row($result);
+        $smarty->assign('monster', $monster);
+    }
+    else {
+        $query = sprintf("SELECT name FROM monsters WHERE id IN(29, 30, 31, 32, 33, 34, 35) ORDER BY RAND() LIMIT 1");
         $result = mysqli_query($mysqli, $query);
         list($monster) = mysqli_fetch_row($result);
         $smarty->assign('monster', $monster);
@@ -226,6 +232,27 @@ if ($loc->id == 97 || $loc->id == 100) {
         case "Orge":
             echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Orge.png'>";
             break;
+        case "Dragon":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Dragon.png'>";
+            break;
+        case "Fishmen":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Fishman.png'>";
+            break;
+        case "Gargoyle":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Gargoyle.png'>";
+            break;
+        case "Jumpfish":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Jumpfish.png'>";
+            break;
+        case "Kraken":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Kraken.png'>";
+            break;
+        case "Scorpion":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Scorpion.png'>";
+            break;
+        case "Spewer":
+            echo "<img class='Monster' src='http://localhost/Eigen%20spel/img/Spewer.png'>";
+            break;
         default:
             echo "<span style=\"color:#982356;\">Not the correct monster is showing";
     }
@@ -299,7 +326,40 @@ if ($loc->id == 97 || $loc->id == 100) {
                 setStat('gc',$userID,getStat('gc',$userID)+getMonsterStat('gc',$monsterID));
                 $smarty->assign('won',1);
                 $smarty->assign('gold',getMonsterStat('gc',$monsterID));
-            } else {
+                $rand = rand(0,100);
+                $query = sprintf("SELECT item_id FROM monster_items WHERE monster_id = %s AND rarity >= %s ORDER BY RAND() LIMIT 1",
+                    mysqli_real_escape_string($mysqli, $monsterID),
+                    mysqli_real_escape_string($mysqli, $rand));
+                $result = mysqli_query($mysqli, $query);
+                list($itemID) = mysqli_fetch_row($result);
+
+                $query = sprintf("SELECT count(id) FROM inventory  WHERE player_id = '%s' AND item_id = '%s'",
+                    mysqli_real_escape_string($mysqli, $userID),mysqli_real_escape_string($mysqli, $itemID));
+                $result = mysqli_query($mysqli, $query);
+                list($dumb) = mysqli_fetch_row($result);
+                foreach ($loc->Inventory as $Ok) {
+                    $Ok = $space;
+                    $space--;
+                }
+                if ($dumb > 0) {
+                    # already has one of the item
+                    $query = sprintf("UPDATE inventory SET quantity = quantity + 1 WHERE player_id = '%s' AND item_id = '%s'",
+                        mysqli_real_escape_string($mysqli, $userID),
+                        mysqli_real_escape_string($mysqli, $itemID));
+                } else {
+                # has none - new row
+                    $query = sprintf("INSERT INTO inventory(player_id, item_id, space, quantity) VALUES ($userID, '$itemID', '$space', $count)");
+                    }
+                    mysqli_query($mysqli, $query);
+
+                    # retrieve the item name, so that we can display it
+                    $query = sprintf("SELECT name FROM items WHERE id = %s",
+                        mysqli_real_escape_string($mysqli, $itemID));
+                    $result = mysqli_query($mysqli, $query);
+                    list($itemName) = mysqli_fetch_row($result);
+                    $smarty->assign('item',$itemName);
+            }
+            else {
                 // monster won
                 $smarty->assign('lost',1);
             }
@@ -309,6 +369,9 @@ if ($loc->id == 97 || $loc->id == 100) {
             if ($loc->id == 97) {
                 // Running away! Send them back to the main page
                 header('Location: index.php?location_id=34');
+            }
+            elseif ($loc->id == 110) {
+                header('Location: index.php?location_id=104');
             }
             else {
                 header('Location: index.php?location_id=12');
@@ -789,9 +852,10 @@ $smarty->display("tpl/index.html.tpl");
 
 echo "<div id=\"msg\">";
 if(isset($loc->item_id)) {
+    global $userID;
     if (isset($loc->item_id)) {
         if($loc->Inventory == NULL) {
-            $sql = "INSERT INTO Inventory(player_id, item_id, space, quantity) VALUES ('1', '$loc->item_id', '$space', $count)";
+            $sql = "INSERT INTO Inventory(player_id, item_id, space, quantity) VALUES ($userID, '$loc->item_id', '$space', $count)";
             echo "this $space left </br>";
             if ($mysqli->query($sql) === TRUE) {
                 echo "New record created successfully";
@@ -832,7 +896,7 @@ if(isset($loc->item_id)) {
     }
 }
 
-if ($location_id == 25 || $location_id == 29 || $location_id == 51 || $location_id == 52) {
+if ($location_id == 25 || $location_id == 29 || $location_id == 51 || $location_id == 52 || $location_id == 1) {
     $sql = "TRUNCATE TABLE inventory";
     mysqli_query($mysqli, $sql);
 }
