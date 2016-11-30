@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-11-30 14:50:28
-  from "C:\wamp64\www\Examplecode\Klikspel\tpl\index.html.tpl" */
+/* Smarty version 3.1.29, created on 2016-11-30 15:25:20
+  from "C:\wamp64\www\Examplecode\Klikspel\tpl\room.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_583ed9247e5db0_13068333',
+  'unifunc' => 'content_583ee1502d62b2_23980993',
   'file_dependency' => 
   array (
-    'bef6a652d4845ff942bd2bf05b374e078ada084a' => 
+    '3f7cfd1a93852041b0db6e18672793468b2c4337' => 
     array (
-      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\index.html.tpl',
-      1 => 1480513787,
+      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\room.html.tpl',
+      1 => 1480515587,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_583ed9247e5db0_13068333 ($_smarty_tpl) {
+function content_583ee1502d62b2_23980993 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -48,46 +48,24 @@ function content_583ed9247e5db0_13068333 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-        <form method="post" action="index.php">
-            <h1> Register to save stats</h1> <br>
-            First name:<br>
-            <input type="text" name="FirstName" id="FirstName" value="<?php if (isset($_POST['FirstName'])) {
-echo $_POST['FirstName'];
-}?>"><br>
-            Last name:<br>
-            <input type="text" name="LastName" id="LastName" value="<?php if (isset($_POST['LastName'])) {
-echo $_POST['LastName'];
-}?>"><br>
-            Email: <br>
-            <input type="text" name="Email" id="Email" value="<?php if (isset($_POST['Email'])) {
-echo $_POST['Email'];
-}?>"><br>
-            Password:<br>
-            <input type="text" name="Password" id="Password" onblur="verifyMinLength(this, 10)" value="<?php if (isset($_POST['Password'])) {
-echo $_POST['Password'];
-}?>"><br>
-            Username:<br>
-            <input type="text" name="Username" id="Username" value="<?php if (isset($_POST['Username'])) {
-echo $_POST['Username'];
-}?>"><br>
-            <input type="submit" name="submit" value="Submit">
-        </form>
+    <h1> Home </h1>
+    <p>You`re standing in the living room of your home in New York. <br>
+        Suddenly you hear a message on the radio about: <br>
+        "The city has been evacuated because of a deadly virus." <br>
+        But you were too late. <br>
+        The message has been broadcasted a half hour ago. <br>
+        So how you are gonna escape the city now.<br>
+        You`re were thinking about it.</p>
+    <img src="img/woonkamer.png">
 
-
-    <P>  Welcome to my internet game. Do you want to escape this abonded city? <br>
-        So yes click the button below <br>
-        No then i say close the page </P>
-    <img src="img/image-3747618.jpg">
-    <?php echo '<script'; ?>
- type="text/javascript">
-        function verifyMinLength(o, len) {
-            if (o.value.length < len) {
-                alert('The password must be 10 characters in length.');
-                location.href = "http://localhost/Examplecode/Klikspel/fault.php";
-            }
-        }
-    <?php echo '</script'; ?>
->
+    <ul>
+        <li><a href="index.php"> Log out</a> </li>
+        <li><a href="Garden.php"> Garden </a> </li>
+        <li><a href="Bedroom.php"> Bedroom </a> </li>
+        <li><a href="kichten.php"> Kichten </a> </li>
+        <li><a href="#"> Reciever </a> </li>
+        <li><a href="Outside.php"> Outside </a> </li>
+    </ul>
 
     <ul>
         <?php

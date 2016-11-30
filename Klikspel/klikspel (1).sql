@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Gegenereerd op: 29 nov 2016 om 15:02
+-- Gegenereerd op: 30 nov 2016 om 15:26
 -- Serverversie: 5.7.9
 -- PHP-versie: 5.6.16
 
@@ -34,7 +34,14 @@ CREATE TABLE IF NOT EXISTS `inventory` (
   `space` int(254) NOT NULL,
   `quantity` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `inventory`
+--
+
+INSERT INTO `inventory` (`id`, `player_id`, `item_id`, `space`, `quantity`) VALUES
+(1, '1', 5, 50, 25);
 
 -- --------------------------------------------------------
 
@@ -536,7 +543,7 @@ CREATE TABLE IF NOT EXISTS `monster_stats` (
   `stat_id` int(11) DEFAULT NULL,
   `content` text,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2100 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=2103 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `monster_stats`
@@ -715,7 +722,10 @@ INSERT INTO `monster_stats` (`id`, `monster_id`, `stat_id`, `content`) VALUES
 (2002, 20, 1, '20'),
 (1968, 1, 11, '100'),
 (1974, 1, 8, '100'),
-(1973, 1, 10, '100');
+(1973, 1, 10, '100'),
+(2100, 6, 5, '100'),
+(2101, 6, 7, '100'),
+(2102, 6, 11, '100');
 
 -- --------------------------------------------------------
 
@@ -732,7 +742,7 @@ CREATE TABLE IF NOT EXISTS `player` (
   `Password` varchar(1024) NOT NULL,
   `Username` varchar(1024) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `player`
@@ -751,11 +761,38 @@ INSERT INTO `player` (`id`, `FirstName`, `LastName`, `Email`, `Password`, `Usern
 DROP TABLE IF EXISTS `player_stats`;
 CREATE TABLE IF NOT EXISTS `player_stats` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `player_id` int(11) DEFAULT NULL,
+  `user_id` int(11) DEFAULT NULL,
   `stat_id` int(11) DEFAULT NULL,
   `content` text,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=562 DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `player_stats`
+--
+
+INSERT INTO `player_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
+(1, 1, 5, '205'),
+(2, 1, 1, '80'),
+(3, 1, 2, '100'),
+(4, 1, 3, '250'),
+(5, 1, 4, '300'),
+(6, 1, 7, '50'),
+(7, 1, 6, '25'),
+(545, 2, 9, ''),
+(544, 2, 8, ''),
+(506, 1, 8, ''),
+(496, 1, 10, ''),
+(495, 1, 9, ''),
+(529, 2, 11, '5000'),
+(528, 2, 3, '250'),
+(527, 2, 7, '50'),
+(526, 2, 2, '100'),
+(525, 2, 1, '80'),
+(524, 2, 6, '25'),
+(523, 2, 4, '300'),
+(522, 2, 5, '425'),
+(510, 1, 11, '5000');
 
 -- --------------------------------------------------------
 
