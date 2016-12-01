@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8189406-8a1f-4642-9cf7-5923e32146cd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Oelectro.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Pass.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sand.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Wood.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Oelectro.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Pass.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Sand.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Wood.html.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bedroom.php" afterPath="$PROJECT_DIR$/Bedroom.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Garden.php" afterPath="$PROJECT_DIR$/Garden.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Outside.php" afterPath="$PROJECT_DIR$/Outside.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Owood.php" afterPath="$PROJECT_DIR$/Owood.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sleep.php" afterPath="$PROJECT_DIR$/Sleep.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TemplatePHPCode.txt" afterPath="$PROJECT_DIR$/TemplatePHPCode.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fault.php" afterPath="$PROJECT_DIR$/fault.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/31ab30a59e8c94633c5fab4540022adffb49dc6a_0.file.Outside.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/31ab30a59e8c94633c5fab4540022adffb49dc6a_0.file.Outside.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kichten.php" afterPath="$PROJECT_DIR$/kichten.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/room.php" afterPath="$PROJECT_DIR$/room.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Outside.html.tpl" afterPath="$PROJECT_DIR$/tpl/Outside.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Owood.html.tpl" afterPath="$PROJECT_DIR$/tpl/Owood.html.tpl" />
     </list>
     <ignored path="Klikspel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -296,7 +275,7 @@
       <workItem from="1480490765148" duration="22077000" />
       <workItem from="1480518286391" duration="1373000" />
       <workItem from="1480577295638" duration="3322000" />
-      <workItem from="1480596376646" duration="5281000" />
+      <workItem from="1480596376646" duration="5335000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1480579520018</created>
@@ -305,11 +284,18 @@
       <option name="project" value="LOCAL" />
       <updated>1480579520018</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update with more locations">
+      <created>1480605305917</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1480605305917</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37847000" />
+    <option name="totallyTimeSpent" value="37901000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -347,7 +333,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="Update with more locations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update with more locations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
