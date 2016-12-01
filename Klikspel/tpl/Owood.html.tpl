@@ -17,21 +17,18 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> Outside </h1>
-    <p> You`re out on the street. <br>
-        a little bit futher you see some stores. <br>
-        to the left you see a sand path. <br>
-        and right you see that road goes on. <br>
-        Which way wil you go.</p>
-    <img src="img/montage.jpg">
+    <h1> Outside wood store </h1>
+    <p> There you`re standing in front of the wood store. <br>
+        and you`re think should i go in. <br>
+        You dont now what is in the store present. <br>
+        But do you want to go inside. <br>
+        What should i do now.</p>
+    <img src="img/shop.png">
     <ul>
-        <li><a href="room.php"> Go back for Saftey ;) </a></li>
-        <li><a href="Owood.php"> To some Wood </a></li>
-        <li><a href="#"> TO some electro stuffie </a></li>
-        <li><a href="#"> ... a sandpath -.- </a></li>
-        <li><a href="#"> The pass to the other side</a></li>
-        <li><a href="#"> Futher ahead</a></li>
+        <li><a href="Outside.php"> Go back to the road </a></li>
+        <li><a href="#"> Meh inside ... ;-; </a> </li>
     </ul>
+
     <ul>
         {foreach from=$inventory key=id item=i}
             <li> {$i.player_id} {$i.item_id} {$i.space} {$i.quantity} </li>

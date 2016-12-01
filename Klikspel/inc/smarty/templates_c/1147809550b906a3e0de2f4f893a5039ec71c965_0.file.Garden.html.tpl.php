@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-11-30 09:44:48
+/* Smarty version 3.1.29, created on 2016-12-01 08:20:53
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Garden.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_583e918014fc90_41951390',
+  'unifunc' => 'content_583fcf5521e796_87007411',
   'file_dependency' => 
   array (
     '1147809550b906a3e0de2f4f893a5039ec71c965' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Garden.html.tpl',
-      1 => 1480495445,
+      1 => 1480513787,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_583e918014fc90_41951390 ($_smarty_tpl) {
+function content_583fcf5521e796_87007411 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -54,9 +54,43 @@ function content_583e918014fc90_41951390 ($_smarty_tpl) {
         Because almost everthing has grown as a jungel. <br>
         What wil you do. </p>
     <img src="img/download.jpg">
+
     <ul>
         <li><a href="room.php"> Go back search for a way ouy</a></li>
     </ul>
+
+    <ul>
+        <?php
+$_from = $_smarty_tpl->tpl_vars['inventory']->value;
+if (!is_array($_from) && !is_object($_from)) {
+settype($_from, 'array');
+}
+$__foreach_i_0_saved_item = isset($_smarty_tpl->tpl_vars['i']) ? $_smarty_tpl->tpl_vars['i'] : false;
+$__foreach_i_0_saved_key = isset($_smarty_tpl->tpl_vars['id']) ? $_smarty_tpl->tpl_vars['id'] : false;
+$_smarty_tpl->tpl_vars['i'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['id'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['i']->_loop = false;
+foreach ($_from as $_smarty_tpl->tpl_vars['id']->value => $_smarty_tpl->tpl_vars['i']->value) {
+$_smarty_tpl->tpl_vars['i']->_loop = true;
+$__foreach_i_0_saved_local_item = $_smarty_tpl->tpl_vars['i'];
+?>
+            <li> <?php echo $_smarty_tpl->tpl_vars['i']->value['player_id'];?>
+ <?php echo $_smarty_tpl->tpl_vars['i']->value['item_id'];?>
+ <?php echo $_smarty_tpl->tpl_vars['i']->value['space'];?>
+ <?php echo $_smarty_tpl->tpl_vars['i']->value['quantity'];?>
+ </li>
+        <?php
+$_smarty_tpl->tpl_vars['i'] = $__foreach_i_0_saved_local_item;
+}
+if ($__foreach_i_0_saved_item) {
+$_smarty_tpl->tpl_vars['i'] = $__foreach_i_0_saved_item;
+}
+if ($__foreach_i_0_saved_key) {
+$_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
+}
+?>
+    </ul>
+
 </div>
 </body>
 </html><?php }

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-11-30 10:32:07
+/* Smarty version 3.1.29, created on 2016-12-01 08:21:00
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\kichten.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_583e9c97b109a6_33905685',
+  'unifunc' => 'content_583fcf5cafa915_70542327',
   'file_dependency' => 
   array (
     '3671a521ebf7b509e8c39a162e643eada915ea7e' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\kichten.html.tpl',
-      1 => 1480498291,
+      1 => 1480513788,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_583e9c97b109a6_33905685 ($_smarty_tpl) {
+function content_583fcf5cafa915_70542327 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -62,7 +62,7 @@ function content_583e9c97b109a6_33905685 ($_smarty_tpl) {
 
     <ul>
         <?php
-$_from = $_smarty_tpl->tpl_vars['Inventory']->value;
+$_from = $_smarty_tpl->tpl_vars['inventory']->value;
 if (!is_array($_from) && !is_object($_from)) {
 settype($_from, 'array');
 }
@@ -75,10 +75,10 @@ foreach ($_from as $_smarty_tpl->tpl_vars['id']->value => $_smarty_tpl->tpl_vars
 $_smarty_tpl->tpl_vars['i']->_loop = true;
 $__foreach_i_0_saved_local_item = $_smarty_tpl->tpl_vars['i'];
 ?>
-            <li> <?php echo $_smarty_tpl->tpl_vars['i']->value->player_id;?>
- <?php echo $_smarty_tpl->tpl_vars['i']->value->item_id;?>
- <?php echo $_smarty_tpl->tpl_vars['i']->value->space;?>
- <?php echo $_smarty_tpl->tpl_vars['i']->value->quantity;?>
+            <li> <?php echo $_smarty_tpl->tpl_vars['i']->value['player_id'];?>
+ <?php echo $_smarty_tpl->tpl_vars['i']->value['item_id'];?>
+ <?php echo $_smarty_tpl->tpl_vars['i']->value['space'];?>
+ <?php echo $_smarty_tpl->tpl_vars['i']->value['quantity'];?>
  </li>
         <?php
 $_smarty_tpl->tpl_vars['i'] = $__foreach_i_0_saved_local_item;

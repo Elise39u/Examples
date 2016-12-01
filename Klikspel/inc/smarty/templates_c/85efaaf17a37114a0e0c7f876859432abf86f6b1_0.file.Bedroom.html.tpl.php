@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-11-30 10:32:48
+/* Smarty version 3.1.29, created on 2016-12-01 08:21:03
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Bedroom.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_583e9cc09a1e60_60123199',
+  'unifunc' => 'content_583fcf5f531666_99602166',
   'file_dependency' => 
   array (
     '85efaaf17a37114a0e0c7f876859432abf86f6b1' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Bedroom.html.tpl',
-      1 => 1480498367,
+      1 => 1480513787,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_583e9cc09a1e60_60123199 ($_smarty_tpl) {
+function content_583fcf5f531666_99602166 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -74,10 +74,10 @@ foreach ($_from as $_smarty_tpl->tpl_vars['id']->value => $_smarty_tpl->tpl_vars
 $_smarty_tpl->tpl_vars['i']->_loop = true;
 $__foreach_i_0_saved_local_item = $_smarty_tpl->tpl_vars['i'];
 ?>
-            <li> <?php echo $_smarty_tpl->tpl_vars['i']->value->player_id;?>
- <?php echo $_smarty_tpl->tpl_vars['i']->value->item_id;?>
- <?php echo $_smarty_tpl->tpl_vars['i']->value->space;?>
- <?php echo $_smarty_tpl->tpl_vars['i']->value->quantity;?>
+            <li> <?php echo $_smarty_tpl->tpl_vars['i']->value['player_id'];?>
+ <?php echo $_smarty_tpl->tpl_vars['i']->value['item_id'];?>
+ <?php echo $_smarty_tpl->tpl_vars['i']->value['space'];?>
+ <?php echo $_smarty_tpl->tpl_vars['i']->value['quantity'];?>
  </li>
         <?php
 $_smarty_tpl->tpl_vars['i'] = $__foreach_i_0_saved_local_item;
