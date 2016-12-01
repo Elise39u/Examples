@@ -27,9 +27,9 @@
     <ul>
         <li><a href="room.php"> Go back for Saftey ;) </a></li>
         <li><a href="Owood.php"> To some Wood </a></li>
-        <li><a href="#"> TO some electro stuffie </a></li>
-        <li><a href="#"> ... a sandpath -.- </a></li>
-        <li><a href="#"> The pass to the other side</a></li>
+        <li><a href="Oelectro.php"> TO some electro stuffie </a></li>
+        <li><a href="Sand.php"> ... a sandpath -.- </a></li>
+        <li><a href="Pass.php"> The pass to the other side</a></li>
         <li><a href="#"> Futher ahead</a></li>
     </ul>
     <ul>

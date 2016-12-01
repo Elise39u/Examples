@@ -1,5 +1,9 @@
 <?php
 session_start();
+global $space;
+global $count;
+$space = 50;
+$count = 1;
 require_once ('inc/loadsmarty.php');
 require_once ('inc/DBconnection.php');
 include_once ('inc/playerstats.php');

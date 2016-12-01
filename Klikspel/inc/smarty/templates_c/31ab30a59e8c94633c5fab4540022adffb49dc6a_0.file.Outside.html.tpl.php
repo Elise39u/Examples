@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-01 08:52:45
+/* Smarty version 3.1.29, created on 2016-12-01 16:00:31
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Outside.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_583fd6cd44d5e5_52953521',
+  'unifunc' => 'content_58403b0fbebde2_56256931',
   'file_dependency' => 
   array (
     '31ab30a59e8c94633c5fab4540022adffb49dc6a' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Outside.html.tpl',
-      1 => 1480578726,
+      1 => 1480604286,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_583fd6cd44d5e5_52953521 ($_smarty_tpl) {
+function content_58403b0fbebde2_56256931 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -58,9 +58,9 @@ function content_583fd6cd44d5e5_52953521 ($_smarty_tpl) {
     <ul>
         <li><a href="room.php"> Go back for Saftey ;) </a></li>
         <li><a href="Owood.php"> To some Wood </a></li>
-        <li><a href="#"> TO some electro stuffie </a></li>
-        <li><a href="#"> ... a sandpath -.- </a></li>
-        <li><a href="#"> The pass to the other side</a></li>
+        <li><a href="Oelectro.php"> TO some electro stuffie </a></li>
+        <li><a href="Sand.php"> ... a sandpath -.- </a></li>
+        <li><a href="Pass.php"> The pass to the other side</a></li>
         <li><a href="#"> Futher ahead</a></li>
     </ul>
     <ul>

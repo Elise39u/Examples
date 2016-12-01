@@ -17,16 +17,16 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> Outside wood store </h1>
-    <p> There you`re standing in front of the wood store. <br>
+    <h1> Outside electro </h1>
+    <p> There you`re standing in front of the elctro store. <br>
         and you`re think should i go in. <br>
         You dont now what is in the store present. <br>
         But do you want to go inside. <br>
-        What should i do now.</p>
-    <img src="img/shop.png">
+        What should i do now</p>
+    <img src="img/electro.jpg">
     <ul>
-        <li><a href="Outside.php"> Go back to the road </a></li>
-        <li><a href="Wood.php"> Meh inside ... ;-; </a> </li>
+        <li><a href="Outside.php"> Go back on the road </a></li>
+        <li><a href="#"> ;-; Do i want to go inside </a> </li>
     </ul>
 
     <ul>

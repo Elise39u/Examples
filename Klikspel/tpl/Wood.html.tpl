@@ -17,16 +17,18 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> Outside wood store </h1>
-    <p> There you`re standing in front of the wood store. <br>
-        and you`re think should i go in. <br>
-        You dont now what is in the store present. <br>
-        But do you want to go inside. <br>
+    <h1> Bedroom </h1>
+    <p> There you`re standing inside th wood store. <br>
+        you see a paddle lying around. <br>
+        But you see some wooden planks and weapons. <br>
         What should i do now.</p>
-    <img src="img/shop.png">
+    <img src="img/houtwinkel.png">
     <ul>
-        <li><a href="Outside.php"> Go back to the road </a></li>
-        <li><a href="Wood.php"> Meh inside ... ;-; </a> </li>
+        <li><a href="Owood.php"> Go back outside for godsake -.-</a></li>
+        <li><a href="#"> Hammer </a> </li>
+        <li><a href="#"> Axe </a> </li>
+        <li><a href="#"> Basebalbat </a> </li>
+        <li><a href="#"> Nailgun </a> </li>
     </ul>
 
     <ul>
