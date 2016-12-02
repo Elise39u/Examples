@@ -26,7 +26,7 @@
     <img src="img/electro.jpg">
     <ul>
         <li><a href="Outside.php"> Go back on the road </a></li>
-        <li><a href="#"> ;-; Do i want to go inside </a> </li>
+        <li><a href="electro.php"> ;-; Do i want to go inside </a> </li>
     </ul>
 
     <ul>

@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8189406-8a1f-4642-9cf7-5923e32146cd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Axe.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BackE.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basebalbat.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Hammer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Nailgun.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/electro.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eroof.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/157a134353891903ba2e6267cc9aece30351c50b_0.file.Pass.html.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/22694f7a13af0d16deec2285291dc0afd6861c6c_0.file.Oelectro.html.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/34595491829d461aa19e55ff0ccb1074029774ca_0.file.Wood.html.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/7ef46b7e59c9950e93401e422bbe22543309e0d9_0.file.Sand.html.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/b88d72214c16c8a1a533ce3a2e35cb02300aa223_0.file.Owood.html.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Axe.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/BackE.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Basebalbat.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Hammer.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Nailgun.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/electro.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/eroof.html.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Oelectro.html.tpl" afterPath="$PROJECT_DIR$/tpl/Oelectro.html.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Wood.html.tpl" afterPath="$PROJECT_DIR$/tpl/Wood.html.tpl" />
     </list>
     <ignored path="Klikspel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,25 +65,49 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Wood.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Wood.php">
+      <file leaf-file-name="eroof.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eroof.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="488">
-              <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+              <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
               <folding>
-                <marker date="1480605027683" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-                <marker date="1480605027683" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-                <marker date="1480605027683" expanded="true" signature="824:862" ph="SELECT name items" />
+                <marker date="1480684093044" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+                <marker date="1480684093044" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+                <marker date="1480684093044" expanded="true" signature="824:862" ph="SELECT name items" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Wood.html.tpl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tpl/Wood.html.tpl">
+      <file leaf-file-name="eroof.html.tpl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tpl/eroof.html.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+            <state relative-caret-position="527">
+              <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BackE.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BackE.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-124">
+              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+              <folding>
+                <marker date="1480682673569" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+                <marker date="1480682673569" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+                <marker date="1480682673569" expanded="true" signature="824:862" ph="SELECT name items" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BackE.html.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpl/BackE.html.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -75,7 +121,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/inc/loadsmarty.php" />
         <option value="$PROJECT_DIR$/inc/DBconnection.php" />
         <option value="$PROJECT_DIR$/inc/ItemStats.php" />
         <option value="$PROJECT_DIR$/inc/Monster.php" />
@@ -92,13 +137,11 @@
         <option value="$PROJECT_DIR$/tpl/room.html.tpl" />
         <option value="$PROJECT_DIR$/Outside.html.tpl" />
         <option value="$PROJECT_DIR$/Owood.html.tpl" />
-        <option value="$PROJECT_DIR$/tpl/Oelectro.html.tpl" />
         <option value="$PROJECT_DIR$/tpl/Pass.html.tpl" />
         <option value="$PROJECT_DIR$/TemplatePHPCode.txt" />
         <option value="$PROJECT_DIR$/Bedroom.php" />
         <option value="$PROJECT_DIR$/fault.php" />
         <option value="$PROJECT_DIR$/Garden.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/kichten.php" />
         <option value="$PROJECT_DIR$/Oelectro.php" />
         <option value="$PROJECT_DIR$/Outside.php" />
@@ -111,7 +154,24 @@
         <option value="$PROJECT_DIR$/Sand.php" />
         <option value="$PROJECT_DIR$/tpl/Owood.html.tpl" />
         <option value="$PROJECT_DIR$/Wood.php" />
+        <option value="$PROJECT_DIR$/Hammer.html.tpl" />
+        <option value="$PROJECT_DIR$/tpl/Hammer.html.tpl" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/tpl/Axe.html.tpl" />
+        <option value="$PROJECT_DIR$/Hammer.php" />
+        <option value="$PROJECT_DIR$/Axe.php" />
+        <option value="$PROJECT_DIR$/tpl/Basebalbat.html.tpl" />
+        <option value="$PROJECT_DIR$/Basebalbat.php" />
+        <option value="$PROJECT_DIR$/tpl/Nailgun.html.tpl" />
         <option value="$PROJECT_DIR$/tpl/Wood.html.tpl" />
+        <option value="$PROJECT_DIR$/Nailgun.php" />
+        <option value="$PROJECT_DIR$/electro.php" />
+        <option value="$PROJECT_DIR$/tpl/Oelectro.html.tpl" />
+        <option value="$PROJECT_DIR$/BackE.php" />
+        <option value="$PROJECT_DIR$/tpl/electro.html.tpl" />
+        <option value="$PROJECT_DIR$/tpl/BackE.html.tpl" />
+        <option value="$PROJECT_DIR$/eroof.php" />
+        <option value="$PROJECT_DIR$/tpl/eroof.html.tpl" />
       </list>
     </option>
   </component>
@@ -275,7 +335,9 @@
       <workItem from="1480490765148" duration="22077000" />
       <workItem from="1480518286391" duration="1373000" />
       <workItem from="1480577295638" duration="3322000" />
-      <workItem from="1480596376646" duration="5335000" />
+      <workItem from="1480596376646" duration="6008000" />
+      <workItem from="1480663714725" duration="4222000" />
+      <workItem from="1480668301015" duration="3556000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1480579520018</created>
@@ -291,11 +353,18 @@
       <option name="project" value="LOCAL" />
       <updated>1480605305917</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update with more locations">
+      <created>1480605340122</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1480605340122</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37901000" />
+    <option name="totallyTimeSpent" value="46352000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -334,208 +403,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update" />
     <MESSAGE value="Update with more locations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update with more locations" />
+    <MESSAGE value="UPDATE wood store + electro store" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATE wood store + electro store" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tpl/index.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/loadsmarty.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Eigen spel/garden.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Eigen spel/inc/loadsmarty.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="42" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Eigen spel/inc/DBconnection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Eigen spel/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="12" selection-end-column="38" />
-          <folding>
-            <marker date="1480406198183" expanded="true" signature="1221:1278" ph="SELECT id FR... player" />
-            <marker date="1480406198183" expanded="true" signature="2066:2155" ph="SELECT DISTI... items" />
-            <marker date="1480406198183" expanded="true" signature="2386:2422" ph="SELECT name items" />
-            <marker date="1480406198183" expanded="true" signature="2682:2718" ph="SELECT name items" />
-            <marker date="1480406198183" expanded="true" signature="3256:3293" ph="SELECT price... items" />
-            <marker date="1480406198183" expanded="true" signature="3770:3807" ph="SELECT price... items" />
-            <marker date="1480406198183" expanded="true" signature="5069:5259" ph="SELECT name monsters" />
-            <marker date="1480406198183" expanded="true" signature="5469:5585" ph="SELECT name monsters" />
-            <marker date="1480406198183" expanded="true" signature="5779:5872" ph="SELECT name monsters" />
-            <marker date="1480406198183" expanded="true" signature="11455:11469" ph="..." />
-            <marker date="1480406198183" expanded="true" signature="11581:11638" ph="SELECT id FR... player" />
-            <marker date="1480406198183" expanded="true" signature="12118:12175" ph="SELECT id FR... player" />
-            <marker date="1480406198183" expanded="true" signature="12966:13007" ph="SELECT id FR... monsters" />
-            <marker date="1480406198183" expanded="true" signature="14890:14986" ph="SELECT item_... monster_items" />
-            <marker date="1480406198183" expanded="true" signature="15272:15346" ph="SELECT count... inventory" />
-            <marker date="1480406198183" expanded="true" signature="15827:15913" ph="UPDATE inven... " />
-            <marker date="1480406198183" expanded="true" signature="16155:16259" ph="INSERT INTO inventory... " />
-            <marker date="1480406198183" expanded="true" signature="16447:16483" ph="SELECT name items" />
-            <marker date="1480406198183" expanded="true" signature="18992:19029" ph="SELECT price... items" />
-            <marker date="1480406198183" expanded="true" signature="19294:19344" ph="SELECT item_... Inventory" />
-            <marker date="1480406198183" expanded="true" signature="19588:19647" ph="UPDATE Inven... " />
-            <marker date="1480406198183" expanded="true" signature="20043:20149" ph="INSERT INTO Inventory... " />
-            <marker date="1480406198183" expanded="true" signature="20497:20586" ph="SELECT DISTI... items" />
-            <marker date="1480406198183" expanded="true" signature="21952:22018" ph="SELECT item_... inventory" />
-            <marker date="1480406198183" expanded="true" signature="22363:22435" ph="SELECT quant... inventory" />
-            <marker date="1480406198183" expanded="true" signature="22703:22789" ph="UPDATE inven... " />
-            <marker date="1480406198183" expanded="true" signature="22962:23025" ph="DELETE FROM " />
-            <marker date="1480406198183" expanded="true" signature="23255:23321" ph="SELECT id, i... inventory" />
-            <marker date="1480406198183" expanded="true" signature="23512:23550" ph="SELECT name items" />
-            <marker date="1480406198183" expanded="true" signature="23983:24020" ph="SELECT price... items" />
-            <marker date="1480406198183" expanded="true" signature="24314:24387" ph="SELECT count... Inventory" />
-            <marker date="1480406198183" expanded="true" signature="24674:24733" ph="UPDATE Inven... " />
-            <marker date="1480406198183" expanded="true" signature="25089:25193" ph="INSERT INTO Inventory... " />
-            <marker date="1480406198183" expanded="true" signature="25623:25662" ph="SELECT price... items" />
-            <marker date="1480406198183" expanded="true" signature="25934:26006" ph="SELECT quant... Inventory" />
-            <marker date="1480406198183" expanded="true" signature="26297:26383" ph="UPDATE inven... " />
-            <marker date="1480406198183" expanded="true" signature="26564:26627" ph="DELETE FROM " />
-            <marker date="1480406198183" expanded="true" signature="26898:26987" ph="SELECT DISTI... items" />
-            <marker date="1480406198183" expanded="true" signature="27194:27260" ph="SELECT id, i... inventory" />
-            <marker date="1480406198183" expanded="true" signature="27443:27481" ph="SELECT name items" />
-            <marker date="1480406198183" expanded="true" signature="36132:36242" ph="INSERT INTO Inventory... " />
-            <marker date="1480406198183" expanded="true" signature="36580:36626" ph="SELECT item_... Inventory" />
-            <marker date="1480406198183" expanded="true" signature="36707:36766" ph="UPDATE Inven... " />
-            <marker date="1480406198183" expanded="true" signature="37049:37159" ph="INSERT INTO Inventory... " />
-            <marker date="1480406198183" expanded="true" signature="37238:37252" ph="..." />
-            <marker date="1480406198183" expanded="true" signature="38522:38571" ph="SELECT Usern... player" />
-            <marker date="1480406198183" expanded="true" signature="39018:39165" ph="INSERT INTO player... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Eigen spel/iwood.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Eigen spel/tpl/garden.htm.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Eigen spel/tpl/ielectro.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/loadsmarty.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/DBconnection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/ItemStats.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-291">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-          <folding>
-            <marker date="1480492433638" expanded="true" signature="115:159" ph="SELECT name,... items" />
-            <marker date="1480492433638" expanded="true" signature="518:653" ph="SELECT conte... item_stats" />
-            <marker date="1480492433638" expanded="true" signature="566:633" ph="SELECT id FR... stats" />
-            <marker date="1480492433638" expanded="true" signature="1103:1244" ph="UPDATE item_... " />
-            <marker date="1480492433638" expanded="true" signature="1157:1224" ph="SELECT id FR... stats" />
-            <marker date="1480492433638" expanded="true" signature="1702:1844" ph="SELECT count... item_stats" />
-            <marker date="1480492433638" expanded="true" signature="1757:1824" ph="SELECT id FR... stats" />
-            <marker date="1480492433638" expanded="true" signature="2206:2342" ph="INSERT INTO item_stats... " />
-            <marker date="1480492433638" expanded="true" signature="2263:2330" ph="SELECT id FR... stats" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/Monster.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
-          <folding>
-            <marker date="1480492433763" expanded="true" signature="230:371" ph="SELECT conte... monster_stats" />
-            <marker date="1480492433763" expanded="true" signature="281:348" ph="SELECT id FR... stats" />
-            <marker date="1480492433763" expanded="true" signature="792:940" ph="SELECT count... monster_stats" />
-            <marker date="1480492433763" expanded="true" signature="850:917" ph="SELECT id FR... stats" />
-            <marker date="1480492433763" expanded="true" signature="1304:1446" ph="INSERT INTO monster_stats... " />
-            <marker date="1480492433763" expanded="true" signature="1367:1434" ph="SELECT id FR... stats" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/WeaponStat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
-          <folding>
-            <marker date="1480492433701" expanded="true" signature="138:273" ph="SELECT conte... item_stats" />
-            <marker date="1480492433701" expanded="true" signature="186:253" ph="SELECT id FR... stats" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/woonkamer.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/playerstats.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
-          <folding>
-            <marker date="1480494060462" expanded="true" signature="218:355" ph="SELECT conte... user_stats" />
-            <marker date="1480494060462" expanded="true" signature="268:335" ph="SELECT id FR... stats" />
-            <marker date="1480494060462" expanded="true" signature="798:941" ph="UPDATE user_... " />
-            <marker date="1480494060462" expanded="true" signature="854:921" ph="SELECT id FR... stats" />
-            <marker date="1480494060462" expanded="true" signature="1405:1549" ph="SELECT count... user_stats" />
-            <marker date="1480494060462" expanded="true" signature="1462:1529" ph="SELECT id FR... stats" />
-            <marker date="1480494060462" expanded="true" signature="1910:2048" ph="INSERT INTO user_stats... " />
-            <marker date="1480494060462" expanded="true" signature="1969:2036" ph="SELECT id FR... stats" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inc/smarty/templates_c/85efaaf17a37114a0e0c7f876859432abf86f6b1_0.file.Bedroom.html.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -625,22 +500,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Owood.txt" />
-    <entry file="file://$PROJECT_DIR$/tpl/Oelectro.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/TplTemplateCode.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/TplTemplateCode.txt" />
     <entry file="file://$PROJECT_DIR$/Bedroom.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -661,20 +521,6 @@
             <marker date="1480598917570" expanded="true" signature="359:416" ph="SELECT id FR... player" />
             <marker date="1480598917570" expanded="true" signature="769:815" ph="SELECT * FRO... inventory" />
             <marker date="1480598917570" expanded="true" signature="982:1020" ph="SELECT name items" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <marker date="1480598917648" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1480598917648" expanded="true" signature="1495:1544" ph="SELECT Usern... player" />
-            <marker date="1480598917648" expanded="true" signature="2024:2171" ph="INSERT INTO player... " />
-            <marker date="1480598917648" expanded="true" signature="2806:2852" ph="SELECT * FRO... inventory" />
-            <marker date="1480598917648" expanded="true" signature="3019:3057" ph="SELECT name items" />
           </folding>
         </state>
       </provider>
@@ -727,18 +573,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Oelectro.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <marker date="1480598917695" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1480598917695" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1480598917695" expanded="true" signature="824:862" ph="SELECT name items" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pass.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -755,7 +589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -787,7 +620,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -795,6 +627,262 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Owood.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding>
+            <marker date="1480598917460" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1480598917460" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1480598917460" expanded="true" signature="824:862" ph="SELECT name items" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Owood.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Hammer.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/ItemStats.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <marker date="1480492433638" expanded="true" signature="115:159" ph="SELECT name,... items" />
+            <marker date="1480492433638" expanded="true" signature="518:653" ph="SELECT conte... item_stats" />
+            <marker date="1480492433638" expanded="true" signature="566:633" ph="SELECT id FR... stats" />
+            <marker date="1480492433638" expanded="true" signature="1103:1244" ph="UPDATE item_... " />
+            <marker date="1480492433638" expanded="true" signature="1157:1224" ph="SELECT id FR... stats" />
+            <marker date="1480492433638" expanded="true" signature="1702:1844" ph="SELECT count... item_stats" />
+            <marker date="1480492433638" expanded="true" signature="1757:1824" ph="SELECT id FR... stats" />
+            <marker date="1480492433638" expanded="true" signature="2206:2342" ph="INSERT INTO item_stats... " />
+            <marker date="1480492433638" expanded="true" signature="2263:2330" ph="SELECT id FR... stats" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1049">
+          <caret line="90" column="28" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="28" />
+          <folding>
+            <marker date="1480667332585" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1480667332585" expanded="true" signature="1495:1544" ph="SELECT Usern... player" />
+            <marker date="1480667332585" expanded="true" signature="2024:2171" ph="INSERT INTO player... " />
+            <marker date="1480667332585" expanded="true" signature="2806:2852" ph="SELECT * FRO... inventory" />
+            <marker date="1480667332585" expanded="true" signature="3019:3057" ph="SELECT name items" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hammer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="38" column="74" selection-start-line="38" selection-start-column="74" selection-end-line="38" selection-end-column="74" />
+          <folding>
+            <marker date="1480667806792" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1480667806792" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1480667806792" expanded="true" signature="824:862" ph="SELECT name items" />
+            <marker date="1480667806792" expanded="true" signature="1126:1233" ph="INSERT INTO Inventory... " />
+            <marker date="1480667806792" expanded="true" signature="1260:1274" ph="..." />
+            <marker date="1480667806792" expanded="true" signature="1537:1583" ph="SELECT item_... Inventory" />
+            <marker date="1480667806792" expanded="true" signature="1642:1701" ph="UPDATE Inven... " />
+            <marker date="1480667806792" expanded="true" signature="1776:1790" ph="..." />
+            <marker date="1480667806792" expanded="true" signature="1949:2058" ph="INSERT INTO Inventory... " />
+            <marker date="1480667806792" expanded="true" signature="2120:2134" ph="..." />
+            <marker date="1480667806792" expanded="true" signature="2399:2413" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Axe.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+          <folding>
+            <marker date="1480667836098" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1480667836098" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1480667836098" expanded="true" signature="824:862" ph="SELECT name items" />
+            <marker date="1480667836098" expanded="true" signature="1126:1233" ph="INSERT INTO Inventory... " />
+            <marker date="1480667836098" expanded="true" signature="1260:1274" ph="..." />
+            <marker date="1480667836098" expanded="true" signature="1380:1394" ph="..." />
+            <marker date="1480667836098" expanded="true" signature="1577:1623" ph="SELECT item_... Inventory" />
+            <marker date="1480667836098" expanded="true" signature="1682:1741" ph="UPDATE Inven... " />
+            <marker date="1480667836098" expanded="true" signature="1816:1830" ph="..." />
+            <marker date="1480667836098" expanded="true" signature="1989:2098" ph="INSERT INTO Inventory... " />
+            <marker date="1480667836098" expanded="true" signature="2160:2174" ph="..." />
+            <marker date="1480667836098" expanded="true" signature="2370:2384" ph="..." />
+            <marker date="1480667836098" expanded="true" signature="2480:2494" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Axe.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="62" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Basebalbat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="63" column="14" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
+          <folding>
+            <marker date="1480668167679" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1480668167679" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1480668167679" expanded="true" signature="824:862" ph="SELECT name items" />
+            <marker date="1480668167679" expanded="true" signature="1126:1233" ph="INSERT INTO Inventory... " />
+            <marker date="1480668167679" expanded="true" signature="1260:1274" ph="..." />
+            <marker date="1480668167679" expanded="true" signature="1380:1394" ph="..." />
+            <marker date="1480668167679" expanded="true" signature="1577:1623" ph="SELECT item_... Inventory" />
+            <marker date="1480668167679" expanded="true" signature="1682:1741" ph="UPDATE Inven... " />
+            <marker date="1480668167679" expanded="true" signature="1816:1830" ph="..." />
+            <marker date="1480668167679" expanded="true" signature="1989:2098" ph="INSERT INTO Inventory... " />
+            <marker date="1480668167679" expanded="true" signature="2160:2174" ph="..." />
+            <marker date="1480668167679" expanded="true" signature="2370:2384" ph="..." />
+            <marker date="1480668167679" expanded="true" signature="2480:2494" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Basebalbat.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Nailgun.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="62" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Nailgun.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+          <folding>
+            <marker date="1480668868114" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1480668868114" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1480668868114" expanded="true" signature="824:862" ph="SELECT name items" />
+            <marker date="1480668868114" expanded="true" signature="1127:1234" ph="INSERT INTO Inventory... " />
+            <marker date="1480668868114" expanded="true" signature="1261:1275" ph="..." />
+            <marker date="1480668868114" expanded="true" signature="1381:1395" ph="..." />
+            <marker date="1480668868114" expanded="true" signature="1578:1624" ph="SELECT item_... Inventory" />
+            <marker date="1480668868114" expanded="true" signature="1683:1742" ph="UPDATE Inven... " />
+            <marker date="1480668868114" expanded="true" signature="1817:1831" ph="..." />
+            <marker date="1480668868114" expanded="true" signature="1990:2099" ph="INSERT INTO Inventory... " />
+            <marker date="1480668868114" expanded="true" signature="2161:2175" ph="..." />
+            <marker date="1480668868114" expanded="true" signature="2371:2385" ph="..." />
+            <marker date="1480668868114" expanded="true" signature="2481:2495" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wood.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <marker date="1480605027683" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1480605027683" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1480605027683" expanded="true" signature="824:862" ph="SELECT name items" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Wood.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Oelectro.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Oelectro.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding>
+            <marker date="1480598917695" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1480598917695" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1480598917695" expanded="true" signature="824:862" ph="SELECT name items" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/electro.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+          <folding>
+            <marker date="1480681961836" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1480681961836" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1480681961836" expanded="true" signature="824:862" ph="SELECT name items" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/electro.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackE.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-124">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+          <folding>
+            <marker date="1480682673569" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1480682673569" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1480682673569" expanded="true" signature="824:862" ph="SELECT name items" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/eroof.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/BackE.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -815,42 +903,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Wood.php">
+    <entry file="file://$PROJECT_DIR$/eroof.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
-          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
           <folding>
-            <marker date="1480605027683" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1480605027683" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1480605027683" expanded="true" signature="824:862" ph="SELECT name items" />
+            <marker date="1480684093044" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1480684093044" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1480684093044" expanded="true" signature="824:862" ph="SELECT name items" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Owood.php">
+    <entry file="file://$PROJECT_DIR$/tpl/eroof.html.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <marker date="1480598917460" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1480598917460" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1480598917460" expanded="true" signature="824:862" ph="SELECT name items" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/Owood.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/Wood.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        <state relative-caret-position="527">
+          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
           <folding />
         </state>
       </provider>

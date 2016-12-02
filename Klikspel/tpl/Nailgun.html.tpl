@@ -18,17 +18,12 @@
     </ul>
 
     <h1> Bedroom </h1>
-    <p> There you`re standing inside th wood store. <br>
-        you see a paddle lying around. <br>
-        But you see some wooden planks and weapons. <br>
-        What should i do now.</p>
-    <img src="img/houtwinkel.png">
+    <p> You`re picking up a Nailgun. <br>
+    Can you say me why you are stil here for godsake <br>
+    And maby you need to get <strong>out of here? REALLY GO !!</strong></p>
+    <img src="img/NailGun.png">
     <ul>
-        <li><a href="Owood.php"> Go back outside for godsake -.-</a></li>
-        <li><a href="Hammer.php"> Hammer </a> </li>
-        <li><a href="Axe.php"> Axe </a> </li>
-        <li><a href="Basebalbat.php"> Basebalbat </a> </li>
-        <li><a href="Nailgun.php"> Nailgun </a> </li>
+        <li><a href="Wood.php"> why did you pick this ;-;-; </a></li>
     </ul>
 
     <ul>

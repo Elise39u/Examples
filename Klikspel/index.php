@@ -87,6 +87,9 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
 }
 
+$sql = "TRUNCATE TABLE inventory";
+mysqli_query($mysqli, $sql);
+
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
 $smarty->assign('magic',getStat('mdef',$userID));

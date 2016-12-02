@@ -17,18 +17,19 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> Bedroom </h1>
-    <p> There you`re standing inside th wood store. <br>
-        you see a paddle lying around. <br>
-        But you see some wooden planks and weapons. <br>
-        What should i do now.</p>
-    <img src="img/houtwinkel.png">
+    <h1> Roof of the electro store </h1>
+
+    <p>  As you standing lookng over the city you`re thinking wat can i do here </p>
+
+    <img src="img/RoofEl.png">
     <ul>
-        <li><a href="Owood.php"> Go back outside for godsake -.-</a></li>
-        <li><a href="Hammer.php"> Hammer </a> </li>
-        <li><a href="Axe.php"> Axe </a> </li>
-        <li><a href="Basebalbat.php"> Basebalbat </a> </li>
-        <li><a href="Nailgun.php"> Nailgun </a> </li>
+        <li><a href="BackE.php"> Go down in the shop </a> </li>
+        {if isset($smarty.session.antenne)}
+        <li><a href="#"> Build the Antenne </a> </li>
+        {else}
+        <li><a href="#"> Nothing Here to see </a> </li>
+        {/if}
+        <li><a href="KeyPS.php"> a key 0.0?? </a> </li>
     </ul>
 
     <ul>

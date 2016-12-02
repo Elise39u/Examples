@@ -17,18 +17,12 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> Bedroom </h1>
-    <p> There you`re standing inside th wood store. <br>
-        you see a paddle lying around. <br>
-        But you see some wooden planks and weapons. <br>
-        What should i do now.</p>
-    <img src="img/houtwinkel.png">
+    <h1> Hammer </h1>
+    <p> You have picked up a hammer <br>
+    Did you expected something else? </p>
+    <img src="img/hammer.png">
     <ul>
-        <li><a href="Owood.php"> Go back outside for godsake -.-</a></li>
-        <li><a href="Hammer.php"> Hammer </a> </li>
-        <li><a href="Axe.php"> Axe </a> </li>
-        <li><a href="Basebalbat.php"> Basebalbat </a> </li>
-        <li><a href="Nailgun.php"> Nailgun </a> </li>
+        <li><a href="Wood.php"> Go back srs GO BACK</a></li>
     </ul>
 
     <ul>

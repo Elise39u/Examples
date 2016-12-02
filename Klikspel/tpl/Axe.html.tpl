@@ -18,17 +18,11 @@
     </ul>
 
     <h1> Bedroom </h1>
-    <p> There you`re standing inside th wood store. <br>
-        you see a paddle lying around. <br>
-        But you see some wooden planks and weapons. <br>
-        What should i do now.</p>
-    <img src="img/houtwinkel.png">
+    <p> You`re picking up a axe. <br>
+    No boyfirend or girl idioit.</p>
+    <img src="img/Axe.png">
     <ul>
-        <li><a href="Owood.php"> Go back outside for godsake -.-</a></li>
-        <li><a href="Hammer.php"> Hammer </a> </li>
-        <li><a href="Axe.php"> Axe </a> </li>
-        <li><a href="Basebalbat.php"> Basebalbat </a> </li>
-        <li><a href="Nailgun.php"> Nailgun </a> </li>
+        <li><a href="Wood.php"> Go back really go back please </a></li>
     </ul>
 
     <ul>
