@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/html">
+<html>
 <head>
     <title> {$pagetitle} </title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -17,15 +17,23 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> Inside the electro back room</h1>
-    <p> There you standing. <br>
-       <strong> You hear wind coming in to the room </strong> <br>
-        Suddenly you see a way to the roof but wil you go </p>
-    <img src="img/BackRoomE.png">
+    <h1> a lake ;-; </h1>
+    <p> There you`re standing in front of the river.<br>
+        You look around and see a little boat You think yes this is my chane to escape.<br>
+        But you see there a no paddles And now you think were can i find this paddels?</p>
+    <img src="img/river2.jpg">
     <ul>
-        <li><a href="electro.php"> Go back in the store </a></li>
-        <li><a href="eroof.php"> TO THE ROOF </a> </li>
-        <li><a href="Card.php"> A card rlly?? </a> </li>
+        <li><a href="Monster.php"> Goo back to that sand ??</a></li>
+        {if isset($smarty.session.paddle)}
+        <li><a href="#"> Escape !! </a> </li>
+        {else}
+        <li><a href="#"> Nothing here friend</a> </li>
+        {/if}
+        {if isset($smarty.session.car)}
+        <li><a href="#"> Take the boat </a> </li>
+        {else}
+        <li><a href="#"> I SAID NOTHING HERE !</a> </li>
+        {/if}
     </ul>
 
     <ul>

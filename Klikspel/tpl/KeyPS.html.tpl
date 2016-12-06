@@ -17,15 +17,16 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> Inside the electro back room</h1>
-    <p> There you standing. <br>
-       <strong> You hear wind coming in to the room </strong> <br>
-        Suddenly you see a way to the roof but wil you go </p>
-    <img src="img/BackRoomE.png">
+    <h1> Roof of the electro store </h1>
+
+    <p>  A key but for what <br>
+        <strong> the bank </strong> <br>
+        <strong> The station? </strong> or even <br>
+        <b> the graveyard </b> </p>
+
+    <img src="img/KeyPS.png">
     <ul>
-        <li><a href="electro.php"> Go back in the store </a></li>
-        <li><a href="eroof.php"> TO THE ROOF </a> </li>
-        <li><a href="Card.php"> A card rlly?? </a> </li>
+        <li><a href="eroof.php"> Look back on the roof </a> </li>
     </ul>
 
     <ul>

@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/html">
+<html>
 <head>
     <title> {$pagetitle} </title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -17,17 +17,17 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> Inside the electro back room</h1>
-    <p> There you standing. <br>
-       <strong> You hear wind coming in to the room </strong> <br>
-        Suddenly you see a way to the roof but wil you go </p>
-    <img src="img/BackRoomE.png">
+    <h1> The city </h1>
+    <p> And there you`re standing on the middle of the street. <br>
+        You look down to the right and see nothing. To the left you see almost a bridge.<br>
+        And futher on you see the garage and a store.<br> Which way wil you go..</p>
+    <img src="img/street.png">
     <ul>
-        <li><a href="electro.php"> Go back in the store </a></li>
-        <li><a href="eroof.php"> TO THE ROOF </a> </li>
-        <li><a href="Card.php"> A card rlly?? </a> </li>
+        <li><a href="Outside.php"> Go back to look for something </a></li>
+        <li><a href="Deadend.php"> To The right </a></li>
+        <li><a href="Nbridge.php"> TO the left towards the bridge </a></li>
+        <li><a href="AgianStreet.php"> Go on ....</a></li>
     </ul>
-
     <ul>
         {foreach from=$inventory key=id item=i}
             <li> {$i.player_id} {$i.item_id} {$i.space} {$i.quantity} </li>

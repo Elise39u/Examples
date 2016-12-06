@@ -31,6 +31,9 @@ if($setHP <= 0) {
     setStat('bankgc', $userID, '5000');
 }
 
+unset($_SESSION['Station']);
+unset($_SESSION['Sand']);
+unset($_SESSION['Ship']);
 
 if (isset($_POST['submit'])) {
     $FirstName = $_POST["FirstName"];

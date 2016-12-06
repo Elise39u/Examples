@@ -44,8 +44,8 @@ while ($row = mysqli_fetch_assoc($result)) {
     }
 }
 
-$_SESSION['iel'] = true;
-unset($_SESSION['Dump']);
+$_SESSION['Dump'] = true;
+unset($_SESSION['iel']);
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
 $smarty->assign('magic',getStat('mdef',$userID));
@@ -55,4 +55,4 @@ $smarty->assign('inbank',getStat('bankgc',$userID));
 $smarty->assign('currentHP',getStat('curhp',$userID));
 $smarty->assign('maximumHP',getStat('maxhp',$userID));
 $smarty->assign('pagetitle', $pagetitle);
-$smarty->display("tpl/Sand.html.tpl");
+$smarty->display("tpl/lake.html.tpl");

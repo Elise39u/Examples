@@ -19,7 +19,6 @@ list($value) = mysqli_fetch_row($result);
 $userID = $value;
 
 $pagetitle = "Mine game";
-
 $inventory = array();
 $query = sprintf("SELECT * FROM inventory WHERE player_id = '%s'",
     mysqli_real_escape_string($mysqli, $userID));

@@ -30,7 +30,7 @@
         <li><a href="Oelectro.php"> TO some electro stuffie </a></li>
         <li><a href="Sand.php"> ... a sandpath -.- </a></li>
         <li><a href="Pass.php"> The pass to the other side</a></li>
-        <li><a href="#"> Futher ahead</a></li>
+        <li><a href="Street.php"> Futher ahead</a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

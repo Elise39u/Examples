@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-02 14:08:15
+/* Smarty version 3.1.29, created on 2016-12-05 08:37:16
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\BackE.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5841723fc64915_50136109',
+  'unifunc' => 'content_5845192ccafb32_62073709',
   'file_dependency' => 
   array (
     '8edd3f3cc8e9b5be825e466e3b781363a17e57cf' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\BackE.html.tpl',
-      1 => 1480684009,
+      1 => 1480923264,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5841723fc64915_50136109 ($_smarty_tpl) {
+function content_5845192ccafb32_62073709 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/html">
@@ -56,7 +56,7 @@ function content_5841723fc64915_50136109 ($_smarty_tpl) {
     <ul>
         <li><a href="electro.php"> Go back in the store </a></li>
         <li><a href="eroof.php"> TO THE ROOF </a> </li>
-        <li><a href="#"> A card rlly?? </a> </li>
+        <li><a href="Card.php"> A card rlly?? </a> </li>
     </ul>
 
     <ul>

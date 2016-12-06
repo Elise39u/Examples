@@ -18,14 +18,11 @@
     </ul>
 
     <h1> Inside the electro back room</h1>
-    <p> There you standing. <br>
-       <strong> You hear wind coming in to the room </strong> <br>
-        Suddenly you see a way to the roof but wil you go </p>
-    <img src="img/BackRoomE.png">
+    <p> You see a card and think <br>
+        is that the card for the weapon cache ?? </p>
+    <img src="img/SecurityCard.png">
     <ul>
-        <li><a href="electro.php"> Go back in the store </a></li>
-        <li><a href="eroof.php"> TO THE ROOF </a> </li>
-        <li><a href="Card.php"> A card rlly?? </a> </li>
+        <li><a href="BackE.php"> just... Just go back </a></li>
     </ul>
 
     <ul>

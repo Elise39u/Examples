@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-01 16:01:09
+/* Smarty version 3.1.29, created on 2016-12-05 15:50:40
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Sand.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58403b35247687_91368649',
+  'unifunc' => 'content_58457ec0c1c124_73665946',
   'file_dependency' => 
   array (
     '7ef46b7e59c9950e93401e422bbe22543309e0d9' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Sand.html.tpl',
-      1 => 1480604424,
+      1 => 1480949427,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58403b35247687_91368649 ($_smarty_tpl) {
+function content_58457ec0c1c124_73665946 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -57,7 +57,7 @@ function content_58403b35247687_91368649 ($_smarty_tpl) {
     <img src="img/sand.jpg">
     <ul>
         <li><a href="Outside.php"> Go back to you`re home</a></li>
-        <li><a href="#"> Go on ?? </a> </li>
+        <li><a href="Monster.php"> Go on ?? </a> </li>
     </ul>
 
     <ul>

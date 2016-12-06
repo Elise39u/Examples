@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/html">
+<html>
 <head>
     <title> {$pagetitle} </title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -17,17 +17,21 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> Inside the electro back room</h1>
-    <p> There you standing. <br>
-       <strong> You hear wind coming in to the room </strong> <br>
-        Suddenly you see a way to the roof but wil you go </p>
-    <img src="img/BackRoomE.png">
+    <h1> A bridge?? </h1>
+    <p> You`re walking down the street to the bridge.<br>
+        Suddenly you hear a voice telling you to stop. you stop. <br>
+        They say.: <br>
+        "If you not have been infected and you can deliver us the following things we wil help you.<br>
+        <uL>
+        <li>-New weapons</li>
+        <li>-1000 gold coins"</li>
+        </ul>
+         So what wil you do now?</p>
+    <img src="img/nbridge.png">
     <ul>
-        <li><a href="electro.php"> Go back in the store </a></li>
-        <li><a href="eroof.php"> TO THE ROOF </a> </li>
-        <li><a href="Card.php"> A card rlly?? </a> </li>
+        <li><a href="Street.php"> Go back to the street </a></li>
+        <li><a href="Bridge.php"> Go on if you dare </a></li>
     </ul>
-
     <ul>
         {foreach from=$inventory key=id item=i}
             <li> {$i.player_id} {$i.item_id} {$i.space} {$i.quantity} </li>

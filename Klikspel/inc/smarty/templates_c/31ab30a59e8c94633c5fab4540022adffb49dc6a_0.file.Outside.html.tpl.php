@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-01 16:00:31
+/* Smarty version 3.1.29, created on 2016-12-06 10:51:18
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Outside.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58403b0fbebde2_56256931',
+  'unifunc' => 'content_58468a16f3c619_17553228',
   'file_dependency' => 
   array (
     '31ab30a59e8c94633c5fab4540022adffb49dc6a' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Outside.html.tpl',
-      1 => 1480604286,
+      1 => 1481017869,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58403b0fbebde2_56256931 ($_smarty_tpl) {
+function content_58468a16f3c619_17553228 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -61,7 +61,7 @@ function content_58403b0fbebde2_56256931 ($_smarty_tpl) {
         <li><a href="Oelectro.php"> TO some electro stuffie </a></li>
         <li><a href="Sand.php"> ... a sandpath -.- </a></li>
         <li><a href="Pass.php"> The pass to the other side</a></li>
-        <li><a href="#"> Futher ahead</a></li>
+        <li><a href="Street.php"> Futher ahead</a></li>
     </ul>
     <ul>
         <?php

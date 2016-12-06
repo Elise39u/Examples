@@ -26,7 +26,7 @@
     <img src="img/sand.jpg">
     <ul>
         <li><a href="Outside.php"> Go back to you`re home</a></li>
-        <li><a href="#"> Go on ?? </a> </li>
+        <li><a href="Monster.php"> Go on ?? </a> </li>
     </ul>
 
     <ul>
