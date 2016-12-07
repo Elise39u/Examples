@@ -17,18 +17,11 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> And agian street and shops </h1>
-    <p> And there you`re standing at the end of the street.<br>
-        You look down to the left and see a store. To the right you see grage. <br>
-        And futher on you road goes on. <br>
-        Which way wil you go.</p>
-    <img src="img/street4.png">
+    <h1> Antenne ??? </h1>
+    <p> What can i do with this ???</p>
+    <img src="img/Antenne.png">
     <ul>
-        <li><a href="street.php"> Go back ^.^ </a></li>
-        <li><a href="Garage.php"> To The garage </a></li>
-        <li><a href="OMetal.php"> To the ... -.- Metal store </a></li>
-        <li><a href="OGY.php"> Continu friend </a></li>
-        <li><a href="Potion.php"> Potion Shop?? </a></li>
+        <li><a href="GraveYard.php"> Go back ^.^ please </a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

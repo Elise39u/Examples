@@ -17,23 +17,13 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> a lake ;-; </h1>
-    <p> There you`re standing in front of the river.<br>
-        You look around and see a little boat You think yes this is my chane to escape.<br>
-        But you see there a no paddles And now you think were can i find this paddels?</p>
-    <img src="img/river2.jpg">
+    <h1> Quick End </h1>
+    <p> You have escape the city.<br>
+        But this was the quicky way out<br>
+        there are more do you wwant to try it agian</p>
+    <img src="img/download5.jpg">
     <ul>
-        <li><a href="Monster.php"> Goo back to that sand ??</a></li>
-        {if isset($smarty.session.paddle)}
-        <li><a href="End1.php"> Escape !! </a> </li>
-        {else}
-        <li><a href="#"> Nothing here friend</a> </li>
-        {/if}
-        {if isset($smarty.session.car)}
-        <li><a href="Boat.php"> Take the boat </a> </li>
-        {else}
-        <li><a href="#"> I SAID NOTHING HERE !</a> </li>
-        {/if}
+        <li><a href="index.php"> Gameover </a></li>
     </ul>
 
     <ul>

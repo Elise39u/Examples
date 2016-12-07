@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-05 08:29:18
+/* Smarty version 3.1.29, created on 2016-12-07 10:56:29
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\KeyPS.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5845174e90e9e9_66827208',
+  'unifunc' => 'content_5847dccddda804_43325183',
   'file_dependency' => 
   array (
     '5ccadc23e1d6e7dca74bdcb4fe49fc711d9813c8' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\KeyPS.html.tpl',
-      1 => 1480922945,
+      1 => 1480922970,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5845174e90e9e9_66827208 ($_smarty_tpl) {
+function content_5847dccddda804_43325183 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/html">
@@ -57,7 +57,7 @@ function content_5845174e90e9e9_66827208 ($_smarty_tpl) {
 
     <img src="img/KeyPS.png">
     <ul>
-        <li><a href="eroof.php"> Go down in the shop </a> </li>
+        <li><a href="eroof.php"> Look back on the roof </a> </li>
     </ul>
 
     <ul>

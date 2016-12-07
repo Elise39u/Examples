@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-06 15:37:37
+/* Smarty version 3.1.29, created on 2016-12-07 11:27:17
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\AgianStreet.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5846cd31c37052_16792121',
+  'unifunc' => 'content_5847e405830837_07854133',
   'file_dependency' => 
   array (
     '6a67d2f260d491d0468a92e4d2d58e35cb1cdcc0' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\AgianStreet.html.tpl',
-      1 => 1481034751,
+      1 => 1481105583,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5846cd31c37052_16792121 ($_smarty_tpl) {
+function content_5847e405830837_07854133 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -56,9 +56,9 @@ function content_5846cd31c37052_16792121 ($_smarty_tpl) {
     <img src="img/street4.png">
     <ul>
         <li><a href="street.php"> Go back ^.^ </a></li>
-        <li><a href="#"> To The garage </a></li>
-        <li><a href="#"> To the ... -.- Metal store </a></li>
-        <li><a href="#"> Continu friend </a></li>
+        <li><a href="Garage.php"> To The garage </a></li>
+        <li><a href="OMetal.php"> To the ... -.- Metal store </a></li>
+        <li><a href="OGY.php"> Continu friend </a></li>
         <li><a href="Potion.php"> Potion Shop?? </a></li>
     </ul>
     <ul>

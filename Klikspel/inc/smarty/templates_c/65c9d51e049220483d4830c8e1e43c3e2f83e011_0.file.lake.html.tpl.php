@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-06 09:10:31
+/* Smarty version 3.1.29, created on 2016-12-07 11:57:21
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\lake.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_584672776a04b4_58558434',
+  'unifunc' => 'content_5847eb11c9f2e5_03197796',
   'file_dependency' => 
   array (
     '65c9d51e049220483d4830c8e1e43c3e2f83e011' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\lake.html.tpl',
-      1 => 1481011824,
+      1 => 1481107947,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_584672776a04b4_58558434 ($_smarty_tpl) {
+function content_5847eb11c9f2e5_03197796 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -56,12 +56,12 @@ function content_584672776a04b4_58558434 ($_smarty_tpl) {
     <ul>
         <li><a href="Monster.php"> Goo back to that sand ??</a></li>
         <?php if (isset($_SESSION['paddle'])) {?>
-        <li><a href="#"> Escape !! </a> </li>
+        <li><a href="End1.php"> Escape !! </a> </li>
         <?php } else { ?>
         <li><a href="#"> Nothing here friend</a> </li>
         <?php }?>
         <?php if (isset($_SESSION['car'])) {?>
-        <li><a href="#"> Take the boat </a> </li>
+        <li><a href="Boat.php"> Take the boat </a> </li>
         <?php } else { ?>
         <li><a href="#"> I SAID NOTHING HERE !</a> </li>
         <?php }?>

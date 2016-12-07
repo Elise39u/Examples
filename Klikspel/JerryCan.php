@@ -32,7 +32,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
 }
 
-$itemID = 9;
+$itemID = 11;
 if($inventory == NULL) {
     $sql = "INSERT INTO Inventory(player_id, item_id, space, quantity) 
 		VALUES ($userID, '$itemID', '$space', $count)";
@@ -73,7 +73,8 @@ else {
     echo "Wuuuttttt";
 }
 
-$_SESSION['KeyPS'] = true;
+$_SESSION['jerrycan'] = true;
+
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
 $smarty->assign('magic',getStat('mdef',$userID));
@@ -83,4 +84,4 @@ $smarty->assign('inbank',getStat('bankgc',$userID));
 $smarty->assign('currentHP',getStat('curhp',$userID));
 $smarty->assign('maximumHP',getStat('maxhp',$userID));
 $smarty->assign('pagetitle', $pagetitle);
-$smarty->display("tpl/KeyPS.html.tpl");
+$smarty->display("tpl/Jerrycan.html.tpl");

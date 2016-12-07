@@ -38,13 +38,9 @@ if (isset($_SESSION['Sand'])) {
 }
 if (isset($_SESSION['Station'])) {
     $area_id = 2;
-    unset($_SESSION['Sand']);
-    unset($_SESSION['Ship']);
 }
 if (isset($_SESSION['Ship'])) {
     $area_id = 3;
-    unset($_SESSION['Sand']);
-    unset($_SESSION['Station']);
 }
 
 // $area_id = (isset($_GET['area']) ? $_GET['area_id'] : 1);
@@ -110,7 +106,7 @@ switch ($monster) {
         $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/Ancestor.png'>";
         break;
     case "Smoker":
-        $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/Smoker.png' width='60%'>";
+        $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/Smoker.png'>";
         break;
     case "Gang Member":
         $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/GangMember.png'>";

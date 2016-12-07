@@ -2,41 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8189406-8a1f-4642-9cf7-5923e32146cd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AgianStreet.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bridge.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Card.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Deadend.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ItemShop.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KeyPS.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Mall.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Monster.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Nbridge.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Potion.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Street.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Warehouse.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lake.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Bridge.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Card.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/ItemShop.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/KeyPS.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Mall.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Monster.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Nbridge.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Potion.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Street.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Warehouse.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/lake.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antenne.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Boat.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Car.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/End1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Garage.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GraveYard.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JerryCan.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metal.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OGY.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OMetal.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Antenne.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Boat.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Car.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/End1.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Garage.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/GraveYard.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Jerrycan.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Metal.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/OGY.html.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Session_items.docx" afterPath="$PROJECT_DIR$/Session_items.docx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sand.php" afterPath="$PROJECT_DIR$/Sand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/31ab30a59e8c94633c5fab4540022adffb49dc6a_0.file.Outside.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/31ab30a59e8c94633c5fab4540022adffb49dc6a_0.file.Outside.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/7ef46b7e59c9950e93401e422bbe22543309e0d9_0.file.Sand.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/7ef46b7e59c9950e93401e422bbe22543309e0d9_0.file.Sand.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/834edb91198d62657f32f86e23b6bb4ef91001d9_0.file.Sleep.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/834edb91198d62657f32f86e23b6bb4ef91001d9_0.file.Sleep.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/8edd3f3cc8e9b5be825e466e3b781363a17e57cf_0.file.BackE.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/8edd3f3cc8e9b5be825e466e3b781363a17e57cf_0.file.BackE.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/room.php" afterPath="$PROJECT_DIR$/room.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/BackE.html.tpl" afterPath="$PROJECT_DIR$/tpl/BackE.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Outside.html.tpl" afterPath="$PROJECT_DIR$/tpl/Outside.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Sand.html.tpl" afterPath="$PROJECT_DIR$/tpl/Sand.html.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KeyPS.php" afterPath="$PROJECT_DIR$/KeyPS.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Monster.php" afterPath="$PROJECT_DIR$/Monster.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/5ccadc23e1d6e7dca74bdcb4fe49fc711d9813c8_0.file.KeyPS.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/5ccadc23e1d6e7dca74bdcb4fe49fc711d9813c8_0.file.KeyPS.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/65c9d51e049220483d4830c8e1e43c3e2f83e011_0.file.lake.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/65c9d51e049220483d4830c8e1e43c3e2f83e011_0.file.lake.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/6a67d2f260d491d0468a92e4d2d58e35cb1cdcc0_0.file.AgianStreet.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/6a67d2f260d491d0468a92e4d2d58e35cb1cdcc0_0.file.AgianStreet.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/AgianStreet.html.tpl" afterPath="$PROJECT_DIR$/tpl/AgianStreet.html.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/lake.html.tpl" afterPath="$PROJECT_DIR$/tpl/lake.html.tpl" />
     </list>
     <ignored path="Klikspel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,42 +53,18 @@
       <file leaf-file-name="TemplatePHPCode.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TemplatePHPCode.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+            <state relative-caret-position="68">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TplTemplateCode.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TplTemplateCode.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TplTemplateCode.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AgianStreet.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AgianStreet.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
-              <folding>
-                <marker date="1481033611070" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-                <marker date="1481033611070" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-                <marker date="1481033611070" expanded="true" signature="824:862" ph="SELECT name items" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AgianStreet.html.tpl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tpl/AgianStreet.html.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+            <state relative-caret-position="17">
+              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -109,33 +78,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Wood.php" />
-        <option value="$PROJECT_DIR$/Hammer.html.tpl" />
-        <option value="$PROJECT_DIR$/tpl/Hammer.html.tpl" />
-        <option value="$PROJECT_DIR$/tpl/Axe.html.tpl" />
-        <option value="$PROJECT_DIR$/Hammer.php" />
-        <option value="$PROJECT_DIR$/Axe.php" />
-        <option value="$PROJECT_DIR$/tpl/Basebalbat.html.tpl" />
-        <option value="$PROJECT_DIR$/Basebalbat.php" />
-        <option value="$PROJECT_DIR$/tpl/Nailgun.html.tpl" />
-        <option value="$PROJECT_DIR$/tpl/Wood.html.tpl" />
-        <option value="$PROJECT_DIR$/Nailgun.php" />
-        <option value="$PROJECT_DIR$/electro.php" />
-        <option value="$PROJECT_DIR$/tpl/Oelectro.html.tpl" />
-        <option value="$PROJECT_DIR$/BackE.php" />
-        <option value="$PROJECT_DIR$/tpl/electro.html.tpl" />
-        <option value="$PROJECT_DIR$/eroof.php" />
-        <option value="$PROJECT_DIR$/tpl/eroof.html.tpl" />
-        <option value="$PROJECT_DIR$/KeyPS.php" />
-        <option value="$PROJECT_DIR$/tpl/KeyPS.html.tpl" />
-        <option value="$PROJECT_DIR$/tpl/BackE.html.tpl" />
-        <option value="$PROJECT_DIR$/tpl/Card.html.tpl" />
         <option value="$PROJECT_DIR$/Card.php" />
         <option value="$PROJECT_DIR$/tpl/Sand.html.tpl" />
         <option value="$PROJECT_DIR$/room.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/tpl/Monster.html.tpl" />
-        <option value="$PROJECT_DIR$/tpl/lake.html.tpl" />
         <option value="$PROJECT_DIR$/Outside.php" />
         <option value="$PROJECT_DIR$/Street.php" />
         <option value="$PROJECT_DIR$/tpl/Outside.html.tpl" />
@@ -151,15 +98,37 @@
         <option value="$PROJECT_DIR$/tpl/Bridge.html.tpl" />
         <option value="$PROJECT_DIR$/lake.php" />
         <option value="$PROJECT_DIR$/Sand.php" />
-        <option value="$PROJECT_DIR$/Monster.php" />
         <option value="$PROJECT_DIR$/tpl/Street.html.tpl" />
         <option value="$PROJECT_DIR$/tpl/AgianStreet.html..tpl" />
         <option value="$PROJECT_DIR$/AgianStreet.php" />
-        <option value="$PROJECT_DIR$/tpl/AgianStreet.html.tpl" />
         <option value="$PROJECT_DIR$/Potion.php" />
         <option value="$PROJECT_DIR$/tpl/Potion.html.tpl" />
         <option value="$PROJECT_DIR$/ItemShop.php" />
         <option value="$PROJECT_DIR$/Warehouse.php" />
+        <option value="$PROJECT_DIR$/KeyPS.php" />
+        <option value="$PROJECT_DIR$/OMetal.php" />
+        <option value="$PROJECT_DIR$/Metal.php" />
+        <option value="$PROJECT_DIR$/tpl/OMetal.html.tpl" />
+        <option value="$PROJECT_DIR$/tpl/Metal.html.tpl" />
+        <option value="$PROJECT_DIR$/OGY.php" />
+        <option value="$PROJECT_DIR$/tpl/OGY.html.tpl" />
+        <option value="$PROJECT_DIR$/GraveYard.php" />
+        <option value="$PROJECT_DIR$/tpl/GraveYard.html.tpl" />
+        <option value="$PROJECT_DIR$/Antenne.php" />
+        <option value="$PROJECT_DIR$/tpl/Antenne.html.tpl" />
+        <option value="$PROJECT_DIR$/Monster.php" />
+        <option value="$PROJECT_DIR$/tpl/AgianStreet.html.tpl" />
+        <option value="$PROJECT_DIR$/Garage.php" />
+        <option value="$PROJECT_DIR$/tpl/Garage.html.tpl" />
+        <option value="$PROJECT_DIR$/tpl/Jerrycan.html.tpl" />
+        <option value="$PROJECT_DIR$/tpl/Car.html.tpl" />
+        <option value="$PROJECT_DIR$/JerryCan.php" />
+        <option value="$PROJECT_DIR$/Car.php" />
+        <option value="$PROJECT_DIR$/tpl/End1.html.tpl" />
+        <option value="$PROJECT_DIR$/End1.php" />
+        <option value="$PROJECT_DIR$/tpl/lake.html.tpl" />
+        <option value="$PROJECT_DIR$/tpl/Boat.html.tpl" />
+        <option value="$PROJECT_DIR$/Boat.php" />
       </list>
     </option>
   </component>
@@ -230,7 +199,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -265,6 +233,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -352,7 +321,9 @@
       <workItem from="1480663714725" duration="4222000" />
       <workItem from="1480668301015" duration="4153000" />
       <workItem from="1480922239434" duration="4185000" />
-      <workItem from="1481008893472" duration="21918000" />
+      <workItem from="1481008893472" duration="23187000" />
+      <workItem from="1481095364748" duration="907000" />
+      <workItem from="1481096284662" duration="8860000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1480579520018</created>
@@ -382,15 +353,22 @@
       <option name="project" value="LOCAL" />
       <updated>1480684546952</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Huge update with more loactions">
+      <created>1481037179840</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1481037179840</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73052000" />
+    <option name="totallyTimeSpent" value="84088000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -410,6 +388,25 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -434,290 +431,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Wood.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <marker date="1480605027683" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1480605027683" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1480605027683" expanded="true" signature="824:862" ph="SELECT name items" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/Wood.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/Oelectro.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Oelectro.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <marker date="1480598917695" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1480598917695" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1480598917695" expanded="true" signature="824:862" ph="SELECT name items" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/electro.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
-          <folding>
-            <marker date="1480681961836" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1480681961836" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1480681961836" expanded="true" signature="824:862" ph="SELECT name items" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/electro.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/eroof.tpl" />
-    <entry file="file://$PROJECT_DIR$/TemplatePHPCode.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eroof.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
-          <folding>
-            <marker date="1480684093044" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1480684093044" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1480684093044" expanded="true" signature="824:862" ph="SELECT name items" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Axe.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="73" column="1" selection-start-line="34" selection-start-column="0" selection-end-line="73" selection-end-column="1" />
-          <folding>
-            <marker date="1480667836098" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1480667836098" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1480667836098" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1480667836098" expanded="true" signature="1126:1233" ph="INSERT INTO Inventory... " />
-            <marker date="1480667836098" expanded="true" signature="1260:1274" ph="..." />
-            <marker date="1480667836098" expanded="true" signature="1380:1394" ph="..." />
-            <marker date="1480667836098" expanded="true" signature="1577:1623" ph="SELECT item_... Inventory" />
-            <marker date="1480667836098" expanded="true" signature="1682:1741" ph="UPDATE Inven... " />
-            <marker date="1480667836098" expanded="true" signature="1816:1830" ph="..." />
-            <marker date="1480667836098" expanded="true" signature="1989:2098" ph="INSERT INTO Inventory... " />
-            <marker date="1480667836098" expanded="true" signature="2160:2174" ph="..." />
-            <marker date="1480667836098" expanded="true" signature="2370:2384" ph="..." />
-            <marker date="1480667836098" expanded="true" signature="2480:2494" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/index.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/eroof.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/BackE.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/KeyPS.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KeyPS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="73" selection-end-column="1" />
-          <folding>
-            <marker date="1480922879674" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1480922879674" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1480922879674" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1480922879674" expanded="true" signature="1126:1233" ph="INSERT INTO Inventory... " />
-            <marker date="1480922879674" expanded="true" signature="1260:1274" ph="..." />
-            <marker date="1480922879674" expanded="true" signature="1380:1394" ph="..." />
-            <marker date="1480922879674" expanded="true" signature="1577:1623" ph="SELECT item_... Inventory" />
-            <marker date="1480922879674" expanded="true" signature="1682:1741" ph="UPDATE Inven... " />
-            <marker date="1480922879674" expanded="true" signature="1816:1830" ph="..." />
-            <marker date="1480922879674" expanded="true" signature="1989:2098" ph="INSERT INTO Inventory... " />
-            <marker date="1480922879674" expanded="true" signature="2160:2174" ph="..." />
-            <marker date="1480922879674" expanded="true" signature="2370:2384" ph="..." />
-            <marker date="1480922879674" expanded="true" signature="2480:2494" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/Card.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Card.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="81" column="54" selection-start-line="81" selection-start-column="54" selection-end-line="81" selection-end-column="54" />
-          <folding>
-            <marker date="1480923497416" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1480923497416" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1480923497416" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1480923497416" expanded="true" signature="1127:1234" ph="INSERT INTO Inventory... " />
-            <marker date="1480923497416" expanded="true" signature="1261:1275" ph="..." />
-            <marker date="1480923497416" expanded="true" signature="1381:1395" ph="..." />
-            <marker date="1480923497416" expanded="true" signature="1578:1624" ph="SELECT item_... Inventory" />
-            <marker date="1480923497416" expanded="true" signature="1683:1742" ph="UPDATE Inven... " />
-            <marker date="1480923497416" expanded="true" signature="1817:1831" ph="..." />
-            <marker date="1480923497416" expanded="true" signature="1990:2099" ph="INSERT INTO Inventory... " />
-            <marker date="1480923497416" expanded="true" signature="2161:2175" ph="..." />
-            <marker date="1480923497416" expanded="true" signature="2371:2385" ph="..." />
-            <marker date="1480923497416" expanded="true" signature="2481:2495" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackE.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-          <folding>
-            <marker date="1480682673569" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1480682673569" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1480682673569" expanded="true" signature="824:862" ph="SELECT name items" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/Pass.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/room.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding>
-            <marker date="1481011346260" expanded="true" signature="359:416" ph="SELECT id FR... player" />
-            <marker date="1481011346260" expanded="true" signature="651:697" ph="SELECT * FRO... inventory" />
-            <marker date="1481011346260" expanded="true" signature="864:902" ph="SELECT name items" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <marker date="1481011346229" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1481011346229" expanded="true" signature="1576:1625" ph="SELECT Usern... player" />
-            <marker date="1481011346229" expanded="true" signature="2105:2252" ph="INSERT INTO player... " />
-            <marker date="1481011346229" expanded="true" signature="2887:2933" ph="SELECT * FRO... inventory" />
-            <marker date="1481011346229" expanded="true" signature="3100:3138" ph="SELECT name items" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/Monster.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/Sand.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/lake.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Outside.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-          <folding>
-            <marker date="1481016014111" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1481016014111" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1481016014111" expanded="true" signature="824:862" ph="SELECT name items" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/Outside.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/Deadend.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Deadend.tpl" />
     <entry file="file://$PROJECT_DIR$/tpl/Deadend.html.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -737,10 +455,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-311">
           <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#p#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -748,7 +462,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -756,7 +469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="31" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -788,7 +500,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
           <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -796,7 +507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
           <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -809,62 +519,6 @@
             <marker date="1481029090309" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
             <marker date="1481029090309" expanded="true" signature="824:862" ph="SELECT name items" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Monster.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="286" column="16" selection-start-line="286" selection-start-column="16" selection-end-line="286" selection-end-column="16" />
-          <folding>
-            <marker date="1481031550965" expanded="true" signature="334:391" ph="SELECT id FR... player" />
-            <marker date="1481031550965" expanded="true" signature="627:673" ph="SELECT * FRO... inventory" />
-            <marker date="1481031550965" expanded="true" signature="840:878" ph="SELECT name items" />
-            <marker date="1481031550965" expanded="true" signature="1454:1527" ph="SELECT monst... area_monsters" />
-            <marker date="1481031550965" expanded="true" signature="1687:1726" ph="SELECT name monsters" />
-            <marker date="1481031550965" expanded="true" signature="1924:1960" ph="SELECT name areas" />
-            <marker date="1481031550965" expanded="true" signature="7077:7091" ph="..." />
-            <marker date="1481031550965" expanded="true" signature="7191:7248" ph="SELECT id FR... player" />
-            <marker date="1481031550965" expanded="true" signature="7693:7750" ph="SELECT id FR... player" />
-            <marker date="1481031550965" expanded="true" signature="8455:8496" ph="SELECT id FR... monsters" />
-            <marker date="1481031550965" expanded="true" signature="10205:10301" ph="SELECT item_... monster_items" />
-            <marker date="1481031550965" expanded="true" signature="10567:10641" ph="SELECT count... inventory" />
-            <marker date="1481031550965" expanded="true" signature="11078:11164" ph="UPDATE inven... " />
-            <marker date="1481031550965" expanded="true" signature="11390:11494" ph="INSERT INTO inventory... " />
-            <marker date="1481031550965" expanded="true" signature="11650:11686" ph="SELECT name items" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lake.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="47" selection-end-column="24" />
-          <folding>
-            <marker date="1481031493491" expanded="true" signature="400:457" ph="SELECT id FR... player" />
-            <marker date="1481031493491" expanded="true" signature="693:739" ph="SELECT * FRO... inventory" />
-            <marker date="1481031493491" expanded="true" signature="906:944" ph="SELECT name items" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
-          <folding>
-            <marker date="1481031493436" expanded="true" signature="400:457" ph="SELECT id FR... player" />
-            <marker date="1481031493436" expanded="true" signature="693:739" ph="SELECT * FRO... inventory" />
-            <marker date="1481031493436" expanded="true" signature="906:944" ph="SELECT name items" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TplTemplateCode.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -884,23 +538,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
           <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/AgianStreet.html..tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/AgianStreet.html..tpl" />
     <entry file="file://$PROJECT_DIR$/tpl/Potion.html.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="556">
           <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -944,23 +589,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AgianStreet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
-          <folding>
-            <marker date="1481033611070" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1481033611070" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1481033611070" expanded="true" signature="824:862" ph="SELECT name items" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tpl/Warehouse.html.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
           <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -980,10 +612,384 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/OMetal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+          <folding>
+            <marker date="1481096098826" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1481096098826" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1481096098826" expanded="true" signature="824:862" ph="SELECT name items" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Metal.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Metal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
+          <folding>
+            <marker date="1481096399938" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1481096399938" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1481096399938" expanded="true" signature="824:862" ph="SELECT name items" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/OMetal.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OGY.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+          <folding>
+            <marker date="1481101317215" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1481101317215" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1481101317215" expanded="true" signature="824:862" ph="SELECT name items" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/OGY.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eroof.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-141">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1480684093044" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1480684093044" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1480684093044" expanded="true" signature="824:862" ph="SELECT name items" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/eroof.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TemplatePHPCode.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Antenne.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Antenne.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="85" column="29" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
+          <folding>
+            <marker date="1481104191352" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1481104191352" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1481104191352" expanded="true" signature="824:862" ph="SELECT name items" />
+            <marker date="1481104191352" expanded="true" signature="1127:1234" ph="INSERT INTO Inventory... " />
+            <marker date="1481104191352" expanded="true" signature="1261:1275" ph="..." />
+            <marker date="1481104191352" expanded="true" signature="1381:1395" ph="..." />
+            <marker date="1481104191352" expanded="true" signature="1578:1624" ph="SELECT item_... Inventory" />
+            <marker date="1481104191352" expanded="true" signature="1683:1742" ph="UPDATE Inven... " />
+            <marker date="1481104191352" expanded="true" signature="1817:1831" ph="..." />
+            <marker date="1481104191352" expanded="true" signature="1990:2099" ph="INSERT INTO Inventory... " />
+            <marker date="1481104191352" expanded="true" signature="2161:2175" ph="..." />
+            <marker date="1481104191352" expanded="true" signature="2371:2385" ph="..." />
+            <marker date="1481104191352" expanded="true" signature="2481:2495" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/GraveYard.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GraveYard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+          <folding>
+            <marker date="1481102838653" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1481102838653" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1481102838653" expanded="true" signature="824:862" ph="SELECT name items" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <marker date="1481031493436" expanded="true" signature="400:457" ph="SELECT id FR... player" />
+            <marker date="1481031493436" expanded="true" signature="693:739" ph="SELECT * FRO... inventory" />
+            <marker date="1481031493436" expanded="true" signature="906:944" ph="SELECT name items" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Monster.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+          <folding>
+            <marker date="1481105395991" expanded="true" signature="334:391" ph="SELECT id FR... player" />
+            <marker date="1481105395991" expanded="true" signature="627:673" ph="SELECT * FRO... inventory" />
+            <marker date="1481105395991" expanded="true" signature="840:878" ph="SELECT name items" />
+            <marker date="1481105395991" expanded="true" signature="1331:1404" ph="SELECT monst... area_monsters" />
+            <marker date="1481105395991" expanded="true" signature="1564:1603" ph="SELECT name monsters" />
+            <marker date="1481105395991" expanded="true" signature="1801:1837" ph="SELECT name areas" />
+            <marker date="1481105395991" expanded="true" signature="6942:6956" ph="..." />
+            <marker date="1481105395991" expanded="true" signature="7056:7113" ph="SELECT id FR... player" />
+            <marker date="1481105395991" expanded="true" signature="7558:7615" ph="SELECT id FR... player" />
+            <marker date="1481105395991" expanded="true" signature="8320:8361" ph="SELECT id FR... monsters" />
+            <marker date="1481105395991" expanded="true" signature="10070:10166" ph="SELECT item_... monster_items" />
+            <marker date="1481105395991" expanded="true" signature="10432:10506" ph="SELECT count... inventory" />
+            <marker date="1481105395991" expanded="true" signature="10943:11029" ph="UPDATE inven... " />
+            <marker date="1481105395991" expanded="true" signature="11255:11359" ph="INSERT INTO inventory... " />
+            <marker date="1481105395991" expanded="true" signature="11515:11551" ph="SELECT name items" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tpl/AgianStreet.html.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+        <state relative-caret-position="182">
+          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AgianStreet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
+          <folding>
+            <marker date="1481033611070" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1481033611070" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1481033611070" expanded="true" signature="824:862" ph="SELECT name items" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Garage.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Garage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+          <folding>
+            <marker date="1481106195334" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1481106195334" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1481106195334" expanded="true" signature="824:862" ph="SELECT name items" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Jerrycan.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JerryCan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding>
+            <marker date="1481106951667" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1481106951667" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1481106951667" expanded="true" signature="824:862" ph="SELECT name items" />
+            <marker date="1481106951667" expanded="true" signature="1127:1234" ph="INSERT INTO Inventory... " />
+            <marker date="1481106951667" expanded="true" signature="1261:1275" ph="..." />
+            <marker date="1481106951667" expanded="true" signature="1381:1395" ph="..." />
+            <marker date="1481106951667" expanded="true" signature="1578:1624" ph="SELECT item_... Inventory" />
+            <marker date="1481106951667" expanded="true" signature="1683:1742" ph="UPDATE Inven... " />
+            <marker date="1481106951667" expanded="true" signature="1817:1831" ph="..." />
+            <marker date="1481106951667" expanded="true" signature="1990:2099" ph="INSERT INTO Inventory... " />
+            <marker date="1481106951667" expanded="true" signature="2161:2175" ph="..." />
+            <marker date="1481106951667" expanded="true" signature="2371:2385" ph="..." />
+            <marker date="1481106951667" expanded="true" signature="2481:2495" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Car.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Car.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding>
+            <marker date="1481106992390" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1481106992390" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1481106992390" expanded="true" signature="824:862" ph="SELECT name items" />
+            <marker date="1481106992390" expanded="true" signature="1126:1233" ph="INSERT INTO Inventory... " />
+            <marker date="1481106992390" expanded="true" signature="1260:1274" ph="..." />
+            <marker date="1481106992390" expanded="true" signature="1380:1394" ph="..." />
+            <marker date="1481106992390" expanded="true" signature="1577:1623" ph="SELECT item_... Inventory" />
+            <marker date="1481106992390" expanded="true" signature="1682:1741" ph="UPDATE Inven... " />
+            <marker date="1481106992390" expanded="true" signature="1816:1830" ph="..." />
+            <marker date="1481106992390" expanded="true" signature="1989:2098" ph="INSERT INTO Inventory... " />
+            <marker date="1481106992390" expanded="true" signature="2160:2174" ph="..." />
+            <marker date="1481106992390" expanded="true" signature="2370:2384" ph="..." />
+            <marker date="1481106992390" expanded="true" signature="2480:2494" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Monster.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/End1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+          <folding>
+            <marker date="1481107706374" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1481107706374" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1481107706374" expanded="true" signature="824:862" ph="SELECT name items" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/End1.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/lake.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lake.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+          <folding>
+            <marker date="1481031493491" expanded="true" signature="400:457" ph="SELECT id FR... player" />
+            <marker date="1481031493491" expanded="true" signature="693:739" ph="SELECT * FRO... inventory" />
+            <marker date="1481031493491" expanded="true" signature="906:944" ph="SELECT name items" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KeyPS.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="75" selection-end-column="26" />
+          <folding>
+            <marker date="1481095814404" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1481095814404" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1481095814404" expanded="true" signature="824:862" ph="SELECT name items" />
+            <marker date="1481095814404" expanded="true" signature="1126:1233" ph="INSERT INTO Inventory... " />
+            <marker date="1481095814404" expanded="true" signature="1260:1274" ph="..." />
+            <marker date="1481095814404" expanded="true" signature="1380:1394" ph="..." />
+            <marker date="1481095814404" expanded="true" signature="1577:1623" ph="SELECT item_... Inventory" />
+            <marker date="1481095814404" expanded="true" signature="1682:1741" ph="UPDATE Inven... " />
+            <marker date="1481095814404" expanded="true" signature="1816:1830" ph="..." />
+            <marker date="1481095814404" expanded="true" signature="1989:2098" ph="INSERT INTO Inventory... " />
+            <marker date="1481095814404" expanded="true" signature="2160:2174" ph="..." />
+            <marker date="1481095814404" expanded="true" signature="2370:2384" ph="..." />
+            <marker date="1481095814404" expanded="true" signature="2480:2494" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+          <folding>
+            <marker date="1481108284555" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1481108284555" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1481108284555" expanded="true" signature="824:862" ph="SELECT name items" />
+            <marker date="1481108284555" expanded="true" signature="1126:1233" ph="INSERT INTO Inventory... " />
+            <marker date="1481108284555" expanded="true" signature="1260:1274" ph="..." />
+            <marker date="1481108284555" expanded="true" signature="1380:1394" ph="..." />
+            <marker date="1481108284555" expanded="true" signature="1577:1623" ph="SELECT item_... Inventory" />
+            <marker date="1481108284555" expanded="true" signature="1682:1741" ph="UPDATE Inven... " />
+            <marker date="1481108284555" expanded="true" signature="1816:1830" ph="..." />
+            <marker date="1481108284555" expanded="true" signature="1989:2098" ph="INSERT INTO Inventory... " />
+            <marker date="1481108284555" expanded="true" signature="2160:2174" ph="..." />
+            <marker date="1481108284555" expanded="true" signature="2370:2384" ph="..." />
+            <marker date="1481108284555" expanded="true" signature="2480:2494" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Boat.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TplTemplateCode.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
           <folding />
         </state>
       </provider>

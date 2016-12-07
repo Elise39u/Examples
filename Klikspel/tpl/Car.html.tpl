@@ -17,25 +17,18 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> a lake ;-; </h1>
-    <p> There you`re standing in front of the river.<br>
-        You look around and see a little boat You think yes this is my chane to escape.<br>
-        But you see there a no paddles And now you think were can i find this paddels?</p>
-    <img src="img/river2.jpg">
+    <h1> A 0.0 Car Yes </h1>
+    <p> Can it ride <br>
+    or is this thing broken </p>
+    <img src="img/Car.png">
     <ul>
-        <li><a href="Monster.php"> Goo back to that sand ??</a></li>
-        {if isset($smarty.session.paddle)}
-        <li><a href="End1.php"> Escape !! </a> </li>
+        <li><a href="Garage.php"> Go back to the garage </a></li>
+        {if isset($smarty.session.jerrycan)}
+        <li><a href="lake.php"> Go to the lake and load the boat </a></li>
         {else}
-        <li><a href="#"> Nothing here friend</a> </li>
-        {/if}
-        {if isset($smarty.session.car)}
-        <li><a href="Boat.php"> Take the boat </a> </li>
-        {else}
-        <li><a href="#"> I SAID NOTHING HERE !</a> </li>
+        <li><a href="Garage.php"> Go look for the jerrycan</a> </li>
         {/if}
     </ul>
-
     <ul>
         {foreach from=$inventory key=id item=i}
             <li> {$i.player_id} {$i.item_id} {$i.space} {$i.quantity} </li>
