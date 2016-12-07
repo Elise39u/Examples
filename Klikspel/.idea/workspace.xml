@@ -2,34 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8189406-8a1f-4642-9cf7-5923e32146cd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Antenne.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Boat.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Car.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/End1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Garage.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GraveYard.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JerryCan.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Metal.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OGY.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OMetal.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Antenne.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Boat.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Car.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/End1.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Garage.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/GraveYard.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Jerrycan.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Metal.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/OGY.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Session_items.docx" afterPath="$PROJECT_DIR$/Session_items.docx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/KeyPS.php" afterPath="$PROJECT_DIR$/KeyPS.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Monster.php" afterPath="$PROJECT_DIR$/Monster.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/5ccadc23e1d6e7dca74bdcb4fe49fc711d9813c8_0.file.KeyPS.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/5ccadc23e1d6e7dca74bdcb4fe49fc711d9813c8_0.file.KeyPS.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/65c9d51e049220483d4830c8e1e43c3e2f83e011_0.file.lake.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/65c9d51e049220483d4830c8e1e43c3e2f83e011_0.file.lake.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/6a67d2f260d491d0468a92e4d2d58e35cb1cdcc0_0.file.AgianStreet.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/6a67d2f260d491d0468a92e4d2d58e35cb1cdcc0_0.file.AgianStreet.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/AgianStreet.html.tpl" afterPath="$PROJECT_DIR$/tpl/AgianStreet.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/lake.html.tpl" afterPath="$PROJECT_DIR$/tpl/lake.html.tpl" />
     </list>
     <ignored path="Klikspel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -323,7 +296,7 @@
       <workItem from="1480922239434" duration="4185000" />
       <workItem from="1481008893472" duration="23187000" />
       <workItem from="1481095364748" duration="907000" />
-      <workItem from="1481096284662" duration="8860000" />
+      <workItem from="1481096284662" duration="8916000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1480579520018</created>
@@ -360,15 +333,22 @@
       <option name="project" value="LOCAL" />
       <updated>1481037179840</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Part 1 of the city is compleet">
+      <created>1481124907338</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1481124907338</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84088000" />
+    <option name="totallyTimeSpent" value="84144000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -424,7 +404,8 @@
     <MESSAGE value="Update with more locations" />
     <MESSAGE value="UPDATE wood store + electro store" />
     <MESSAGE value="Huge update with more loactions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Huge update with more loactions" />
+    <MESSAGE value="Part 1 of the city is compleet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Part 1 of the city is compleet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
