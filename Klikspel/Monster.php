@@ -291,6 +291,12 @@ if(isset($_POST['action'])) {
         // Running away! Send them back to the main page
         header('Location: Sand.php');
         }
+        elseif (isset($_SESSION['Nstation'])) {
+            header('Location: Nstation.php');
+        }
+        elseif (isset($_SESSION['Bank'])) {
+            header('Location: OBank.php');
+        }
         else {
             header('Location: lake.php');
         }

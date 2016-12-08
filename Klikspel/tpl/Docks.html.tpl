@@ -17,19 +17,14 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> Looking away </h1>
-    <p> You`re standing near a river <br>
-        You can see a police station on the other side. <br>
-        You even see a shop. <br>
-        But you dont now how to cross.</p>
-    <img src="img/river1.jpg">
+    <h1> The docks </h1>
+    <p> There you`re standing on a empty docks and you look ahead. <br>
+        you see a big buliding.<br>
+        But the road doenst go that way wat now.</p>
+    <img src="img/Docks.png">
     <ul>
-        <li><a href="Outside.php"> Go back on the roads friends </a></li>
-        {if isset($smarty.session.boat)}
-            <li><a href="river.php"> Go on the river friend </a> </li>
-            {else}
-            <li><a href="#"> Nothing here friend</a></li>
-        {/if}
+        <li><a href="river.php"> Go back on the river </a></li>
+        <li><a href="Futher.php"> Walk down the road </a> </li>
     </ul>
 
     <ul>

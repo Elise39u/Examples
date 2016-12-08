@@ -38,8 +38,8 @@
                     <p><a href='lake.php'>Go to the lake</a></p>
                     <p><a href="Sand.php">Go back to some sand -.- </a> </p>
                     {elseif $area_id == 2}
-                        <p><a href="#"> Go to the bank </a></p>
-                        <p><a href="#"> Poilice stations are good ? </a></p>
+                        <p><a href="OBank.php"> Go to the bank </a></p>
+                        <p><a href="Nstation.php"> Poilice stations are good ? </a></p>
                      {else}
                         <p><a href="#"> Go on the boat if you dare </a></p>
                         <p><a href="#"> Go back to you`re boat </a></p>

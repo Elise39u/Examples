@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title> {$pagetitle} </title>
+    <title> The {$pagetitle} </title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
@@ -17,21 +17,14 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> Looking away </h1>
-    <p> You`re standing near a river <br>
-        You can see a police station on the other side. <br>
-        You even see a shop. <br>
-        But you dont now how to cross.</p>
-    <img src="img/river1.jpg">
+    <h1> Outside the bank </h1>
+    <p>As you walk towards the bank you are thinking. <br>
+        besides looking for gold what can i find here</p>
+    <img src="img/OustideB.png">
     <ul>
-        <li><a href="Outside.php"> Go back on the roads friends </a></li>
-        {if isset($smarty.session.boat)}
-            <li><a href="river.php"> Go on the river friend </a> </li>
-            {else}
-            <li><a href="#"> Nothing here friend</a></li>
-        {/if}
+        <li><a href="BKDoor.php"> Go inside the bank </a> </li>
+        <li><a href="Monster.php"> Go back  </a> </li>
     </ul>
-
     <ul>
         {foreach from=$inventory key=id item=i}
             <li> {$i.player_id} {$i.item_id} {$i.space} {$i.quantity} </li>

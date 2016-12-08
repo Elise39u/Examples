@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-08 08:49:46
-  from "C:\wamp64\www\Examplecode\Klikspel\tpl\Pass.html.tpl" */
+/* Smarty version 3.1.29, created on 2016-12-08 13:14:06
+  from "C:\wamp64\www\Examplecode\Klikspel\tpl\OBank.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5849109a78fb92_55278064',
+  'unifunc' => 'content_58494e8e36d372_20597712',
   'file_dependency' => 
   array (
-    '157a134353891903ba2e6267cc9aece30351c50b' => 
+    '4fec4ad7bb877f9bae53ed71a138d6c5a886182a' => 
     array (
-      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Pass.html.tpl',
-      1 => 1481183088,
+      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\OBank.html.tpl',
+      1 => 1481199241,
       2 => 'file',
     ),
   ),
@@ -19,12 +19,12 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5849109a78fb92_55278064 ($_smarty_tpl) {
+function content_58494e8e36d372_20597712 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title> <?php echo $_smarty_tpl->tpl_vars['pagetitle']->value;?>
+    <title> The <?php echo $_smarty_tpl->tpl_vars['pagetitle']->value;?>
  </title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
@@ -48,21 +48,14 @@ function content_5849109a78fb92_55278064 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> Looking away </h1>
-    <p> You`re standing near a river <br>
-        You can see a police station on the other side. <br>
-        You even see a shop. <br>
-        But you dont now how to cross.</p>
-    <img src="img/river1.jpg">
+    <h1> Outside the bank </h1>
+    <p>As you walk towards the bank you are thinking. <br>
+        besides looking for gold what can i find here</p>
+    <img src="img/OustideB.png">
     <ul>
-        <li><a href="Outside.php"> Go back on the roads friends </a></li>
-        <?php if (isset($_SESSION['boat'])) {?>
-            <li><a href="river.php"> Go on the river friend </a> </li>
-            <?php } else { ?>
-            <li><a href="#"> Nothing here friend</a></li>
-        <?php }?>
+        <li><a href="BKDoor.php"> Go inside the bank </a> </li>
+        <li><a href="Monster.php"> Go back  </a> </li>
     </ul>
-
     <ul>
         <?php
 $_from = $_smarty_tpl->tpl_vars['inventory']->value;

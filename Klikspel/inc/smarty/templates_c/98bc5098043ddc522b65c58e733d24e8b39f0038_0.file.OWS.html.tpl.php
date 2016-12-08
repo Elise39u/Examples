@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-08 08:49:46
-  from "C:\wamp64\www\Examplecode\Klikspel\tpl\Pass.html.tpl" */
+/* Smarty version 3.1.29, created on 2016-12-08 11:29:50
+  from "C:\wamp64\www\Examplecode\Klikspel\tpl\OWS.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5849109a78fb92_55278064',
+  'unifunc' => 'content_5849361eecbd00_07565109',
   'file_dependency' => 
   array (
-    '157a134353891903ba2e6267cc9aece30351c50b' => 
+    '98bc5098043ddc522b65c58e733d24e8b39f0038' => 
     array (
-      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Pass.html.tpl',
-      1 => 1481183088,
+      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\OWS.html.tpl',
+      1 => 1481192918,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5849109a78fb92_55278064 ($_smarty_tpl) {
+function content_5849361eecbd00_07565109 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -48,19 +48,13 @@ function content_5849109a78fb92_55278064 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> Looking away </h1>
-    <p> You`re standing near a river <br>
-        You can see a police station on the other side. <br>
-        You even see a shop. <br>
-        But you dont now how to cross.</p>
-    <img src="img/river1.jpg">
+    <h1> Weapons??? </h1>
+    <p> There you standing oustide the weapon store. <br>
+        you could go in but wich dangers are hidden within</p>
+    <img src="img/OutsideWS.png">
     <ul>
-        <li><a href="Outside.php"> Go back on the roads friends </a></li>
-        <?php if (isset($_SESSION['boat'])) {?>
-            <li><a href="river.php"> Go on the river friend </a> </li>
-            <?php } else { ?>
-            <li><a href="#"> Nothing here friend</a></li>
-        <?php }?>
+        <li><a href="Futher.php"> Go back  Please ;-;</a></li>
+        <li><a href="WeaponShop.php"> A shop .... </a> </li>
     </ul>
 
     <ul>

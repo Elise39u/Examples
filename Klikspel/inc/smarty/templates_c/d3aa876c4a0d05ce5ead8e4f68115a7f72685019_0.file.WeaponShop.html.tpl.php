@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-08 12:20:50
-  from "C:\wamp64\www\Examplecode\Klikspel\tpl\Monster.html.tpl" */
+/* Smarty version 3.1.29, created on 2016-12-08 11:47:54
+  from "C:\wamp64\www\Examplecode\Klikspel\tpl\WeaponShop.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5849421239c863_45201357',
+  'unifunc' => 'content_58493a5a3b7ee0_66910152',
   'file_dependency' => 
   array (
-    '9edacefcb03fec5e3932add07fcc6040364d0bfb' => 
+    'd3aa876c4a0d05ce5ead8e4f68115a7f72685019' => 
     array (
-      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Monster.html.tpl',
-      1 => 1481195906,
+      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\WeaponShop.html.tpl',
+      1 => 1481194070,
       2 => 'file',
     ),
   ),
@@ -19,12 +19,12 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5849421239c863_45201357 ($_smarty_tpl) {
+function content_58493a5a3b7ee0_66910152 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title> The <?php echo $_smarty_tpl->tpl_vars['area']->value;?>
+    <title> <?php echo $_smarty_tpl->tpl_vars['pagetitle']->value;?>
  </title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
@@ -48,19 +48,51 @@ function content_5849421239c863_45201357 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> You've encountered a <strong><?php echo $_smarty_tpl->tpl_vars['monster']->value;?>
-! </strong> </h1>
-        <?php if ($_smarty_tpl->tpl_vars['combat']->value == '') {?>
-            <form action='Monster.php' method='post'>
-                <input type='submit' name='action' value='Attack' /> or
-                <input type='submit' name='action' value='Run Away' />
-                <input type='hidden' name='monster' value='<?php echo $_smarty_tpl->tpl_vars['monster']->value;?>
-' />
-            </form>
-        <?php } else { ?>
-            <ul>
-                <?php
-$_from = $_smarty_tpl->tpl_vars['combat']->value;
+    <h1> Inside The Weapon Store </h1>
+    <h3>Current Equipment:</h3>
+    <ul>
+        <li>
+            Primary Hand:
+            <?php if (isset($_smarty_tpl->tpl_vars['phand']->value)) {?>
+                <?php if ($_smarty_tpl->tpl_vars['phand']->value != '') {?>
+                    <?php echo $_smarty_tpl->tpl_vars['phand']->value;?>
+
+                    <form action='WeaponShop.php' method='post'>
+                        <input type='hidden' name='sell' value='phand' />
+                        <input type='submit' value='Sell' />
+                    </form>
+                <?php } else { ?>
+                    None
+                <?php }?>
+            <?php }?>
+        </li>
+        <li>
+            Secondary Hand:
+            <?php if (isset($_smarty_tpl->tpl_vars['shand']->value)) {?>
+                <?php if ($_smarty_tpl->tpl_vars['shand']->value != '') {?>
+                    <?php echo $_smarty_tpl->tpl_vars['shand']->value;?>
+
+                    <form action='WeaponShop.php' method='post'>
+                        <input type='hidden' name='sell' value='shand' />
+                        <input type='submit' value='Sell' />
+                    </form>
+                <?php } else { ?>
+                    None
+                <?php }?>
+            <?php }?>
+        </li>
+    </ul>
+
+    <p>
+    <form action='WeaponShop.php' method='post'>
+        <input type='submit' value='Swap' name='swap' />
+    </form>
+    </p>
+    <p>Below are the weapons currently available for purchase.</p>
+    <img src="img/InsideWS.png">
+    <ul>
+        <?php
+$_from = $_smarty_tpl->tpl_vars['weapons']->value;
 if (!is_array($_from) && !is_object($_from)) {
 settype($_from, 'array');
 }
@@ -73,11 +105,16 @@ foreach ($_from as $_smarty_tpl->tpl_vars['id']->value => $_smarty_tpl->tpl_vars
 $_smarty_tpl->tpl_vars['i']->_loop = true;
 $__foreach_i_0_saved_local_item = $_smarty_tpl->tpl_vars['i'];
 ?>
-                    <li><strong><?php echo $_smarty_tpl->tpl_vars['i']->value['attacker'];?>
-</strong> attacks <strong><?php echo $_smarty_tpl->tpl_vars['i']->value['defender'];?>
-</strong> for <?php echo $_smarty_tpl->tpl_vars['i']->value['damage'];?>
- damage!</li>
-                <?php
+        <li>
+            <strong><?php echo $_smarty_tpl->tpl_vars['i']->value['name'];?>
+</strong> - <em><?php echo $_smarty_tpl->tpl_vars['i']->value['price'];?>
+ gold coins</em>
+            <form action='WeaponShop.php' method='post'>
+                <input type='hidden' name='weapon-id' value='<?php echo $_smarty_tpl->tpl_vars['i']->value['id'];?>
+' />
+                <input type='submit' value='Buy' />
+            </form>
+            <?php
 $_smarty_tpl->tpl_vars['i'] = $__foreach_i_0_saved_local_item;
 }
 if ($__foreach_i_0_saved_item) {
@@ -87,37 +124,24 @@ if ($__foreach_i_0_saved_key) {
 $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
 }
 ?>
-            </ul>
-            <?php if (isset($_smarty_tpl->tpl_vars['won']->value)) {?>
-                <?php if ($_smarty_tpl->tpl_vars['won']->value == 1) {?>
-                    <p>You found a <strong><?php echo $_smarty_tpl->tpl_vars['item']->value;?>
-</strong>!</p>
-                    <p>You killed <strong><?php echo $_POST['monster'];?>
-</strong>! You gained <strong><?php echo $_smarty_tpl->tpl_vars['gold']->value;?>
-</strong> gold.</p>
-                    <?php if ($_smarty_tpl->tpl_vars['area_id']->value == 1) {?>
-                    <p><a href='lake.php'>Go to the lake</a></p>
-                    <p><a href="Sand.php">Go back to some sand -.- </a> </p>
-                    <?php } elseif ($_smarty_tpl->tpl_vars['area_id']->value == 2) {?>
-                        <p><a href="OBank.php"> Go to the bank </a></p>
-                        <p><a href="Nstation.php"> Poilice stations are good ? </a></p>
-                     <?php } else { ?>
-                        <p><a href="#"> Go on the boat if you dare </a></p>
-                        <p><a href="#"> Go back to you`re boat </a></p>
-                    <?php }?>
-                <?php }?>
-            <?php }?>
-            <?php if (isset($_smarty_tpl->tpl_vars['lost']->value)) {?>
-                <?php if ($_smarty_tpl->tpl_vars['lost']->value == 1) {?>
-                    <p>You were killed by <strong><?php echo $_POST['monster'];?>
-</strong>.</p>
-                    <p><a href='index.php'>Game over</a></p>
-                <?php }?>
-            <?php }?>
+    </ul>
+
+    <?php if (isset($_smarty_tpl->tpl_vars['error']->value)) {?>
+        <?php if ($_smarty_tpl->tpl_vars['error']->value != '') {?>
+            <p style='color:red'><?php echo $_smarty_tpl->tpl_vars['error']->value;?>
+</p>
         <?php }?>
+    <?php }?>
+    <?php if (isset($_smarty_tpl->tpl_vars['message']->value)) {?>
+        <?php if ($_smarty_tpl->tpl_vars['message']->value != '') {?>
+            <p style='color:green'><?php echo $_smarty_tpl->tpl_vars['message']->value;?>
+</p>
+        <?php }?>
+    <?php }?>
 
-    <?php echo $_smarty_tpl->tpl_vars['img']->value;?>
-
+    <ul>
+        <li><a href="OWS.php"> Go back Outside</a></li>
+    </ul>
 
     <ul>
         <?php

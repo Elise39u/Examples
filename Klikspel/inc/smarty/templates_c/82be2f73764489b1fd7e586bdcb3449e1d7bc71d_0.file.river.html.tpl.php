@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-08 08:49:46
-  from "C:\wamp64\www\Examplecode\Klikspel\tpl\Pass.html.tpl" */
+/* Smarty version 3.1.29, created on 2016-12-08 08:54:45
+  from "C:\wamp64\www\Examplecode\Klikspel\tpl\river.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5849109a78fb92_55278064',
+  'unifunc' => 'content_584911c5735c55_14380266',
   'file_dependency' => 
   array (
-    '157a134353891903ba2e6267cc9aece30351c50b' => 
+    '82be2f73764489b1fd7e586bdcb3449e1d7bc71d' => 
     array (
-      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Pass.html.tpl',
-      1 => 1481183088,
+      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\river.html.tpl',
+      1 => 1481183580,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5849109a78fb92_55278064 ($_smarty_tpl) {
+function content_584911c5735c55_14380266 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -48,19 +48,16 @@ function content_5849109a78fb92_55278064 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> Looking away </h1>
-    <p> You`re standing near a river <br>
-        You can see a police station on the other side. <br>
-        You even see a shop. <br>
-        But you dont now how to cross.</p>
-    <img src="img/river1.jpg">
+    <h1> Rowining away </h1>
+    <p> There you are on the middle of the river.<br>
+        you look around and see only both sites <br>
+        And a abonded <strong> carrier </strong> <br>
+        but should i go back or continu</p>
+    <img src="img/Rivier.png">
     <ul>
-        <li><a href="Outside.php"> Go back on the roads friends </a></li>
-        <?php if (isset($_SESSION['boat'])) {?>
-            <li><a href="river.php"> Go on the river friend </a> </li>
-            <?php } else { ?>
-            <li><a href="#"> Nothing here friend</a></li>
-        <?php }?>
+        <li><a href="Pass.php"> Go back to the city </a></li>
+        <li><a href="Docks.php"> Go to the other side of the city </a> </li>
+        <li><a href="#"> A carrier ??? </a></li>
     </ul>
 
     <ul>
