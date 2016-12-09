@@ -42,6 +42,10 @@ if(isset($_POST['amount'])) {
     if($amount > $gold) {
         $amount = $gold;
     }
+    if($amount < $needed) {
+        $amount = 0;
+        $smarty->assign('info', 'Dont put a negative number');
+    }
     setStat('gc',$userID,getStat('gc',$userID) - $amount);
     setStat('curhp',$userID,getStat('curhp',$userID) + $amount);
     $smarty->assign('healed',$amount);

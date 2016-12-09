@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-06 15:38:32
+/* Smarty version 3.1.29, created on 2016-12-08 16:34:35
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Potion.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5846cd68c94876_05059036',
+  'unifunc' => 'content_58497d8b8125e0_15267429',
   'file_dependency' => 
   array (
     '505106666669c9703832d33fb8c63ebb2492822d' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Potion.html.tpl',
-      1 => 1481035107,
+      1 => 1481211273,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5846cd68c94876_05059036 ($_smarty_tpl) {
+function content_58497d8b8125e0_15267429 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -55,6 +55,11 @@ function content_5846cd68c94876_05059036 ($_smarty_tpl) {
     <p>You have <strong><?php echo $_smarty_tpl->tpl_vars['gold']->value;?>
 </strong> gold to heal yourself with, and it will cost you <strong>1 gold per HP healed</strong> to heal yourself.</p>
     <?php if (isset($_smarty_tpl->tpl_vars['healed']->value)) {?>
+        <?php if (isset($_smarty_tpl->tpl_vars['info']->value)) {?>
+            <p class="hide">  <?php echo $_smarty_tpl->tpl_vars['info']->value;?>
+  <br>
+            You can`t damge you`re self</p>
+        <?php }?>
         <?php if ($_smarty_tpl->tpl_vars['healed']->value != 0) {?>
             <p>You have been healed for <strong><?php echo $_smarty_tpl->tpl_vars['healed']->value;?>
 </strong> HP.</p>
