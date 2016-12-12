@@ -32,6 +32,8 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
 }
 
+$_SESSION['Army'] = true;
+unset($_SESSION['Apothican']);
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
 $smarty->assign('magic',getStat('mdef',$userID));

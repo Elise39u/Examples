@@ -41,6 +41,8 @@ unset($_SESSION['Nstation']);
 unset($_SESSION['iel']);
 unset($_SESSION['Dump']);
 $_SESSION['Bank'] = true;
+unset($_SESSION['Nship']);
+unset($_SESSION['Deck']);
 
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));

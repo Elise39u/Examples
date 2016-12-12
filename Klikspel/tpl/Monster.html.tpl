@@ -41,8 +41,8 @@
                         <p><a href="OBank.php"> Go to the bank </a></p>
                         <p><a href="Nstation.php"> Poilice stations are good ? </a></p>
                      {else}
-                        <p><a href="#"> Go on the boat if you dare </a></p>
-                        <p><a href="#"> Go back to you`re boat </a></p>
+                        <p><a href="Deck.php"> Go on the boat if you dare </a></p>
+                        <p><a href="Nship.php"> Go back to you`re boat </a></p>
                     {/if}
                 {/if}
             {/if}

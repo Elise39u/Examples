@@ -17,18 +17,13 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> Rowining away </h1>
-    <p> There you are on the middle of the river.<br>
-        you look around and see only both sites <br>
-        And a abonded <strong> carrier </strong> <br>
-        but should i go back or continu</p>
-    <img src="img/Rivier.png">
+    <h1> 0.0 The army </h1>
+    <p> There you go. as you enter the truck i need to tell something.<br>
+        There are 2 more serect endings would you go back and find them or not</p>
+    <img src="img/Back.png">
     <ul>
-        <li><a href="Pass.php"> Go back to the city </a></li>
-        <li><a href="Docks.php"> Go to the other side of the city </a> </li>
-        <li><a href="Nship.php"> A carrier ??? </a></li>
+        <li><a href="index.php"> Start Over</a> </li>
     </ul>
-
     <ul>
         {foreach from=$inventory key=id item=i}
             <li> {$i.player_id} {$i.item_id} {$i.space} {$i.quantity} </li>

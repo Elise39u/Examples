@@ -17,16 +17,13 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> Rowining away </h1>
-    <p> There you are on the middle of the river.<br>
-        you look around and see only both sites <br>
-        And a abonded <strong> carrier </strong> <br>
-        but should i go back or continu</p>
-    <img src="img/Rivier.png">
+    <h1> On deck </h1>
+    <p> You look around but there is only a way inside. <br>
+        <strong> Do you dear it </strong> </p>
+    <img src="img/OntheShip.png">
     <ul>
-        <li><a href="Pass.php"> Go back to the city </a></li>
-        <li><a href="Docks.php"> Go to the other side of the city </a> </li>
-        <li><a href="Nship.php"> A carrier ??? </a></li>
+        <li><a href="Maintance.php"> Go inside </a></li>
+        <li><a href="Monster.php"> Climb Down </a> </li>
     </ul>
 
     <ul>

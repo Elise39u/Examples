@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-12 14:17:48
-  from "C:\wamp64\www\Examplecode\Klikspel\tpl\river.html.tpl" */
+/* Smarty version 3.1.29, created on 2016-12-12 15:48:13
+  from "C:\wamp64\www\Examplecode\Klikspel\tpl\End3.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_584ea37c0b2305_13106465',
+  'unifunc' => 'content_584eb8adc40721_95784698',
   'file_dependency' => 
   array (
-    '82be2f73764489b1fd7e586bdcb3449e1d7bc71d' => 
+    '315a223b3763ad8f794514e20c22b37b8bbc12f0' => 
     array (
-      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\river.html.tpl',
-      1 => 1481548646,
+      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\End3.html.tpl',
+      1 => 1481553906,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_584ea37c0b2305_13106465 ($_smarty_tpl) {
+function content_584eb8adc40721_95784698 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -48,16 +48,14 @@ function content_584ea37c0b2305_13106465 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> Rowining away </h1>
-    <p> There you are on the middle of the river.<br>
-        you look around and see only both sites <br>
-        And a abonded <strong> carrier </strong> <br>
-        but should i go back or continu</p>
-    <img src="img/Rivier.png">
+    <h1> Goodbye </h1>
+    <p> As you fly away with the chopper i need to tell something. <br>
+        Have you tried following <strong> the Apothicans <br>
+        escapd by boat <br>
+        go away by the bridge </strong> </p>
+    <img src="img/End3.png">
     <ul>
-        <li><a href="Pass.php"> Go back to the city </a></li>
-        <li><a href="Docks.php"> Go to the other side of the city </a> </li>
-        <li><a href="Nship.php"> A carrier ??? </a></li>
+        <li><a href="index.php"> StartOver </a></li>
     </ul>
 
     <ul>

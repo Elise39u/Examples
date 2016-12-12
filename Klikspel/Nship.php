@@ -11,15 +11,15 @@ include_once ('inc/Monster.php');
 include_once ('inc/ItemStats.php');
 include_once ('inc/WeaponStat.php');
 
+unset($_SESSION['Sand']);
+unset($_SESSION['Station']);
+$_SESSION['Ship'] = true;
+
 $query = sprintf("SELECT id FROM player WHERE UPPER(username) = UPPER('%s')",
     mysqli_real_escape_string($mysqli, $_SESSION['username']));
 $result = mysqli_query($mysqli, $query);
 list($value) = mysqli_fetch_row($result);
 $userID = $value;
-
-unset($_SESSION['Sand']);
-$_SESSION['Station'] = true;
-unset($_SESSION['Ship']);
 
 $pagetitle = "Mine game";
 
@@ -36,11 +36,11 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
 }
 
-$_SESSION['Nstation'] = true;
+$_SESSION['Nship'] = true;
 unset($_SESSION['iel']);
 unset($_SESSION['Dump']);
 unset($_SESSION['Bank']);
-unset($_SESSION['Nship']);
+unset($_SESSION['Nstation']);
 unset($_SESSION['Deck']);
 
 $smarty->assign('inventory', $inventory);
@@ -52,4 +52,4 @@ $smarty->assign('inbank',getStat('bankgc',$userID));
 $smarty->assign('currentHP',getStat('curhp',$userID));
 $smarty->assign('maximumHP',getStat('maxhp',$userID));
 $smarty->assign('pagetitle', $pagetitle);
-$smarty->display("tpl/Nstation.html.tpl");
+$smarty->display("tpl/Nship.html.tpl");

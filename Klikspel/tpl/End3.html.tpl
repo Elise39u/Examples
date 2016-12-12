@@ -17,16 +17,14 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> Rowining away </h1>
-    <p> There you are on the middle of the river.<br>
-        you look around and see only both sites <br>
-        And a abonded <strong> carrier </strong> <br>
-        but should i go back or continu</p>
-    <img src="img/Rivier.png">
+    <h1> Goodbye </h1>
+    <p> As you fly away with the chopper i need to tell something. <br>
+        Have you tried following <strong> the Apothicans <br>
+        escapd by boat <br>
+        go away by the bridge </strong> </p>
+    <img src="img/End3.png">
     <ul>
-        <li><a href="Pass.php"> Go back to the city </a></li>
-        <li><a href="Docks.php"> Go to the other side of the city </a> </li>
-        <li><a href="Nship.php"> A carrier ??? </a></li>
+        <li><a href="index.php"> StartOver </a></li>
     </ul>
 
     <ul>

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-06 14:23:47
+/* Smarty version 3.1.29, created on 2016-12-12 15:53:30
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Bridge.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5846bbe3e3d392_58144153',
+  'unifunc' => 'content_584eb9eab672d2_14483228',
   'file_dependency' => 
   array (
     '03a3bd36360fd61531c203cba9349a66fed62fa6' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Bridge.html.tpl',
-      1 => 1481030626,
+      1 => 1481554337,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5846bbe3e3d392_58144153 ($_smarty_tpl) {
+function content_584eb9eab672d2_14483228 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -55,7 +55,7 @@ function content_5846bbe3e3d392_58144153 ($_smarty_tpl) {
     <img src="img/escape2.png">
     <ul>
         <?php if (isset($_SESSION['gold'])) {?>
-            <li><a href="#"> Okay you can come with us</a> </li>
+            <li><a href="End2.php"> Okay you can come with us</a> </li>
             <?php } else { ?>
             <li><a href="Nbridge.php"> No sorry turn around</a></li>
         <?php }?>

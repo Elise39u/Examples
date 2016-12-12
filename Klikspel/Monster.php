@@ -288,7 +288,7 @@ if(isset($_POST['action'])) {
     }
     else {
         if (isset($_SESSION['iel'])) {
-        // Running away! Send them back to the main page
+        // Running away! Send them back to the last visted page
         header('Location: Sand.php');
         }
         elseif (isset($_SESSION['Nstation'])) {
@@ -296,6 +296,12 @@ if(isset($_POST['action'])) {
         }
         elseif (isset($_SESSION['Bank'])) {
             header('Location: OBank.php');
+        }
+        elseif (isset($_SESSION['Nship'])) {
+            header('Location: Nship.php');
+        }
+        elseif (isset($_SESSION['Deck'])) {
+            header('Location: Deck.php');
         }
         else {
             header('Location: lake.php');

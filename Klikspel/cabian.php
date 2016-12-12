@@ -17,10 +17,6 @@ $result = mysqli_query($mysqli, $query);
 list($value) = mysqli_fetch_row($result);
 $userID = $value;
 
-unset($_SESSION['Sand']);
-$_SESSION['Station'] = true;
-unset($_SESSION['Ship']);
-
 $pagetitle = "Mine game";
 
 $inventory = array();
@@ -36,13 +32,6 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
 }
 
-$_SESSION['Nstation'] = true;
-unset($_SESSION['iel']);
-unset($_SESSION['Dump']);
-unset($_SESSION['Bank']);
-unset($_SESSION['Nship']);
-unset($_SESSION['Deck']);
-
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
 $smarty->assign('magic',getStat('mdef',$userID));
@@ -52,4 +41,4 @@ $smarty->assign('inbank',getStat('bankgc',$userID));
 $smarty->assign('currentHP',getStat('curhp',$userID));
 $smarty->assign('maximumHP',getStat('maxhp',$userID));
 $smarty->assign('pagetitle', $pagetitle);
-$smarty->display("tpl/Nstation.html.tpl");
+$smarty->display("tpl/cabian.html.tpl");

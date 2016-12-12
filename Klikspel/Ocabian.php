@@ -17,10 +17,6 @@ $result = mysqli_query($mysqli, $query);
 list($value) = mysqli_fetch_row($result);
 $userID = $value;
 
-unset($_SESSION['Sand']);
-$_SESSION['Station'] = true;
-unset($_SESSION['Ship']);
-
 $pagetitle = "Mine game";
 
 $inventory = array();
@@ -34,14 +30,12 @@ while ($row = mysqli_fetch_assoc($result)) {
     $item_result = mysqli_query($mysqli, $item_query);
     list($row['name']) = mysqli_fetch_row($item_result);
     array_push($inventory, $row);
+    if (isset($row['item_id'])) {
+        if ($row['item_id'] == 95) {
+            $_SESSION['KeyCB'] = true;
+        }
+    }
 }
-
-$_SESSION['Nstation'] = true;
-unset($_SESSION['iel']);
-unset($_SESSION['Dump']);
-unset($_SESSION['Bank']);
-unset($_SESSION['Nship']);
-unset($_SESSION['Deck']);
 
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
@@ -52,4 +46,4 @@ $smarty->assign('inbank',getStat('bankgc',$userID));
 $smarty->assign('currentHP',getStat('curhp',$userID));
 $smarty->assign('maximumHP',getStat('maxhp',$userID));
 $smarty->assign('pagetitle', $pagetitle);
-$smarty->display("tpl/Nstation.html.tpl");
+$smarty->display("tpl/Ocabian.html.tpl");

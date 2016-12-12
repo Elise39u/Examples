@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-12 12:06:01
+/* Smarty version 3.1.29, created on 2016-12-12 15:43:47
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Roof.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_584e849922dc85_79673134',
+  'unifunc' => 'content_584eb7a3543f34_68823182',
   'file_dependency' => 
   array (
     'c53c5d74f468346b48d0b77f701fbc36d5c92e06' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Roof.html.tpl',
-      1 => 1481540731,
+      1 => 1481553355,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_584e849922dc85_79673134 ($_smarty_tpl) {
+function content_584eb7a3543f34_68823182 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -56,7 +56,7 @@ function content_584e849922dc85_79673134 ($_smarty_tpl) {
     <ul>
         <li><a href="Police.php"> Go back inside  </a></li>
         <?php if (isset($_SESSION['flare'])) {?>
-            <li><a href="#"> Call the chopper</a></li>
+            <li><a href="Ending.php"> Call the chopper</a></li>
             <?php } else { ?>
             <li><a href="#"> Nothing Here </a> </li>
         <?php }?>

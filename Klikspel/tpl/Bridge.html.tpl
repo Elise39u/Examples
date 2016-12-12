@@ -24,7 +24,7 @@
     <img src="img/escape2.png">
     <ul>
         {if isset($smarty.session.gold)}
-            <li><a href="#"> Okay you can come with us</a> </li>
+            <li><a href="End2.php"> Okay you can come with us</a> </li>
             {else}
             <li><a href="Nbridge.php"> No sorry turn around</a></li>
         {/if}

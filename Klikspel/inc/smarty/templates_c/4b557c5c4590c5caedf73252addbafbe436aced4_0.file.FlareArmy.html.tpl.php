@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-12 14:17:48
-  from "C:\wamp64\www\Examplecode\Klikspel\tpl\river.html.tpl" */
+/* Smarty version 3.1.29, created on 2016-12-12 15:48:09
+  from "C:\wamp64\www\Examplecode\Klikspel\tpl\FlareArmy.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_584ea37c0b2305_13106465',
+  'unifunc' => 'content_584eb8a9729f76_49676532',
   'file_dependency' => 
   array (
-    '82be2f73764489b1fd7e586bdcb3449e1d7bc71d' => 
+    '4b557c5c4590c5caedf73252addbafbe436aced4' => 
     array (
-      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\river.html.tpl',
-      1 => 1481548646,
+      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\FlareArmy.html.tpl',
+      1 => 1481553820,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_584ea37c0b2305_13106465 ($_smarty_tpl) {
+function content_584eb8a9729f76_49676532 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -48,16 +48,12 @@ function content_584ea37c0b2305_13106465 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> Rowining away </h1>
-    <p> There you are on the middle of the river.<br>
-        you look around and see only both sites <br>
-        And a abonded <strong> carrier </strong> <br>
-        but should i go back or continu</p>
-    <img src="img/Rivier.png">
+    <h1> Signal </h1>
+    <p> As you strike the flare you hear the folowwing thing <br>
+        Stay there we wil come and rescue you</p>
+    <img src="img/FlareSignal.png">
     <ul>
-        <li><a href="Pass.php"> Go back to the city </a></li>
-        <li><a href="Docks.php"> Go to the other side of the city </a> </li>
-        <li><a href="Nship.php"> A carrier ??? </a></li>
+        <li><a href="End3.php"> Gameover </a></li>
     </ul>
 
     <ul>

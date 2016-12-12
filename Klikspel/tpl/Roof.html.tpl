@@ -25,7 +25,7 @@
     <ul>
         <li><a href="Police.php"> Go back inside  </a></li>
         {if isset($smarty.session.flare)}
-            <li><a href="#"> Call the chopper</a></li>
+            <li><a href="Ending.php"> Call the chopper</a></li>
             {else}
             <li><a href="#"> Nothing Here </a> </li>
         {/if}
