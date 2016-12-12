@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8189406-8a1f-4642-9cf7-5923e32146cd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bank.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Counter.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KeyBK.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/KeyGY.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Ostation.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Police.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Roof.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Vault.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WeaponCache.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Bank.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Counter.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/KeyBK.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/KeyGY.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Ostation.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Police.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Roof.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Vault.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/WeaponCache.html.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Card.php" afterPath="$PROJECT_DIR$/Card.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Nstation.php" afterPath="$PROJECT_DIR$/Nstation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sand.php" afterPath="$PROJECT_DIR$/Sand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/5ccadc23e1d6e7dca74bdcb4fe49fc711d9813c8_0.file.KeyPS.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/5ccadc23e1d6e7dca74bdcb4fe49fc711d9813c8_0.file.KeyPS.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/ccd4dd06fbc32fe462ff2bdbf782b94345c60284_0.file.Nstation.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/ccd4dd06fbc32fe462ff2bdbf782b94345c60284_0.file.Nstation.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/e2b61654d2365589934432da161f9741dbc522c0_0.file.BKDoor.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/e2b61654d2365589934432da161f9741dbc522c0_0.file.BKDoor.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lake.php" afterPath="$PROJECT_DIR$/lake.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/BKDoor.html.tpl" afterPath="$PROJECT_DIR$/tpl/BKDoor.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/KeyPS.html.tpl" afterPath="$PROJECT_DIR$/tpl/KeyPS.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Nstation.html.tpl" afterPath="$PROJECT_DIR$/tpl/Nstation.html.tpl" />
     </list>
     <ignored path="Klikspel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -376,7 +348,7 @@
       <workItem from="1481096284662" duration="8916000" />
       <workItem from="1481183040213" duration="9870000" />
       <workItem from="1481268562477" duration="3436000" />
-      <workItem from="1481527583997" duration="9146000" />
+      <workItem from="1481527583997" duration="9183000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1480579520018</created>
@@ -427,15 +399,22 @@
       <option name="project" value="LOCAL" />
       <updated>1481268667775</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="The city is done now the Carrier">
+      <created>1481542401174</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1481542401174</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106596000" />
+    <option name="totallyTimeSpent" value="106633000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -474,7 +453,8 @@
     <MESSAGE value="Huge update with more loactions" />
     <MESSAGE value="Part 1 of the city is compleet" />
     <MESSAGE value="Solved a bug with the healing system" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solved a bug with the healing system" />
+    <MESSAGE value="The city is done now the Carrier" />
+    <option name="LAST_COMMIT_MESSAGE" value="The city is done now the Carrier" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -667,6 +647,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
