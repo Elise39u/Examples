@@ -1,5 +1,6 @@
 <?php
 session_start();
+global $combat;
 global $space;
 global $count;
 $space = 50;
@@ -32,48 +33,41 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
 }
 
-$itemID = 33;
-if($inventory == NULL) {
-    $sql = "INSERT INTO Inventory(player_id, item_id, space, quantity) 
-		VALUES ($userID, '$itemID', '$space', $count)";
-    echo "<span style=\"color: white; \"> this $space left  </span></br>";
-    if ($mysqli->query($sql) === TRUE) {
-        echo "<span style=\"color: white; \"> New record created successfully </span>";
+$gold = getStat('gc',$userID);
+if(isset($_POST['amount'])) {
+    $amount = $_POST['amount'];
+    if($_POST['action'] == 'Deposit') {
+        if($amount > $gold || $amount == '') {
+            // the user input something weird - assume the maximum
+            $amount = $gold;
+        }
+        else {
+            if($amount < $gold) {
+                $amount = 0;
+                $smarty->assign('info', 'Dont put a negative number');
+            }
+        }
+        setStat('gc',$userID,getStat('gc',$userID) - $amount);
+        setStat('bankgc',$userID,getStat('bankgc',$userID)+$amount);
+        $smarty->assign('deposited',$amount);
     } else {
-        echo "Error: " . $sql . "<br>" . $mysqli->error;
+        $bankGold = getStat('bankgc',$userID);
+        if($amount > $bankGold || $amount == '') {
+            // the user input something weird again - again, assume the maximum
+            $amount = $bankGold;
+        }
+        else {
+            if($amount < $bankGold) {
+                $amount = 0;
+                $smarty->assign('info', 'Dont put a negative number');
+            }
+        }
+        setStat('gc',$userID,getStat('gc',$userID) + $amount);
+        setStat('bankgc',$userID,getStat('bankgc',$userID)-$amount);
+        $smarty->assign('withdrawn',$amount);
     }
 }
 
-elseif(isset($inventory)) {
-    $result = $mysqli->query("SELECT item_id FROM Inventory WHERE item_id = $itemID");
-    if($result->num_rows > 0) {
-        $sql = "UPDATE Inventory SET quantity = quantity + 1 WHERE item_id=$itemID";
-        mysqli_query($mysqli, $sql);
-        echo "<span style=\"color: white; \"> Exsist already Dork </span>";
-    } else {
-        foreach ($inventory as $Ok) {
-            $Ok = $space;
-            $space--;
-        }
-        $sql = "INSERT INTO Inventory(player_id, item_id, space, quantity) 
-				VALUES ($userID, '$itemID', '$space', $count)";
-        if ($space <= 0) {
-            echo "<span style=\"color: white; \"> Because you have no space left </span>";
-            die($space);
-        }
-        echo "this $space left </br>";
-        if ($mysqli->query($sql) === TRUE) {
-            echo "<span style=\"color: white; \">  New record created successfully </span>";
-        } else {
-            echo "<span style=\"color: white; \"> Error: " . $sql . "<br>" . $mysqli->error;"</span>";
-        }
-    }
-}
-else {
-    echo "Wuuuttttt";
-}
-
-$_SESSION['card'] = true;
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
 $smarty->assign('magic',getStat('mdef',$userID));
@@ -83,4 +77,4 @@ $smarty->assign('inbank',getStat('bankgc',$userID));
 $smarty->assign('currentHP',getStat('curhp',$userID));
 $smarty->assign('maximumHP',getStat('maxhp',$userID));
 $smarty->assign('pagetitle', $pagetitle);
-$smarty->display("tpl/Card.html.tpl");
+$smarty->display("tpl/Counter.html.tpl");

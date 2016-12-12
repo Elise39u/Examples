@@ -17,7 +17,7 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> Roof of the electro store </h1>
+    <h1>Keys for days </h1>
 
     <p>  A key but for what <br>
         <strong> the bank </strong> <br>

@@ -11,10 +11,6 @@ include_once ('inc/Monster.php');
 include_once ('inc/ItemStats.php');
 include_once ('inc/WeaponStat.php');
 
-$_SESSION['Sand'] = true;
-unset($_SESSION['Station']);
-unset($_SESSION['Ship']);
-
 $query = sprintf("SELECT id FROM player WHERE UPPER(username) = UPPER('%s')",
     mysqli_real_escape_string($mysqli, $_SESSION['username']));
 $result = mysqli_query($mysqli, $query);
@@ -34,20 +30,8 @@ while ($row = mysqli_fetch_assoc($result)) {
     $item_result = mysqli_query($mysqli, $item_query);
     list($row['name']) = mysqli_fetch_row($item_result);
     array_push($inventory, $row);
-    if (isset($row['item_id'])) {
-        if ($row['item_id'] == 4) {
-            $_SESSION['paddle'] = true;
-        }
-        if ($row['item_id'] == 6) {
-            $_SESSION['car'] = true;
-        }
-    }
 }
 
-$_SESSION['iel'] = true;
-unset($_SESSION['Dump']);
-unset($_SESSION['Nstation']);
-unset($_SESSION['Bank']);
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
 $smarty->assign('magic',getStat('mdef',$userID));
@@ -57,4 +41,4 @@ $smarty->assign('inbank',getStat('bankgc',$userID));
 $smarty->assign('currentHP',getStat('curhp',$userID));
 $smarty->assign('maximumHP',getStat('maxhp',$userID));
 $smarty->assign('pagetitle', $pagetitle);
-$smarty->display("tpl/Sand.html.tpl");
+$smarty->display("tpl/Roof.html.tpl");

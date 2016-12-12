@@ -20,7 +20,6 @@ $userID = $value;
 unset($_SESSION['Sand']);
 $_SESSION['Station'] = true;
 unset($_SESSION['Ship']);
-unset($_SESSION['Bank']);
 
 $pagetitle = "Mine game";
 
@@ -40,6 +39,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 $_SESSION['Nstation'] = true;
 unset($_SESSION['iel']);
 unset($_SESSION['Dump']);
+unset($_SESSION['Bank']);
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
 $smarty->assign('magic',getStat('mdef',$userID));

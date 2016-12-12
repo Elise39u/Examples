@@ -17,17 +17,16 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> A door </h1>
-    <p> <strong> Knock Knock</strong> No respone <br>
-    A key or is there someone inside </p>
-    <img src="img/BankDoor.png">
+    <h1> The bank </h1>
+    <p>  you walking thourg the bank you come across a vault <br>
+            Should you check inside and maby get something or only evil <br>
+        Or even check if there is something in by the counter <br>
+            Choice is on you </p>
+    <img src="img/InsideB.png">
     <ul>
-        {if isset($smarty.session.KeyBK)}
-        <li><a href="Bank.php"> Go inside the bank </a> </li>
-        {else}
-        <li><a href="#"> Nothing here Friend</a> </li>
-        {/if}
-        <li><a href="OBank.php"> Go back  </a> </li>
+        <li><a href="BKDoor.php"> Go back Outside for godsake </a> </li>
+        <li><a href="Counter.php"> The counter 0.0 </a> </li>
+        <li><a href="Vault.php"> a vault 0.0 </a> </li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

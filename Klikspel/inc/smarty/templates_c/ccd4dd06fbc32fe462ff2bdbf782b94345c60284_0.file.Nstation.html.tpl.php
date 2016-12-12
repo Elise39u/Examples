@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-08 12:03:09
+/* Smarty version 3.1.29, created on 2016-12-12 11:00:15
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Nstation.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58493ded106a88_65211329',
+  'unifunc' => 'content_584e752f1e4735_44552686',
   'file_dependency' => 
   array (
     'ccd4dd06fbc32fe462ff2bdbf782b94345c60284' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Nstation.html.tpl',
-      1 => 1481194986,
+      1 => 1481528302,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58493ded106a88_65211329 ($_smarty_tpl) {
+function content_584e752f1e4735_44552686 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -56,7 +56,7 @@ function content_58493ded106a88_65211329 ($_smarty_tpl) {
     <ul>
         <li><a href="Futher.php"> Go back  </a></li>
         <li><a href="Monster.php"> Go Futher on  </a> </li>
-        <li><a href="#"> Go to the station  </a> </li>
+        <li><a href="Ostation.php"> Go to the station  </a> </li>
     </ul>
 
     <ul>

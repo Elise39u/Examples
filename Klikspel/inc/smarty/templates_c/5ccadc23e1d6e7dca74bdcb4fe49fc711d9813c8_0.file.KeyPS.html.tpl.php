@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-07 10:56:29
+/* Smarty version 3.1.29, created on 2016-12-12 10:45:31
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\KeyPS.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5847dccddda804_43325183',
+  'unifunc' => 'content_584e71bb3a3d83_88986084',
   'file_dependency' => 
   array (
     '5ccadc23e1d6e7dca74bdcb4fe49fc711d9813c8' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\KeyPS.html.tpl',
-      1 => 1480922970,
+      1 => 1481535928,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5847dccddda804_43325183 ($_smarty_tpl) {
+function content_584e71bb3a3d83_88986084 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/html">
@@ -48,7 +48,7 @@ function content_5847dccddda804_43325183 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> Roof of the electro store </h1>
+    <h1>Keys for days </h1>
 
     <p>  A key but for what <br>
         <strong> the bank </strong> <br>

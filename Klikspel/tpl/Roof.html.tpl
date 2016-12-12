@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title> The {$pagetitle} </title>
+    <title> {$pagetitle} </title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
@@ -17,18 +17,21 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> A door </h1>
-    <p> <strong> Knock Knock</strong> No respone <br>
-    A key or is there someone inside </p>
-    <img src="img/BankDoor.png">
+    <h1> Station roof </h1>
+    <p> There you standing looking over the village <br>
+        but you see a chopper flying around. <br>
+        You`re thinking did they know i am here </p>
+    <img src="img/RoofPS.png">
     <ul>
-        {if isset($smarty.session.KeyBK)}
-        <li><a href="Bank.php"> Go inside the bank </a> </li>
-        {else}
-        <li><a href="#"> Nothing here Friend</a> </li>
+        <li><a href="Police.php"> Go back inside  </a></li>
+        {if isset($smarty.session.flare)}
+            <li><a href="#"> Call the chopper</a></li>
+            {else}
+            <li><a href="#"> Nothing Here </a> </li>
         {/if}
-        <li><a href="OBank.php"> Go back  </a> </li>
+        <li><a href="KeyBK.php"> a Key??  </a></li>
     </ul>
+
     <ul>
         {foreach from=$inventory key=id item=i}
             <li> {$i.player_id} {$i.item_id} {$i.space} {$i.quantity} </li>

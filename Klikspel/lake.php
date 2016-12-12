@@ -14,7 +14,6 @@ include_once ('inc/WeaponStat.php');
 $_SESSION['Sand'] = true;
 unset($_SESSION['Station']);
 unset($_SESSION['Ship']);
-unset($_SESSION['Bank']);
 
 $query = sprintf("SELECT id FROM player WHERE UPPER(username) = UPPER('%s')",
     mysqli_real_escape_string($mysqli, $_SESSION['username']));
@@ -48,6 +47,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 $_SESSION['Dump'] = true;
 unset($_SESSION['iel']);
 unset($_SESSION['Nstation']);
+unset($_SESSION['Bank']);
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
 $smarty->assign('magic',getStat('mdef',$userID));
