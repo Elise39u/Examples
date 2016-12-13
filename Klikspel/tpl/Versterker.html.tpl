@@ -17,13 +17,11 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> Inside This store ;-; </h1>
-    <p> And there you`re standing inside the mental store. You look around.<br>
-        You see nothing. So should i go back outid</p>
-    <img src="img/metaal.jpg">
+    <h1> Versterker </h1>
+    <p> This is a machine to make the messages from you`re recvirer stronger so </p>
+    <img src="img/Versterkerer.png">
     <ul>
-        <li><a href="OMetal.php"> Go back Outside  </a></li>
-        <li><a href="Versterker.php"> Versterker </a></li>
+        <li><a href="Metal.php"> Go back ^.^ please </a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

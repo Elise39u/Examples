@@ -17,13 +17,11 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> Inside This store ;-; </h1>
-    <p> And there you`re standing inside the mental store. You look around.<br>
-        You see nothing. So should i go back outid</p>
-    <img src="img/metaal.jpg">
+    <h1> Recevier </h1>
+    <p> it wil be always here but neede for some thing else and that is question </p>
+    <img src="img/Recevier.png">
     <ul>
-        <li><a href="OMetal.php"> Go back Outside  </a></li>
-        <li><a href="Versterker.php"> Versterker </a></li>
+        <li><a href="room.php"> Go back ^.^ please </a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

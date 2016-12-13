@@ -32,7 +32,7 @@
         <li><a href="Garden.php"> Garden </a> </li>
         <li><a href="Bedroom.php"> Bedroom </a> </li>
         <li><a href="kichten.php"> Kichten </a> </li>
-        <li><a href="#"> Reciever </a> </li>
+        <li><a href="Recevier.php"> Reciever </a> </li>
         <li><a href="Outside.php"> Outside </a> </li>
     </ul>
 

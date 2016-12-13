@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-02 14:10:49
+/* Smarty version 3.1.29, created on 2016-12-13 08:32:33
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\eroof.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_584172d90c9782_02503158',
+  'unifunc' => 'content_584fa411ace746_14883075',
   'file_dependency' => 
   array (
     '08b5513b450e8a8efcf26071bc5c7d059765eb77' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\eroof.html.tpl',
-      1 => 1480684244,
+      1 => 1481614335,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_584172d90c9782_02503158 ($_smarty_tpl) {
+function content_584fa411ace746_14883075 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -55,8 +55,8 @@ function content_584172d90c9782_02503158 ($_smarty_tpl) {
     <img src="img/RoofEl.png">
     <ul>
         <li><a href="BackE.php"> Go down in the shop </a> </li>
-        <?php if (isset($_SESSION['antenne'])) {?>
-        <li><a href="#"> Build the Antenne </a> </li>
+        <?php if (isset($_SESSION['antenne']) && isset($_SESSION['recvier']) && isset($_SESSION['versterker'])) {?>
+        <li><a href="Message.php"> Build the Antenne </a> </li>
         <?php } else { ?>
         <li><a href="#"> Nothing Here to see </a> </li>
         <?php }?>

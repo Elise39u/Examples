@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-11-30 15:25:20
+/* Smarty version 3.1.29, created on 2016-12-13 08:40:32
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\room.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_583ee1502d62b2_23980993',
+  'unifunc' => 'content_584fa5f061cf59_28273578',
   'file_dependency' => 
   array (
     '3f7cfd1a93852041b0db6e18672793468b2c4337' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\room.html.tpl',
-      1 => 1480515587,
+      1 => 1481614741,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_583ee1502d62b2_23980993 ($_smarty_tpl) {
+function content_584fa5f061cf59_28273578 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -63,7 +63,7 @@ function content_583ee1502d62b2_23980993 ($_smarty_tpl) {
         <li><a href="Garden.php"> Garden </a> </li>
         <li><a href="Bedroom.php"> Bedroom </a> </li>
         <li><a href="kichten.php"> Kichten </a> </li>
-        <li><a href="#"> Reciever </a> </li>
+        <li><a href="Recevier.php"> Reciever </a> </li>
         <li><a href="Outside.php"> Outside </a> </li>
     </ul>
 

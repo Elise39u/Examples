@@ -19,7 +19,7 @@ $userID = $value;
 
 $pagetitle = "Mine game";
 
-$actions = array('L_Red_potion' => 'use_L_Red_potion', 'D_Red_potion' => 'use_D_Red_potion', 'L_Purple_potion' => 'use_L_Purple_potion',
+$actions = array('L_Red_potion' => 'Potion', 'D_Red_potion' => 'Potion', 'L_Purple_potion' => 'use_L_Purple_potion',
     'Purple_potion' => 'use_Purple_potion', 'D_Purple_potion' => 'use_D_Purple_potion', 'L_Cyan_potion' => 'use_L_Cyan_potion',
     'D_Cyan_potion' => 'use_D_Cyan_potion', 'L_Orange_potion' => 'use_L_Orange_potion', 'D_Orange_potion' => 'use_D_Orange_potion',
     'L_Yellow_potion' => 'use_L_Yellow_potion', 'D_Yellow_potion' => 'use_D_Yellow_potion', 'L_Green_potion' => 'use_L_Green_potion',
@@ -67,22 +67,26 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
 }
 
-function use_D_Red_potion(){
+function Potion() {
     global $userID;
-    $DecAtk = getStat('atk', $userID);
-    $Hai = $DecAtk - 50;
-    if (isset($Hai)) {
-        setStat('atk', $userID, $Hai);
-    }
-}
+    global $token;
 
-function use_L_Red_potion(){
-    global $userID;
-    $IncAtk = getStat('atk', $userID);
-    $Hai = $IncAtk + 50;
-    if (isset($Hai)) {
-        setStat('atk', $userID, $Hai);
+    if ($token == 'L_Red_potion') {
+        $IncAtk = getStat('atk', $userID);
+        $Hai = $IncAtk + 50;
+        if (isset($Hai)) {
+            setStat('atk', $userID, $Hai);
+        }
     }
+
+    if ($token == 'D_Red_potion') {
+        $DecAtk = getStat('atk', $userID);
+        $Hai = $DecAtk - 50;
+        if (isset($Hai)) {
+            setStat('atk', $userID, $Hai);
+        }
+    }
+
 }
 
 function use_L_Purple_potion() {

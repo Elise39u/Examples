@@ -24,8 +24,8 @@
     <img src="img/RoofEl.png">
     <ul>
         <li><a href="BackE.php"> Go down in the shop </a> </li>
-        {if isset($smarty.session.antenne)}
-        <li><a href="#"> Build the Antenne </a> </li>
+        {if isset($smarty.session.antenne) AND isset($smarty.session.recvier) AND isset($smarty.session.versterker)}
+        <li><a href="Message.php"> Build the Antenne </a> </li>
         {else}
         <li><a href="#"> Nothing Here to see </a> </li>
         {/if}
