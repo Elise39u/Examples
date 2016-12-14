@@ -53,6 +53,7 @@ if(isset($_POST['amount'])) {
 
 if(isset($_POST['potion-id'])) {
     $potionID = $_POST['potion-id'];
+    $Quantity = $_POST['Quantity'];
     $query = sprintf("SELECT price FROM items WHERE id = %s",mysqli_real_escape_string($mysqli, $potionID));
     $result = mysqli_query($mysqli, $query);
     list($cost) = mysqli_fetch_row($result);
@@ -63,20 +64,36 @@ if(isset($_POST['potion-id'])) {
         $result = mysqli_query($mysqli, $query);
         mysqli_fetch_row($result);
         if ($result->num_rows > 0) {
-            $sql = "UPDATE Inventory SET quantity = quantity + 1 WHERE item_id=$potionID";
-            mysqli_query($mysqli, $sql);
-            setStat('gc', $userID, ($gold - $cost));
-            $smarty->assign('message', '1 more Potion added!');
-        } else {
-            foreach ($inventory as $Ok) {
-                $Ok = $space;
-                $space--;
+            if ($Quantity == 0) {
+                $sql = "UPDATE Inventory SET quantity = quantity + 1 WHERE item_id=$potionID";
+                mysqli_query($mysqli, $sql);
+                setStat('gc', $userID, ($gold - $cost));
+                $smarty->assign('message', '1 more Potion added!');
+                $smarty->assign('Nope', 'No number has filled in');
             }
-            $sql = "INSERT INTO Inventory(player_id, item_id, space, quantity) VALUES ($userID, '$potionID', '$space', $count)";
-            mysqli_query($mysqli, $sql);
-            setStat('gc', $userID, ($gold - $cost));
-            $smarty->assign('message', 'You Bought that Potion!');
+            else{
+                $sql = "UPDATE Inventory SET quantity = quantity + $Quantity WHERE item_id=$potionID";
+                mysqli_query($mysqli, $sql);
+                $LOL = $cost * $Quantity;
+                if ($LOL < $gold) {
+                    $smarty->assign('Jup', 'No more coins left to buy it');
+                }
+                setStat('gc', $userID, ($gold - $LOL));
+                $smarty->assign('message', '1 more Potion added!');
+            }
         }
+         else {
+             foreach ($inventory as $Ok) {
+                 $Ok = $space;
+                 $space--;
+             }
+             if ($Quantity == '') {
+                 $sql = "INSERT INTO Inventory(player_id, item_id, space, quantity) VALUES ($userID, '$potionID', '$space', 1)";
+                 mysqli_query($mysqli, $sql);
+                 setStat('gc', $userID, ($gold - $cost));
+                 $smarty->assign('message', 'You Bought that Potion!');
+             }
+         }
     }
     else {
         $smarty->assign('error','You cannot afford that Potion!');

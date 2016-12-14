@@ -42,6 +42,20 @@
             <p style='color:green'>{$message}</p>
         {/if}
     {/if}
+
+    {if isset($Jup)}
+        {if $Jup ne ''}
+            <p style="color: #ff0000;">{$Jup}</p>
+        {/if}
+    {/if}
+
+    {if isset($Nope)}
+        {if $Nope ne ''}
+            <p style="color: #980098;">{$Nope} <br>
+                So we assume one?</p>
+        {/if}
+    {/if}
+
     <ul>
         {foreach from=$items key=id item=i}
         <li>
@@ -49,6 +63,7 @@
             <form action='ItemShop.php' method='post'>
                 <input type='hidden' name='item-id' value='{$i.id}' />
                 <input type='submit' value='Buy' />
+                <input type="number" value="" name="Quantity">
             </form>
             {/foreach}
     </ul> <br>

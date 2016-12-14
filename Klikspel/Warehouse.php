@@ -28,7 +28,7 @@ $actions = array('L_Red_potion' => 'Potion', 'D_Red_potion' => 'Potion', 'L_Purp
     'SerectPotion' => 'use_SerectPotion');
 
 if (isset($_POST['item-id'])) {
-    // $itemID = $_POST['item-id'];
+    // $itemID = $_POST['item-id
     $query = sprintf("SELECT item_id FROM inventory WHERE player_id = '%s' AND id = '%s'",
         mysqli_real_escape_string($mysqli, $userID),
         mysqli_real_escape_string($mysqli, $_POST['item-id']));
@@ -46,7 +46,8 @@ if (isset($_POST['item-id'])) {
         $query = sprintf("UPDATE inventory SET quantity = quantity - 1 WHERE player_id = '%s' AND item_id = '%s'",
             mysqli_real_escape_string($mysqli, $userID),
             mysqli_real_escape_string($mysqli, $itemID));
-    } else {
+    }
+    else {
         $query = sprintf("DELETE FROM inventory WHERE player_id = '%s' AND item_id = '%s'",
             mysqli_real_escape_string($mysqli, $userID),
             mysqli_real_escape_string($mysqli, $itemID));

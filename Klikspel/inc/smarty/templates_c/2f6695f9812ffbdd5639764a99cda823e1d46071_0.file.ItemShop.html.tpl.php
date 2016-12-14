@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-06 12:04:56
+/* Smarty version 3.1.29, created on 2016-12-14 16:18:25
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\ItemShop.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58469b584051d0_03344711',
+  'unifunc' => 'content_585162c10700e0_96415207',
   'file_dependency' => 
   array (
     '2f6695f9812ffbdd5639764a99cda823e1d46071' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\ItemShop.html.tpl',
-      1 => 1481019640,
+      1 => 1481728704,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58469b584051d0_03344711 ($_smarty_tpl) {
+function content_585162c10700e0_96415207 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -100,6 +100,22 @@ $_smarty_tpl->tpl_vars['item_id'] = $__foreach_i_0_saved_key;
 </p>
         <?php }?>
     <?php }?>
+
+    <?php if (isset($_smarty_tpl->tpl_vars['Jup']->value)) {?>
+        <?php if ($_smarty_tpl->tpl_vars['Jup']->value != '') {?>
+            <p style="color: #ff0000;"><?php echo $_smarty_tpl->tpl_vars['Jup']->value;?>
+</p>
+        <?php }?>
+    <?php }?>
+
+    <?php if (isset($_smarty_tpl->tpl_vars['Nope']->value)) {?>
+        <?php if ($_smarty_tpl->tpl_vars['Nope']->value != '') {?>
+            <p style="color: #980098;"><?php echo $_smarty_tpl->tpl_vars['Nope']->value;?>
+ <br>
+                So we assume one?</p>
+        <?php }?>
+    <?php }?>
+
     <ul>
         <?php
 $_from = $_smarty_tpl->tpl_vars['items']->value;
@@ -123,6 +139,7 @@ $__foreach_i_1_saved_local_item = $_smarty_tpl->tpl_vars['i'];
                 <input type='hidden' name='item-id' value='<?php echo $_smarty_tpl->tpl_vars['i']->value['id'];?>
 ' />
                 <input type='submit' value='Buy' />
+                <input type="number" value="" name="Quantity">
             </form>
             <?php
 $_smarty_tpl->tpl_vars['i'] = $__foreach_i_1_saved_local_item;

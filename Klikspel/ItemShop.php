@@ -35,6 +35,7 @@ $pagetitle = "Mine game";
 
 if(isset($_POST['item-id'])) {
     $itemID = $_POST['item-id'];
+    $Quantity = $_POST['Quantity'];
     $query = sprintf("SELECT price FROM items WHERE id = %s",mysqli_real_escape_string($mysqli, $itemID));
     $result = mysqli_query($mysqli, $query);
     list($cost) = mysqli_fetch_row($result);
@@ -47,19 +48,42 @@ if(isset($_POST['item-id'])) {
         $result = mysqli_query($mysqli, $query);
         list($Apple) = mysqli_fetch_row($result);
         if ($Apple > 0) {
-            $sql = "UPDATE Inventory SET quantity = quantity + 1 WHERE item_id=$itemID";
-            mysqli_query($mysqli, $sql);
-            setStat('gc', $userID, ($gold - $cost));
+            if ($Quantity == 0) {
+                $sql = "UPDATE Inventory SET quantity = quantity + 1 WHERE item_id=$itemID";
+                setStat('gc', $userID, ($gold - $cost));
+                $smarty->assign('message', '1 more item added!');
+                $smarty->assign('Nope', 'No number has filled in');
+            } else {
+                $sql = "UPDATE Inventory SET quantity = quantity + $Quantity WHERE item_id=$itemID";
+                mysqli_query($mysqli, $sql);
+                $LOL = $cost * $Quantity;
+                if ($LOL < $gold) {
+                    $smarty->assign('Jup', 'No more coins left to buy it');
+                }
+                setStat('gc', $userID, ($gold - $LOL));
+                $smarty->assign('message', '1 more Item added!');
+            }
             $smarty->assign('message', '1 more Item added!');
         } else {
             foreach ($inventory as $Ok) {
                 $Ok = $space;
                 $space--;
             }
-            $sql = "INSERT INTO Inventory(player_id, item_id, space, quantity) VALUES ($userID, '$itemID', '$space', $count)";
-            mysqli_query($mysqli, $sql);
-            setStat('gc', $userID, ($gold - $cost));
-            $smarty->assign('message', 'You Bought that Item!');
+            if ($Quantity == '') {
+                $sql = "INSERT INTO Inventory(player_id, item_id, space, quantity) VALUES ($userID, '$itemID', '$space', 1)";
+                mysqli_query($mysqli, $sql);
+                setStat('gc', $userID, ($gold - $cost));
+                $smarty->assign('message', 'You Bought that Item!');
+            }
+            else {
+                $sql = "INSERT INTO Inventory(player_id, item_id, space, quantity) VALUES ($userID, '$itemID', '$space', $Quantity)";
+                mysqli_query($mysqli, $sql);$LOL = $cost * $Quantity;
+                if ($LOL < $gold) {
+                    $smarty->assign('Jup', 'No more coins left to buy it');
+                    setStat('gc', $userID, ($gold - $LOL));
+                    $smarty->assign('message', 'You Bought This  '. $Quantity . ' Items!');
+                }
+            }
         }
     }
     else {
