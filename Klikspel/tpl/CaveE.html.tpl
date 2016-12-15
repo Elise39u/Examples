@@ -17,17 +17,16 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> Cabian? </h1>
-    <p> Empty? <br>
-        At least i found a potion.  </p>
-    <img src="img/cockpit.png">
+    <h1> A Cave??? </h1>
+    <p> As you broke out of the bank you think a mine? <br>
+        You look around nothing to see<br>
+        But its it worth to look inside the mine.<br>
+    Its up to you </p>
+    <img src="img/CaveEntrance.png">
     <ul>
-        <li><a href="Ocabian.php"> Go back outside </a></li>
-        <li><a href="flare.php"> a flare ??? </a></li>
-        <li><a href="Jar.php"> A jar??  </a> </li>
-        <li><a href="pickaxe.php"> A pickaxe -.-??  </a> </li>
+        <li><a href="#"> Go inside the cave </a></li>
+        <li><a href="Vault.php"> Go back in the bank </a></li>
     </ul>
-
     <ul>
         {foreach from=$inventory key=id item=i}
             <li> {$i.player_id} {$i.item_id} {$i.space} {$i.quantity} </li>

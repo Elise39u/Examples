@@ -24,7 +24,9 @@
     <img src="img/vault.png">
     <ul>
         <li><a href="Bank.php"> Go back Outside for godsake </a> </li>
-        <li><a href="#"> A way down ?? </a> </li>
+        {if isset($smarty.session.pickaxe)}
+        <li><a href="CaveE.php"> A Backdoor ?? </a> </li>
+        {/if}
         <li><a href="KeyGY.php"> key?? </a> </li>
     </ul>
     <ul>

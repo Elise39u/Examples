@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-12 15:27:22
+/* Smarty version 3.1.29, created on 2016-12-15 11:47:20
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\cabian.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_584eb3ca2d3564_01972315',
+  'unifunc' => 'content_585274b896c245_60184290',
   'file_dependency' => 
   array (
     'aa584e62372cf13e44cacb89db01c0d12e6d83c3' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\cabian.html.tpl',
-      1 => 1481552668,
+      1 => 1481798360,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_584eb3ca2d3564_01972315 ($_smarty_tpl) {
+function content_585274b896c245_60184290 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -56,6 +56,7 @@ function content_584eb3ca2d3564_01972315 ($_smarty_tpl) {
         <li><a href="Ocabian.php"> Go back outside </a></li>
         <li><a href="flare.php"> a flare ??? </a></li>
         <li><a href="Jar.php"> A jar??  </a> </li>
+        <li><a href="pickaxe.php"> A pickaxe -.-??  </a> </li>
     </ul>
 
     <ul>

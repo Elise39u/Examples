@@ -21,6 +21,7 @@ $userID = $value;
 unset($_SESSION['Sand']);
 $_SESSION['Station'] = true;
 unset($_SESSION['Ship']);
+unset($_SESSION['Cave']);
 
 $pagetitle = "Mine game";
 

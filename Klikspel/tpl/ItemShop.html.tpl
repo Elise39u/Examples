@@ -48,11 +48,23 @@
             <p style="color: #ff0000;">{$Jup}</p>
         {/if}
     {/if}
-
+    
     {if isset($Nope)}
         {if $Nope ne ''}
             <p style="color: #980098;">{$Nope} <br>
                 So we assume one?</p>
+        {/if}
+    {/if}
+
+    {if isset($NoNo)}
+        {if $NoNo ne ''}
+            <p style="color: #980098;">{$NoNo} </p>
+        {/if}
+    {/if}
+
+    {if isset($Damm)}
+        {if $Damm ne ''}
+            <p style="color: #980098;">{$Damm} </p>
         {/if}
     {/if}
 

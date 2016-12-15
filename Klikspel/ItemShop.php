@@ -54,16 +54,20 @@ if(isset($_POST['item-id'])) {
                 $smarty->assign('message', '1 more item added!');
                 $smarty->assign('Nope', 'No number has filled in');
             } else {
-                $sql = "UPDATE Inventory SET quantity = quantity + $Quantity WHERE item_id=$itemID";
-                mysqli_query($mysqli, $sql);
                 $LOL = $cost * $Quantity;
-                if ($LOL < $gold) {
-                    $smarty->assign('Jup', 'No more coins left to buy it');
+                if ($Quantity < 0) {
+                        $smarty->assign('Damm', 'A Negative number has been filed in');
                 }
-                setStat('gc', $userID, ($gold - $LOL));
-                $smarty->assign('message', '1 more Item added!');
+                elseif ($LOL >= $gold) {
+                    $smarty->assign('NoNo', 'Not enough coins to buy');
+                }
+                else {
+                    $sql = "UPDATE Inventory SET quantity = quantity + $Quantity WHERE item_id=$itemID";
+                    mysqli_query($mysqli, $sql);
+                    setStat('gc', $userID, ($gold - $LOL));
+                    $smarty->assign('message', $Quantity . ' more Items  added!');
+                }
             }
-            $smarty->assign('message', '1 more Item added!');
         } else {
             foreach ($inventory as $Ok) {
                 $Ok = $space;
@@ -76,16 +80,22 @@ if(isset($_POST['item-id'])) {
                 $smarty->assign('message', 'You Bought that Item!');
             }
             else {
-                $sql = "INSERT INTO Inventory(player_id, item_id, space, quantity) VALUES ($userID, '$itemID', '$space', $Quantity)";
-                mysqli_query($mysqli, $sql);$LOL = $cost * $Quantity;
-                if ($LOL < $gold) {
-                    $smarty->assign('Jup', 'No more coins left to buy it');
+                $LOL = $cost * $Quantity;
+                if ($Quantity < 0) {
+                    $smarty->assign('Damm', 'A Negative number has been filed in');
+                }
+                elseif ($LOL >= $gold) {
+                    $smarty->assign('NoNo', 'Not enough coins to buy');
+                }
+                else {
+                    $sql = "INSERT INTO Inventory(player_id, item_id, space, quantity) VALUES ($userID, '$itemID', '$space', $Quantity)";
+                    mysqli_query($mysqli, $sql);
                     setStat('gc', $userID, ($gold - $LOL));
-                    $smarty->assign('message', 'You Bought This  '. $Quantity . ' Items!');
+                    $smarty->assign('message', 'You Bought This  ' . $Quantity . ' Items!');
+                    }
                 }
             }
         }
-    }
     else {
         $smarty->assign('error','You cannot afford that item!');
     }

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-15 12:17:22
-  from "C:\wamp64\www\Examplecode\Klikspel\tpl\Vault.html.tpl" */
+/* Smarty version 3.1.29, created on 2016-12-15 12:17:23
+  from "C:\wamp64\www\Examplecode\Klikspel\tpl\CaveE.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58527bc2936168_54088339',
+  'unifunc' => 'content_58527bc3cdac98_59625593',
   'file_dependency' => 
   array (
-    'bfd02912e7c9969e6293d06239ed87d0b38fef98' => 
+    '278fc021f527aa38cf410fafdcb814bb3dbf6ee2' => 
     array (
-      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Vault.html.tpl',
-      1 => 1481800545,
+      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\CaveE.html.tpl',
+      1 => 1481800587,
       2 => 'file',
     ),
   ),
@@ -19,12 +19,12 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58527bc2936168_54088339 ($_smarty_tpl) {
+function content_58527bc3cdac98_59625593 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title> The <?php echo $_smarty_tpl->tpl_vars['pagetitle']->value;?>
+    <title> <?php echo $_smarty_tpl->tpl_vars['pagetitle']->value;?>
  </title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
@@ -48,17 +48,15 @@ function content_58527bc2936168_54088339 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> A vault .. </h1>
-    <p> As you standing inside the vault you are looking around. <br>
-        You see that its empty Here. <br>
-        What to Do now </p>
-    <img src="img/vault.png">
+    <h1> A Cave??? </h1>
+    <p> As you broke out of the bank you think a mine? <br>
+        You look around nothing to see<br>
+        But its it worth to look inside the mine.<br>
+    Its up to you </p>
+    <img src="img/CaveEntrance.png">
     <ul>
-        <li><a href="Bank.php"> Go back Outside for godsake </a> </li>
-        <?php if (isset($_SESSION['pickaxe'])) {?>
-        <li><a href="CaveE.php"> A Backdoor ?? </a> </li>
-        <?php }?>
-        <li><a href="KeyGY.php"> key?? </a> </li>
+        <li><a href="#"> Go inside the cave </a></li>
+        <li><a href="Vault.php"> Go back in the back </a></li>
     </ul>
     <ul>
         <?php

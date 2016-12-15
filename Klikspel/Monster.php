@@ -42,6 +42,9 @@ if (isset($_SESSION['Station'])) {
 if (isset($_SESSION['Ship'])) {
     $area_id = 3;
 }
+if (isset($_SESSION['Cave'])) {
+    $area_id = 4;
+}
 
 // $area_id = (isset($_GET['area']) ? $_GET['area_id'] : 1);
 $query = sprintf("SELECT monster FROM area_monsters WHERE area = %s ORDER BY RAND() LIMIT 1",

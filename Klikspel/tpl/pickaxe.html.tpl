@@ -17,15 +17,12 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> Cabian? </h1>
-    <p> Empty? <br>
-        At least i found a potion.  </p>
-    <img src="img/cockpit.png">
+    <h1> A pickaxe?? </h1>
+    <p> I gusses what i can do with this? <br>
+        Maby mine my way to the backdoor of the bank.  </p>
+    <img src="img/PickAxe.png">
     <ul>
-        <li><a href="Ocabian.php"> Go back outside </a></li>
-        <li><a href="flare.php"> a flare ??? </a></li>
-        <li><a href="Jar.php"> A jar??  </a> </li>
-        <li><a href="pickaxe.php"> A pickaxe -.-??  </a> </li>
+        <li><a href="cabian.php"> Go back </a></li>
     </ul>
 
     <ul>

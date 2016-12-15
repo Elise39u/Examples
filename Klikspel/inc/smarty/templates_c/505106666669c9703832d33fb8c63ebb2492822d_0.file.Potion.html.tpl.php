@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-14 15:09:51
+/* Smarty version 3.1.29, created on 2016-12-15 09:37:57
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Potion.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_585152af6f8550_81244743',
+  'unifunc' => 'content_585256657773d0_03298569',
   'file_dependency' => 
   array (
     '505106666669c9703832d33fb8c63ebb2492822d' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Potion.html.tpl',
-      1 => 1481724588,
+      1 => 1481791074,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_585152af6f8550_81244743 ($_smarty_tpl) {
+function content_585256657773d0_03298569 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -84,13 +84,6 @@ function content_585152af6f8550_81244743 ($_smarty_tpl) {
         <?php }?>
     <?php }?>
 
-    <?php if (isset($_smarty_tpl->tpl_vars['Jup']->value)) {?>
-        <?php if ($_smarty_tpl->tpl_vars['Jup']->value != '') {?>
-            <p style="color: #ff0000;"><?php echo $_smarty_tpl->tpl_vars['Jup']->value;?>
-</p>
-        <?php }?>
-    <?php }?>
-
     <?php if (isset($_smarty_tpl->tpl_vars['Nope']->value)) {?>
         <?php if ($_smarty_tpl->tpl_vars['Nope']->value != '') {?>
             <p style="color: #980098;"><?php echo $_smarty_tpl->tpl_vars['Nope']->value;?>
@@ -98,6 +91,21 @@ function content_585152af6f8550_81244743 ($_smarty_tpl) {
             So we assume one?</p>
         <?php }?>
     <?php }?>
+
+    <?php if (isset($_smarty_tpl->tpl_vars['NoNo']->value)) {?>
+        <?php if ($_smarty_tpl->tpl_vars['NoNo']->value != '') {?>
+            <p style="color: #980098;"><?php echo $_smarty_tpl->tpl_vars['NoNo']->value;?>
+ </p>
+        <?php }?>
+    <?php }?>
+
+    <?php if (isset($_smarty_tpl->tpl_vars['Damm']->value)) {?>
+        <?php if ($_smarty_tpl->tpl_vars['Damm']->value != '') {?>
+            <p style="color: #980098;"><?php echo $_smarty_tpl->tpl_vars['Damm']->value;?>
+ </p>
+        <?php }?>
+    <?php }?>
+
     <ul>
         <?php
 $_from = $_smarty_tpl->tpl_vars['potion']->value;

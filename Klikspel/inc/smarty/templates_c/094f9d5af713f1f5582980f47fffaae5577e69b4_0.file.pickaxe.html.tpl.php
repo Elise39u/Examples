@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-15 12:17:22
-  from "C:\wamp64\www\Examplecode\Klikspel\tpl\Vault.html.tpl" */
+/* Smarty version 3.1.29, created on 2016-12-15 11:47:21
+  from "C:\wamp64\www\Examplecode\Klikspel\tpl\pickaxe.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58527bc2936168_54088339',
+  'unifunc' => 'content_585274b9e2b345_19951866',
   'file_dependency' => 
   array (
-    'bfd02912e7c9969e6293d06239ed87d0b38fef98' => 
+    '094f9d5af713f1f5582980f47fffaae5577e69b4' => 
     array (
-      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Vault.html.tpl',
-      1 => 1481800545,
+      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\pickaxe.html.tpl',
+      1 => 1481798440,
       2 => 'file',
     ),
   ),
@@ -19,12 +19,12 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58527bc2936168_54088339 ($_smarty_tpl) {
+function content_585274b9e2b345_19951866 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title> The <?php echo $_smarty_tpl->tpl_vars['pagetitle']->value;?>
+    <title> <?php echo $_smarty_tpl->tpl_vars['pagetitle']->value;?>
  </title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
@@ -48,18 +48,14 @@ function content_58527bc2936168_54088339 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> A vault .. </h1>
-    <p> As you standing inside the vault you are looking around. <br>
-        You see that its empty Here. <br>
-        What to Do now </p>
-    <img src="img/vault.png">
+    <h1> A pickaxe?? </h1>
+    <p> I gusses what i can do with this? <br>
+        Maby mine my way to the backdoor of the bank.  </p>
+    <img src="img/PickAxe.png">
     <ul>
-        <li><a href="Bank.php"> Go back Outside for godsake </a> </li>
-        <?php if (isset($_SESSION['pickaxe'])) {?>
-        <li><a href="CaveE.php"> A Backdoor ?? </a> </li>
-        <?php }?>
-        <li><a href="KeyGY.php"> key?? </a> </li>
+        <li><a href="cabian.php"> Go back </a></li>
     </ul>
+
     <ul>
         <?php
 $_from = $_smarty_tpl->tpl_vars['inventory']->value;

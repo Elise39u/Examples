@@ -14,6 +14,7 @@ include_once ('inc/WeaponStat.php');
 $_SESSION['Sand'] = true;
 unset($_SESSION['Station']);
 unset($_SESSION['Ship']);
+unset($_SESSION['Cave']);
 
 $query = sprintf("SELECT id FROM player WHERE UPPER(username) = UPPER('%s')",
     mysqli_real_escape_string($mysqli, $_SESSION['username']));

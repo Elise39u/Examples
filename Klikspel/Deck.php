@@ -20,6 +20,7 @@ $userID = $value;
 unset($_SESSION['Sand']);
 unset($_SESSION['Station']);
 $_SESSION['Ship'] = true;
+unset($_SESSION['Cave']);
 
 $pagetitle = "Mine game";
 

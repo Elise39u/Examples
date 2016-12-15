@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-14 16:18:25
+/* Smarty version 3.1.29, created on 2016-12-15 09:43:48
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\ItemShop.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_585162c10700e0_96415207',
+  'unifunc' => 'content_585257c4b56cf5_95988523',
   'file_dependency' => 
   array (
     '2f6695f9812ffbdd5639764a99cda823e1d46071' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\ItemShop.html.tpl',
-      1 => 1481728704,
+      1 => 1481791424,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_585162c10700e0_96415207 ($_smarty_tpl) {
+function content_585257c4b56cf5_95988523 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -107,12 +107,26 @@ $_smarty_tpl->tpl_vars['item_id'] = $__foreach_i_0_saved_key;
 </p>
         <?php }?>
     <?php }?>
-
+    
     <?php if (isset($_smarty_tpl->tpl_vars['Nope']->value)) {?>
         <?php if ($_smarty_tpl->tpl_vars['Nope']->value != '') {?>
             <p style="color: #980098;"><?php echo $_smarty_tpl->tpl_vars['Nope']->value;?>
  <br>
                 So we assume one?</p>
+        <?php }?>
+    <?php }?>
+
+    <?php if (isset($_smarty_tpl->tpl_vars['NoNo']->value)) {?>
+        <?php if ($_smarty_tpl->tpl_vars['NoNo']->value != '') {?>
+            <p style="color: #980098;"><?php echo $_smarty_tpl->tpl_vars['NoNo']->value;?>
+ </p>
+        <?php }?>
+    <?php }?>
+
+    <?php if (isset($_smarty_tpl->tpl_vars['Damm']->value)) {?>
+        <?php if ($_smarty_tpl->tpl_vars['Damm']->value != '') {?>
+            <p style="color: #980098;"><?php echo $_smarty_tpl->tpl_vars['Damm']->value;?>
+ </p>
         <?php }?>
     <?php }?>
 

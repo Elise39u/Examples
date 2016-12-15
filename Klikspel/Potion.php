@@ -71,15 +71,19 @@ if(isset($_POST['potion-id'])) {
                 $smarty->assign('message', '1 more Potion added!');
                 $smarty->assign('Nope', 'No number has filled in');
             }
-            else{
-                $sql = "UPDATE Inventory SET quantity = quantity + $Quantity WHERE item_id=$potionID";
-                mysqli_query($mysqli, $sql);
+            else {
                 $LOL = $cost * $Quantity;
-                if ($LOL < $gold) {
-                    $smarty->assign('Jup', 'No more coins left to buy it');
+                if ($Quantity < 0) {
+                    $smarty->assign('Damm', 'A Negative number has been filed in');
                 }
-                setStat('gc', $userID, ($gold - $LOL));
-                $smarty->assign('message', '1 more Potion added!');
+                elseif ($LOL >= $gold) {
+                    $smarty->assign('NoNo', 'Not enough coins to buy');
+                } else {
+                    $sql = "UPDATE Inventory SET quantity = quantity + $Quantity WHERE item_id=$potionID";
+                    mysqli_query($mysqli, $sql);
+                    setStat('gc', $userID, ($gold - $LOL));
+                    $smarty->assign('message', $Quantity . ' more Potions added!');
+                }
             }
         }
          else {
@@ -92,6 +96,21 @@ if(isset($_POST['potion-id'])) {
                  mysqli_query($mysqli, $sql);
                  setStat('gc', $userID, ($gold - $cost));
                  $smarty->assign('message', 'You Bought that Potion!');
+             }
+             else {
+                 $LOL = $cost * $Quantity;
+                 if ($Quantity < 0) {
+                     $smarty->assign('Damm', 'A Negative number has been filed in');
+                 }
+                 elseif ($LOL >= $gold) {
+                     $smarty->assign('NoNo', 'Not enough coins to buy');
+                 }
+                 else {
+                     $sql = "INSERT INTO Inventory(player_id, item_id, space, quantity) VALUES ($userID, '$potionID', '$space', $Quantity)";
+                     mysqli_query($mysqli, $sql);
+                     setStat('gc', $userID, ($gold - $LOL));
+                     $smarty->assign('message', 'You Bought ' . $Quantity . ' Potions! ');
+                 }
              }
          }
     }
