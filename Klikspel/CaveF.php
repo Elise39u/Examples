@@ -1,6 +1,5 @@
 <?php
 session_start();
-global $combat;
 global $space;
 global $count;
 $space = 50;
@@ -18,11 +17,6 @@ $result = mysqli_query($mysqli, $query);
 list($value) = mysqli_fetch_row($result);
 $userID = $value;
 
-unset($_SESSION['Sand']);
-$_SESSION['Station'] = true;
-unset($_SESSION['Ship']);
-unset($_SESSION['Cave']);
-
 $pagetitle = "Mine game";
 
 $inventory = array();
@@ -38,15 +32,6 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
 }
 
-unset($_SESSION['Nstation']);
-unset($_SESSION['iel']);
-unset($_SESSION['Dump']);
-$_SESSION['Bank'] = true;
-unset($_SESSION['Nship']);
-unset($_SESSION['Deck']);
-unset($_SESSION['Yard']);
-unset($_SESSION['CaveEnd']);
-
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
 $smarty->assign('magic',getStat('mdef',$userID));
@@ -56,4 +41,4 @@ $smarty->assign('inbank',getStat('bankgc',$userID));
 $smarty->assign('currentHP',getStat('curhp',$userID));
 $smarty->assign('maximumHP',getStat('maxhp',$userID));
 $smarty->assign('pagetitle', $pagetitle);
-$smarty->display("tpl/OBank.html.tpl");
+$smarty->display("tpl/CaveF.html.tpl");

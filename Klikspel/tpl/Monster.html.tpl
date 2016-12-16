@@ -41,8 +41,8 @@
                         <p><a href="OBank.php"> Go to the bank </a></p>
                         <p><a href="Nstation.php"> Poilice stations are good ? </a></p>
                      {elseif $area_id == 4}
-                        <p><a href="#"> Go futher in the cave </a></p>
-                        <p><a href="#"> Go Back in the cave </a></p>
+                        <p><a href="CaveLH.php"> Go futher in the cave </a></p>
+                        <p><a href="CaveY.php"> Go Back in the cave </a></p>
                      {else}
                         <p><a href="Deck.php"> Go on the boat if you dare </a></p>
                         <p><a href="Nship.php"> Go back to you`re boat </a></p>

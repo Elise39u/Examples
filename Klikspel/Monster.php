@@ -67,115 +67,139 @@ $smarty->assign('area_id',$area_id);
 
 switch ($monster) {
     case "Fire Margawa":
-        $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/FireMargwa.png'>";
+        $image = "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/FireMargwa.png'>";
         break;
     case "Shadow Margawa":
-        $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/ShadowMargwa.png'>";
+        $image = "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/ShadowMargwa.png'>";
         break;
     case "Margawa":
-        $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/Margawa.png'>";
+        $image = "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Margawa.png'>";
         break;
     case "Hard Hitting Louis":
-        $image =  "<img class='Monster' src='http://localhost/Eigen%20spel/img/Louis.png'>";
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Louis.png'>";
         break;
     case "Crazy Eric":
-        $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/Eric.png'>";
+        $image = "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Eric.png'>";
         break;
     case "Walker":
-        $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/Walker.png'>";
+        $image = "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Walker.png'>";
         break;
     case "Panzer Soldat":
-        $image =  "<img  class='Monster' src='http://localhost/Eigen%20spel/img/Panzer.png'>";
+        $image =  "<img  class='Monster' src='http://localhost/Examplecode/Klikspel/img/Panzer.png'>";
         break;
     case "Floater":
-        $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/Floater.png'>";
+        $image = "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Floater.png'>";
         break;
     case "Goliath":
-        $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/Goliath.png'>";
+        $image = "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Goliath.png'>";
         break;
     case "Insane Baker":
-        $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/Baker.png'>";
+        $image = "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Baker.png'>";
         break;
     case "Tank":
-        $image =  "<img class='Monster' src='http://localhost/Eigen%20spel/img/Tank.png'>";
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Tank.png'>";
         break;
     case "Breeder":
-        $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/Breeder.png'>";
+        $image = "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Breeder.png'>";
         break;
     case "Posion Zombie":
-        $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/PosionZombie.png'>";
+        $image = "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/PosionZombie.png'>";
         break;
     case "Ancestor":
-        $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/Ancestor.png'>";
+        $image = "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Ancestor.png'>";
         break;
     case "Smoker":
-        $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/Smoker.png'>";
+        $image = "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Smoker.png'>";
         break;
     case "Gang Member":
-        $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/GangMember.png'>";
+        $image = "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/GangMember.png'>";
         break;
     case "Alien":
-        $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/Alien.png'>";
+        $image = "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Alien.png'>";
         break;
     case "Brute":
-        $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/Brute.png'>";
+        $image = "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Brute.png'>";
         break;
     case "Brutus":
-        $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/Brutus.png'>";
+        $image = "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Brutus.png'>";
         break;
     case "Clown":
-        $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/Clown.png'>";
+        $image = "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Clown.png'>";
         break;
     case "Cosmunat":
-        $image =  "<img class='Monster' src='http://localhost/Eigen%20spel/img/Cosmunat.png'>";
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/Cosmunat.png'>";
         break;
     case "Grenadier":
-        $image =  "<img class='Monster' src='http://localhost/Eigen%20spel/img/Grenadier.png'>";
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Grenadier.png'>";
         break;
     case "Prison Zombie":
-        $image =  "<img class='Monster' src='http://localhost/Eigen%20spel/img/PrisonZombie.png'>";
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/PrisonZombie.png'>";
         break;
     case "Ram":
-        $image =  "<img class='Monster' src='http://localhost/Eigen%20spel/img/Ram.png'>";
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Ram.png'>";
         break;
     case "Spiker":
-        $image =  "<img class='Monster' src='http://localhost/Eigen%20spel/img/Spiker.png'>";
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Spiker.png'>";
         break;
     case "Thrasher":
-        $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/Thrasher.png'>";
+        $image = "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Thrasher.png'>";
         break;
     case "Wresteler":
-        $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/Wresteler.png'>";
+        $image = "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Wresteler.png'>";
         break;
     case "Orge":
-        $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/Orge.png'>";
+        $image = "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Orge.png'>";
         break;
     case "Dragon":
-        $image =  "<img class='Monster' src='http://localhost/Eigen%20spel/img/Dragon.png'>";
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Dragon.png'>";
         break;
     case "Fishmen":
-        $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/Fishman.png'>";
+        $image = "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Fishman.png'>";
         break;
     case "Gargoyle":
-        $image =  "<img class='Monster' src='http://localhost/Eigen%20spel/img/Gargoyle.png'>";
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Gargoyle.png'>";
         break;
     case "Jumpfish":
-        $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/Jumpfish.png'>";
+        $image = "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Jumpfish.png'>";
         break;
     case "Kraken":
-        $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/Kraken.png'>";
+        $image = "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Kraken.png'>";
         break;
     case "Scorpion":
-        $image =  "<img class='Monster' src='http://localhost/Eigen%20spel/img/Scorpion.png'>";
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Scorpion.png'>";
         break;
     case "Spewer":
-        $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/Spewer.png'>";
+        $image = "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Spewer.png'>";
         break;
     case "Denizen":
-        $image = "<img class='Monster' src='http://localhost/Eigen%20spel/img/Denizen.png'>";
+        $image = "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Denizen.png'>";
         break;
     case "Avogadro":
-        $image =  "<img class='Monster' src='http://localhost/Eigen%20spel/img/Avogadro.png'>";
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Avogadro.png'>";
+        break;
+    case "CaveGuard":
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/CaveGuard.png'>";
+        break;
+    case "GiantTroll":
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/GiantTroll.png'>";
+        break;
+    case "CaveRat":
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/CaveRat.png'>";
+        break;
+    case "Lizard":
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Lizard.png'>";
+        break;
+    case "Mutant":
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Mutant.png'>";
+        break;
+    case "SpiderSmall":
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/SpiderSmall.png'>";
+        break;
+    case "Spider":
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Spider.png'>";
+        break;
+    case "Troll":
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Troll.png'>";
         break;
     default:
         echo "<span style=\"color:#982356;\">Not the correct monster is showing </span>";
@@ -305,6 +329,12 @@ if(isset($_POST['action'])) {
         }
         elseif (isset($_SESSION['Deck'])) {
             header('Location: Deck.php');
+        }
+        elseif (isset($_SESSION['Yard'])) {
+            header('Location: CaveY.php');
+        }
+        elseif (isset($_SESSION['CaveEnd'])) {
+            header('Location: CaveLH.php');
         }
         else {
             header('Location: lake.php');

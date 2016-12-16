@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-16 12:51:03
-  from "C:\wamp64\www\Examplecode\Klikspel\tpl\Deck.html.tpl" */
+/* Smarty version 3.1.29, created on 2016-12-16 12:48:14
+  from "C:\wamp64\www\Examplecode\Klikspel\tpl\TomaHawk.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5853d52759b103_19686963',
+  'unifunc' => 'content_5853d47e43b169_61821613',
   'file_dependency' => 
   array (
-    '47143545708e990b05d6667b2b680a91c5b87ec6' => 
+    '4a1b7f8b7dac85ec03041ee0276c798d9fb01def' => 
     array (
-      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Deck.html.tpl',
-      1 => 1481889058,
+      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\TomaHawk.html.tpl',
+      1 => 1481888879,
       2 => 'file',
     ),
   ),
@@ -19,10 +19,10 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5853d52759b103_19686963 ($_smarty_tpl) {
+function content_5853d47e43b169_61821613 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <title> <?php echo $_smarty_tpl->tpl_vars['pagetitle']->value;?>
  </title>
@@ -48,18 +48,13 @@ function content_5853d52759b103_19686963 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> On deck </h1>
-    <p> You look around but there is only a way inside. <br>
-        <strong> Do you dear it </strong> </p>
-    <img src="img/OntheShip.png">
+    <h1>A missile </h1>
+
+    <p>  Just ....... For what </p>
+
+    <img src="img/TomaHawk.png">
     <ul>
-        <li><a href="Maintance.php"> Go inside </a></li>
-        <li><a href="Monster.php"> Climb Down </a> </li>
-        <?php if (isset($_SESSION['TomaHawk'])) {?>
-            <li><a href="#"> Fire a missile towards the city</a></li>
-         <?php } elseif (isset($_SESSION['Shell'])) {?>
-            <li><a href="#"> Fire the cannon on the city</a> </li>
-        <?php }?>
+        <li><a href="CaveEND.php"> Go back </a> </li>
     </ul>
 
     <ul>

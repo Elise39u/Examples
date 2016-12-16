@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-15 12:17:23
+/* Smarty version 3.1.29, created on 2016-12-15 13:54:50
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\CaveE.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58527bc3cdac98_59625593',
+  'unifunc' => 'content_5852929abbee01_50257644',
   'file_dependency' => 
   array (
     '278fc021f527aa38cf410fafdcb814bb3dbf6ee2' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\CaveE.html.tpl',
-      1 => 1481800587,
+      1 => 1481806321,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58527bc3cdac98_59625593 ($_smarty_tpl) {
+function content_5852929abbee01_50257644 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -55,8 +55,8 @@ function content_58527bc3cdac98_59625593 ($_smarty_tpl) {
     Its up to you </p>
     <img src="img/CaveEntrance.png">
     <ul>
-        <li><a href="#"> Go inside the cave </a></li>
-        <li><a href="Vault.php"> Go back in the back </a></li>
+        <li><a href="CaveIS.php"> Go inside the cave </a></li>
+        <li><a href="Vault.php"> Go back in the bank </a></li>
     </ul>
     <ul>
         <?php

@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <title> {$pagetitle} </title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -17,16 +17,15 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> A Cave??? </h1>
-    <p> As you broke out of the bank you think a mine? <br>
-        You look around nothing to see<br>
-        But its it worth to look inside the mine.<br>
-    Its up to you </p>
-    <img src="img/CaveEntrance.png">
+    <h1>A missile </h1>
+
+    <p>  Just ....... For what </p>
+
+    <img src="img/TomaHawk.png">
     <ul>
-        <li><a href="CaveIS.php"> Go inside the cave </a></li>
-        <li><a href="Vault.php"> Go back in the bank </a></li>
+        <li><a href="CaveEND.php"> Go back </a> </li>
     </ul>
+
     <ul>
         {foreach from=$inventory key=id item=i}
             <li> {$i.player_id} {$i.item_id} {$i.space} {$i.quantity} </li>

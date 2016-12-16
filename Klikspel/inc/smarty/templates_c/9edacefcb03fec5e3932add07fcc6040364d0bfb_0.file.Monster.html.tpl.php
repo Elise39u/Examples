@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-12 14:18:35
+/* Smarty version 3.1.29, created on 2016-12-15 17:45:09
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Monster.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_584ea3ab40b738_31911829',
+  'unifunc' => 'content_5852c895553159_88931546',
   'file_dependency' => 
   array (
     '9edacefcb03fec5e3932add07fcc6040364d0bfb' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Monster.html.tpl',
-      1 => 1481548712,
+      1 => 1481808069,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_584ea3ab40b738_31911829 ($_smarty_tpl) {
+function content_5852c895553159_88931546 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -101,6 +101,9 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
                     <?php } elseif ($_smarty_tpl->tpl_vars['area_id']->value == 2) {?>
                         <p><a href="OBank.php"> Go to the bank </a></p>
                         <p><a href="Nstation.php"> Poilice stations are good ? </a></p>
+                     <?php } elseif ($_smarty_tpl->tpl_vars['area_id']->value == 4) {?>
+                        <p><a href="CaveLH.php"> Go futher in the cave </a></p>
+                        <p><a href="CaveY.php"> Go Back in the cave </a></p>
                      <?php } else { ?>
                         <p><a href="Deck.php"> Go on the boat if you dare </a></p>
                         <p><a href="Nship.php"> Go back to you`re boat </a></p>

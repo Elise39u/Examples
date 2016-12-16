@@ -17,15 +17,13 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> A Cave??? </h1>
-    <p> As you broke out of the bank you think a mine? <br>
-        You look around nothing to see<br>
-        But its it worth to look inside the mine.<br>
-    Its up to you </p>
-    <img src="img/CaveEntrance.png">
+    <h1> Lava and rocks </h1>
+    <p> Do i have reached the point where i can see lava <br>
+    It doesn`t matter i need to go on and cant go back</p>
+    <img src="img/CaveYard.png">
     <ul>
-        <li><a href="CaveIS.php"> Go inside the cave </a></li>
-        <li><a href="Vault.php"> Go back in the bank </a></li>
+        <li><a href="CaveD.php"> Go back </a></li>
+        <li><a href="Monster.php"> go on </a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

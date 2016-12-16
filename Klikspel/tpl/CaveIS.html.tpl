@@ -18,14 +18,13 @@
     </ul>
 
     <h1> A Cave??? </h1>
-    <p> As you broke out of the bank you think a mine? <br>
-        You look around nothing to see<br>
-        But its it worth to look inside the mine.<br>
-    Its up to you </p>
-    <img src="img/CaveEntrance.png">
+    <p> As you walk into the cave you think  <br>
+        One way in and One way out<br>
+        I hope it doesnt collapse </p>
+    <img src="img/CaveInside.png">
     <ul>
-        <li><a href="CaveIS.php"> Go inside the cave </a></li>
-        <li><a href="Vault.php"> Go back in the bank </a></li>
+        <li><a href="CaveE.php"> Go back outside </a></li>
+        <li><a href="CaveF.php"> go futher if you dare </a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-16 12:51:03
-  from "C:\wamp64\www\Examplecode\Klikspel\tpl\Deck.html.tpl" */
+/* Smarty version 3.1.29, created on 2016-12-16 12:38:18
+  from "C:\wamp64\www\Examplecode\Klikspel\tpl\CaveLH.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5853d52759b103_19686963',
+  'unifunc' => 'content_5853d22a01ea31_85986106',
   'file_dependency' => 
   array (
-    '47143545708e990b05d6667b2b680a91c5b87ec6' => 
+    '11f69382b0ebd0b5ff8538ef22ed0d7a41276eb5' => 
     array (
-      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Deck.html.tpl',
-      1 => 1481889058,
+      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\CaveLH.html.tpl',
+      1 => 1481888295,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5853d52759b103_19686963 ($_smarty_tpl) {
+function content_5853d22a01ea31_85986106 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -48,20 +48,13 @@ function content_5853d52759b103_19686963 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> On deck </h1>
-    <p> You look around but there is only a way inside. <br>
-        <strong> Do you dear it </strong> </p>
-    <img src="img/OntheShip.png">
+    <h1> A way </h1>
+    <p> I should follow the path </p>
+    <img src="img/CaveLongWay.png">
     <ul>
-        <li><a href="Maintance.php"> Go inside </a></li>
-        <li><a href="Monster.php"> Climb Down </a> </li>
-        <?php if (isset($_SESSION['TomaHawk'])) {?>
-            <li><a href="#"> Fire a missile towards the city</a></li>
-         <?php } elseif (isset($_SESSION['Shell'])) {?>
-            <li><a href="#"> Fire the cannon on the city</a> </li>
-        <?php }?>
+        <li><a href="CaveEND.php"> Go on if you want </a></li>
+        <li><a href="Monster.php"> go back </a></li>
     </ul>
-
     <ul>
         <?php
 $_from = $_smarty_tpl->tpl_vars['inventory']->value;
