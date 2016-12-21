@@ -46,5 +46,3 @@ function createIfNotExists($statName,$userID) {
     }
     return $count;
 }
-
-?>

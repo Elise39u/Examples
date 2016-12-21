@@ -17,18 +17,16 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> The city </h1>
-    <p> And there you`re standing on the middle of the street. <br>
-        You look down to the right and see nothing. To the left you see almost a bridge.<br>
-        And futher on you see the garage and a store.<br> Which way wil you go.. <br>
-    you see someone standing and think should i talk to him</p>
-    <img src="img/street.png">
+    <h1> My name is Jhon </h1>
+    <p id="Bio"></p>
+    <p id="NPC"></p>
+    <button type="button" onclick="myAns1()" id="Player1"> Have you seen anything strange lastly ??</button> <br>
+    <button type="button" onclick="myAns2()" id="Player2"> I am in need of items can you help me??</button> <br>
+    <button type="button" onclick="myAns3()" id="Player3"> </button> <br>
+    <button type="button" onclick="myAns4()" id="Player4"> </button> <br>
+    <button type="button" onclick="myAns5()" id="Player5"> </button>
     <ul>
-        <li><a href="Outside.php"> Go back to look for something </a></li>
-        <li><a href="Deadend.php"> To The right </a></li>
-        <li><a href="Nbridge.php"> TO the left towards the bridge </a></li>
-        <li><a href="AgianStreet.php"> Go on ....</a></li>
-        <li><a href="NPC1.php"> Go talk to the NPC </a></li>
+        <li><a href="Street.php"> Go back </a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}
@@ -38,4 +36,9 @@
 
 </div>
 </body>
+
+<script type="text/javascript" src="https://rawgit.com/CodeOtter/thusspokenpc/master/index.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="inc/Npc1.js"></script>
+
 </html>

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-19 08:43:40
-  from "C:\wamp64\www\Examplecode\Klikspel\tpl\fault.html.tpl" */
+/* Smarty version 3.1.29, created on 2016-12-21 08:55:19
+  from "C:\wamp64\www\Examplecode\Klikspel\tpl\NPC1.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58578fac6532d6_08691660',
+  'unifunc' => 'content_585a3567aaf057_65938305',
   'file_dependency' => 
   array (
-    'f5c5cf48886f9e96b2b9e3d2c2095622475104cb' => 
+    '7bfbb978578202a0fc50b5ad215de821c44dae06' => 
     array (
-      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\fault.html.tpl',
-      1 => 1480513788,
+      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\NPC1.html.tpl',
+      1 => 1482306892,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58578fac6532d6_08691660 ($_smarty_tpl) {
+function content_585a3567aaf057_65938305 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -48,15 +48,17 @@ function content_58578fac6532d6_08691660 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> Password to damm short   </h1>
-
-    <p>   Go back and fill a normal password in </p>
-
-    <img src="img/password.png">
+    <h1> My name is Jhon </h1>
+    <p id="Bio"></p>
+    <p id="NPC"></p>
+    <button type="button" onclick="myAns1()" id="Player1"> Have you seen anything strange lastly ??</button> <br>
+    <button type="button" onclick="myAns2()" id="Player2"> I am in need of items can you help me??</button> <br>
+    <button type="button" onclick="myAns3()" id="Player3"> </button> <br>
+    <button type="button" onclick="myAns4()" id="Player4"> </button> <br>
+    <button type="button" onclick="myAns5()" id="Player5"> </button>
     <ul>
-        <li><a href="index.php"> Fill something in </a> </li>
+        <li><a href="Street.php"> Go back </a></li>
     </ul>
-
     <ul>
         <?php
 $_from = $_smarty_tpl->tpl_vars['inventory']->value;
@@ -91,5 +93,16 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
 
 </div>
 </body>
+
+<?php echo '<script'; ?>
+ type="text/javascript" src="https://rawgit.com/CodeOtter/thusspokenpc/master/index.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ type="text/javascript" src="inc/Npc1.js"><?php echo '</script'; ?>
+>
+
 </html><?php }
 }

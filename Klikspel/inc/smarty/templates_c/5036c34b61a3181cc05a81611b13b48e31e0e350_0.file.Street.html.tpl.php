@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-06 15:13:21
+/* Smarty version 3.1.29, created on 2016-12-19 11:00:10
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Street.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5846c78166a100_36513953',
+  'unifunc' => 'content_5857afaa11b1d4_78140933',
   'file_dependency' => 
   array (
     '5036c34b61a3181cc05a81611b13b48e31e0e350' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Street.html.tpl',
-      1 => 1481033262,
+      1 => 1482141139,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5846c78166a100_36513953 ($_smarty_tpl) {
+function content_5857afaa11b1d4_78140933 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -51,13 +51,15 @@ function content_5846c78166a100_36513953 ($_smarty_tpl) {
     <h1> The city </h1>
     <p> And there you`re standing on the middle of the street. <br>
         You look down to the right and see nothing. To the left you see almost a bridge.<br>
-        And futher on you see the garage and a store.<br> Which way wil you go..</p>
+        And futher on you see the garage and a store.<br> Which way wil you go.. <br>
+    you see someone standing and think should i talk to him</p>
     <img src="img/street.png">
     <ul>
         <li><a href="Outside.php"> Go back to look for something </a></li>
         <li><a href="Deadend.php"> To The right </a></li>
         <li><a href="Nbridge.php"> TO the left towards the bridge </a></li>
         <li><a href="AgianStreet.php"> Go on ....</a></li>
+        <li><a href="NPC1.php"> Go talk to John </a></li>
     </ul>
     <ul>
         <?php
