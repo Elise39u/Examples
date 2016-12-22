@@ -11,6 +11,7 @@ window.onload = function StartConverstation() {
     if (numberStart == 145971) {
         document.getElementById('NPC').innerHTML = "" +
             NpcName + ": What do you want";
+        document.getElementById('Player3').innerHTML = "Do you need help with something";
         document.getElementById('Player4').style.display = 'none';
         document.getElementById('Player5').style.display = 'none';
     }
@@ -26,11 +27,21 @@ function myAns2() {
     startOver2();
 }
 
+function myAns3() {
+    document.getElementById('Player1').style.display = 'none';
+    document.getElementById('Player2').style.display = 'none';
+    document.getElementById('Player5').style.display = 'none';
+    document.getElementById('Player4').style.display = 'none';
+    document.getElementById('NPC').innerHTML = NpcName +  ": Well i am in need of some items <br>" +
+    "Perhaps that you can help me";
+    startOver3();
+}
+
 function startOver() {
     document.getElementById('Player1').style.display = 'none';
     document.getElementById('Player2').style.display = 'none';
-    document.getElementById('Player3').style.display = 'none';
     document.getElementById('Player4').style.display = 'none';
+    document.getElementById('Player5').style.display = 'none';
     document.getElementById('Player3').style.display = 'block';
     document.getElementById('Player3').innerHTML = "Ow okey thanks for the information";
 }
@@ -41,7 +52,7 @@ function startOver2() {
     document.getElementById('Player3').style.display = 'none';
     document.getElementById('Player5').style.display = 'none';
     document.getElementById('Player4').style.display = 'block';
-    document.getElementById('Player4').innerHTML = "Ow srry ";
+    document.getElementById('Player4').innerHTML = "Ow srry";
 }
 
 function myAns4() {
@@ -50,4 +61,8 @@ function myAns4() {
 
 function myAns5() {
     document.getElementById('NPC').innerHTML = NpcName + ": Stupid idiot";
+}
+
+function startOver3() {
+    document.getElementById('Player3').innerHTML = "What do you want " + NpcName;
 }
