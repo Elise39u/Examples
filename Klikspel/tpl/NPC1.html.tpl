@@ -20,11 +20,10 @@
     <h1> My name is Jhon </h1>
     <p id="Bio"></p>
     <p id="NPC"></p>
-    <button type="button" onclick="myAns1()" id="Player1"> Have you seen anything strange lastly ??</button> <br>
-    <button type="button" onclick="myAns2()" id="Player2"> I am in need of items can you help me??</button> <br>
-    <button type="button" onclick="myAns3()" id="Player3"> </button> <br>
-    <button type="button" onclick="myAns4()" id="Player4"> </button> <br>
-    <button type="button" onclick="myAns5()" id="Player5"> </button>
+    <button type="button" onclick="Clickme(this.id)" id="Player1"> Have you seen anything strange lastly ??</button> <br>
+    <button type="button" onclick="Clickme(this.id)" id="Player2"> I am in need of items can you help me??</button> <br>
+    <button type="button" onclick="Clickme(this.id)" id="Player3"> Do you need help with something </button>
+    <div id="AddBtn"></div>
     <ul>
         <li><a href="Street.php"> Go back </a></li>
     </ul>

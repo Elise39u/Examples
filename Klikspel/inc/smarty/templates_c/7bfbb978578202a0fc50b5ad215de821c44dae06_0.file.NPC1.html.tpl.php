@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-21 08:55:19
+/* Smarty version 3.1.29, created on 2016-12-23 13:28:04
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\NPC1.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_585a3567aaf057_65938305',
+  'unifunc' => 'content_585d1854770f87_10394828',
   'file_dependency' => 
   array (
     '7bfbb978578202a0fc50b5ad215de821c44dae06' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\NPC1.html.tpl',
-      1 => 1482306892,
+      1 => 1482495877,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_585a3567aaf057_65938305 ($_smarty_tpl) {
+function content_585d1854770f87_10394828 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -51,11 +51,10 @@ function content_585a3567aaf057_65938305 ($_smarty_tpl) {
     <h1> My name is Jhon </h1>
     <p id="Bio"></p>
     <p id="NPC"></p>
-    <button type="button" onclick="myAns1()" id="Player1"> Have you seen anything strange lastly ??</button> <br>
-    <button type="button" onclick="myAns2()" id="Player2"> I am in need of items can you help me??</button> <br>
-    <button type="button" onclick="myAns3()" id="Player3"> </button> <br>
-    <button type="button" onclick="myAns4()" id="Player4"> </button> <br>
-    <button type="button" onclick="myAns5()" id="Player5"> </button>
+    <button type="button" onclick="Clickme(this.id)" id="Player1"> Have you seen anything strange lastly ??</button> <br>
+    <button type="button" onclick="Clickme(this.id)" id="Player2"> I am in need of items can you help me??</button> <br>
+    <button type="button" onclick="Clickme(this.id)" id="Player3"> Do you need help with something </button>
+    <div id="AddBtn"></div>
     <ul>
         <li><a href="Street.php"> Go back </a></li>
     </ul>
