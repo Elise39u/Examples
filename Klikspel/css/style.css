@@ -8,6 +8,10 @@
     margin-right: auto;
 }
 
+.test  {
+  background: none !important;
+}
+
 html {
     background: url("../img/image-3747618.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -18,11 +22,11 @@ html {
 }
 
 div.plaatje {
-    width: 75%;
-    opacity: 0.8;
-    background-color: white;
-    padding: 1em;
-    border: solid #000000;
+    width: 75% !important;
+    opacity: 0.8 !important;
+    background-color: white !important;
+    padding: 1em !important;
+    border: solid #000000 !important;
 }
 
 ul {

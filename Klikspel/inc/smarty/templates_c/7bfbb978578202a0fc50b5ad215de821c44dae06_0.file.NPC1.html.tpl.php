@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-23 13:28:04
+/* Smarty version 3.1.29, created on 2016-12-27 16:34:34
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\NPC1.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_585d1854770f87_10394828',
+  'unifunc' => 'content_58628a0a2e8ba8_26891972',
   'file_dependency' => 
   array (
     '7bfbb978578202a0fc50b5ad215de821c44dae06' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\NPC1.html.tpl',
-      1 => 1482495877,
+      1 => 1482852873,
       2 => 'file',
     ),
   ),
@@ -19,17 +19,19 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_585d1854770f87_10394828 ($_smarty_tpl) {
+function content_58628a0a2e8ba8_26891972 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
 <head>
     <title> <?php echo $_smarty_tpl->tpl_vars['pagetitle']->value;?>
  </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
-<body>
+<body class="test">
 <div class="plaatje">
 
     <ul>
@@ -48,7 +50,7 @@ function content_585d1854770f87_10394828 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> My name is Jhon </h1>
+    <h1> My name is John </h1>
     <p id="Bio"></p>
     <p id="NPC"></p>
     <button type="button" onclick="Clickme(this.id)" id="Player1"> Have you seen anything strange lastly ??</button> <br>
@@ -98,6 +100,15 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
 >
 <?php echo '<script'; ?>
  src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="inc/bootbox.min.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ type="text/javascript" src="inc/Test.js"><?php echo '</script'; ?>
 >
 <?php echo '<script'; ?>
  type="text/javascript" src="inc/Npc1.js"><?php echo '</script'; ?>

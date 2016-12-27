@@ -39,7 +39,7 @@ function startOver() {
         document.getElementById('Player1').id = "Player4";
     }
     document.getElementById('Player4').innerHTML = "Ow okey thanks for the information";
-    document.getElementById('Player4').onclick = startOver3();
+    document.getElementById('Player4').onclick = setTimeout(startOver3(), 1500);
     document.getElementById('Player4').style.display = 'none';
 }
 
@@ -48,6 +48,10 @@ function startOver2() {
         document.getElementById('Player2').id = "Player5";
     }
     document.getElementById('Player5').innerHTML = "Ow srry";
+    var elems = document.getElementsByTagName('button');
+    for (var i=0; i<elems.length; i+=1) {
+        elems[i].style.display = "none";
+    }
 }
 
 function startOver3() {
@@ -65,7 +69,7 @@ function startOver3() {
     if (!document.getElementById('Player6')) {
         document.getElementById('Player3').id = "Player6";
     }
-    document.getElementById('Player6').onclick = NewAns();
+    document.getElementById('Player6').onclick = setTimeout(NewAns(), 6500);
 }
 
 function NewAns() {
@@ -79,12 +83,37 @@ function NewAns() {
         var element = document.getElementById("AddBtn");
         element.appendChild(para);
     document.getElementById("Player6").innerHTML = "What info and items?";
+    document.getElementById("Player6").onclick = setTimeout(Duh(), 10000);
     para.id = "Player7";
+    para.name = "Test";
+    para.onclick = setTimeout(End(), 10000);
+}
+
+function Duh() {
+    document.getElementById("NPC").innerHTML = NpcName + "That i tell you opon completion of the quest";
+    document.getElementById("Player6").id = "Player8";
+    document.getElementById("Player8").innerHTML = "I go look for it";
+    document.getElementById("Player8").onclick = setTimeout(End(), 12500);
+}
+
+function End() {
+    document.getElementById("NPC").innerHTML = NpcName + ": Come back to me if you have the items";
+    if (!document.getElementById("Player8")) {
+        document.getElementById("Player6").style.display = "none";
+    }
+    document.getElementById("Player8").style.display = "none";
+    var elems = document.getElementsByTagName('button');
+    for (var i=0; i<elems.length; i+=1) {
+        elems[i].style.display = "none";
+    }
 }
 
 /*
 Coockie function --> In browers Javscript folder
-last answer --> www map mindmap noddig
+Time out bewteen the reactions --> player can read the story and diaoulge
+Optie 1 --> turn into  a alert box ( Not the kind i want but make it works so its readble
+Optie 2 --> Confirm alert boxes --> Same as alert and big if else code
+Optie 3 --> bootstrap confirm box but the css style is the problem
 start of the quest
 Powerswicht toevoegen / Marine base for more NPCS and story
  */
