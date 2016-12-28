@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-19 11:00:10
+/* Smarty version 3.1.29, created on 2016-12-28 15:04:42
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Street.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5857afaa11b1d4_78140933',
+  'unifunc' => 'content_5863c67a606da8_95131633',
   'file_dependency' => 
   array (
     '5036c34b61a3181cc05a81611b13b48e31e0e350' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Street.html.tpl',
-      1 => 1482141139,
+      1 => 1482933881,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5857afaa11b1d4_78140933 ($_smarty_tpl) {
+function content_5863c67a606da8_95131633 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -59,7 +59,15 @@ function content_5857afaa11b1d4_78140933 ($_smarty_tpl) {
         <li><a href="Deadend.php"> To The right </a></li>
         <li><a href="Nbridge.php"> TO the left towards the bridge </a></li>
         <li><a href="AgianStreet.php"> Go on ....</a></li>
+        <?php if (isset($_SESSION['PageNpc'])) {?>
+        <?php if ($_SESSION['PageNpc'] >= 1) {?>
+            <li><a href="#"> You have compleeted the quest and john is gone</a> </li>
+            <?php } else { ?>
         <li><a href="NPC1.php"> Go talk to John </a></li>
+        <?php }?>
+        <?php } else { ?>
+            <li><a href="NPC1.php"> Go talk to John </a></li>
+        <?php }?>
     </ul>
     <ul>
         <?php

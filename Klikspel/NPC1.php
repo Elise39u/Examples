@@ -30,7 +30,74 @@ while ($row = mysqli_fetch_assoc($result)) {
     $item_result = mysqli_query($mysqli, $item_query);
     list($row['name']) = mysqli_fetch_row($item_result);
     array_push($inventory, $row);
+    if (isset($row['item_id'])) {
+        if ($row['item_id'] == 54) {
+            $_COOKIE['Quest1'] = true;
+        }
 }
+
+if ($_COOKIE['Quest1'] == true) {
+    if (isset($_SESSION['PageNpc'])) {
+        $_SESSION['PageNpc']++;
+    }
+    else {
+        $_SESSION['PageNpc'] = 1;
+    }
+    print_r($_SESSION['PageNpc']);
+}
+
+if (!$_COOKIE['Quest1']) {
+    setcookie('Quest1', false, time() + 3600 * 24 * 30, '/');
+}
+
+    if ($_COOKIE['Quest1'] == true) {
+        $itemID = 106;
+        if($inventory == NULL) {
+            $sql = "INSERT INTO Inventory(player_id, item_id, space, quantity) 
+		VALUES ($userID, '$itemID', '$space', $count)";
+            echo "<span style=\"color: white; \"> this $space left  </span></br>";
+            if ($mysqli->query($sql) === TRUE) {
+                echo "<span style=\"color: white; \"> New record created successfully </span>";
+            } else {
+                echo "Error: " . $sql . "<br>" . $mysqli->error;
+            }
+        }
+
+        elseif(isset($inventory)) {
+            $result = $mysqli->query("SELECT item_id FROM Inventory WHERE item_id = $itemID");
+            if($result->num_rows > 0) {
+                $sql = "UPDATE Inventory SET quantity = quantity + 1 WHERE item_id=$itemID";
+                mysqli_query($mysqli, $sql);
+                echo "<span style=\"color: white; \"> Exsist already Dork </span>";
+            } else {
+                foreach ($inventory as $Ok) {
+                    $Ok = $space;
+                    $space--;
+                }
+                $sql = "INSERT INTO Inventory(player_id, item_id, space, quantity) 
+				VALUES ($userID, '$itemID', '$space', $count)";
+                if ($space <= 0) {
+                    echo "<span style=\"color: white; \"> Because you have no space left </span>";
+                    die($space);
+                }
+                echo "this $space left </br>";
+                if ($mysqli->query($sql) === TRUE) {
+                    echo "<span style=\"color: white; \">  New record created successfully </span>";
+                } else {
+                    echo "<span style=\"color: white; \"> Error: " . $sql . "<br>" . $mysqli->error;"</span>";
+                }
+            }
+        }
+        else {
+            echo "Wuuuttttt";
+        }
+    }
+}
+/*
+ foreach($_COOKIE as $v){
+    echo htmlentities($v, 6, 'UTF-8').'<br />';
+}
+*/
 
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));

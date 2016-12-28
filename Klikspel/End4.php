@@ -35,6 +35,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 $sql = "TRUNCATE TABLE inventory";
 mysqli_query($mysqli, $sql);
 session_destroy();
+unset($_COOKIE);
 
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));

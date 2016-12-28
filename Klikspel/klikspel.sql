@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Gegenereerd op: 15 dec 2016 om 11:17
+-- Gegenereerd op: 28 dec 2016 om 14:39
 -- Serverversie: 5.7.9
 -- PHP-versie: 5.6.16
 
@@ -55,7 +55,7 @@ CREATE TABLE IF NOT EXISTS `area_monsters` (
   `area` int(11) DEFAULT NULL,
   `monster` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=56 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=64 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `area_monsters`
@@ -116,7 +116,15 @@ INSERT INTO `area_monsters` (`id`, `area`, `monster`) VALUES
 (52, 3, 35),
 (53, 3, 37),
 (54, 3, 30),
-(55, 3, 24);
+(55, 3, 24),
+(56, 4, 38),
+(57, 4, 39),
+(58, 4, 40),
+(59, 4, 41),
+(60, 4, 42),
+(61, 4, 43),
+(62, 4, 45),
+(63, 4, 44);
 
 -- --------------------------------------------------------
 
@@ -132,14 +140,15 @@ CREATE TABLE IF NOT EXISTS `inventory` (
   `space` int(254) NOT NULL,
   `quantity` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `inventory`
 --
 
 INSERT INTO `inventory` (`id`, `player_id`, `item_id`, `space`, `quantity`) VALUES
-(1, '1', 103, 50, 1);
+(1, '1', 54, 50, 1),
+(3, '1', 106, 49, 1);
 
 -- --------------------------------------------------------
 
@@ -154,7 +163,7 @@ CREATE TABLE IF NOT EXISTS `items` (
   `type` enum('Weapon','Armor','Usable','Drop','Potion','Flare','SeaMonster') DEFAULT NULL,
   `price` int(11) NOT NULL DEFAULT '10',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=104 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=107 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `items`
@@ -263,7 +272,10 @@ INSERT INTO `items` (`id`, `name`, `type`, `price`) VALUES
 (100, 'DarkCyanPotion', 'SeaMonster', 650),
 (101, 'Black Potion', 'Potion', 10000),
 (102, 'SerectPotion', 'Potion', 500),
-(103, 'PickAxe', 'Usable', 100000);
+(103, 'PickAxe', 'Usable', 100000),
+(104, 'TomaHawk', NULL, 43253223),
+(105, 'Navy Shell', NULL, 43253232),
+(106, 'PowerSwicht', NULL, 10000);
 
 -- --------------------------------------------------------
 
@@ -500,7 +512,7 @@ CREATE TABLE IF NOT EXISTS `monsters` (
   `name` text,
   `image_url` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=38 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=46 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `monsters`
@@ -543,7 +555,15 @@ INSERT INTO `monsters` (`id`, `name`, `image_url`) VALUES
 (34, 'Scorpion', ''),
 (35, 'Spewer', ''),
 (36, 'Avogadro', ''),
-(37, 'Denizen', '');
+(37, 'Denizen', ''),
+(38, 'CaveGuard', ''),
+(39, 'GiantTroll', ''),
+(40, 'CaveRat', ''),
+(41, 'Lizard', ''),
+(42, 'Mutant', ''),
+(43, 'Spider', ''),
+(44, 'Troll', ''),
+(45, 'SmallSpider', '');
 
 -- --------------------------------------------------------
 
@@ -558,7 +578,7 @@ CREATE TABLE IF NOT EXISTS `monster_items` (
   `item_id` int(11) DEFAULT NULL,
   `rarity` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=64 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=72 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `monster_items`
@@ -627,7 +647,15 @@ INSERT INTO `monster_items` (`id`, `monster_id`, `item_id`, `rarity`) VALUES
 (60, 34, 99, 98),
 (61, 35, 96, 100),
 (62, 37, 4, 100),
-(63, 36, 12, 100);
+(63, 36, 12, 100),
+(64, 38, 59, 100),
+(65, 39, 2, 100),
+(66, 40, 92, 100),
+(67, 41, 41, 100),
+(68, 42, 16, 100),
+(69, 43, 101, 100),
+(70, 44, 8, 100),
+(71, 45, 32, 100);
 
 -- --------------------------------------------------------
 
@@ -642,7 +670,7 @@ CREATE TABLE IF NOT EXISTS `monster_stats` (
   `stat_id` int(11) DEFAULT NULL,
   `content` text,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2103 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=2135 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `monster_stats`
@@ -824,7 +852,60 @@ INSERT INTO `monster_stats` (`id`, `monster_id`, `stat_id`, `content`) VALUES
 (1973, 1, 10, '100'),
 (2100, 6, 5, '100'),
 (2101, 6, 7, '100'),
-(2102, 6, 11, '100');
+(2102, 6, 11, '100'),
+(2103, 38, 1, '4000'),
+(2104, 38, 2, '50000'),
+(2105, 38, 4, '1000000'),
+(2106, 38, 3, '120000'),
+(2107, 39, 1, '1500'),
+(2108, 39, 2, '5000'),
+(2109, 39, 4, '10000'),
+(2110, 39, 3, '12000'),
+(2111, 40, 1, '400'),
+(2112, 40, 2, '1250'),
+(2113, 40, 4, '1000'),
+(2114, 40, 3, '12000'),
+(2115, 41, 1, '650'),
+(2116, 41, 2, '1800'),
+(2117, 41, 4, '1300'),
+(2118, 41, 3, '14500'),
+(2119, 42, 1, '850'),
+(2120, 42, 2, '1000'),
+(2121, 42, 4, '10000'),
+(2122, 42, 3, '12000'),
+(2123, 43, 1, '1850'),
+(2124, 43, 2, '12500'),
+(2125, 43, 4, '100000'),
+(2126, 43, 3, '1200000'),
+(2127, 44, 1, '240'),
+(2128, 44, 2, '900'),
+(2129, 44, 4, '1300'),
+(2130, 44, 3, '14500'),
+(2131, 45, 1, '450'),
+(2132, 45, 2, '900'),
+(2133, 45, 4, '1100'),
+(2134, 45, 3, '11000');
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `npc`
+--
+
+DROP TABLE IF EXISTS `npc`;
+CREATE TABLE IF NOT EXISTS `npc` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `Name` varchar(1024) NOT NULL,
+  `Place` varchar(1024) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `npc`
+--
+
+INSERT INTO `npc` (`id`, `Name`, `Place`) VALUES
+(1, 'John', 'Street.php');
 
 -- --------------------------------------------------------
 
@@ -871,20 +952,20 @@ CREATE TABLE IF NOT EXISTS `player_stats` (
 --
 
 INSERT INTO `player_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
-(1, 1, 5, '175'),
+(1, 1, 5, '300'),
 (2, 1, 1, '80'),
 (3, 1, 2, '100'),
-(4, 1, 3, '250'),
+(4, 1, 3, '1280'),
 (5, 1, 4, '300'),
 (6, 1, 7, '50'),
 (7, 1, 6, '25'),
-(545, 2, 9, '65'),
-(544, 2, 8, '66'),
+(545, 2, 9, ''),
+(544, 2, 8, ''),
 (506, 1, 8, ''),
 (496, 1, 10, ''),
 (495, 1, 9, ''),
-(529, 2, 11, '0'),
-(528, 2, 3, '5250'),
+(529, 2, 11, '5000'),
+(528, 2, 3, '250'),
 (527, 2, 7, '50'),
 (526, 2, 2, '100'),
 (525, 2, 1, '80'),
@@ -892,6 +973,28 @@ INSERT INTO `player_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
 (523, 2, 4, '300'),
 (522, 2, 5, '175'),
 (510, 1, 11, '5000');
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `quest`
+--
+
+DROP TABLE IF EXISTS `quest`;
+CREATE TABLE IF NOT EXISTS `quest` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `Name` varchar(1024) NOT NULL,
+  `Npc_id` int(11) DEFAULT NULL,
+  `Gold` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `quest`
+--
+
+INSERT INTO `quest` (`id`, `Name`, `Npc_id`, `Gold`) VALUES
+(1, 'Healing', 1, 175);
 
 -- --------------------------------------------------------
 

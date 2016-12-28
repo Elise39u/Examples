@@ -39,7 +39,7 @@ function startOver() {
         document.getElementById('Player1').id = "Player4";
     }
     document.getElementById('Player4').innerHTML = "Ow okey thanks for the information";
-    document.getElementById('Player4').onclick = setTimeout(startOver3(), 1500);
+    document.getElementById('Player4').onclick = startOver3();
     document.getElementById('Player4').style.display = 'none';
 }
 
@@ -69,7 +69,7 @@ function startOver3() {
     if (!document.getElementById('Player6')) {
         document.getElementById('Player3').id = "Player6";
     }
-    document.getElementById('Player6').onclick = setTimeout(NewAns(), 6500);
+    document.getElementById('Player6').onclick = NewAns();
 }
 
 function NewAns() {
@@ -83,30 +83,38 @@ function NewAns() {
         var element = document.getElementById("AddBtn");
         element.appendChild(para);
     document.getElementById("Player6").innerHTML = "What info and items?";
-    document.getElementById("Player6").onclick = setTimeout(Duh(), 10000);
+    document.getElementById("Player6").onclick = Duh();
     para.id = "Player7";
     para.name = "Test";
-    para.onclick = setTimeout(End(), 10000);
+    para.onclick = Quest();
 }
 
 function Duh() {
-    document.getElementById("NPC").innerHTML = NpcName + "That i tell you opon completion of the quest";
-    document.getElementById("Player6").id = "Player8";
-    document.getElementById("Player8").innerHTML = "I go look for it";
-    document.getElementById("Player8").onclick = setTimeout(End(), 12500);
-}
-
-function End() {
-    document.getElementById("NPC").innerHTML = NpcName + ": Come back to me if you have the items";
+    document.getElementById("NPC").innerHTML = NpcName + ": That i tell you opon completion of the quest";
     if (!document.getElementById("Player8")) {
-        document.getElementById("Player6").style.display = "none";
+        document.getElementById("Player6").id = "Player8";
     }
-    document.getElementById("Player8").style.display = "none";
+    document.getElementById("Player8").innerHTML = "I go look for it";
+    document.getElementById("Player8").onclick = Quest();
     var elems = document.getElementsByTagName('button');
     for (var i=0; i<elems.length; i+=1) {
         elems[i].style.display = "none";
     }
 }
+
+    function Quest() {
+        var para = document.createElement("button");
+        var node = document.createTextNode("I have the items");
+        para.appendChild(node);
+        var element = document.getElementById("AddBtn");
+        element.appendChild(para);
+        para.id = "Player9";
+        para.name = "Test";
+            var elems = document.getElementsByTagName('button');
+            for (var i=0; i<elems.length; i+=1) {
+                elems[i].style.display = "none";
+            }
+    }
 
 /*
 Coockie function --> In browers Javscript folder

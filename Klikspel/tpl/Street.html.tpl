@@ -28,7 +28,15 @@
         <li><a href="Deadend.php"> To The right </a></li>
         <li><a href="Nbridge.php"> TO the left towards the bridge </a></li>
         <li><a href="AgianStreet.php"> Go on ....</a></li>
+        {if isset($smarty.session.PageNpc)}
+        {if $smarty.session.PageNpc >= 1}
+            <li><a href="#"> You have compleeted the quest and john is gone</a> </li>
+            {else}
         <li><a href="NPC1.php"> Go talk to John </a></li>
+        {/if}
+        {else}
+            <li><a href="NPC1.php"> Go talk to John </a></li>
+        {/if}
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}
