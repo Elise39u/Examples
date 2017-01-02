@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-02 12:37:23
-  from "C:\wamp64\www\Examplecode\Klikspel\tpl\cabian.html.tpl" */
+/* Smarty version 3.1.29, created on 2017-01-02 12:34:08
+  from "C:\wamp64\www\Examplecode\Klikspel\tpl\Power.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586a3b733e1673_82855456',
+  'unifunc' => 'content_586a3ab06a31b9_87592423',
   'file_dependency' => 
   array (
-    'aa584e62372cf13e44cacb89db01c0d12e6d83c3' => 
+    'a4df91b6694f07187f77cd633816eb17f82dda4f' => 
     array (
-      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\cabian.html.tpl',
-      1 => 1483357041,
+      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Power.html.tpl',
+      1 => 1483356800,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586a3b733e1673_82855456 ($_smarty_tpl) {
+function content_586a3ab06a31b9_87592423 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -48,18 +48,10 @@ function content_586a3b733e1673_82855456 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> Cabian? </h1>
-    <p> Empty? <br>
-        At least i found a potion.  </p>
-    <img src="img/cockpit.png">
+    <h1> Maintance </h1>
+    <p> So the Boat can now ride </p>
     <ul>
-        <li><a href="Ocabian.php"> Go back outside </a></li>
-        <li><a href="flare.php"> a flare ??? </a></li>
-        <li><a href="Jar.php"> A jar??  </a> </li>
-        <li><a href="pickaxe.php"> A pickaxe -.-??  </a> </li>
-        <?php if (isset($_SESSION['Sub'])) {?>
-            <li><a href="#"> Go to the sub base</a> </li>
-        <?php }?>
+        <li><a href="Maintance.php"> Go back </a></li>
     </ul>
 
     <ul>

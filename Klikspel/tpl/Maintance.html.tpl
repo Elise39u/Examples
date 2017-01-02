@@ -25,6 +25,9 @@
         <li><a href="Deck.php"> Back outside </a></li>
         <li><a href="Cafetaria.php"> Cafateria  </a> </li>
         <li><a href="Ocabian.php"> The cabian </a> </li>
+        {if isset($smarty.session.Machine)}
+            <li><a href="Power.php"> Put the swicht in</a></li>
+        {/if}
     </ul>
 
     <ul>

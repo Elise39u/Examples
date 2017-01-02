@@ -18,16 +18,9 @@
     </ul>
 
     <h1> Maintance </h1>
-    <p> Why is the Maintance room stil intact. <br>
-        dont mind i need to go ont  </p>
-    <img src="img/MaintanceRoom.png">
+    <p> So the Boat can now ride </p>
     <ul>
-        <li><a href="Deck.php"> Back outside </a></li>
-        <li><a href="Cafetaria.php"> Cafateria  </a> </li>
-        <li><a href="Ocabian.php"> The cabian </a> </li>
-        {if isset($smarty.session.Machine)}
-            <li><a href="#"> Put the swicht in</a></li>
-        {/if}
+        <li><a href="Maintance.php"> Go back </a></li>
     </ul>
 
     <ul>

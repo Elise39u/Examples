@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-12 15:07:31
+/* Smarty version 3.1.29, created on 2017-01-02 12:34:06
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Maintance.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_584eaf231bb204_15660282',
+  'unifunc' => 'content_586a3aae8af1a8_01174942',
   'file_dependency' => 
   array (
     'a0844f9d7e45ed25f97eed1aa5e932939bc0f84a' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Maintance.html.tpl',
-      1 => 1481551649,
+      1 => 1483356735,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_584eaf231bb204_15660282 ($_smarty_tpl) {
+function content_586a3aae8af1a8_01174942 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -56,6 +56,9 @@ function content_584eaf231bb204_15660282 ($_smarty_tpl) {
         <li><a href="Deck.php"> Back outside </a></li>
         <li><a href="Cafetaria.php"> Cafateria  </a> </li>
         <li><a href="Ocabian.php"> The cabian </a> </li>
+        <?php if (isset($_SESSION['Machine'])) {?>
+            <li><a href="Power.php"> Put the swicht in</a></li>
+        <?php }?>
     </ul>
 
     <ul>

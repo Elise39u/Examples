@@ -26,6 +26,9 @@
         <li><a href="flare.php"> a flare ??? </a></li>
         <li><a href="Jar.php"> A jar??  </a> </li>
         <li><a href="pickaxe.php"> A pickaxe -.-??  </a> </li>
+        {if isset($smarty.session.Sub)}
+            <li><a href="#"> Go to the sub base</a> </li>
+        {/if}
     </ul>
 
     <ul>

@@ -32,7 +32,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
     if (isset($row['item_id'])) {
         if ($row['item_id'] == 54) {
-            $_COOKIE['Quest1'] = true;
+            $_COOKIE['Quest'] = true;
         }
 }
 
