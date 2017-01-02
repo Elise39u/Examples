@@ -36,7 +36,7 @@ while ($row = mysqli_fetch_assoc($result)) {
         }
 }
 
-if ($_COOKIE['Quest1'] == true) {
+if ($_COOKIE['Quest'] == true) {
     if (isset($_SESSION['PageNpc'])) {
         $_SESSION['PageNpc']++;
     }
@@ -46,11 +46,16 @@ if ($_COOKIE['Quest1'] == true) {
     print_r($_SESSION['PageNpc']);
 }
 
-if (!$_COOKIE['Quest1']) {
-    setcookie('Quest1', false, time() + 3600 * 24 * 30, '/');
+if (!isset($_COOKIE['Quest'])) {
+    setcookie('Quest', false, time() + 2147483647);
 }
 
-    if ($_COOKIE['Quest1'] == true) {
+    if ($_COOKIE['Quest'] == true) {
+        $money = getStat('gc', $userID);
+        $Hai = $money + 175;
+        if (isset($Hai)) {
+            setStat('gc', $userID, $Hai);
+        }
         $itemID = 106;
         if($inventory == NULL) {
             $sql = "INSERT INTO Inventory(player_id, item_id, space, quantity) 

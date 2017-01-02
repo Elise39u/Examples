@@ -95,14 +95,10 @@ function Duh() {
         document.getElementById("Player6").id = "Player8";
     }
     document.getElementById("Player8").innerHTML = "I go look for it";
-    document.getElementById("Player8").onclick = Quest();
-    var elems = document.getElementsByTagName('button');
-    for (var i=0; i<elems.length; i+=1) {
-        elems[i].style.display = "none";
-    }
 }
 
     function Quest() {
+        document.getElementById('NPC').innerHTML = NpcName + ": Come back to me When you have the items";
         var para = document.createElement("button");
         var node = document.createTextNode("I have the items");
         para.appendChild(node);
@@ -115,13 +111,13 @@ function Duh() {
                 elems[i].style.display = "none";
             }
     }
-
 /*
 Coockie function --> In browers Javscript folder
 Time out bewteen the reactions --> player can read the story and diaoulge
 Optie 1 --> turn into  a alert box ( Not the kind i want but make it works so its readble
 Optie 2 --> Confirm alert boxes --> Same as alert and big if else code
-Optie 3 --> bootstrap confirm box but the css style is the problem
+Optie 3 --> bootstrap confirm box but the css style is the problem --> Fixed with the css
+Optie 4 --> Confirm box with multiple choices
 start of the quest
 Powerswicht toevoegen / Marine base for more NPCS and story
  */
