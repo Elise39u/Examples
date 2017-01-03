@@ -27,7 +27,7 @@
         {if isset($smarty.session.flare)}
             <li><a href="Ending.php"> Call the chopper</a></li>
             {else}
-            <li><a href="#"> Nothing Here </a> </li>
+            <li><a href="Meme.php"> Nothing Here </a> </li>
         {/if}
         <li><a href="KeyBK.php"> a Key??  </a></li>
     </ul>

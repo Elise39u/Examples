@@ -27,7 +27,7 @@
         {if isset($smarty.session.KeyGY)}
         <li><a href="GraveYard.php"> Go on ... Please </a></li>
         {else}
-        <p> NOTHING HERE FRIEND</p>
+        <li><a href="Meme.php">Nothing here Folk </a> </li>
         {/if}
     </ul>
     <ul>

@@ -17,20 +17,19 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> On the Yard </h1>
-    <p> as you look around you see a anntene. <br>
-        futher there is nothing<br>
-        but did you rember <strong>a message </strong> that you found</p>
-    <img src="img/Graveyard.png">
+    <h1> Hehe a sign  </h1>
+    <p> As you walk Futher you see a sing that says Yard <br>
+    You think finally <br>
+    But there are already so many people here</p>
+    <img src="img/InsideSubBase.png">
     <ul>
-        <li><a href="OGY.php"> Go back ^.^ please </a></li>
-        <li><a href="Antenne.php"> Antenne?? </a></li>
-        {if isset($smarty.session.flare)}
-        <li><a href="#"> Light the flare </a></li>
-        {else}
-        <li><a href="Meme.php"> Nothing Here to see </a> </li>
-        {/if}
+        <li><a href="SubAhed.php"> Go back  </a></li>
+        <li><a href="SubYard.php"> Go To the yard </a></li>
+        <li><a href="#"> Go talk to Icter Peter </a></li>
+        <li><a href="#"> Go talk to Explorer Arya </a></li>
+        <li><a href="#"> Go talk to Wachter Nina </a></li>
     </ul>
+
     <ul>
         {foreach from=$inventory key=id item=i}
             <li> {$i.player_id} {$i.item_id} {$i.space} {$i.quantity} </li>

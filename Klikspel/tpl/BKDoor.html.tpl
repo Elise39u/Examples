@@ -25,7 +25,7 @@
         {if isset($smarty.session.KeyBK)}
         <li><a href="Bank.php"> Go inside the bank </a> </li>
         {else}
-        <li><a href="#"> Nothing here Friend</a> </li>
+        <li><a href="Meme.php"> Nothing here Friend</a> </li>
         {/if}
         <li><a href="OBank.php"> Go back  </a> </li>
     </ul>

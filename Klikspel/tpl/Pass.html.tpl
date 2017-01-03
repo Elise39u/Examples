@@ -28,7 +28,7 @@
         {if isset($smarty.session.boat)}
             <li><a href="river.php"> Go on the river friend </a> </li>
             {else}
-            <li><a href="#"> Nothing here friend</a></li>
+            <li><a href="Meme.php"> Nothing here friend</a></li>
         {/if}
     </ul>
 

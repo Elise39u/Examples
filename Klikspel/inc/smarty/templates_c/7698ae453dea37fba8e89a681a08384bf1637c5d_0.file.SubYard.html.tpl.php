@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-03 15:47:36
-  from "C:\wamp64\www\Examplecode\Klikspel\tpl\lake.html.tpl" */
+/* Smarty version 3.1.29, created on 2017-01-03 10:37:03
+  from "C:\wamp64\www\Examplecode\Klikspel\tpl\SubYard.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586bb988994547_72586617',
+  'unifunc' => 'content_586b70bfeeeb48_50534518',
   'file_dependency' => 
   array (
-    '65c9d51e049220483d4830c8e1e43c3e2f83e011' => 
+    '7698ae453dea37fba8e89a681a08384bf1637c5d' => 
     array (
-      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\lake.html.tpl',
-      1 => 1483437776,
+      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\SubYard.html.tpl',
+      1 => 1483435947,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586bb988994547_72586617 ($_smarty_tpl) {
+function content_586b70bfeeeb48_50534518 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -48,23 +48,24 @@ function content_586bb988994547_72586617 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> a lake ;-; </h1>
-    <p> There you`re standing in front of the river.<br>
-        You look around and see a little boat You think yes this is my chane to escape.<br>
-        But you see there a no paddles And now you think were can i find this paddels?</p>
-    <img src="img/river2.jpg">
+    <h1> The Yard  </h1>
+    <p> As you Look around you see a backway to something <br>
+    But there are lots of people here  <br>
+    so who needs help a lot?</p>
+    <img src="img/YardSubBase.png">
     <ul>
-        <li><a href="Monster.php"> Goo back to that sand ??</a></li>
-        <?php if (isset($_SESSION['paddle'])) {?>
-        <li><a href="End1.php"> Escape !! </a> </li>
-        <?php } else { ?>
-        <li><a href="Meme.php"> Nothing here friend</a> </li>
-        <?php }?>
-        <?php if (isset($_SESSION['car'])) {?>
-        <li><a href="Boat.php"> Take the boat </a> </li>
-        <?php } else { ?>
-        <li><a href="Meme.php"> I SAID NOTHING HERE !</a> </li>
-        <?php }?>
+        <li><a href="SubNear.php"> Go back  </a></li>
+        <li><a href="SubBack.php"> Go torugh the backway </a></li>
+        <li><a href="#"> Go talk to Beuaty King Lauren </a></li>
+        <li><a href="#"> Go talk to photographer Mike</a></li>
+        <li><a href="#"> Go talk to Teacher Berna </a></li>
+        <li><a href="#"> Go talk to Coach Jeroen </a></li>
+        <li><a href="#"> Go talk to Coach Marieke </a></li>
+        <li><a href="#"> Go talk to Mother Lieke </a></li>
+        <li><a href="#"> Go talk to Data tracker Harmes </a></li>
+        <li><a href="#"> Go talk to Monsternon </a></li>
+        <li><a href="#"> Go talk to Sales Expert Elzie </a></li>
+        <li><a href="#"> Go talk to Student Ariëlle  </a></li>
     </ul>
 
     <ul>

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-07 10:27:27
+/* Smarty version 3.1.29, created on 2017-01-03 15:48:08
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\OGY.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5847d5ff2991e4_97280510',
+  'unifunc' => 'content_586bb9a8d34808_01770620',
   'file_dependency' => 
   array (
     '0761fe0130d9892007b3bf744a29e5c7d8776196' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\OGY.html.tpl',
-      1 => 1481101960,
+      1 => 1483437776,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5847d5ff2991e4_97280510 ($_smarty_tpl) {
+function content_586bb9a8d34808_01770620 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -58,7 +58,7 @@ function content_5847d5ff2991e4_97280510 ($_smarty_tpl) {
         <?php if (isset($_SESSION['KeyGY'])) {?>
         <li><a href="GraveYard.php"> Go on ... Please </a></li>
         <?php } else { ?>
-        <p> NOTHING HERE FRIEND</p>
+        <li><a href="Meme.php">Nothing here Folk </a> </li>
         <?php }?>
     </ul>
     <ul>

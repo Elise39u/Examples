@@ -17,20 +17,17 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> On the Yard </h1>
-    <p> as you look around you see a anntene. <br>
-        futher there is nothing<br>
-        but did you rember <strong>a message </strong> that you found</p>
-    <img src="img/Graveyard.png">
+    <h1> The Docks  </h1>
+    <p> While The Marines point were i can arrive <br>
+    They ask are you not infected if so lot of people here can use you`re help <br>
+    Because you`re the only one the can get safe to the city ?</p>
+    <img src="img/SubBaseDock.png">
     <ul>
-        <li><a href="OGY.php"> Go back ^.^ please </a></li>
-        <li><a href="Antenne.php"> Antenne?? </a></li>
-        {if isset($smarty.session.flare)}
-        <li><a href="#"> Light the flare </a></li>
-        {else}
-        <li><a href="Meme.php"> Nothing Here to see </a> </li>
-        {/if}
+        <li><a href="SubE.php"> Go back To you`re boat </a></li>
+        <li><a href="SubFuther.php"> Go on in the base </a></li>
+        <li><a href="#"> Go Talk to soldier Kane </a></li>
     </ul>
+
     <ul>
         {foreach from=$inventory key=id item=i}
             <li> {$i.player_id} {$i.item_id} {$i.space} {$i.quantity} </li>

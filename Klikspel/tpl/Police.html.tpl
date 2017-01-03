@@ -26,7 +26,7 @@
         {if isset($smarty.session.card)}
             <li><a href="WeaponCache.php"> Go inside if you dare</a></li>
             {else}
-            <li><a href="#"> Nothing Here </a> </li>
+            <li><a href="Meme.php"> Nothing Here </a> </li>
         {/if}
         <li><a href="Roof.php"> Go to the roof </a></li>
     </ul>

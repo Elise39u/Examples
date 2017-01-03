@@ -10,7 +10,6 @@ include_once ('inc/playerstats.php');
 include_once ('inc/Monster.php');
 include_once ('inc/ItemStats.php');
 include_once ('inc/WeaponStat.php');
-include_once ('inc/InventoryClass.php');
 
 $query = sprintf("SELECT id FROM player WHERE UPPER(username) = UPPER('%s')",
     mysqli_real_escape_string($mysqli, $_SESSION['username']));
@@ -19,6 +18,7 @@ list($value) = mysqli_fetch_row($result);
 $userID = $value;
 
 $pagetitle = "Mine game";
+
 $inventory = array();
 $query = sprintf("SELECT * FROM inventory WHERE player_id = '%s'",
     mysqli_real_escape_string($mysqli, $userID));
@@ -32,20 +32,6 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
 }
 
-
-$setHP = getStat('curhp',$userID);
-if($setHP <= 0) {
-    // haven't set up the user's HP values yet - let's set those!
-    setStat('curhp',$userID,175);
-    setStat('maxhp',$userID,300);
-    setStat('sethp',$userID,25);
-    setStat('atk', $userID, '80');
-    setStat('def', $userID, '100');
-    setStat('mdef', $userID, '50');
-    setStat('gc', $userID, '250');
-    setStat('bankgc', $userID, '5000');
-}
-
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
 $smarty->assign('magic',getStat('mdef',$userID));
@@ -55,4 +41,4 @@ $smarty->assign('inbank',getStat('bankgc',$userID));
 $smarty->assign('currentHP',getStat('curhp',$userID));
 $smarty->assign('maximumHP',getStat('maxhp',$userID));
 $smarty->assign('pagetitle', $pagetitle);
-$smarty->display("tpl/room.html.tpl");
+$smarty->display("tpl/SubDocks.html.tpl");

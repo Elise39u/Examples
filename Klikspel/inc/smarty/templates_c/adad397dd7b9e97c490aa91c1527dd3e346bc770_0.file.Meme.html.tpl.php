@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-03 15:47:36
-  from "C:\wamp64\www\Examplecode\Klikspel\tpl\lake.html.tpl" */
+/* Smarty version 3.1.29, created on 2017-01-03 15:47:39
+  from "C:\wamp64\www\Examplecode\Klikspel\tpl\Meme.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586bb988994547_72586617',
+  'unifunc' => 'content_586bb98bbad0d0_96396257',
   'file_dependency' => 
   array (
-    '65c9d51e049220483d4830c8e1e43c3e2f83e011' => 
+    'adad397dd7b9e97c490aa91c1527dd3e346bc770' => 
     array (
-      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\lake.html.tpl',
-      1 => 1483437776,
+      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Meme.html.tpl',
+      1 => 1483452963,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586bb988994547_72586617 ($_smarty_tpl) {
+function content_586bb98bbad0d0_96396257 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -48,24 +48,11 @@ function content_586bb988994547_72586617 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> a lake ;-; </h1>
-    <p> There you`re standing in front of the river.<br>
-        You look around and see a little boat You think yes this is my chane to escape.<br>
-        But you see there a no paddles And now you think were can i find this paddels?</p>
-    <img src="img/river2.jpg">
-    <ul>
-        <li><a href="Monster.php"> Goo back to that sand ??</a></li>
-        <?php if (isset($_SESSION['paddle'])) {?>
-        <li><a href="End1.php"> Escape !! </a> </li>
-        <?php } else { ?>
-        <li><a href="Meme.php"> Nothing here friend</a> </li>
-        <?php }?>
-        <?php if (isset($_SESSION['car'])) {?>
-        <li><a href="Boat.php"> Take the boat </a> </li>
-        <?php } else { ?>
-        <li><a href="Meme.php"> I SAID NOTHING HERE !</a> </li>
-        <?php }?>
-    </ul>
+    <h1> You are to curious   </h1>
+    <p> There really nothing here but you couldnt resit <br>
+    So now you can press the left arrow button in the top left corner</p>
+    <p>&larr; This thing i mean in the top corner </p>
+    <img src="img/Meme.png">
 
     <ul>
         <?php

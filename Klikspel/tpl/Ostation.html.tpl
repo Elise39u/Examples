@@ -26,7 +26,7 @@
         {if isset($smarty.session.KeyPS)}
             <li><a href="Police.php"> Go inside if you dare</a></li>
             {else}
-            <li><a href="#"> Nothing Here </a> </li>
+            <li><a href="Meme.php"> Nothing Here </a> </li>
         {/if}
     </ul>
 

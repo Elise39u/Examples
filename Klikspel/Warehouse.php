@@ -382,7 +382,6 @@ function use_SerectPotion() {
     }
 }
 
-
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
 $smarty->assign('magic',getStat('mdef',$userID));

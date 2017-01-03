@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-14 11:21:07
+/* Smarty version 3.1.29, created on 2017-01-03 10:53:42
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Warehouse.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58511d1314a336_74963729',
+  'unifunc' => 'content_586b74a637c494_14942463',
   'file_dependency' => 
   array (
     '2458bdb09106c6332d4a551969b778f7cc785bac' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Warehouse.html.tpl',
-      1 => 1481710821,
+      1 => 1483431037,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58511d1314a336_74963729 ($_smarty_tpl) {
+function content_586b74a637c494_14942463 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>

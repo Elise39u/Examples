@@ -27,12 +27,12 @@
         {if isset($smarty.session.paddle)}
         <li><a href="End1.php"> Escape !! </a> </li>
         {else}
-        <li><a href="#"> Nothing here friend</a> </li>
+        <li><a href="Meme.php"> Nothing here friend</a> </li>
         {/if}
         {if isset($smarty.session.car)}
         <li><a href="Boat.php"> Take the boat </a> </li>
         {else}
-        <li><a href="#"> I SAID NOTHING HERE !</a> </li>
+        <li><a href="Meme.php"> I SAID NOTHING HERE !</a> </li>
         {/if}
     </ul>
 

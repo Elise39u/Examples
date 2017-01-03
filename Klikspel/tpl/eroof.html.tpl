@@ -27,7 +27,7 @@
         {if isset($smarty.session.antenne) AND isset($smarty.session.recvier) AND isset($smarty.session.versterker)}
         <li><a href="Message.php"> Build the Antenne </a> </li>
         {else}
-        <li><a href="#"> Nothing Here to see </a> </li>
+        <li><a href="Meme.php"> Nothing Here to see </a> </li>
         {/if}
         <li><a href="KeyPS.php"> a key 0.0?? </a> </li>
     </ul>

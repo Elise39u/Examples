@@ -25,7 +25,7 @@
         {if isset($smarty.session.KeyCB)}
             <li><a href="cabian.php"> GO inside the cabian </a></li>
             {else}
-            <li><a href="#"> Nothing here </a> </li>
+            <li><a href="Meme.php"> Nothing here </a> </li>
         {/if}
     </ul>
 
