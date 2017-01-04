@@ -127,7 +127,7 @@ switch ($monster) {
         $image = "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Clown.png'>";
         break;
     case "Cosmunat":
-        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/Cosmunat.png'>";
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Cosmunat.png'>";
         break;
     case "Grenadier":
         $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Grenadier.png'>";
@@ -192,7 +192,7 @@ switch ($monster) {
     case "Mutant":
         $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Mutant.png'>";
         break;
-    case "SpiderSmall":
+    case "SmallSpider":
         $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/SpiderSmall.png'>";
         break;
     case "Spider":

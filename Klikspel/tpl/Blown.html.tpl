@@ -17,15 +17,15 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> And agian street and shops </h1>
-    <p> And there you`re standing in front of the metal store.<br>
-        You look down through the window. You see nothing what now.<br>
-        Go in to the store or wait outside or turn back.</p>
-    <img src="img/metal.png">
+    <h1> 0.0 my house </h1>
+    <p> You`re looking at you`re house and think <br>
+        What did i do? <br>
+        But you see a serect tunnel and think he <br>
+    Should i take a look? </p>
+    <img src="img/BlownHouse.png">
     <ul>
-        <li><a href="AgianStreet.php"> Go back ^.^ </a></li>
-        <li><a href="Metal.php"> To The Store..... </a></li>
-        <li><a href="#"> Go talk to electrician Erik </a></li>
+        <li><a href="Outside.php"> Go back </a></li>
+        <li><a href="End5.php"> Look inside the tunnel </a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

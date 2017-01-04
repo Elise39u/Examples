@@ -34,22 +34,24 @@ while ($row = mysqli_fetch_assoc($result)) {
         if ($row['item_id'] == 54) {
             $_COOKIE['Quest'] = true;
         }
-}
-
-if ($_COOKIE['Quest'] == true) {
-    if (isset($_SESSION['PageNpc'])) {
-        $_SESSION['PageNpc']++;
     }
-    else {
-        $_SESSION['PageNpc'] = 1;
-    }
-    print_r($_SESSION['PageNpc']);
 }
 
 if (!isset($_COOKIE['Quest'])) {
-    setcookie('Quest', false, time() + 2147483647);
+        setcookie('Quest', false, time() + 2147483647);
 }
 
+if (isset($_COOKIE['Quest'])) {
+    if ($_COOKIE['Quest'] == true) {
+        if (isset($_SESSION['PageNpc'])) {
+            $_SESSION['PageNpc']++;
+        } else {
+            $_SESSION['PageNpc'] = 1;
+        }
+    }
+}
+
+if (isset($_COOKIE['Quest'])) {
     if ($_COOKIE['Quest'] == true) {
         $money = getStat('gc', $userID);
         $Hai = $money + 175;
@@ -98,6 +100,7 @@ if (!isset($_COOKIE['Quest'])) {
         }
     }
 }
+
 /*
  foreach($_COOKIE as $v){
     echo htmlentities($v, 6, 'UTF-8').'<br />';

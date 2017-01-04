@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-12 11:10:43
+/* Smarty version 3.1.29, created on 2017-01-04 08:43:11
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Ostation.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_584e77a301a291_26453190',
+  'unifunc' => 'content_586ca78f8250e9_11754612',
   'file_dependency' => 
   array (
     '7c816bc995a5e38f7b7901ea515dad7200f73be7' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Ostation.html.tpl',
-      1 => 1481537323,
+      1 => 1483437788,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_584e77a301a291_26453190 ($_smarty_tpl) {
+function content_586ca78f8250e9_11754612 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -57,7 +57,7 @@ function content_584e77a301a291_26453190 ($_smarty_tpl) {
         <?php if (isset($_SESSION['KeyPS'])) {?>
             <li><a href="Police.php"> Go inside if you dare</a></li>
             <?php } else { ?>
-            <li><a href="#"> Nothing Here </a> </li>
+            <li><a href="Meme.php"> Nothing Here </a> </li>
         <?php }?>
     </ul>
 

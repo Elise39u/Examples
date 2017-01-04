@@ -25,9 +25,9 @@
         <li><a href="Maintance.php"> Go inside </a></li>
         <li><a href="Monster.php"> Climb Down </a> </li>
         {if isset($smarty.session.TomaHawk)}
-            <li><a href="#"> Fire a missile towards the city</a></li>
+            <li><a href="Fire.php"> Fire a missile towards the city</a></li>
          {elseif isset($smarty.session.Shell)}
-            <li><a href="#"> Fire the cannon on the city</a> </li>
+            <li><a href="FireShell.php"> Fire the cannon on the city</a> </li>
         {/if}
     </ul>
 

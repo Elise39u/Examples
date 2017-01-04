@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-06 10:51:18
+/* Smarty version 3.1.29, created on 2017-01-03 16:19:36
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Outside.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58468a16f3c619_17553228',
+  'unifunc' => 'content_586bc1084ab175_32435225',
   'file_dependency' => 
   array (
     '31ab30a59e8c94633c5fab4540022adffb49dc6a' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Outside.html.tpl',
-      1 => 1481017869,
+      1 => 1483456766,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58468a16f3c619_17553228 ($_smarty_tpl) {
+function content_586bc1084ab175_32435225 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -56,7 +56,11 @@ function content_58468a16f3c619_17553228 ($_smarty_tpl) {
         Which way wil you go.</p>
     <img src="img/montage.jpg">
     <ul>
-        <li><a href="room.php"> Go back for Saftey ;) </a></li>
+        <?php if (isset($_SESSION['House'])) {?>
+            <li><a href="Blown.php"> What the fuck </a> </li>
+            <?php } else { ?>
+            <li><a href="room.php"> Go back for Saftey ;) </a></li>
+        <?php }?>
         <li><a href="Owood.php"> To some Wood </a></li>
         <li><a href="Oelectro.php"> TO some electro stuffie </a></li>
         <li><a href="Sand.php"> ... a sandpath -.- </a></li>

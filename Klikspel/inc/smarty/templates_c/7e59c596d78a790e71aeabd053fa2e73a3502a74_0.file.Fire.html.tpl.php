@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-04 08:59:49
-  from "C:\wamp64\www\Examplecode\Klikspel\tpl\Ocabian.html.tpl" */
+/* Smarty version 3.1.29, created on 2017-01-03 16:14:02
+  from "C:\wamp64\www\Examplecode\Klikspel\tpl\Fire.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586cab751bf891_75696300',
+  'unifunc' => 'content_586bbfbac78af0_01155956',
   'file_dependency' => 
   array (
-    '163c3e16bc07e33aafe3b187e19a42fdfad7bd87' => 
+    '7e59c596d78a790e71aeabd053fa2e73a3502a74' => 
     array (
-      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Ocabian.html.tpl',
-      1 => 1483437776,
+      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Fire.html.tpl',
+      1 => 1483456352,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586cab751bf891_75696300 ($_smarty_tpl) {
+function content_586bbfbac78af0_01155956 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -48,16 +48,12 @@ function content_586cab751bf891_75696300 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> Locked -.- </h1>
-    <p> Are you kidding, wel i need to go look for the key then  </p>
-    <img src="img/ShipDoor.png">
+    <h1> 0.0 </h1>
+    <p> As you wacht the missile been fired you think <br>
+        <strong> For GODSAKE WHAT DID I HIT </strong> </p>
+    <img src="img/ShipFire.png">
     <ul>
-        <li><a href="Maintance.php"> Go back </a></li>
-        <?php if (isset($_SESSION['KeyCB'])) {?>
-            <li><a href="cabian.php"> GO inside the cabian </a></li>
-            <?php } else { ?>
-            <li><a href="Meme.php"> Nothing here </a> </li>
-        <?php }?>
+        <li><a href="Deck.php"> Go back </a></li>
     </ul>
 
     <ul>

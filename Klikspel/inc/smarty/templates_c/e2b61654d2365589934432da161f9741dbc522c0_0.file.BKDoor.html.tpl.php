@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-12 08:34:11
+/* Smarty version 3.1.29, created on 2017-01-04 08:43:19
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\BKDoor.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_584e52f3686e72_43663178',
+  'unifunc' => 'content_586ca79778de31_40233107',
   'file_dependency' => 
   array (
     'e2b61654d2365589934432da161f9741dbc522c0' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\BKDoor.html.tpl',
-      1 => 1481528048,
+      1 => 1483437580,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_584e52f3686e72_43663178 ($_smarty_tpl) {
+function content_586ca79778de31_40233107 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -56,7 +56,7 @@ function content_584e52f3686e72_43663178 ($_smarty_tpl) {
         <?php if (isset($_SESSION['KeyBK'])) {?>
         <li><a href="Bank.php"> Go inside the bank </a> </li>
         <?php } else { ?>
-        <li><a href="#"> Nothing here Friend</a> </li>
+        <li><a href="Meme.php"> Nothing here Friend</a> </li>
         <?php }?>
         <li><a href="OBank.php"> Go back  </a> </li>
     </ul>

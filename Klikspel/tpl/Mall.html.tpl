@@ -24,6 +24,8 @@
         <li><a href="Deadend.php"> Go back and stop shopping ;-; </a></li>
         <li><a href="ItemShop.php"> Item Shop ?? </a></li>
         <li><a href="Warehouse.php"> Warehouse ??? </a></li>
+        <li><a href="#"> grocery store </a></li>
+        <li><a href="#"> Liquor store </a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-02 12:37:23
+/* Smarty version 3.1.29, created on 2017-01-04 08:59:50
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\cabian.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586a3b733e1673_82855456',
+  'unifunc' => 'content_586cab76bcf638_27481365',
   'file_dependency' => 
   array (
     'aa584e62372cf13e44cacb89db01c0d12e6d83c3' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\cabian.html.tpl',
-      1 => 1483357041,
+      1 => 1483431426,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586a3b733e1673_82855456 ($_smarty_tpl) {
+function content_586cab76bcf638_27481365 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -58,7 +58,7 @@ function content_586a3b733e1673_82855456 ($_smarty_tpl) {
         <li><a href="Jar.php"> A jar??  </a> </li>
         <li><a href="pickaxe.php"> A pickaxe -.-??  </a> </li>
         <?php if (isset($_SESSION['Sub'])) {?>
-            <li><a href="#"> Go to the sub base</a> </li>
+            <li><a href="SubE.php"> Go to the sub base</a> </li>
         <?php }?>
     </ul>
 

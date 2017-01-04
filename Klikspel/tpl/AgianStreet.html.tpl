@@ -29,6 +29,7 @@
         <li><a href="OMetal.php"> To the ... -.- Metal store </a></li>
         <li><a href="OGY.php"> Continu friend </a></li>
         <li><a href="Potion.php"> Potion Shop?? </a></li>
+        <li><a href="#"> Go talk to the Pregnant Emma </a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

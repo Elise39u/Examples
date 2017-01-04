@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Gegenereerd op: 03 jan 2017 om 15:02
+-- Gegenereerd op: 04 jan 2017 om 15:28
 -- Serverversie: 5.7.9
 -- PHP-versie: 5.6.16
 
@@ -140,14 +140,7 @@ CREATE TABLE IF NOT EXISTS `inventory` (
   `space` int(254) NOT NULL,
   `quantity` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
-
---
--- Gegevens worden geëxporteerd voor tabel `inventory`
---
-
-INSERT INTO `inventory` (`id`, `player_id`, `item_id`, `space`, `quantity`) VALUES
-(13, '3', 51, 50, 3);
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -162,7 +155,7 @@ CREATE TABLE IF NOT EXISTS `items` (
   `type` enum('Weapon','Armor','Usable','Drop','Potion','Flare','SeaMonster') DEFAULT NULL,
   `price` int(11) NOT NULL DEFAULT '10',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=107 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=108 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `items`
@@ -274,7 +267,8 @@ INSERT INTO `items` (`id`, `name`, `type`, `price`) VALUES
 (103, 'PickAxe', 'Usable', 100000),
 (104, 'TomaHawk', NULL, 43253223),
 (105, 'Navy Shell', NULL, 43253232),
-(106, 'PowerSwicht', NULL, 10000);
+(106, 'PowerSwicht', NULL, 10000),
+(107, 'Gray Potion', 'Potion', 24500);
 
 -- --------------------------------------------------------
 
@@ -289,7 +283,7 @@ CREATE TABLE IF NOT EXISTS `item_stats` (
   `stat_id` int(11) DEFAULT NULL,
   `content` text,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=231 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=232 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `item_stats`
@@ -497,7 +491,8 @@ INSERT INTO `item_stats` (`id`, `item_id`, `stat_id`, `content`) VALUES
 (227, 95, 12, '0'),
 (228, 102, 12, 'SerectPotion'),
 (229, 96, 12, '0'),
-(230, 100, 12, '0');
+(230, 100, 12, '0'),
+(231, 107, 12, 'GrayPotion');
 
 -- --------------------------------------------------------
 
@@ -669,7 +664,7 @@ CREATE TABLE IF NOT EXISTS `monster_stats` (
   `stat_id` int(11) DEFAULT NULL,
   `content` text,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2136 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=2137 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `monster_stats`
@@ -884,7 +879,8 @@ INSERT INTO `monster_stats` (`id`, `monster_id`, `stat_id`, `content`) VALUES
 (2132, 45, 2, '900'),
 (2133, 45, 4, '1100'),
 (2134, 45, 3, '11000'),
-(2135, 3, 8, '100');
+(2135, 3, 8, '100'),
+(2136, 3, 9, '100');
 
 -- --------------------------------------------------------
 
@@ -897,34 +893,37 @@ CREATE TABLE IF NOT EXISTS `npc` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `Name` varchar(1024) NOT NULL,
   `Place` varchar(1024) NOT NULL,
+  `Bio` varchar(2048) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=21 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `npc`
 --
 
-INSERT INTO `npc` (`id`, `Name`, `Place`) VALUES
-(1, 'John', 'Street.php'),
-(2, 'Soldier Kane', 'SubDocks.php\r\n'),
-(3, 'Widow Marjo', 'SubAhed.php'),
-(4, 'Icter Peter', 'SubNear.php'),
-(5, 'Explorer Arya ', 'SubNear.php'),
-(6, 'Wachter Nina', 'SubNear.php'),
-(7, 'Beuaty King Lauren', 'SubYard.php'),
-(8, 'photographer Mike', 'SubYard.php'),
-(9, 'Teacher Berna', 'SubYard.php'),
-(10, 'Coach Jeroen', 'SubYard.php'),
-(11, 'Coach Marieke', 'SubYard.php'),
-(12, 'Mother Lieke', 'SubYard.php'),
-(13, 'Data tracker Harmes', 'SubYard.php'),
-(14, 'Monsternon', 'SubYard.php'),
-(15, 'Sales Expert Elzie', 'SubYard.php'),
-(16, 'Student Ariëlle', 'SubYard.php'),
-(17, 'watcher of the kids Maxine', 'SubBack.php'),
-(18, 'Econoom Tim ', 'SubBack.php'),
-(19, 'Guard Paul', 'SubDoor.php\r\n'),
-(20, 'Bakfiest Group', 'SubSchool.php\r\n');
+INSERT INTO `npc` (`id`, `Name`, `Place`, `Bio`) VALUES
+(1, 'John', 'Street.php', 'BIO: I am John <br>" +\n        "i lived here for years and nothing would stop me <br> " +\n        "And i will  never leave the city <br>" +\n        "Not even by a zombie out break'),
+(2, 'Soldier Kane', 'SubDocks.php\r\n', 'BIO: I am Kane i served the army for 2 decades  <br>               i never thougt i would be a guard for a evac base'),
+(3, 'Widow Marjo', 'SubAhed.php', 'BIO: I am Marjolein but people call me marjo   <br> " +\n        "i lost mine husband on the blink of escape <br> " +\n        "And now i am very Depression'),
+(4, 'Icter Peter', 'SubNear.php', 'BIO: I am Peter i am a software developer for 15 years now   <br> " +\n        "And a ao teacher for 5 years <br> " +\n        "But when the city was infected i did straight go to here'),
+(5, 'Explorer Arya ', 'SubNear.php', NULL),
+(6, 'Wachter Nina', 'SubNear.php', NULL),
+(7, 'Beuaty King Lauren', 'SubYard.php', NULL),
+(8, 'photographer Mike', 'SubYard.php', NULL),
+(9, 'Teacher Berna', 'SubYard.php', NULL),
+(10, 'Coach Jeroen', 'SubYard.php', NULL),
+(11, 'Coach Marieke', 'SubYard.php', NULL),
+(12, 'Mother Lieke', 'SubYard.php', NULL),
+(13, 'Data tracker Harmes', 'SubYard.php', NULL),
+(14, 'Monsternon', 'SubYard.php', NULL),
+(15, 'Sales Expert Elzie', 'SubYard.php', NULL),
+(16, 'Student Ariëlle', 'SubYard.php', NULL),
+(17, 'watcher of the kids Maxine', 'SubBack.php', NULL),
+(18, 'Econoom Tim ', 'SubBack.php', NULL),
+(19, 'Guard Paul', 'SubDoor.php\r\n', NULL),
+(20, 'Bakfiest Group', 'SubSchool.php\r\n', NULL),
+(21, 'Pregnant Emma', 'AgianStreet.php', NULL),
+(22, 'Electrician Erik', 'OMetal.php', NULL);
 
 -- --------------------------------------------------------
 
@@ -965,7 +964,7 @@ CREATE TABLE IF NOT EXISTS `player_stats` (
   `stat_id` int(11) DEFAULT NULL,
   `content` text,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=570 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=572 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `player_stats`
@@ -980,17 +979,19 @@ INSERT INTO `player_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
 (6, 1, 7, '50'),
 (7, 1, 6, '25'),
 (545, 2, 9, ''),
+(571, 3, 9, ''),
+(570, 3, 8, ''),
 (544, 2, 8, ''),
-(569, 3, 11, '30030.00016'),
+(569, 3, 11, '5000'),
 (506, 1, 8, ''),
-(568, 3, 3, '4185'),
+(568, 3, 3, '580'),
 (496, 1, 10, ''),
 (495, 1, 9, ''),
 (567, 3, 7, '50'),
-(566, 3, 2, '200'),
-(563, 3, 4, '1000'),
+(566, 3, 2, '100'),
+(563, 3, 4, '300'),
 (564, 3, 6, '25'),
-(562, 3, 5, '1050'),
+(562, 3, 5, '130'),
 (529, 2, 11, '5000'),
 (528, 2, 3, '250'),
 (527, 2, 7, '50'),
@@ -999,7 +1000,7 @@ INSERT INTO `player_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
 (524, 2, 6, '25'),
 (523, 2, 4, '300'),
 (522, 2, 5, '175'),
-(565, 3, 1, '950.128'),
+(565, 3, 1, '80'),
 (510, 1, 11, '5000');
 
 -- --------------------------------------------------------
@@ -1016,7 +1017,7 @@ CREATE TABLE IF NOT EXISTS `quest` (
   `Gold` int(11) DEFAULT NULL,
   `Reward` varchar(1024) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `quest`
@@ -1028,7 +1029,19 @@ INSERT INTO `quest` (`id`, `Name`, `Npc_id`, `Gold`, `Reward`) VALUES
 (3, 'Helping Hand', 11, 1250, 'Npc 11 as buddy'),
 (4, 'Coaching a Book', 10, 2250, 'NULL'),
 (5, 'Data is a Nut', 13, 4500, 'Laptop'),
-(6, 'Learning Why?', 9, 1000, '+50 Def');
+(6, 'Learning Why?', 9, 1000, '+50 Def'),
+(7, 'Guns And Roses  ', 2, 2500, 'Info About a serect place'),
+(8, 'happiness', 3, 150, 'NULL'),
+(9, 'Girl Dreams', 7, 6000, 'NULL'),
+(10, 'Recording', 7, 1250, 'NULL'),
+(11, 'Picture Smile', 8, 250, 'KeySP (Rest of the ship)'),
+(12, 'On the Hunt', 8, 3750, 'NULL'),
+(13, 'Thurst nope', 12, 2350, 'NULL'),
+(14, 'Treat time', 17, 675, 'Info about a serect place '),
+(15, 'Math time :(', 18, 1780, 'Info About a serect place'),
+(16, 'Something to do', 19, 375, 'Access futher in the base '),
+(17, '#Bakfiest For LEader', 14, 2650, 'NULL'),
+(18, 'Help on the way', 10, 2450, 'New Place --> School');
 
 -- --------------------------------------------------------
 

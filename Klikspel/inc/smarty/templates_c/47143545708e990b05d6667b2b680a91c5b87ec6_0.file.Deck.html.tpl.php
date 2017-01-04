@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-16 12:51:03
+/* Smarty version 3.1.29, created on 2017-01-03 16:13:50
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Deck.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5853d52759b103_19686963',
+  'unifunc' => 'content_586bbfae878e50_87315511',
   'file_dependency' => 
   array (
     '47143545708e990b05d6667b2b680a91c5b87ec6' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Deck.html.tpl',
-      1 => 1481889058,
+      1 => 1483456188,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5853d52759b103_19686963 ($_smarty_tpl) {
+function content_586bbfae878e50_87315511 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -56,9 +56,9 @@ function content_5853d52759b103_19686963 ($_smarty_tpl) {
         <li><a href="Maintance.php"> Go inside </a></li>
         <li><a href="Monster.php"> Climb Down </a> </li>
         <?php if (isset($_SESSION['TomaHawk'])) {?>
-            <li><a href="#"> Fire a missile towards the city</a></li>
+            <li><a href="Fire.php"> Fire a missile towards the city</a></li>
          <?php } elseif (isset($_SESSION['Shell'])) {?>
-            <li><a href="#"> Fire the cannon on the city</a> </li>
+            <li><a href="FireShell.php"> Fire the cannon on the city</a> </li>
         <?php }?>
     </ul>
 

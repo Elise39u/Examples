@@ -91,7 +91,7 @@ if(isset($_POST['item-id'])) {
                     $sql = "INSERT INTO Inventory(player_id, item_id, space, quantity) VALUES ($userID, '$itemID', '$space', $Quantity)";
                     mysqli_query($mysqli, $sql);
                     setStat('gc', $userID, ($gold - $LOL));
-                    $smarty->assign('message', 'You Bought This  ' . $Quantity . ' Items!');
+                    $smarty->assign('message', 'You Bought ' . $Quantity . ' Up an Items!');
                     }
                 }
             }

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-04 08:59:49
-  from "C:\wamp64\www\Examplecode\Klikspel\tpl\Ocabian.html.tpl" */
+/* Smarty version 3.1.29, created on 2017-01-03 16:39:25
+  from "C:\wamp64\www\Examplecode\Klikspel\tpl\Blown.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586cab751bf891_75696300',
+  'unifunc' => 'content_586bc5adbe7e00_07518134',
   'file_dependency' => 
   array (
-    '163c3e16bc07e33aafe3b187e19a42fdfad7bd87' => 
+    '1aaefaef956c30c25346142291c40c7d94409430' => 
     array (
-      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Ocabian.html.tpl',
-      1 => 1483437776,
+      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Blown.html.tpl',
+      1 => 1483457916,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586cab751bf891_75696300 ($_smarty_tpl) {
+function content_586bc5adbe7e00_07518134 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -48,18 +48,16 @@ function content_586cab751bf891_75696300 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> Locked -.- </h1>
-    <p> Are you kidding, wel i need to go look for the key then  </p>
-    <img src="img/ShipDoor.png">
+    <h1> 0.0 my house </h1>
+    <p> You`re looking at you`re house and think <br>
+        What did i do? <br>
+        But you see a serect tunnel and think he <br>
+    Should i take a look? </p>
+    <img src="img/BlownHouse.png">
     <ul>
-        <li><a href="Maintance.php"> Go back </a></li>
-        <?php if (isset($_SESSION['KeyCB'])) {?>
-            <li><a href="cabian.php"> GO inside the cabian </a></li>
-            <?php } else { ?>
-            <li><a href="Meme.php"> Nothing here </a> </li>
-        <?php }?>
+        <li><a href="Outside.php"> Go back </a></li>
+        <li><a href="End5.php"> Look inside the tunnel </a></li>
     </ul>
-
     <ul>
         <?php
 $_from = $_smarty_tpl->tpl_vars['inventory']->value;

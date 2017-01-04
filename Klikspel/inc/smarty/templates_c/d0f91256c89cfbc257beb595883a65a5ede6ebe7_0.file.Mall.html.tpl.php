@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-06 11:28:48
+/* Smarty version 3.1.29, created on 2017-01-04 08:35:11
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Mall.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_584692e0725285_02736785',
+  'unifunc' => 'content_586ca5af5a5695_73510236',
   'file_dependency' => 
   array (
     'd0f91256c89cfbc257beb595883a65a5ede6ebe7' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Mall.html.tpl',
-      1 => 1481020128,
+      1 => 1483515307,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_584692e0725285_02736785 ($_smarty_tpl) {
+function content_586ca5af5a5695_73510236 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -55,6 +55,8 @@ function content_584692e0725285_02736785 ($_smarty_tpl) {
         <li><a href="Deadend.php"> Go back and stop shopping ;-; </a></li>
         <li><a href="ItemShop.php"> Item Shop ?? </a></li>
         <li><a href="Warehouse.php"> Warehouse ??? </a></li>
+        <li><a href="#"> grocery store </a></li>
+        <li><a href="#"> Liquor store </a></li>
     </ul>
     <ul>
         <?php

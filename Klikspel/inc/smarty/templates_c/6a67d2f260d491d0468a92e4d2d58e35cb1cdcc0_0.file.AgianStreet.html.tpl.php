@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-07 11:27:17
+/* Smarty version 3.1.29, created on 2017-01-04 11:47:13
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\AgianStreet.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5847e405830837_07854133',
+  'unifunc' => 'content_586cd2b15f45f5_57483494',
   'file_dependency' => 
   array (
     '6a67d2f260d491d0468a92e4d2d58e35cb1cdcc0' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\AgianStreet.html.tpl',
-      1 => 1481105583,
+      1 => 1483526831,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5847e405830837_07854133 ($_smarty_tpl) {
+function content_586cd2b15f45f5_57483494 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -60,6 +60,7 @@ function content_5847e405830837_07854133 ($_smarty_tpl) {
         <li><a href="OMetal.php"> To the ... -.- Metal store </a></li>
         <li><a href="OGY.php"> Continu friend </a></li>
         <li><a href="Potion.php"> Potion Shop?? </a></li>
+        <li><a href="#"> Go talk to the Pregnant Emma </a></li>
     </ul>
     <ul>
         <?php

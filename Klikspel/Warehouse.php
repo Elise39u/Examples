@@ -25,7 +25,7 @@ $actions = array('L_Red_potion' => 'Potion', 'D_Red_potion' => 'Potion', 'L_Purp
     'L_Yellow_potion' => 'use_L_Yellow_potion', 'D_Yellow_potion' => 'use_D_Yellow_potion', 'L_Green_potion' => 'use_L_Green_potion',
     'Green_potion' => 'use_Green_potion', 'D_Green_potion' => 'use_D_Green_potion', 'L_Pink_potion' => 'use_L_Pink_potion',
     'D_Pink_potion' => 'use_D_Pink_potion', 'Rainbow_potion' => 'use_Rainbow_potion', 'item' => 'use_item', 'Blackpotion' => 'use_Blackpotion',
-    'SerectPotion' => 'use_SerectPotion');
+    'SerectPotion' => 'use_SerectPotion', 'GrayPotion' => 'use_GrayPotion');
 
 if (isset($_POST['item-id'])) {
     // $itemID = $_POST['item-id
@@ -382,6 +382,14 @@ function use_SerectPotion() {
     }
 }
 
+function use_GrayPotion() {
+    global $userID;
+    $def= getStat('def', $userID);
+    $Hai = $def * 3;
+    if (isset($Hai)) {
+        setStat('def', $userID, $Hai);
+    }
+}
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
 $smarty->assign('magic',getStat('mdef',$userID));

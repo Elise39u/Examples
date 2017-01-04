@@ -25,7 +25,11 @@
         Which way wil you go.</p>
     <img src="img/montage.jpg">
     <ul>
-        <li><a href="room.php"> Go back for Saftey ;) </a></li>
+        {if isset($smarty.session.House)}
+            <li><a href="Blown.php"> What the fuck </a> </li>
+            {else}
+            <li><a href="room.php"> Go back for Saftey ;) </a></li>
+        {/if}
         <li><a href="Owood.php"> To some Wood </a></li>
         <li><a href="Oelectro.php"> TO some electro stuffie </a></li>
         <li><a href="Sand.php"> ... a sandpath -.- </a></li>
