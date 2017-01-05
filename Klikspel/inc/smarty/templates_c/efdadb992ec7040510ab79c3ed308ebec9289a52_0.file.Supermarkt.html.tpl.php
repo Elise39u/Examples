@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-05 12:39:39
-  from "C:\wamp64\www\Examplecode\Klikspel\tpl\Mall.html.tpl" */
+/* Smarty version 3.1.29, created on 2017-01-05 12:31:50
+  from "C:\wamp64\www\Examplecode\Klikspel\tpl\Supermarkt.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586e307b334584_21803232',
+  'unifunc' => 'content_586e2ea6a0ba61_98073698',
   'file_dependency' => 
   array (
-    'd0f91256c89cfbc257beb595883a65a5ede6ebe7' => 
+    'efdadb992ec7040510ab79c3ed308ebec9289a52' => 
     array (
-      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Mall.html.tpl',
-      1 => 1483616171,
+      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Supermarkt.html.tpl',
+      1 => 1483615899,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586e307b334584_21803232 ($_smarty_tpl) {
+function content_586e2ea6a0ba61_98073698 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -48,16 +48,14 @@ function content_586e307b334584_21803232 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> The mall  </h1>
-    <p> In the distence are a few shops? dare to go to it </p>
-    <img src="img/mall.png">
+    <h1> A markt  </h1>
+    <p> Well there you standing <br>
+    Nothing to see maby look deeper in the store</p>
+    <img src="img/SuperMarkt.png">
     <ul>
-        <li><a href="Deadend.php"> Go back and stop shopping ;-; </a></li>
-        <li><a href="ItemShop.php"> Item Shop ?? </a></li>
-        <li><a href="Warehouse.php"> Warehouse ??? </a></li>
-        <li><a href="Supermarkt.php"> grocery store </a></li>
-        <li><a href="Liquor.php"> Liquor store </a></li>
-        <li><a href="yard.php"> Go outside on the other side </a></li>
+        <li><a href="Mall.php"> Go back in the mall </a></li>
+        <li><a href="#"> Go look for food </a></li>
+        <li><a href="#"> Go look for something to drink </a></li>
     </ul>
     <ul>
         <?php

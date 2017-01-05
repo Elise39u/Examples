@@ -17,16 +17,12 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> The mall  </h1>
-    <p> In the distence are a few shops? dare to go to it </p>
-    <img src="img/mall.png">
+    <h1> The Theater  </h1>
+    <p> As you take a look you see nothing <br>
+    but was it always nice here back then in the old days </p>
+    <img src="img/HotelTheater.png">
     <ul>
-        <li><a href="Deadend.php"> Go back and stop shopping ;-; </a></li>
-        <li><a href="ItemShop.php"> Item Shop ?? </a></li>
-        <li><a href="Warehouse.php"> Warehouse ??? </a></li>
-        <li><a href="Supermarkt.php"> grocery store </a></li>
-        <li><a href="Liquor.php"> Liquor store </a></li>
-        <li><a href="yard.php"> Go outside on the other side </a></li>
+        <li><a href="HotelE.php"> Go back </a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

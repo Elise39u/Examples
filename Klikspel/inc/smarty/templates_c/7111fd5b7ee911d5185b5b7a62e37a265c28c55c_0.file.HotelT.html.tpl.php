@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-05 12:39:39
-  from "C:\wamp64\www\Examplecode\Klikspel\tpl\Mall.html.tpl" */
+/* Smarty version 3.1.29, created on 2017-01-05 14:14:47
+  from "C:\wamp64\www\Examplecode\Klikspel\tpl\HotelT.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586e307b334584_21803232',
+  'unifunc' => 'content_586e46c75ab465_40238677',
   'file_dependency' => 
   array (
-    'd0f91256c89cfbc257beb595883a65a5ede6ebe7' => 
+    '7111fd5b7ee911d5185b5b7a62e37a265c28c55c' => 
     array (
-      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Mall.html.tpl',
-      1 => 1483616171,
+      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\HotelT.html.tpl',
+      1 => 1483622071,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586e307b334584_21803232 ($_smarty_tpl) {
+function content_586e46c75ab465_40238677 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -48,16 +48,12 @@ function content_586e307b334584_21803232 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> The mall  </h1>
-    <p> In the distence are a few shops? dare to go to it </p>
-    <img src="img/mall.png">
+    <h1> The Theater  </h1>
+    <p> As you take a look you see nothing <br>
+    but was it always nice here back then in the old days </p>
+    <img src="img/HotelTheater.png">
     <ul>
-        <li><a href="Deadend.php"> Go back and stop shopping ;-; </a></li>
-        <li><a href="ItemShop.php"> Item Shop ?? </a></li>
-        <li><a href="Warehouse.php"> Warehouse ??? </a></li>
-        <li><a href="Supermarkt.php"> grocery store </a></li>
-        <li><a href="Liquor.php"> Liquor store </a></li>
-        <li><a href="yard.php"> Go outside on the other side </a></li>
+        <li><a href="HotelE.php"> Go back </a></li>
     </ul>
     <ul>
         <?php

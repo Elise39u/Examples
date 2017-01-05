@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-05 12:39:39
-  from "C:\wamp64\www\Examplecode\Klikspel\tpl\Mall.html.tpl" */
+/* Smarty version 3.1.29, created on 2017-01-05 16:09:08
+  from "C:\wamp64\www\Examplecode\Klikspel\tpl\HotelFloor.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586e307b334584_21803232',
+  'unifunc' => 'content_586e61940ad7f3_16643285',
   'file_dependency' => 
   array (
-    'd0f91256c89cfbc257beb595883a65a5ede6ebe7' => 
+    '2c3f47de36d06956b2d82749d8cb9b0afe6ada93' => 
     array (
-      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Mall.html.tpl',
-      1 => 1483616171,
+      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\HotelFloor.html.tpl',
+      1 => 1483628946,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586e307b334584_21803232 ($_smarty_tpl) {
+function content_586e61940ad7f3_16643285 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -48,16 +48,15 @@ function content_586e307b334584_21803232 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> The mall  </h1>
-    <p> In the distence are a few shops? dare to go to it </p>
-    <img src="img/mall.png">
+    <h1> The First Floor  </h1>
+    <p> You look around And rember that you need to refist the next rooms: <br>
+        Room 506 and Room 508 </p>
+    <img src="img/HotelFirst.png">
     <ul>
-        <li><a href="Deadend.php"> Go back and stop shopping ;-; </a></li>
-        <li><a href="ItemShop.php"> Item Shop ?? </a></li>
-        <li><a href="Warehouse.php"> Warehouse ??? </a></li>
-        <li><a href="Supermarkt.php"> grocery store </a></li>
-        <li><a href="Liquor.php"> Liquor store </a></li>
-        <li><a href="yard.php"> Go outside on the other side </a></li>
+        <li><a href="HotelStair.php"> Go back downstairs </a></li>
+        <li><a href="#"> Go To room 506 </a></li>
+        <li><a href="#"> Go To room 508 </a></li>
+        <li><a href="#"> Go to the balcony </a></li>
     </ul>
     <ul>
         <?php

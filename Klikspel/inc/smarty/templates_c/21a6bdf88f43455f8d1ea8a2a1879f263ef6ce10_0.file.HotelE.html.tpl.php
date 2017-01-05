@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-05 12:39:39
-  from "C:\wamp64\www\Examplecode\Klikspel\tpl\Mall.html.tpl" */
+/* Smarty version 3.1.29, created on 2017-01-05 14:14:46
+  from "C:\wamp64\www\Examplecode\Klikspel\tpl\HotelE.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586e307b334584_21803232',
+  'unifunc' => 'content_586e46c6436096_17675681',
   'file_dependency' => 
   array (
-    'd0f91256c89cfbc257beb595883a65a5ede6ebe7' => 
+    '21a6bdf88f43455f8d1ea8a2a1879f263ef6ce10' => 
     array (
-      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Mall.html.tpl',
-      1 => 1483616171,
+      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\HotelE.html.tpl',
+      1 => 1483622084,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586e307b334584_21803232 ($_smarty_tpl) {
+function content_586e46c6436096_17675681 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -48,16 +48,17 @@ function content_586e307b334584_21803232 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> The mall  </h1>
-    <p> In the distence are a few shops? dare to go to it </p>
-    <img src="img/mall.png">
+    <h1> The Lobby  </h1>
+    <p> You look around and see a sing thats says 300 rooms per floor <br>
+    And think wich room was i suppose to be <br>
+    or even wich way to go</p>
+    <img src="img/Hotelreception.png">
     <ul>
-        <li><a href="Deadend.php"> Go back and stop shopping ;-; </a></li>
-        <li><a href="ItemShop.php"> Item Shop ?? </a></li>
-        <li><a href="Warehouse.php"> Warehouse ??? </a></li>
-        <li><a href="Supermarkt.php"> grocery store </a></li>
-        <li><a href="Liquor.php"> Liquor store </a></li>
-        <li><a href="yard.php"> Go outside on the other side </a></li>
+        <li><a href="HotelN.php"> Go back outside </a></li>
+        <li><a href="HotelStair.php"> Go towards the stairway </a></li>
+        <li><a href="HotelD.php"> Go towards the dinning room </a></li>
+        <li><a href="HotelT.php"> Go towards the Theater </a></li>
+        <li><a href="#"> Go talk to Owner Anna </a></li>
     </ul>
     <ul>
         <?php

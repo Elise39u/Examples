@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Gegenereerd op: 04 jan 2017 om 15:28
+-- Gegenereerd op: 05 jan 2017 om 15:17
 -- Serverversie: 5.7.9
 -- PHP-versie: 5.6.16
 
@@ -140,7 +140,7 @@ CREATE TABLE IF NOT EXISTS `inventory` (
   `space` int(254) NOT NULL,
   `quantity` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -895,7 +895,7 @@ CREATE TABLE IF NOT EXISTS `npc` (
   `Place` varchar(1024) NOT NULL,
   `Bio` varchar(2048) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=26 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `npc`
@@ -906,15 +906,15 @@ INSERT INTO `npc` (`id`, `Name`, `Place`, `Bio`) VALUES
 (2, 'Soldier Kane', 'SubDocks.php\r\n', 'BIO: I am Kane i served the army for 2 decades  <br>               i never thougt i would be a guard for a evac base'),
 (3, 'Widow Marjo', 'SubAhed.php', 'BIO: I am Marjolein but people call me marjo   <br> " +\n        "i lost mine husband on the blink of escape <br> " +\n        "And now i am very Depression'),
 (4, 'Icter Peter', 'SubNear.php', 'BIO: I am Peter i am a software developer for 15 years now   <br> " +\n        "And a ao teacher for 5 years <br> " +\n        "But when the city was infected i did straight go to here'),
-(5, 'Explorer Arya ', 'SubNear.php', NULL),
-(6, 'Wachter Nina', 'SubNear.php', NULL),
-(7, 'Beuaty King Lauren', 'SubYard.php', NULL),
-(8, 'photographer Mike', 'SubYard.php', NULL),
-(9, 'Teacher Berna', 'SubYard.php', NULL),
-(10, 'Coach Jeroen', 'SubYard.php', NULL),
-(11, 'Coach Marieke', 'SubYard.php', NULL),
-(12, 'Mother Lieke', 'SubYard.php', NULL),
-(13, 'Data tracker Harmes', 'SubYard.php', NULL),
+(5, 'Explorer Arya ', 'SubNear.php', 'BIO: I am Arya and i am in the deep shit of my life  <br> " +\n        "Kicked of stage, Trouble with school enzv. <br> " +\n        "I was on holliday here with my friends but when the outbreak started i never heard of them again'),
+(6, 'Wachter Nina', 'SubNear.php', 'BIO: I am Nina I hold a look on the one that come here  <br> " +\n        "I keep the order and make sure it safe here <br> " +\n        "And for sure there walking a few soldier around here'),
+(7, 'Beuaty King Lauren', 'SubYard.php', 'BIO: I am Lauren I hold a beauty blog and beauty insta en pinterset  <br> " +\n        "it was so delux life but yeah then the outbreak came <br> " +\n        "A i want back to my old life'),
+(8, 'photographer Mike', 'SubYard.php', 'BIO: I am Mike I used to photograph the nature  <br> " +\n        "But with the outbreak that was kind of difficult <br> " +\n        "So i ran away to here with some other people'),
+(9, 'Teacher Berna', 'SubYard.php', 'BIO: I am Berna after teaching for 12 years on the davinci i moved to new york  <br> " +\n        "This is because i got a job offer to teach english en ducht here <br> " +\n        "As you think why i did this is because of the view <br>" +\n        "Only not nowing of a outbreak'),
+(10, 'Coach Jeroen', 'SubYard.php', 'BIO: I am Jeroen and i was on holliyday with Coach Marieke here in new york  <br> " +\n        "After we left davinci we said together lets go on a trip <br> " +\n        "so we went to londen, Tortno and now we are here <br>" +\n        "We have regrat that we went to new york at this time'),
+(11, 'Coach Marieke', 'SubYard.php', 'BIO: I am Marieke and i was on holliyday with Coach Jeroen here in new york  <br> " +\n        "After we left davinci we said together lets go on a trip <br> " +\n        "so we went to londen, Tortno and now we are here <br>" +\n        "We have regrat that we went to new york at this time'),
+(12, 'Mother Lieke', 'SubYard.php', 'BIO: I am Lieke i am mother of 2 kids  <br> " +\n        "There are my only thing lefr now so <br> " +\n        "But they are thisrty and i cant do anything <br>" +\n        "I loved new yoerk but the outbreak was a pain in the ass'),
+(13, 'Data tracker Harmes', 'SubYard.php', 'BIO: I am Harrems i teach DataIt on davinci  <br> " +\n        "I was here only on holiday but never thought of this <br> " +\n        "Will we get home sometimes'),
 (14, 'Monsternon', 'SubYard.php', NULL),
 (15, 'Sales Expert Elzie', 'SubYard.php', NULL),
 (16, 'Student Ariëlle', 'SubYard.php', NULL),
@@ -923,7 +923,10 @@ INSERT INTO `npc` (`id`, `Name`, `Place`, `Bio`) VALUES
 (19, 'Guard Paul', 'SubDoor.php\r\n', NULL),
 (20, 'Bakfiest Group', 'SubSchool.php\r\n', NULL),
 (21, 'Pregnant Emma', 'AgianStreet.php', NULL),
-(22, 'Electrician Erik', 'OMetal.php', NULL);
+(22, 'Electrician Erik', 'OMetal.php', NULL),
+(23, 'Hotel Owner Anna', 'HotelE.php', NULL),
+(24, 'Singer Gorden en geer', 'HotelStair.php\r\n', NULL),
+(25, 'Chef Hans', 'HotelD.php\r\n', NULL);
 
 -- --------------------------------------------------------
 
@@ -984,14 +987,14 @@ INSERT INTO `player_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
 (544, 2, 8, ''),
 (569, 3, 11, '5000'),
 (506, 1, 8, ''),
-(568, 3, 3, '580'),
+(568, 3, 3, '660'),
 (496, 1, 10, ''),
 (495, 1, 9, ''),
 (567, 3, 7, '50'),
 (566, 3, 2, '100'),
 (563, 3, 4, '300'),
 (564, 3, 6, '25'),
-(562, 3, 5, '130'),
+(562, 3, 5, '150'),
 (529, 2, 11, '5000'),
 (528, 2, 3, '250'),
 (527, 2, 7, '50'),
@@ -1017,7 +1020,7 @@ CREATE TABLE IF NOT EXISTS `quest` (
   `Gold` int(11) DEFAULT NULL,
   `Reward` varchar(1024) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=21 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `quest`
@@ -1041,7 +1044,9 @@ INSERT INTO `quest` (`id`, `Name`, `Npc_id`, `Gold`, `Reward`) VALUES
 (15, 'Math time :(', 18, 1780, 'Info About a serect place'),
 (16, 'Something to do', 19, 375, 'Access futher in the base '),
 (17, '#Bakfiest For LEader', 14, 2650, 'NULL'),
-(18, 'Help on the way', 10, 2450, 'New Place --> School');
+(18, 'Help on the way', 10, 2450, 'New Place --> School'),
+(19, 'Lost Friends', 5, 1250, 'NULL'),
+(20, 'A blink for a eye', 6, 550, 'NULL');
 
 -- --------------------------------------------------------
 
