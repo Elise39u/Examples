@@ -23,9 +23,9 @@
     <img src="img/HotelFirst.png">
     <ul>
         <li><a href="HotelStair.php"> Go back downstairs </a></li>
-        <li><a href="#"> Go To room 506 </a></li>
-        <li><a href="#"> Go To room 508 </a></li>
-        <li><a href="#"> Go to the balcony </a></li>
+        <li><a href="HotelRoom506.php"> Go To room 506 </a></li>
+        <li><a href="HotelRoom508.php"> Go To room 508 </a></li>
+        <li><a href="HotelBalcony.php"> Go to the balcony </a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

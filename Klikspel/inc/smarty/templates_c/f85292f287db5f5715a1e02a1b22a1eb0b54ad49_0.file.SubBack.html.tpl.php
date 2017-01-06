@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-03 10:51:39
+/* Smarty version 3.1.29, created on 2017-01-06 13:34:27
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\SubBack.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586b742be6ebb9_12874912',
+  'unifunc' => 'content_586f8ed39d85e2_08226245',
   'file_dependency' => 
   array (
     'f85292f287db5f5715a1e02a1b22a1eb0b54ad49' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\SubBack.html.tpl',
-      1 => 1483436991,
+      1 => 1483705913,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586b742be6ebb9_12874912 ($_smarty_tpl) {
+function content_586f8ed39d85e2_08226245 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -56,8 +56,8 @@ function content_586b742be6ebb9_12874912 ($_smarty_tpl) {
     <img src="img/SpaceSubBase.png">
     <ul>
         <li><a href="SubYard.php"> Go back  </a></li>
-        <li><a href="#"> Go towards the school </a></li>
-        <li><a href="#"> Go towards the playground </a></li>
+        <li><a href="SubSchool.php"> Go towards the school </a></li>
+        <li><a href="SubPlayyard.php"> Go towards the playground </a></li>
         <li><a href="SubDoor.php"> Go on</a></li>
         <li><a href="#"> Go Talk to watcher of the kids Maxine </a></li>
         <li><a href="#"> Go talk to Econoom Tim </a></li>

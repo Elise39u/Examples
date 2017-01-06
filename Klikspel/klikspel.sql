@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Gegenereerd op: 05 jan 2017 om 15:17
+-- Gegenereerd op: 06 jan 2017 om 13:23
 -- Serverversie: 5.7.9
 -- PHP-versie: 5.6.16
 
@@ -140,7 +140,7 @@ CREATE TABLE IF NOT EXISTS `inventory` (
   `space` int(254) NOT NULL,
   `quantity` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -895,7 +895,7 @@ CREATE TABLE IF NOT EXISTS `npc` (
   `Place` varchar(1024) NOT NULL,
   `Bio` varchar(2048) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=26 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=40 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `npc`
@@ -926,7 +926,21 @@ INSERT INTO `npc` (`id`, `Name`, `Place`, `Bio`) VALUES
 (22, 'Electrician Erik', 'OMetal.php', NULL),
 (23, 'Hotel Owner Anna', 'HotelE.php', NULL),
 (24, 'Singer Gorden en geer', 'HotelStair.php\r\n', NULL),
-(25, 'Chef Hans', 'HotelD.php\r\n', NULL);
+(25, 'Chef Hans', 'HotelD.php\r\n', NULL),
+(26, 'Teacher Imre', 'SchoolClass1.php', NULL),
+(27, 'Coach Corine', 'SchoolClass1.php', NULL),
+(28, 'Student Dylan', 'SchoolClass1.php', NULL),
+(29, 'Students Sanne en Robin', 'SchoolClass2.php', NULL),
+(30, 'electrician teacher Edwin', 'SchoolClass2.php', NULL),
+(31, 'Art teacher Christina', 'SchoolAula.php\r\n', NULL),
+(32, 'Gothic Kids', 'SchoolStair.php', NULL),
+(33, 'Director Kees', 'SchoolClass3.php', NULL),
+(34, 'Teacher Hans', 'SchoolClass3.php', NULL),
+(35, 'Teacher Eduwan', 'SchoolClass5.php\r\n', NULL),
+(36, 'Student Jos', 'SchoolClass6.php', NULL),
+(37, 'Student Brain', 'SchoolClass6.php', NULL),
+(38, 'programmer Youri and Pieter', 'SchoolClass7.php', NULL),
+(39, 'teacher Ingrit', 'SchoolClass7.php', NULL);
 
 -- --------------------------------------------------------
 
@@ -987,14 +1001,14 @@ INSERT INTO `player_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
 (544, 2, 8, ''),
 (569, 3, 11, '5000'),
 (506, 1, 8, ''),
-(568, 3, 3, '660'),
+(568, 3, 3, '250'),
 (496, 1, 10, ''),
 (495, 1, 9, ''),
 (567, 3, 7, '50'),
 (566, 3, 2, '100'),
 (563, 3, 4, '300'),
 (564, 3, 6, '25'),
-(562, 3, 5, '150'),
+(562, 3, 5, '175'),
 (529, 2, 11, '5000'),
 (528, 2, 3, '250'),
 (527, 2, 7, '50'),

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-05 16:09:08
+/* Smarty version 3.1.29, created on 2017-01-06 08:48:57
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\HotelFloor.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586e61940ad7f3_16643285',
+  'unifunc' => 'content_586f4be9526544_35500944',
   'file_dependency' => 
   array (
     '2c3f47de36d06956b2d82749d8cb9b0afe6ada93' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\HotelFloor.html.tpl',
-      1 => 1483628946,
+      1 => 1483688925,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586e61940ad7f3_16643285 ($_smarty_tpl) {
+function content_586f4be9526544_35500944 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -54,9 +54,9 @@ function content_586e61940ad7f3_16643285 ($_smarty_tpl) {
     <img src="img/HotelFirst.png">
     <ul>
         <li><a href="HotelStair.php"> Go back downstairs </a></li>
-        <li><a href="#"> Go To room 506 </a></li>
-        <li><a href="#"> Go To room 508 </a></li>
-        <li><a href="#"> Go to the balcony </a></li>
+        <li><a href="HotelRoom506.php"> Go To room 506 </a></li>
+        <li><a href="HotelRoom508.php"> Go To room 508 </a></li>
+        <li><a href="HotelBalcony.php"> Go to the balcony </a></li>
     </ul>
     <ul>
         <?php

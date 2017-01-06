@@ -25,8 +25,8 @@
     <img src="img/SpaceSubBase.png">
     <ul>
         <li><a href="SubYard.php"> Go back  </a></li>
-        <li><a href="#"> Go towards the school </a></li>
-        <li><a href="#"> Go towards the playground </a></li>
+        <li><a href="SubSchool.php"> Go towards the school </a></li>
+        <li><a href="SubPlayyard.php"> Go towards the playground </a></li>
         <li><a href="SubDoor.php"> Go on</a></li>
         <li><a href="#"> Go Talk to watcher of the kids Maxine </a></li>
         <li><a href="#"> Go talk to Econoom Tim </a></li>

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-05 12:52:11
+/* Smarty version 3.1.29, created on 2017-01-06 09:04:41
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\yard.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586e336b321130_75846185',
+  'unifunc' => 'content_586f4f99e5db39_17246938',
   'file_dependency' => 
   array (
     '5ed446fa5bfeb89a7436ad952fe28d5527d81983' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\yard.html.tpl',
-      1 => 1483616909,
+      1 => 1483689584,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586e336b321130_75846185 ($_smarty_tpl) {
+function content_586f4f99e5db39_17246938 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -57,7 +57,7 @@ function content_586e336b321130_75846185 ($_smarty_tpl) {
     <ul>
         <li><a href="Mall.php"> Go back in the mall </a></li>
         <li><a href="HotelN.php"> Go towards the hotel </a></li>
-        <li><a href="#"> Go towards the school </a></li>
+        <li><a href="SchoolE.php"> Go towards the school </a></li>
     </ul>
     <ul>
         <?php

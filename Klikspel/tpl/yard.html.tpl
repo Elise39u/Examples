@@ -26,7 +26,7 @@
     <ul>
         <li><a href="Mall.php"> Go back in the mall </a></li>
         <li><a href="HotelN.php"> Go towards the hotel </a></li>
-        <li><a href="#"> Go towards the school </a></li>
+        <li><a href="SchoolE.php"> Go towards the school </a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

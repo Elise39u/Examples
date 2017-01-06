@@ -12,7 +12,7 @@ $(function() {
         buttons: {
             Do_you_need_help: function() {
                 $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well I Want to help you <br>" +
-                    "Because i think people around here needs coach <br>" +
+                    "Because i think people around here needs a coach <br>" +
                     "Belive me i think you can get a lot of more loss of people </p>");
                 $('#dialog-2').dialog({
                     autoOpen: true,

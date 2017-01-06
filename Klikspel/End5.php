@@ -37,6 +37,15 @@ mysqli_query($mysqli, $sql);
 session_destroy();
 unset($_COOKIE);
 
+setStat('curhp',$userID,175);
+setStat('maxhp',$userID,300);
+setStat('sethp',$userID,25);
+setStat('atk', $userID, '80');
+setStat('def', $userID, '100');
+setStat('mdef', $userID, '50');
+setStat('gc', $userID, '250');
+setStat('bankgc', $userID, '5000');
+
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
 $smarty->assign('magic',getStat('mdef',$userID));
