@@ -20,7 +20,7 @@
     <h1> Big empty space  </h1>
     <p> As you Look around you see left a school and kichten <br>
     Right a playayrd  <br>
-    ahed a small lighr <br>
+    ahed a small light <br>
     Wich way wil it be</p>
     <img src="img/SpaceSubBase.png">
     <ul>

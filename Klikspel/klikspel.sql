@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Gegenereerd op: 06 jan 2017 om 13:23
+-- Gegenereerd op: 09 jan 2017 om 13:49
 -- Serverversie: 5.7.9
 -- PHP-versie: 5.6.16
 
@@ -915,13 +915,13 @@ INSERT INTO `npc` (`id`, `Name`, `Place`, `Bio`) VALUES
 (11, 'Coach Marieke', 'SubYard.php', 'BIO: I am Marieke and i was on holliyday with Coach Jeroen here in new york  <br> " +\n        "After we left davinci we said together lets go on a trip <br> " +\n        "so we went to londen, Tortno and now we are here <br>" +\n        "We have regrat that we went to new york at this time'),
 (12, 'Mother Lieke', 'SubYard.php', 'BIO: I am Lieke i am mother of 2 kids  <br> " +\n        "There are my only thing lefr now so <br> " +\n        "But they are thisrty and i cant do anything <br>" +\n        "I loved new yoerk but the outbreak was a pain in the ass'),
 (13, 'Data tracker Harmes', 'SubYard.php', 'BIO: I am Harrems i teach DataIt on davinci  <br> " +\n        "I was here only on holiday but never thought of this <br> " +\n        "Will we get home sometimes'),
-(14, 'Monsternon', 'SubYard.php', NULL),
-(15, 'Sales Expert Elzie', 'SubYard.php', NULL),
-(16, 'Student Ariëlle', 'SubYard.php', NULL),
-(17, 'watcher of the kids Maxine', 'SubBack.php', NULL),
-(18, 'Econoom Tim ', 'SubBack.php', NULL),
-(19, 'Guard Paul', 'SubDoor.php\r\n', NULL),
-(20, 'Bakfiest Group', 'SubSchool.php\r\n', NULL),
+(14, 'Monsternon', 'SubYard.php', 'BIO: Well i am famous youtuber Monsternon  <br> " +\n        "I was here on holliyday and that was afwull i tell you <br> " +\n        "Well maby you are one day join BAKFIEST and dont forget JUSTINNNNNNNNNNNNNNN'),
+(15, 'Sales Expert Elsie', 'SubYard.php', 'BIO: Hi there i am Elsie and i am 21 years old  <br> " +\n        "I have completed my master in salesand lived in Breda <br> " +\n        "I moved to new york because of my new study but i wished i never would'),
+(16, 'Student Ariëlle', 'SubYard.php', 'BIO: Hi there i am Ariëlle and i am 18 years old  <br> " +\n        "I study graphic desing on davinci in holland but was here on holliyday <br> " +\n        "I now wished i never went to here on holliyday <br>" +\n        "Maby my friends had better luck'),
+(17, 'watcher of the kids Maxine', 'SubBack.php', 'BIO: Hi there i am Maxine and i am 19 years old  <br> " +\n        "I moved to new york because of my new study english study <br> " +\n        "I loved New york  sso i choose this place as study <br>" +\n        "Well i wished i never had done that'),
+(18, 'Econoom Tim ', 'SubBack.php', 'BIO: Well i am tim and i worked on the New york stock exchange  <br> " +\n        "Well working there is quite a disater that is what i can tell you <br> " +\n        "Well its was fun seeing al the people running around when a bunissis shut down after a bank rupt <br>" +\n        "So it was quite a diaster and fun at the same time'),
+(19, 'Guard Paul', 'SubDoor.php\r\n', 'BIO: Well a stranger, Hi there i am paul  <br> " +\n        "I worked for 15 years in the police deparment for god sake <br> " +\n        "And now i am here stuck by a door that i needs to guard <br>" +\n        "Because the other side of the subbase is not secure <br>" +\n        "Maby we can make a deal friend'),
+(20, 'Bakfiest Group', 'SubSchool.php\r\n', 'BIO: Well We are Bakfiest <br>" +\n        "We started teh group because ...... wat it was doenst mather <br>" +\n        "And rember #Justinlifematters'),
 (21, 'Pregnant Emma', 'AgianStreet.php', NULL),
 (22, 'Electrician Erik', 'OMetal.php', NULL),
 (23, 'Hotel Owner Anna', 'HotelE.php', NULL),
@@ -1057,8 +1057,8 @@ INSERT INTO `quest` (`id`, `Name`, `Npc_id`, `Gold`, `Reward`) VALUES
 (14, 'Treat time', 17, 675, 'Info about a serect place '),
 (15, 'Math time :(', 18, 1780, 'Info About a serect place'),
 (16, 'Something to do', 19, 375, 'Access futher in the base '),
-(17, '#Bakfiest For LEader', 14, 2650, 'NULL'),
-(18, 'Help on the way', 10, 2450, 'New Place --> School'),
+(17, '#Bakfiest For Leader', 14, 2650, 'NULL'),
+(18, 'Help on the way', 10, 2450, 'Npc10 is now in the schoolhall'),
 (19, 'Lost Friends', 5, 1250, 'NULL'),
 (20, 'A blink for a eye', 6, 550, 'NULL');
 

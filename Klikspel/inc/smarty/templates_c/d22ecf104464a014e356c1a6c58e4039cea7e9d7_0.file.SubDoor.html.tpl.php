@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-03 10:51:41
+/* Smarty version 3.1.29, created on 2017-01-09 14:51:56
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\SubDoor.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586b742d86ed94_31780568',
+  'unifunc' => 'content_5873957c0e4493_13272472',
   'file_dependency' => 
   array (
     'd22ecf104464a014e356c1a6c58e4039cea7e9d7' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\SubDoor.html.tpl',
-      1 => 1483437095,
+      1 => 1483969915,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586b742d86ed94_31780568 ($_smarty_tpl) {
+function content_5873957c0e4493_13272472 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -49,12 +49,17 @@ function content_586b742d86ed94_31780568 ($_smarty_tpl) {
     </ul>
 
     <h1> A Door?  </h1>
-    <p> As you walk towards the door you see people standing behind it <br>
+    <p> As you walk towards the door you see people standing near it <br>
     Should i ask if i can pass or not</p>
     <img src="img/DoorSubBase.png">
     <ul>
-        <li><a href="SubBack.php"> Go back  </a></li>
+        <?php if (isset($_COOKIE['Paul'])) {?>
+        <?php if ($_COOKIE['Paul'] == true) {?>
+          <li><a href="#"> Go On </a></li>
+        <?php }?>
+        <?php }?>
         <li><a href="#"> Go talk to guard Paul </a></li>
+        <li><a href="SubBack.php"> Go back  </a></li>
     </ul>
 
     <ul>

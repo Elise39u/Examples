@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-06 13:34:27
+/* Smarty version 3.1.29, created on 2017-01-09 09:05:42
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\SubBack.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586f8ed39d85e2_08226245',
+  'unifunc' => 'content_58734456b3ee72_58839106',
   'file_dependency' => 
   array (
     'f85292f287db5f5715a1e02a1b22a1eb0b54ad49' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\SubBack.html.tpl',
-      1 => 1483705913,
+      1 => 1483949140,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586f8ed39d85e2_08226245 ($_smarty_tpl) {
+function content_58734456b3ee72_58839106 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -51,7 +51,7 @@ function content_586f8ed39d85e2_08226245 ($_smarty_tpl) {
     <h1> Big empty space  </h1>
     <p> As you Look around you see left a school and kichten <br>
     Right a playayrd  <br>
-    ahed a small lighr <br>
+    ahed a small light <br>
     Wich way wil it be</p>
     <img src="img/SpaceSubBase.png">
     <ul>

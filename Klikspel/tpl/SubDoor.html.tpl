@@ -18,12 +18,17 @@
     </ul>
 
     <h1> A Door?  </h1>
-    <p> As you walk towards the door you see people standing behind it <br>
+    <p> As you walk towards the door you see people standing near it <br>
     Should i ask if i can pass or not</p>
     <img src="img/DoorSubBase.png">
     <ul>
-        <li><a href="SubBack.php"> Go back  </a></li>
+        {if isset($smarty.cookies.Paul)}
+        {if $smarty.cookies.Paul == true}
+          <li><a href="#"> Go On </a></li>
+        {/if}
+        {/if}
         <li><a href="#"> Go talk to guard Paul </a></li>
+        <li><a href="SubBack.php"> Go back  </a></li>
     </ul>
 
     <ul>
