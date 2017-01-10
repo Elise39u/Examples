@@ -46,6 +46,10 @@ if(isset($_POST['amount'])) {
         $amount = 0;
         $smarty->assign('info', 'Dont put a negative number');
     }
+    if (!is_integer($amount)) {
+        $amount =  0;
+        $smarty->assign('Mehhhhhh', 'You dind`t put a number in');
+    }
     setStat('gc',$userID,getStat('gc',$userID) - $amount);
     setStat('curhp',$userID,getStat('curhp',$userID) + $amount);
     $smarty->assign('healed',$amount);

@@ -10,6 +10,7 @@ include_once ('inc/playerstats.php');
 include_once ('inc/Monster.php');
 include_once ('inc/ItemStats.php');
 include_once ('inc/WeaponStat.php');
+include_once ('inc/AntiXSS.php');
 
 $query = sprintf("SELECT id FROM player WHERE UPPER(username) = UPPER('%s')",
     mysqli_real_escape_string($mysqli, $_SESSION['username']));
@@ -43,10 +44,26 @@ if (isset($_POST['submit'])) {
     $Username = $_POST["Username"];
     $required = array($FirstName, $LastName, $Email, $Password, $Username);
 
+    $data = AntiXSS::blacklistFilter($FirstName);
+    $data1 = AntiXSS::blacklistFilter($LastName);
+    $data2 = AntiXSS::blacklistFilter($Email);
+    $data3 = AntiXSS::blacklistFilter($Username);
+    $data4 = AntiXSS::blacklistFilter($Password);
+
     if (in_array('', $required)) {
         $link_hippie = "http://localhost/Examplecode/Klikspel/fault.php";
         echo "<a class='item' href='" . $link_hippie . "'> Something left behind  </a>";
-    } else {
+    }
+
+    elseif ($data ==  'XSS Detected!' || $data1 ==  'XSS Detected!' || $data2 ==  'XSS Detected!' ||
+        $data3 ==  'XSS Detected!' || $data4 ==  'XSS Detected!') {
+        echo '<span style="color: red; "> HTML OR SCRIPT  tag or <> or pass  DETECTED </span>';
+        $mysqli->close();
+        session_destroy();
+        unset($_COOKIE);
+    }
+
+    else {
         $sql = sprintf("SELECT Username From player WHERE Username = '%s'",
             mysqli_escape_string($mysqli, $Username));
         $result2 = mysqli_query($mysqli, $sql);

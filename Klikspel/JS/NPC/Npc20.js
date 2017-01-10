@@ -31,7 +31,7 @@ $(function() {
                                 Npcname  + " yes Justin hjb <br>" +
                                 Npcname4 + " Well no -.- <br>" +
                                 Npcname3 + " comon guys not so neagtive <br>" +
-                                Npcname2 + Npcname3 + Npcname + Npcname4 +" Just no Arija never <br>" +
+                                Npcname2 + Npcname1 + Npcname + Npcname4 +" Just no Arija never <br>" +
                                 Npcname3 + " Okey then</p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,

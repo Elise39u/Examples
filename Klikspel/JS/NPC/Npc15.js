@@ -7,6 +7,7 @@ $(function() {
 
     $( "#dialog-2" ).dialog({
         autoOpen: false,
+        width: 600,
         buttons: {
             Do_you_need_help: function() {
                 $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well..... Mehhh. <br>" +
@@ -14,12 +15,14 @@ $(function() {
                     "Because i need someone that i can trust </p>");
                 $('#dialog-2').dialog({
                     autoOpen: true,
+                    width: 600,
                     buttons: {
                         Yes_Ofcourse: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well i have nothing <br>" +
+                            $( "#Story" ).replaceWith("<p id='Story'> Well i have nothing <br>" +
                                 "So bye</p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
+                                width: 600,
                                 buttons: {
                                   Okey: function () {$(this).dialog('close');},
                                 },
@@ -32,11 +35,13 @@ $(function() {
                     "There is nothing to complain but the outbreak yaks</p>");
                 $('#dialog-2').dialog({
                     autoOpen: true,
+                    width: 600,
                     buttons: {
                         Well_should_i_live_here: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well only if the outbreak is over  </p>");
+                            $( "#Story" ).replaceWith("<p id='Story'> Well only if the outbreak is over  </p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
+                                width: 600,
                                 buttons: {
                                     Okey: function () {$(this).dialog('close');}
                                 }

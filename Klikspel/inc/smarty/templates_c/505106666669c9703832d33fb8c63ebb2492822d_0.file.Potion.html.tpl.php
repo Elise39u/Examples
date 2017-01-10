@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-15 09:37:57
+/* Smarty version 3.1.29, created on 2017-01-10 10:27:48
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Potion.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_585256657773d0_03298569',
+  'unifunc' => 'content_5874a9141f1632_71348325',
   'file_dependency' => 
   array (
     '505106666669c9703832d33fb8c63ebb2492822d' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Potion.html.tpl',
-      1 => 1481791074,
+      1 => 1484040460,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_585256657773d0_03298569 ($_smarty_tpl) {
+function content_5874a9141f1632_71348325 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -89,6 +89,13 @@ function content_585256657773d0_03298569 ($_smarty_tpl) {
             <p style="color: #980098;"><?php echo $_smarty_tpl->tpl_vars['Nope']->value;?>
  <br>
             So we assume one?</p>
+        <?php }?>
+    <?php }?>
+
+    <?php if (isset($_smarty_tpl->tpl_vars['Mehhhhhh']->value)) {?>
+        <?php if ($_smarty_tpl->tpl_vars['Mehhhhhh']->value != '') {?>
+            <p style="color: #980098;"><?php echo $_smarty_tpl->tpl_vars['Mehhhhhh']->value;?>
+ </p>
         <?php }?>
     <?php }?>
 

@@ -7,6 +7,7 @@ $(function() {
 
     $( "#dialog-2" ).dialog({
         autoOpen: false,
+        width: 600,
         buttons: {
             Do_you_need_help: function() {
                 $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well..... Go find Bakfiest group <br>" +
@@ -14,12 +15,14 @@ $(function() {
                     "Dont forget to say to justin hjb </p>");
                 $('#dialog-2').dialog({
                     autoOpen: true,
+                    width: 600,
                     buttons: {
                         Okey_Where_are_they: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> i belive in the school <br>" +
+                            $( "#Story" ).replaceWith("<p id='Story'> i belive in the school <br>" +
                                 "Well says to justin HJB he</p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
+                                width: 600,
                                 buttons: {
                                   yeah_sure: function () {
                                       alert('You started the quest #Bakfiest For Leader');
@@ -34,11 +37,13 @@ $(function() {
                     "but thanks to bakfiest i keep going JUSTINNNNNNNNNNNNNN  </p>");
                 $('#dialog-2').dialog({
                     autoOpen: true,
+                    width: 600,
                     buttons: {
                         Do_you_think_i_can_do_youtube: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well no....  </p>");
+                            $( "#Story" ).replaceWith("<p id='Story'> Well no....  </p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
+                                width: 600,
                                 buttons: {
                                     Okey: function () {$(this).dialog('close');}
                                 }

@@ -38,7 +38,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 }
 
 if (!isset($_COOKIE['Quest'])) {
-        setcookie('Quest', false, time() + 2147483647);
+        setcookie('Quest', false, time() + 2147483647, '', '', '', true);
 }
 
 if (isset($_COOKIE['Quest'])) {

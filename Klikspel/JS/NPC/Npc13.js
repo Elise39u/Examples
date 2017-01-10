@@ -7,6 +7,7 @@ $(function() {
 
     $( "#dialog-2" ).dialog({
         autoOpen: false,
+        width: 600,
         buttons: {
             Do_you_need_help: function() {
                 $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Yes i need more pc  <br>" +
@@ -14,12 +15,14 @@ $(function() {
                     "Maby thats called stalking </p>");
                 $('#dialog-2').dialog({
                     autoOpen: true,
+                    width: 600,
                     buttons: {
                         Okey_Where_can_i_find_this: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> As i speak right there is a elector store in the city <br>" +
+                            $( "#Story" ).replaceWith("<p id='Story'> As i speak right there is a elector store in the city <br>" +
                                 "Maby you should look there as i speak</p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
+                                width: 600,
                                 buttons: {
                                   Okey: function () {
                                       alert('You started the quest Data is nut');
@@ -34,11 +37,13 @@ $(function() {
                     "but if you hated but you have talented then you`re maby right  </p>");
                 $('#dialog-2').dialog({
                     autoOpen: true,
+                    width: 600,
                     buttons: {
                         Do_you_think_i_am_talented: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well no....  </p>");
+                            $( "#Story" ).replaceWith("<p id='Story'> Well no....  </p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
+                                width: 600,
                                 buttons: {
                                     Okey: function () {$(this).dialog('close');}
                                 }

@@ -7,23 +7,27 @@ $(function() {
 
     $( "#dialog-2" ).dialog({
         autoOpen: false,
+        width: 600,
         buttons: {
             Do_you_need_help: function() {
                 $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well I have two things for you <br>" +
                     "You can choos one or two </p>");
                 $('#dialog-2').dialog({
                 autoOpen: true,
+                    width: 600,
                 buttons: {
                     One: function () {
-                        $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well i am need of the next items  <br>" +
+                        $( "#Story" ).replaceWith("<p id='Story'> Well i am need of the next items  <br>" +
                         "Some wine and make-up  so i can do the next item for my beauty blog</p>");
                         $('#dialog-2').dialog({
                             autoOpen: true,
+                            width: 600,
                             buttons: {
                                 Okey: function () {
-                                    $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Okey Come back to me when you have it  </p>");
+                                    $( "#Story" ).replaceWith("<p id='Story'> Okey Come back to me when you have it  </p>");
                                     $('#dialog-2').dialog({
                                         autoOpen: true,
+                                        width: 600,
                                         buttons: {
                                             sure: function () {
                                                 alert('You started the quest Girl Dreams');
@@ -34,15 +38,17 @@ $(function() {
                             Hell_no: function () {$(this).dialog('close');}
                         })},
                     two: function () {
-                        $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well can you find something for me  <br>" +
+                        $( "#Story" ).replaceWith("<p id='Story'> Well can you find something for me  <br>" +
                             " Like a recorder so i can make beauty videos</p>");
                         $('#dialog-2').dialog({
                             autoOpen: true,
+                            width: 600,
                             buttons: {
                                 Okey_ehh: function () {
-                                    $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Okey come back to me with the items  </p>");
+                                    $( "#Story" ).replaceWith("<p id='Story'> Okey come back to me with the items  </p>");
                                     $('#dialog-2').dialog({
                                         autoOpen: true,
+                                        width: 600,
                                         buttons: {
                                             sure: function () {
                                                 alert('You started the quest Recording');
@@ -60,11 +66,13 @@ $(function() {
                     "so there i went </p>");
                 $('#dialog-2').dialog({
                     autoOpen: true,
+                    width: 600,
                     buttons: {
                         Are_there_tips_for_me: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well no you look fine  </p>");
+                            $( "#Story" ).replaceWith("<p id='Story'> Well no you look fine  </p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
+                                width: 600,
                                 buttons: {
                                     thanxs: function () {$(this).dialog('close');}
                                 }

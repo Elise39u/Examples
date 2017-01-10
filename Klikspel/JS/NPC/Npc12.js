@@ -8,6 +8,7 @@ $(function() {
 
     $( "#dialog-2" ).dialog({
         autoOpen: false,
+        width: 600,
         buttons: {
             Do_you_need_help: function() {
                 $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well I dont trust you <br>" +
@@ -15,11 +16,13 @@ $(function() {
                     "else NOTHING </p>");
                 $('#dialog-2').dialog({
                     autoOpen: true,
+                    width: 600,
                     buttons: {
                         Okey_i_go_look_For_her: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Come Back with her</p>");
+                            $( "#Story" ).replaceWith("<p id='Story'> Come Back with her</p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
+                                width: 600,
                                 buttons: {
                                   Okey_until_then: function () {$(this).dialog('close');},
                                 },
@@ -32,9 +35,10 @@ $(function() {
                     autoOpen: true,
                     buttons: {
                         Okey_Easy: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> No get to Coach marieke  </p>");
+                            $( "#Story" ).replaceWith("<p id='Story'> No get to Coach marieke  </p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
+                                width: 600,
                                 buttons: {
                                     Okey: function () {$(this).dialog('close');}
                                 }
@@ -47,7 +51,8 @@ $(function() {
         title: "Conversation",
         position: {
             my: "left center",
-            at: "left center"
+            at: "left center",
+            width: 600
         }
     });
     $( "#opener-2" ).click(function() {

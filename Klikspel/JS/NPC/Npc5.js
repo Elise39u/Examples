@@ -7,23 +7,27 @@ $(function() {
 
     $( "#dialog-2" ).dialog({
         autoOpen: false,
+        width: 600,
         buttons: {
             Do_you_need_help: function() {
                 $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well can you find my friends? <br>" +
                     "they call them self Bakfiest group </p>");
                 $('#dialog-2').dialog({
                 autoOpen: true,
+                    width: 600,
                 buttons: {
                     Sure: function () {
-                        $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well Maby  <br>" +
+                        $( "#Story" ).replaceWith("<p id='Story'> Well Maby  <br>" +
                         "Are they somewhere else in the subbase can you take a look</p>");
                         $('#dialog-2').dialog({
                             autoOpen: true,
+                            width: 600,
                             buttons: {
                                 Okey: function () {
-                                    $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Okey i wil heare from you then </p>");
+                                    $( "#Story" ).replaceWith("<p id='Story'> Okey i wil heare from you then </p>");
                                     $('#dialog-2').dialog({
                                         autoOpen: true,
+                                        width: 600,
                                         buttons: {
                                             sure: function () {
                                                 alert('You started the quest Lost Friends');
@@ -41,11 +45,13 @@ $(function() {
                     "So i decide to take extra lesson from justin </p>");
                 $('#dialog-2').dialog({
                     autoOpen: true,
+                    width: 600,
                     buttons: {
                         Is_there_something_to_do_then: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well not for you mate  </p>");
+                            $( "#Story" ).replaceWith("<p id='Story'> Well not for you mate  </p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
+                                width: 600,
                                 buttons: {
                                     Okey: function () {$(this).dialog('close');}
                                 }
@@ -58,7 +64,8 @@ $(function() {
         title: "Conversation",
         position: {
             my: "left center",
-            at: "left center"
+            at: "left center",
+            width: "600px"
         }
     });
     $( "#opener-2" ).click(function() {

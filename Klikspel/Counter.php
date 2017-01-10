@@ -36,6 +36,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 $gold = getStat('gc',$userID);
 if(isset($_POST['amount'])) {
     $amount = $_POST['amount'];
+    var_dump($amount);
     if($_POST['action'] == 'Deposit') {
         if($amount > $gold || $amount == '') {
             // the user input something weird - assume the maximum

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-09 08:58:27
+/* Smarty version 3.1.29, created on 2017-01-10 10:29:09
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Counter.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_584a6423509c35_67210600',
+  'unifunc' => 'content_5874a9653b8be3_06283272',
   'file_dependency' => 
   array (
     'beb4aaf09deb62e0b6e5ad073b7fc3f856c60ac5' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Counter.html.tpl',
-      1 => 1481270293,
+      1 => 1484040545,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_584a6423509c35_67210600 ($_smarty_tpl) {
+function content_5874a9653b8be3_06283272 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -76,6 +76,14 @@ function content_584a6423509c35_67210600 ($_smarty_tpl) {
 </strong>.</p>
         <?php }?>
     <?php }?>
+
+    <?php if (isset($_smarty_tpl->tpl_vars['Mehhhhhh']->value)) {?>
+        <?php if ($_smarty_tpl->tpl_vars['Mehhhhhh']->value != '') {?>
+            <p style="color: #980098;"><?php echo $_smarty_tpl->tpl_vars['Mehhhhhh']->value;?>
+ </p>
+        <?php }?>
+    <?php }?>
+
     <img src="img/Bank2.png">
     <ul>
         <li><a href=Bank.php> Go back  </a> </li>

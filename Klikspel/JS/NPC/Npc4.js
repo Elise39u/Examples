@@ -7,23 +7,27 @@ $(function() {
 
     $( "#dialog-2" ).dialog({
         autoOpen: false,
+        width: 600,
         buttons: {
             Software_Why: function() {
-                $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Because i Dint know what to do at that time <br>" +
+                $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Because i Didnt know what to do at that time <br>" +
                     "and working with pc`s did since i was 8 so </p>");
                 $('#dialog-2').dialog({
                 autoOpen: true,
+                    width: 600,
                 buttons: {
                     DO_you_need_help: function () {
-                        $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well Maby  <br>" +
+                        $( "#Story" ).replaceWith("<p id='Story'> Well Maby  <br>" +
                         "Excaulty i dont need help maby other people around here need help</p>");
                         $('#dialog-2').dialog({
                             autoOpen: true,
+                            width: 600,
                             buttons: {
                                 Okey: function () {
-                                    $( "#Story" ).replaceWith(Npcname + "<p id='Story'> You need to take a look around belive me </p>");
+                                    $( "#Story" ).replaceWith("<p id='Story'> You need to take a look around belive me </p>");
                                     $('#dialog-2').dialog({
                                         autoOpen: true,
+                                        width: 600,
                                         buttons: {
                                             sure: function () {$(this).dialog('close');}
                                         }
@@ -39,11 +43,13 @@ $(function() {
                     "So i decide to teach jong students </p>");
                 $('#dialog-2').dialog({
                     autoOpen: true,
+                    width: 600,
                     buttons: {
                         Is_there_something_to_learn_for_me: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Not at this moment maby later </p>");
+                            $( "#Story" ).replaceWith("<p id='Story'> Not at this moment maby later </p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
+                                width: 600,
                                 buttons: {
                                     Okey: function () {$(this).dialog('close');}
                                 }
@@ -56,7 +62,8 @@ $(function() {
         title: "Conversation",
         position: {
             my: "left center",
-            at: "left center"
+            at: "left center",
+            width: "600px"
         }
     });
     $( "#opener-2" ).click(function() {

@@ -38,6 +38,7 @@
             <p>You withdraw <strong>{$withdrawn}</strong> gold from your bank account. Your total gold in hand is now <strong>{$gold}</strong>.</p>
         {/if}
     {/if}
+
     <img src="img/Bank2.png">
     <ul>
         <li><a href=Bank.php> Go back  </a> </li>

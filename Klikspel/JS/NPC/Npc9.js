@@ -14,18 +14,21 @@ $(function() {
                     "Maby you can find something </p>");
                 $('#dialog-2').dialog({
                 autoOpen: true,
+                    width: 600,
                 buttons: {
                     SO_what_do_i_need_to_get: function () {
-                        $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well Anything to learn the kids  <br>" +
+                        $( "#Story" ).replaceWith("<p id='Story'> Well Anything to learn the kids  <br>" +
                         "Even if its a laptop or a book if you can learn form it its good <br>" +
                             "Do you want to do that</p>");
                         $('#dialog-2').dialog({
                             autoOpen: true,
+                            width: 600,
                             buttons: {
                                 Okey: function () {
-                                    $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Okey come back to mw when you have something  </p>");
+                                    $( "#Story" ).replaceWith("<p id='Story'> Okey come back to mw when you have something  </p>");
                                     $('#dialog-2').dialog({
                                         autoOpen: true,
+                                        width: 600,
                                         buttons: {
                                             sure: function () {
                                                 alert('You started the quest Learning Why?');
@@ -43,11 +46,13 @@ $(function() {
                     "Now by advance i cant keep up so i start to teach the language  </p>");
                 $('#dialog-2').dialog({
                     autoOpen: true,
+                    width: 600,
                     buttons: {
                         Is_There_something_to_learn_for_me: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well ..... Not now  </p>");
+                            $( "#Story" ).replaceWith("<p id='Story'> Well ..... Not now  </p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
+                                width: 600,
                                 buttons: {
                                     Okey: function () {$(this).dialog('close');}
                                 }

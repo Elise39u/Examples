@@ -9,6 +9,7 @@ $(function() {
 
     $( "#dialog-2" ).dialog({
         autoOpen: false,
+        width: 600,
         buttons: {
             Do_you_need_help: function() {
                 $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well I Want to help you <br>" +
@@ -16,18 +17,21 @@ $(function() {
                     "Belive me i think you can get a lot of more loss of people </p>");
                 $('#dialog-2').dialog({
                     autoOpen: true,
+                    width: 600,
                     buttons: {
                         Okey_come_along: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well What are you waiting for <br>" +
+                            $( "#Story" ).replaceWith("<p id='Story'> Well What are you waiting for <br>" +
                                 "We dont have al the time <br>" +
                                 "So lets go </p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
+                                width: 600,
                                 buttons: {
                                   Yeay_a_buddy: function () {
-                                        $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Yeah Yeah go now  </p>");
+                                        $( "#Story" ).replaceWith("<p id='Story'> Yeah Yeah go now  </p>");
                                         $('#dialog-2').dialog({
                                             autoOpen: true,
+                                            width: 600,
                                             buttons: {
                                                 Okey_Easy: function () {
                                                     alert('You started the quest Helping Hand');
@@ -45,11 +49,13 @@ $(function() {
                     "So i went to study social work and passed  </p>");
                 $('#dialog-2').dialog({
                     autoOpen: true,
+                    width: 600,
                     buttons: {
                         Is_There_something_that_you_want: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well ... I cold not think of anything now  </p>");
+                            $( "#Story" ).replaceWith("<p id='Story'> Well ... I cold not think of anything now  </p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
+                                width: 600,
                                 buttons: {
                                     Okey: function () {$(this).dialog('close');}
                                 }

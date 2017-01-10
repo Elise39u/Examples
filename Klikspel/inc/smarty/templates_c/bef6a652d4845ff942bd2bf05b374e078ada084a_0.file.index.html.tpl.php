@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-11-30 14:50:28
+/* Smarty version 3.1.29, created on 2017-01-10 10:05:35
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\index.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_583ed9247e5db0_13068333',
+  'unifunc' => 'content_5874a3df653b24_92116772',
   'file_dependency' => 
   array (
     'bef6a652d4845ff942bd2bf05b374e078ada084a' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\index.html.tpl',
-      1 => 1480513787,
+      1 => 1484039133,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_583ed9247e5db0_13068333 ($_smarty_tpl) {
+function content_5874a3df653b24_92116772 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -49,6 +49,7 @@ function content_583ed9247e5db0_13068333 ($_smarty_tpl) {
     </ul>
 
         <form method="post" action="index.php">
+            <!-- pattern='[a-z][A-Z][0-9\s]+@' -->
             <h1> Register to save stats</h1> <br>
             First name:<br>
             <input type="text" name="FirstName" id="FirstName" value="<?php if (isset($_POST['FirstName'])) {

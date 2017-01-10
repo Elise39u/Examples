@@ -1,0 +1,3 @@
+https://subgraph.com/vega/documentation/Vega-Scanner/index.en.html
+http://www.thebotanistgame.com/blog/2015/02/28/dialogue-in-phaserjs.html
+http://bootboxjs.com/

@@ -18,6 +18,7 @@
     </ul>
 
         <form method="post" action="index.php">
+            <!-- pattern='[a-z][A-Z][0-9\s]+@' -->
             <h1> Register to save stats</h1> <br>
             First name:<br>
             <input type="text" name="FirstName" id="FirstName" value="{if isset($smarty.post.FirstName)}{$smarty.post.FirstName}{/if}"><br>

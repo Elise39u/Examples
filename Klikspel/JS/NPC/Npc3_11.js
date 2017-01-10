@@ -8,6 +8,7 @@ $(function() {
 
     $( "#dialog-2" ).dialog({
         autoOpen: false,
+        width: 600,
         buttons: {
             No: function() {
                 $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Okey What do you want to now <br>" +
@@ -15,20 +16,23 @@ $(function() {
                     Npcname1 + " Yes Marjo i am here clam down</p>");
                 $('#dialog-2').dialog({
                 autoOpen: true,
+                    width: 600,
                 buttons: {
                     Should_i_talk_to_her: function () {
-                        $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well i trust her more <br>" +
+                        $( "#Story" ).replaceWith("<p id='Story'> Well i trust her more <br>" +
                         Npcname1 + " What for info wil you give us <br>" +
                             "Or do we need to do something? </p>");
                         $('#dialog-2').dialog({
                             autoOpen: true,
+                            width: 600,
                             buttons: {
                                 Are_You_Sure_Marieke: function () {
-                                    $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Eheeeee meh i want a Dark Green Potion <br>" +
+                                    $( "#Story" ).replaceWith("<p id='Story'> Eheeeee meh i want a Dark Green Potion <br>" +
                                     "Could you get that <br>" +
                                         Npcname1 + " sure we will do that </p>");
                                     $('#dialog-2').dialog({
                                         autoOpen: true,
+                                        width: 600,
                                         buttons: {
                                             Okey: function () {
                                                 alert('You started the quest happiness');
@@ -37,13 +41,14 @@ $(function() {
                                     })},
                             },
                             No_I_Talk_to_her: function () {
-                                $("#Story").replaceWith(Npcname + "<p id='Story'> No i wont talk to <br>" + Npcname1 +
+                                $("#Story").replaceWith("<p id='Story'> No i wont talk to <br>" + Npcname1 +
                                     Npcname1 + "I told you.");
                                 $('#dialog-2').dialog ({
                                     autoOpen:true,
+                                    width: 600,
                                     buttons: {
                                         Okey_you_talk_to_her: function () {
-                                            $(this).dialog.('close');
+                                            $(this).dialog('close');
                                         }
                                     }
                                 })

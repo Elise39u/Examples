@@ -7,23 +7,27 @@ $(function() {
 
     $( "#dialog-2" ).dialog({
         autoOpen: false,
+        width: 600,
         buttons: {
             Do_you_need_help: function() {
                 $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well have you wachted something before <br>" +
                     "In like keeping order </p>");
                 $('#dialog-2').dialog({
                 autoOpen: true,
+                    width: 600,
                 buttons: {
                     Once: function () {
-                        $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well Maby  <br>" +
+                        $( "#Story" ).replaceWith("<p id='Story'> Well Maby  <br>" +
                         "Can you hold the wacht here</p>");
                         $('#dialog-2').dialog({
                             autoOpen: true,
+                            width: 600,
                             buttons: {
                                 Okey: function () {
-                                    $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Okey i be back in five minutes  </p>");
+                                    $( "#Story" ).replaceWith("<p id='Story'> Okey i be back in five minutes  </p>");
                                     $('#dialog-2').dialog({
                                         autoOpen: true,
+                                        width: 600,
                                         buttons: {
                                             sure: function () {
                                                 alert('You started the quest A blink for a eye');
@@ -41,11 +45,13 @@ $(function() {
                     "But it was a difficult task so but here i am </p>");
                 $('#dialog-2').dialog({
                     autoOpen: true,
+                    width: 600,
                     buttons: {
                         Do_you_want_to_talk_about_it: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well no brings back the bad memory  </p>");
+                            $( "#Story" ).replaceWith("<p id='Story'> Well no brings back the bad memory  </p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
+                                width: 600,
                                 buttons: {
                                     Okey: function () {$(this).dialog('close');}
                                 }
