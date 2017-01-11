@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-05 12:39:39
+/* Smarty version 3.1.29, created on 2017-01-11 09:52:27
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Mall.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586e307b334584_21803232',
+  'unifunc' => 'content_5875f24bbeba55_26308996',
   'file_dependency' => 
   array (
     'd0f91256c89cfbc257beb595883a65a5ede6ebe7' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Mall.html.tpl',
-      1 => 1483616171,
+      1 => 1484124746,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586e307b334584_21803232 ($_smarty_tpl) {
+function content_5875f24bbeba55_26308996 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -50,6 +50,7 @@ function content_586e307b334584_21803232 ($_smarty_tpl) {
 
     <h1> The mall  </h1>
     <p> In the distence are a few shops? dare to go to it </p>
+    <p id="Npc11"></p>
     <img src="img/mall.png">
     <ul>
         <li><a href="Deadend.php"> Go back and stop shopping ;-; </a></li>
@@ -91,6 +92,18 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
 ?>
     </ul>
 
+    <?php echo '<script'; ?>
+ type="text/javascript">
+        if (window.name == "Marieke") {
+            document.getElementById('Npc11').innerHTML = "Coach Marieke: Ahhhh please could we go shopping <br>" +
+                    "Please i see some nice shops but are they closed? <br>" +
+                    "ahhhh please <?php echo $_SESSION['username'];?>
+ <br> " +
+                            "<?php echo $_SESSION['username'];?>
+ Well Marieke ........."
+        }
+    <?php echo '</script'; ?>
+>
 </div>
 </body>
 </html><?php }

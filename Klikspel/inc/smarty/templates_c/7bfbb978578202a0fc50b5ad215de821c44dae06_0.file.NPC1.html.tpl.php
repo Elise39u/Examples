@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-10 16:33:27
+/* Smarty version 3.1.29, created on 2017-01-11 09:33:18
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\NPC1.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5874fec70cbb45_77396709',
+  'unifunc' => 'content_5875edce9e08b9_26902203',
   'file_dependency' => 
   array (
     '7bfbb978578202a0fc50b5ad215de821c44dae06' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\NPC1.html.tpl',
-      1 => 1484062405,
+      1 => 1484123597,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5874fec70cbb45_77396709 ($_smarty_tpl) {
+function content_5875edce9e08b9_26902203 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -140,7 +140,7 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"><?php echo '</script'; ?>
 >
 <?php echo '<script'; ?>
- type="text/javascript" src="JS/NPC/Npc15.js"><?php echo '</script'; ?>
+ type="text/javascript" src="JS/NPC/Npc1.js"><?php echo '</script'; ?>
 >
 <!-- Bizy test the Npcs start bij 16 What to do
 .width: 600, after autoopen

@@ -8,6 +8,7 @@ $(function() {
 
     $( "#dialog-2" ).dialog({
         autoOpen: false,
+        width: 600,
         buttons: {
             Do_you_need_help: function() {
                 $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well..... Mehhh. <br>" +
@@ -15,9 +16,10 @@ $(function() {
                     "I have not that much you know</p>");
                 $('#dialog-2').dialog({
                     autoOpen: true,
+                    width: 600,
                     buttons: {
                         Are_you_sure: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well yeah so go now </p>");
+                            $( "#Story" ).replaceWith("<p id='Story'> Well yeah so go now </p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
                                 buttons: {
@@ -32,16 +34,19 @@ $(function() {
                     "Because else i wont try it </p>");
                 $('#dialog-2').dialog({
                     autoOpen: true,
+                    width: 600,
                     buttons: {
                         Well_How_do_i_no_if_i_am_creative: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well do you make a lot of things on you`re own  </p>");
+                            $( "#Story" ).replaceWith("<p id='Story'> Well do you make a lot of things on you`re own  </p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
+                                width: 600,
                                 buttons: {
                                     yeah_i_make_things: function () {
-                                        $( "#Story" ).replaceWith(Npcname + "<p id='Story'> So givie it a shot then </p>");
+                                        $( "#Story" ).replaceWith("<p id='Story'> So givie it a shot then </p>");
                                         $('#dialog-2').dialog({
                                             autoOpen: true,
+                                            width: 600,
                                             buttons: {
                                                 Okey: function () {$(this).dialog('close');},
                                             },

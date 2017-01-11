@@ -9,6 +9,7 @@ $(function() {
 
     $( "#dialog-2" ).dialog({
         autoOpen: false,
+        width: 600,
         buttons: {
             Well_congrats: function() {
                 $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Eheee i told you just a moment ago how i think about it <br>" +
@@ -18,13 +19,13 @@ $(function() {
                     autoOpen: true,
                     buttons: {
                         Maby_you_want_to_come_to_the_subbase: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well i dont trust you but a subbase? <br>" +
+                            $( "#Story" ).replaceWith("<p id='Story'> Well i dont trust you but a subbase? <br>" +
                                 "Is it safe </p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
                                 buttons: {
                                  Yeah_its_guraded_by_the_army: function () {
-                                     $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well No trust sorry</p>")
+                                     $( "#Story" ).replaceWith("<p id='Story'> Well No trust sorry</p>")
                                      $('#dialog-2').dialog({
                                          autoOpen: true,
                                          buttons: {
@@ -45,12 +46,12 @@ $(function() {
                     autoOpen: true,
                     buttons: {
                         Well_DO_you_recommend_it: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well what do you think  </p>");
+                            $( "#Story" ).replaceWith("<p id='Story'> Well what do you think  </p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
                                 buttons: {
                                     yes: function () {
-                                        $( "#Story" ).replaceWith(Npcname + "<p id='Story'>  Well if you want kids and be a women? </p>");
+                                        $( "#Story" ).replaceWith("<p id='Story'>  Well if you want kids and be a women? </p>");
                                         $('#dialog-2').dialog({
                                             autoOpen: true,
                                             buttons: {

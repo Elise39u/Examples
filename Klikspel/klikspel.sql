@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Gegenereerd op: 10 jan 2017 om 15:33
+-- Gegenereerd op: 11 jan 2017 om 15:24
 -- Serverversie: 5.7.9
 -- PHP-versie: 5.6.16
 
@@ -1258,12 +1258,12 @@ INSERT INTO `npc` (`id`, `Name`, `Place`, `Bio`) VALUES
 (21, 'Pregnant Emma', 'AgianStreet.php', 'BIO: I am Emma and for god sake i choose the wrong time to be pregnant <br> " +\n        " I grew up in New york studied here and even had a job here  <br> " +\n        " I met my husband Jurgen when is was 24 and we married at the age of 29 <br>" +\n        " Three months later We were happy that i finally was pregnant <br>" +\n        " But now 7,5 months later here we stand the worst time to be pregnant";'),
 (22, 'Electrician Erik', 'OMetal.php', 'BIO: I am Erik and worked here for 8 years now <br> " +\n        " Well not in the store but the bunnsis right to it  <br> " +\n        " And so here i standing staring at the bulding  <br>" +\n        " Well at least i dont have to do my job here  <br>" +\n        " Well at least i can retire now'),
 (23, 'Hotel Owner Anna', 'HotelE.php', 'BIO: Hi there i am Anna <br> " +\n        " I strted this hotel 18 years ago and it growed to the biggest one in the city  <br> " +\n        " I refuse to leave my city <br>" +\n        "So you can leave unless you have something to as'),
-(24, 'Singer Gorden en geer', 'HotelStair.php\r\n', NULL),
-(25, 'Chef Hans', 'HotelD.php\r\n', NULL),
-(26, 'Teacher Imre', 'SchoolClass1.php', NULL),
-(27, 'Coach Corine', 'SchoolClass1.php', NULL),
-(28, 'Student Dylan', 'SchoolClass1.php', NULL),
-(29, 'Students Sanne en Robin', 'SchoolClass2.php', NULL),
+(24, 'Singer Gorden en geer', 'HotelStair.php\r\n', 'BIO: We are SIngers Geer en Goor  <br> " +\n        " At least not so goor as you  <br> " +\n        " Wahahahahhahh  <br>" +\n        "So we stayed at the hotel for a concert in the city'),
+(25, 'Chef Hans', 'HotelD.php\r\n', 'BIO: Well Well a stranger <br> " +\n        " Hi i am chef of the kitchen and my name is hans  <br> " +\n        " I served this hotel sinds it has been build and i am close with Anna  <br>" +\n        "We are deep friends when we stared this hotel'),
+(26, 'Teacher Imre', 'SchoolClass1.php', 'BIO: Well Well a new slaf <br> " +\n        " Hi i am teacher Imre And i teach kids all albout russia  <br> " +\n        " Form swearing to squad like a true slaf my friend  <br>" +\n        " So are you here to for the lesson take place then'),
+(27, 'Coach Corine', 'SchoolClass1.php', 'Well i am Corine <br>" +\n        "I started Coaching on davinci so about a year ago <br>" +\n        " Well i loved to help pepole evole in there own skill <br>" +\n        "But get on holliday with Coach Marieke and Jeroen was a bad idea <br>" +\n        "i wonder how they are doining'),
+(28, 'Student Dylan', 'SchoolClass1.php', 'BIO: Well i am Dylan and i am 21 years old <br>" +\n        "I started at davinci college in 2016 Setpmber and almost finshed <br>" +\n        "I was here in New york for my last gratute stage so this is unforantly'),
+(29, 'Students Sanne en Robin', 'SchoolClass2.php', 'BIO: Well We are Sanne and Robin and both are we 22 years old <br>" +\n        " We studied on the davinci college in holland in the  place gorinchm <br>" +\n        " it was a mehhhhh school but what did you expect'),
 (30, 'electrician teacher Edwin', 'SchoolClass2.php', NULL),
 (31, 'Art teacher Christina', 'SchoolAula.php\r\n', NULL),
 (32, 'Gothic Kids', 'SchoolStair.php', NULL),
@@ -1321,10 +1321,10 @@ CREATE TABLE IF NOT EXISTS `player_stats` (
 --
 
 INSERT INTO `player_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
-(1, 1, 5, '300'),
+(1, 1, 5, '175'),
 (2, 1, 1, '80'),
 (3, 1, 2, '100'),
-(4, 1, 3, '98110'),
+(4, 1, 3, '250'),
 (5, 1, 4, '300'),
 (6, 1, 7, '50'),
 (7, 1, 6, '25'),
@@ -1343,13 +1343,13 @@ INSERT INTO `player_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
 (564, 3, 6, '25'),
 (562, 3, 5, '175'),
 (529, 2, 11, '5000'),
-(528, 2, 3, '250'),
+(528, 2, 3, '175'),
 (527, 2, 7, '50'),
 (526, 2, 2, '100'),
 (525, 2, 1, '80'),
 (524, 2, 6, '25'),
 (523, 2, 4, '300'),
-(522, 2, 5, '175'),
+(522, 2, 5, '300'),
 (565, 3, 1, '80'),
 (510, 1, 11, '5000');
 
@@ -1367,7 +1367,7 @@ CREATE TABLE IF NOT EXISTS `quest` (
   `Gold` int(11) DEFAULT NULL,
   `Reward` varchar(1024) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `quest`
@@ -1394,7 +1394,9 @@ INSERT INTO `quest` (`id`, `Name`, `Npc_id`, `Gold`, `Reward`) VALUES
 (18, 'Help on the way', 10, 2450, 'Npc10 is now in the schoolhall'),
 (19, 'Lost Friends', 5, 1250, 'NULL'),
 (20, 'A blink for a eye', 6, 550, 'NULL'),
-(21, 'Saftey first', 21, 450, 'Npc 21 --> Subdocks');
+(21, 'Saftey first', 21, 450, 'Npc 21 --> Subdocks'),
+(22, 'Hey Appel KNIFE', 25, 2670, 'NULL'),
+(23, 'Restarting Coaching', 27, 4500, 'NULL');
 
 -- --------------------------------------------------------
 

@@ -8,6 +8,7 @@ $(function() {
 
     $( "#dialog-2" ).dialog({
         autoOpen: false,
+        width: 600,
         buttons: {
             Do_you_need_help: function() {
                 $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well..... i have two things <br>" +
@@ -17,16 +18,18 @@ $(function() {
                     autoOpen: true,
                     buttons: {
                         What_do_i_have_to_do: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well go look for a treat for the kids <br>" +
+                            $( "#Story" ).replaceWith("<p id='Story'> Well go look for a treat for the kids <br>" +
                                 "If you come back to me with a treat i wil reward you with some info</p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
+                                width: 600,
                                 buttons: {
                                   Where_can_i_find_this: function () {
-                                      $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well Were are you waiting for <br>" +
+                                      $( "#Story" ).replaceWith("<p id='Story'> Well Were are you waiting for <br>" +
                                           "And yes look in the supermarkt or the candy store</p>");
                                       $('#dialog-2').dialog({
                                           autoOpen: true,
+                                          width: 600,
                                           buttons: {
                                               Okey: function () {
                                                   alert('You started the quest Treat time');
@@ -36,10 +39,11 @@ $(function() {
                                 },
                             })},
                         Well_okey_then: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well Come back to me with a older person <br>" +
+                            $( "#Story" ).replaceWith("<p id='Story'> Well Come back to me with a older person <br>" +
                                 "Else you wont get this quest</p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
+                                width: 600,
                                 buttons: {
                                     Okey_See_you_Soon: function () {$(this).dialog('close');},
                                 },
@@ -52,16 +56,19 @@ $(function() {
                     "So do you like kids or not </p>");
                 $('#dialog-2').dialog({
                     autoOpen: true,
+                    width: 600,
                     buttons: {
                         yes: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well ever did it or not?  </p>");
+                            $( "#Story" ).replaceWith("<p id='Story'> Well ever did work with kids it or not?  </p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
+                                width: 600,
                                 buttons: {
                                     yes: function () {
-                                        $( "#Story" ).replaceWith(Npcname + "<p id='Story'> So then maby you should try it </p>");
+                                        $( "#Story" ).replaceWith("<p id='Story'> So then maby you should try it </p>");
                                         $('#dialog-2').dialog({
                                             autoOpen: true,
+                                            width: 600,
                                             buttons: {
                                                 Okey: function () {$(this).dialog('close');},
                                             },

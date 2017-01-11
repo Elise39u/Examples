@@ -57,10 +57,11 @@ if (isset($_POST['submit'])) {
 
     elseif ($data ==  'XSS Detected!' || $data1 ==  'XSS Detected!' || $data2 ==  'XSS Detected!' ||
         $data3 ==  'XSS Detected!' || $data4 ==  'XSS Detected!') {
-        echo '<span style="color: red; "> HTML OR SCRIPT  tag or <> or pass  DETECTED </span>';
+        echo '<span style="color: red; "> NO VAILD INPUT DETECTED </span>';
         $mysqli->close();
         session_destroy();
         unset($_COOKIE);
+        setcookie('', '', time()-3600);
     }
 
     else {

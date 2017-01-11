@@ -21,6 +21,7 @@
     <p> You`re thinking about what you're taking on your trip. <br>
         You're thinking about getting out of town. <br>
         And the road to freedom is a long journey.</p>
+
     <img src="img/BT11_ModernSerenity_Slaapkamer.jpg">
     <ul>
         <li><a href="room.php"> Go back search for a way ouy</a></li>

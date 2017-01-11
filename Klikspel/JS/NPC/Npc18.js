@@ -8,6 +8,7 @@ $(function() {
 
     $( "#dialog-2" ).dialog({
         autoOpen: false,
+        width: 600,
         buttons: {
             Do_you_need_help: function() {
                 $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well Can you find a Calulator, Pen, Notebook <br>" +
@@ -17,9 +18,10 @@ $(function() {
                     autoOpen: true,
                     buttons: {
                         Okey_Sure: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well go on on NOW</p>");
+                            $( "#Story" ).replaceWith("<p id='Story'> Well go on on NOW</p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
+                                width: 600,
                                 buttons: {
                                   Easy: function () {
                                       alert('You started the quest Math time :(');
@@ -36,14 +38,16 @@ $(function() {
                     autoOpen: true,
                     buttons: {
                         Well_thats_really_bad: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> I now it was my biggest investigation of my life  </p>");
+                            $( "#Story" ).replaceWith("<p id='Story'> I now it was my biggest investigation of my life  </p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
+                                width: 600,
                                 buttons: {
                                     Would_you_ptofit_of_it: function () {
-                                        $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well no </p>");
+                                        $( "#Story" ).replaceWith("<p id='Story'> Well no </p>");
                                         $('#dialog-2').dialog({
                                             autoOpen: true,
+                                            width: 600,
                                             buttons: {
                                                 Okey: function () {$(this).dialog('close');},
                                             },

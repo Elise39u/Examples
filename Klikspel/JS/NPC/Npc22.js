@@ -9,6 +9,7 @@ $(function() {
 
     $( "#dialog-2" ).dialog({
         autoOpen: false,
+        width: 600,
         buttons: {
             Well_any_need_of_help: function() {
                 $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well no maby you can try later on <br>" +
@@ -17,13 +18,13 @@ $(function() {
                     autoOpen: true,
                     buttons: {
                         Okey: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well Do you know a place to retire <br>" +
+                            $( "#Story" ).replaceWith( "<p id='Story'> Well Do you know a place to retire <br>" +
                                 "Is it safe </p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
                                 buttons: {
                                  No: function () {
-                                     $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Really </p>")
+                                     $( "#Story" ).replaceWith("<p id='Story'> Really </p>")
                                      $('#dialog-2').dialog({
                                          autoOpen: true,
                                          buttons: {
@@ -44,12 +45,12 @@ $(function() {
                     autoOpen: true,
                     buttons: {
                         Well_DO_you_recommend_it: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well are you can a cabel man  </p>");
+                            $( "#Story" ).replaceWith("<p id='Story'> Well are you can a cabel man  </p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
                                 buttons: {
                                     yes: function () {
-                                        $( "#Story" ).replaceWith(Npcname + "<p id='Story'>  Now go for it then </p>");
+                                        $( "#Story" ).replaceWith("<p id='Story'>  Now go for it then </p>");
                                         $('#dialog-2').dialog({
                                             autoOpen: true,
                                             buttons: {

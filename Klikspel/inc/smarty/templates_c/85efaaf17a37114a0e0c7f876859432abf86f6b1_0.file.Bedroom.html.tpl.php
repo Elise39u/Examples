@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-01 08:21:03
+/* Smarty version 3.1.29, created on 2017-01-10 17:49:49
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Bedroom.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_583fcf5f531666_99602166',
+  'unifunc' => 'content_587510adc05a18_92747588',
   'file_dependency' => 
   array (
     '85efaaf17a37114a0e0c7f876859432abf86f6b1' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Bedroom.html.tpl',
-      1 => 1480513787,
+      1 => 1484066987,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_583fcf5f531666_99602166 ($_smarty_tpl) {
+function content_587510adc05a18_92747588 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -52,8 +52,11 @@ function content_583fcf5f531666_99602166 ($_smarty_tpl) {
     <p> You`re thinking about what you're taking on your trip. <br>
         You're thinking about getting out of town. <br>
         And the road to freedom is a long journey.</p>
+
+    <p id="Marieke"></p>
     <img src="img/BT11_ModernSerenity_Slaapkamer.jpg">
     <ul>
+        <a id="Fun" href="#"></a>
         <li><a href="room.php"> Go back search for a way ouy</a></li>
         <li><a href="kichten.php"> Eating? </a> </li>
         <li><a href="Sleep.php"> Take a nap </a> </li>
@@ -91,6 +94,19 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
 ?>
     </ul>
 
+    <?php echo '<script'; ?>
+ type="text/javascript">
+        if (window.name == "Marieke") {
+            document.getElementById('Marieke').innerHTML = "Marieke: maby you want something fun to do he <br>" +
+                    "Would you do that <?php echo $_SESSION['username'];?>
+ <br>"  +
+                    "Or are you scared especilly after i saw pregnant emma <br>" +
+                    "If you now what i mean ";
+            document.getElementById('Fun').setAttribute("href", "#");
+            document.getElementById('Fun').innerHTML=" Go have some fun with the coach"
+        }
+    <?php echo '</script'; ?>
+>
 </div>
 </body>
 </html><?php }

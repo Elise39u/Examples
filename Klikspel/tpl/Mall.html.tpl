@@ -19,6 +19,7 @@
 
     <h1> The mall  </h1>
     <p> In the distence are a few shops? dare to go to it </p>
+    <p id="Npc11"></p>
     <img src="img/mall.png">
     <ul>
         <li><a href="Deadend.php"> Go back and stop shopping ;-; </a></li>
@@ -34,6 +35,14 @@
         {/foreach}
     </ul>
 
+    <script type="text/javascript">
+        if (window.name == "Marieke") {
+            document.getElementById('Npc11').innerHTML = "Coach Marieke: Ahhhh please could we go shopping <br>" +
+                    "Please i see some nice shops but are they closed? <br>" +
+                    "ahhhh please {$smarty.session.username} <br> " +
+                            "{$smarty.session.username} Well Marieke ........."
+        }
+    </script>
 </div>
 </body>
 </html>

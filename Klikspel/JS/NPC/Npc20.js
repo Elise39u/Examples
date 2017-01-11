@@ -11,6 +11,7 @@ $(function() {
 
     $( "#dialog-2" ).dialog({
         autoOpen: false,
+        width: 600,
         buttons: {
             Well_breda: function() {
                 $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well only a few of us went there <br>" +
@@ -18,16 +19,16 @@ $(function() {
                     Npcname3 + " what are we talking about <br>" +
                     Npcname1 + " You dindt say it was cheap <br>" +
                     Npcname2 + " Well i dont care <br>" +
-                    Npcname + "if you did go with us we looked for a more nicer hotel <br>" +
+                    Npcname + " if you did go with us we looked for a more nicer hotel <br>" +
                     "Because this one was skeer <br>" +
-                    Npcname4 + Npcname3 + "Well thats true</p>");
+                    Npcname4 + Npcname3 + " Well thats true</p>");
                 $('#dialog-2').dialog({
                     autoOpen: true,
                     buttons: {
                         Okey_MonsterNon_asked_me: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Shieetttttttt <br>" +
+                            $( "#Story" ).replaceWith("<p id='Story'> Shieetttttttt <br>" +
                                 Npcname2 + " You know monsternon is Alco <br>" +
-                                Npcname3 + " Kerel and Justin Hjb <br>" +
+                                Npcname1 + " Kerel and Justin Hjb <br>" +
                                 Npcname  + " yes Justin hjb <br>" +
                                 Npcname4 + " Well no -.- <br>" +
                                 Npcname3 + " comon guys not so neagtive <br>" +
@@ -35,6 +36,7 @@ $(function() {
                                 Npcname3 + " Okey then</p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
+                                width: 600,
                                 buttons: {
                                  Okey: function () {$(this).dialog('close');},
                                 },
@@ -43,21 +45,21 @@ $(function() {
                 })},
             Well_why_bakfiets: function () {
                 $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well thats a good question <br>" +
-                    Npcname3 + "Its Was a fun name <br>" +
-                    Npcname4 + "Well alco en kevin came with it <br>" +
-                    Npcname + Npcname1 + "Thats is true and Justin Hjb <br>" +
+                    Npcname3 + " Its Was a fun name <br>" +
+                    Npcname4 + " Well alco en kevin came with it <br>" +
+                    Npcname + Npcname1 + " Thats is true and Justin Hjb <br>" +
                     Npcname2 + " Whahahahhah <br>" +
-                    Npcname4 + "No Just never -.-</p>");
+                    Npcname4 + " No Just never -.-</p>");
                 $('#dialog-2').dialog({
                     autoOpen: true,
                     buttons: {
                         Can_i_join: function () {
-                            $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Nehhh  <br>" +
+                            $( "#Story" ).replaceWith("<p id='Story'> Nehhh  <br>" +
                                 Npcname1 + " Nope <br> " +
                                 Npcname2 + " You know lingling <br>" +
                                 Npcname3 + " Nope <br>" +
                                 Npcname4 + " Nope <br>" +
-                                Npcname + Npcname1 + "Justin Hjb and #Justinlifematters <br>" +
+                                Npcname + Npcname1 + " Justin Hjb and #Justinlifematters <br>" +
                                 Npcname4 + " Kill me please</p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
