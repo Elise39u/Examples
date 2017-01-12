@@ -25,7 +25,13 @@
     <img src="img/HotelBalconoy.png">
     <ul>
         <li><a href="HotelFloor.php"> Go back inside </a></li>
-        <li><a href="#"> Walk away to unkown sources </a></li>
+        {if isset($smarty.session.info1)}
+        {if $smarty.session.info1 == true AND $smarty.session.info2 == true AND $smarty.session.info3 == true}
+            <li><a href="#"> Go towards the docks </a></li>
+            {else}
+            <li><a href="#"> There is nothing there  </a></li>
+        {/if}
+        {/if}
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

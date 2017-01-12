@@ -1,29 +1,32 @@
-var Npcname  = "Student Dylan";
+var Npcname = "Programmers Youri en Pieter";
 
 $(function() {
-    document.getElementById('Bio').innerHTML = "BIO: Well i am Dylan and i am 21 years old <br>" +
-        "I started at davinci college in 2016 Setpmber and almost finshed <br>" +
-        "I was here in New york for my last gratute stage so this is unforantly";
+    document.getElementById('Bio').innerHTML = "BIO: Hi there We are Youri and Pieter <br>" +
+        "We studied software development and for a job moved to new york <br>" +
+        "So we went togther on work search to new york and found a job" +
+        "Never nowing that would end this bad";
 
     $( "#dialog-2" ).dialog({
         autoOpen: false,
         buttons: {
-            Well_any_need_of_help: function() {
-                $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well ..... excatlly </p>");
+            Well_Any_help_Needed: function() {
+                $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well Let me think about that <br>" +
+                    "Pieter: i dont have anything</p>");
                 $('#dialog-2').dialog({
                     autoOpen: true,
                     buttons: {
-                        Now: function () {
-                            $( "#Story" ).replaceWith("<p id='Story'> No i am a student what do you expect </p>");
+                        Andd: function () {
+                            $( "#Story" ).replaceWith("<p id='Story'> So man easy <br>" +
+                                "Not anythings as this moment </p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
                                 buttons: {
-                                 Well: function () {
-                                     $( "#Story" ).replaceWith("<p id='Story'> NOPE </p>")
+                                 Okey: function () {
+                                     $( "#Story" ).replaceWith("<p id='Story'> So you can go now </p>")
                                      $('#dialog-2').dialog({
                                          autoOpen: true,
                                          buttons: {
-                                             okey: function () {$(this).dialog('close')}
+                                             Well_Okey: function () {$(this).dialog('close')}
                                          }
                                      })
                                  },
@@ -31,31 +34,29 @@ $(function() {
                             })},
                     }
                 })},
-           So_how_is_school: function () {
-                $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well think about it<br>" +
-                    " Stupid friends espcilly that Justin  and a school that nothing can   <br>" +
-                    " So how do you think </p> ");
+           So_Software_development: function () {
+                $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Yes if you have the passion you should do it </p> ");
                 $('#dialog-2').dialog({
                     autoOpen: true,
                     buttons: {
-                        Well_good: function () {
-                            $( "#Story" ).replaceWith("<p id='Story'> Yeah you`re right </p>");
+                        Ehhheeeee: function () {
+                            $( "#Story" ).replaceWith("<p id='Story'> Yeah i know that its passion <br>" +
+                                "but what is the problem </p>");
                             $('#dialog-2').dialog({
                                 autoOpen: true,
                                 buttons: {
-                                    Well: function () {
-                                        $( "#Story" ).replaceWith("<p id='Story'> Well what <br>" +
-                                            "So you not my friend </p>");
+                                    pasion: function () {
+                                        $( "#Story" ).replaceWith("<p id='Story'> Well try it </p>");
                                         $('#dialog-2').dialog({
                                             autoOpen: true,
                                             buttons: {
-                                                Nothing_bye: function () {$(this).dialog('close');},
+                                                Okeeey: function () {$(this).dialog('close');},
                                             },
                                         })},
                                     Bye: function () {$(this).dialog('close');}
                                 }
                             })},
-                        Well_Bad: function () {$(this).dialog('close');}
+                        Well_Bye: function () {$(this).dialog('close');}
                     }
                 })},
             Goodbye: function () {$(this).dialog('close');}

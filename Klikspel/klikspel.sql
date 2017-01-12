@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Gegenereerd op: 11 jan 2017 om 15:24
+-- Gegenereerd op: 12 jan 2017 om 15:48
 -- Serverversie: 5.7.9
 -- PHP-versie: 5.6.16
 
@@ -140,7 +140,7 @@ CREATE TABLE IF NOT EXISTS `inventory` (
   `space` int(254) NOT NULL,
   `quantity` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -1264,16 +1264,16 @@ INSERT INTO `npc` (`id`, `Name`, `Place`, `Bio`) VALUES
 (27, 'Coach Corine', 'SchoolClass1.php', 'Well i am Corine <br>" +\n        "I started Coaching on davinci so about a year ago <br>" +\n        " Well i loved to help pepole evole in there own skill <br>" +\n        "But get on holliday with Coach Marieke and Jeroen was a bad idea <br>" +\n        "i wonder how they are doining'),
 (28, 'Student Dylan', 'SchoolClass1.php', 'BIO: Well i am Dylan and i am 21 years old <br>" +\n        "I started at davinci college in 2016 Setpmber and almost finshed <br>" +\n        "I was here in New york for my last gratute stage so this is unforantly'),
 (29, 'Students Sanne en Robin', 'SchoolClass2.php', 'BIO: Well We are Sanne and Robin and both are we 22 years old <br>" +\n        " We studied on the davinci college in holland in the  place gorinchm <br>" +\n        " it was a mehhhhh school but what did you expect'),
-(30, 'electrician teacher Edwin', 'SchoolClass2.php', NULL),
-(31, 'Art teacher Christina', 'SchoolAula.php\r\n', NULL),
-(32, 'Gothic Kids', 'SchoolStair.php', NULL),
-(33, 'Director Kees', 'SchoolClass3.php', NULL),
-(34, 'Teacher Hans', 'SchoolClass3.php', NULL),
-(35, 'Teacher Eduwan', 'SchoolClass5.php\r\n', NULL),
-(36, 'Student Jos', 'SchoolClass6.php', NULL),
-(37, 'Student Brain', 'SchoolClass6.php', NULL),
-(38, 'programmer Youri and Pieter', 'SchoolClass7.php', NULL),
-(39, 'teacher Ingrit', 'SchoolClass7.php', NULL);
+(30, 'electrician teacher Edwin', 'SchoolClass2.php', 'BIO: Hi There i am Edwin and i am a teacher <br>" +\n        "I teached Kids For Electrician for a decaeed of 2,5  <br>" +\n        "Now i am stuck here well the world is great here he '),
+(31, 'Art teacher Christina', 'SchoolAula.php\r\n', 'BIO: Well a stranger come along i dont bite <br>" +\n        "I am the Art teacher on this school and my name is Christina  <br>" +\n        " Well with the outbreak there is not my Art left in the city <br>" +\n        "So i try to keep it alive but thats gonna get diffcult'),
+(32, 'Gothic Kids', 'SchoolStair.php', 'BIO: Well we are the Gothic kids <br>" +\n        "We just want the world black and black only <br>" +\n        "So go away'),
+(33, 'Director Kees', 'SchoolClass3.php', 'BIO: Hi there Stranger i am Kees <br>" +\n        "I am The director of this school for over 15 years now <br>" +\n        "I saw people go and saw people elove so i have seen much<br>" +\n        "Not everything but this even.'),
+(34, 'Teacher Hans', 'SchoolClass3.php', 'BIO: So new fresh Blood <br>" +\n        "Just kidding i am techer Hans and do this al over 10 years now <br>" +\n        "I dissagree on one way lesson i tell you how but if you do it better go on. <br>" +\n        "I started a project last year with some students from it to give lesson about tools <br>" +\n        "Well i regrat going on holiyday to new york'),
+(35, 'Teacher Eduwan', 'SchoolClass5.php\r\n', 'BIO: Well Well Are you here for class <br>" +\n        "Well Just a Joke i am Eduwan And i am a teacher for 5 years now <br> " +\n        " So what are you doing here if i can ask?'),
+(36, 'Student Jos', 'SchoolClass6.php', 'BIO: Well stranger i am Jos  <br>" +\n        "I studied It in holland IT for over 5 years <br>" +\n        "After i finshed that i went to studie It here in new york but yeah'),
+(37, 'Student Brain', 'SchoolClass6.php', 'BIO: Well stranger i am brain  <br>" +\n        "I studied It in holland IT for over 3 years <br>" +\n        "After i finshed that i went to studied It here in new york but yeah <br>" +\n        "i was almost done with my study here so i could go back'),
+(38, 'programmer Youri and Pieter', 'SchoolClass7.php', 'BIO: Hi there We are Youri and Pieter <br>" +\n        "We studied software development and for a job moved to new york <br>" +\n        "So we went togther on work search to new york and found a job" +\n        "Never nowing that would end this bad'),
+(39, 'teacher Ingrit', 'SchoolClass7.php', 'BIO: Well hi i am Ingrit <br>" +\n        "I teach here for at least 12,5 years now <br>" +\n        "Wat i teach are It and some lanuguge <br>" +\n        "Maby i did need a holliyday after all');
 
 -- --------------------------------------------------------
 
@@ -1334,14 +1334,14 @@ INSERT INTO `player_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
 (544, 2, 8, ''),
 (569, 3, 11, '5000'),
 (506, 1, 8, ''),
-(568, 3, 3, '250'),
+(568, 3, 3, '5260'),
 (496, 1, 10, ''),
 (495, 1, 9, ''),
 (567, 3, 7, '50'),
 (566, 3, 2, '100'),
 (563, 3, 4, '300'),
 (564, 3, 6, '25'),
-(562, 3, 5, '175'),
+(562, 3, 5, '300'),
 (529, 2, 11, '5000'),
 (528, 2, 3, '175'),
 (527, 2, 7, '50'),
@@ -1350,7 +1350,7 @@ INSERT INTO `player_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
 (524, 2, 6, '25'),
 (523, 2, 4, '300'),
 (522, 2, 5, '300'),
-(565, 3, 1, '80'),
+(565, 3, 1, '1080'),
 (510, 1, 11, '5000');
 
 -- --------------------------------------------------------
@@ -1367,7 +1367,7 @@ CREATE TABLE IF NOT EXISTS `quest` (
   `Gold` int(11) DEFAULT NULL,
   `Reward` varchar(1024) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=26 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `quest`
@@ -1396,7 +1396,9 @@ INSERT INTO `quest` (`id`, `Name`, `Npc_id`, `Gold`, `Reward`) VALUES
 (20, 'A blink for a eye', 6, 550, 'NULL'),
 (21, 'Saftey first', 21, 450, 'Npc 21 --> Subdocks'),
 (22, 'Hey Appel KNIFE', 25, 2670, 'NULL'),
-(23, 'Restarting Coaching', 27, 4500, 'NULL');
+(23, 'Restarting Coaching', 27, 4500, 'NULL'),
+(24, 'Art Skills?', 31, 1250, 'M4a1-s, M4a4, Rpg'),
+(25, 'Connecting', 34, 1900, 'Light Cyan Potion');
 
 -- --------------------------------------------------------
 

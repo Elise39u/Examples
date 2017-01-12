@@ -20,7 +20,7 @@
     <h1> Money </h1>
     <p>Welcome to the bank </p>   <p> You currently have <strong>{$inbank}</strong> gold in the bank, and <strong>{$gold}</strong> gold in hand.</p>
     <form action='Counter.php' method='post'>
-        <input type='text' name='amount' /><br />
+        <input type='number' name='amount' /><br />
         <input type='submit' name='action' value='Deposit' /> or
         <input type='submit' name='action' value='Withdraw' /> 	</form>
 

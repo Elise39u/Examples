@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-28 15:04:42
+/* Smarty version 3.1.29, created on 2017-01-12 14:36:07
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Street.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5863c67a606da8_95131633',
+  'unifunc' => 'content_5877864789a908_28206643',
   'file_dependency' => 
   array (
     '5036c34b61a3181cc05a81611b13b48e31e0e350' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Street.html.tpl',
-      1 => 1482933881,
+      1 => 1484228164,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5863c67a606da8_95131633 ($_smarty_tpl) {
+function content_5877864789a908_28206643 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -27,6 +27,7 @@ function content_5863c67a606da8_95131633 ($_smarty_tpl) {
     <title> <?php echo $_smarty_tpl->tpl_vars['pagetitle']->value;?>
  </title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="css/timeTo.css" type="text/css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -48,6 +49,7 @@ function content_5863c67a606da8_95131633 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
+    <div id="counter-1"></div>
     <h1> The city </h1>
     <p> And there you`re standing on the middle of the street. <br>
         You look down to the right and see nothing. To the left you see almost a bridge.<br>
@@ -103,5 +105,21 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
 
 </div>
 </body>
+
+<?php echo '<script'; ?>
+ src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+>window.jQuery || document.write('<?php echo '<script'; ?>
+ src="JS/jquery.min.js"><\/script>')<?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="JS/jquery.time-to.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ type="text/javascript">
+        $('#counter-1').timeTo(new Date('Sun Mar 26 2017 09:00:00 GMT+0100 (West-Europa (standaardtijd))'));
+<?php echo '</script'; ?>
+>
 </html><?php }
 }

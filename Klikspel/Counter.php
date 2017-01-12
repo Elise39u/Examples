@@ -36,14 +36,13 @@ while ($row = mysqli_fetch_assoc($result)) {
 $gold = getStat('gc',$userID);
 if(isset($_POST['amount'])) {
     $amount = $_POST['amount'];
-    var_dump($amount);
     if($_POST['action'] == 'Deposit') {
         if($amount > $gold || $amount == '') {
             // the user input something weird - assume the maximum
             $amount = $gold;
         }
         else {
-            if($amount < $gold) {
+            if($amount < 0) {
                 $amount = 0;
                 $smarty->assign('info', 'Dont put a negative number');
             }
@@ -58,7 +57,7 @@ if(isset($_POST['amount'])) {
             $amount = $bankGold;
         }
         else {
-            if($amount < $bankGold) {
+            if($amount < 0) {
                 $amount = 0;
                 $smarty->assign('info', 'Dont put a negative number');
             }

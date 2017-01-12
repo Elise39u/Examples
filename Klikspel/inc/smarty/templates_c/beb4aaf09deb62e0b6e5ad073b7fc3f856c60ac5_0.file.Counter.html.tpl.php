@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-10 10:29:09
+/* Smarty version 3.1.29, created on 2017-01-12 09:00:13
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Counter.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5874a9653b8be3_06283272',
+  'unifunc' => 'content_5877378d542463_58120529',
   'file_dependency' => 
   array (
     'beb4aaf09deb62e0b6e5ad073b7fc3f856c60ac5' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Counter.html.tpl',
-      1 => 1484040545,
+      1 => 1484208008,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5874a9653b8be3_06283272 ($_smarty_tpl) {
+function content_5877378d542463_58120529 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -53,7 +53,7 @@ function content_5874a9653b8be3_06283272 ($_smarty_tpl) {
 </strong> gold in the bank, and <strong><?php echo $_smarty_tpl->tpl_vars['gold']->value;?>
 </strong> gold in hand.</p>
     <form action='Counter.php' method='post'>
-        <input type='text' name='amount' /><br />
+        <input type='number' name='amount' /><br />
         <input type='submit' name='action' value='Deposit' /> or
         <input type='submit' name='action' value='Withdraw' /> 	</form>
 
@@ -74,13 +74,6 @@ function content_5874a9653b8be3_06283272 ($_smarty_tpl) {
             <p>You withdraw <strong><?php echo $_smarty_tpl->tpl_vars['withdrawn']->value;?>
 </strong> gold from your bank account. Your total gold in hand is now <strong><?php echo $_smarty_tpl->tpl_vars['gold']->value;?>
 </strong>.</p>
-        <?php }?>
-    <?php }?>
-
-    <?php if (isset($_smarty_tpl->tpl_vars['Mehhhhhh']->value)) {?>
-        <?php if ($_smarty_tpl->tpl_vars['Mehhhhhh']->value != '') {?>
-            <p style="color: #980098;"><?php echo $_smarty_tpl->tpl_vars['Mehhhhhh']->value;?>
- </p>
         <?php }?>
     <?php }?>
 

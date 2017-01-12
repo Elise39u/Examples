@@ -3,6 +3,7 @@
 <head>
     <title> {$pagetitle} </title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="css/timeTo.css" type="text/css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -17,6 +18,7 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
+    <div id="counter-1"></div>
     <h1> The city </h1>
     <p> And there you`re standing on the middle of the street. <br>
         You look down to the right and see nothing. To the left you see almost a bridge.<br>
@@ -46,4 +48,11 @@
 
 </div>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="JS/jquery.min.js"><\/script>')</script>
+<script src="JS/jquery.time-to.js"></script>
+<script type="text/javascript">
+        $('#counter-1').timeTo(new Date('Sun Mar 26 2017 09:00:00 GMT+0100 (West-Europa (standaardtijd))'));
+</script>
 </html>

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-11 09:33:18
+/* Smarty version 3.1.29, created on 2017-01-12 13:01:50
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\NPC1.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5875edce9e08b9_26902203',
+  'unifunc' => 'content_5877702ec2dfb5_94440763',
   'file_dependency' => 
   array (
     '7bfbb978578202a0fc50b5ad215de821c44dae06' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\NPC1.html.tpl',
-      1 => 1484123597,
+      1 => 1484222409,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5875edce9e08b9_26902203 ($_smarty_tpl) {
+function content_5877702ec2dfb5_94440763 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -142,10 +142,6 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
 <?php echo '<script'; ?>
  type="text/javascript" src="JS/NPC/Npc1.js"><?php echo '</script'; ?>
 >
-<!-- Bizy test the Npcs start bij 16 What to do
-.width: 600, after autoopen
-.Remove extra Npcnames
--->
 <?php echo '<script'; ?>
  src="https://code.jquery.com/jquery-1.12.4.js"><?php echo '</script'; ?>
 >

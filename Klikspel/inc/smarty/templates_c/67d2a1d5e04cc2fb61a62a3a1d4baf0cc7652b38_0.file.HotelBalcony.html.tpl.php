@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-06 08:49:25
+/* Smarty version 3.1.29, created on 2017-01-12 16:09:31
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\HotelBalcony.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586f4c053d48d0_90425071',
+  'unifunc' => 'content_58779c2bba8314_75292849',
   'file_dependency' => 
   array (
     '67d2a1d5e04cc2fb61a62a3a1d4baf0cc7652b38' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\HotelBalcony.html.tpl',
-      1 => 1483688962,
+      1 => 1484233770,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586f4c053d48d0_90425071 ($_smarty_tpl) {
+function content_58779c2bba8314_75292849 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -47,7 +47,7 @@ function content_586f4c053d48d0_90425071 ($_smarty_tpl) {
         <li>Gold Inbank: <strong><?php echo $_smarty_tpl->tpl_vars['inbank']->value;?>
 </strong></li>
     </ul>
-
+    
     <h1> A balcony  </h1>
     <p> Well the back of the hotel <br>
         You look around And see a stair go down <br>
@@ -56,7 +56,13 @@ function content_586f4c053d48d0_90425071 ($_smarty_tpl) {
     <img src="img/HotelBalconoy.png">
     <ul>
         <li><a href="HotelFloor.php"> Go back inside </a></li>
-        <li><a href="#"> Walk away to unkown sources </a></li>
+        <?php if (isset($_SESSION['info1'])) {?>
+        <?php if ($_SESSION['info1'] == true && $_SESSION['info2'] == true && $_SESSION['info3'] == true) {?>
+            <li><a href="#"> Go towards the docks </a></li>
+            <?php } else { ?>
+            <li><a href="#"> There is nothing there  </a></li>
+        <?php }?>
+        <?php }?>
     </ul>
     <ul>
         <?php
