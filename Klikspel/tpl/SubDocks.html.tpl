@@ -25,7 +25,15 @@
     <ul>
         <li><a href="SubE.php"> Go back To you`re boat </a></li>
         <li><a href="SubFuther.php"> Go on in the base </a></li>
-        <li><a href="#"> Go Talk to soldier Kane </a></li>
+        {if isset($smarty.session.PageNpc2)}
+        {if $smarty.session.PageNpc2 >= 1 }
+            <li><a href="#"> Kane doenst want to talk</a> </li>
+            {else}
+            <li><a href="NPC2.php"> Go Talk to soldier Kane </a></li>
+        {/if}
+            {else}
+            <li><a href="NPC2.php"> Go Talk to soldier Kane </a></li>
+        {/if}
     </ul>
 
     <ul>

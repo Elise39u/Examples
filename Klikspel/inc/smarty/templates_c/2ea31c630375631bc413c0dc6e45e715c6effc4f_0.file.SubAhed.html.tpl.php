@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-03 10:17:34
+/* Smarty version 3.1.29, created on 2017-01-13 14:04:19
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\SubAhed.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586b6c2ec8adb6_36559962',
+  'unifunc' => 'content_5878d053ca8153_58246900',
   'file_dependency' => 
   array (
     '2ea31c630375631bc413c0dc6e45e715c6effc4f' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\SubAhed.html.tpl',
-      1 => 1483434664,
+      1 => 1484312657,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586b6c2ec8adb6_36559962 ($_smarty_tpl) {
+function content_5878d053ca8153_58246900 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -56,7 +56,11 @@ function content_586b6c2ec8adb6_36559962 ($_smarty_tpl) {
     <ul>
         <li><a href="SubFuther.php"> Go back  </a></li>
         <li><a href="SubNear.php"> Go even futher </a></li>
-        <li><a href="#"> Go talk to widow Marjo </a></li>
+        <?php if (isset($_SESSION['PageNpc3'])) {?>
+            <li><a href="#"> Marjo wants to be alone</a></li>
+            <?php } else { ?>
+            <li><a href="NPC3.php"> Go talk to widow Marjo </a></li>
+        <?php }?>
     </ul>
 
     <ul>

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-13 10:06:14
-  from "C:\wamp64\www\Examplecode\Klikspel\tpl\NPC1.html.tpl" */
+/* Smarty version 3.1.29, created on 2017-01-13 14:10:05
+  from "C:\wamp64\www\Examplecode\Klikspel\tpl\NPC3.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58789886bc9591_66763540',
+  'unifunc' => 'content_5878d1adaeae95_06429084',
   'file_dependency' => 
   array (
-    '7bfbb978578202a0fc50b5ad215de821c44dae06' => 
+    'c2f2fe9575a18c2545cb4e439a8f82e3f0c4c801' => 
     array (
-      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\NPC1.html.tpl',
-      1 => 1484298372,
+      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\NPC3.html.tpl',
+      1 => 1484313003,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58789886bc9591_66763540 ($_smarty_tpl) {
+function content_5878d1adaeae95_06429084 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -49,7 +49,7 @@ function content_58789886bc9591_66763540 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> My name is John </h1>
+    <h1> Marjo here </h1>
     <p id="Bio"></p>
     <p id="NPC"></p>
     <p id="Quest"></p>
@@ -62,31 +62,20 @@ function content_58789886bc9591_66763540 ($_smarty_tpl) {
     -->
 
     <div id = "dialog-2" title = "Dialouge">
-        <p id="Story">John what do you want</p>
+        <p id="Story">Marjo: Well what do you want</p>
     </div>
-    <button id = "opener-2">Hi John</button>
+    <button id = "opener-2">Hi Marjo</button>
 
     <ul>
-        <li><a href="Street.php"> Go back </a></li>
+        <li><a href="SubAhed.php"> Go back </a></li>
     </ul>
 
-    <?php if (isset($_COOKIE['Quest'])) {?>
-    <?php if ($_COOKIE['Quest'] == true) {?>
+    <?php if (isset($_COOKIE['Quest2'])) {?>
+    <?php if ($_COOKIE['Quest2'] == true) {?>
         <?php echo '<script'; ?>
  type="text/javascript">
-            var NpcName = "John";
-            document.getElementById('Quest').innerHTML = NpcName + ": Here is a power swicht <br>" +
-                    "Use it to start the carrier <br>" +
-                    "There is a navy base not far away go to it maby you can find something there <br>" +
-                    "I hope you succeededs greetings " + NpcName;
-        <?php echo '</script'; ?>
->
-        <?php } else { ?>
-        <?php echo '<script'; ?>
- type="text/javascript">
-            var NpcName = "John";
-            document.getElementById('Quest').innerHTML = NpcName + ": Go look for the items dumbass";
-            alert("You stared the quest Healing");
+            var NpcName = "Kane";
+            document.getElementById('Quest').innerHTML = NpcName + " Well Thank you both now go on";
         <?php echo '</script'; ?>
 >
     <?php }?>
@@ -140,7 +129,34 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"><?php echo '</script'; ?>
 >
 <?php echo '<script'; ?>
- type="text/javascript" src="JS/NPC/Npc1.js"><?php echo '</script'; ?>
+ type="text/javascript">
+    function loadScript(url, callback)
+    {
+        // Adding the script tag to the head as suggested before
+        var head = document.getElementsByTagName('head')[0];
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = url;
+
+        // Then bind the event to the callback function.
+        // There are several events for cross browser compatibility.
+        script.onreadystatechange = callback;
+        script.onload = callback;
+
+        // Fire the loading
+        head.appendChild(script);
+    }
+
+    var callback; 
+    if (window.name == 'Marieke') {
+        loadScript("JS/NPC/Npc3_11.js", callback)
+    }
+    else {
+        loadScript("JS/NPC/Npc3.js", callback)
+    }
+    // <?php echo '<script'; ?>
+ type="text/javascript" src="JS/NPC/Npc3.js">
+<?php echo '</script'; ?>
 >
 <?php echo '<script'; ?>
  src="https://code.jquery.com/jquery-1.12.4.js"><?php echo '</script'; ?>

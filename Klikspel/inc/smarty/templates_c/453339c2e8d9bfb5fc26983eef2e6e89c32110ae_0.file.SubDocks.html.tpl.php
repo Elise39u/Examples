@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-03 09:56:09
+/* Smarty version 3.1.29, created on 2017-01-13 13:58:12
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\SubDocks.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586b67298ca2d8_99513165',
+  'unifunc' => 'content_5878cee49544d9_56933195',
   'file_dependency' => 
   array (
     '453339c2e8d9bfb5fc26983eef2e6e89c32110ae' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\SubDocks.html.tpl',
-      1 => 1483433564,
+      1 => 1484312290,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586b67298ca2d8_99513165 ($_smarty_tpl) {
+function content_5878cee49544d9_56933195 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -56,7 +56,15 @@ function content_586b67298ca2d8_99513165 ($_smarty_tpl) {
     <ul>
         <li><a href="SubE.php"> Go back To you`re boat </a></li>
         <li><a href="SubFuther.php"> Go on in the base </a></li>
-        <li><a href="#"> Go Talk to soldier Kane </a></li>
+        <?php if (isset($_SESSION['PageNpc2'])) {?>
+        <?php if ($_SESSION['PageNpc2'] >= 1) {?>
+            <li><a href="#"> Kane doenst want to talk</a> </li>
+            <?php } else { ?>
+            <li><a href="NPC2.php"> Go Talk to soldier Kane </a></li>
+        <?php }?>
+            <?php } else { ?>
+            <li><a href="NPC2.php"> Go Talk to soldier Kane </a></li>
+        <?php }?>
     </ul>
 
     <ul>

@@ -25,7 +25,11 @@
     <ul>
         <li><a href="SubFuther.php"> Go back  </a></li>
         <li><a href="SubNear.php"> Go even futher </a></li>
-        <li><a href="#"> Go talk to widow Marjo </a></li>
+        {if isset($smarty.session.PageNpc3)}
+            <li><a href="#"> Marjo wants to be alone</a></li>
+            {else}
+            <li><a href="NPC3.php"> Go talk to widow Marjo </a></li>
+        {/if}
     </ul>
 
     <ul>

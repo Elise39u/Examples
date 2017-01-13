@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-12 14:36:07
+/* Smarty version 3.1.29, created on 2017-01-13 08:47:28
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Street.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5877864789a908_28206643',
+  'unifunc' => 'content_58788610030098_55615580',
   'file_dependency' => 
   array (
     '5036c34b61a3181cc05a81611b13b48e31e0e350' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Street.html.tpl',
-      1 => 1484228164,
+      1 => 1484293522,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5877864789a908_28206643 ($_smarty_tpl) {
+function content_58788610030098_55615580 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -50,6 +50,7 @@ function content_5877864789a908_28206643 ($_smarty_tpl) {
     </ul>
 
     <div id="counter-1"></div>
+    <!-- <p><button id="reset-1" type="button">Reset</button></p> -->
     <h1> The city </h1>
     <p> And there you`re standing on the middle of the street. <br>
         You look down to the right and see nothing. To the left you see almost a bridge.<br>
@@ -118,7 +119,11 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
 >
 <?php echo '<script'; ?>
  type="text/javascript">
-        $('#counter-1').timeTo(new Date('Sun Mar 26 2017 09:00:00 GMT+0100 (West-Europa (standaardtijd))'));
+        $('#counter-1').timeTo(new Date('Dec 16 2017 00:00:00 GMT+0100 (West-Europa (standaardtijd))'));
+
+        $('#reset-1').click(function() {
+            $('#counter-1').timeTo('reset');
+        });
 <?php echo '</script'; ?>
 >
 </html><?php }

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Gegenereerd op: 12 jan 2017 om 15:48
+-- Gegenereerd op: 13 jan 2017 om 13:32
 -- Serverversie: 5.7.9
 -- PHP-versie: 5.6.16
 
@@ -140,7 +140,7 @@ CREATE TABLE IF NOT EXISTS `inventory` (
   `space` int(254) NOT NULL,
   `quantity` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -1343,7 +1343,7 @@ INSERT INTO `player_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
 (564, 3, 6, '25'),
 (562, 3, 5, '300'),
 (529, 2, 11, '5000'),
-(528, 2, 3, '175'),
+(528, 2, 3, '2280'),
 (527, 2, 7, '50'),
 (526, 2, 2, '100'),
 (525, 2, 1, '80'),
@@ -1397,7 +1397,7 @@ INSERT INTO `quest` (`id`, `Name`, `Npc_id`, `Gold`, `Reward`) VALUES
 (21, 'Saftey first', 21, 450, 'Npc 21 --> Subdocks'),
 (22, 'Hey Appel KNIFE', 25, 2670, 'NULL'),
 (23, 'Restarting Coaching', 27, 4500, 'NULL'),
-(24, 'Art Skills?', 31, 1250, 'M4a1-s, M4a4, Rpg'),
+(24, 'Art Skills?', 31, 1250, 'M4a1-s, M4, Rpg'),
 (25, 'Connecting', 34, 1900, 'Light Cyan Potion');
 
 -- --------------------------------------------------------

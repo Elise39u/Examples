@@ -9,7 +9,7 @@ $(function() {
         autoOpen: false,
         width: 600,
         buttons: {
-            Yes: function () {
+            Any_help: function () {
                 $( "#Story" ).replaceWith(Npcname + "<p id='Story'> Well ik talk only to Coach Marieke <br>" +
                     "AND NO ONE ELSE</p>");
                 $('#dialog-2').dialog({

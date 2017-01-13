@@ -19,6 +19,7 @@
     </ul>
 
     <div id="counter-1"></div>
+    <!-- <p><button id="reset-1" type="button">Reset</button></p> -->
     <h1> The city </h1>
     <p> And there you`re standing on the middle of the street. <br>
         You look down to the right and see nothing. To the left you see almost a bridge.<br>
@@ -53,6 +54,10 @@
 <script>window.jQuery || document.write('<script src="JS/jquery.min.js"><\/script>')</script>
 <script src="JS/jquery.time-to.js"></script>
 <script type="text/javascript">
-        $('#counter-1').timeTo(new Date('Sun Mar 26 2017 09:00:00 GMT+0100 (West-Europa (standaardtijd))'));
+        $('#counter-1').timeTo(new Date('Dec 16 2017 00:00:00 GMT+0100 (West-Europa (standaardtijd))'));
+
+        $('#reset-1').click(function() {
+            $('#counter-1').timeTo('reset');
+        });
 </script>
 </html>
