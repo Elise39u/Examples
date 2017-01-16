@@ -32,6 +32,39 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
 }
 
+if (isset($_SESSION['Bakfiest'])) {
+    $_COOKIE['Quest5'] = true;
+}
+
+if (!isset($_COOKIE['Quest5'])) {
+        setcookie('Quest5', false, time() + 2147483647, '', '', '', true);
+}
+
+if (isset($_COOKIE['Quest5'])) {
+    if ($_COOKIE['Quest5'] == true) {
+        if (isset($_SESSION['PageNpc5'])) {
+            $_SESSION['PageNpc5']++;
+        } else {
+            $_SESSION['PageNpc5'] = 1;
+        }
+    }
+}
+
+if (isset($_COOKIE['Quest5'])) {
+    if ($_COOKIE['Quest5'] == true) {
+        $money = getStat('gc', $userID);
+        $Hai = $money + 1250;
+        if (isset($Hai)) {
+            setStat('gc', $userID, $Hai);
+        }
+    }
+}
+
+/*
+ foreach($_COOKIE as $v){
+    echo htmlentities($v, 6, 'UTF-8').'<br />';
+}
+*/
 
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
@@ -42,4 +75,4 @@ $smarty->assign('inbank',getStat('bankgc',$userID));
 $smarty->assign('currentHP',getStat('curhp',$userID));
 $smarty->assign('maximumHP',getStat('maxhp',$userID));
 $smarty->assign('pagetitle', $pagetitle);
-$smarty->display("tpl/SubNear.html.tpl");
+$smarty->display("tpl/NPC5.html.tpl");

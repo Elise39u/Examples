@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-03 10:37:03
+/* Smarty version 3.1.29, created on 2017-01-16 13:36:03
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\SubYard.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586b70bfeeeb48_50534518',
+  'unifunc' => 'content_587cbe33aa89b6_44825051',
   'file_dependency' => 
   array (
     '7698ae453dea37fba8e89a681a08384bf1637c5d' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\SubYard.html.tpl',
-      1 => 1483435947,
+      1 => 1484570162,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586b70bfeeeb48_50534518 ($_smarty_tpl) {
+function content_587cbe33aa89b6_44825051 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -56,8 +56,16 @@ function content_586b70bfeeeb48_50534518 ($_smarty_tpl) {
     <ul>
         <li><a href="SubNear.php"> Go back  </a></li>
         <li><a href="SubBack.php"> Go torugh the backway </a></li>
-        <li><a href="#"> Go talk to Beuaty King Lauren </a></li>
-        <li><a href="#"> Go talk to photographer Mike</a></li>
+        <?php if (isset($_SESSION['Quest7_1']) || isset($_SESSION['Quest7_2'])) {?>
+            <li><a href="#"> Lauren is enjoying her stuff </a></li>
+            <?php } else { ?>
+        <li><a href="NPC7.php"> Go talk to Beuaty King Lauren </a></li>
+        <?php }?>
+        <?php if (isset($_SESSION['Quest8_1']) || isset($_SESSION['Quest8_2'])) {?>
+            <li><a href="#"> Mike is gone photographing </a></li>
+            <?php } else { ?>
+            <li><a href="NPC8.php"> Go talk to photographer Mike</a></li>
+        <?php }?>
         <li><a href="#"> Go talk to Teacher Berna </a></li>
         <li><a href="#"> Go talk to Coach Jeroen </a></li>
         <li><a href="#"> Go talk to Coach Marieke </a></li>

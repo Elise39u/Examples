@@ -39,10 +39,10 @@
         <li><a href="SubAhed.php"> Go back </a></li>
     </ul>
 
-    {if isset($smarty.cookies.Quest2)}
-    {if $smarty.cookies.Quest2 == true}
+    {if isset($smarty.cookies.Quest3)}
+    {if $smarty.cookies.Quest3 == true}
         <script type="text/javascript">
-            var NpcName = "Kane";
+            var NpcName = "Majo";
             document.getElementById('Quest').innerHTML = NpcName + " Well Thank you both now go on";
         </script>
     {/if}

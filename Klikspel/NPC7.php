@@ -32,6 +32,48 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
 }
 
+if (!isset($_COOKIE['Quest7_1'])) {
+        setcookie('Quest7_1', false, time() + 2147483647, '', '', '', true);
+}
+
+if (!isset($_COOKIE['Quest7_2'])) {
+        setcookie('Quest7_2', false, time() + 2147483647, '', '', '', true);
+}
+
+if (isset($_COOKIE['Quest7_1']) || isset($_COOKIE['Quest7_2'])) {
+    if ($_COOKIE['Quest7_1'] == true || $_COOKIE['Quest7_2'] == true) {
+        if (isset($_SESSION['PageNpc7'])) {
+            $_SESSION['PageNpc7']++;
+        } else {
+            $_SESSION['PageNpc7'] = 1;
+        }
+    }
+}
+
+if (isset($_COOKIE['Quest7_1'])) {
+    if ($_COOKIE['Quest7_1'] == true) {
+        $money = getStat('gc', $userID);
+        $Hai = $money + 6000;
+        if (isset($Hai)) {
+            setStat('gc', $userID, $Hai);
+        }
+    }
+}
+if (isset($_COOKIE['Quest7_2'])) {
+    if ($_COOKIE['Quest7_2'] == true) {
+        $money = getStat('gc', $userID);
+        $Hai = $money + 1250;
+        if (isset($Hai)) {
+            setStat('gc', $userID, $Hai);
+        }
+    }
+}
+
+/*
+ foreach($_COOKIE as $v){
+    echo htmlentities($v, 6, 'UTF-8').'<br />';
+}
+*/
 
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
@@ -42,4 +84,4 @@ $smarty->assign('inbank',getStat('bankgc',$userID));
 $smarty->assign('currentHP',getStat('curhp',$userID));
 $smarty->assign('maximumHP',getStat('maxhp',$userID));
 $smarty->assign('pagetitle', $pagetitle);
-$smarty->display("tpl/SubNear.html.tpl");
+$smarty->display("tpl/NPC7.html.tpl");

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-03 10:23:10
+/* Smarty version 3.1.29, created on 2017-01-16 12:19:14
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\SubNear.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586b6d7ef0e1f8_05090866',
+  'unifunc' => 'content_587cac32e1f177_47684067',
   'file_dependency' => 
   array (
     '4f538c5b4f44ba87097c297450767ef0920d4727' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\SubNear.html.tpl',
-      1 => 1483435151,
+      1 => 1484565547,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586b6d7ef0e1f8_05090866 ($_smarty_tpl) {
+function content_587cac32e1f177_47684067 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -27,6 +27,7 @@ function content_586b6d7ef0e1f8_05090866 ($_smarty_tpl) {
     <title> <?php echo $_smarty_tpl->tpl_vars['pagetitle']->value;?>
  </title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="css/timeTo.css" type="text/css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -48,6 +49,12 @@ function content_586b6d7ef0e1f8_05090866 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
+    <?php if (isset($_COOKIE['Timer1'])) {?>
+        <?php if ($_COOKIE['Timer1'] == '1') {?>
+            <?php } else { ?>
+            <div id="counter-1"></div>
+        <?php }?>
+    <?php }?>
     <h1> Hehe a sign  </h1>
     <p> As you walk Futher you see a sing that says Yard <br>
     You think finally <br>
@@ -56,9 +63,17 @@ function content_586b6d7ef0e1f8_05090866 ($_smarty_tpl) {
     <ul>
         <li><a href="SubAhed.php"> Go back  </a></li>
         <li><a href="SubYard.php"> Go To the yard </a></li>
-        <li><a href="#"> Go talk to Icter Peter </a></li>
-        <li><a href="#"> Go talk to Explorer Arya </a></li>
-        <li><a href="#"> Go talk to Wachter Nina </a></li>
+        <li><a href="NPC4.php"> Go talk to Icter Peter </a></li>
+        <?php if (isset($_COOKIE['Quest5'])) {?>
+          <li><a href="#"> Arya is gone </a> </li>
+            <?php } else { ?>
+        <li><a href="NPC5.php"> Go talk to Explorer Arya </a></li>
+        <?php }?>
+        <?php if (isset($_COOKIE['Quest6'])) {?>
+            <li><a href="#"> Nina needs to wacht</a> </li>
+            <?php } else { ?>
+        <li><a href="NPC6.php"> Go talk to Wachter Nina </a></li>
+        <?php }?>
     </ul>
 
     <ul>
@@ -93,6 +108,27 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
 ?>
     </ul>
 
+    <?php echo '<script'; ?>
+ src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+>window.jQuery || document.write('<?php echo '<script'; ?>
+ src="JS/jquery.min.js"><\/script>')<?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="JS/jquery.time-to.js"><?php echo '</script'; ?>
+>
+    <?php if (isset($_COOKIE['Timer1'])) {?>
+    <?php echo '<script'; ?>
+ type="text/javascript">
+        $('#counter-1').timeTo(500, function () {
+            alert("Quest A blink for a eye completed");
+            Good = document.cookie = "Quest6";
+            Good = true;
+        })
+    <?php echo '</script'; ?>
+>
+    <?php }?>
 </div>
 </body>
 </html><?php }

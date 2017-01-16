@@ -42,7 +42,7 @@ if (!isset($_COOKIE['Quest3'])) {
 }
 
 if (isset($_COOKIE['Quest3'])) {
-    if ($_COOKIE['Quest2'] == true) {
+    if ($_COOKIE['Quest3'] == true) {
         if (isset($_SESSION['PageNpc3'])) {
             $_SESSION['PageNpc3']++;
         } else {

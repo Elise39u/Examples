@@ -32,6 +32,11 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
 }
 
+/*
+ foreach($_COOKIE as $v){
+    echo htmlentities($v, 6, 'UTF-8').'<br />';
+}
+*/
 
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
@@ -42,4 +47,4 @@ $smarty->assign('inbank',getStat('bankgc',$userID));
 $smarty->assign('currentHP',getStat('curhp',$userID));
 $smarty->assign('maximumHP',getStat('maxhp',$userID));
 $smarty->assign('pagetitle', $pagetitle);
-$smarty->display("tpl/SubNear.html.tpl");
+$smarty->display("tpl/NPC4.html.tpl");

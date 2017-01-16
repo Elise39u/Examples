@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - klikspel@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="klikspel">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="game"/>
+    <schema id="3" name="information_schema"/>
+    <schema id="4" name="mysql"/>
+    <schema id="5" name="performance_schema"/>
+    <schema id="6" name="postit"/>
+    <schema id="7" name="rubyquest"/>
+    <schema id="8" name="student"/>
+    <schema id="9" name="sys"/>
+    <schema id="10" name="test"/>
+    <table id="11" parent="1" name="area_monsters"/>
+    <table id="12" parent="1" name="areas"/>
+    <table id="13" parent="1" name="inventory"/>
+    <table id="14" parent="1" name="item_stats"/>
+    <table id="15" parent="1" name="items"/>
+    <table id="16" parent="1" name="monster_items"/>
+    <table id="17" parent="1" name="monster_stats"/>
+    <table id="18" parent="1" name="monsters"/>
+    <table id="19" parent="1" name="npc"/>
+    <table id="20" parent="1" name="player"/>
+    <table id="21" parent="1" name="player_stats"/>
+    <table id="22" parent="1" name="quest"/>
+    <table id="23" parent="1" name="stats"/>
+    <column id="24" parent="11" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="25" parent="11" name="area">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="26" parent="11" name="monster">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="27" parent="11" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="28" parent="12" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="29" parent="12" name="name">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <key id="30" parent="12" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="31" parent="13" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="32" parent="13" name="player_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(127)|0</data-type>
+    </column>
+    <column id="33" parent="13" name="item_id">
+      <mandatory>1</mandatory>
+      <data-type>int(127)|0</data-type>
+    </column>
+    <column id="34" parent="13" name="space">
+      <mandatory>1</mandatory>
+      <data-type>int(254)|0</data-type>
+    </column>
+    <column id="35" parent="13" name="quantity">
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="36" parent="13" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="37" parent="14" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="38" parent="14" name="item_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="39" parent="14" name="stat_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="40" parent="14" name="content">
+      <data-type>text|0</data-type>
+    </column>
+    <key id="41" parent="14" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="42" parent="15" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="43" parent="15" name="name">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="44" parent="15" name="type">
+      <data-type>enum(&apos;Weapon&apos;, &apos;Armor&apos;, &apos;Usable&apos;, &apos;Drop&apos;, &apos;Potion&apos;, &apos;Flare&apos;, &apos;SeaMonster&apos;)|0</data-type>
+    </column>
+    <column id="45" parent="15" name="price">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;10&apos;</default-expression>
+    </column>
+    <key id="46" parent="15" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="47" parent="16" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="48" parent="16" name="monster_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="49" parent="16" name="item_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="50" parent="16" name="rarity">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="51" parent="16" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="52" parent="17" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="53" parent="17" name="monster_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="54" parent="17" name="stat_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="55" parent="17" name="content">
+      <data-type>text|0</data-type>
+    </column>
+    <key id="56" parent="17" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="57" parent="18" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="58" parent="18" name="name">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="59" parent="18" name="image_url">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="60" parent="18" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="61" parent="19" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="62" parent="19" name="Name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1024)|0</data-type>
+    </column>
+    <column id="63" parent="19" name="Place">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1024)|0</data-type>
+    </column>
+    <column id="64" parent="19" name="Bio">
+      <data-type>varchar(2048)|0</data-type>
+    </column>
+    <key id="65" parent="19" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="66" parent="20" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(255)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="67" parent="20" name="FirstName">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1024)|0</data-type>
+    </column>
+    <column id="68" parent="20" name="LastName">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1024)|0</data-type>
+    </column>
+    <column id="69" parent="20" name="Email">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1024)|0</data-type>
+    </column>
+    <column id="70" parent="20" name="Password">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1024)|0</data-type>
+    </column>
+    <column id="71" parent="20" name="Username">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1024)|0</data-type>
+    </column>
+    <key id="72" parent="20" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="73" parent="21" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="74" parent="21" name="user_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="75" parent="21" name="stat_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="76" parent="21" name="content">
+      <data-type>text|0</data-type>
+    </column>
+    <key id="77" parent="21" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="78" parent="22" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="79" parent="22" name="Name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1024)|0</data-type>
+    </column>
+    <column id="80" parent="22" name="Npc_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="81" parent="22" name="Gold">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="82" parent="22" name="Reward">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1024)|0</data-type>
+    </column>
+    <key id="83" parent="22" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="84" parent="23" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="85" parent="23" name="display_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1024)|0</data-type>
+    </column>
+    <column id="86" parent="23" name="short_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(1024)|0</data-type>
+    </column>
+    <key id="87" parent="23" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>

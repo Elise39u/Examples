@@ -18,7 +18,7 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> I am Kane </h1>
+    <h1> Its the Peter  </h1>
     <p id="Bio"></p>
     <p id="NPC"></p>
     <p id="Quest"></p>
@@ -31,24 +31,13 @@
     -->
 
     <div id = "dialog-2" title = "Dialouge">
-        <p id="Story">Kane so tell up</p>
+        <p id="Story">Peter: Well hi there</p>
     </div>
-    <button id = "opener-2">Hi Kane</button>
+    <button id = "opener-2">Hi Peter</button>
 
     <ul>
-        <li><a href="SubDocks.php"> Go back </a></li>
+        <li><a href="SubNear.php"> Go back </a></li>
     </ul>
-
-    {if isset($smarty.cookies.Quest2)}
-    {if $smarty.cookies.Quest2 == true}
-        <script type="text/javascript">
-            var NpcName = "Kane";
-            document.getElementById('Quest').innerHTML = NpcName + " Well here is you`re reward {$smarty.session.username} <br> " +
-            "If you go from the balcony of the hotel downwards there is a abonded docks <br>" +
-                    "So mmaby there is boat there leading to something";
-        </script>
-    {/if}
-    {/if}
 
     <ul>
         {foreach from=$inventory key=id item=i}
@@ -63,7 +52,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 <script src="inc/bootbox.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script type="text/javascript" src="JS/NPC/Npc2.js"></script>
+<script type="text/javascript" src="JS/NPC/Npc4.js">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
