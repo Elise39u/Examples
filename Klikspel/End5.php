@@ -32,7 +32,9 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
 }
 
-$sql = "TRUNCATE TABLE inventory";
+
+$sql = sprintf("DELETE * FROM inventory WHERE player_id = (SELECT id FROM player WHERE username = '%s')",
+    mysqli_real_escape_string($mysqli, $_SESSION['username']));
 mysqli_query($mysqli, $sql);
 session_destroy();
 unset($_COOKIE);

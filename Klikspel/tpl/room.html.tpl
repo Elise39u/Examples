@@ -25,6 +25,8 @@
         The message has been broadcasted a half hour ago. <br>
         So how you are gonna escape the city now.<br>
         You`re were thinking about it.</p>
+
+    <p id="Npc11"></p>
     <img src="img/woonkamer.png">
 
     <ul>
@@ -41,7 +43,20 @@
             <li> {$i.player_id} {$i.item_id} {$i.space} {$i.quantity} </li>
         {/foreach}
     </ul>
+    <button id="YES" onclick="Fade()">CLICK ME !!!</button>
 
+    <script type="text/javascript">
+        if (window.name == "Marieke") {
+            Npcname = "Coach Marieke";
+            document.getElementById('Npc11').innerHTML = Npcname + " Maby you wanna play somewhere <br> " +
+                    "If you know it"
+        }
+
+        function Fade() {
+            window.name = "";
+            console.log("window.name has been reset")
+        }
+    </script>
 </div>
 </body>
 </html>

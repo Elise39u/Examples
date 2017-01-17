@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-16 13:36:03
+/* Smarty version 3.1.29, created on 2017-01-17 15:32:45
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\SubYard.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_587cbe33aa89b6_44825051',
+  'unifunc' => 'content_587e2b0d9d4391_61976177',
   'file_dependency' => 
   array (
     '7698ae453dea37fba8e89a681a08384bf1637c5d' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\SubYard.html.tpl',
-      1 => 1484570162,
+      1 => 1484663564,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_587cbe33aa89b6_44825051 ($_smarty_tpl) {
+function content_587e2b0d9d4391_61976177 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -66,14 +66,36 @@ function content_587cbe33aa89b6_44825051 ($_smarty_tpl) {
             <?php } else { ?>
             <li><a href="NPC8.php"> Go talk to photographer Mike</a></li>
         <?php }?>
-        <li><a href="#"> Go talk to Teacher Berna </a></li>
-        <li><a href="#"> Go talk to Coach Jeroen </a></li>
-        <li><a href="#"> Go talk to Coach Marieke </a></li>
-        <li><a href="#"> Go talk to Mother Lieke </a></li>
-        <li><a href="#"> Go talk to Data tracker Harmes </a></li>
-        <li><a href="#"> Go talk to Monsternon </a></li>
-        <li><a href="#"> Go talk to Sales Expert Elzie </a></li>
-        <li><a href="#"> Go talk to Student Ariëlle  </a></li>
+        <?php if (isset($_SESSION['Quest9'])) {?>
+            <li><a href="#"> Berna is gone teaching </a></li>
+            <?php } else { ?>
+            <li><a href="NPC9.php"> Go talk to Teacher Berna </a></li>
+        <?php }?>
+        <?php if (isset($_SESSION['Dumb'])) {?>
+        <?php } else { ?>
+            <li><a href="NPC10.php"> Go talk to Coach Jeroen </a></li>
+        <?php }?>
+        <?php if (isset($_SESSION['MMM'])) {?>
+            <?php } else { ?>
+            <li><a href="NPC11.php"> Go talk to Coach Marieke </a></li>
+        <?php }?>
+        <?php if (isset($_COOKIE['Quest12'])) {?>
+            <li><a href="#"> Mother Lieke is busy</a> </li>
+            <?php } else { ?>
+        <li><a href="Npc12.php"> Go talk to Mother Lieke </a></li>
+        <?php }?>
+        <?php if (isset($_COOKIE['Quest13'])) {?>
+            <li><a href="#"> Harrems is busy right now </a></li>
+            <?php } else { ?>
+        <li><a href="Npc13.php"> Go talk to Data tracker Harmes </a></li>
+        <?php }?>
+        <?php if (isset($_COOKIE['Quest14'])) {?>
+            <li><a href="#"> Monsternon is gone </a></li>
+        <?php } else { ?>
+        <li><a href="NPC14.php"> Go talk to Monsternon </a></li>
+        <?php }?>
+        <li><a href="NPC15.php"> Go talk to Sales Expert Elzie </a></li>
+        <li><a href="NPC16.php"> Go talk to Student Ariëlle  </a></li>
     </ul>
 
     <ul>

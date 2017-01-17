@@ -22,6 +22,7 @@
         You're thinking about getting out of town. <br>
         And the road to freedom is a long journey.</p>
 
+    <p id="Npc11"></p>
     <img src="img/BT11_ModernSerenity_Slaapkamer.jpg">
     <ul>
         <li><a href="room.php"> Go back search for a way ouy</a></li>
@@ -35,6 +36,13 @@
         {/foreach}
     </ul>
 
+    <script type="text/javascript">
+        if (window.name == "Marieke") {
+            Npcname = "Coach Marieke"
+            document.getElementById('Npc11').innerHTML = Npcname + " Did you get the clue <br>" +
+                    "Or do i have to explain it"
+        }
+    </script>
 </div>
 </body>
 </html>

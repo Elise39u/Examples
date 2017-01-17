@@ -30,11 +30,17 @@ if($setHP <= 0) {
     setStat('mdef', $userID, '50');
     setStat('gc', $userID, '250');
     setStat('bankgc', $userID, '5000');
-}
+    $sql3 = sprintf("DELETE FROM inventory WHERE player_id = (SELECT id FROM player WHERE username = '%s')",
+    mysqli_real_escape_string($mysqli, $_SESSION['username']));
+    mysqli_query($mysqli, $sql3);
+    $sql5 = sprintf("DELETE FROM party_members WHERE party_id = (SELECT id FROM party WHERE player_id=(
+        SELECT id FROM player WHERE username='%s'))",
+    mysqli_real_escape_string($mysqli, $_SESSION['username']));
+    mysqli_query($mysqli, $sql5);
 
-unset($_SESSION['Station']);
-unset($_SESSION['Sand']);
-unset($_SESSION['Ship']);
+    $sql6 = "UPDATE npc_stats SET stat_id = 13 WHERE stat_id = 14";
+    mysqli_query($mysqli, $sql6);
+}
 
 if (isset($_POST['submit'])) {
     $FirstName = $_POST["FirstName"];
@@ -60,8 +66,13 @@ if (isset($_POST['submit'])) {
         echo '<span style="color: red; "> NO VAILD INPUT DETECTED </span>';
         $mysqli->close();
         session_destroy();
-        unset($_COOKIE);
-        setcookie('', '', time()-3600);
+        $cookies = explode(';', $_SERVER['HTTP_COOKIE']);
+        foreach($cookies as $cookie) {
+            $parts = explode('=', $cookie);
+            $name = trim($parts[0]);
+            setcookie($name, '', time()-1000);
+            setcookie($name, '', time()-1000, '/');
+        }
     }
 
     else {
@@ -107,9 +118,6 @@ while ($row = mysqli_fetch_assoc($result)) {
     list($row['name']) = mysqli_fetch_row($item_result);
     array_push($inventory, $row);
 }
-
-$sql = "TRUNCATE TABLE inventory";
-mysqli_query($mysqli, $sql);
 
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));

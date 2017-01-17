@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-17 16:24:41
-  from "C:\wamp64\www\Examplecode\Klikspel\tpl\room.html.tpl" */
+/* Smarty version 3.1.29, created on 2017-01-17 15:33:11
+  from "C:\wamp64\www\Examplecode\Klikspel\tpl\NPC15.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_587e3739960d14_36080644',
+  'unifunc' => 'content_587e2b27467575_82023270',
   'file_dependency' => 
   array (
-    '3f7cfd1a93852041b0db6e18672793468b2c4337' => 
+    '582a54a2cb873abe3c06a2d80f338ad726072722' => 
     array (
-      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\room.html.tpl',
-      1 => 1484666680,
+      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\NPC15.html.tpl',
+      1 => 1484663541,
       2 => 'file',
     ),
   ),
@@ -19,17 +19,18 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_587e3739960d14_36080644 ($_smarty_tpl) {
+function content_587e2b27467575_82023270 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
 <head>
     <title> <?php echo $_smarty_tpl->tpl_vars['pagetitle']->value;?>
  </title>
+    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
-<body>
+<body class="test">
 <div class="plaatje">
 
     <ul>
@@ -48,25 +49,26 @@ function content_587e3739960d14_36080644 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> Home </h1>
-    <p>You`re standing in the living room of your home in New York. <br>
-        Suddenly you hear a message on the radio about: <br>
-        "The city has been evacuated because of a deadly virus." <br>
-        But you were too late. <br>
-        The message has been broadcasted a half hour ago. <br>
-        So how you are gonna escape the city now.<br>
-        You`re were thinking about it.</p>
+    <h1> Its Elzie Here </h1>
+    <p id="Bio"></p>
+    <p id="NPC"></p>
+    <p id="Quest"></p>
+    <p id="Quest1"></p>
 
-    <p id="Npc11"></p>
-    <img src="img/woonkamer.png">
+    <!--
+    <button type="button" onclick="Clickme(this.id)" id="Player1"> Have you seen anything strange lastly ??</button> <br>
+    <button type="button" onclick="Clickme(this.id)" id="Player2"> I am in need of items can you help me??</button> <br>
+    <button type="button" onclick="Clickme(this.id)" id="Player3"> Do you need help with something </button>
+    <div id="AddBtn"></div>
+    -->
+
+    <div id = "dialog-2" title = "Dialouge">
+        <p id="Story">Elzie: Well talk there please</p>
+    </div>
+    <button id = "opener-2"> Hi Elizie  </button>
 
     <ul>
-        <li><a href="index.php"> Log out</a> </li>
-        <li><a href="Garden.php"> Garden </a> </li>
-        <li><a href="Bedroom.php"> Bedroom </a> </li>
-        <li><a href="kichten.php"> Kichten </a> </li>
-        <li><a href="Recevier.php"> Reciever </a> </li>
-        <li><a href="Outside.php"> Outside </a> </li>
+        <li><a href="SubYard.php"> Go back </a></li>
     </ul>
 
     <ul>
@@ -100,23 +102,30 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
 }
 ?>
     </ul>
-    <button id="YES" onclick="Fade()">CLICK ME !!!</button>
 
-    <?php echo '<script'; ?>
- type="text/javascript">
-        if (window.name == "Marieke") {
-            Npcname = "Coach Marieke";
-            document.getElementById('Npc11').innerHTML = Npcname + " Maby you wanna play somewhere <br> " +
-                    "If you know it"
-        }
-
-        function Fade() {
-            window.name = "";
-            console.log("window.name has been reset")
-        }
-    <?php echo '</script'; ?>
->
 </div>
 </body>
+
+<?php echo '<script'; ?>
+ type="text/javascript" src="https://rawgit.com/CodeOtter/thusspokenpc/master/index.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="inc/bootbox.min.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="https://code.jquery.com/jquery-1.12.4.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ type="text/javascript" src="JS/NPC/Npc15.js"><?php echo '</script'; ?>
+>
 </html><?php }
 }

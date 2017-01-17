@@ -32,20 +32,34 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
 }
 
-$sql = sprintf("DELETE * FROM inventory WHERE player_id = (SELECT id FROM player WHERE username = '%s')",
-    mysqli_real_escape_string($mysqli, $_SESSION['username']));
-mysqli_query($mysqli, $sql);
-session_destroy();
-unset($_COOKIE);
+if (!isset($_COOKIE['Quest14'])) {
+        setcookie('Quest14', false, time() + 2147483647, '', '', '', true);
+}
+if (isset($_COOKIE['Quest14'])) {
+    if ($_COOKIE['Quest14'] == true) {
+        if (isset($_SESSION['PageNpc14'])) {
+            $_SESSION['PageNpc14']++;
+        } else {
+            $_SESSION['PageNpc14'] = 1;
+        }
+    }
+}
 
-setStat('curhp',$userID,175);
-setStat('maxhp',$userID,300);
-setStat('sethp',$userID,25);
-setStat('atk', $userID, '80');
-setStat('def', $userID, '100');
-setStat('mdef', $userID, '50');
-setStat('gc', $userID, '250');
-setStat('bankgc', $userID, '5000');
+if (isset($_COOKIE['Quest14'])) {
+    if ($_COOKIE['Quest14'] == true) {
+        $money = getStat('gc', $userID);
+        $Hai = $money + 2650;
+        if (isset($Hai)) {
+            setStat('gc', $userID, $Hai);
+        }
+    }
+}
+
+/*
+ foreach($_COOKIE as $v){
+    echo htmlentities($v, 6, 'UTF-8').'<br />';
+}
+*/
 
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
@@ -56,4 +70,4 @@ $smarty->assign('inbank',getStat('bankgc',$userID));
 $smarty->assign('currentHP',getStat('curhp',$userID));
 $smarty->assign('maximumHP',getStat('maxhp',$userID));
 $smarty->assign('pagetitle', $pagetitle);
-$smarty->display("tpl/End1.html.tpl");
+$smarty->display("tpl/NPC14.html.tpl");

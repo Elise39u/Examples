@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Gegenereerd op: 13 jan 2017 om 13:32
+-- Gegenereerd op: 17 jan 2017 om 15:41
 -- Serverversie: 5.7.9
 -- PHP-versie: 5.6.16
 
@@ -140,7 +140,14 @@ CREATE TABLE IF NOT EXISTS `inventory` (
   `space` int(254) NOT NULL,
   `quantity` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=74 DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `inventory`
+--
+
+INSERT INTO `inventory` (`id`, `player_id`, `item_id`, `space`, `quantity`) VALUES
+(66, '3', 54, 50, 100);
 
 -- --------------------------------------------------------
 
@@ -1278,6 +1285,100 @@ INSERT INTO `npc` (`id`, `Name`, `Place`, `Bio`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Tabelstructuur voor tabel `npc_stats`
+--
+
+DROP TABLE IF EXISTS `npc_stats`;
+CREATE TABLE IF NOT EXISTS `npc_stats` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `npc_id` int(11) NOT NULL,
+  `stat_id` int(11) NOT NULL,
+  `content` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=40 DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `npc_stats`
+--
+
+INSERT INTO `npc_stats` (`id`, `npc_id`, `stat_id`, `content`) VALUES
+(1, 1, 13, NULL),
+(2, 2, 13, NULL),
+(3, 3, 13, NULL),
+(4, 4, 13, NULL),
+(5, 5, 13, NULL),
+(6, 6, 13, NULL),
+(7, 7, 13, NULL),
+(8, 8, 13, NULL),
+(9, 9, 13, NULL),
+(10, 10, 13, NULL),
+(11, 11, 13, NULL),
+(12, 12, 13, NULL),
+(13, 13, 13, NULL),
+(14, 14, 13, NULL),
+(15, 15, 13, NULL),
+(16, 16, 13, NULL),
+(17, 17, 13, NULL),
+(18, 18, 13, NULL),
+(19, 19, 13, NULL),
+(20, 20, 13, NULL),
+(21, 21, 13, NULL),
+(22, 22, 13, NULL),
+(23, 23, 13, NULL),
+(24, 24, 13, NULL),
+(25, 25, 13, NULL),
+(26, 26, 13, NULL),
+(27, 27, 13, NULL),
+(28, 28, 13, NULL),
+(29, 29, 13, NULL),
+(30, 30, 13, NULL),
+(31, 31, 13, NULL),
+(32, 32, 13, NULL),
+(33, 33, 13, NULL),
+(34, 34, 13, NULL),
+(35, 35, 13, NULL),
+(36, 36, 13, NULL),
+(37, 37, 13, NULL),
+(38, 38, 13, NULL),
+(39, 39, 13, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `party`
+--
+
+DROP TABLE IF EXISTS `party`;
+CREATE TABLE IF NOT EXISTS `party` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `player_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `party`
+--
+
+INSERT INTO `party` (`id`, `player_id`) VALUES
+(1, 2);
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `party_members`
+--
+
+DROP TABLE IF EXISTS `party_members`;
+CREATE TABLE IF NOT EXISTS `party_members` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `party_id` int(11) NOT NULL,
+  `npc_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Tabelstructuur voor tabel `player`
 --
 
@@ -1343,13 +1444,13 @@ INSERT INTO `player_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
 (564, 3, 6, '25'),
 (562, 3, 5, '300'),
 (529, 2, 11, '5000'),
-(528, 2, 3, '2280'),
+(528, 2, 3, '250'),
 (527, 2, 7, '50'),
 (526, 2, 2, '100'),
 (525, 2, 1, '80'),
 (524, 2, 6, '25'),
 (523, 2, 4, '300'),
-(522, 2, 5, '300'),
+(522, 2, 5, '175'),
 (565, 3, 1, '1080'),
 (510, 1, 11, '5000');
 
@@ -1412,7 +1513,7 @@ CREATE TABLE IF NOT EXISTS `stats` (
   `display_name` varchar(1024) NOT NULL,
   `short_name` varchar(1024) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `stats`
@@ -1429,7 +1530,9 @@ INSERT INTO `stats` (`id`, `display_name`, `short_name`) VALUES
 (8, 'Primary Hand Weapon', 'phand'),
 (9, 'Secondery Hand Weapon', 'shand'),
 (11, 'Gold In Bank', 'bankgc'),
-(12, 'Item Use Token', 'token');
+(12, 'Item Use Token', 'token'),
+(13, 'Postion', 'pos'),
+(14, 'InParty', 'par');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

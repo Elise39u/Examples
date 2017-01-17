@@ -35,14 +35,36 @@
             {else}
             <li><a href="NPC8.php"> Go talk to photographer Mike</a></li>
         {/if}
-        <li><a href="#"> Go talk to Teacher Berna </a></li>
-        <li><a href="#"> Go talk to Coach Jeroen </a></li>
-        <li><a href="#"> Go talk to Coach Marieke </a></li>
-        <li><a href="#"> Go talk to Mother Lieke </a></li>
-        <li><a href="#"> Go talk to Data tracker Harmes </a></li>
-        <li><a href="#"> Go talk to Monsternon </a></li>
-        <li><a href="#"> Go talk to Sales Expert Elzie </a></li>
-        <li><a href="#"> Go talk to Student Ariëlle  </a></li>
+        {if isset($smarty.session.Quest9)}
+            <li><a href="#"> Berna is gone teaching </a></li>
+            {else}
+            <li><a href="NPC9.php"> Go talk to Teacher Berna </a></li>
+        {/if}
+        {if isset($smarty.session.Dumb)}
+        {else}
+            <li><a href="NPC10.php"> Go talk to Coach Jeroen </a></li>
+        {/if}
+        {if isset($smarty.session.MMM)}
+            {else}
+            <li><a href="NPC11.php"> Go talk to Coach Marieke </a></li>
+        {/if}
+        {if isset($smarty.cookies.Quest12)}
+            <li><a href="#"> Mother Lieke is busy</a> </li>
+            {else}
+        <li><a href="Npc12.php"> Go talk to Mother Lieke </a></li>
+        {/if}
+        {if isset($smarty.cookies.Quest13)}
+            <li><a href="#"> Harrems is busy right now </a></li>
+            {else}
+        <li><a href="Npc13.php"> Go talk to Data tracker Harmes </a></li>
+        {/if}
+        {if isset($smarty.cookies.Quest14)}
+            <li><a href="#"> Monsternon is gone </a></li>
+        {else}
+        <li><a href="NPC14.php"> Go talk to Monsternon </a></li>
+        {/if}
+        <li><a href="NPC15.php"> Go talk to Sales Expert Elzie </a></li>
+        <li><a href="NPC16.php"> Go talk to Student Ariëlle  </a></li>
     </ul>
 
     <ul>
