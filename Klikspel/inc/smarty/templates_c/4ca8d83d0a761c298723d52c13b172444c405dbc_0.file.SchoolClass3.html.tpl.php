@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-06 12:00:49
+/* Smarty version 3.1.29, created on 2017-01-18 14:27:38
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\SchoolClass3.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586f78e1ab3d59_86315890',
+  'unifunc' => 'content_587f6d4a6b0740_17953366',
   'file_dependency' => 
   array (
     '4ca8d83d0a761c298723d52c13b172444c405dbc' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\SchoolClass3.html.tpl',
-      1 => 1483700447,
+      1 => 1484746056,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586f78e1ab3d59_86315890 ($_smarty_tpl) {
+function content_587f6d4a6b0740_17953366 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -53,8 +53,12 @@ function content_586f78e1ab3d59_86315890 ($_smarty_tpl) {
     <img src="img/SchoolClass3.png">
     <ul>
         <li><a href="SchoolFloor.php"> Go back </a></li>
-        <li><a href="#"> Go talk to Director Kees </a></li>
-        <li><a href="#"> Go talk to teacher Hans </a></li>
+        <li><a href="Npc33.php"> Go talk to Director Kees </a></li>
+        <?php if (isset($_COOKIE['Quest34'])) {?>
+            <lI><a href="#"> hans is trying to connect</a></lI>
+            <?php } else { ?>
+            <li><a href="Npc34.php"> Go talk to teacher Hans </a></li>
+        <?php }?>
     </ul>
     <ul>
         <?php

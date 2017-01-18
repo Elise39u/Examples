@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-06 12:45:55
+/* Smarty version 3.1.29, created on 2017-01-18 14:14:40
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\SchoolStair.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586f837302a549_36209504',
+  'unifunc' => 'content_587f6a40b377e9_49825203',
   'file_dependency' => 
   array (
     'f3518f82b963202666e2f15f0b487ac29c6f0bc0' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\SchoolStair.html.tpl',
-      1 => 1483703152,
+      1 => 1484745279,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586f837302a549_36209504 ($_smarty_tpl) {
+function content_587f6a40b377e9_49825203 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -55,7 +55,7 @@ function content_586f837302a549_36209504 ($_smarty_tpl) {
     <ul>
         <li><a href="SchoolHall.php"> Go back </a></li>
         <li><a href="SchoolFloor.php"> Go to the first floor</a></li>
-        <li><a href="#"> Go talk to the gothic kids</a></li>
+        <li><a href="Npc32.php"> Go talk to the gothic kids</a></li>
     </ul>
     <ul>
         <?php

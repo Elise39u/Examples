@@ -25,7 +25,7 @@
     <ul>
         <li><a href="SchoolHall.php"> Go back </a></li>
         <li><a href="SchoolKichten.php"> Go to the kichten </a></li>
-        <li><a href="#"> Go talk to Art teacher Christina </a></li>
+        <li><a href="NPC31.php"> Go talk to Art teacher Christina </a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

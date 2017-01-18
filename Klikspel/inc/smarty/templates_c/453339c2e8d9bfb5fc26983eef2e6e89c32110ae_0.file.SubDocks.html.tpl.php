@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-13 13:58:12
+/* Smarty version 3.1.29, created on 2017-01-18 15:17:54
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\SubDocks.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5878cee49544d9_56933195',
+  'unifunc' => 'content_587f7912e927d5_72230217',
   'file_dependency' => 
   array (
     '453339c2e8d9bfb5fc26983eef2e6e89c32110ae' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\SubDocks.html.tpl',
-      1 => 1484312290,
+      1 => 1484749073,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5878cee49544d9_56933195 ($_smarty_tpl) {
+function content_587f7912e927d5_72230217 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -64,6 +64,9 @@ function content_5878cee49544d9_56933195 ($_smarty_tpl) {
         <?php }?>
             <?php } else { ?>
             <li><a href="NPC2.php"> Go Talk to soldier Kane </a></li>
+        <?php }?>
+        <?php if ($_SESSION['Emma2'] == true) {?>
+            <li><a href="Npc21.php"> Talk to emma</a></li>
         <?php }?>
     </ul>
 

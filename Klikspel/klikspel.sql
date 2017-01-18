@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Gegenereerd op: 17 jan 2017 om 15:41
+-- Gegenereerd op: 18 jan 2017 om 15:24
 -- Serverversie: 5.7.9
 -- PHP-versie: 5.6.16
 
@@ -140,7 +140,7 @@ CREATE TABLE IF NOT EXISTS `inventory` (
   `space` int(254) NOT NULL,
   `quantity` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=74 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=182 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `inventory`
@@ -1312,7 +1312,7 @@ INSERT INTO `npc_stats` (`id`, `npc_id`, `stat_id`, `content`) VALUES
 (8, 8, 13, NULL),
 (9, 9, 13, NULL),
 (10, 10, 13, NULL),
-(11, 11, 13, NULL),
+(11, 11, 14, NULL),
 (12, 12, 13, NULL),
 (13, 13, 13, NULL),
 (14, 14, 13, NULL),
@@ -1374,7 +1374,14 @@ CREATE TABLE IF NOT EXISTS `party_members` (
   `party_id` int(11) NOT NULL,
   `npc_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `party_members`
+--
+
+INSERT INTO `party_members` (`id`, `party_id`, `npc_id`) VALUES
+(5, 1, 11);
 
 -- --------------------------------------------------------
 
@@ -1429,10 +1436,10 @@ INSERT INTO `player_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
 (5, 1, 4, '300'),
 (6, 1, 7, '50'),
 (7, 1, 6, '25'),
-(545, 2, 9, ''),
+(545, 2, 9, '63'),
 (571, 3, 9, ''),
 (570, 3, 8, ''),
-(544, 2, 8, ''),
+(544, 2, 8, '67'),
 (569, 3, 11, '5000'),
 (506, 1, 8, ''),
 (568, 3, 3, '5260'),
@@ -1443,14 +1450,14 @@ INSERT INTO `player_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
 (563, 3, 4, '300'),
 (564, 3, 6, '25'),
 (562, 3, 5, '300'),
-(529, 2, 11, '5000'),
-(528, 2, 3, '250'),
+(529, 2, 11, '655360000'),
+(528, 2, 3, '140595'),
 (527, 2, 7, '50'),
-(526, 2, 2, '100'),
-(525, 2, 1, '80'),
+(526, 2, 2, '24780'),
+(525, 2, 1, '263420'),
 (524, 2, 6, '25'),
-(523, 2, 4, '300'),
-(522, 2, 5, '175'),
+(523, 2, 4, '11700'),
+(522, 2, 5, '11700'),
 (565, 3, 1, '1080'),
 (510, 1, 11, '5000');
 

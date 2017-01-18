@@ -23,9 +23,13 @@
     <img src="img/SchoolClass1.png">
     <ul>
         <li><a href="SchoolHall.php"> Go back </a></li>
-        <li><a href="#"> Go talk to teacher Imre</a></li>
-        <li><a href="#"> Go talk to coach Corine</a></li>
-        <li><a href="#"> Go talk to student Dylan </a></li>
+        <li><a href="Npc26.php"> Go talk to teacher Imre</a></li>
+        {if isset($smarty.cookies.Quest27)}
+            <li><a href="#"> Corine is coaching</a></li>
+        {else}
+        <li><a href="Npc27.php"> Go talk to coach Corine</a></li>
+        {/if}
+        <li><a href="Npc28.php"> Go talk to student Dylan </a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

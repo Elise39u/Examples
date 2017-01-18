@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-05 14:12:18
+/* Smarty version 3.1.29, created on 2017-01-18 12:10:24
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\HotelD.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586e4632de9e70_38046236',
+  'unifunc' => 'content_587f4d209c8966_32302963',
   'file_dependency' => 
   array (
     'ea861b2ae93db471e28bd08836585968e0ec6706' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\HotelD.html.tpl',
-      1 => 1483621931,
+      1 => 1484737695,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586e4632de9e70_38046236 ($_smarty_tpl) {
+function content_587f4d209c8966_32302963 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -52,10 +52,16 @@ function content_586e4632de9e70_38046236 ($_smarty_tpl) {
     <p> You Think chiqc  <br>
      But what is here</p>
     <img src="img/HotelDinningroom.png">
+
     <ul>
         <li><a href="HotelE.php"> Go back  </a></li>
-        <li><a href="#"> Go talk to Chef Hans </a></li>
+        <?php if (isset($_COOKIE['Quest25'])) {?>
+            <li><a href="#"> Hans is cooking </a></li>
+        <?php } else { ?>
+        <li><a href="Npc25.php"> Go talk to Chef Hans </a></li>
+        <?php }?>
     </ul>
+
     <ul>
         <?php
 $_from = $_smarty_tpl->tpl_vars['inventory']->value;

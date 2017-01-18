@@ -31,7 +31,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     list($row['name']) = mysqli_fetch_row($item_result);
     array_push($inventory, $row);
     if (isset($row['item_id'])) {
-        if ($row['item_id'] == 39 AND $row['item_id'] == 13 AND $row['item_id'] == 29) {
+        if ($row['item_id'] == 13 || $row['item_id'] == 39  || $row['item_id'] == 29) {
             $_COOKIE['Quest2'] = true;
         }
     }

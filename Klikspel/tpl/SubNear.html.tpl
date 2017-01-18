@@ -19,7 +19,7 @@
     </ul>
 
     {if isset($smarty.cookies.Timer1)}
-        {if $smarty.cookies.Timer1 == '1'}
+        {if isset($smarty.cookies.Quest6)}
             {else}
             <div id="counter-1"></div>
         {/if}
@@ -56,10 +56,16 @@
     <script src="JS/jquery.time-to.js"></script>
     {if isset($smarty.cookies.Timer1)}
     <script type="text/javascript">
-        $('#counter-1').timeTo(500, function () {
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires="+d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        $('#counter-1').timeTo(15, function () {
             alert("Quest A blink for a eye completed");
-            Good = document.cookie = "Quest6";
-            Good = true;
+            setCookie("Quest6", true, +2147483647);
         })
     </script>
     {/if}

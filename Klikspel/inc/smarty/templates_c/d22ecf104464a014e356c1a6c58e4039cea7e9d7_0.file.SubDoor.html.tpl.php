@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-09 14:51:56
+/* Smarty version 3.1.29, created on 2017-01-18 11:08:35
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\SubDoor.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5873957c0e4493_13272472',
+  'unifunc' => 'content_587f3ea3705ef4_90265942',
   'file_dependency' => 
   array (
     'd22ecf104464a014e356c1a6c58e4039cea7e9d7' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\SubDoor.html.tpl',
-      1 => 1483969915,
+      1 => 1484733700,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5873957c0e4493_13272472 ($_smarty_tpl) {
+function content_587f3ea3705ef4_90265942 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -53,12 +53,15 @@ function content_5873957c0e4493_13272472 ($_smarty_tpl) {
     Should i ask if i can pass or not</p>
     <img src="img/DoorSubBase.png">
     <ul>
-        <?php if (isset($_COOKIE['Paul'])) {?>
-        <?php if ($_COOKIE['Paul'] == true) {?>
+        <?php if (isset($_COOKIE['Quest19'])) {?>
+        <?php if ($_COOKIE['Quest19'] == true) {?>
           <li><a href="#"> Go On </a></li>
+            <?php } else { ?>
+            <li><a href="Npc19.php"> Go talk to guard Paul </a></li>
         <?php }?>
+            <?php } else { ?>
+            <li><a href="Npc19.php"> Go talk to guard Paul </a></li>
         <?php }?>
-        <li><a href="#"> Go talk to guard Paul </a></li>
         <li><a href="SubBack.php"> Go back  </a></li>
     </ul>
 

@@ -18,7 +18,7 @@
     </ul>
 
     <h1> Big empty space  </h1>
-    <p> As you Look around you see left a school and kichten <br>
+    <p> As you Look around you see left a school<br>
     Right a playayrd  <br>
     ahed a small light <br>
     Wich way wil it be</p>
@@ -28,8 +28,8 @@
         <li><a href="SubSchool.php"> Go towards the school </a></li>
         <li><a href="SubPlayyard.php"> Go towards the playground </a></li>
         <li><a href="SubDoor.php"> Go on</a></li>
-        <li><a href="#"> Go Talk to watcher of the kids Maxine </a></li>
-        <li><a href="#"> Go talk to Econoom Tim </a></li>
+        <li><a href="NPC17.php"> Go Talk to watcher of the kids Maxine </a></li>
+        <li><a href="NPC18.php"> Go talk to Econoom Tim </a></li>
     </ul>
 
     <ul>

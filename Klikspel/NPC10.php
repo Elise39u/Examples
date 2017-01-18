@@ -39,7 +39,6 @@ if (!isset($_COOKIE['Quest10_1'])) {
     $party = mysqli_query($mysqli, $sql);
 
     if (mysqli_num_rows($party) > 0) {
-        var_dump("Party exsists already");
     }
     else{
         $sql3 = sprintf("INSERT INTO party(player_id) VALUES ((SELECT id FROM player WHERE username = '%s'))",

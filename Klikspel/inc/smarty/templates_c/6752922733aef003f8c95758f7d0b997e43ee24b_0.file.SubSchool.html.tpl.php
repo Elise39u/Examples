@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-06 13:34:29
+/* Smarty version 3.1.29, created on 2017-01-18 11:13:47
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\SubSchool.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586f8ed5e1e3e5_09415457',
+  'unifunc' => 'content_587f3fdb724da4_75135265',
   'file_dependency' => 
   array (
     '6752922733aef003f8c95758f7d0b997e43ee24b' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\SubSchool.html.tpl',
-      1 => 1483706056,
+      1 => 1484734422,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586f8ed5e1e3e5_09415457 ($_smarty_tpl) {
+function content_587f3fdb724da4_75135265 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -54,7 +54,7 @@ function content_586f8ed5e1e3e5_09415457 ($_smarty_tpl) {
     <img src="img/SubSchool.png">
     <ul>
         <li><a href="SubBack.php"> Go back  </a></li>
-        <li><a href="#"> Go talk to bakfiest </a></li>
+        <li><a href="Npc20.php"> Go talk to bakfiest </a></li>
     </ul>
 
     <ul>

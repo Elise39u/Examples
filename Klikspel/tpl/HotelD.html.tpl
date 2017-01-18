@@ -21,10 +21,16 @@
     <p> You Think chiqc  <br>
      But what is here</p>
     <img src="img/HotelDinningroom.png">
+
     <ul>
         <li><a href="HotelE.php"> Go back  </a></li>
-        <li><a href="#"> Go talk to Chef Hans </a></li>
+        {if isset($smarty.cookies.Quest25)}
+            <li><a href="#"> Hans is cooking </a></li>
+        {else}
+        <li><a href="Npc25.php"> Go talk to Chef Hans </a></li>
+        {/if}
     </ul>
+
     <ul>
         {foreach from=$inventory key=id item=i}
             <li> {$i.player_id} {$i.item_id} {$i.space} {$i.quantity} </li>

@@ -27,7 +27,7 @@
         <li><a href="HotelStair.php"> Go towards the stairway </a></li>
         <li><a href="HotelD.php"> Go towards the dinning room </a></li>
         <li><a href="HotelT.php"> Go towards the Theater </a></li>
-        <li><a href="#"> Go talk to Owner Anna </a></li>
+        <li><a href="Npc23.php"> Go talk to Owner Anna </a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

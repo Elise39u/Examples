@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-06 12:26:38
+/* Smarty version 3.1.29, created on 2017-01-18 14:32:20
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\SchoolClass5.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586f7eee431791_48601099',
+  'unifunc' => 'content_587f6e64558341_74511579',
   'file_dependency' => 
   array (
     '8d34c080ede314a9c8d64f4e75aaa41f3e55b52a' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\SchoolClass5.html.tpl',
-      1 => 1483701992,
+      1 => 1484746337,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586f7eee431791_48601099 ($_smarty_tpl) {
+function content_587f6e64558341_74511579 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -53,7 +53,7 @@ function content_586f7eee431791_48601099 ($_smarty_tpl) {
     <img src="img/SchoolClass5.png">
     <ul>
         <li><a href="SchoolFloor.php"> Go back </a></li>
-        <li><a href="#"> Go talk to Teacher Eduwan</a></li>
+        <li><a href="Npc35.php"> Go talk to Teacher Eduwan</a></li>
     </ul>
     <ul>
         <?php

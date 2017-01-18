@@ -58,7 +58,9 @@ if(isset($_POST['item-id'])) {
                 if ($Quantity < 0) {
                         $smarty->assign('Damm', 'A Negative number has been filed in');
                 }
-                elseif ($LOL >= $gold) {
+                elseif ($LOL > $gold) {
+                    $LOL = 0;
+                    $gold = 0;
                     $smarty->assign('NoNo', 'Not enough coins to buy');
                 }
                 else {
@@ -85,6 +87,8 @@ if(isset($_POST['item-id'])) {
                     $smarty->assign('Damm', 'A Negative number has been filed in');
                 }
                 elseif ($LOL >= $gold) {
+                    $LOL = 0;
+                    $gold = 0;
                     $smarty->assign('NoNo', 'Not enough coins to buy');
                 }
                 else {

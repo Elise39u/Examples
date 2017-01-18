@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-09 09:05:42
+/* Smarty version 3.1.29, created on 2017-01-18 10:51:38
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\SubBack.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58734456b3ee72_58839106',
+  'unifunc' => 'content_587f3aaa6aaaf1_06833442',
   'file_dependency' => 
   array (
     'f85292f287db5f5715a1e02a1b22a1eb0b54ad49' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\SubBack.html.tpl',
-      1 => 1483949140,
+      1 => 1484732998,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58734456b3ee72_58839106 ($_smarty_tpl) {
+function content_587f3aaa6aaaf1_06833442 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -49,7 +49,7 @@ function content_58734456b3ee72_58839106 ($_smarty_tpl) {
     </ul>
 
     <h1> Big empty space  </h1>
-    <p> As you Look around you see left a school and kichten <br>
+    <p> As you Look around you see left a school<br>
     Right a playayrd  <br>
     ahed a small light <br>
     Wich way wil it be</p>
@@ -59,8 +59,8 @@ function content_58734456b3ee72_58839106 ($_smarty_tpl) {
         <li><a href="SubSchool.php"> Go towards the school </a></li>
         <li><a href="SubPlayyard.php"> Go towards the playground </a></li>
         <li><a href="SubDoor.php"> Go on</a></li>
-        <li><a href="#"> Go Talk to watcher of the kids Maxine </a></li>
-        <li><a href="#"> Go talk to Econoom Tim </a></li>
+        <li><a href="NPC17.php"> Go Talk to watcher of the kids Maxine </a></li>
+        <li><a href="NPC18.php"> Go talk to Econoom Tim </a></li>
     </ul>
 
     <ul>

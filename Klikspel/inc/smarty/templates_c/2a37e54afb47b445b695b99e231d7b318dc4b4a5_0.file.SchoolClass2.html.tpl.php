@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-06 09:35:28
+/* Smarty version 3.1.29, created on 2017-01-18 13:27:22
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\SchoolClass2.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586f56d0bf7e90_04697656',
+  'unifunc' => 'content_587f5f2a7effe3_87532475',
   'file_dependency' => 
   array (
     '2a37e54afb47b445b695b99e231d7b318dc4b4a5' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\SchoolClass2.html.tpl',
-      1 => 1483691724,
+      1 => 1484742350,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586f56d0bf7e90_04697656 ($_smarty_tpl) {
+function content_587f5f2a7effe3_87532475 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -54,8 +54,8 @@ function content_586f56d0bf7e90_04697656 ($_smarty_tpl) {
     <img src="img/SchoolClass2.png">
     <ul>
         <li><a href="SchoolHall.php"> Go back </a></li>
-        <li><a href="#"> Go talk to electrician teacher Edwin </a></li>
-        <li><a href="#"> Go talk to Student Sanne en Robin</a></li>
+        <li><a href="Npc30.php"> Go talk to electrician teacher Edwin </a></li>
+        <li><a href="Npc29.php"> Go talk to Student Sanne en Robin</a></li>
     </ul>
     <ul>
         <?php

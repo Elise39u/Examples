@@ -23,8 +23,8 @@
     <img src="img/SchoolClass7.png">
     <ul>
         <li><a href="SchoolFloor.php"> Go back </a></li>
-        <li><a href="#"> Go talk to programmer Youri and Pieter </a></li>
-        <li><a href="#"> Go talk to teacher Ingrit</a></li>
+        <li><a href="Npc38.php"> Go talk to programmer Youri and Pieter </a></li>
+        <li><a href="Npc39.php"> Go talk to teacher Ingrit</a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

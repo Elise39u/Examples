@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-06 11:23:25
+/* Smarty version 3.1.29, created on 2017-01-18 13:41:56
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\SchoolAula.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586f701d703d74_57928285',
+  'unifunc' => 'content_587f6294ee8f83_96652834',
   'file_dependency' => 
   array (
     'cea601c46c09509ee48f0df31d42665c181fa7b6' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\SchoolAula.html.tpl',
-      1 => 1483698098,
+      1 => 1484743197,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586f701d703d74_57928285 ($_smarty_tpl) {
+function content_587f6294ee8f83_96652834 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -56,7 +56,7 @@ function content_586f701d703d74_57928285 ($_smarty_tpl) {
     <ul>
         <li><a href="SchoolHall.php"> Go back </a></li>
         <li><a href="SchoolKichten.php"> Go to the kichten </a></li>
-        <li><a href="#"> Go talk to Art teacher Christina </a></li>
+        <li><a href="NPC31.php"> Go talk to Art teacher Christina </a></li>
     </ul>
     <ul>
         <?php

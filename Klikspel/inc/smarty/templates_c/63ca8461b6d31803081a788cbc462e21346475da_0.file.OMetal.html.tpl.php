@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-04 11:48:13
+/* Smarty version 3.1.29, created on 2017-01-18 11:52:10
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\OMetal.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586cd2ed9e3379_54452512',
+  'unifunc' => 'content_587f48da84b016_25283942',
   'file_dependency' => 
   array (
     '63ca8461b6d31803081a788cbc462e21346475da' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\OMetal.html.tpl',
-      1 => 1483526891,
+      1 => 1484736727,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586cd2ed9e3379_54452512 ($_smarty_tpl) {
+function content_587f48da84b016_25283942 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -56,7 +56,7 @@ function content_586cd2ed9e3379_54452512 ($_smarty_tpl) {
     <ul>
         <li><a href="AgianStreet.php"> Go back ^.^ </a></li>
         <li><a href="Metal.php"> To The Store..... </a></li>
-        <li><a href="#"> Go talk to electrician Erik </a></li>
+        <li><a href="Npc22.php"> Go talk to electrician Erik </a></li>
     </ul>
     <ul>
         <?php

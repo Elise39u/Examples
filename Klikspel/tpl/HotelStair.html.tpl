@@ -25,7 +25,7 @@
     <ul>
         <li><a href="HotelE.php"> Go back to the ground floor </a></li>
         <li><a href="HotelFloor.php"> Go to the first floor </a></li>
-        <li><a href="#"> Talk to singer Geer en Goor </a></li>
+        <li><a href="Npc24.php"> Talk to singer Geer en Goor </a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

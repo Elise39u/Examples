@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-17 15:46:24
+/* Smarty version 3.1.29, created on 2017-01-18 09:14:47
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\NPC16.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_587e2e407f1a96_40303268',
+  'unifunc' => 'content_587f23f724f5c8_25958802',
   'file_dependency' => 
   array (
     '33723416e550756614d26c2b2c13b02037fd5d29' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\NPC16.html.tpl',
-      1 => 1484664383,
+      1 => 1484727285,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_587e2e407f1a96_40303268 ($_smarty_tpl) {
+function content_587f23f724f5c8_25958802 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -49,7 +49,7 @@ function content_587e2e407f1a96_40303268 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> Its Elzie Here </h1>
+    <h1> Well i am Ariëlle </h1>
     <p id="Bio"></p>
     <p id="NPC"></p>
     <p id="Quest"></p>

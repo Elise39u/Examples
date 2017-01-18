@@ -18,7 +18,7 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> Its Elzie Here </h1>
+    <h1> Well i am Ariëlle </h1>
     <p id="Bio"></p>
     <p id="NPC"></p>
     <p id="Quest"></p>

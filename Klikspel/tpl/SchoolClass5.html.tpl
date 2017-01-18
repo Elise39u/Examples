@@ -22,7 +22,7 @@
     <img src="img/SchoolClass5.png">
     <ul>
         <li><a href="SchoolFloor.php"> Go back </a></li>
-        <li><a href="#"> Go talk to Teacher Eduwan</a></li>
+        <li><a href="Npc35.php"> Go talk to Teacher Eduwan</a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

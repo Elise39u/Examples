@@ -32,11 +32,24 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
 }
 
-$sql = sprintf("DELETE * FROM inventory WHERE player_id = (SELECT id FROM player WHERE username = '%s')",
+$sql3 = sprintf("DELETE FROM inventory WHERE player_id = (SELECT id FROM player WHERE username = '%s')",
     mysqli_real_escape_string($mysqli, $_SESSION['username']));
-mysqli_query($mysqli, $sql);
+mysqli_query($mysqli, $sql3);
+$sql5 = sprintf("DELETE FROM party_members WHERE party_id = (SELECT id FROM party WHERE player_id=(
+        SELECT id FROM player WHERE username='%s'))",
+    mysqli_real_escape_string($mysqli, $_SESSION['username']));
+mysqli_query($mysqli, $sql5);
+
+$sql6 = "UPDATE npc_stats SET stat_id = 13 WHERE stat_id = 14";
+mysqli_query($mysqli, $sql6);
 session_destroy();
-unset($_COOKIE);
+$cookies = explode(';', $_SERVER['HTTP_COOKIE']);
+foreach($cookies as $cookie) {
+    $parts = explode('=', $cookie);
+    $name = trim($parts[0]);
+    setcookie($name, '', time()-1000);
+    setcookie($name, '', time()-1000, '/');
+}
 
 setStat('curhp',$userID,175);
 setStat('maxhp',$userID,300);

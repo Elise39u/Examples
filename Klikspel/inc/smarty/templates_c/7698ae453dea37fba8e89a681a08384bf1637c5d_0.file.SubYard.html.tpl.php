@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-17 15:32:45
+/* Smarty version 3.1.29, created on 2017-01-18 09:46:26
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\SubYard.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_587e2b0d9d4391_61976177',
+  'unifunc' => 'content_587f2b623c2c78_97217145',
   'file_dependency' => 
   array (
     '7698ae453dea37fba8e89a681a08384bf1637c5d' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\SubYard.html.tpl',
-      1 => 1484663564,
+      1 => 1484729037,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_587e2b0d9d4391_61976177 ($_smarty_tpl) {
+function content_587f2b623c2c78_97217145 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -56,12 +56,12 @@ function content_587e2b0d9d4391_61976177 ($_smarty_tpl) {
     <ul>
         <li><a href="SubNear.php"> Go back  </a></li>
         <li><a href="SubBack.php"> Go torugh the backway </a></li>
-        <?php if (isset($_SESSION['Quest7_1']) || isset($_SESSION['Quest7_2'])) {?>
+        <?php if (isset($_SESSION['Quest7_1']) && isset($_SESSION['Quest7_2'])) {?>
             <li><a href="#"> Lauren is enjoying her stuff </a></li>
             <?php } else { ?>
         <li><a href="NPC7.php"> Go talk to Beuaty King Lauren </a></li>
         <?php }?>
-        <?php if (isset($_SESSION['Quest8_1']) || isset($_SESSION['Quest8_2'])) {?>
+        <?php if (isset($_SESSION['Quest8_1']) && isset($_SESSION['Quest8_2'])) {?>
             <li><a href="#"> Mike is gone photographing </a></li>
             <?php } else { ?>
             <li><a href="NPC8.php"> Go talk to photographer Mike</a></li>

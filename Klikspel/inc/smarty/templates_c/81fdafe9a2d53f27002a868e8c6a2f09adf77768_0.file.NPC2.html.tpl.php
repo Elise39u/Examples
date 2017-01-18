@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-13 13:47:03
+/* Smarty version 3.1.29, created on 2017-01-18 13:44:15
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\NPC2.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5878cc478e1e38_04854835',
+  'unifunc' => 'content_587f631f351b60_36343488',
   'file_dependency' => 
   array (
     '81fdafe9a2d53f27002a868e8c6a2f09adf77768' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\NPC2.html.tpl',
-      1 => 1484311621,
+      1 => 1484552811,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5878cc478e1e38_04854835 ($_smarty_tpl) {
+function content_587f631f351b60_36343488 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -79,14 +79,6 @@ function content_5878cc478e1e38_04854835 ($_smarty_tpl) {
  <br> " +
             "If you go from the balcony of the hotel downwards there is a abonded docks <br>" +
                     "So mmaby there is boat there leading to something";
-        <?php echo '</script'; ?>
->
-        <?php } else { ?>
-        <?php echo '<script'; ?>
- type="text/javascript">
-            var NpcName = "John";
-            document.getElementById('Quest').innerHTML = NpcName + ": Go look for the items dumbass";
-            alert("You stared the quest Healing");
         <?php echo '</script'; ?>
 >
     <?php }?>

@@ -23,7 +23,7 @@
     <img src="img/SubSchool.png">
     <ul>
         <li><a href="SubBack.php"> Go back  </a></li>
-        <li><a href="#"> Go talk to bakfiest </a></li>
+        <li><a href="Npc20.php"> Go talk to bakfiest </a></li>
     </ul>
 
     <ul>

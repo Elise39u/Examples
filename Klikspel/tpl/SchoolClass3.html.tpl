@@ -22,8 +22,12 @@
     <img src="img/SchoolClass3.png">
     <ul>
         <li><a href="SchoolFloor.php"> Go back </a></li>
-        <li><a href="#"> Go talk to Director Kees </a></li>
-        <li><a href="#"> Go talk to teacher Hans </a></li>
+        <li><a href="Npc33.php"> Go talk to Director Kees </a></li>
+        {if isset($smarty.cookies.Quest34)}
+            <lI><a href="#"> hans is trying to connect</a></lI>
+            {else}
+            <li><a href="Npc34.php"> Go talk to teacher Hans </a></li>
+        {/if}
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

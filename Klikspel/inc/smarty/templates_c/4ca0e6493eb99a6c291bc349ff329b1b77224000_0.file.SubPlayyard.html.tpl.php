@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-06 13:01:16
+/* Smarty version 3.1.29, created on 2017-01-18 10:35:06
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\SubPlayyard.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586f870c2766b5_37685883',
+  'unifunc' => 'content_587f36ca82dac1_37699491',
   'file_dependency' => 
   array (
     '4ca0e6493eb99a6c291bc349ff329b1b77224000' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\SubPlayyard.html.tpl',
-      1 => 1483704075,
+      1 => 1484732095,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586f870c2766b5_37685883 ($_smarty_tpl) {
+function content_587f36ca82dac1_37699491 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -27,6 +27,7 @@ function content_586f870c2766b5_37685883 ($_smarty_tpl) {
     <title> <?php echo $_smarty_tpl->tpl_vars['pagetitle']->value;?>
  </title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="css/timeTo.css" type="text/css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -48,6 +49,12 @@ function content_586f870c2766b5_37685883 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
+    <?php if (isset($_COOKIE['Timer2'])) {?>
+        <?php if (isset($_COOKIE['Quest17_2'])) {?>
+        <?php } else { ?>
+            <div id="counter-1"></div>
+        <?php }?>
+    <?php }?>
     <h1> Big playyard  </h1>
     <p> Well this i a big indoor playyard even for a subbase <br>
     But what can i do here beside wachting the childeren</p>
@@ -89,6 +96,31 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
 ?>
     </ul>
 
+    <?php echo '<script'; ?>
+ src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+>window.jQuery || document.write('<?php echo '<script'; ?>
+ src="JS/jquery.min.js"><\/script>')<?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="JS/jquery.time-to.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ type="text/javascript">
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires="+d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        $('#counter-1').timeTo(12, function () {
+            alert("Quest Wacht time completed");
+            setCookie("Quest17_2", true, +2147483647);
+        })
+    <?php echo '</script'; ?>
+>
 </div>
 </body>
 </html><?php }

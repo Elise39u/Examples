@@ -40,8 +40,8 @@ if (!isset($_COOKIE['Quest8_2'])) {
         setcookie('Quest8_2', false, time() + 2147483647, '', '', '', true);
 }
 
-if (isset($_COOKIE['Quest8_1']) || isset($_COOKIE['Quest8_2'])) {
-    if ($_COOKIE['Quest8_1'] == true || $_COOKIE['Quest8_2'] == true) {
+if (isset($_COOKIE['Quest8_1']) AND isset($_COOKIE['Quest8_2'])) {
+    if ($_COOKIE['Quest8_1'] == true AND $_COOKIE['Quest8_2'] == true) {
         if (isset($_SESSION['PageNpc8'])) {
             $_SESSION['PageNpc8']++;
         } else {

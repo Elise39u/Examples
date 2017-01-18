@@ -34,6 +34,9 @@
             {else}
             <li><a href="NPC2.php"> Go Talk to soldier Kane </a></li>
         {/if}
+        {if $smarty.session.Emma2 == true}
+            <li><a href="Npc21.php"> Talk to emma</a></li>
+        {/if}
     </ul>
 
     <ul>

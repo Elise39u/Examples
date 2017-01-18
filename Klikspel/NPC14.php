@@ -32,6 +32,9 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
 }
 
+if (isset($_SESSION['Bakfiest1'])) {
+    $_COOKIE['Quest14'] = true;
+}
 if (!isset($_COOKIE['Quest14'])) {
         setcookie('Quest14', false, time() + 2147483647, '', '', '', true);
 }

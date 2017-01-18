@@ -3,6 +3,7 @@
 <head>
     <title> {$pagetitle} </title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="css/timeTo.css" type="text/css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -17,6 +18,12 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
+    {if isset($smarty.cookies.Timer2)}
+        {if isset($smarty.cookies.Quest17_2)}
+        {else}
+            <div id="counter-1"></div>
+        {/if}
+    {/if}
     <h1> Big playyard  </h1>
     <p> Well this i a big indoor playyard even for a subbase <br>
     But what can i do here beside wachting the childeren</p>
@@ -32,6 +39,22 @@
         {/foreach}
     </ul>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="JS/jquery.min.js"><\/script>')</script>
+    <script src="JS/jquery.time-to.js"></script>
+    <script type="text/javascript">
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires="+d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        $('#counter-1').timeTo(12, function () {
+            alert("Quest Wacht time completed");
+            setCookie("Quest17_2", true, +2147483647);
+        })
+    </script>
 </div>
 </body>
 </html>

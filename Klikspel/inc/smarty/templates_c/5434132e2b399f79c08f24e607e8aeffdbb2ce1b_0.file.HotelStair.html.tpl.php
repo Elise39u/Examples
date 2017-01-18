@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-05 15:47:12
+/* Smarty version 3.1.29, created on 2017-01-18 12:01:06
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\HotelStair.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586e5c707a0a95_81580751',
+  'unifunc' => 'content_587f4af2e9aa52_52058620',
   'file_dependency' => 
   array (
     '5434132e2b399f79c08f24e607e8aeffdbb2ce1b' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\HotelStair.html.tpl',
-      1 => 1483627499,
+      1 => 1484737265,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586e5c707a0a95_81580751 ($_smarty_tpl) {
+function content_587f4af2e9aa52_52058620 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -56,7 +56,7 @@ function content_586e5c707a0a95_81580751 ($_smarty_tpl) {
     <ul>
         <li><a href="HotelE.php"> Go back to the ground floor </a></li>
         <li><a href="HotelFloor.php"> Go to the first floor </a></li>
-        <li><a href="#"> Talk to singer Geer en Goor </a></li>
+        <li><a href="Npc24.php"> Talk to singer Geer en Goor </a></li>
     </ul>
     <ul>
         <?php

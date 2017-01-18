@@ -32,6 +32,21 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
 }
 
+$sql4 = sprintf("SELECT * FROM party_members");
+$result = mysqli_query($mysqli, $sql4);
+mysqli_fetch_assoc($result);
+foreach ($result as $row) {
+    if ($row['npc_id'] == 21) {
+        $_SESSION['Emma2'] = true;
+
+        $sql2 = "Update npc_stats SET stat_id=13 WHERE npc_id=21";
+        mysqli_query($mysqli, $sql2);
+
+        $sql3 = "DELETE FROM party_members WHERE npc_id = 21";
+        mysqli_query($mysqli, $sql3);
+        unset($_SESSION['Emma']);
+    }
+}
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
 $smarty->assign('magic',getStat('mdef',$userID));

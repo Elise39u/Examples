@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-16 12:19:14
+/* Smarty version 3.1.29, created on 2017-01-18 10:34:59
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\SubNear.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_587cac32e1f177_47684067',
+  'unifunc' => 'content_587f36c399f036_12130706',
   'file_dependency' => 
   array (
     '4f538c5b4f44ba87097c297450767ef0920d4727' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\SubNear.html.tpl',
-      1 => 1484565547,
+      1 => 1484732095,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_587cac32e1f177_47684067 ($_smarty_tpl) {
+function content_587f36c399f036_12130706 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -50,7 +50,7 @@ function content_587cac32e1f177_47684067 ($_smarty_tpl) {
     </ul>
 
     <?php if (isset($_COOKIE['Timer1'])) {?>
-        <?php if ($_COOKIE['Timer1'] == '1') {?>
+        <?php if (isset($_COOKIE['Quest6'])) {?>
             <?php } else { ?>
             <div id="counter-1"></div>
         <?php }?>
@@ -121,10 +121,16 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
     <?php if (isset($_COOKIE['Timer1'])) {?>
     <?php echo '<script'; ?>
  type="text/javascript">
-        $('#counter-1').timeTo(500, function () {
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires="+d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        $('#counter-1').timeTo(15, function () {
             alert("Quest A blink for a eye completed");
-            Good = document.cookie = "Quest6";
-            Good = true;
+            setCookie("Quest6", true, +2147483647);
         })
     <?php echo '</script'; ?>
 >

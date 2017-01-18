@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-05 14:14:46
+/* Smarty version 3.1.29, created on 2017-01-18 11:58:44
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\HotelE.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586e46c6436096_17675681',
+  'unifunc' => 'content_587f4a64f1a6c4_34051697',
   'file_dependency' => 
   array (
     '21a6bdf88f43455f8d1ea8a2a1879f263ef6ce10' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\HotelE.html.tpl',
-      1 => 1483622084,
+      1 => 1484737123,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586e46c6436096_17675681 ($_smarty_tpl) {
+function content_587f4a64f1a6c4_34051697 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -58,7 +58,7 @@ function content_586e46c6436096_17675681 ($_smarty_tpl) {
         <li><a href="HotelStair.php"> Go towards the stairway </a></li>
         <li><a href="HotelD.php"> Go towards the dinning room </a></li>
         <li><a href="HotelT.php"> Go towards the Theater </a></li>
-        <li><a href="#"> Go talk to Owner Anna </a></li>
+        <li><a href="Npc23.php"> Go talk to Owner Anna </a></li>
     </ul>
     <ul>
         <?php
