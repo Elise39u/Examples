@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-19 08:49:18
-  from "C:\wamp64\www\Examplecode\Klikspel\tpl\HotelBalcony.html.tpl" */
+/* Smarty version 3.1.29, created on 2017-01-19 13:47:18
+  from "C:\wamp64\www\Examplecode\Klikspel\tpl\ShipSide.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58806f7e130474_45736791',
+  'unifunc' => 'content_5880b556ec8cd1_41007544',
   'file_dependency' => 
   array (
-    '67d2a1d5e04cc2fb61a62a3a1d4baf0cc7652b38' => 
+    '42dc5a3741e970a576775005a917f880dff1e150' => 
     array (
-      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\HotelBalcony.html.tpl',
-      1 => 1484236056,
+      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\ShipSide.html.tpl',
+      1 => 1484829983,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58806f7e130474_45736791 ($_smarty_tpl) {
+function content_5880b556ec8cd1_41007544 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -48,22 +48,17 @@ function content_58806f7e130474_45736791 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> A balcony  </h1>
-    <p> Well the back of the hotel <br>
-        You look around And see a stair go down <br>
-    Well where does that go you think <br>
-    dare to go onward</p>
-    <img src="img/HotelBalconoy.png">
+    <h1> Well the side </h1>
+    <p> Whaat can i do here. <br>
+        go on or should i go inside my friend  </p>
+    <p id="Npc11"></p>
+    <img src="img/SideShip.png">
     <ul>
-        <li><a href="HotelFloor.php"> Go back inside </a></li>
-        <?php if (isset($_SESSION['info1'])) {?>
-        <?php if ($_SESSION['info1'] == true && $_SESSION['info2'] == true && $_SESSION['info3'] == true) {?>
-            <li><a href="#"> Go towards the docks </a></li>
-            <?php } else { ?>
-            <li><a href="#"> There is nothing there  </a></li>
-        <?php }?>
-        <?php }?>
+        <li><a href="Cafetaria.php"> Go back</a></li>
+        <li><a href="ShipHall.php"> Go inside</a></li>
+        <li><a href="ShipEnd.php"> Go to end of the ship</a></li>
     </ul>
+
     <ul>
         <?php
 $_from = $_smarty_tpl->tpl_vars['inventory']->value;
@@ -96,6 +91,18 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
 ?>
     </ul>
 
+    <?php echo '<script'; ?>
+ type="text/javascript">
+        if (window.name == "Marieke") {
+            document.getElementById('Npc11').innerHTML = "Coach Marieke: Well iel i thougt this was clean <br>" +
+                    "<?php echo $_SESSION['username'];?>
+ Please could we go inside <br>" +
+                    "Or perhaps i should kill you <br>" + "" +
+                    "<?php echo $_SESSION['username'];?>
+ Well perhaps Marieke";
+        }
+    <?php echo '</script'; ?>
+>
 </div>
 </body>
 </html><?php }

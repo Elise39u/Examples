@@ -17,15 +17,15 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> Cafetaria </h1>
+    <h1> Well the side </h1>
     <p> Whaat can i do here. <br>
-        perhaps go back or look out the window :)  </p>
-    <img src="img/cafetaria.png">
+        go on or should i go inside my friend  </p>
+    <p id="Npc11"></p>
+    <img src="img/SideShip.png">
     <ul>
-        <li><a href="Maintance.php"> Go back</a></li>
-        {if isset($smarty.session.KeySP)}
-            <li><a href="ShipSide.php"> Go to the other side of the ship</a></li>
-        {/if}
+        <li><a href="Cafetaria.php"> Go back</a></li>
+        <li><a href="ShipHall.php"> Go inside</a></li>
+        <li><a href="ShipEnd.php"> Go to end of the ship</a></li>
     </ul>
 
     <ul>
@@ -34,6 +34,14 @@
         {/foreach}
     </ul>
 
+    <script type="text/javascript">
+        if (window.name == "Marieke") {
+            document.getElementById('Npc11').innerHTML = "Coach Marieke: Well iel i thougt this was clean <br>" +
+                    "{$smarty.session.username} Please could we go inside <br>" +
+                    "Or perhaps i should kill you <br>" + "" +
+                    "{$smarty.session.username} Well perhaps Marieke";
+        }
+    </script>
 </div>
 </body>
 </html>

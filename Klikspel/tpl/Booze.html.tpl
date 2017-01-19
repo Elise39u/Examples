@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <title> {$pagetitle} </title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -17,21 +17,15 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> There we are </h1>
-    <p> looks empty <br>
-    Maby there is someone in one of the class rooms <br>
-    Or th first floor, aula</p>
-    <img src="img/SchoolHall.png">
+    <h1> fun time :-; </h1>
+
+    <p>  Well booze </p>
+
+    <img src="img/booze.png">
     <ul>
-        <li><a href="SchoolE.php"> Go back </a></li>
-        <li><a href="SchoolClass1.php"> Go towards class room 1</a></li>
-        <li><a href="SchoolClass2.php"> Go towards class room 2</a></li>
-        <li><a href="SchoolAula.php"> Go to the aula </a></li>
-        <li><a href="SchoolStair.php"> Go to the stairway </a></li>
-        {if isset($smarty.session.Dumb2)}
-            <li><a href="Npc10.php">Go talk to coach jeroen</a></li>
-        {/if}
+        <li><a href="Liquor.php"> Go back </a> </li>
     </ul>
+
     <ul>
         {foreach from=$inventory key=id item=i}
             <li> {$i.player_id} {$i.item_id} {$i.space} {$i.quantity} </li>

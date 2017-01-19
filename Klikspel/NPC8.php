@@ -58,7 +58,48 @@ if (isset($_COOKIE['Quest8_1'])) {
             setStat('gc', $userID, $Hai);
         }
     }
+    $itemID = 109;
+    if($inventory == NULL) {
+        $sql = "INSERT INTO Inventory(player_id, item_id, space, quantity) 
+		VALUES ($userID, '$itemID', '$space', $count)";
+        echo "<span style=\"color: white; \"> this $space left  </span></br>";
+        if ($mysqli->query($sql) === TRUE) {
+            echo "<span style=\"color: white; \"> New record created successfully </span>";
+        } else {
+            echo "Error: " . $sql . "<br>" . $mysqli->error;
+        }
+    }
+
+    elseif(isset($inventory)) {
+        $result = $mysqli->query("SELECT item_id FROM Inventory WHERE item_id = $itemID");
+        if($result->num_rows > 0) {
+            $sql = "UPDATE Inventory SET quantity = quantity + 1 WHERE item_id=$itemID";
+            mysqli_query($mysqli, $sql);
+            echo "<span style=\"color: white; \"> Exsist already Dork </span>";
+        } else {
+            foreach ($inventory as $Ok) {
+                $Ok = $space;
+                $space--;
+            }
+            $sql = "INSERT INTO Inventory(player_id, item_id, space, quantity) 
+				VALUES ($userID, '$itemID', '$space', $count)";
+            if ($space <= 0) {
+                echo "<span style=\"color: white; \"> Because you have no space left </span>";
+                die($space);
+            }
+            echo "this $space left </br>";
+            if ($mysqli->query($sql) === TRUE) {
+                echo "<span style=\"color: white; \">  New record created successfully </span>";
+            } else {
+                echo "<span style=\"color: white; \"> Error: " . $sql . "<br>" . $mysqli->error;"</span>";
+            }
+        }
+    }
+    else {
+        echo "Wuuuttttt";
+    }
 }
+
 if (isset($_COOKIE['Quest8_2'])) {
     if ($_COOKIE['Quest8_2'] == true) {
         $money = getStat('gc', $userID);

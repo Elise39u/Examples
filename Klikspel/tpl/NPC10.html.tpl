@@ -37,14 +37,26 @@
     <button id = "opener-2"> HI Jeroen</button>
 
     <ul>
-        <li><a href="SubYard.php"> Go back </a></li>
+        {if isset($smarty.session.Dumb2)}
+            <li><a href="SchoolHall.php"> Go back</a></li>
+            {else}
+            <li><a href="SubYard.php"> Go back </a></li>
+        {/if}
     </ul>
 
     {if isset($smarty.cookies.Quest10_1)}
     {if $smarty.cookies.Quest10_1 == true}
         <script type="text/javascript">
-            var NpcName = "Berna";
-            document.getElementById('Quest').innerHTML = NpcName + " Well Thank you";
+            var NpcName = "Jeroen";
+            document.getElementById('Quest').innerHTML = NpcName + " Well Thank you i have anthor job for you";
+
+            function setCookie(cname, cvalue, exdays) {
+                var d = new Date();
+                d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+                var expires = "expires="+d.toUTCString();
+                document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+            }
+            setCookie("Quest10_1", false, +2147483647, '', '', '', '', true);
         </script>
     {/if}
     {/if}
@@ -64,8 +76,38 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script type="text/javascript" src="JS/NPC/Npc10.js"></script>
+<script type="text/javascript">
+    function loadScript(url, callback)
+    {
+        // Adding the script tag to the head as suggested before
+        var head = document.getElementsByTagName('head')[0];
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = url;
 
+        // Then bind the event to the callback function.
+        // There are several events for cross browser compatibility.
+        script.onreadystatechange = callback;
+        script.onload = callback;
+
+        // Fire the loading
+        head.appendChild(script);
+    }
+
+    var callback;
+    var Think;
+    {if isset($smarty.session.Dumb2)}
+    Think = {$smarty.session.Dumb2};
+    {/if}
+
+    if (Think == true) (
+            loadScript("JS/NPC/Npc10_School.js", callback)
+    )
+    else {
+        loadScript("JS/NPC/Npc10.js", callback)
+    }
+    // <script type="text/javascript" src="JS/NPC/Npc3.js">
+</script>
 <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script type="text/javascript" src="inc/Test.js"></script> -->

@@ -40,7 +40,7 @@
             {else}
             <li><a href="NPC9.php"> Go talk to Teacher Berna </a></li>
         {/if}
-        {if isset($smarty.session.Dumb)}
+        {if isset($smarty.session.Dumb) || isset($smarty.session.Dumb2)}
         {else}
             <li><a href="NPC10.php"> Go talk to Coach Jeroen </a></li>
         {/if}

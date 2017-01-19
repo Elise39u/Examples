@@ -22,8 +22,8 @@
     Should i ask if i can pass or not</p>
     <img src="img/DoorSubBase.png">
     <ul>
-        {if isset($smarty.cookies.Quest19)}
-        {if $smarty.cookies.Quest19 == true}
+        {if isset($smarty.session.PageNpc19)}
+        {if $smarty.session.PageNpc19 >= 1}
           <li><a href="#"> Go On </a></li>
             {else}
             <li><a href="Npc19.php"> Go talk to guard Paul </a></li>

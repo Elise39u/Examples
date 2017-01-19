@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-06 11:33:08
+/* Smarty version 3.1.29, created on 2017-01-19 12:16:16
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\SchoolHall.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586f7264a98ac4_32011082',
+  'unifunc' => 'content_5880a0001994f2_08606507',
   'file_dependency' => 
   array (
     'b1857e9500c15067413b5429592b664def7d7a6e' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\SchoolHall.html.tpl',
-      1 => 1483698742,
+      1 => 1484824574,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586f7264a98ac4_32011082 ($_smarty_tpl) {
+function content_5880a0001994f2_08606507 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -59,6 +59,9 @@ function content_586f7264a98ac4_32011082 ($_smarty_tpl) {
         <li><a href="SchoolClass2.php"> Go towards class room 2</a></li>
         <li><a href="SchoolAula.php"> Go to the aula </a></li>
         <li><a href="SchoolStair.php"> Go to the stairway </a></li>
+        <?php if (isset($_SESSION['Dumb2'])) {?>
+            <li><a href="Npc10.php">Go talk to coach jeroen</a></li>
+        <?php }?>
     </ul>
     <ul>
         <?php

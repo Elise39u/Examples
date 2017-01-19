@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-05 12:35:36
+/* Smarty version 3.1.29, created on 2017-01-19 09:09:45
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Liquor.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586e2f88a3eba7_45856560',
+  'unifunc' => 'content_588074496c58b3_84267578',
   'file_dependency' => 
   array (
     'b6fda5436e29e70330b6e90ca84b24a27d1faaa9' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Liquor.html.tpl',
-      1 => 1483616133,
+      1 => 1484813306,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586e2f88a3eba7_45856560 ($_smarty_tpl) {
+function content_588074496c58b3_84267578 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -55,7 +55,7 @@ function content_586e2f88a3eba7_45856560 ($_smarty_tpl) {
     <img src="img/LiquorStore.png">
     <ul>
         <li><a href="Mall.php"> Go back in the mall </a></li>
-        <li><a href="#"> Grab the alchol </a></li>
+        <li><a href="Booze.php"> Grab the alchol </a></li>
     </ul>
     <ul>
         <?php

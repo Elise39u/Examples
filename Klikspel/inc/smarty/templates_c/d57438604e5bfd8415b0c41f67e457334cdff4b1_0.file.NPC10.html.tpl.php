@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-17 10:57:14
+/* Smarty version 3.1.29, created on 2017-01-19 12:24:14
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\NPC10.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_587dea7a6221c9_02465764',
+  'unifunc' => 'content_5880a1deb38971_32841565',
   'file_dependency' => 
   array (
     'd57438604e5bfd8415b0c41f67e457334cdff4b1' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\NPC10.html.tpl',
-      1 => 1484647033,
+      1 => 1484825051,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_587dea7a6221c9_02465764 ($_smarty_tpl) {
+function content_5880a1deb38971_32841565 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -68,15 +68,27 @@ function content_587dea7a6221c9_02465764 ($_smarty_tpl) {
     <button id = "opener-2"> HI Jeroen</button>
 
     <ul>
-        <li><a href="SubYard.php"> Go back </a></li>
+        <?php if (isset($_SESSION['Dumb2'])) {?>
+            <li><a href="SchoolHall.php"> Go back</a></li>
+            <?php } else { ?>
+            <li><a href="SubYard.php"> Go back </a></li>
+        <?php }?>
     </ul>
 
-    <?php if (isset($_COOKIE['Quest9'])) {?>
-    <?php if ($_COOKIE['Quest9'] == true) {?>
+    <?php if (isset($_COOKIE['Quest10_1'])) {?>
+    <?php if ($_COOKIE['Quest10_1'] == true) {?>
         <?php echo '<script'; ?>
  type="text/javascript">
-            var NpcName = "Berna";
-            document.getElementById('Quest').innerHTML = NpcName + " Well Thank you here is some defense";
+            var NpcName = "Jeroen";
+            document.getElementById('Quest').innerHTML = NpcName + " Well Thank you i have anthor job for you";
+
+            function setCookie(cname, cvalue, exdays) {
+                var d = new Date();
+                d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+                var expires = "expires="+d.toUTCString();
+                document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+            }
+            setCookie("Quest10_1", false, +2147483647, '', '', '', '', true);
         <?php echo '</script'; ?>
 >
     <?php }?>
@@ -136,9 +148,41 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"><?php echo '</script'; ?>
 >
 <?php echo '<script'; ?>
- type="text/javascript" src="JS/NPC/Npc10.js"><?php echo '</script'; ?>
->
+ type="text/javascript">
+    function loadScript(url, callback)
+    {
+        // Adding the script tag to the head as suggested before
+        var head = document.getElementsByTagName('head')[0];
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = url;
 
+        // Then bind the event to the callback function.
+        // There are several events for cross browser compatibility.
+        script.onreadystatechange = callback;
+        script.onload = callback;
+
+        // Fire the loading
+        head.appendChild(script);
+    }
+
+    var callback;
+    var Think;
+    <?php if (isset($_SESSION['Dumb2'])) {?>
+    Think = <?php echo $_SESSION['Dumb2'];?>
+;
+    <?php }?>
+
+    if (Think == true) (
+            loadScript("JS/NPC/Npc10_School.js", callback)
+    )
+    else {
+        loadScript("JS/NPC/Npc10.js", callback)
+    }
+    // <?php echo '<script'; ?>
+ type="text/javascript" src="JS/NPC/Npc3.js">
+<?php echo '</script'; ?>
+>
 <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <?php echo '<script'; ?>

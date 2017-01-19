@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Gegenereerd op: 18 jan 2017 om 15:24
+-- Gegenereerd op: 19 jan 2017 om 15:30
 -- Serverversie: 5.7.9
 -- PHP-versie: 5.6.16
 
@@ -140,14 +140,16 @@ CREATE TABLE IF NOT EXISTS `inventory` (
   `space` int(254) NOT NULL,
   `quantity` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=182 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=227 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `inventory`
 --
 
 INSERT INTO `inventory` (`id`, `player_id`, `item_id`, `space`, `quantity`) VALUES
-(66, '3', 54, 50, 100);
+(225, '2', 106, 49, 1),
+(226, '2', 109, 48, 15),
+(224, '2', 54, 50, 5);
 
 -- --------------------------------------------------------
 
@@ -162,7 +164,7 @@ CREATE TABLE IF NOT EXISTS `items` (
   `type` enum('Weapon','Armor','Usable','Drop','Potion','Flare','SeaMonster') DEFAULT NULL,
   `price` int(11) NOT NULL DEFAULT '10',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=108 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=110 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `items`
@@ -275,7 +277,9 @@ INSERT INTO `items` (`id`, `name`, `type`, `price`) VALUES
 (104, 'TomaHawk', NULL, 43253223),
 (105, 'Navy Shell', NULL, 43253232),
 (106, 'PowerSwicht', NULL, 10000),
-(107, 'Gray Potion', 'Potion', 24500);
+(107, 'Gray Potion', 'Potion', 24500),
+(108, 'Booze', 'Usable', 4500),
+(109, 'KeySP', 'Drop', 15000);
 
 -- --------------------------------------------------------
 
@@ -1374,13 +1378,14 @@ CREATE TABLE IF NOT EXISTS `party_members` (
   `party_id` int(11) NOT NULL,
   `npc_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `party_members`
 --
 
 INSERT INTO `party_members` (`id`, `party_id`, `npc_id`) VALUES
+(13, 1, 11),
 (5, 1, 11);
 
 -- --------------------------------------------------------
@@ -1436,10 +1441,10 @@ INSERT INTO `player_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
 (5, 1, 4, '300'),
 (6, 1, 7, '50'),
 (7, 1, 6, '25'),
-(545, 2, 9, '63'),
+(545, 2, 9, '68'),
 (571, 3, 9, ''),
 (570, 3, 8, ''),
-(544, 2, 8, '67'),
+(544, 2, 8, '61'),
 (569, 3, 11, '5000'),
 (506, 1, 8, ''),
 (568, 3, 3, '5260'),
@@ -1451,10 +1456,10 @@ INSERT INTO `player_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
 (564, 3, 6, '25'),
 (562, 3, 5, '300'),
 (529, 2, 11, '655360000'),
-(528, 2, 3, '140595'),
+(528, 2, 3, '50946518'),
 (527, 2, 7, '50'),
-(526, 2, 2, '24780'),
-(525, 2, 1, '263420'),
+(526, 2, 2, '74820'),
+(525, 2, 1, '658550'),
 (524, 2, 6, '25'),
 (523, 2, 4, '11700'),
 (522, 2, 5, '11700'),

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-12-12 14:57:18
+/* Smarty version 3.1.29, created on 2017-01-19 13:17:07
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Cafetaria.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_584eacbe9d45a9_54852924',
+  'unifunc' => 'content_5880ae43b316d8_67068448',
   'file_dependency' => 
   array (
     'efe246ad855998f25ac032d2d93ad9d9099f9e0e' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Cafetaria.html.tpl',
-      1 => 1481551007,
+      1 => 1484828226,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_584eacbe9d45a9_54852924 ($_smarty_tpl) {
+function content_5880ae43b316d8_67068448 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -54,6 +54,9 @@ function content_584eacbe9d45a9_54852924 ($_smarty_tpl) {
     <img src="img/cafetaria.png">
     <ul>
         <li><a href="Maintance.php"> Go back</a></li>
+        <?php if (isset($_SESSION['KeySP'])) {?>
+            <li><a href="ShipSide.php"> Go to the other side of the ship</a></li>
+        <?php }?>
     </ul>
 
     <ul>

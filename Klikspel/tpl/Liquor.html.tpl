@@ -24,7 +24,7 @@
     <img src="img/LiquorStore.png">
     <ul>
         <li><a href="Mall.php"> Go back in the mall </a></li>
-        <li><a href="#"> Grab the alchol </a></li>
+        <li><a href="Booze.php"> Grab the alchol </a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

@@ -60,7 +60,6 @@ if (!isset($_COOKIE['Quest10_1'])) {
         mysqli_real_escape_string($mysqli, $_SESSION['username']));
         mysqli_query($mysqli, $insert);
         $_SESSION['Dumb'] = true;
-        var_dump($insert);
     }
     elseif (isset($_COOKIE['10_1']) == true) {
         $update = "Update npc_stars SET stat_id = 13 WHERE npc_id = 10";

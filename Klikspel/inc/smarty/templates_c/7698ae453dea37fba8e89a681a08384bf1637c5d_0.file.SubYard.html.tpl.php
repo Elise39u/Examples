@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-18 09:46:26
+/* Smarty version 3.1.29, created on 2017-01-19 12:11:50
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\SubYard.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_587f2b623c2c78_97217145',
+  'unifunc' => 'content_58809ef65416b8_73172800',
   'file_dependency' => 
   array (
     '7698ae453dea37fba8e89a681a08384bf1637c5d' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\SubYard.html.tpl',
-      1 => 1484729037,
+      1 => 1484824308,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_587f2b623c2c78_97217145 ($_smarty_tpl) {
+function content_58809ef65416b8_73172800 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -71,7 +71,7 @@ function content_587f2b623c2c78_97217145 ($_smarty_tpl) {
             <?php } else { ?>
             <li><a href="NPC9.php"> Go talk to Teacher Berna </a></li>
         <?php }?>
-        <?php if (isset($_SESSION['Dumb'])) {?>
+        <?php if (isset($_SESSION['Dumb']) || isset($_SESSION['Dumb2'])) {?>
         <?php } else { ?>
             <li><a href="NPC10.php"> Go talk to Coach Jeroen </a></li>
         <?php }?>

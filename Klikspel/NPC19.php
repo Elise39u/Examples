@@ -30,6 +30,11 @@ while ($row = mysqli_fetch_assoc($result)) {
     $item_result = mysqli_query($mysqli, $item_query);
     list($row['name']) = mysqli_fetch_row($item_result);
     array_push($inventory, $row);
+    if (isset($row['item_id'])) {
+        if($row['item_id'] == 108) {
+            $_COOKIE['Quest19'] = true;
+        }
+    }
 }
 
 if (!isset($_COOKIE['Quest19'])) {

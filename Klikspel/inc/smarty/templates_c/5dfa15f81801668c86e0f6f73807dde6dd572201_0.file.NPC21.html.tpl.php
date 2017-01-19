@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-18 15:46:54
+/* Smarty version 3.1.29, created on 2017-01-19 08:28:30
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\NPC21.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_587f7fdeb61ec1_75972549',
+  'unifunc' => 'content_58806a9ec368b2_32281755',
   'file_dependency' => 
   array (
     '5dfa15f81801668c86e0f6f73807dde6dd572201' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\NPC21.html.tpl',
-      1 => 1484750813,
+      1 => 1484810908,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_587f7fdeb61ec1_75972549 ($_smarty_tpl) {
+function content_58806a9ec368b2_32281755 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -163,8 +163,11 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
     }
 
     var callback;
-    var Think = <?php echo $_SESSION['Emma2'];?>
+    var Think;
+    <?php if (isset($_SESSION['Emma2'])) {?>
+    Think = <?php echo $_SESSION['Emma2'];?>
 ;
+    <?php }?>
 
     if (Think == true) (
             loadScript("JS/NPC/Npc21_docks.js", callback)

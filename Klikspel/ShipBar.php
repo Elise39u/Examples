@@ -32,22 +32,6 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
 }
 
-$sql4 = sprintf("SELECT * FROM party_members");
-$result = mysqli_query($mysqli, $sql4);
-mysqli_fetch_assoc($result);
-foreach ($result as $row) {
-    if ($row['npc_id'] == 10) {
-        $_SESSION['Dumb2'] = true;
-        setcookie('Quest10_1', true, time() + 2146483647, '', '', '', true);
-
-        $sql2 = "Update npc_stats SET stat_id=13 WHERE npc_id=10";
-        mysqli_query($mysqli, $sql2);
-
-        $sql3 = "DELETE FROM party_members WHERE npc_id = 10";
-        mysqli_query($mysqli, $sql3);
-        unset($_SESSION['Dumb']);
-    }
-}
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
 $smarty->assign('magic',getStat('mdef',$userID));
@@ -57,4 +41,4 @@ $smarty->assign('inbank',getStat('bankgc',$userID));
 $smarty->assign('currentHP',getStat('curhp',$userID));
 $smarty->assign('maximumHP',getStat('maxhp',$userID));
 $smarty->assign('pagetitle', $pagetitle);
-$smarty->display("tpl/SchoolHall.html.tpl");
+$smarty->display("tpl/ShipBar.html.tpl");

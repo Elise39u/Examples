@@ -53,7 +53,7 @@
                 document.getElementById('Quest').innerHTML = NpcName + " Well thank you nou you can go on";
             </script>
         {/if}
-    {/if}\
+    {/if}
 
 </div>
 </body>

@@ -29,10 +29,12 @@
         <li><a href="OMetal.php"> To the ... -.- Metal store </a></li>
         <li><a href="OGY.php"> Continu friend </a></li>
         <li><a href="Potion.php"> Potion Shop?? </a></li>
+        {if isset($smarty.session.Emma2)}
         {if $smarty.session.Emma2 == true}
             {elseif isset($smarty.session.Emma)}
         {else}
         <li><a href="Npc21.php"> Go talk to the Pregnant Emma </a></li>
+        {/if}
         {/if}
     </ul>
     <ul>

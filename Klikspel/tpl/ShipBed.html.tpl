@@ -17,27 +17,25 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
-    <h1> There we are </h1>
-    <p> looks empty <br>
-    Maby there is someone in one of the class rooms <br>
-    Or th first floor, aula</p>
-    <img src="img/SchoolHall.png">
+    <h1> A bed room  </h1>
+    <p> Well a bed room </p>
+    <p id="Npc11"></p>
+    <img src="img/SleepRoom.png">
     <ul>
-        <li><a href="SchoolE.php"> Go back </a></li>
-        <li><a href="SchoolClass1.php"> Go towards class room 1</a></li>
-        <li><a href="SchoolClass2.php"> Go towards class room 2</a></li>
-        <li><a href="SchoolAula.php"> Go to the aula </a></li>
-        <li><a href="SchoolStair.php"> Go to the stairway </a></li>
-        {if isset($smarty.session.Dumb2)}
-            <li><a href="Npc10.php">Go talk to coach jeroen</a></li>
-        {/if}
+        <li><a href="ShipHall.php"> Go back outside </a></li>
     </ul>
+
     <ul>
         {foreach from=$inventory key=id item=i}
             <li> {$i.player_id} {$i.item_id} {$i.space} {$i.quantity} </li>
         {/foreach}
     </ul>
 
+    <script type="text/javascript">
+        if (window.name == "Marieke") {
+            document.getElementById('Npc11').innerHTML = "Coach Marieke: admit its a nice one :)";
+        }
+    </script>
 </div>
 </body>
 </html>

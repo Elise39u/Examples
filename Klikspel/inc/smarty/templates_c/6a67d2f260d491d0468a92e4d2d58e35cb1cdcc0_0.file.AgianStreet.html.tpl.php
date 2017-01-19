@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-18 15:28:04
+/* Smarty version 3.1.29, created on 2017-01-19 08:28:53
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\AgianStreet.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_587f7b7498e662_62314681',
+  'unifunc' => 'content_58806ab5c306e7_40339213',
   'file_dependency' => 
   array (
     '6a67d2f260d491d0468a92e4d2d58e35cb1cdcc0' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\AgianStreet.html.tpl',
-      1 => 1484749563,
+      1 => 1484810932,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_587f7b7498e662_62314681 ($_smarty_tpl) {
+function content_58806ab5c306e7_40339213 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -60,10 +60,12 @@ function content_587f7b7498e662_62314681 ($_smarty_tpl) {
         <li><a href="OMetal.php"> To the ... -.- Metal store </a></li>
         <li><a href="OGY.php"> Continu friend </a></li>
         <li><a href="Potion.php"> Potion Shop?? </a></li>
+        <?php if (isset($_SESSION['Emma2'])) {?>
         <?php if ($_SESSION['Emma2'] == true) {?>
             <?php } elseif (isset($_SESSION['Emma'])) {?>
         <?php } else { ?>
         <li><a href="Npc21.php"> Go talk to the Pregnant Emma </a></li>
+        <?php }?>
         <?php }?>
     </ul>
     <ul>

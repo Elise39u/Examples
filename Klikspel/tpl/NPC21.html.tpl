@@ -91,7 +91,10 @@
     }
 
     var callback;
-    var Think = {$smarty.session.Emma2};
+    var Think;
+    {if isset($smarty.session.Emma2)}
+    Think = {$smarty.session.Emma2};
+    {/if}
 
     if (Think == true) (
             loadScript("JS/NPC/Npc21_docks.js", callback)

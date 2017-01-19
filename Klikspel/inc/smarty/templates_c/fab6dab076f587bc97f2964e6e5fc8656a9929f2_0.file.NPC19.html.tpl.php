@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-18 11:08:23
+/* Smarty version 3.1.29, created on 2017-01-19 09:17:20
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\NPC19.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_587f3e9763c4c5_73658420',
+  'unifunc' => 'content_58807610d352c5_27510813',
   'file_dependency' => 
   array (
     'fab6dab076f587bc97f2964e6e5fc8656a9929f2' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\NPC19.html.tpl',
-      1 => 1484734101,
+      1 => 1484813839,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_587f3e9763c4c5_73658420 ($_smarty_tpl) {
+function content_58807610d352c5_27510813 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -103,17 +103,16 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
 ?>
     </ul>
 
-    <?php if (isset($_COOKIE['Quest18'])) {?>
-        <?php if ($_COOKIE['Quest18'] == true) {?>
+    <?php if (isset($_COOKIE['Quest19'])) {?>
+        <?php if ($_COOKIE['Quest19'] == true) {?>
             <?php echo '<script'; ?>
  type="text/javascript">
-                var NpcName = "Maxine";
-                document.getElementById('Quest').innerHTML = NpcName + " Well Thank you on the docks there is a boat near the hotel <br>" +
-                        "Wacht out going to the other side there is a mine field around";
+                var NpcName = "Paul";
+                document.getElementById('Quest').innerHTML = NpcName + " Well thank you nou you can go on";
             <?php echo '</script'; ?>
 >
         <?php }?>
-    <?php }?>\
+    <?php }?>
 
 </div>
 </body>

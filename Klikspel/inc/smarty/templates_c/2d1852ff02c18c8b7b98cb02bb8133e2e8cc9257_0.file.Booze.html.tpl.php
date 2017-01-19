@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-19 08:49:18
-  from "C:\wamp64\www\Examplecode\Klikspel\tpl\HotelBalcony.html.tpl" */
+/* Smarty version 3.1.29, created on 2017-01-19 09:10:09
+  from "C:\wamp64\www\Examplecode\Klikspel\tpl\Booze.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58806f7e130474_45736791',
+  'unifunc' => 'content_588074611ee674_30413988',
   'file_dependency' => 
   array (
-    '67d2a1d5e04cc2fb61a62a3a1d4baf0cc7652b38' => 
+    '2d1852ff02c18c8b7b98cb02bb8133e2e8cc9257' => 
     array (
-      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\HotelBalcony.html.tpl',
-      1 => 1484236056,
+      0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Booze.html.tpl',
+      1 => 1484813407,
       2 => 'file',
     ),
   ),
@@ -19,10 +19,10 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58806f7e130474_45736791 ($_smarty_tpl) {
+function content_588074611ee674_30413988 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <title> <?php echo $_smarty_tpl->tpl_vars['pagetitle']->value;?>
  </title>
@@ -48,22 +48,15 @@ function content_58806f7e130474_45736791 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> A balcony  </h1>
-    <p> Well the back of the hotel <br>
-        You look around And see a stair go down <br>
-    Well where does that go you think <br>
-    dare to go onward</p>
-    <img src="img/HotelBalconoy.png">
+    <h1> fun time :-; </h1>
+
+    <p>  Well booze </p>
+
+    <img src="img/booze.png">
     <ul>
-        <li><a href="HotelFloor.php"> Go back inside </a></li>
-        <?php if (isset($_SESSION['info1'])) {?>
-        <?php if ($_SESSION['info1'] == true && $_SESSION['info2'] == true && $_SESSION['info3'] == true) {?>
-            <li><a href="#"> Go towards the docks </a></li>
-            <?php } else { ?>
-            <li><a href="#"> There is nothing there  </a></li>
-        <?php }?>
-        <?php }?>
+        <li><a href="Liquor.php"> Go back </a> </li>
     </ul>
+
     <ul>
         <?php
 $_from = $_smarty_tpl->tpl_vars['inventory']->value;
