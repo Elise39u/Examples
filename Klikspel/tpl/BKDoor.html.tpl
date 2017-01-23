@@ -17,6 +17,13 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
+    <ul>
+        <p class="H1l">Npc`s in you`re party</p>
+        {foreach from=$party key=id item=i}
+            <li>{$i.name}</li>
+        {/foreach}
+    </ul>
+
     <h1> A door </h1>
     <p> <strong> Knock Knock</strong> No respone <br>
     A key or is there someone inside </p>

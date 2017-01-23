@@ -17,6 +17,13 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
+    <ul>
+        <p class="H1l">Npc`s in you`re party</p>
+        {foreach from=$party key=id item=i}
+            <li>{$i.name}</li>
+        {/foreach}
+    </ul>
+
     <h1> The Garage </h1>
     <p> And there you`re standing inside the garage . You see a car. To the right you see a jerrycan. <br>
         You`re thinking should i take the car or leave the building. <br>

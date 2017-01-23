@@ -17,6 +17,13 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
+    <ul>
+        <p class="H1l">Npc`s in you`re party</p>
+        {foreach from=$party key=id item=i}
+            <li>{$i.name}</li>
+        {/foreach}
+    </ul>
+
     <h1> Home </h1>
     <p>You`re standing in the living room of your home in New York. <br>
         Suddenly you hear a message on the radio about: <br>
@@ -43,7 +50,11 @@
             <li> {$i.player_id} {$i.item_id} {$i.space} {$i.quantity} </li>
         {/foreach}
     </ul>
-    <button id="YES" onclick="Fade()">CLICK ME !!!</button>
+    {if !isset($smarty.session.Npc11)}
+        <button id="NO" onclick="Bye()">CLICK ME !!!!!</button>
+        {else}
+        <button id="YES" onclick="Fade()">CLICK ME !!!</button>
+    {/if}
 
     <script type="text/javascript">
         if (window.name == "Marieke") {
@@ -55,6 +66,10 @@
         function Fade() {
             window.name = "";
             console.log("window.name has been reset")
+        }
+        function Bye() {
+            window.name = "Marieke";
+            console.log("window.name Is been set to Marieke")
         }
     </script>
 </div>

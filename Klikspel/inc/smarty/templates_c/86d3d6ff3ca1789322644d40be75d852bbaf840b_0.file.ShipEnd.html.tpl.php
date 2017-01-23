@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-19 13:32:11
+/* Smarty version 3.1.29, created on 2017-01-20 08:38:14
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\ShipEnd.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5880b1cb1120a9_24491556',
+  'unifunc' => 'content_5881be6628fb58_43291680',
   'file_dependency' => 
   array (
     '86d3d6ff3ca1789322644d40be75d852bbaf840b' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\ShipEnd.html.tpl',
-      1 => 1484829114,
+      1 => 1484829833,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5880b1cb1120a9_24491556 ($_smarty_tpl) {
+function content_5881be6628fb58_43291680 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -91,7 +91,9 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
 
     <?php echo '<script'; ?>
  type="text/javascript">
-        document.getElementById('Npc11').innerHTML = "Coach Marieke: Just go inside please i have it cold";
+        if (window.name == "Marieke") {
+            document.getElementById('Npc11').innerHTML = "Coach Marieke: Just go inside please i have it cold";
+        }
     <?php echo '</script'; ?>
 >
 

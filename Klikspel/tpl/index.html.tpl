@@ -17,6 +17,13 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
+    <ul>
+        <p class="H1l">Npc`s in you`re party</p>
+        {foreach from=$party key=id item=i}
+            <li>{$i.name}</li>
+        {/foreach}
+    </ul>
+
         <form method="post" action="index.php">
             <!-- pattern='[a-z][A-Z][0-9\s]+@' -->
             <h1> Register to save stats</h1> <br>

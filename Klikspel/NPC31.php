@@ -105,7 +105,13 @@ if (isset($_COOKIE['Quest31'])) {
     echo htmlentities($v, 6, 'UTF-8').'<br />';
 }
 */
+$party = array();
+$query1 = sprintf("SELECT name FROM npc WHERE id =(SELECT npc_id FROM party_members)");
+$result1 = mysqli_query($mysqli, $query1);
+$row = mysqli_fetch_assoc($result1);
+array_push($party, $row);
 
+$smarty->assign('party', $party);
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
 $smarty->assign('magic',getStat('mdef',$userID));

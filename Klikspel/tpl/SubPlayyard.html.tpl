@@ -18,6 +18,13 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
+    <ul>
+        <p class="H1l">Npc`s in you`re party</p>
+        {foreach from=$party key=id item=i}
+            <li>{$i.name}</li>
+        {/foreach}
+    </ul>
+
     {if isset($smarty.cookies.Timer2)}
         {if isset($smarty.cookies.Quest17_2)}
         {else}

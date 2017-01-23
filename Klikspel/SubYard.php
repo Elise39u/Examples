@@ -32,6 +32,22 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
 }
 
+$sql4 = sprintf("SELECT * FROM party_members");
+$result = mysqli_query($mysqli, $sql4);
+mysqli_fetch_assoc($result);
+foreach ($result as $row) {
+    if ($row['npc_id'] == 11) {
+        $_SESSION['Npc11'] = true;
+    }
+}
+
+$party = array();
+$query1 = sprintf("SELECT name FROM npc WHERE id =(SELECT npc_id FROM party_members)");
+$result1 = mysqli_query($mysqli, $query1);
+$row = mysqli_fetch_assoc($result1);
+array_push($party, $row);
+
+$smarty->assign('party', $party);
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
 $smarty->assign('magic',getStat('mdef',$userID));

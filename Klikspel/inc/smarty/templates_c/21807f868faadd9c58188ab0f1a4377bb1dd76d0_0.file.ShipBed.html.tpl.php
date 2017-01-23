@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-19 15:47:44
+/* Smarty version 3.1.29, created on 2017-01-20 08:38:02
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\ShipBed.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5880d190f11828_09190785',
+  'unifunc' => 'content_5881be5ad3f1a8_47098975',
   'file_dependency' => 
   array (
     '21807f868faadd9c58188ab0f1a4377bb1dd76d0' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\ShipBed.html.tpl',
-      1 => 1484837263,
+      1 => 1484837271,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5880d190f11828_09190785 ($_smarty_tpl) {
+function content_5881be5ad3f1a8_47098975 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -55,7 +55,7 @@ function content_5880d190f11828_09190785 ($_smarty_tpl) {
     <ul>
         <li><a href="ShipHall.php"> Go back outside </a></li>
     </ul>
-    
+
     <ul>
         <?php
 $_from = $_smarty_tpl->tpl_vars['inventory']->value;

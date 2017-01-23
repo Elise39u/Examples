@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-19 08:49:18
+/* Smarty version 3.1.29, created on 2017-01-23 16:19:44
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\HotelBalcony.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58806f7e130474_45736791',
+  'unifunc' => 'content_58861f10e77e33_39918165',
   'file_dependency' => 
   array (
     '67d2a1d5e04cc2fb61a62a3a1d4baf0cc7652b38' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\HotelBalcony.html.tpl',
-      1 => 1484236056,
+      1 => 1485172068,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58806f7e130474_45736791 ($_smarty_tpl) {
+function content_58861f10e77e33_39918165 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -48,25 +48,10 @@ function content_58806f7e130474_45736791 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> A balcony  </h1>
-    <p> Well the back of the hotel <br>
-        You look around And see a stair go down <br>
-    Well where does that go you think <br>
-    dare to go onward</p>
-    <img src="img/HotelBalconoy.png">
     <ul>
-        <li><a href="HotelFloor.php"> Go back inside </a></li>
-        <?php if (isset($_SESSION['info1'])) {?>
-        <?php if ($_SESSION['info1'] == true && $_SESSION['info2'] == true && $_SESSION['info3'] == true) {?>
-            <li><a href="#"> Go towards the docks </a></li>
-            <?php } else { ?>
-            <li><a href="#"> There is nothing there  </a></li>
-        <?php }?>
-        <?php }?>
-    </ul>
-    <ul>
+        <p class="H1l">Npc`s in you`re party</p>
         <?php
-$_from = $_smarty_tpl->tpl_vars['inventory']->value;
+$_from = $_smarty_tpl->tpl_vars['party']->value;
 if (!is_array($_from) && !is_object($_from)) {
 settype($_from, 'array');
 }
@@ -79,11 +64,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['id']->value => $_smarty_tpl->tpl_vars
 $_smarty_tpl->tpl_vars['i']->_loop = true;
 $__foreach_i_0_saved_local_item = $_smarty_tpl->tpl_vars['i'];
 ?>
-            <li> <?php echo $_smarty_tpl->tpl_vars['i']->value['player_id'];?>
- <?php echo $_smarty_tpl->tpl_vars['i']->value['item_id'];?>
- <?php echo $_smarty_tpl->tpl_vars['i']->value['space'];?>
- <?php echo $_smarty_tpl->tpl_vars['i']->value['quantity'];?>
- </li>
+            <li><?php echo $_smarty_tpl->tpl_vars['i']->value['name'];?>
+</li>
         <?php
 $_smarty_tpl->tpl_vars['i'] = $__foreach_i_0_saved_local_item;
 }
@@ -92,6 +74,54 @@ $_smarty_tpl->tpl_vars['i'] = $__foreach_i_0_saved_item;
 }
 if ($__foreach_i_0_saved_key) {
 $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
+}
+?>
+    </ul>
+
+    <h1> A balcony  </h1>
+    <p> Well the back of the hotel <br>
+        You look around And see a stair go down <br>
+    Well where does that go you think <br>
+    dare to go onward</p>
+    <img src="img/HotelBalconoy.png">
+    <ul>
+        <li><a href="HotelFloor.php"> Go back inside </a></li>
+        <?php if (isset($_SESSION['info1']) && isset($_SESSION['info2']) && isset($_SESSION['info3'])) {?>
+        <?php if ($_SESSION['info1'] == true && $_SESSION['info2'] == true && $_SESSION['info3'] == true) {?>
+            <li><a href="HotelDocks.php"> Go towards the docks </a></li>
+            <?php } else { ?>
+            <li><a href="#"> There is nothing there  </a></li>
+        <?php }?>
+        <?php }?>
+    </ul>
+    <ul>
+        <?php
+$_from = $_smarty_tpl->tpl_vars['inventory']->value;
+if (!is_array($_from) && !is_object($_from)) {
+settype($_from, 'array');
+}
+$__foreach_i_1_saved_item = isset($_smarty_tpl->tpl_vars['i']) ? $_smarty_tpl->tpl_vars['i'] : false;
+$__foreach_i_1_saved_key = isset($_smarty_tpl->tpl_vars['id']) ? $_smarty_tpl->tpl_vars['id'] : false;
+$_smarty_tpl->tpl_vars['i'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['id'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['i']->_loop = false;
+foreach ($_from as $_smarty_tpl->tpl_vars['id']->value => $_smarty_tpl->tpl_vars['i']->value) {
+$_smarty_tpl->tpl_vars['i']->_loop = true;
+$__foreach_i_1_saved_local_item = $_smarty_tpl->tpl_vars['i'];
+?>
+            <li> <?php echo $_smarty_tpl->tpl_vars['i']->value['player_id'];?>
+ <?php echo $_smarty_tpl->tpl_vars['i']->value['item_id'];?>
+ <?php echo $_smarty_tpl->tpl_vars['i']->value['space'];?>
+ <?php echo $_smarty_tpl->tpl_vars['i']->value['quantity'];?>
+ </li>
+        <?php
+$_smarty_tpl->tpl_vars['i'] = $__foreach_i_1_saved_local_item;
+}
+if ($__foreach_i_1_saved_item) {
+$_smarty_tpl->tpl_vars['i'] = $__foreach_i_1_saved_item;
+}
+if ($__foreach_i_1_saved_key) {
+$_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
 }
 ?>
     </ul>

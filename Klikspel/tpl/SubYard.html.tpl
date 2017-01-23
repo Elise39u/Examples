@@ -17,6 +17,13 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
+    <ul>
+        <p class="H1l">Npc`s in you`re party</p>
+        {foreach from=$party key=id item=i}
+            <li>{$i.name}</li>
+        {/foreach}
+    </ul>
+
     <h1> The Yard  </h1>
     <p> As you Look around you see a backway to something <br>
     But there are lots of people here  <br>
@@ -45,6 +52,7 @@
             <li><a href="NPC10.php"> Go talk to Coach Jeroen </a></li>
         {/if}
         {if isset($smarty.session.MMM)}
+            {elseif isset($smarty.session.Npc11)}
             {else}
             <li><a href="NPC11.php"> Go talk to Coach Marieke </a></li>
         {/if}

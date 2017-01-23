@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Gegenereerd op: 19 jan 2017 om 15:30
+-- Gegenereerd op: 23 jan 2017 om 15:27
 -- Serverversie: 5.7.9
 -- PHP-versie: 5.6.16
 
@@ -140,16 +140,7 @@ CREATE TABLE IF NOT EXISTS `inventory` (
   `space` int(254) NOT NULL,
   `quantity` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=227 DEFAULT CHARSET=latin1;
-
---
--- Gegevens worden geëxporteerd voor tabel `inventory`
---
-
-INSERT INTO `inventory` (`id`, `player_id`, `item_id`, `space`, `quantity`) VALUES
-(225, '2', 106, 49, 1),
-(226, '2', 109, 48, 15),
-(224, '2', 54, 50, 5);
+) ENGINE=MyISAM AUTO_INCREMENT=253 DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -294,7 +285,7 @@ CREATE TABLE IF NOT EXISTS `item_stats` (
   `stat_id` int(11) DEFAULT NULL,
   `content` text,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=232 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=233 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `item_stats`
@@ -503,7 +494,8 @@ INSERT INTO `item_stats` (`id`, `item_id`, `stat_id`, `content`) VALUES
 (228, 102, 12, 'SerectPotion'),
 (229, 96, 12, '0'),
 (230, 100, 12, '0'),
-(231, 107, 12, 'GrayPotion');
+(231, 107, 12, 'GrayPotion'),
+(232, 109, 12, '0');
 
 -- --------------------------------------------------------
 
@@ -1316,7 +1308,7 @@ INSERT INTO `npc_stats` (`id`, `npc_id`, `stat_id`, `content`) VALUES
 (8, 8, 13, NULL),
 (9, 9, 13, NULL),
 (10, 10, 13, NULL),
-(11, 11, 14, NULL),
+(11, 11, 13, NULL),
 (12, 12, 13, NULL),
 (13, 13, 13, NULL),
 (14, 14, 13, NULL),
@@ -1378,15 +1370,7 @@ CREATE TABLE IF NOT EXISTS `party_members` (
   `party_id` int(11) NOT NULL,
   `npc_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
-
---
--- Gegevens worden geëxporteerd voor tabel `party_members`
---
-
-INSERT INTO `party_members` (`id`, `party_id`, `npc_id`) VALUES
-(13, 1, 11),
-(5, 1, 11);
+) ENGINE=MyISAM AUTO_INCREMENT=34 DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -1456,13 +1440,13 @@ INSERT INTO `player_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
 (564, 3, 6, '25'),
 (562, 3, 5, '300'),
 (529, 2, 11, '655360000'),
-(528, 2, 3, '50946518'),
+(528, 2, 3, '96534641'),
 (527, 2, 7, '50'),
-(526, 2, 2, '74820'),
-(525, 2, 1, '658550'),
+(526, 2, 2, '6060420'),
+(525, 2, 1, '4187500'),
 (524, 2, 6, '25'),
-(523, 2, 4, '11700'),
-(522, 2, 5, '11700'),
+(523, 2, 4, '45800'),
+(522, 2, 5, '45800'),
 (565, 3, 1, '1080'),
 (510, 1, 11, '5000');
 

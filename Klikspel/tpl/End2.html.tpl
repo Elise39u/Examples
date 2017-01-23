@@ -17,6 +17,13 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
+    <ul>
+        <p class="H1l">Npc`s in you`re party</p>
+        {foreach from=$party key=id item=i}
+            <li>{$i.name}</li>
+        {/foreach}
+    </ul>
+
     <h1> 0.0 The army </h1>
     <p> There you go. as you enter the truck i need to tell something.<br>
         There are 2 more serect endings would you go back and find them or not</p>

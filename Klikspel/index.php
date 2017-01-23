@@ -22,20 +22,20 @@ $pagetitle = "Mine game";
 $setHP = getStat('curhp',$userID);
 if($setHP <= 0) {
     // haven't set up the user's HP values yet - let's set those!
-    setStat('curhp',$userID,175);
-    setStat('maxhp',$userID,300);
-    setStat('sethp',$userID,25);
+    setStat('curhp', $userID, 175);
+    setStat('maxhp', $userID, 300);
+    setStat('sethp', $userID, 25);
     setStat('atk', $userID, '80');
     setStat('def', $userID, '100');
     setStat('mdef', $userID, '50');
     setStat('gc', $userID, '250');
     setStat('bankgc', $userID, '5000');
     $sql3 = sprintf("DELETE FROM inventory WHERE player_id = (SELECT id FROM player WHERE username = '%s')",
-    mysqli_real_escape_string($mysqli, $_SESSION['username']));
+        mysqli_real_escape_string($mysqli, $_SESSION['username']));
     mysqli_query($mysqli, $sql3);
     $sql5 = sprintf("DELETE FROM party_members WHERE party_id = (SELECT id FROM party WHERE player_id=(
         SELECT id FROM player WHERE username='%s'))",
-    mysqli_real_escape_string($mysqli, $_SESSION['username']));
+        mysqli_real_escape_string($mysqli, $_SESSION['username']));
     mysqli_query($mysqli, $sql5);
 
     $sql6 = "UPDATE npc_stats SET stat_id = 13 WHERE stat_id = 14";
@@ -119,6 +119,13 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
 }
 
+$party = array();
+$query1 = sprintf("SELECT name FROM npc WHERE id =(SELECT npc_id FROM party_members)");
+$result1 = mysqli_query($mysqli, $query1);
+$row = mysqli_fetch_assoc($result1);
+array_push($party, $row);
+
+$smarty->assign('party', $party);
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
 $smarty->assign('magic',getStat('mdef',$userID));

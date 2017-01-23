@@ -17,6 +17,13 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
+    <ul>
+        <p class="H1l">Npc`s in you`re party</p>
+        {foreach from=$party key=id item=i}
+            <li>{$i.name}</li>
+        {/foreach}
+    </ul>
+
     <h1> The Docks  </h1>
     <p> While The Marines point were i can arrive <br>
     They ask are you not infected if so lot of people here can use you`re help <br>
@@ -34,8 +41,10 @@
             {else}
             <li><a href="NPC2.php"> Go Talk to soldier Kane </a></li>
         {/if}
+        {if isset($smarty.session.Emma2)}
         {if $smarty.session.Emma2 == true}
             <li><a href="Npc21.php"> Talk to emma</a></li>
+        {/if}
         {/if}
     </ul>
 

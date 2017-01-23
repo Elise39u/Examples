@@ -32,12 +32,54 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
 }
 
-/*
- foreach($_COOKIE as $v){
-    echo htmlentities($v, 6, 'UTF-8').'<br />';
-}
-*/
+$hp = getStat('curhp', $userID);
+$_SESSION['Dmg'] = 0;
+$turns = 0;
+$Hit1 = [];
+$Pass1 = [];
+$mine = 500;
+$i = 0;
+while ($turns < 5) {
+    $var = rand(0,100);
 
+    if ($var <= 25) {
+        $i++;
+        array_push($Hit1, "You hit a mine");
+        $smarty->assign('Hit', $Hit1);
+    } else {
+        array_push($Pass1, "You passed a mine");
+        $smarty->assign('Pass', $Pass1);
+    }
+    $turns++;
+}
+$_SESSION['Dmg'] = $mine * $i;
+
+if ($turns >= 5) {
+    $Ok = $hp - $_SESSION['Dmg'];
+    setStat('curhp', $userID, $Ok);
+    $smarty->assign('Damage', $_SESSION['Dmg']);
+}
+$Health = getStat('curhp', $userID);
+
+if ($Health <= 0) {
+    $smarty->assign("Dead", "Mines");
+    $link = "http://localhost/Examplecode/Klikspel/index.php";
+    echo "<a class='item' href='" . $link . "'> Game over  </a>";
+} else {
+    $smarty->assign("Yes", "You have made it go on");
+    $linkie = "http://localhost/Examplecode/Klikspel/PrisonDocks.php";
+    $link4 = "http://localhost/Examplecode/Klikspel/PrisonSea.php";
+    echo "<a class='item' href='" . $linkie . "'> Go to the Prison  </a>"; echo "</br>";
+    echo "<a class='item' href='" . $link4 . "'> Go to the Sea  </a>";
+}
+
+$party = array();
+$query1 = sprintf("SELECT name FROM npc WHERE id =(SELECT npc_id FROM party_members)");
+$result1 = mysqli_query($mysqli, $query1);
+$row = mysqli_fetch_assoc($result1);
+array_push($party, $row);
+
+$smarty->assign('party', $party);
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
 $smarty->assign('magic',getStat('mdef',$userID));
@@ -47,4 +89,4 @@ $smarty->assign('inbank',getStat('bankgc',$userID));
 $smarty->assign('currentHP',getStat('curhp',$userID));
 $smarty->assign('maximumHP',getStat('maxhp',$userID));
 $smarty->assign('pagetitle', $pagetitle);
-$smarty->display("tpl/NPC35.html.tpl");
+$smarty->display("tpl/Mine.html.tpl");

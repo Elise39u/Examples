@@ -32,6 +32,13 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
 }
 
+$party = array();
+$query1 = sprintf("SELECT name FROM npc WHERE id =(SELECT npc_id FROM party_members)");
+$result1 = mysqli_query($mysqli, $query1);
+$row = mysqli_fetch_assoc($result1);
+array_push($party, $row);
+
+$smarty->assign('party', $party);
 $_SESSION['Army'] = true;
 unset($_SESSION['Apothican']);
 $smarty->assign('inventory', $inventory);

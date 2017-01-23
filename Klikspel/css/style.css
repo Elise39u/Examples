@@ -21,6 +21,12 @@ html {
     color: black;
 }
 
+p.H1l {
+    font-size: 15px;
+    color: firebrick;
+    margin-left: auto!important;
+}
+
 div.plaatje {
     width: 75% !important;
     opacity: 0.8 !important;

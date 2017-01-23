@@ -61,7 +61,22 @@ if (!isset($_COOKIE['Quest11'])) {
         mysqli_query($mysqli, $insert);
         $_SESSION['MMM'] = true;
     }
+    else {
+        $update = "UPDATE npc_stats SET stat_id = 13 WHERE npc_id = 11";
+        mysqli_query($mysqli, $update);
+        $sql8 = sprintf("SELECT npc_id FROM party_members");
+        $row = mysqli_query($mysqli, $sql8);
+        $result10 = mysqli_fetch_row($row);
+        var_dump($result10);
+        foreach ($result10 as $Bye) {
+            if ($Bye === '11') {
+                $sql90 = "DELETE FROM party_members WHERE npc_id = 11";
+                mysqli_query($mysqli, $sql90);
+            }
+        }
+    }
 }
+
 if (isset($_COOKIE['Quest11'])) {
     if ($_COOKIE['Quest11'] == true) {
         if (isset($_SESSION['PageNpc11'])) {
@@ -81,14 +96,19 @@ if (isset($_COOKIE['Quest11'])) {
         }
     }
 }
-
-
 /*
  foreach($_COOKIE as $v){
     echo htmlentities($v, 6, 'UTF-8').'<br />';
 }
 */
 
+$party = array();
+$query1 = sprintf("SELECT name FROM npc WHERE id =(SELECT npc_id FROM party_members)");
+$result1 = mysqli_query($mysqli, $query1);
+$row = mysqli_fetch_assoc($result1);
+array_push($party, $row);
+
+$smarty->assign('party', $party);
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
 $smarty->assign('magic',getStat('mdef',$userID));

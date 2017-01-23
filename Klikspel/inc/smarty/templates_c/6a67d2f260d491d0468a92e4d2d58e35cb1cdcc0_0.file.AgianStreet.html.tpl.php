@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-19 08:28:53
+/* Smarty version 3.1.29, created on 2017-01-23 12:47:53
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\AgianStreet.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58806ab5c306e7_40339213',
+  'unifunc' => 'content_5885ed6945a659_67168625',
   'file_dependency' => 
   array (
     '6a67d2f260d491d0468a92e4d2d58e35cb1cdcc0' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\AgianStreet.html.tpl',
-      1 => 1484810932,
+      1 => 1485171190,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58806ab5c306e7_40339213 ($_smarty_tpl) {
+function content_5885ed6945a659_67168625 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -48,29 +48,10 @@ function content_58806ab5c306e7_40339213 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> And agian street and shops </h1>
-    <p> And there you`re standing at the end of the street.<br>
-        You look down to the left and see a store. To the right you see grage. <br>
-        And futher on you road goes on. <br>
-        Which way wil you go.</p>
-    <img src="img/street4.png">
     <ul>
-        <li><a href="street.php"> Go back ^.^ </a></li>
-        <li><a href="Garage.php"> To The garage </a></li>
-        <li><a href="OMetal.php"> To the ... -.- Metal store </a></li>
-        <li><a href="OGY.php"> Continu friend </a></li>
-        <li><a href="Potion.php"> Potion Shop?? </a></li>
-        <?php if (isset($_SESSION['Emma2'])) {?>
-        <?php if ($_SESSION['Emma2'] == true) {?>
-            <?php } elseif (isset($_SESSION['Emma'])) {?>
-        <?php } else { ?>
-        <li><a href="Npc21.php"> Go talk to the Pregnant Emma </a></li>
-        <?php }?>
-        <?php }?>
-    </ul>
-    <ul>
+        <p class="H1l">Npc`s in you`re party</p>
         <?php
-$_from = $_smarty_tpl->tpl_vars['inventory']->value;
+$_from = $_smarty_tpl->tpl_vars['party']->value;
 if (!is_array($_from) && !is_object($_from)) {
 settype($_from, 'array');
 }
@@ -83,11 +64,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['id']->value => $_smarty_tpl->tpl_vars
 $_smarty_tpl->tpl_vars['i']->_loop = true;
 $__foreach_i_0_saved_local_item = $_smarty_tpl->tpl_vars['i'];
 ?>
-            <li> <?php echo $_smarty_tpl->tpl_vars['i']->value['player_id'];?>
- <?php echo $_smarty_tpl->tpl_vars['i']->value['item_id'];?>
- <?php echo $_smarty_tpl->tpl_vars['i']->value['space'];?>
- <?php echo $_smarty_tpl->tpl_vars['i']->value['quantity'];?>
- </li>
+            <li><?php echo $_smarty_tpl->tpl_vars['i']->value['name'];?>
+</li>
         <?php
 $_smarty_tpl->tpl_vars['i'] = $__foreach_i_0_saved_local_item;
 }
@@ -96,6 +74,55 @@ $_smarty_tpl->tpl_vars['i'] = $__foreach_i_0_saved_item;
 }
 if ($__foreach_i_0_saved_key) {
 $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
+}
+?>
+    </ul>
+
+    <h1> And agian street and shops </h1>
+    <p> And there you`re standing at the end of the street.<br>
+        You look down to the left and see a store. To the right you see grage. <br>
+        And futher on you road goes on. <br>
+        Which way wil you go.</p>
+    <img src="img/street4.png">
+    <ul>
+        <li><a href="street.php"> Go back ^.^ </a></li>
+        <li><a href="Garage.php"> To The garage </a></li>
+        <li><a href="OMetal.php"> To the ... -.- Metal store </a></li>
+        <li><a href="OGY.php"> Continu friend </a></li>
+        <li><a href="Potion.php"> Potion Shop?? </a></li>
+        <?php if (isset($_SESSION['Emma']) || isset($_SESSION['Emma2'])) {?>
+            <?php } else { ?>
+            <li><a href="Npc21.php"> Go talk to the Pregnant Emma </a></li>
+        <?php }?>
+    </ul>
+    <ul>
+        <?php
+$_from = $_smarty_tpl->tpl_vars['inventory']->value;
+if (!is_array($_from) && !is_object($_from)) {
+settype($_from, 'array');
+}
+$__foreach_i_1_saved_item = isset($_smarty_tpl->tpl_vars['i']) ? $_smarty_tpl->tpl_vars['i'] : false;
+$__foreach_i_1_saved_key = isset($_smarty_tpl->tpl_vars['id']) ? $_smarty_tpl->tpl_vars['id'] : false;
+$_smarty_tpl->tpl_vars['i'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['id'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['i']->_loop = false;
+foreach ($_from as $_smarty_tpl->tpl_vars['id']->value => $_smarty_tpl->tpl_vars['i']->value) {
+$_smarty_tpl->tpl_vars['i']->_loop = true;
+$__foreach_i_1_saved_local_item = $_smarty_tpl->tpl_vars['i'];
+?>
+            <li> <?php echo $_smarty_tpl->tpl_vars['i']->value['player_id'];?>
+ <?php echo $_smarty_tpl->tpl_vars['i']->value['item_id'];?>
+ <?php echo $_smarty_tpl->tpl_vars['i']->value['space'];?>
+ <?php echo $_smarty_tpl->tpl_vars['i']->value['quantity'];?>
+ </li>
+        <?php
+$_smarty_tpl->tpl_vars['i'] = $__foreach_i_1_saved_local_item;
+}
+if ($__foreach_i_1_saved_item) {
+$_smarty_tpl->tpl_vars['i'] = $__foreach_i_1_saved_item;
+}
+if ($__foreach_i_1_saved_key) {
+$_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
 }
 ?>
     </ul>

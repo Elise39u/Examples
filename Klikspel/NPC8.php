@@ -32,8 +32,16 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
 }
 
-if (!isset($_COOKIE['Quest8_1'])) {
+
+if (isset($_SESSION['Scoripon'])) {
+    if ($_SESSION['Scoripon'] == true) {
+        setcookie('Quest8_1', 1, time() + 2147483647, '', '', '', true);
+    }
+    else {
         setcookie('Quest8_1', false, time() + 2147483647, '', '', '', true);
+    }
+}  else {
+    setcookie('Quest8_1', false, time() + 2147483647, '', '', '', true);
 }
 
 if (!isset($_COOKIE['Quest8_2'])) {
@@ -51,7 +59,7 @@ if (isset($_COOKIE['Quest8_1']) AND isset($_COOKIE['Quest8_2'])) {
 }
 
 if (isset($_COOKIE['Quest8_1'])) {
-    if ($_COOKIE['Quest8_1'] == true) {
+    if ($_COOKIE['Quest8_1'] == 1) {
         $money = getStat('gc', $userID);
         $Hai = $money + 250;
         if (isset($Hai)) {
@@ -116,6 +124,13 @@ if (isset($_COOKIE['Quest8_2'])) {
 }
 */
 
+$party = array();
+$query1 = sprintf("SELECT name FROM npc WHERE id =(SELECT npc_id FROM party_members)");
+$result1 = mysqli_query($mysqli, $query1);
+$row = mysqli_fetch_assoc($result1);
+array_push($party, $row);
+
+$smarty->assign('party', $party);
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
 $smarty->assign('magic',getStat('mdef',$userID));

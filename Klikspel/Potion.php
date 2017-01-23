@@ -129,6 +129,13 @@ while($row = mysqli_fetch_assoc($result)) {
     array_push($Potion,$row);
 }
 
+$party = array();
+$query1 = sprintf("SELECT name FROM npc WHERE id =(SELECT npc_id FROM party_members)");
+$result1 = mysqli_query($mysqli, $query1);
+$row = mysqli_fetch_assoc($result1);
+array_push($party, $row);
+
+$smarty->assign('party', $party);
 $smarty->assign('curhp',getStat('curhp',$userID));
 $smarty->assign('maxhp',getStat('maxhp',$userID));
 $smarty->assign('gold',getStat('gc',$userID));

@@ -9,6 +9,13 @@
 <div class="plaatje">
 
     <ul>
+        <p class="H1l">Npc`s in you`re party</p>
+        {foreach from=$party key=id item=i}
+            <li>{$i.name}</li>
+        {/foreach}
+    </ul>
+
+    <ul>
         <li>Attack: <strong>{$attack}</strong></li>
         <li>Defence: <strong>{$defence}</strong></li>
         <li>Magic: <strong>{$magic}</strong></li>

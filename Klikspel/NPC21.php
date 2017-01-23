@@ -50,17 +50,17 @@ if (!isset($_COOKIE['Quest21'])) {
     $query = mysqli_query($mysqli, $sql2);
     $row = $query->fetch_row();
 
-    if (in_array("13", $row)) {
-        $update = "UPDATE npc_stats SET stat_id = 14 WHERE npc_id = 21";
-        mysqli_query($mysqli, $update);
+    if ($_SESSION['Emma2'] == true) {}
+    elseif (in_array("13", $row)) {
+    $update = "UPDATE npc_stats SET stat_id = 14 WHERE npc_id = 21";
+    mysqli_query($mysqli, $update);
 
-        $insert = sprintf("Insert Into party_members (party_id, npc_id) VALUES((SELECT id FROM party WHERE player_id=(
+    $insert = sprintf("Insert Into party_members (party_id, npc_id) VALUES((SELECT id FROM party WHERE player_id=(
         SELECT id FROM player WHERE username='%s')), (
         SELECT id FROM npc WHERE id = 21))",
-            mysqli_real_escape_string($mysqli, $_SESSION['username']));
-        mysqli_query($mysqli, $insert);
-        $_SESSION['Emma'] = true;
-    }
+        mysqli_real_escape_string($mysqli, $_SESSION['username']));
+    mysqli_query($mysqli, $insert);
+    $_SESSION['Emma'] = true;}
 }
 
 if (isset($_COOKIE['Quest21'])) {
@@ -89,6 +89,13 @@ if (isset($_COOKIE['Quest21'])) {
 }
 */
 
+$party = array();
+$query1 = sprintf("SELECT name FROM npc WHERE id =(SELECT npc_id FROM party_members)");
+$result1 = mysqli_query($mysqli, $query1);
+$row = mysqli_fetch_assoc($result1);
+array_push($party, $row);
+
+$smarty->assign('party', $party);
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
 $smarty->assign('magic',getStat('mdef',$userID));

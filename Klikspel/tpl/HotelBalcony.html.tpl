@@ -17,6 +17,13 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
+    <ul>
+        <p class="H1l">Npc`s in you`re party</p>
+        {foreach from=$party key=id item=i}
+            <li>{$i.name}</li>
+        {/foreach}
+    </ul>
+
     <h1> A balcony  </h1>
     <p> Well the back of the hotel <br>
         You look around And see a stair go down <br>
@@ -25,9 +32,9 @@
     <img src="img/HotelBalconoy.png">
     <ul>
         <li><a href="HotelFloor.php"> Go back inside </a></li>
-        {if isset($smarty.session.info1)}
+        {if isset($smarty.session.info1) AND isset($smarty.session.info2) AND isset($smarty.session.info3)}
         {if $smarty.session.info1 == true AND $smarty.session.info2 == true AND $smarty.session.info3 == true}
-            <li><a href="#"> Go towards the docks </a></li>
+            <li><a href="HotelDocks.php"> Go towards the docks </a></li>
             {else}
             <li><a href="#"> There is nothing there  </a></li>
         {/if}

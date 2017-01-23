@@ -18,6 +18,13 @@
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
     </ul>
 
+    <ul>
+        <p class="H1l">Npc`s in you`re party</p>
+        {foreach from=$party key=id item=i}
+            <li>{$i.name}</li>
+        {/foreach}
+    </ul>
+
     <div id="counter-1"></div>
     <!-- <p><button id="reset-1" type="button">Reset</button></p> -->
     <h1> The city </h1>
