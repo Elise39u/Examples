@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-23 14:00:16
+/* Smarty version 3.1.29, created on 2017-01-25 15:52:31
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\SubYard.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5885fe6017fa35_42098496',
+  'unifunc' => 'content_5888bbaf7a90c0_04928772',
   'file_dependency' => 
   array (
     '7698ae453dea37fba8e89a681a08384bf1637c5d' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\SubYard.html.tpl',
-      1 => 1485173051,
+      1 => 1485355951,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5885fe6017fa35_42098496 ($_smarty_tpl) {
+function content_5888bbaf7a90c0_04928772 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -86,17 +86,17 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
     <ul>
         <li><a href="SubNear.php"> Go back  </a></li>
         <li><a href="SubBack.php"> Go torugh the backway </a></li>
-        <?php if (isset($_SESSION['Quest7_1']) && isset($_SESSION['Quest7_2'])) {?>
+        <?php if (isset($_COOKIE['Quest7_1']) && isset($_COOKIE['Quest7_2'])) {?>
             <li><a href="#"> Lauren is enjoying her stuff </a></li>
             <?php } else { ?>
         <li><a href="NPC7.php"> Go talk to Beuaty King Lauren </a></li>
         <?php }?>
-        <?php if (isset($_SESSION['Quest8_1']) && isset($_SESSION['Quest8_2'])) {?>
+        <?php if (isset($_COOKIE['Quest8_1']) && isset($_COOKIE['Quest8_2'])) {?>
             <li><a href="#"> Mike is gone photographing </a></li>
             <?php } else { ?>
             <li><a href="NPC8.php"> Go talk to photographer Mike</a></li>
         <?php }?>
-        <?php if (isset($_SESSION['Quest9'])) {?>
+        <?php if (isset($_COOKIE['Quest9'])) {?>
             <li><a href="#"> Berna is gone teaching </a></li>
             <?php } else { ?>
             <li><a href="NPC9.php"> Go talk to Teacher Berna </a></li>

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-05 12:31:50
+/* Smarty version 3.1.29, created on 2017-01-25 10:56:56
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Supermarkt.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586e2ea6a0ba61_98073698',
+  'unifunc' => 'content_588876680d1248_40111510',
   'file_dependency' => 
   array (
     'efdadb992ec7040510ab79c3ed308ebec9289a52' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Supermarkt.html.tpl',
-      1 => 1483615899,
+      1 => 1485337805,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586e2ea6a0ba61_98073698 ($_smarty_tpl) {
+function content_588876680d1248_40111510 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -48,18 +48,10 @@ function content_586e2ea6a0ba61_98073698 ($_smarty_tpl) {
 </strong></li>
     </ul>
 
-    <h1> A markt  </h1>
-    <p> Well there you standing <br>
-    Nothing to see maby look deeper in the store</p>
-    <img src="img/SuperMarkt.png">
     <ul>
-        <li><a href="Mall.php"> Go back in the mall </a></li>
-        <li><a href="#"> Go look for food </a></li>
-        <li><a href="#"> Go look for something to drink </a></li>
-    </ul>
-    <ul>
+        <p class="H1l">Npc`s in you`re party</p>
         <?php
-$_from = $_smarty_tpl->tpl_vars['inventory']->value;
+$_from = $_smarty_tpl->tpl_vars['party']->value;
 if (!is_array($_from) && !is_object($_from)) {
 settype($_from, 'array');
 }
@@ -72,11 +64,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['id']->value => $_smarty_tpl->tpl_vars
 $_smarty_tpl->tpl_vars['i']->_loop = true;
 $__foreach_i_0_saved_local_item = $_smarty_tpl->tpl_vars['i'];
 ?>
-            <li> <?php echo $_smarty_tpl->tpl_vars['i']->value['player_id'];?>
- <?php echo $_smarty_tpl->tpl_vars['i']->value['item_id'];?>
- <?php echo $_smarty_tpl->tpl_vars['i']->value['space'];?>
- <?php echo $_smarty_tpl->tpl_vars['i']->value['quantity'];?>
- </li>
+            <li><?php echo $_smarty_tpl->tpl_vars['i']->value['name'];?>
+</li>
         <?php
 $_smarty_tpl->tpl_vars['i'] = $__foreach_i_0_saved_local_item;
 }
@@ -85,6 +74,47 @@ $_smarty_tpl->tpl_vars['i'] = $__foreach_i_0_saved_item;
 }
 if ($__foreach_i_0_saved_key) {
 $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
+}
+?>
+    </ul>
+
+    <h1> A markt  </h1>
+    <p> Well there you standing <br>
+    Nothing to see maby look deeper in the store</p>
+    <img src="img/SuperMarkt.png">
+    <ul>
+        <li><a href="Mall.php"> Go back in the mall </a></li>
+        <li><a href="Supermarktfood.php"> Go look for food </a></li>
+        <li><a href="Supermarktdrink.php"> Go look for something to drink </a></li>
+    </ul>
+    <ul>
+        <?php
+$_from = $_smarty_tpl->tpl_vars['inventory']->value;
+if (!is_array($_from) && !is_object($_from)) {
+settype($_from, 'array');
+}
+$__foreach_i_1_saved_item = isset($_smarty_tpl->tpl_vars['i']) ? $_smarty_tpl->tpl_vars['i'] : false;
+$__foreach_i_1_saved_key = isset($_smarty_tpl->tpl_vars['id']) ? $_smarty_tpl->tpl_vars['id'] : false;
+$_smarty_tpl->tpl_vars['i'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['id'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['i']->_loop = false;
+foreach ($_from as $_smarty_tpl->tpl_vars['id']->value => $_smarty_tpl->tpl_vars['i']->value) {
+$_smarty_tpl->tpl_vars['i']->_loop = true;
+$__foreach_i_1_saved_local_item = $_smarty_tpl->tpl_vars['i'];
+?>
+            <li> <?php echo $_smarty_tpl->tpl_vars['i']->value['player_id'];?>
+ <?php echo $_smarty_tpl->tpl_vars['i']->value['item_id'];?>
+ <?php echo $_smarty_tpl->tpl_vars['i']->value['space'];?>
+ <?php echo $_smarty_tpl->tpl_vars['i']->value['quantity'];?>
+ </li>
+        <?php
+$_smarty_tpl->tpl_vars['i'] = $__foreach_i_1_saved_local_item;
+}
+if ($__foreach_i_1_saved_item) {
+$_smarty_tpl->tpl_vars['i'] = $__foreach_i_1_saved_item;
+}
+if ($__foreach_i_1_saved_key) {
+$_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
 }
 ?>
     </ul>

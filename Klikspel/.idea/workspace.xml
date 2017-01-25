@@ -2,92 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8189406-8a1f-4642-9cf7-5923e32146cd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/HotelDocks.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/MineRivier.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/PrisonBlokA.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/PrisonBlokB.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/PrisonBlokC.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/PrisonCell1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/PrisonCell2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/PrisonCell3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/PrisonCell4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/PrisonCell5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/PrisonCell6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/PrisonCell7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/PrisonDocks.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/PrisonDoor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/PrisonHall.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/PrisonHall1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/PrisonHall2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/PrisonHall3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/PrisonHall4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/PrisonYard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Seamine.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HotelDocks.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Mine.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PrisonBlockA.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PrisonBlockB.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PrisonBlockC.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PrisonCell1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PrisonCell2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PrisonCell3.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PrisonCell4.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PrisonCell5.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PrisonCell6.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PrisonCell7.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PrisonDocks.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PrisonDoor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PrisonHallA.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PrisonHallB.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PrisonHallC.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PrisonHallC1.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PrisonSea.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PrisonYard.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/047c504c4d9b17c9648d7ed8818f3fee46b3bba6_0.file.PrisonHallC.html.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/0fd21373211c959625d0333448b7b282909e8d30_0.file.PrisonSea.html.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/1ba9673b2cd08b3062c65900ed6ac1309f4cea32_0.file.PrisonHallA.html.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/1d52b57b900fbef402c213932d7703ddb7e85103_0.file.PrisonDoor.html.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/398bd247bf6eceddc80a1b07a2270477fa08a35d_0.file.PrisonCell3.html.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/415d15fa89414a07cd7a7e16eb7c6558737931a5_0.file.PrisonCell7.html.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/428cd22f0de58a9bcc14dfa358403431ba112590_0.file.PrisonYard.html.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/55121ec919d5a03c0ad88f80c0eba0b822b83c39_0.file.PrisonDocks.html.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/7ddf6e7995bd12de6c19c8d13660bbe899f217ab_0.file.PrisonCell6.html.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/9a40df13d26c121b9aac3f91eb8f06291383863c_0.file.PrisonHallC1.html.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/9d6879b6b9d3d871291d96ad2d7ee08231c36296_0.file.PrisonEn.html.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/a04382be08695cfe231e21d66ed119f6a72fa7a9_0.file.PrisonBlockA.html.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/b38501e3151eb9ee014a347379e28a57a65b3246_0.file.PrisonBlockB.html.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/cc97047f00d1a3788d56fbd15fabe8bcfa18f7ec_0.file.PrisonCell4.html.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/cda71f266064f837fb6cc67e651f36ec1c417996_0.file.PrisonCell1.html.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/dae704125ea0711e9181db6618c745b2252fef6d_0.file.PrisonCell2.html.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/e35cd5f25355c6d2a15d6f4646014ff9e72e2d89_0.file.Mine.html.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/e5e360dce6cee10ec61404d8a3e3008d947b1623_0.file.HotelDocks.html.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/ea1cedd5c557f57b8edac351ee99fd051af40cc4_0.file.PrisonCell5.html.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/ee52f26fb1b6cd28a14ac7e44ec5c46d4a46c224_0.file.PrisonBlockC.html.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/f07efb0335a7f98ef8cdde021fb2986f3ab6a426_0.file.PrisonHallB.html.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/HotelDocks.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Mine.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/PrisonBlockA.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/PrisonBlockB.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/PrisonBlockC.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/PrisonCell1.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/PrisonCell2.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/PrisonCell3.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/PrisonCell4.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/PrisonCell5.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/PrisonCell6.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/PrisonCell7.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/PrisonDocks.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/PrisonDoor.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/PrisonEn.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/PrisonHallA.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/PrisonHallB.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/PrisonHallC.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/PrisonHallC1.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/PrisonSea.html.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/PrisonYard.html.tpl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/NPC356php" afterPath="$PROJECT_DIR$/PrisonEn.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CoachBook.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Meat.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Milk.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OutsideSubPower.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PrisonHallKichten.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PrisonKichten.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SubPowerAbove.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SubPowerCatWalk.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SubPowerExit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SubPowerFirstFloor.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SubPowerFuther.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SubPowerStair.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SubSerect.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Supermarktdrink.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Supermarktfood.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TeachBook.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TownRoad.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TownStart.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/CoachBook.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Meat.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Milk.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/OutsideSubPower.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/PrisonHallKichten.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/PrisonKichten.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/SubPowerAbove.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/SubPowerCatWalk.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/SubPowerExit.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/SubPowerFirstFloor.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/SubPowerFuther.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/SubPowerStair.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/SubSerect.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Supermarktdrink.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/Supermarktfood.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/TeachBook.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/TownRoad.html.tpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/TownStart.html.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ideëen.docx" afterPath="$PROJECT_DIR$/Ideëen.docx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/Npcs/Npc21.png" afterPath="$PROJECT_DIR$/img/Npcs/Npc21.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AgianStreet.php" afterPath="$PROJECT_DIR$/AgianStreet.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Antenne.php" afterPath="$PROJECT_DIR$/Antenne.php" />
@@ -128,8 +79,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Garden.php" afterPath="$PROJECT_DIR$/Garden.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GraveYard.php" afterPath="$PROJECT_DIR$/GraveYard.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hammer.php" afterPath="$PROJECT_DIR$/Hammer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HelpFulWebsites.txt" afterPath="$PROJECT_DIR$/HelpFulWebsites.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HotelBalcony.php" afterPath="$PROJECT_DIR$/HotelBalcony.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HotelD.php" afterPath="$PROJECT_DIR$/HotelD.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HotelDocks.php" afterPath="$PROJECT_DIR$/HotelDocks.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HotelE.php" afterPath="$PROJECT_DIR$/HotelE.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HotelFloor.php" afterPath="$PROJECT_DIR$/HotelFloor.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HotelN.php" afterPath="$PROJECT_DIR$/HotelN.php" />
@@ -149,6 +102,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Meme.php" afterPath="$PROJECT_DIR$/Meme.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Message.php" afterPath="$PROJECT_DIR$/Message.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Metal.php" afterPath="$PROJECT_DIR$/Metal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mine.php" afterPath="$PROJECT_DIR$/Mine.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Monster.php" afterPath="$PROJECT_DIR$/Monster.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NPC1.php" afterPath="$PROJECT_DIR$/NPC1.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NPC10.php" afterPath="$PROJECT_DIR$/NPC10.php" />
@@ -206,6 +160,25 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Police.php" afterPath="$PROJECT_DIR$/Police.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Potion.php" afterPath="$PROJECT_DIR$/Potion.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Power.php" afterPath="$PROJECT_DIR$/Power.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PrisonBlockA.php" afterPath="$PROJECT_DIR$/PrisonBlockA.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PrisonBlockB.php" afterPath="$PROJECT_DIR$/PrisonBlockB.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PrisonBlockC.php" afterPath="$PROJECT_DIR$/PrisonBlockC.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PrisonCell1.php" afterPath="$PROJECT_DIR$/PrisonCell1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PrisonCell2.php" afterPath="$PROJECT_DIR$/PrisonCell2.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PrisonCell3.php" afterPath="$PROJECT_DIR$/PrisonCell3.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PrisonCell4.php" afterPath="$PROJECT_DIR$/PrisonCell4.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PrisonCell5.php" afterPath="$PROJECT_DIR$/PrisonCell5.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PrisonCell6.php" afterPath="$PROJECT_DIR$/PrisonCell6.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PrisonCell7.php" afterPath="$PROJECT_DIR$/PrisonCell7.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PrisonDocks.php" afterPath="$PROJECT_DIR$/PrisonDocks.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PrisonDoor.php" afterPath="$PROJECT_DIR$/PrisonDoor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PrisonEn.php" afterPath="$PROJECT_DIR$/PrisonEn.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PrisonHallA.php" afterPath="$PROJECT_DIR$/PrisonHallA.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PrisonHallB.php" afterPath="$PROJECT_DIR$/PrisonHallB.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PrisonHallC.php" afterPath="$PROJECT_DIR$/PrisonHallC.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PrisonHallC1.php" afterPath="$PROJECT_DIR$/PrisonHallC1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PrisonSea.php" afterPath="$PROJECT_DIR$/PrisonSea.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PrisonYard.php" afterPath="$PROJECT_DIR$/PrisonYard.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Recevier.php" afterPath="$PROJECT_DIR$/Recevier.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Roof.php" afterPath="$PROJECT_DIR$/Roof.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sand.php" afterPath="$PROJECT_DIR$/Sand.php" />
@@ -251,242 +224,68 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WeaponShop.php" afterPath="$PROJECT_DIR$/WeaponShop.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Wood.php" afterPath="$PROJECT_DIR$/Wood.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cabian.php" afterPath="$PROJECT_DIR$/cabian.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/electro.php" afterPath="$PROJECT_DIR$/electro.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eroof.php" afterPath="$PROJECT_DIR$/eroof.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fault.php" afterPath="$PROJECT_DIR$/fault.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flare.php" afterPath="$PROJECT_DIR$/flare.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/11f69382b0ebd0b5ff8538ef22ed0d7a41276eb5_0.file.CaveLH.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/11f69382b0ebd0b5ff8538ef22ed0d7a41276eb5_0.file.CaveLH.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/157a134353891903ba2e6267cc9aece30351c50b_0.file.Pass.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/157a134353891903ba2e6267cc9aece30351c50b_0.file.Pass.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/16497c908e0cdb901ee52c5193c240f8f10a7041_0.file.SchoolE.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/16497c908e0cdb901ee52c5193c240f8f10a7041_0.file.SchoolE.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/1aaefaef956c30c25346142291c40c7d94409430_0.file.Blown.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/1aaefaef956c30c25346142291c40c7d94409430_0.file.Blown.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/21807f868faadd9c58188ab0f1a4377bb1dd76d0_0.file.ShipBed.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/21807f868faadd9c58188ab0f1a4377bb1dd76d0_0.file.ShipBed.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/21a6bdf88f43455f8d1ea8a2a1879f263ef6ce10_0.file.HotelE.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/21a6bdf88f43455f8d1ea8a2a1879f263ef6ce10_0.file.HotelE.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/0761fe0130d9892007b3bf744a29e5c7d8776196_0.file.OGY.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/0761fe0130d9892007b3bf744a29e5c7d8776196_0.file.OGY.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/14c82514d33d984c11d905aa5e2b28eea51f0319_0.file.Car.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/14c82514d33d984c11d905aa5e2b28eea51f0319_0.file.Car.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/1a9697125fd685abe3030e2579095d0b73df44b5_0.file.Jerrycan.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/1a9697125fd685abe3030e2579095d0b73df44b5_0.file.Jerrycan.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/1d34ef242ee08314b7aff36fdaefee33cc8657ca_0.file.NPC31.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/1d34ef242ee08314b7aff36fdaefee33cc8657ca_0.file.NPC31.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/1f0aa244a403b0c350571427ee05611b01f3881b_0.file.Garage.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/1f0aa244a403b0c350571427ee05611b01f3881b_0.file.Garage.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/1fde592c2dab7336d7aef73117bfda1cf66d05f7_0.file.NPC27.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/1fde592c2dab7336d7aef73117bfda1cf66d05f7_0.file.NPC27.html.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/2458bdb09106c6332d4a551969b778f7cc785bac_0.file.Warehouse.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/2458bdb09106c6332d4a551969b778f7cc785bac_0.file.Warehouse.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/278fc021f527aa38cf410fafdcb814bb3dbf6ee2_0.file.CaveE.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/278fc021f527aa38cf410fafdcb814bb3dbf6ee2_0.file.CaveE.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/2aab64395f7b04445fa016ddd7a0d6bdc6e0a13f_0.file.SchoolClass1.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/2aab64395f7b04445fa016ddd7a0d6bdc6e0a13f_0.file.SchoolClass1.html.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/2c3f47de36d06956b2d82749d8cb9b0afe6ada93_0.file.HotelFloor.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/2c3f47de36d06956b2d82749d8cb9b0afe6ada93_0.file.HotelFloor.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/2ea31c630375631bc413c0dc6e45e715c6effc4f_0.file.SubAhed.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/2ea31c630375631bc413c0dc6e45e715c6effc4f_0.file.SubAhed.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/2d1852ff02c18c8b7b98cb02bb8133e2e8cc9257_0.file.Booze.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/2d1852ff02c18c8b7b98cb02bb8133e2e8cc9257_0.file.Booze.html.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/2f6695f9812ffbdd5639764a99cda823e1d46071_0.file.ItemShop.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/2f6695f9812ffbdd5639764a99cda823e1d46071_0.file.ItemShop.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/3069d66cfe0265fd203956f6d042a2c99b3c1940_0.file.NPC11.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/3069d66cfe0265fd203956f6d042a2c99b3c1940_0.file.NPC11.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/31ab30a59e8c94633c5fab4540022adffb49dc6a_0.file.Outside.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/31ab30a59e8c94633c5fab4540022adffb49dc6a_0.file.Outside.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/31e2bef04f894fd912020282a9b48c06a17b123d_0.file.Futher.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/31e2bef04f894fd912020282a9b48c06a17b123d_0.file.Futher.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/337002a15232c046345c7b0c39350add5e6626e6_0.file.SubFuther.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/337002a15232c046345c7b0c39350add5e6626e6_0.file.SubFuther.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/3b9709220116a9f55af572f7a06d4b091c40025e_0.file.HotelRoom506.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/3b9709220116a9f55af572f7a06d4b091c40025e_0.file.HotelRoom506.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/32e51f55ab570dbf29a0bc6fa7f6068b5e6e43f8_0.file.SubE.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/32e51f55ab570dbf29a0bc6fa7f6068b5e6e43f8_0.file.SubE.html.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/3f7cfd1a93852041b0db6e18672793468b2c4337_0.file.room.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/3f7cfd1a93852041b0db6e18672793468b2c4337_0.file.room.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/453339c2e8d9bfb5fc26983eef2e6e89c32110ae_0.file.SubDocks.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/453339c2e8d9bfb5fc26983eef2e6e89c32110ae_0.file.SubDocks.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/4a1b7f8b7dac85ec03041ee0276c798d9fb01def_0.file.TomaHawk.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/4a1b7f8b7dac85ec03041ee0276c798d9fb01def_0.file.TomaHawk.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/4f538c5b4f44ba87097c297450767ef0920d4727_0.file.SubNear.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/4f538c5b4f44ba87097c297450767ef0920d4727_0.file.SubNear.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/4fec4ad7bb877f9bae53ed71a138d6c5a886182a_0.file.OBank.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/4fec4ad7bb877f9bae53ed71a138d6c5a886182a_0.file.OBank.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/428cd22f0de58a9bcc14dfa358403431ba112590_0.file.PrisonYard.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/428cd22f0de58a9bcc14dfa358403431ba112590_0.file.PrisonYard.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/47143545708e990b05d6667b2b680a91c5b87ec6_0.file.Deck.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/47143545708e990b05d6667b2b680a91c5b87ec6_0.file.Deck.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/4ca0e6493eb99a6c291bc349ff329b1b77224000_0.file.SubPlayyard.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/4ca0e6493eb99a6c291bc349ff329b1b77224000_0.file.SubPlayyard.html.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/5036c34b61a3181cc05a81611b13b48e31e0e350_0.file.Street.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/5036c34b61a3181cc05a81611b13b48e31e0e350_0.file.Street.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/505106666669c9703832d33fb8c63ebb2492822d_0.file.Potion.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/505106666669c9703832d33fb8c63ebb2492822d_0.file.Potion.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/5434132e2b399f79c08f24e607e8aeffdbb2ce1b_0.file.HotelStair.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/5434132e2b399f79c08f24e607e8aeffdbb2ce1b_0.file.HotelStair.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/56d45f94e1244a99b453c7af9cd2d92d546045e5_0.file.Deadend.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/56d45f94e1244a99b453c7af9cd2d92d546045e5_0.file.Deadend.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/5776d439747a7cdfd06b88477e5c164c145dcee2_0.file.CaveY.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/5776d439747a7cdfd06b88477e5c164c145dcee2_0.file.CaveY.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/5dfa15f81801668c86e0f6f73807dde6dd572201_0.file.NPC21.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/5dfa15f81801668c86e0f6f73807dde6dd572201_0.file.NPC21.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/5ed446fa5bfeb89a7436ad952fe28d5527d81983_0.file.yard.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/5ed446fa5bfeb89a7436ad952fe28d5527d81983_0.file.yard.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/657d76eaf4866b8dd08c8e4e1fb125427bb87684_0.file.HotelN.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/657d76eaf4866b8dd08c8e4e1fb125427bb87684_0.file.HotelN.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/67d2a1d5e04cc2fb61a62a3a1d4baf0cc7652b38_0.file.HotelBalcony.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/67d2a1d5e04cc2fb61a62a3a1d4baf0cc7652b38_0.file.HotelBalcony.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/68bb9a7e87068c37650352b2e3e0fc23fdb4c822_0.file.CaveF.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/68bb9a7e87068c37650352b2e3e0fc23fdb4c822_0.file.CaveF.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/63ca8461b6d31803081a788cbc462e21346475da_0.file.OMetal.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/63ca8461b6d31803081a788cbc462e21346475da_0.file.OMetal.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/65c9d51e049220483d4830c8e1e43c3e2f83e011_0.file.lake.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/65c9d51e049220483d4830c8e1e43c3e2f83e011_0.file.lake.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/6752922733aef003f8c95758f7d0b997e43ee24b_0.file.SubSchool.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/6752922733aef003f8c95758f7d0b997e43ee24b_0.file.SubSchool.html.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/6a67d2f260d491d0468a92e4d2d58e35cb1cdcc0_0.file.AgianStreet.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/6a67d2f260d491d0468a92e4d2d58e35cb1cdcc0_0.file.AgianStreet.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/708ad41eb5f1ceced0fcb7d2a0721533b7797373_0.file.NPC12.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/708ad41eb5f1ceced0fcb7d2a0721533b7797373_0.file.NPC12.html.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/7698ae453dea37fba8e89a681a08384bf1637c5d_0.file.SubYard.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/7698ae453dea37fba8e89a681a08384bf1637c5d_0.file.SubYard.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/82be2f73764489b1fd7e586bdcb3449e1d7bc71d_0.file.river.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/82be2f73764489b1fd7e586bdcb3449e1d7bc71d_0.file.river.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/86d3d6ff3ca1789322644d40be75d852bbaf840b_0.file.ShipEnd.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/86d3d6ff3ca1789322644d40be75d852bbaf840b_0.file.ShipEnd.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/89c2298fc7fed5a20bc6809d6feca90fad652230_0.file.CaveD.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/89c2298fc7fed5a20bc6809d6feca90fad652230_0.file.CaveD.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/8ee51fb70479fb80b9f5bc47c8431bc0b507cb51_0.file.Bank.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/8ee51fb70479fb80b9f5bc47c8431bc0b507cb51_0.file.Bank.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/9718c32407eba6527351a254ff3b02c6650a4be5_0.file.CaveEND.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/9718c32407eba6527351a254ff3b02c6650a4be5_0.file.CaveEND.html.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/9edacefcb03fec5e3932add07fcc6040364d0bfb_0.file.Monster.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/9edacefcb03fec5e3932add07fcc6040364d0bfb_0.file.Monster.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/adad397dd7b9e97c490aa91c1527dd3e346bc770_0.file.Meme.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/adad397dd7b9e97c490aa91c1527dd3e346bc770_0.file.Meme.html.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/b1857e9500c15067413b5429592b664def7d7a6e_0.file.SchoolHall.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/b1857e9500c15067413b5429592b664def7d7a6e_0.file.SchoolHall.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/bef6a652d4845ff942bd2bf05b374e078ada084a_0.file.index.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/bef6a652d4845ff942bd2bf05b374e078ada084a_0.file.index.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/bfd02912e7c9969e6293d06239ed87d0b38fef98_0.file.Vault.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/bfd02912e7c9969e6293d06239ed87d0b38fef98_0.file.Vault.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/ccd4dd06fbc32fe462ff2bdbf782b94345c60284_0.file.Nstation.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/ccd4dd06fbc32fe462ff2bdbf782b94345c60284_0.file.Nstation.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/d0f91256c89cfbc257beb595883a65a5ede6ebe7_0.file.Mall.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/d0f91256c89cfbc257beb595883a65a5ede6ebe7_0.file.Mall.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/b6b126f28ba60956cdaa75ffe7b0d4f65cdf5646_0.file.Boat.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/b6b126f28ba60956cdaa75ffe7b0d4f65cdf5646_0.file.Boat.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/b6fda5436e29e70330b6e90ca84b24a27d1faaa9_0.file.Liquor.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/b6fda5436e29e70330b6e90ca84b24a27d1faaa9_0.file.Liquor.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/c9cb2458902423b0e80b96a3860f0133a7a41f27_0.file.Nship.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/c9cb2458902423b0e80b96a3860f0133a7a41f27_0.file.Nship.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/cea601c46c09509ee48f0df31d42665c181fa7b6_0.file.SchoolAula.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/cea601c46c09509ee48f0df31d42665c181fa7b6_0.file.SchoolAula.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/d22ecf104464a014e356c1a6c58e4039cea7e9d7_0.file.SubDoor.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/d22ecf104464a014e356c1a6c58e4039cea7e9d7_0.file.SubDoor.html.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/d57438604e5bfd8415b0c41f67e457334cdff4b1_0.file.NPC10.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/d57438604e5bfd8415b0c41f67e457334cdff4b1_0.file.NPC10.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/d7bcb767528c95d8b717c3215ccddaa5e83642af_0.file.CaveIS.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/d7bcb767528c95d8b717c3215ccddaa5e83642af_0.file.CaveIS.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/e2b61654d2365589934432da161f9741dbc522c0_0.file.BKDoor.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/e2b61654d2365589934432da161f9741dbc522c0_0.file.BKDoor.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/ed9ac6e38e5121104dafd8fd901ab1e4def5d527_0.file.Docks.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/ed9ac6e38e5121104dafd8fd901ab1e4def5d527_0.file.Docks.html.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/f3518f82b963202666e2f15f0b487ac29c6f0bc0_0.file.SchoolStair.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/f3518f82b963202666e2f15f0b487ac29c6f0bc0_0.file.SchoolStair.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/ed5d0444389ad0ed5c42674d4527ac44cf06ed71_0.file.NPC9.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/ed5d0444389ad0ed5c42674d4527ac44cf06ed71_0.file.NPC9.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/efdadb992ec7040510ab79c3ed308ebec9289a52_0.file.Supermarkt.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/efdadb992ec7040510ab79c3ed308ebec9289a52_0.file.Supermarkt.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/f331fa9b20347b35ad22ef83ece0dbda242f87d1_0.file.NPC7.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/f331fa9b20347b35ad22ef83ece0dbda242f87d1_0.file.NPC7.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/f85292f287db5f5715a1e02a1b22a1eb0b54ad49_0.file.SubBack.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/f85292f287db5f5715a1e02a1b22a1eb0b54ad49_0.file.SubBack.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/fab6dab076f587bc97f2964e6e5fc8656a9929f2_0.file.NPC19.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/fab6dab076f587bc97f2964e6e5fc8656a9929f2_0.file.NPC19.html.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/smarty/templates_c/fbb55d5dcaeda17e68e496949fc48774abee0310_0.file.HotelRoom508.html.tpl.php" afterPath="$PROJECT_DIR$/inc/smarty/templates_c/fbb55d5dcaeda17e68e496949fc48774abee0310_0.file.HotelRoom508.html.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kichten.php" afterPath="$PROJECT_DIR$/kichten.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/klikspel.sql" afterPath="$PROJECT_DIR$/klikspel.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lake.php" afterPath="$PROJECT_DIR$/lake.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pickaxe.php" afterPath="$PROJECT_DIR$/pickaxe.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/river.php" afterPath="$PROJECT_DIR$/river.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/room.php" afterPath="$PROJECT_DIR$/room.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/AgianStreet.html.tpl" afterPath="$PROJECT_DIR$/tpl/AgianStreet.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Antenne.html.tpl" afterPath="$PROJECT_DIR$/tpl/Antenne.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Axe.html.tpl" afterPath="$PROJECT_DIR$/tpl/Axe.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/BKDoor.html.tpl" afterPath="$PROJECT_DIR$/tpl/BKDoor.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/BackE.html.tpl" afterPath="$PROJECT_DIR$/tpl/BackE.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Bank.html.tpl" afterPath="$PROJECT_DIR$/tpl/Bank.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Basebalbat.html.tpl" afterPath="$PROJECT_DIR$/tpl/Basebalbat.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Bedroom.html.tpl" afterPath="$PROJECT_DIR$/tpl/Bedroom.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Blown.html.tpl" afterPath="$PROJECT_DIR$/tpl/Blown.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Boat.html.tpl" afterPath="$PROJECT_DIR$/tpl/Boat.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Booze.html.tpl" afterPath="$PROJECT_DIR$/tpl/Booze.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Bridge.html.tpl" afterPath="$PROJECT_DIR$/tpl/Bridge.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Cafetaria.html.tpl" afterPath="$PROJECT_DIR$/tpl/Cafetaria.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Car.html.tpl" afterPath="$PROJECT_DIR$/tpl/Car.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Card.html.tpl" afterPath="$PROJECT_DIR$/tpl/Card.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/CaveD.html.tpl" afterPath="$PROJECT_DIR$/tpl/CaveD.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/CaveE.html.tpl" afterPath="$PROJECT_DIR$/tpl/CaveE.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/CaveEND.html.tpl" afterPath="$PROJECT_DIR$/tpl/CaveEND.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/CaveF.html.tpl" afterPath="$PROJECT_DIR$/tpl/CaveF.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/CaveIS.html.tpl" afterPath="$PROJECT_DIR$/tpl/CaveIS.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/CaveLH.html.tpl" afterPath="$PROJECT_DIR$/tpl/CaveLH.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/CaveY.html.tpl" afterPath="$PROJECT_DIR$/tpl/CaveY.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Counter.html.tpl" afterPath="$PROJECT_DIR$/tpl/Counter.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Deadend.html.tpl" afterPath="$PROJECT_DIR$/tpl/Deadend.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Deck.html.tpl" afterPath="$PROJECT_DIR$/tpl/Deck.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Docks.html.tpl" afterPath="$PROJECT_DIR$/tpl/Docks.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/End1.html.tpl" afterPath="$PROJECT_DIR$/tpl/End1.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/End2.html.tpl" afterPath="$PROJECT_DIR$/tpl/End2.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/End3.html.tpl" afterPath="$PROJECT_DIR$/tpl/End3.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/End4.html.tpl" afterPath="$PROJECT_DIR$/tpl/End4.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/End5.html.tpl" afterPath="$PROJECT_DIR$/tpl/End5.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/FIreShell.html.tpl" afterPath="$PROJECT_DIR$/tpl/FIreShell.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Fire.html.tpl" afterPath="$PROJECT_DIR$/tpl/Fire.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/FlareApothican.html.tpl" afterPath="$PROJECT_DIR$/tpl/FlareApothican.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/FlareArmy.html.tpl" afterPath="$PROJECT_DIR$/tpl/FlareArmy.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Futher.html.tpl" afterPath="$PROJECT_DIR$/tpl/Futher.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Garage.html.tpl" afterPath="$PROJECT_DIR$/tpl/Garage.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Garden.html.tpl" afterPath="$PROJECT_DIR$/tpl/Garden.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/GraveYard.html.tpl" afterPath="$PROJECT_DIR$/tpl/GraveYard.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Hammer.html.tpl" afterPath="$PROJECT_DIR$/tpl/Hammer.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/HotelBalcony.html.tpl" afterPath="$PROJECT_DIR$/tpl/HotelBalcony.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/HotelD.html.tpl" afterPath="$PROJECT_DIR$/tpl/HotelD.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/HotelE.html.tpl" afterPath="$PROJECT_DIR$/tpl/HotelE.html.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/HotelFloor.html.tpl" afterPath="$PROJECT_DIR$/tpl/HotelFloor.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/HotelN.html.tpl" afterPath="$PROJECT_DIR$/tpl/HotelN.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/HotelRoom506.html.tpl" afterPath="$PROJECT_DIR$/tpl/HotelRoom506.html.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/HotelRoom508.html.tpl" afterPath="$PROJECT_DIR$/tpl/HotelRoom508.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/HotelStair.html.tpl" afterPath="$PROJECT_DIR$/tpl/HotelStair.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/HotelT.html.tpl" afterPath="$PROJECT_DIR$/tpl/HotelT.html.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/ItemShop.html.tpl" afterPath="$PROJECT_DIR$/tpl/ItemShop.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Jar.html.tpl" afterPath="$PROJECT_DIR$/tpl/Jar.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Jerrycan.html.tpl" afterPath="$PROJECT_DIR$/tpl/Jerrycan.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/KeyBK.html.tpl" afterPath="$PROJECT_DIR$/tpl/KeyBK.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/KeyGY.html.tpl" afterPath="$PROJECT_DIR$/tpl/KeyGY.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/KeyPS.html.tpl" afterPath="$PROJECT_DIR$/tpl/KeyPS.html.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Liquor.html.tpl" afterPath="$PROJECT_DIR$/tpl/Liquor.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Maintance.html.tpl" afterPath="$PROJECT_DIR$/tpl/Maintance.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Mall.html.tpl" afterPath="$PROJECT_DIR$/tpl/Mall.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Meme.html.tpl" afterPath="$PROJECT_DIR$/tpl/Meme.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Message.html.tpl" afterPath="$PROJECT_DIR$/tpl/Message.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Metal.html.tpl" afterPath="$PROJECT_DIR$/tpl/Metal.html.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Monster.html.tpl" afterPath="$PROJECT_DIR$/tpl/Monster.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC1.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC1.html.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC10.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC10.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC11.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC11.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC12.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC12.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC13.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC13.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC14.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC14.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC15.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC15.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC16.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC16.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC17.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC17.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC18.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC18.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC19.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC19.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC2.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC2.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC20.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC20.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC21.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC21.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC22.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC22.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC23.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC23.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC24.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC24.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC25.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC25.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC26.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC26.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC27.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC27.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC28.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC28.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC29.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC29.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC3.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC3.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC30.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC30.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC31.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC31.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC32.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC32.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC33.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC33.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC34.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC34.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC35.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC35.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC36.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC36.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC37.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC37.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC38.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC38.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC39.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC39.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC4.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC4.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC5.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC5.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC6.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC6.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC7.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC7.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC8.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC8.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/NPC9.html.tpl" afterPath="$PROJECT_DIR$/tpl/NPC9.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Nailgun.html.tpl" afterPath="$PROJECT_DIR$/tpl/Nailgun.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Nbridge.html.tpl" afterPath="$PROJECT_DIR$/tpl/Nbridge.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Nship.html.tpl" afterPath="$PROJECT_DIR$/tpl/Nship.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Nstation.html.tpl" afterPath="$PROJECT_DIR$/tpl/Nstation.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/OBank.html.tpl" afterPath="$PROJECT_DIR$/tpl/OBank.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/OGY.html.tpl" afterPath="$PROJECT_DIR$/tpl/OGY.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/OMetal.html.tpl" afterPath="$PROJECT_DIR$/tpl/OMetal.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/OWS.html.tpl" afterPath="$PROJECT_DIR$/tpl/OWS.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Ocabian.html.tpl" afterPath="$PROJECT_DIR$/tpl/Ocabian.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Oelectro.html.tpl" afterPath="$PROJECT_DIR$/tpl/Oelectro.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Ostation.html.tpl" afterPath="$PROJECT_DIR$/tpl/Ostation.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Outside.html.tpl" afterPath="$PROJECT_DIR$/tpl/Outside.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Owood.html.tpl" afterPath="$PROJECT_DIR$/tpl/Owood.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Pass.html.tpl" afterPath="$PROJECT_DIR$/tpl/Pass.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Police.html.tpl" afterPath="$PROJECT_DIR$/tpl/Police.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Potion.html.tpl" afterPath="$PROJECT_DIR$/tpl/Potion.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Power.html.tpl" afterPath="$PROJECT_DIR$/tpl/Power.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Recevier.html.tpl" afterPath="$PROJECT_DIR$/tpl/Recevier.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Roof.html.tpl" afterPath="$PROJECT_DIR$/tpl/Roof.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Sand.html.tpl" afterPath="$PROJECT_DIR$/tpl/Sand.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/SchoolAula.html.tpl" afterPath="$PROJECT_DIR$/tpl/SchoolAula.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/SchoolClass1.html.tpl" afterPath="$PROJECT_DIR$/tpl/SchoolClass1.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/SchoolClass2.html.tpl" afterPath="$PROJECT_DIR$/tpl/SchoolClass2.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/SchoolClass3.html.tpl" afterPath="$PROJECT_DIR$/tpl/SchoolClass3.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/SchoolClass4.html.tpl" afterPath="$PROJECT_DIR$/tpl/SchoolClass4.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/SchoolClass5.html.tpl" afterPath="$PROJECT_DIR$/tpl/SchoolClass5.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/SchoolClass6.html.tpl" afterPath="$PROJECT_DIR$/tpl/SchoolClass6.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/SchoolClass7.html.tpl" afterPath="$PROJECT_DIR$/tpl/SchoolClass7.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/SchoolE.html.tpl" afterPath="$PROJECT_DIR$/tpl/SchoolE.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/SchoolFloor.html.tpl" afterPath="$PROJECT_DIR$/tpl/SchoolFloor.html.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/PrisonSea.html.tpl" afterPath="$PROJECT_DIR$/tpl/PrisonSea.html.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/PrisonYard.html.tpl" afterPath="$PROJECT_DIR$/tpl/PrisonYard.html.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/SchoolHall.html.tpl" afterPath="$PROJECT_DIR$/tpl/SchoolHall.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/SchoolKichten.html.tpl" afterPath="$PROJECT_DIR$/tpl/SchoolKichten.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/SchoolStair.html.tpl" afterPath="$PROJECT_DIR$/tpl/SchoolStair.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Shell.html.tpl" afterPath="$PROJECT_DIR$/tpl/Shell.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/ShipBall.html.tpl" afterPath="$PROJECT_DIR$/tpl/ShipBall.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/ShipBar.html.tpl" afterPath="$PROJECT_DIR$/tpl/ShipBar.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/ShipBed.html.tpl" afterPath="$PROJECT_DIR$/tpl/ShipBed.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/ShipDecor.html.tpl" afterPath="$PROJECT_DIR$/tpl/ShipDecor.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/ShipEnd.html.tpl" afterPath="$PROJECT_DIR$/tpl/ShipEnd.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/ShipHall.html.tpl" afterPath="$PROJECT_DIR$/tpl/ShipHall.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/ShipSide.html.tpl" afterPath="$PROJECT_DIR$/tpl/ShipSide.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Sleep.html.tpl" afterPath="$PROJECT_DIR$/tpl/Sleep.html.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Street.html.tpl" afterPath="$PROJECT_DIR$/tpl/Street.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/SubAhed.html.tpl" afterPath="$PROJECT_DIR$/tpl/SubAhed.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/SubBack.html.tpl" afterPath="$PROJECT_DIR$/tpl/SubBack.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/SubDocks.html.tpl" afterPath="$PROJECT_DIR$/tpl/SubDocks.html.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/SubDoor.html.tpl" afterPath="$PROJECT_DIR$/tpl/SubDoor.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/SubE.html.tpl" afterPath="$PROJECT_DIR$/tpl/SubE.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/SubFuther.html.tpl" afterPath="$PROJECT_DIR$/tpl/SubFuther.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/SubNear.html.tpl" afterPath="$PROJECT_DIR$/tpl/SubNear.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/SubPlayyard.html.tpl" afterPath="$PROJECT_DIR$/tpl/SubPlayyard.html.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/SubSchool.html.tpl" afterPath="$PROJECT_DIR$/tpl/SubSchool.html.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/SubYard.html.tpl" afterPath="$PROJECT_DIR$/tpl/SubYard.html.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Supermarkt.html.tpl" afterPath="$PROJECT_DIR$/tpl/Supermarkt.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/TomaHawk.html.tpl" afterPath="$PROJECT_DIR$/tpl/TomaHawk.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Vault.html.tpl" afterPath="$PROJECT_DIR$/tpl/Vault.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Versterker.html.tpl" afterPath="$PROJECT_DIR$/tpl/Versterker.html.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Warehouse.html.tpl" afterPath="$PROJECT_DIR$/tpl/Warehouse.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/WeaponCache.html.tpl" afterPath="$PROJECT_DIR$/tpl/WeaponCache.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/WeaponShop.html.tpl" afterPath="$PROJECT_DIR$/tpl/WeaponShop.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/Wood.html.tpl" afterPath="$PROJECT_DIR$/tpl/Wood.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/cabian.html.tpl" afterPath="$PROJECT_DIR$/tpl/cabian.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/electro.html.tpl" afterPath="$PROJECT_DIR$/tpl/electro.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/eroof.html.tpl" afterPath="$PROJECT_DIR$/tpl/eroof.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/fault.html.tpl" afterPath="$PROJECT_DIR$/tpl/fault.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/flare.html.tpl" afterPath="$PROJECT_DIR$/tpl/flare.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/index.html.tpl" afterPath="$PROJECT_DIR$/tpl/index.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/kichten.html.tpl" afterPath="$PROJECT_DIR$/tpl/kichten.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/lake.html.tpl" afterPath="$PROJECT_DIR$/tpl/lake.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/pickaxe.html.tpl" afterPath="$PROJECT_DIR$/tpl/pickaxe.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/river.html.tpl" afterPath="$PROJECT_DIR$/tpl/river.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/room.html.tpl" afterPath="$PROJECT_DIR$/tpl/room.html.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/yard.html.tpl" afterPath="$PROJECT_DIR$/tpl/yard.html.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yard.php" afterPath="$PROJECT_DIR$/yard.php" />
     </list>
     <ignored path="Klikspel.iws" />
@@ -522,53 +321,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PrisonBlockB.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PrisonBlockB.php">
+      <file leaf-file-name="SchoolHall.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SchoolHall.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
+            <state relative-caret-position="85">
+              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
               <folding>
-                <marker date="1485183268071" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-                <marker date="1485183268071" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-                <marker date="1485183268071" expanded="true" signature="824:862" ph="SELECT name items" />
-                <marker date="1485183268071" expanded="true" signature="1113:1178" ph="SELECT name npc" />
-                <marker date="1485183268071" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
+                <marker date="1485355328866" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+                <marker date="1485355328866" expanded="true" signature="610:656" ph="SELECT * FRO... inventory" />
+                <marker date="1485355328866" expanded="true" signature="823:861" ph="SELECT name items" />
+                <marker date="1485355328866" expanded="true" signature="1092:1119" ph="SELECT * FRO... party_members" />
+                <marker date="1485355328866" expanded="true" signature="1382:1429" ph="Update npc_s... " />
+                <marker date="1485355328866" expanded="true" signature="1488:1531" ph="DELETE FROM " />
+                <marker date="1485355328866" expanded="true" signature="1652:1828" ph="SELECT name npc" />
+                <marker date="1485355328866" expanded="true" signature="1685:1827" ph="SELECT npc_i... party_members" />
+                <marker date="1485355328866" expanded="true" signature="1739:1826" ph="SELECT id FR... party" />
+                <marker date="1485355328866" expanded="true" signature="1782:1825" ph="SELECT id FR... player" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PrisonBlockB.html.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpl/PrisonBlockB.html.tpl">
+      <file leaf-file-name="SubYard.html.tpl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tpl/SubYard.html.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PrisonCell7.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PrisonCell7.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
-              <folding>
-                <marker date="1485184263090" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-                <marker date="1485184263090" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-                <marker date="1485184263090" expanded="true" signature="824:862" ph="SELECT name items" />
-                <marker date="1485184263090" expanded="true" signature="1113:1178" ph="SELECT name npc" />
-                <marker date="1485184263090" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PrisonCell7.html.tpl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tpl/PrisonCell7.html.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+            <state relative-caret-position="357">
+              <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -589,57 +367,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SubAhed.php" />
-        <option value="$PROJECT_DIR$/SubBack.php" />
-        <option value="$PROJECT_DIR$/SubDocks.php" />
-        <option value="$PROJECT_DIR$/SubDoor.php" />
-        <option value="$PROJECT_DIR$/SubFuther.php" />
-        <option value="$PROJECT_DIR$/SubE.php" />
-        <option value="$PROJECT_DIR$/SubNear.php" />
-        <option value="$PROJECT_DIR$/SubPlayyard.php" />
-        <option value="$PROJECT_DIR$/SubSchool.php" />
-        <option value="$PROJECT_DIR$/SubYard.php" />
-        <option value="$PROJECT_DIR$/Supermarkt.php" />
-        <option value="$PROJECT_DIR$/TomaHawk.php" />
-        <option value="$PROJECT_DIR$/Vault.php" />
-        <option value="$PROJECT_DIR$/Versterker.php" />
-        <option value="$PROJECT_DIR$/WeaponCache.php" />
+        <option value="$PROJECT_DIR$/tpl/room.html.tpl" />
+        <option value="$PROJECT_DIR$/ItemShop.php" />
+        <option value="$PROJECT_DIR$/tpl/Warehouse.html.tpl" />
+        <option value="$PROJECT_DIR$/Supermarktfood.php" />
+        <option value="$PROJECT_DIR$/Meat.php" />
+        <option value="$PROJECT_DIR$/tpl/Supermarktfood.html.tpl" />
+        <option value="$PROJECT_DIR$/Supermarktdrink.php" />
+        <option value="$PROJECT_DIR$/tpl/Supermarkt.html.tpl" />
+        <option value="$PROJECT_DIR$/Milk.php" />
+        <option value="$PROJECT_DIR$/NPC12.php" />
+        <option value="$PROJECT_DIR$/tpl/SubSchool.html.tpl" />
+        <option value="$PROJECT_DIR$/tpl/SubDoor.html.tpl" />
+        <option value="$PROJECT_DIR$/SubSerect.php" />
+        <option value="$PROJECT_DIR$/tpl/SubSerect.html.tpl" />
+        <option value="$PROJECT_DIR$/SubPowerAbove.php" />
+        <option value="$PROJECT_DIR$/tpl/SubPowerAbove.html.tpl" />
+        <option value="$PROJECT_DIR$/SubPowerCatWalk.php" />
+        <option value="$PROJECT_DIR$/tpl/SubPowerCatWalk.html.tpl" />
+        <option value="$PROJECT_DIR$/SubPowerFirstFloor.php" />
+        <option value="$PROJECT_DIR$/tpl/SubPowerFirstFloor.html.tpl" />
+        <option value="$PROJECT_DIR$/SubPowerFuther.php" />
+        <option value="$PROJECT_DIR$/tpl/SubPowerFuther.tpl" />
+        <option value="$PROJECT_DIR$/tpl/SubPowerFuther.html.tpl" />
+        <option value="$PROJECT_DIR$/SubPowerStair.php" />
+        <option value="$PROJECT_DIR$/tpl/SubPowerStair.html.tpl" />
+        <option value="$PROJECT_DIR$/SubPowerExit.php" />
+        <option value="$PROJECT_DIR$/OutsideSubPower.php" />
+        <option value="$PROJECT_DIR$/tpl/SubPowerExit.html.tpl" />
+        <option value="$PROJECT_DIR$/TownRoad.php" />
+        <option value="$PROJECT_DIR$/tpl/Meat.html.tpl" />
+        <option value="$PROJECT_DIR$/tpl/Milk.html.tpl" />
+        <option value="$PROJECT_DIR$/tpl/OutsideSubPower.html.tpl" />
+        <option value="$PROJECT_DIR$/tpl/PrisonKichten.html.tpl" />
+        <option value="$PROJECT_DIR$/tpl/PrisonSea.html.tpl" />
+        <option value="$PROJECT_DIR$/tpl/Supermarktdrink.html.tpl" />
+        <option value="$PROJECT_DIR$/tpl/TownRoad.html.tpl" />
         <option value="$PROJECT_DIR$/Warehouse.php" />
-        <option value="$PROJECT_DIR$/WeaponShop.php" />
-        <option value="$PROJECT_DIR$/Wood.php" />
-        <option value="$PROJECT_DIR$/yard.php" />
-        <option value="$PROJECT_DIR$/PrisonCell1.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/tpl/PrisonCell1.html.tpl" />
-        <option value="$PROJECT_DIR$/PrisonCell2.php" />
-        <option value="$PROJECT_DIR$/tpl/PrisonCell2.html.tpl" />
-        <option value="$PROJECT_DIR$/PrisonHallB.php" />
-        <option value="$PROJECT_DIR$/tpl/PrisonHallB.html.tpl" />
-        <option value="$PROJECT_DIR$/PrisonDoor.php" />
-        <option value="$PROJECT_DIR$/PrisonHallC.php" />
-        <option value="$PROJECT_DIR$/tpl/PrisonEn.html.tpl" />
-        <option value="$PROJECT_DIR$/PrisonYard.php" />
-        <option value="$PROJECT_DIR$/tpl/PrisonYard.html.tpl" />
-        <option value="$PROJECT_DIR$/PrisonBlockC.php" />
-        <option value="$PROJECT_DIR$/tpl/PrisonCell3.html.tpl" />
-        <option value="$PROJECT_DIR$/PrisonCell3.php" />
-        <option value="$PROJECT_DIR$/PrisonCell4.php" />
-        <option value="$PROJECT_DIR$/tpl/PrisonCell4.html.tpl" />
-        <option value="$PROJECT_DIR$/tpl/PrisonBlockC.html.tpl" />
-        <option value="$PROJECT_DIR$/tpl/PrisonHallC.html.tpl" />
-        <option value="$PROJECT_DIR$/tpl/PrisonHallC1.html.tpl" />
-        <option value="$PROJECT_DIR$/PrisonHallC1.php" />
-        <option value="$PROJECT_DIR$/tpl/Mine.html.tpl" />
-        <option value="$PROJECT_DIR$/Mine.php" />
-        <option value="$PROJECT_DIR$/tpl/PrisonDoor.html.tpl" />
-        <option value="$PROJECT_DIR$/PrisonBlockB.php" />
-        <option value="$PROJECT_DIR$/tpl/PrisonBlockB.html.tpl" />
-        <option value="$PROJECT_DIR$/PrisonCell5.php" />
-        <option value="$PROJECT_DIR$/tpl/PrisonCell5.html.tpl" />
-        <option value="$PROJECT_DIR$/PrisonCell6.php" />
-        <option value="$PROJECT_DIR$/tpl/PrisonCell6.html.tpl" />
-        <option value="$PROJECT_DIR$/PrisonCell7.php" />
-        <option value="$PROJECT_DIR$/tpl/PrisonCell7.html.tpl" />
+        <option value="$PROJECT_DIR$/tpl/AgianStreet.html.tpl" />
+        <option value="$PROJECT_DIR$/tpl/TownStart.html.tpl" />
+        <option value="$PROJECT_DIR$/TownStart.php" />
+        <option value="$PROJECT_DIR$/CoachBook.php" />
+        <option value="$PROJECT_DIR$/TeachBook.php" />
+        <option value="$PROJECT_DIR$/tpl/CoachBook.html.tpl" />
+        <option value="$PROJECT_DIR$/tpl/TeachBook.html.tpl" />
+        <option value="$PROJECT_DIR$/NPC9.php" />
+        <option value="$PROJECT_DIR$/tpl/HotelRoom508.html.tpl" />
+        <option value="$PROJECT_DIR$/tpl/NPC10.html.tpl" />
+        <option value="$PROJECT_DIR$/SchoolHall.php" />
+        <option value="$PROJECT_DIR$/NPC10.php" />
+        <option value="$PROJECT_DIR$/tpl/SchoolHall.html.tpl" />
+        <option value="$PROJECT_DIR$/tpl/SubYard.html.tpl" />
       </list>
     </option>
   </component>
@@ -702,10 +480,13 @@
           <State>
             <id>Type compatibilityPHP</id>
           </State>
+          <State>
+            <id>UndefinedPHP</id>
+          </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>PhpExpressionResultUnusedInspection</id>
+            <id>PhpUndefinedGotoLabelInspection</id>
           </State>
         </selected-state>
       </profile-state>
@@ -736,7 +517,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -800,12 +580,13 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../avontuur" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.By Scope" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/wamp64/www/Examplecode/Klikspel/tpl/SubDocks.html.tpl&#10;#&#9;null&#9;null" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
@@ -932,7 +713,9 @@
       <workItem from="1484724396441" duration="26779000" />
       <workItem from="1484810715548" duration="15403000" />
       <workItem from="1484897083333" duration="8245000" />
-      <workItem from="1485156024241" duration="27601000" />
+      <workItem from="1485156024241" duration="28197000" />
+      <workItem from="1485242747776" duration="15618000" />
+      <workItem from="1485328686128" duration="24848000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1480579520018</created>
@@ -1008,22 +791,22 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="536356000" />
+    <option name="totallyTimeSpent" value="577418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17935579" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.49707174" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17935579" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32763976" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1064,654 +847,570 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SubDoor.php">
+    <entry file="file://$PROJECT_DIR$/tpl/SubPowerFuther.html.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+        <state relative-caret-position="306">
+          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SubPowerFuther.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="56" column="36" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
           <folding>
-            <marker date="1485176208269" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485176208269" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485176208269" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485176208269" expanded="true" signature="1113:1178" ph="SELECT name npc" />
-            <marker date="1485176208269" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
+            <marker date="1485344201613" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1485344201613" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1485344201613" expanded="true" signature="824:862" ph="SELECT name items" />
+            <marker date="1485344201613" expanded="true" signature="1113:1289" ph="SELECT name npc" />
+            <marker date="1485344201613" expanded="true" signature="1146:1288" ph="SELECT npc_i... party_members" />
+            <marker date="1485344201613" expanded="true" signature="1200:1287" ph="SELECT id FR... party" />
+            <marker date="1485344201613" expanded="true" signature="1243:1286" ph="SELECT id FR... player" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SubFuther.php">
+    <entry file="file://$PROJECT_DIR$/tpl/SubPowerStair.html.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+        <state relative-caret-position="301">
+          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SubPowerStair.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
           <folding>
-            <marker date="1485176207328" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485176207328" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485176207328" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485176207328" expanded="true" signature="1113:1178" ph="SELECT name npc" />
-            <marker date="1485176207328" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
+            <marker date="1485346567830" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1485346567830" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1485346567830" expanded="true" signature="824:862" ph="SELECT name items" />
+            <marker date="1485346567830" expanded="true" signature="1113:1289" ph="SELECT name npc" />
+            <marker date="1485346567830" expanded="true" signature="1146:1288" ph="SELECT npc_i... party_members" />
+            <marker date="1485346567830" expanded="true" signature="1200:1287" ph="SELECT id FR... party" />
+            <marker date="1485346567830" expanded="true" signature="1243:1286" ph="SELECT id FR... player" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SubE.php">
+    <entry file="file://$PROJECT_DIR$/tpl/SubPowerExit.html.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+        <state relative-caret-position="301">
+          <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SubPowerExit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="56" column="34" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
           <folding>
-            <marker date="1485176207419" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485176207419" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485176207419" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485176207419" expanded="true" signature="1113:1178" ph="SELECT name npc" />
-            <marker date="1485176207419" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
+            <marker date="1485347060035" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1485347060035" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1485347060035" expanded="true" signature="824:862" ph="SELECT name items" />
+            <marker date="1485347060035" expanded="true" signature="1113:1289" ph="SELECT name npc" />
+            <marker date="1485347060035" expanded="true" signature="1146:1288" ph="SELECT npc_i... party_members" />
+            <marker date="1485347060035" expanded="true" signature="1200:1287" ph="SELECT id FR... party" />
+            <marker date="1485347060035" expanded="true" signature="1243:1286" ph="SELECT id FR... player" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SubNear.php">
+    <entry file="file://$PROJECT_DIR$/inc/smarty/debug.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+        <state relative-caret-position="169">
+          <caret line="153" column="0" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/smarty/plugins/function.mailto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="111" column="16" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Bedroom.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/index.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Meat.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Milk.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OutsideSubPower.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="51" column="46" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
           <folding>
-            <marker date="1485176207500" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485176207500" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485176207500" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485176207500" expanded="true" signature="1113:1178" ph="SELECT name npc" />
-            <marker date="1485176207500" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
+            <marker date="1485347394423" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1485347394423" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1485347394423" expanded="true" signature="824:862" ph="SELECT name items" />
+            <marker date="1485347394423" expanded="true" signature="1113:1289" ph="SELECT name npc" />
+            <marker date="1485347394423" expanded="true" signature="1146:1288" ph="SELECT npc_i... party_members" />
+            <marker date="1485347394423" expanded="true" signature="1200:1287" ph="SELECT id FR... party" />
+            <marker date="1485347394423" expanded="true" signature="1243:1286" ph="SELECT id FR... player" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SubPlayyard.php">
+    <entry file="file://$PROJECT_DIR$/tpl/NPC1.html.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-          <folding>
-            <marker date="1485176207579" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485176207579" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485176207579" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485176207579" expanded="true" signature="1113:1178" ph="SELECT name npc" />
-            <marker date="1485176207579" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
-          </folding>
+        <state relative-caret-position="83">
+          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SubSchool.php">
+    <entry file="file://$PROJECT_DIR$/tpl/NPC11.html.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-          <folding>
-            <marker date="1485176208493" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485176208493" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485176208493" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485176208493" expanded="true" signature="1113:1178" ph="SELECT name npc" />
-            <marker date="1485176208493" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
-          </folding>
+        <state relative-caret-position="134">
+          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SubYard.php">
+    <entry file="file://$PROJECT_DIR$/tpl/NPC12.html.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="49" column="33" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
-          <folding>
-            <marker date="1485176207724" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485176207724" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485176207724" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485176207724" expanded="true" signature="1093:1120" ph="SELECT * FRO... party_members" />
-            <marker date="1485176207724" expanded="true" signature="1334:1399" ph="SELECT name npc" />
-            <marker date="1485176207724" expanded="true" signature="1366:1398" ph="SELECT npc_i... party_members" />
-          </folding>
+        <state relative-caret-position="134">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Supermarkt.php">
+    <entry file="file://$PROJECT_DIR$/tpl/OutsideSubPower.html.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-          <folding>
-            <marker date="1485176207542" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485176207542" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485176207542" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485176207542" expanded="true" signature="1113:1178" ph="SELECT name npc" />
-            <marker date="1485176207542" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
-          </folding>
+        <state relative-caret-position="134">
+          <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TomaHawk.php">
+    <entry file="file://$PROJECT_DIR$/tpl/PrisonKichten.html.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="84" column="33" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
-          <folding>
-            <marker date="1485176207777" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485176207777" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485176207777" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485176207777" expanded="true" signature="1128:1235" ph="INSERT INTO Inventory... " />
-            <marker date="1485176207777" expanded="true" signature="1262:1276" ph="..." />
-            <marker date="1485176207777" expanded="true" signature="1382:1396" ph="..." />
-            <marker date="1485176207777" expanded="true" signature="1579:1625" ph="SELECT item_... Inventory" />
-            <marker date="1485176207777" expanded="true" signature="1684:1743" ph="UPDATE Inven... " />
-            <marker date="1485176207777" expanded="true" signature="1818:1832" ph="..." />
-            <marker date="1485176207777" expanded="true" signature="1991:2100" ph="INSERT INTO Inventory... " />
-            <marker date="1485176207777" expanded="true" signature="2162:2176" ph="..." />
-            <marker date="1485176207777" expanded="true" signature="2372:2386" ph="..." />
-            <marker date="1485176207777" expanded="true" signature="2482:2496" ph="..." />
-            <marker date="1485176207777" expanded="true" signature="2698:2763" ph="SELECT name npc" />
-            <marker date="1485176207777" expanded="true" signature="2730:2762" ph="SELECT npc_i... party_members" />
-          </folding>
+        <state relative-caret-position="268">
+          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Vault.php">
+    <entry file="file://$PROJECT_DIR$/tpl/PrisonSea.html.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
-          <folding>
-            <marker date="1485176207964" expanded="true" signature="334:391" ph="SELECT id FR... player" />
-            <marker date="1485176207964" expanded="true" signature="627:673" ph="SELECT * FRO... inventory" />
-            <marker date="1485176207964" expanded="true" signature="840:878" ph="SELECT name items" />
-            <marker date="1485176207964" expanded="true" signature="1129:1194" ph="SELECT name npc" />
-            <marker date="1485176207964" expanded="true" signature="1161:1193" ph="SELECT npc_i... party_members" />
-          </folding>
+        <state relative-caret-position="268">
+          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Versterker.php">
+    <entry file="file://$PROJECT_DIR$/tpl/room.html.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="82" column="33" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
+        <state relative-caret-position="134">
+          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/ShipBed.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/ShipDecor.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/ShipEnd.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/ShipHall.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/ShipSide.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Street.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/SubNear.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="64" column="4" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/SubPlayyard.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Supermarktdrink.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TownRoad.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="49" column="49" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
           <folding>
-            <marker date="1485176207630" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485176207630" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485176207630" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485176207630" expanded="true" signature="1127:1234" ph="INSERT INTO Inventory... " />
-            <marker date="1485176207630" expanded="true" signature="1261:1275" ph="..." />
-            <marker date="1485176207630" expanded="true" signature="1381:1395" ph="..." />
-            <marker date="1485176207630" expanded="true" signature="1578:1624" ph="SELECT item_... Inventory" />
-            <marker date="1485176207630" expanded="true" signature="1683:1742" ph="UPDATE Inven... " />
-            <marker date="1485176207630" expanded="true" signature="1817:1831" ph="..." />
-            <marker date="1485176207630" expanded="true" signature="1990:2099" ph="INSERT INTO Inventory... " />
-            <marker date="1485176207630" expanded="true" signature="2161:2175" ph="..." />
-            <marker date="1485176207630" expanded="true" signature="2371:2385" ph="..." />
-            <marker date="1485176207630" expanded="true" signature="2481:2495" ph="..." />
-            <marker date="1485176207630" expanded="true" signature="2671:2736" ph="SELECT name npc" />
-            <marker date="1485176207630" expanded="true" signature="2703:2735" ph="SELECT npc_i... party_members" />
+            <marker date="1485350398340" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1485350398340" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1485350398340" expanded="true" signature="824:862" ph="SELECT name items" />
+            <marker date="1485350398340" expanded="true" signature="1113:1289" ph="SELECT name npc" />
+            <marker date="1485350398340" expanded="true" signature="1146:1288" ph="SELECT npc_i... party_members" />
+            <marker date="1485350398340" expanded="true" signature="1200:1287" ph="SELECT id FR... party" />
+            <marker date="1485350398340" expanded="true" signature="1243:1286" ph="SELECT id FR... player" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Warehouse.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="399" column="33" selection-start-line="399" selection-start-column="33" selection-end-line="399" selection-end-column="33" />
+        <state relative-caret-position="1105">
+          <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
           <folding>
-            <marker date="1485176207817" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485176207817" expanded="true" signature="1515:1581" ph="SELECT item_... inventory" />
-            <marker date="1485176207817" expanded="true" signature="1898:1970" ph="SELECT quant... inventory" />
-            <marker date="1485176207817" expanded="true" signature="2218:2304" ph="UPDATE inven... " />
-            <marker date="1485176207817" expanded="true" signature="2465:2528" ph="DELETE FROM " />
-            <marker date="1485176207817" expanded="true" signature="2730:2776" ph="SELECT * FRO... inventory" />
-            <marker date="1485176207817" expanded="true" signature="2943:2981" ph="SELECT name items" />
-            <marker date="1485176207817" expanded="true" signature="10132:10197" ph="SELECT name npc" />
-            <marker date="1485176207817" expanded="true" signature="10164:10196" ph="SELECT npc_i... party_members" />
+            <marker date="1485352416575" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1485352416575" expanded="true" signature="590:653" ph="SELECT id FR... items" />
+            <marker date="1485352416575" expanded="true" signature="623:652" ph="SELECT item_... Inventory" />
+            <marker date="1485352416575" expanded="true" signature="799:822" ph="SELECT * FRO... Inventory" />
+            <marker date="1485352416575" expanded="true" signature="973:1036" ph="DELETE FROM " />
+            <marker date="1485352416575" expanded="true" signature="2195:2262" ph="SELECT quant... inventory" />
+            <marker date="1485352416575" expanded="true" signature="2625:2691" ph="SELECT item_... inventory" />
+            <marker date="1485352416575" expanded="true" signature="3038:3110" ph="SELECT quant... inventory" />
+            <marker date="1485352416575" expanded="true" signature="3762:3848" ph="UPDATE inven... " />
+            <marker date="1485352416575" expanded="true" signature="4076:4139" ph="DELETE FROM " />
+            <marker date="1485352416575" expanded="true" signature="4357:4451" ph="UPDATE inven... " />
+            <marker date="1485352416575" expanded="true" signature="4651:4714" ph="DELETE FROM " />
+            <marker date="1485352416575" expanded="true" signature="4920:4966" ph="SELECT * FRO... inventory" />
+            <marker date="1485352416575" expanded="true" signature="5133:5171" ph="SELECT name items" />
+            <marker date="1485352416575" expanded="true" signature="13444:13620" ph="SELECT name npc" />
+            <marker date="1485352416575" expanded="true" signature="13477:13619" ph="SELECT npc_i... party_members" />
+            <marker date="1485352416575" expanded="true" signature="13531:13618" ph="SELECT id FR... party" />
+            <marker date="1485352416575" expanded="true" signature="13574:13617" ph="SELECT id FR... player" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WeaponCache.php">
+    <entry file="file://$PROJECT_DIR$/TplTemplateCode.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-          <folding>
-            <marker date="1485176208110" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485176208110" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485176208110" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485176208110" expanded="true" signature="1113:1178" ph="SELECT name npc" />
-            <marker date="1485176208110" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WeaponShop.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="111" column="33" selection-start-line="111" selection-start-column="33" selection-end-line="111" selection-end-column="33" />
-          <folding>
-            <marker date="1485176208456" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485176208456" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485176208456" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485176208456" expanded="true" signature="1121:1210" ph="SELECT DISTI... items" />
-            <marker date="1485176208456" expanded="true" signature="1413:1449" ph="SELECT name items" />
-            <marker date="1485176208456" expanded="true" signature="1681:1717" ph="SELECT name items" />
-            <marker date="1485176208456" expanded="true" signature="2191:2228" ph="SELECT price... items" />
-            <marker date="1485176208456" expanded="true" signature="2661:2698" ph="SELECT price... items" />
-            <marker date="1485176208456" expanded="true" signature="3766:3831" ph="SELECT name npc" />
-            <marker date="1485176208456" expanded="true" signature="3798:3830" ph="SELECT npc_i... party_members" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wood.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-          <folding>
-            <marker date="1485176208392" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485176208392" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485176208392" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485176208392" expanded="true" signature="1113:1178" ph="SELECT name npc" />
-            <marker date="1485176208392" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-          <folding>
-            <marker date="1485176208427" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485176208427" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485176208427" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485176208427" expanded="true" signature="1113:1178" ph="SELECT name npc" />
-            <marker date="1485176208427" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PrisonBlockA.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-          <folding>
-            <marker date="1485170801536" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485170801536" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485170801536" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485170801536" expanded="true" signature="1113:1178" ph="SELECT * FRO... npc" />
-            <marker date="1485170801536" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
-            <marker date="1485170801536" expanded="true" signature="1179:1363" ph="SELECT * FRO... party_members" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/PrisonBlockA.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="24" selection-end-column="9" />
+        <state relative-caret-position="412">
+          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/tpl/Antenne.html.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
-          <folding>
-            <marker date="1485176383450" expanded="true" signature="352:409" ph="SELECT id FR... player" />
-            <marker date="1485176383450" expanded="true" signature="1033:1118" ph="DELETE FROM " />
-            <marker date="1485176383450" expanded="true" signature="1074:1117" ph="SELECT id FR... player" />
-            <marker date="1485176383450" expanded="true" signature="1244:1378" ph="DELETE FROM " />
-            <marker date="1485176383450" expanded="true" signature="1288:1377" ph="SELECT id FR... party" />
-            <marker date="1485176383450" expanded="true" signature="1335:1376" ph="SELECT id FR... player" />
-            <marker date="1485176383450" expanded="true" signature="1497:1549" ph="UPDATE npc_s... " />
-            <marker date="1485176383450" expanded="true" signature="2522:2534" ph="..." />
-            <marker date="1485176383450" expanded="true" signature="2953:3002" ph="SELECT Usern... player" />
-            <marker date="1485176383450" expanded="true" signature="3482:3629" ph="INSERT INTO player... " />
-            <marker date="1485176383450" expanded="true" signature="4264:4310" ph="SELECT * FRO... inventory" />
-            <marker date="1485176383450" expanded="true" signature="4477:4515" ph="SELECT name items" />
-            <marker date="1485176383450" expanded="true" signature="4766:4831" ph="SELECT name npc" />
-            <marker date="1485176383450" expanded="true" signature="4798:4830" ph="SELECT npc_i... party_members" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/PrisonCell1.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PrisonCell1.php">
+    <entry file="file://$PROJECT_DIR$/tpl/AgianStreet.html.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
-          <folding>
-            <marker date="1485176316885" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485176316885" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485176316885" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485176316885" expanded="true" signature="1113:1178" ph="SELECT name npc" />
-            <marker date="1485176316885" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PrisonCell2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
-          <folding>
-            <marker date="1485176673098" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485176673098" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485176673098" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485176673098" expanded="true" signature="1113:1178" ph="SELECT name npc" />
-            <marker date="1485176673098" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/PrisonCell2.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+        <state relative-caret-position="327">
+          <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/PrisonHallB.html.tpl">
+    <entry file="file://$PROJECT_DIR$/tpl/TownRoad.html.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+        <state relative-caret-position="199">
+          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PrisonHallB.php">
+    <entry file="file://$PROJECT_DIR$/TownStart.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+        <state relative-caret-position="63">
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
           <folding>
-            <marker date="1485177130320" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485177130320" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485177130320" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485177130320" expanded="true" signature="1113:1178" ph="SELECT name npc" />
-            <marker date="1485177130320" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
+            <marker date="1485352598535" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1485352598535" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1485352598535" expanded="true" signature="824:862" ph="SELECT name items" />
+            <marker date="1485352598535" expanded="true" signature="1113:1289" ph="SELECT name npc" />
+            <marker date="1485352598535" expanded="true" signature="1146:1288" ph="SELECT npc_i... party_members" />
+            <marker date="1485352598535" expanded="true" signature="1200:1287" ph="SELECT id FR... party" />
+            <marker date="1485352598535" expanded="true" signature="1243:1286" ph="SELECT id FR... player" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/PrisonEn.html.tpl">
+    <entry file="file://$PROJECT_DIR$/tpl/TownStart.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/KeyPS.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KeyPS.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1485245752804" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1485245752804" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1485245752804" expanded="true" signature="824:862" ph="SELECT name items" />
+            <marker date="1485245752804" expanded="true" signature="1126:1233" ph="INSERT INTO Inventory... " />
+            <marker date="1485245752804" expanded="true" signature="1260:1274" ph="..." />
+            <marker date="1485245752804" expanded="true" signature="1380:1394" ph="..." />
+            <marker date="1485245752804" expanded="true" signature="1577:1623" ph="SELECT item_... Inventory" />
+            <marker date="1485245752804" expanded="true" signature="1682:1741" ph="UPDATE Inven... " />
+            <marker date="1485245752804" expanded="true" signature="1816:1830" ph="..." />
+            <marker date="1485245752804" expanded="true" signature="1989:2098" ph="INSERT INTO Inventory... " />
+            <marker date="1485245752804" expanded="true" signature="2160:2174" ph="..." />
+            <marker date="1485245752804" expanded="true" signature="2370:2384" ph="..." />
+            <marker date="1485245752804" expanded="true" signature="2480:2494" ph="..." />
+            <marker date="1485245752804" expanded="true" signature="2638:2668" ph="SELECT name npc" />
+            <marker date="1485245752804" expanded="true" signature="2638:2814" ph="SELECT name npc" />
+            <marker date="1485245752804" expanded="true" signature="2671:2813" ph="SELECT npc_i... party_members" />
+            <marker date="1485245752804" expanded="true" signature="2725:2812" ph="SELECT id FR... party" />
+            <marker date="1485245752804" expanded="true" signature="2768:2811" ph="SELECT id FR... player" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/CoachBook.html.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
-          <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PrisonEn.php">
+    <entry file="file://$PROJECT_DIR$/CoachBook.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+        <state relative-caret-position="1258">
+          <caret line="98" column="31" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
           <folding>
-            <marker date="1485171169049" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485171169049" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485171169049" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485171169049" expanded="true" signature="1113:1178" ph="SELECT name npc" />
-            <marker date="1485171169049" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
+            <marker date="1485353939358" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1485353939358" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1485353939358" expanded="true" signature="824:862" ph="SELECT name items" />
+            <marker date="1485353939358" expanded="true" signature="1128:1235" ph="INSERT INTO Inventory... " />
+            <marker date="1485353939358" expanded="true" signature="1262:1276" ph="..." />
+            <marker date="1485353939358" expanded="true" signature="1382:1396" ph="..." />
+            <marker date="1485353939358" expanded="true" signature="1579:1625" ph="SELECT item_... Inventory" />
+            <marker date="1485353939358" expanded="true" signature="1684:1743" ph="UPDATE Inven... " />
+            <marker date="1485353939358" expanded="true" signature="1818:1832" ph="..." />
+            <marker date="1485353939358" expanded="true" signature="1991:2100" ph="INSERT INTO Inventory... " />
+            <marker date="1485353939358" expanded="true" signature="2162:2176" ph="..." />
+            <marker date="1485353939358" expanded="true" signature="2372:2386" ph="..." />
+            <marker date="1485353939358" expanded="true" signature="2482:2496" ph="..." />
+            <marker date="1485353939358" expanded="true" signature="2640:2816" ph="SELECT name npc" />
+            <marker date="1485353939358" expanded="true" signature="2673:2815" ph="SELECT npc_i... party_members" />
+            <marker date="1485353939358" expanded="true" signature="2727:2814" ph="SELECT id FR... party" />
+            <marker date="1485353939358" expanded="true" signature="2770:2813" ph="SELECT id FR... player" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/PrisonYard.html.tpl">
+    <entry file="file://$PROJECT_DIR$/tpl/TeachBook.html.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+        <state relative-caret-position="199">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PrisonYard.php">
+    <entry file="file://$PROJECT_DIR$/TeachBook.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+        <state relative-caret-position="318">
+          <caret line="88" column="16" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
           <folding>
-            <marker date="1485178749632" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485178749632" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485178749632" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485178749632" expanded="true" signature="1113:1178" ph="SELECT name npc" />
-            <marker date="1485178749632" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
+            <marker date="1485354703628" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1485354703628" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1485354703628" expanded="true" signature="824:862" ph="SELECT name items" />
+            <marker date="1485354703628" expanded="true" signature="1128:1235" ph="INSERT INTO Inventory... " />
+            <marker date="1485354703628" expanded="true" signature="1262:1276" ph="..." />
+            <marker date="1485354703628" expanded="true" signature="1382:1396" ph="..." />
+            <marker date="1485354703628" expanded="true" signature="1579:1625" ph="SELECT item_... Inventory" />
+            <marker date="1485354703628" expanded="true" signature="1684:1743" ph="UPDATE Inven... " />
+            <marker date="1485354703628" expanded="true" signature="1818:1832" ph="..." />
+            <marker date="1485354703628" expanded="true" signature="1991:2100" ph="INSERT INTO Inventory... " />
+            <marker date="1485354703628" expanded="true" signature="2162:2176" ph="..." />
+            <marker date="1485354703628" expanded="true" signature="2372:2386" ph="..." />
+            <marker date="1485354703628" expanded="true" signature="2482:2496" ph="..." />
+            <marker date="1485354703628" expanded="true" signature="2640:2816" ph="SELECT name npc" />
+            <marker date="1485354703628" expanded="true" signature="2673:2815" ph="SELECT npc_i... party_members" />
+            <marker date="1485354703628" expanded="true" signature="2727:2814" ph="SELECT id FR... party" />
+            <marker date="1485354703628" expanded="true" signature="2770:2813" ph="SELECT id FR... player" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PrisonHallC.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
-          <folding>
-            <marker date="1485178120237" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485178120237" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485178120237" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485178120237" expanded="true" signature="1113:1178" ph="SELECT name npc" />
-            <marker date="1485178120237" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PrisonCell3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
-          <folding>
-            <marker date="1485181578918" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485181578918" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485181578918" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485181578918" expanded="true" signature="1113:1178" ph="SELECT name npc" />
-            <marker date="1485181578918" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/PrisonCell3.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/PrisonBlockC.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PrisonBlockC.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
-          <folding>
-            <marker date="1485181078814" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485181078814" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485181078814" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485181078814" expanded="true" signature="1113:1178" ph="SELECT name npc" />
-            <marker date="1485181078814" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PrisonCell4.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
-          <folding>
-            <marker date="1485181688874" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485181688874" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485181688874" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485181688874" expanded="true" signature="1113:1178" ph="SELECT name npc" />
-            <marker date="1485181688874" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/PrisonCell4.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/PrisonHallC.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/Mine.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mine.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
-          <folding>
-            <marker date="1485183033138" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485183033138" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485183033138" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485183033138" expanded="true" signature="2279:2344" ph="SELECT name npc" />
-            <marker date="1485183033138" expanded="true" signature="2311:2343" ph="SELECT npc_i... party_members" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PrisonHallC1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
-          <folding>
-            <marker date="1485181880919" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485181880919" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485181880919" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485181880919" expanded="true" signature="1113:1178" ph="SELECT name npc" />
-            <marker date="1485181880919" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/PrisonHallC1.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/PrisonDoor.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PrisonDoor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
-          <folding>
-            <marker date="1485177536234" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485177536234" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485177536234" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485177536234" expanded="true" signature="1113:1178" ph="SELECT name npc" />
-            <marker date="1485177536234" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PrisonBlockB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
-          <folding>
-            <marker date="1485183268071" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485183268071" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485183268071" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485183268071" expanded="true" signature="1113:1178" ph="SELECT name npc" />
-            <marker date="1485183268071" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/PrisonCell5.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="34" column="75" selection-start-line="34" selection-start-column="75" selection-end-line="34" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PrisonCell5.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
-          <folding>
-            <marker date="1485183517876" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485183517876" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485183517876" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485183517876" expanded="true" signature="1113:1178" ph="SELECT name npc" />
-            <marker date="1485183517876" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PrisonCell6.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
-          <folding>
-            <marker date="1485183908439" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485183908439" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485183908439" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485183908439" expanded="true" signature="1113:1178" ph="SELECT name npc" />
-            <marker date="1485183908439" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/PrisonBlockB.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/PrisonCell6.html.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PrisonCell7.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
-          <folding>
-            <marker date="1485184263090" expanded="true" signature="318:375" ph="SELECT id FR... player" />
-            <marker date="1485184263090" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
-            <marker date="1485184263090" expanded="true" signature="824:862" ph="SELECT name items" />
-            <marker date="1485184263090" expanded="true" signature="1113:1178" ph="SELECT name npc" />
-            <marker date="1485184263090" expanded="true" signature="1145:1177" ph="SELECT npc_i... party_members" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/PrisonCell7.html.tpl">
+    <entry file="file://$PROJECT_DIR$/tpl/HotelRoom508.html.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/NPC10.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/SchoolHall.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="35" column="62" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NPC9.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+          <folding>
+            <marker date="1485354780482" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1485354780482" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1485354780482" expanded="true" signature="824:862" ph="SELECT name items" />
+            <marker date="1485354780482" expanded="true" signature="2129:2305" ph="SELECT name npc" />
+            <marker date="1485354780482" expanded="true" signature="2162:2304" ph="SELECT npc_i... party_members" />
+            <marker date="1485354780482" expanded="true" signature="2216:2303" ph="SELECT id FR... party" />
+            <marker date="1485354780482" expanded="true" signature="2259:2302" ph="SELECT id FR... player" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NPC10.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="79" column="1" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
+          <folding>
+            <marker date="1485355709675" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1485355709675" expanded="true" signature="611:657" ph="SELECT * FRO... inventory" />
+            <marker date="1485355709675" expanded="true" signature="824:862" ph="SELECT name items" />
+            <marker date="1485355709675" expanded="true" signature="1211:1294" ph="SELECT * FRO... party" />
+            <marker date="1485355709675" expanded="true" signature="1250:1293" ph="SELECT id FR... player" />
+            <marker date="1485355709675" expanded="true" signature="1484:1567" ph="INSERT INTO party... " />
+            <marker date="1485355709675" expanded="true" signature="1522:1565" ph="SELECT id FR... player" />
+            <marker date="1485355709675" expanded="true" signature="1704:1750" ph="SELECT stat_... npc_stats" />
+            <marker date="1485355709675" expanded="true" signature="1881:1932" ph="UPDATE npc_s... " />
+            <marker date="1485355709675" expanded="true" signature="2003:2192" ph="Insert Into party_members... " />
+            <marker date="1485355709675" expanded="true" signature="2056:2145" ph="SELECT id FR... party" />
+            <marker date="1485355709675" expanded="true" signature="2103:2144" ph="SELECT id FR... player" />
+            <marker date="1485355709675" expanded="true" signature="2158:2190" ph="SELECT id FR... npc" />
+            <marker date="1485355709675" expanded="true" signature="2409:2460" ph="Update npc_s... " />
+            <marker date="1485355709675" expanded="true" signature="3516:3692" ph="SELECT name npc" />
+            <marker date="1485355709675" expanded="true" signature="3549:3691" ph="SELECT npc_i... party_members" />
+            <marker date="1485355709675" expanded="true" signature="3603:3690" ph="SELECT id FR... party" />
+            <marker date="1485355709675" expanded="true" signature="3646:3689" ph="SELECT id FR... player" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SchoolHall.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding>
+            <marker date="1485355328866" expanded="true" signature="318:375" ph="SELECT id FR... player" />
+            <marker date="1485355328866" expanded="true" signature="610:656" ph="SELECT * FRO... inventory" />
+            <marker date="1485355328866" expanded="true" signature="823:861" ph="SELECT name items" />
+            <marker date="1485355328866" expanded="true" signature="1092:1119" ph="SELECT * FRO... party_members" />
+            <marker date="1485355328866" expanded="true" signature="1382:1429" ph="Update npc_s... " />
+            <marker date="1485355328866" expanded="true" signature="1488:1531" ph="DELETE FROM " />
+            <marker date="1485355328866" expanded="true" signature="1652:1828" ph="SELECT name npc" />
+            <marker date="1485355328866" expanded="true" signature="1685:1827" ph="SELECT npc_i... party_members" />
+            <marker date="1485355328866" expanded="true" signature="1739:1826" ph="SELECT id FR... party" />
+            <marker date="1485355328866" expanded="true" signature="1782:1825" ph="SELECT id FR... player" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/Mall.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/SubYard.html.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
           <folding />
         </state>
       </provider>

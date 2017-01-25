@@ -32,17 +32,17 @@
     <ul>
         <li><a href="SubNear.php"> Go back  </a></li>
         <li><a href="SubBack.php"> Go torugh the backway </a></li>
-        {if isset($smarty.session.Quest7_1) AND isset($smarty.session.Quest7_2)}
+        {if isset($smarty.cookies.Quest7_1) AND isset($smarty.cookies.Quest7_2)}
             <li><a href="#"> Lauren is enjoying her stuff </a></li>
             {else}
         <li><a href="NPC7.php"> Go talk to Beuaty King Lauren </a></li>
         {/if}
-        {if isset($smarty.session.Quest8_1) AND isset($smarty.session.Quest8_2)}
+        {if isset($smarty.cookies.Quest8_1) AND isset($smarty.cookies.Quest8_2)}
             <li><a href="#"> Mike is gone photographing </a></li>
             {else}
             <li><a href="NPC8.php"> Go talk to photographer Mike</a></li>
         {/if}
-        {if isset($smarty.session.Quest9)}
+        {if isset($smarty.cookies.Quest9)}
             <li><a href="#"> Berna is gone teaching </a></li>
             {else}
             <li><a href="NPC9.php"> Go talk to Teacher Berna </a></li>

@@ -35,6 +35,11 @@
         <li><a href="#"> Go talk to Guard Prisoner Mike </a></li>
         <li><a href="#"> Go talk to Prisoner James </a></li>
         <li><a href="#"> Go talk to Search Prisoner Ken </a></li>
+        {if isset($smarty.session.Freedom)}
+            {if $smarty.session.Freedom == true}
+                <li><a href="PrisonKichten.php"> Go to the Kichten </a></li>
+            {/if}
+        {/if}
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

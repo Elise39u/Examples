@@ -68,6 +68,21 @@
     {/if}
     {/if}
 
+    {if isset($smarty.cookies.Quest10_2)}
+        {if $smarty.cookies.Quest10_2 == true}
+            <script type="text/javascript">
+                function setCookie(cname, cvalue, exdays) {
+                    var d = new Date();
+                    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+                    var expires = "expires="+d.toUTCString();
+                    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+                }
+                setCookie("Quest10_1", false, +2147483647, '', '', '', '', true);
+
+                document.getElementById('Quest').innerHTML = NpcName + " Well Thank you now Excuuse me";
+            </script>
+        {/if}
+    {/if}
     <ul>
         {foreach from=$inventory key=id item=i}
             <li> {$i.player_id} {$i.item_id} {$i.space} {$i.quantity} </li>

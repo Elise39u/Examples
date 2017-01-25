@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-23 14:00:17
+/* Smarty version 3.1.29, created on 2017-01-25 15:42:17
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\NPC10.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5885fe61640f00_07391073',
+  'unifunc' => 'content_5888b9496a6f50_12887414',
   'file_dependency' => 
   array (
     'd57438604e5bfd8415b0c41f67e457334cdff4b1' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\NPC10.html.tpl',
-      1 => 1485172552,
+      1 => 1485355309,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5885fe61640f00_07391073 ($_smarty_tpl) {
+function content_5888b9496a6f50_12887414 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -124,6 +124,23 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
     <?php }?>
     <?php }?>
 
+    <?php if (isset($_COOKIE['Quest10_2'])) {?>
+        <?php if ($_COOKIE['Quest10_2'] == true) {?>
+            <?php echo '<script'; ?>
+ type="text/javascript">
+                function setCookie(cname, cvalue, exdays) {
+                    var d = new Date();
+                    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+                    var expires = "expires="+d.toUTCString();
+                    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+                }
+                setCookie("Quest10_1", false, +2147483647, '', '', '', '', true);
+
+                document.getElementById('Quest').innerHTML = NpcName + " Well Thank you now Excuuse me";
+            <?php echo '</script'; ?>
+>
+        <?php }?>
+    <?php }?>
     <ul>
         <?php
 $_from = $_smarty_tpl->tpl_vars['inventory']->value;

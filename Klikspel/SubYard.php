@@ -42,10 +42,16 @@ foreach ($result as $row) {
 }
 
 $party = array();
-$query1 = sprintf("SELECT name FROM npc WHERE id =(SELECT npc_id FROM party_members)");
+$query1 = sprintf("SELECT name FROM npc WHERE id IN(SELECT npc_id FROM party_members WHERE party_id=(
+    SELECT id FROM party WHERE player_id=
+    (SELECT id FROM player WHERE username = '%s')))",
+    mysqli_real_escape_string($mysqli, $_SESSION['username']));;
 $result1 = mysqli_query($mysqli, $query1);
-$row = mysqli_fetch_assoc($result1);
-array_push($party, $row);
+if ($result1 == false) {}
+else {
+    while ($row = mysqli_fetch_assoc($result1))
+    array_push($party, $row);
+}
 
 $smarty->assign('party', $party);
 $smarty->assign('inventory', $inventory);

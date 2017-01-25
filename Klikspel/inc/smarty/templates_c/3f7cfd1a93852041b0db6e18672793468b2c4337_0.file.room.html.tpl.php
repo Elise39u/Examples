@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-23 13:59:53
+/* Smarty version 3.1.29, created on 2017-01-25 15:40:13
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\room.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5885fe49314321_47799000',
+  'unifunc' => 'content_5888b8cd1ee5f4_97831191',
   'file_dependency' => 
   array (
     '3f7cfd1a93852041b0db6e18672793468b2c4337' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\room.html.tpl',
-      1 => 1485172896,
+      1 => 1485329240,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5885fe49314321_47799000 ($_smarty_tpl) {
+function content_5888b8cd1ee5f4_97831191 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>

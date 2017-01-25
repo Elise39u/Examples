@@ -30,8 +30,8 @@
     <img src="img/SuperMarkt.png">
     <ul>
         <li><a href="Mall.php"> Go back in the mall </a></li>
-        <li><a href="#"> Go look for food </a></li>
-        <li><a href="#"> Go look for something to drink </a></li>
+        <li><a href="Supermarktfood.php"> Go look for food </a></li>
+        <li><a href="Supermarktdrink.php"> Go look for something to drink </a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

@@ -1,3 +1,14 @@
 https://subgraph.com/vega/documentation/Vega-Scanner/index.en.html
 http://www.thebotanistgame.com/blog/2015/02/28/dialogue-in-phaserjs.html
 http://bootboxjs.com/
+https://www.jetbrains.com/help/phpstorm/2016.3/finding-and-replacing-text-in-project.html#d1131695e109
+
+
+To replace code
+\$party \= array\(\)\;\n\
+$query1 \= sprintf\(\"SELECT name FROM npc WHERE id IN\
+(SELECT npc_id FROM party_members WHERE party_id\=\
+(\n    SELECT id FROM party WHERE player_id\=\n    \(SELECT id FROM player WHERE username \= \'\%s\'\)\)\)\"\,\n
+ mysqli_real_escape_string\(\$mysqli\, \$_SESSION\[\'username\'\]\)\)\;\;\n\
+ $result1 \= mysqli_query\(\$mysqli\, \$query1\)\;\n
+ if \(\$result1 \=\= false\) \{\}\nelse \{\n    \$row \= mysqli_fetch_assoc\(\$result1\)\;\n    array_push\(\$party\, \$row\)\;\n\}

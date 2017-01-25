@@ -43,16 +43,19 @@
                     <p>You killed <strong>{$smarty.post.monster}</strong>! You gained <strong>{$gold}</strong> gold.</p>
                     {if $area_id == 1}
                     <p><a href='lake.php'>Go to the lake</a></p>
-                    <p><a href="Sand.php">Go back to some sand -.- </a> </p>
+                    <p><a href="Sand.php">Go  to some sand -.- </a> </p>
                     {elseif $area_id == 2}
                         <p><a href="OBank.php"> Go to the bank </a></p>
                         <p><a href="Nstation.php"> Poilice stations are good ? </a></p>
                      {elseif $area_id == 4}
                         <p><a href="CaveLH.php"> Go futher in the cave </a></p>
-                        <p><a href="CaveY.php"> Go Back in the cave </a></p>
+                        <p><a href="CaveY.php"> Go to the yard  in the cave </a></p>
+                        {elseif $area_id == 5}
+                        <p><a href="PrisonBlockB.php"> Go on to block b</a></p>
+                        <p><a href="PrisonHallKichten.php"> Go to the kichten</a></p>
                      {else}
                         <p><a href="Deck.php"> Go on the boat if you dare </a></p>
-                        <p><a href="Nship.php"> Go back to you`re boat </a></p>
+                        <p><a href="Nship.php"> Go to you`re boat </a></p>
                     {/if}
                 {/if}
             {/if}

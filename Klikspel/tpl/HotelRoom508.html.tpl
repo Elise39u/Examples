@@ -31,7 +31,8 @@
     <img src="img/HotelRoom508.png">
     <ul>
         <li><a href="HotelFloor.php"> Go back</a></li>
-        <li><a href="#"> Grab the Book</a></li>
+        <li><a href="CoachBook.php"> Grab the Book</a></li>
+        <li><a href="TeachBook.php"> Grab the Teaching Book</a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

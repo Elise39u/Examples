@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-23 15:41:00
+/* Smarty version 3.1.29, created on 2017-01-24 10:31:01
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Monster.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_588615fcc161a2_00842348',
+  'unifunc' => 'content_58871ed5402968_98023262',
   'file_dependency' => 
   array (
     '9edacefcb03fec5e3932add07fcc6040364d0bfb' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Monster.html.tpl',
-      1 => 1485172483,
+      1 => 1485246835,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_588615fcc161a2_00842348 ($_smarty_tpl) {
+function content_58871ed5402968_98023262 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -127,16 +127,19 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
 </strong> gold.</p>
                     <?php if ($_smarty_tpl->tpl_vars['area_id']->value == 1) {?>
                     <p><a href='lake.php'>Go to the lake</a></p>
-                    <p><a href="Sand.php">Go back to some sand -.- </a> </p>
+                    <p><a href="Sand.php">Go  to some sand -.- </a> </p>
                     <?php } elseif ($_smarty_tpl->tpl_vars['area_id']->value == 2) {?>
                         <p><a href="OBank.php"> Go to the bank </a></p>
                         <p><a href="Nstation.php"> Poilice stations are good ? </a></p>
                      <?php } elseif ($_smarty_tpl->tpl_vars['area_id']->value == 4) {?>
                         <p><a href="CaveLH.php"> Go futher in the cave </a></p>
-                        <p><a href="CaveY.php"> Go Back in the cave </a></p>
+                        <p><a href="CaveY.php"> Go to the yard  in the cave </a></p>
+                        <?php } elseif ($_smarty_tpl->tpl_vars['area_id']->value == 5) {?>
+                        <p><a href="PrisonBlockB.php"> Go on to block b</a></p>
+                        <p><a href="PrisonHallKichten.php"> Go to the kichten</a></p>
                      <?php } else { ?>
                         <p><a href="Deck.php"> Go on the boat if you dare </a></p>
-                        <p><a href="Nship.php"> Go back to you`re boat </a></p>
+                        <p><a href="Nship.php"> Go to you`re boat </a></p>
                     <?php }?>
                 <?php }?>
             <?php }?>

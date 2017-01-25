@@ -35,7 +35,9 @@
         <li><a href="SchoolClass2.php"> Go towards class room 2</a></li>
         <li><a href="SchoolAula.php"> Go to the aula </a></li>
         <li><a href="SchoolStair.php"> Go to the stairway </a></li>
-        {if isset($smarty.session.Dumb2)}
+        {if isset($smarty.cookies.Quest10_2)}
+            <li><a href=""> Jeroen is studying</a></li>
+        {elseif isset($smarty.session.Dumb2)}
             <li><a href="Npc10.php">Go talk to coach jeroen</a></li>
         {/if}
     </ul>

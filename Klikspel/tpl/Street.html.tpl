@@ -61,7 +61,7 @@
 <script>window.jQuery || document.write('<script src="JS/jquery.min.js"><\/script>')</script>
 <script src="JS/jquery.time-to.js"></script>
 <script type="text/javascript">
-        $('#counter-1').timeTo(new Date('Dec 16 2017 00:00:00 GMT+0100 (West-Europa (standaardtijd))'));
+        $('#counter-1').timeTo(new Date('06 Feb 2017 09:00:00 GMT+0100 (West-Europa (standaardtijd))'));
 
         $('#reset-1').click(function() {
             $('#counter-1').timeTo('reset');

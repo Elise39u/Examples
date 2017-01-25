@@ -33,6 +33,7 @@
                 <form action='ItemShop.php' method='post'>
                     <input type='hidden' name='sell-id' value='{$i.item_id}' />
                     <input type='submit' value='Sell' />
+                    <input type="number" name="Quantity">
                 </form>
             </li>
         {/foreach}
@@ -47,6 +48,12 @@
     {if isset($message)}
         {if $message ne ''}
             <p style='color:green'>{$message}</p>
+        {/if}
+    {/if}
+
+    {if isset($message1)}
+        {if $message1 ne ''}
+            <p style='color:green'>{$message1}</p>
         {/if}
     {/if}
 
@@ -75,6 +82,9 @@
         {/if}
     {/if}
 
+    {if isset($Much)}
+        <p style="color: indigo">{$Much}</p>
+    {/if}
     <ul>
         {foreach from=$items key=id item=i}
         <li>

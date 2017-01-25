@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-23 15:41:56
+/* Smarty version 3.1.29, created on 2017-01-24 16:11:57
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\ItemShop.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_588616340f7a78_08317654',
+  'unifunc' => 'content_58876ebd7353e5_03908736',
   'file_dependency' => 
   array (
     '2f6695f9812ffbdd5639764a99cda823e1d46071' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\ItemShop.html.tpl',
-      1 => 1485172160,
+      1 => 1485270714,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_588616340f7a78_08317654 ($_smarty_tpl) {
+function content_58876ebd7353e5_03908736 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -103,6 +103,7 @@ $__foreach_i_1_saved_local_item = $_smarty_tpl->tpl_vars['i'];
                     <input type='hidden' name='sell-id' value='<?php echo $_smarty_tpl->tpl_vars['i']->value['item_id'];?>
 ' />
                     <input type='submit' value='Sell' />
+                    <input type="number" name="Quantity">
                 </form>
             </li>
         <?php
@@ -127,6 +128,13 @@ $_smarty_tpl->tpl_vars['item_id'] = $__foreach_i_1_saved_key;
     <?php if (isset($_smarty_tpl->tpl_vars['message']->value)) {?>
         <?php if ($_smarty_tpl->tpl_vars['message']->value != '') {?>
             <p style='color:green'><?php echo $_smarty_tpl->tpl_vars['message']->value;?>
+</p>
+        <?php }?>
+    <?php }?>
+
+    <?php if (isset($_smarty_tpl->tpl_vars['message1']->value)) {?>
+        <?php if ($_smarty_tpl->tpl_vars['message1']->value != '') {?>
+            <p style='color:green'><?php echo $_smarty_tpl->tpl_vars['message1']->value;?>
 </p>
         <?php }?>
     <?php }?>
@@ -160,6 +168,10 @@ $_smarty_tpl->tpl_vars['item_id'] = $__foreach_i_1_saved_key;
         <?php }?>
     <?php }?>
 
+    <?php if (isset($_smarty_tpl->tpl_vars['Much']->value)) {?>
+        <p style="color: indigo"><?php echo $_smarty_tpl->tpl_vars['Much']->value;?>
+</p>
+    <?php }?>
     <ul>
         <?php
 $_from = $_smarty_tpl->tpl_vars['items']->value;

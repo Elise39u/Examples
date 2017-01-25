@@ -31,7 +31,7 @@
     <ul>
         {if isset($smarty.session.PageNpc19)}
         {if $smarty.session.PageNpc19 >= 1}
-          <li><a href="#"> Go On </a></li>
+          <li><a href="SubSerect.php"> Go On </a></li>
             {else}
             <li><a href="Npc19.php"> Go talk to guard Paul </a></li>
         {/if}

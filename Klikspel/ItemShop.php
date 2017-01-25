@@ -36,7 +36,11 @@ $pagetitle = "Mine game";
 if(isset($_POST['item-id'])) {
     $itemID = $_POST['item-id'];
     $Quantity = $_POST['Quantity'];
-    $query = sprintf("SELECT price FROM items WHERE id = %s",mysqli_real_escape_string($mysqli, $itemID));
+    $sql8 = "SELECT name FROM items WHERE id =$itemID";
+    $result5 = mysqli_query($mysqli, $sql8);
+    $Item = mysqli_fetch_assoc($result5);
+
+    $query = sprintf("SELECT price FROM items WHERE id = '%s'",mysqli_real_escape_string($mysqli, $itemID));
     $result = mysqli_query($mysqli, $query);
     list($cost) = mysqli_fetch_row($result);
     $gold = getStat('gc',$userID);
@@ -51,8 +55,9 @@ if(isset($_POST['item-id'])) {
             if ($Quantity == 0) {
                 $sql = "UPDATE Inventory SET quantity = quantity + 1 WHERE item_id=$itemID";
                 setStat('gc', $userID, ($gold - $cost));
-                $smarty->assign('message', '1 more item added!');
+                $smarty->assign('message', '1 more '. $Item['name'] . ' added!');
                 $smarty->assign('Nope', 'No number has filled in');
+                mysqli_query($mysqli, $sql);
             } else {
                 $LOL = $cost * $Quantity;
                 if ($Quantity < 0) {
@@ -67,7 +72,7 @@ if(isset($_POST['item-id'])) {
                     $sql = "UPDATE Inventory SET quantity = quantity + $Quantity WHERE item_id=$itemID";
                     mysqli_query($mysqli, $sql);
                     setStat('gc', $userID, ($gold - $LOL));
-                    $smarty->assign('message', $Quantity . ' more Items  added!');
+                    $smarty->assign('message', $Quantity . ' more ' .  $Item['name'] . '  added!');
                 }
             }
         } else {
@@ -79,7 +84,7 @@ if(isset($_POST['item-id'])) {
                 $sql = "INSERT INTO Inventory(player_id, item_id, space, quantity) VALUES ($userID, '$itemID', '$space', 1)";
                 mysqli_query($mysqli, $sql);
                 setStat('gc', $userID, ($gold - $cost));
-                $smarty->assign('message', 'You Bought that Item!');
+                $smarty->assign('message', 'You Bought ' . $Item['name'] . '');
             }
             else {
                 $LOL = $cost * $Quantity;
@@ -95,30 +100,73 @@ if(isset($_POST['item-id'])) {
                     $sql = "INSERT INTO Inventory(player_id, item_id, space, quantity) VALUES ($userID, '$itemID', '$space', $Quantity)";
                     mysqli_query($mysqli, $sql);
                     setStat('gc', $userID, ($gold - $LOL));
-                    $smarty->assign('message', 'You Bought ' . $Quantity . ' Up an Items!');
+                    $smarty->assign('message', 'You Bought ' . $Quantity . ' Up an '. $Item['name'] . '');
                     }
                 }
             }
         }
     else {
-        $smarty->assign('error','You cannot afford that item!');
+        $smarty->assign('error','You cannot afford that ' . $Item['name'] . '');
     }
 }
+
+$Query4 = sprintf("SELECT id FROM items WHERE id IN(SELECT item_id FROM Inventory)");
+$result4 = mysqli_query($mysqli, $Query4);
+foreach ($result4 as $row) {
+    global $itemID1;
+    $itemID1 = $row['id'];
+}
+
+
+$Query = sprintf("SELECT * FROM Inventory");
+$result9 = mysqli_query($mysqli, $Query);
+while ($row = mysqli_fetch_assoc($result9)) {
+    if ($row['quantity'] == 0) {
+        $query = sprintf("DELETE FROM inventory WHERE player_id = '%s' AND item_id = '%s'",
+            mysqli_real_escape_string($mysqli, $userID),
+            mysqli_real_escape_string($mysqli, $itemID1));
+    }
+}
+
 if(isset($_POST['sell-id'])) {
     if ($_POST['sell-id']) {
         $itemID = $_POST['sell-id'];
+        $Quantity = $_POST['Quantity'];
         $query = sprintf("SELECT price FROM items WHERE id = '%s'", mysqli_real_escape_string($mysqli, $itemID));
         $result = mysqli_query($mysqli, $query);
         list($cost) = mysqli_fetch_row($result);
         $gold = getStat('gc', $userID);
-        setStat('gc', $userID, ($gold + $cost));
+        $Fine = $cost * $Quantity;
+        setStat('gc', $userID, ($gold + $Fine));
         $query = sprintf("SELECT quantity FROM Inventory WHERE player_id = '%s' AND item_id = '%s'",
             mysqli_real_escape_string($mysqli, $userID),
             mysqli_real_escape_string($mysqli, $itemID));
         $result = mysqli_query($mysqli, $query);
         list($quantity) = mysqli_fetch_row($result);
-        if ($quantity > 1) {
+
+        if ($quantity <= 0){
+            $query = sprintf("DELETE FROM inventory WHERE player_id = '%s' AND item_id = '%s'",
+                mysqli_real_escape_string($mysqli, $userID),
+                mysqli_real_escape_string($mysqli, $itemID));
+        }
+        elseif($quantity < $Quantity) {
+            $Quantity = 0;
+            $smarty->assign('Much', 'Too much filled in');
+        }
+        elseif ($Quantity == "") {
+            $Quantity = 1;
+            $smarty->assign('message1', '1 more item has been Sold!');
             $query = sprintf("UPDATE inventory SET quantity = quantity - 1 WHERE player_id = '%s' AND item_id = '%s'",
+                mysqli_real_escape_string($mysqli, $userID),
+                mysqli_real_escape_string($mysqli, $itemID));
+        }
+        elseif ($quantity === $Quantity) {
+            $query = sprintf("DELETE FROM inventory WHERE player_id = '%s' AND item_id = '%s'",
+                mysqli_real_escape_string($mysqli, $userID),
+                mysqli_real_escape_string($mysqli, $itemID));
+        }
+        elseif ($quantity > 1) {
+            $query = sprintf("UPDATE inventory SET quantity = quantity - $Quantity WHERE player_id = '%s' AND item_id = '%s'",
                 mysqli_real_escape_string($mysqli, $userID),
                 mysqli_real_escape_string($mysqli, $itemID));
         } else {
@@ -152,10 +200,16 @@ while ($row = mysqli_fetch_assoc($result)) {
 }
 
 $party = array();
-$query1 = sprintf("SELECT name FROM npc WHERE id =(SELECT npc_id FROM party_members)");
+$query1 = sprintf("SELECT name FROM npc WHERE id IN(SELECT npc_id FROM party_members WHERE party_id=(
+    SELECT id FROM party WHERE player_id=
+    (SELECT id FROM player WHERE username = '%s')))",
+    mysqli_real_escape_string($mysqli, $_SESSION['username']));;
 $result1 = mysqli_query($mysqli, $query1);
-$row = mysqli_fetch_assoc($result1);
-array_push($party, $row);
+if ($result1 == false) {}
+else {
+    while ($row = mysqli_fetch_assoc($result1))
+    array_push($party, $row);
+}
 
 $smarty->assign('party', $party);
 $smarty->assign('items',$items);

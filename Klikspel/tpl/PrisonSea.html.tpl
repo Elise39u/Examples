@@ -40,9 +40,11 @@
     </ul>
 
     <script type="text/javascript">
-        Npcname = "Coach Marieke";
-        document.getElementById('Npc11').innerHTML = Npcname + ": {$smarty.session.username} Are you sure <br>" +
-                "You know the dangers he"
+        if (window.name == "Marieke") {
+            Npcname = "Coach Marieke";
+            document.getElementById('Npc11').innerHTML = Npcname + ": {$smarty.session.username} Are you sure <br>" +
+                    "You know the dangers he"
+        }
     </script>
 </div>
 </body>

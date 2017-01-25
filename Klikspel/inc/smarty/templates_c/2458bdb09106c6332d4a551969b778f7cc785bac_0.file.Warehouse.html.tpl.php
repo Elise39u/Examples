@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-23 16:20:11
+/* Smarty version 3.1.29, created on 2017-01-25 09:03:22
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Warehouse.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58861f2b3bf6d9_42203419',
+  'unifunc' => 'content_58885bca388db9_81069045',
   'file_dependency' => 
   array (
     '2458bdb09106c6332d4a551969b778f7cc785bac' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Warehouse.html.tpl',
-      1 => 1485173051,
+      1 => 1485331399,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58861f2b3bf6d9_42203419 ($_smarty_tpl) {
+function content_58885bca388db9_81069045 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -105,6 +105,7 @@ $__foreach_i_1_saved_local_item = $_smarty_tpl->tpl_vars['i'];
                     <input type='hidden' name='item-id' value='<?php echo $_smarty_tpl->tpl_vars['i']->value['id'];?>
 ' />
                     <input type='submit' value='Use' />
+                    <input type="number" name="Quantity">
                 </form>
             </li>
         <?php
@@ -119,6 +120,18 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
 ?>
     </ul>
 
+    <?php if (isset($_smarty_tpl->tpl_vars['One']->value)) {?>
+        <?php if ($_smarty_tpl->tpl_vars['One']->value != '') {?>
+            <p class="Got"> <?php echo $_smarty_tpl->tpl_vars['One']->value;?>
+ </p>
+        <?php }?>
+    <?php }?>
+    <?php if (isset($_smarty_tpl->tpl_vars['Much']->value)) {?>
+        <?php if ($_smarty_tpl->tpl_vars['Much']->value != '') {?>
+            <p class="Got"> <?php echo $_smarty_tpl->tpl_vars['Much']->value;?>
+ </p>
+        <?php }?>
+    <?php }?>
     <ul>
         <li><a href="Mall.php"> Go back and stop shopping ;-; </a></li>
     </ul>

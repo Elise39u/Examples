@@ -45,6 +45,9 @@ if (isset($_SESSION['Ship'])) {
 if (isset($_SESSION['Cave'])) {
     $area_id = 4;
 }
+if (isset($_SESSION['Prison'])) {
+    $area_id = 5;
+}
 
 // $area_id = (isset($_GET['area']) ? $_GET['area_id'] : 1);
 $query = sprintf("SELECT monster FROM area_monsters WHERE area = %s ORDER BY RAND() LIMIT 1",
@@ -201,6 +204,24 @@ switch ($monster) {
     case "Troll":
         $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Troll.png'>";
         break;
+    case "SatanHelper":
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/SatanHelper.png'>";
+        break;
+    case "Satan":
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/Satan.png'>";
+        break;
+    case "SatanDog":
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/SatanDog.png'>";
+        break;
+    case "NapalmZombie":
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/NapalmZombie.png'>";
+        break;
+    case "PrisonGuard":
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/PrisonGuards.png'>";
+        break;
+    case "George":
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/George.png'>";
+        break;
     default:
         echo "<span style=\"color:#982356;\">Not the correct monster is showing </span>";
 }
@@ -336,6 +357,12 @@ if(isset($_POST['action'])) {
         elseif (isset($_SESSION['CaveEnd'])) {
             header('Location: CaveLH.php');
         }
+        elseif (isset($_SESSION['KichtenHall'])) {
+            header('Location: PrisonHallKichten.php');
+        }
+        elseif (isset($_SESSION['BlockB'])) {
+            header('Location: PrisonBlockB.php');
+        }
         else {
             header('Location: lake.php');
         }
@@ -349,10 +376,16 @@ if (isset($_POST['monster'])) {
 }
 
 $party = array();
-$query1 = sprintf("SELECT name FROM npc WHERE id =(SELECT npc_id FROM party_members)");
+$query1 = sprintf("SELECT name FROM npc WHERE id IN(SELECT npc_id FROM party_members WHERE party_id=(
+    SELECT id FROM party WHERE player_id=
+    (SELECT id FROM player WHERE username = '%s')))",
+    mysqli_real_escape_string($mysqli, $_SESSION['username']));;
 $result1 = mysqli_query($mysqli, $query1);
-$row = mysqli_fetch_assoc($result1);
-array_push($party, $row);
+if ($result1 == false) {}
+else {
+    while ($row = mysqli_fetch_assoc($result1))
+    array_push($party, $row);
+}
 
 $smarty->assign('party', $party);
 $smarty->assign('combat', $combat);

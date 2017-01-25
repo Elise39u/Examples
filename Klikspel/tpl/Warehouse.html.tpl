@@ -35,11 +35,22 @@
                 <form action='Warehouse.php' method='post'>
                     <input type='hidden' name='item-id' value='{$i.id}' />
                     <input type='submit' value='Use' />
+                    <input type="number" name="Quantity">
                 </form>
             </li>
         {/foreach}
     </ul>
 
+    {if isset($One)}
+        {if $One ne ''}
+            <p class="Got"> {$One} </p>
+        {/if}
+    {/if}
+    {if isset($Much)}
+        {if $Much ne ''}
+            <p class="Got"> {$Much} </p>
+        {/if}
+    {/if}
     <ul>
         <li><a href="Mall.php"> Go back and stop shopping ;-; </a></li>
     </ul>

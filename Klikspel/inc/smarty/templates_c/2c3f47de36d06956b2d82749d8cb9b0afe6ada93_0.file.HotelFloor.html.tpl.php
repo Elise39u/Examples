@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-23 16:19:46
+/* Smarty version 3.1.29, created on 2017-01-24 11:51:11
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\HotelFloor.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58861f1249d430_92969594',
+  'unifunc' => 'content_5887319f1a1ca2_47088368',
   'file_dependency' => 
   array (
     '2c3f47de36d06956b2d82749d8cb9b0afe6ada93' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\HotelFloor.html.tpl',
-      1 => 1485172118,
+      1 => 1485255035,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58861f1249d430_92969594 ($_smarty_tpl) {
+function content_5887319f1a1ca2_47088368 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -86,7 +86,7 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
         <li><a href="HotelStair.php"> Go back downstairs </a></li>
         <li><a href="HotelRoom506.php"> Go To room 506 </a></li>
         <li><a href="HotelRoom508.php"> Go To room 508 </a></li>
-        <li><a href="#"> Go To room 510 </a></li>
+        <li><a href="HotelRoom510.php"> Go To room 510 </a></li>
         <li><a href="HotelBalcony.php"> Go to the balcony </a></li>
     </ul>
     <ul>

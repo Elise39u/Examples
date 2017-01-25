@@ -19,40 +19,97 @@ $userID = $value;
 
 $pagetitle = "Mine game";
 
+$Query4 = sprintf("SELECT id FROM items WHERE id IN(SELECT item_id FROM Inventory)");
+$result4 = mysqli_query($mysqli, $Query4);
+foreach ($result4 as $row) {
+    global $itemID1;
+    $itemID1 = $row['id'];
+}
+
+
+$Query = sprintf("SELECT * FROM Inventory");
+$result9 = mysqli_query($mysqli, $Query);
+while ($row = mysqli_fetch_assoc($result9)) {
+    if ($row['quantity'] == 0) {
+        $query = sprintf("DELETE FROM inventory WHERE player_id = '%s' AND item_id = '%s'",
+            mysqli_real_escape_string($mysqli, $userID),
+            mysqli_real_escape_string($mysqli, $itemID1));
+    }
+}
+
 $actions = array('L_Red_potion' => 'Potion', 'D_Red_potion' => 'Potion', 'L_Purple_potion' => 'use_L_Purple_potion',
     'Purple_potion' => 'use_Purple_potion', 'D_Purple_potion' => 'use_D_Purple_potion', 'L_Cyan_potion' => 'use_L_Cyan_potion',
     'D_Cyan_potion' => 'use_D_Cyan_potion', 'L_Orange_potion' => 'use_L_Orange_potion', 'D_Orange_potion' => 'use_D_Orange_potion',
     'L_Yellow_potion' => 'use_L_Yellow_potion', 'D_Yellow_potion' => 'use_D_Yellow_potion', 'L_Green_potion' => 'use_L_Green_potion',
     'Green_potion' => 'use_Green_potion', 'D_Green_potion' => 'use_D_Green_potion', 'L_Pink_potion' => 'use_L_Pink_potion',
     'D_Pink_potion' => 'use_D_Pink_potion', 'Rainbow_potion' => 'use_Rainbow_potion', 'item' => 'use_item', 'Blackpotion' => 'use_Blackpotion',
-    'SerectPotion' => 'use_SerectPotion', 'GrayPotion' => 'use_GrayPotion');
+    'SerectPotion' => 'use_SerectPotion', 'GrayPotion' => 'use_GrayPotion', '' => 'OK');
 
 if (isset($_POST['item-id'])) {
-    // $itemID = $_POST['item-id
-    $query = sprintf("SELECT item_id FROM inventory WHERE player_id = '%s' AND id = '%s'",
+    $itemID = $_POST['item-id'];
+    $Quantity = $_POST['Quantity'];
+    $GLOBALS['Quantity'] = $Quantity;
+    $query2 = sprintf("SELECT quantity FROM inventory WHERE player_id = '%s' AND id = '%s'",
         mysqli_real_escape_string($mysqli, $userID),
         mysqli_real_escape_string($mysqli, $_POST['item-id']));
-    $result = mysqli_query($mysqli, $query);
-    list($itemID) = mysqli_fetch_row($result);
-    $token = getItemStat('token', $itemID);
-    call_user_func($actions[$token]);
+    $result20 = mysqli_query($mysqli, $query2);
+    list($Lol) = mysqli_fetch_row($result20);
+
+    if ($Lol < $Quantity) {
+        $Quantity = 0;
+        $token = '';
+        $actions[$token] = 'OK';
+    }
+    else {
+        $query = sprintf("SELECT item_id FROM inventory WHERE player_id = '%s' AND id = '%s'",
+            mysqli_real_escape_string($mysqli, $userID),
+            mysqli_real_escape_string($mysqli, $_POST['item-id']));
+        $result = mysqli_query($mysqli, $query);
+        list($itemID) = mysqli_fetch_row($result);
+        $token = getItemStat('token', $itemID);
+        call_user_func($actions[$token]);
+    }
 
     $query = sprintf("SELECT quantity FROM inventory WHERE player_id = '%s' AND item_id = '%s'",
         mysqli_real_escape_string($mysqli, $userID), mysqli_real_escape_string($mysqli, $itemID));
     $result = mysqli_query($mysqli, $query);
     list($quantity) = mysqli_fetch_row($result);
-
-    if ($quantity > 1) {
+    if ($quantity < $Quantity) {
+        $Quantity = 0;
+        $GLOBALS['Quantity'] = 0;
+        $smarty->assign('Much', 'Too much filled in');
+    }
+    elseif ($Quantity > $quantity) {
+        $Quantity = 0;
+        $GLOBALS['Quantity'] = 0;
+        $smarty->assign('Much', 'Too much filled in');
+    }
+    elseif ($Quantity === "") {
+        $Quantity = 1;
+        $smarty->assign('One', 'No number filled in so assume one');
         $query = sprintf("UPDATE inventory SET quantity = quantity - 1 WHERE player_id = '%s' AND item_id = '%s'",
             mysqli_real_escape_string($mysqli, $userID),
             mysqli_real_escape_string($mysqli, $itemID));
+        mysqli_query($mysqli, $query);
+    }
+    elseif ($quantity === $Quantity) {
+        $query = sprintf("DELETE FROM inventory WHERE player_id = '%s' AND item_id = '%s'",
+            mysqli_real_escape_string($mysqli, $userID),
+            mysqli_real_escape_string($mysqli, $itemID));
+        mysqli_query($mysqli, $query);
+    }
+    elseif ($quantity > 1) {
+        $query = sprintf("UPDATE inventory SET quantity = quantity - $Quantity WHERE player_id = '%s' AND item_id = '%s'",
+            mysqli_real_escape_string($mysqli, $userID),
+            mysqli_real_escape_string($mysqli, $itemID));
+        mysqli_query($mysqli, $query);
     }
     else {
         $query = sprintf("DELETE FROM inventory WHERE player_id = '%s' AND item_id = '%s'",
             mysqli_real_escape_string($mysqli, $userID),
             mysqli_real_escape_string($mysqli, $itemID));
+        mysqli_query($mysqli, $query);
     }
-    mysqli_query($mysqli, $query);
 }
 
 $inventory = array();
@@ -71,10 +128,12 @@ while ($row = mysqli_fetch_assoc($result)) {
 function Potion() {
     global $userID;
     global $token;
+    $GLOBALS['Quantity'];
 
     if ($token == 'L_Red_potion') {
         $IncAtk = getStat('atk', $userID);
-        $Hai = $IncAtk + 50;
+        $Pup = 50 * $GLOBALS['Quantity'];
+        $Hai = $IncAtk + $Pup;
         if (isset($Hai)) {
             setStat('atk', $userID, $Hai);
         }
@@ -82,7 +141,8 @@ function Potion() {
 
     if ($token == 'D_Red_potion') {
         $DecAtk = getStat('atk', $userID);
-        $Hai = $DecAtk - 50;
+        $Pup = 50 * $GLOBALS['Quantity'];
+        $Hai = $DecAtk - $Pup;
         if (isset($Hai)) {
             setStat('atk', $userID, $Hai);
         }
@@ -93,7 +153,8 @@ function Potion() {
 function use_L_Purple_potion() {
     global $userID;
     $IncHP = getStat('curhp', $userID);
-    $Hai = $IncHP + 50;
+    $Pup = 50 * $GLOBALS['Quantity'];
+    $Hai = $IncHP + $Pup;
     if (isset($Hai)) {
         setStat('curhp', $userID, $Hai);
     }
@@ -102,7 +163,8 @@ function use_L_Purple_potion() {
 function use_Purple_potion() {
     global $userID;
     $Inv = getStat('def', $userID);
-    $Hai = $Inv + 80;
+    $Pup = 80 * $GLOBALS['Quantity'];
+    $Hai = $Inv + $Pup;
     if (isset($Hai)) {
         setStat('def', $userID, $Hai);
     }
@@ -111,7 +173,8 @@ function use_Purple_potion() {
 function use_D_Purple_potion() {
     global $userID;
     $DecHP = getStat('curhp', $userID);
-    $Hai = $DecHP - 50;
+    $Pup = 50 * $GLOBALS['Quantity'];
+    $Hai = $DecHP - $Pup;
     if (isset($Hai)) {
         setStat('curhp', $userID, $Hai);
     }
@@ -120,7 +183,8 @@ function use_D_Purple_potion() {
 function use_L_Cyan_potion() {
     global $userID;
     $Dmg = getStat('atk', $userID);
-    $Hai = $Dmg * 2.5;
+    $Pup = 2.5 * $GLOBALS['Quantity'];
+    $Hai = $Dmg * $Pup;
     if (isset($Hai)) {
         setStat('atk', $userID, $Hai);
     }
@@ -129,7 +193,8 @@ function use_L_Cyan_potion() {
 function use_D_Cyan_potion() {
     global $userID;
     $Dmg = getStat('atk', $userID);
-    $Hai = $Dmg / 2.5;
+    $Pup = 2.5 * $GLOBALS['Quantity'];
+    $Hai = $Dmg / $Pup;
     if (isset($Hai)) {
         setStat('atk', $userID, $Hai);
     }
@@ -138,7 +203,8 @@ function use_D_Cyan_potion() {
 function use_L_Orange_potion() {
     global $userID;
     $BANK = getStat('bankgc',$userID);
-    $Hai = $BANK * 2;
+    $Pup = 2 * $GLOBALS['Quantity'];
+    $Hai = $BANK * $Pup;
     if (isset($Hai)) {
         setStat('bankgc', $userID, $Hai);
     }
@@ -146,8 +212,9 @@ function use_L_Orange_potion() {
 
 function use_D_Orange_potion() {
     global $userID;
+    $Pup = 2 * $GLOBALS['Quantity'];
     $BANK = getStat('bankgc',$userID);
-    $Hai = $BANK / 2;
+    $Hai = $BANK / $Pup;
     if (isset($Hai)) {
         setStat('bankgc', $userID, $Hai);
     }
@@ -156,7 +223,8 @@ function use_D_Orange_potion() {
 function use_L_Yellow_potion() {
     global $userID;
     $money = getStat('gc', $userID);
-    $Hai = $money + 1000;
+    $Pup = 1000 * $GLOBALS['Quantity'];
+    $Hai = $money + $Pup;
     if (isset($Hai)) {
         setStat('gc', $userID, $Hai);
     }
@@ -165,7 +233,8 @@ function use_L_Yellow_potion() {
 function use_D_Yellow_potion() {
     global $userID;
     $money = getStat('gc', $userID);
-    $Hai = $money - 250;
+    $Pup = 250 * $GLOBALS['Quantity'];
+    $Hai = $money - $Pup;
     if (isset($Hai)) {
         setStat('gc', $userID, $Hai);
     }
@@ -201,7 +270,8 @@ function use_D_Green_potion(){
 function use_D_Pink_potion(){
     global $userID;
     $Max = getStat('maxhp', $userID);
-    $Hai = $Max - 75;
+    $Pup = 75 * $GLOBALS['Quantity'];
+    $Hai = $Max - $Pup;
     if (isset($Hai)) {
         setStat('maxhp', $userID, $Hai);
     }
@@ -210,7 +280,8 @@ function use_D_Pink_potion(){
 function use_L_Pink_potion(){
     global $userID;
     $Max = getStat('maxhp', $userID);
-    $Hai = $Max + 75;
+    $Pup = 75 * $GLOBALS['Quantity'];
+    $Hai = $Max + $Pup;
     if (isset($Hai)) {
         setStat('maxhp', $userID, $Hai);
     }
@@ -219,7 +290,8 @@ function use_L_Pink_potion(){
 function use_Rainbow_potion() {
     global $userID;
     $Max = getStat('maxhp', $userID);
-    $MaxHP = $Max + 75;
+    $Pup = 75 * $GLOBALS['Quantity'];
+    $MaxHP = $Max + $Pup;
     if (isset($MaxHP)) {
         setStat('maxhp', $userID, $MaxHP);
     }
@@ -231,37 +303,43 @@ function use_Rainbow_potion() {
     }
 
     $money = getStat('gc', $userID);
-    $Gold = $money + 1000;
+    $Pup1 = 1000 * $GLOBALS['Quantity'];
+    $Gold = $money + $Pup1;
     if (isset($Gold)) {
         setStat('gc', $userID, $Gold);
     }
 
     $BANK = getStat('bankgc',$userID);
-    $BankGold = $BANK * 2;
+    $Pup2 = 2 * $GLOBALS['Quantity'];
+    $BankGold = $BANK * $Pup2;
     if (isset($BankGold)) {
         setStat('bankgc', $userID, $BankGold);
     }
 
     $Dmg = getStat('atk', $userID);
-    $IncDmg = $Dmg * 2.5;
+    $Pup3 = 2.5  * $GLOBALS['Quantity'];
+    $IncDmg = $Dmg * $Pup3;
     if (isset($IncDmg)) {
         setStat('atk', $userID, $IncDmg);
     }
 
     $IncHP = getStat('curhp', $userID);
-    $Hai = $IncHP + 50;
+    $Pup4 = 50 * $GLOBALS['Quantity'];
+    $Hai = $IncHP + $Pup4;
     if (isset($Hai)) {
         setStat('curhp', $userID, $Hai);
     }
 
     $IncAtk = getStat('atk', $userID);
-    $Atk = $IncAtk + 50;
+    $Pup5 = 50 * $GLOBALS['Quantity'];
+    $Atk = $IncAtk + $Pup5;
     if (isset($Atk)) {
         setStat('atk', $userID, $Atk);
     }
 
     $Inv = getStat('def', $userID);
-    $Def = $Inv + 80;
+    $Pup6 = 80 * $GLOBALS['Quantity'];
+    $Def = $Inv + $Pup6;
     if (isset($Def)) {
         setStat('def', $userID, $Def);
     }
@@ -270,7 +348,8 @@ function use_Rainbow_potion() {
 function use_item() {
     global $userID;
     $gold = getStat('gc', $userID);
-    $Hai = $gold + 2500;
+    $Pup = 2500 * $GLOBALS['Quantity'];
+    $Hai = $gold + $Pup;
     if (isset($Hai)) {
         setStat('gc', $userID, $Hai);
     }
@@ -295,7 +374,8 @@ function use_SerectPotion() {
 
     if ($sum == 0) {
         $Atk = getStat('atk', $userID);
-        $Hai = $Atk * 5;
+        $Pup = 5 * $GLOBALS['Quantity'];
+        $Hai = $Atk * $Pup;
         if (isset($Hai)) {
             setStat('atk', $userID, $Hai);
         }
@@ -319,7 +399,8 @@ function use_SerectPotion() {
 
     if ($sum == 8) {
         $Atk = getStat('atk', $userID);
-        $Hai = $Atk / 5;
+        $Pup = 5 * $GLOBALS['Quantity'];
+        $Hai = $Atk / $Pup;
         if (isset($Hai)) {
             setStat('atk', $userID, $Hai);
         }
@@ -327,7 +408,8 @@ function use_SerectPotion() {
 
     if ($sum == 1) {
         $def= getStat('def', $userID);
-        $Hai = $def + 100;
+        $Pup = 100 * $GLOBALS['Quantity'];
+        $Hai = $def + $Pup;
         if (isset($Hai)) {
             setStat('def', $userID, $Hai);
         }
@@ -335,7 +417,8 @@ function use_SerectPotion() {
 
     if ($sum == 2) {
         $def= getStat('def', $userID);
-        $Hai = $def - 100;
+        $Pup = 100 * $GLOBALS['Quantity'];
+        $Hai = $def - $Pup;
         if (isset($Hai)) {
             setStat('def', $userID, $Hai);
         }
@@ -343,7 +426,8 @@ function use_SerectPotion() {
 
     if ($sum == 6) {
         $money = getStat('gc', $userID);
-        $Hai = $money * 3;
+        $Pup = 3 * $GLOBALS['Quantity'];
+        $Hai = $money * $Pup;
         if (isset($Hai)) {
             setStat('gc', $userID, $Hai);
         }
@@ -392,10 +476,17 @@ function use_GrayPotion() {
 }
 
 $party = array();
-$query1 = sprintf("SELECT name FROM npc WHERE id =(SELECT npc_id FROM party_members)");
+global $party;
+$query1 = sprintf("SELECT name FROM npc WHERE id IN(SELECT npc_id FROM party_members WHERE party_id=(
+    SELECT id FROM party WHERE player_id=
+    (SELECT id FROM player WHERE username = '%s')))",
+    mysqli_real_escape_string($mysqli, $_SESSION['username']));;
 $result1 = mysqli_query($mysqli, $query1);
-$row = mysqli_fetch_assoc($result1);
-array_push($party, $row);
+if ($result1 == false) {}
+else {
+    while ($row = mysqli_fetch_assoc($result1))
+    array_push($party, $row);
+}
 
 $smarty->assign('party', $party);
 $smarty->assign('inventory', $inventory);
