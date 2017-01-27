@@ -70,13 +70,10 @@ if (!isset($_COOKIE['Quest10_1'])) {
 if (isset($_COOKIE['Quest10_1'])) {
     if (isset($_SESSION['CoachBook'])) {
             setcookie('Quest10_2', true, time() + 2146483647, '', '', '', true);
-        }
-        else {
-            setcookie('Quest10_2', false, time() + 2146483647, '', '', '', true);
-        }
     }
-    elseif ($_COOKIE['Quest10_1'] == true) {
-        setcookie('Quest10_2', false, time() + 2146483647, '', '', '', true);
+    else {
+            setcookie('Quest10_2', false, time() + 2146483647, '', '', '', true);
+    }
 }
 
 if (isset($_COOKIE['Quest10_1'])) {

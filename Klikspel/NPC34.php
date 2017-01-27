@@ -32,7 +32,9 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
 }
 
-if (!isset($_COOKIE['Quest34'])) {
+if (isset($_SESSION['Laptop']) AND isset($_SESSION['Phone']) AND isset($_SESSION['Router'])) {
+    setcookie('Quest34', true, time() + 2147483647, '', '', '', true);
+} else {
     setcookie('Quest34', false, time() + 2147483647, '', '', '', true);
 }
 

@@ -40,7 +40,7 @@
             {if isset($won)}
                 {if $won eq 1}
                     <p>You found a <strong>{$item}</strong>!</p>
-                    <p>You killed <strong>{$smarty.post.monster}</strong>! You gained <strong>{$gold}</strong> gold.</p>
+                    <p>You killed <strong>{$smarty.post.monster}</strong>! You gained <strong>{$gold1}</strong> gold.</p>
                     {if $area_id == 1}
                     <p><a href='lake.php'>Go to the lake</a></p>
                     <p><a href="Sand.php">Go  to some sand -.- </a> </p>
@@ -53,6 +53,9 @@
                         {elseif $area_id == 5}
                         <p><a href="PrisonBlockB.php"> Go on to block b</a></p>
                         <p><a href="PrisonHallKichten.php"> Go to the kichten</a></p>
+                    {elseif $area_id == 6}
+                        <p><a href="TownYard.php"> Go to the city </a></p>
+                        <p><a href="TownCave.php"> Go back to the cave</a></p>
                      {else}
                         <p><a href="Deck.php"> Go on the boat if you dare </a></p>
                         <p><a href="Nship.php"> Go to you`re boat </a></p>

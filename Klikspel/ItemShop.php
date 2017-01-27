@@ -135,9 +135,6 @@ if(isset($_POST['sell-id'])) {
         $query = sprintf("SELECT price FROM items WHERE id = '%s'", mysqli_real_escape_string($mysqli, $itemID));
         $result = mysqli_query($mysqli, $query);
         list($cost) = mysqli_fetch_row($result);
-        $gold = getStat('gc', $userID);
-        $Fine = $cost * $Quantity;
-        setStat('gc', $userID, ($gold + $Fine));
         $query = sprintf("SELECT quantity FROM Inventory WHERE player_id = '%s' AND item_id = '%s'",
             mysqli_real_escape_string($mysqli, $userID),
             mysqli_real_escape_string($mysqli, $itemID));
@@ -148,6 +145,9 @@ if(isset($_POST['sell-id'])) {
             $query = sprintf("DELETE FROM inventory WHERE player_id = '%s' AND item_id = '%s'",
                 mysqli_real_escape_string($mysqli, $userID),
                 mysqli_real_escape_string($mysqli, $itemID));
+            $gold = getStat('gc', $userID);
+            $Fine = $cost * $Quantity;
+            setStat('gc', $userID, ($gold + $Fine));
         }
         elseif($quantity < $Quantity) {
             $Quantity = 0;
@@ -155,24 +155,46 @@ if(isset($_POST['sell-id'])) {
         }
         elseif ($Quantity == "") {
             $Quantity = 1;
-            $smarty->assign('message1', '1 more item has been Sold!');
-            $query = sprintf("UPDATE inventory SET quantity = quantity - 1 WHERE player_id = '%s' AND item_id = '%s'",
-                mysqli_real_escape_string($mysqli, $userID),
-                mysqli_real_escape_string($mysqli, $itemID));
+            if ($quantity <= $Quantity) {
+                $smarty->assign('Delete', 'Last one used');
+                $query = sprintf("DELETE FROM inventory WHERE player_id = '%s' AND item_id = '%s'",
+                    mysqli_real_escape_string($mysqli, $userID),
+                    mysqli_real_escape_string($mysqli, $itemID));
+                $gold = getStat('gc', $userID);
+                $Fine = $cost * $Quantity;
+                setStat('gc', $userID, ($gold + $Fine));
+            } else {
+                $smarty->assign('One', 'No number filled in so assume one');
+                $query = sprintf("UPDATE inventory SET quantity = quantity - 1 WHERE player_id = '%s' AND item_id = '%s'",
+                    mysqli_real_escape_string($mysqli, $userID),
+                    mysqli_real_escape_string($mysqli, $itemID));;
+                $gold = getStat('gc', $userID);
+                $Fine = $cost * $Quantity;
+                setStat('gc', $userID, ($gold + $Fine));
+            }
         }
         elseif ($quantity === $Quantity) {
             $query = sprintf("DELETE FROM inventory WHERE player_id = '%s' AND item_id = '%s'",
                 mysqli_real_escape_string($mysqli, $userID),
                 mysqli_real_escape_string($mysqli, $itemID));
+            $gold = getStat('gc', $userID);
+            $Fine = $cost * $Quantity;
+            setStat('gc', $userID, ($gold + $Fine));
         }
         elseif ($quantity > 1) {
             $query = sprintf("UPDATE inventory SET quantity = quantity - $Quantity WHERE player_id = '%s' AND item_id = '%s'",
                 mysqli_real_escape_string($mysqli, $userID),
                 mysqli_real_escape_string($mysqli, $itemID));
+            $gold = getStat('gc', $userID);
+            $Fine = $cost * $Quantity;
+            setStat('gc', $userID, ($gold + $Fine));
         } else {
             $query = sprintf("DELETE FROM inventory WHERE player_id = '%s' AND item_id = '%s'",
                 mysqli_real_escape_string($mysqli, $userID),
                 mysqli_real_escape_string($mysqli, $itemID));
+            $gold = getStat('gc', $userID);
+            $Fine = $cost * $Quantity;
+            setStat('gc', $userID, ($gold + $Fine));
         }
         mysqli_query($mysqli, $query);
         $smarty->assign('message', 'You sold the item.');

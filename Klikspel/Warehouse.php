@@ -67,7 +67,6 @@ if (isset($_POST['item-id'])) {
         $result = mysqli_query($mysqli, $query);
         list($itemID) = mysqli_fetch_row($result);
         $token = getItemStat('token', $itemID);
-        call_user_func($actions[$token]);
     }
 
     $query = sprintf("SELECT quantity FROM inventory WHERE player_id = '%s' AND item_id = '%s'",
@@ -86,29 +85,42 @@ if (isset($_POST['item-id'])) {
     }
     elseif ($Quantity === "") {
         $Quantity = 1;
-        $smarty->assign('One', 'No number filled in so assume one');
-        $query = sprintf("UPDATE inventory SET quantity = quantity - 1 WHERE player_id = '%s' AND item_id = '%s'",
-            mysqli_real_escape_string($mysqli, $userID),
-            mysqli_real_escape_string($mysqli, $itemID));
-        mysqli_query($mysqli, $query);
+        if ($quantity <= $Quantity) {
+            $smarty->assign('Delete', 'Last one used');
+            $query = sprintf("DELETE FROM inventory WHERE player_id = '%s' AND item_id = '%s'",
+                mysqli_real_escape_string($mysqli, $userID),
+                mysqli_real_escape_string($mysqli, $itemID));
+            mysqli_query($mysqli, $query);
+            call_user_func($actions[$token]);
+        } else {
+            $smarty->assign('One', 'No number filled in so assume one');
+            $query = sprintf("UPDATE inventory SET quantity = quantity - 1 WHERE player_id = '%s' AND item_id = '%s'",
+                mysqli_real_escape_string($mysqli, $userID),
+                mysqli_real_escape_string($mysqli, $itemID));
+            mysqli_query($mysqli, $query);
+            call_user_func($actions[$token]);
+        }
     }
     elseif ($quantity === $Quantity) {
         $query = sprintf("DELETE FROM inventory WHERE player_id = '%s' AND item_id = '%s'",
             mysqli_real_escape_string($mysqli, $userID),
             mysqli_real_escape_string($mysqli, $itemID));
         mysqli_query($mysqli, $query);
+        call_user_func($actions[$token]);
     }
     elseif ($quantity > 1) {
         $query = sprintf("UPDATE inventory SET quantity = quantity - $Quantity WHERE player_id = '%s' AND item_id = '%s'",
             mysqli_real_escape_string($mysqli, $userID),
             mysqli_real_escape_string($mysqli, $itemID));
         mysqli_query($mysqli, $query);
+        call_user_func($actions[$token]);
     }
     else {
         $query = sprintf("DELETE FROM inventory WHERE player_id = '%s' AND item_id = '%s'",
             mysqli_real_escape_string($mysqli, $userID),
             mysqli_real_escape_string($mysqli, $itemID));
         mysqli_query($mysqli, $query);
+        call_user_func($actions[$token]);
     }
 }
 
@@ -469,7 +481,8 @@ function use_SerectPotion() {
 function use_GrayPotion() {
     global $userID;
     $def= getStat('def', $userID);
-    $Hai = $def * 3;
+    $Pup = 3 * $GLOBALS['Quantity'];
+    $Hai = $def * $Pup;
     if (isset($Hai)) {
         setStat('def', $userID, $Hai);
     }

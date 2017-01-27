@@ -50,6 +50,11 @@
             <p style='color:green'>{$message}</p>
         {/if}
     {/if}
+    {if isset($Delete)}
+        {if $Delete ne ''}
+            <p style='color: blueviolet'>{$Delete}</p>
+        {/if}
+    {/if}
 
     {if isset($message1)}
         {if $message1 ne ''}

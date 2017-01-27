@@ -32,7 +32,7 @@
     <img src="img/TownStart.png">
     <ul>
         <li><a href="TownRoad.php"> Go back on the road </a></li>
-        <li><a href="#"> Go towards the Church </a></li>
+        <li><a href="ChurchIS.php"> Go towards the Church </a></li>
     </ul>
 
     <ul>

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-24 11:43:03
+/* Smarty version 3.1.29, created on 2017-01-26 09:17:34
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\PrisonKichten.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58872fb7d09f62_53799308',
+  'unifunc' => 'content_5889b09e91c547_00019625',
   'file_dependency' => 
   array (
     '77c346e6334da4e3c50faa42c917f7451046c279' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\PrisonKichten.html.tpl',
-      1 => 1485254579,
+      1 => 1485350786,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58872fb7d09f62_53799308 ($_smarty_tpl) {
+function content_5889b09e91c547_00019625 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -121,10 +121,12 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
 
     <?php echo '<script'; ?>
  type="text/javascript">
-        Npcname = "Coach Marieke";
-        document.getElementById('Npc11').innerHTML = Npcname + ": <?php echo $_SESSION['username'];?>
+        if (window.name == "Marieke") {
+            Npcname = "Coach Marieke";
+            document.getElementById('Npc11').innerHTML = Npcname + ": <?php echo $_SESSION['username'];?>
  well thats a great idea <br>" +
-                "But wacht out with the prisoners"
+                    "But wacht out with the prisoners"
+        }
     <?php echo '</script'; ?>
 >
 </div>

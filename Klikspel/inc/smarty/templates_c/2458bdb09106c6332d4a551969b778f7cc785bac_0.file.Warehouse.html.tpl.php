@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-25 09:03:22
+/* Smarty version 3.1.29, created on 2017-01-26 08:47:59
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Warehouse.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58885bca388db9_81069045',
+  'unifunc' => 'content_5889a9af62e581_43830398',
   'file_dependency' => 
   array (
     '2458bdb09106c6332d4a551969b778f7cc785bac' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Warehouse.html.tpl',
-      1 => 1485331399,
+      1 => 1485416874,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58885bca388db9_81069045 ($_smarty_tpl) {
+function content_5889a9af62e581_43830398 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -79,7 +79,7 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
     </ul>
 
     <h1> The WareHouse </h1>
-    <p> Why do i want to use items .... </p>
+    <p> Why do i want to use items ....</p>
     <img src="img/Warehous.png">
 
     <ul>
@@ -123,6 +123,12 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
     <?php if (isset($_smarty_tpl->tpl_vars['One']->value)) {?>
         <?php if ($_smarty_tpl->tpl_vars['One']->value != '') {?>
             <p class="Got"> <?php echo $_smarty_tpl->tpl_vars['One']->value;?>
+ </p>
+        <?php }?>
+    <?php }?>
+    <?php if (isset($_smarty_tpl->tpl_vars['Delete']->value)) {?>
+        <?php if ($_smarty_tpl->tpl_vars['Delete']->value != '') {?>
+            <p class="Got"> <?php echo $_smarty_tpl->tpl_vars['Delete']->value;?>
  </p>
         <?php }?>
     <?php }?>

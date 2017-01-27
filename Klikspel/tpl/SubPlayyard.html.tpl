@@ -57,7 +57,7 @@
             document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
         }
 
-        $('#counter-1').timeTo(12, function () {
+        $('#counter-1').timeTo(120, function () {
             alert("Quest Wacht time completed");
             setCookie("Quest17_2", true, +2147483647);
         })

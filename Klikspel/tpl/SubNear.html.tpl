@@ -70,7 +70,7 @@
             document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
         }
 
-        $('#counter-1').timeTo(15, function () {
+        $('#counter-1').timeTo(300, function () {
             alert("Quest A blink for a eye completed");
             setCookie("Quest6", true, +2147483647);
         })

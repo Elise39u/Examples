@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-24 16:11:57
+/* Smarty version 3.1.29, created on 2017-01-26 14:39:05
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\ItemShop.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58876ebd7353e5_03908736',
+  'unifunc' => 'content_5889fbf92d23f5_10725719',
   'file_dependency' => 
   array (
     '2f6695f9812ffbdd5639764a99cda823e1d46071' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\ItemShop.html.tpl',
-      1 => 1485270714,
+      1 => 1485437940,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58876ebd7353e5_03908736 ($_smarty_tpl) {
+function content_5889fbf92d23f5_10725719 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -128,6 +128,12 @@ $_smarty_tpl->tpl_vars['item_id'] = $__foreach_i_1_saved_key;
     <?php if (isset($_smarty_tpl->tpl_vars['message']->value)) {?>
         <?php if ($_smarty_tpl->tpl_vars['message']->value != '') {?>
             <p style='color:green'><?php echo $_smarty_tpl->tpl_vars['message']->value;?>
+</p>
+        <?php }?>
+    <?php }?>
+    <?php if (isset($_smarty_tpl->tpl_vars['Delete']->value)) {?>
+        <?php if ($_smarty_tpl->tpl_vars['Delete']->value != '') {?>
+            <p style='color: blueviolet'><?php echo $_smarty_tpl->tpl_vars['Delete']->value;?>
 </p>
         <?php }?>
     <?php }?>

@@ -20,26 +20,37 @@ $userID = $value;
 
 $pagetitle = "Mine game";
 $setHP = getStat('curhp',$userID);
-if($setHP <= 0) {
-    // haven't set up the user's HP values yet - let's set those!
-    setStat('curhp', $userID, 175);
-    setStat('maxhp', $userID, 300);
-    setStat('sethp', $userID, 25);
-    setStat('atk', $userID, '80');
-    setStat('def', $userID, '100');
-    setStat('mdef', $userID, '50');
-    setStat('gc', $userID, '250');
-    setStat('bankgc', $userID, '5000');
-    $sql3 = sprintf("DELETE FROM inventory WHERE player_id = (SELECT id FROM player WHERE username = '%s')",
-        mysqli_real_escape_string($mysqli, $_SESSION['username']));
-    mysqli_query($mysqli, $sql3);
-    $sql5 = sprintf("DELETE FROM party_members WHERE party_id = (SELECT id FROM party WHERE player_id=(
+if (isset($_SESSION['username'])) {
+    if ($setHP <= 0) {
+        // haven't set up the user's HP values yet - let's set those!
+        setStat('curhp', $userID, 175);
+        setStat('maxhp', $userID, 300);
+        setStat('sethp', $userID, 25);
+        setStat('atk', $userID, '80');
+        setStat('def', $userID, '100');
+        setStat('mdef', $userID, '50');
+        setStat('gc', $userID, '250');
+        setStat('bankgc', $userID, '5000');
+        setStat('phand', $userID, '');
+        setStat('shand', $userID, '');
+        $sql3 = sprintf("DELETE FROM inventory WHERE player_id = (SELECT id FROM player WHERE username = '%s')",
+            mysqli_real_escape_string($mysqli, $_SESSION['username']));
+        mysqli_query($mysqli, $sql3);
+        $sql5 = sprintf("DELETE FROM party_members WHERE party_id = (SELECT id FROM party WHERE player_id=(
         SELECT id FROM player WHERE username='%s'))",
-        mysqli_real_escape_string($mysqli, $_SESSION['username']));
-    mysqli_query($mysqli, $sql5);
+            mysqli_real_escape_string($mysqli, $_SESSION['username']));
+        mysqli_query($mysqli, $sql5);
 
-    $sql6 = "UPDATE npc_stats SET stat_id = 13 WHERE stat_id = 14";
-    mysqli_query($mysqli, $sql6);
+        $sql6 = "UPDATE npc_stats SET stat_id = 13 WHERE stat_id = 14";
+        mysqli_query($mysqli, $sql6);
+        $cookies = explode(';', $_SERVER['HTTP_COOKIE']);
+        foreach ($cookies as $cookie) {
+            $parts = explode('=', $cookie);
+            $name = trim($parts[0]);
+            setcookie($name, '', time() - 1000);
+            setcookie($name, '', time() - 1000, '/');
+        }
+    }
 }
 
 if (isset($_POST['submit'])) {

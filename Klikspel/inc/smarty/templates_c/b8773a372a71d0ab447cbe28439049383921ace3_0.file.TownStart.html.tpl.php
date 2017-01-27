@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-25 14:56:26
+/* Smarty version 3.1.29, created on 2017-01-26 09:04:17
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\TownStart.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5888ae8a00bc26_67077846',
+  'unifunc' => 'content_5889ad817345b4_74544773',
   'file_dependency' => 
   array (
     'b8773a372a71d0ab447cbe28439049383921ace3' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\TownStart.html.tpl',
-      1 => 1485352581,
+      1 => 1485417853,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5888ae8a00bc26_67077846 ($_smarty_tpl) {
+function content_5889ad817345b4_74544773 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -86,7 +86,7 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
     <img src="img/TownStart.png">
     <ul>
         <li><a href="TownRoad.php"> Go back on the road </a></li>
-        <li><a href="#"> Go towards the Church </a></li>
+        <li><a href="ChurchIS.php"> Go towards the Church </a></li>
     </ul>
 
     <ul>

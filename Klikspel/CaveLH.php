@@ -16,6 +16,7 @@ unset($_SESSION['Sand']);
 unset($_SESSION['Station']);
 unset($_SESSION['Ship']);
 unset($_SESSION['Prison']);
+unset($_SESSION['Town']);
 
 $query = sprintf("SELECT id FROM player WHERE UPPER(username) = UPPER('%s')",
     mysqli_real_escape_string($mysqli, $_SESSION['username']));
@@ -47,6 +48,8 @@ unset($_SESSION['Deck']);
 unset($_SESSION['Yard']);
 unset($_SESSION['BlockB']);
 unset($_SESSION['KichtenHall']);
+unset($_SESSION['TownYard']);
+unset($_SESSION['CaveTown']);
 $_SESSION['CaveEnd'] = true;
 
 $party = array();

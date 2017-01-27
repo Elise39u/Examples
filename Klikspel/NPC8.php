@@ -44,8 +44,10 @@ if (isset($_SESSION['Scoripon'])) {
     setcookie('Quest8_1', false, time() + 2147483647, '', '', '', true);
 }
 
-if (!isset($_COOKIE['Quest8_2'])) {
-        setcookie('Quest8_2', false, time() + 2147483647, '', '', '', true);
+if (isset($_SESSION['CameraM'])) {
+        setcookie('Quest8_2', true, time() + 2147483647, '', '', '', true);
+} else {
+    setcookie('Quest8_2', false, time() + 2147483647, '', '', '', true);
 }
 
 if (isset($_COOKIE['Quest8_1']) AND isset($_COOKIE['Quest8_2'])) {

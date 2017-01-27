@@ -56,7 +56,7 @@
     {if isset($smarty.cookies.Quest18)}
         {if $smarty.cookies.Quest18 == true}
             <script type="text/javascript">
-                var NpcName = "Maxine";
+                var NpcName = "Tim";
                 document.getElementById('Quest').innerHTML = NpcName + " Well Thank you on the docks there is a boat near the hotel <br>" +
                         "Wacht out going to the other side there is a mine field around";
             </script>

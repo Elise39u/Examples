@@ -38,8 +38,10 @@ if (isset($_SESSION['Wine']) && isset($_SESSION['Make-up'])) {
     setcookie('Quest7_1', false, time() + 2147483647, '', '', '', true);
 }
 
-if (!isset($_COOKIE['Quest7_2'])) {
-        setcookie('Quest7_2', false, time() + 2147483647, '', '', '', true);
+if (isset($_SESSION['CameraL'])) {
+        setcookie('Quest7_2', true, time() + 2147483647, '', '', '', true);
+} else {
+    setcookie('Quest7_2', false, time() + 2147483647, '', '', '', true);
 }
 
 if (isset($_COOKIE['Quest7_1']) AND isset($_COOKIE['Quest7_2'])) {

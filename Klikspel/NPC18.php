@@ -32,8 +32,8 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
 }
 
-if (!isset($_COOKIE['Quest18'])) {
-    setcookie('Quest18', false, time() + 2147483647, '', '', '', true);
+if (isset($_SESSION['Calucaltor']) AND isset($_SESSION['Notebook']) AND isset($_SESSION['Pen'])) {
+    setcookie('Quest18', true, time() + 2147483647, '', '', '', true);
 }
 
 if (isset($_COOKIE['Quest18'])) {

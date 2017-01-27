@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-24 10:31:01
+/* Smarty version 3.1.29, created on 2017-01-26 14:09:52
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Monster.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58871ed5402968_98023262',
+  'unifunc' => 'content_5889f520e0dec2_98896109',
   'file_dependency' => 
   array (
     '9edacefcb03fec5e3932add07fcc6040364d0bfb' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Monster.html.tpl',
-      1 => 1485246835,
+      1 => 1485435374,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58871ed5402968_98023262 ($_smarty_tpl) {
+function content_5889f520e0dec2_98896109 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -123,7 +123,7 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
                     <p>You found a <strong><?php echo $_smarty_tpl->tpl_vars['item']->value;?>
 </strong>!</p>
                     <p>You killed <strong><?php echo $_POST['monster'];?>
-</strong>! You gained <strong><?php echo $_smarty_tpl->tpl_vars['gold']->value;?>
+</strong>! You gained <strong><?php echo $_smarty_tpl->tpl_vars['gold1']->value;?>
 </strong> gold.</p>
                     <?php if ($_smarty_tpl->tpl_vars['area_id']->value == 1) {?>
                     <p><a href='lake.php'>Go to the lake</a></p>
@@ -137,6 +137,9 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
                         <?php } elseif ($_smarty_tpl->tpl_vars['area_id']->value == 5) {?>
                         <p><a href="PrisonBlockB.php"> Go on to block b</a></p>
                         <p><a href="PrisonHallKichten.php"> Go to the kichten</a></p>
+                    <?php } elseif ($_smarty_tpl->tpl_vars['area_id']->value == 6) {?>
+                        <p><a href="TownYard.php"> Go to the city </a></p>
+                        <p><a href="TownCave.php"> Go back to the cave</a></p>
                      <?php } else { ?>
                         <p><a href="Deck.php"> Go on the boat if you dare </a></p>
                         <p><a href="Nship.php"> Go to you`re boat </a></p>

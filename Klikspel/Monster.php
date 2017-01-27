@@ -48,6 +48,9 @@ if (isset($_SESSION['Cave'])) {
 if (isset($_SESSION['Prison'])) {
     $area_id = 5;
 }
+if (isset($_SESSION['Town'])) {
+    $area_id = 6;
+}
 
 // $area_id = (isset($_GET['area']) ? $_GET['area_id'] : 1);
 $query = sprintf("SELECT monster FROM area_monsters WHERE area = %s ORDER BY RAND() LIMIT 1",
@@ -222,6 +225,33 @@ switch ($monster) {
     case "George":
         $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/George.png'>";
         break;
+    case "GasTree":
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/GasTree.png'>";
+        break;
+    case "HumanLion":
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/HumanLion.png'>";
+        break;
+    case "MutatedCat":
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/MutatedCat.png'>";
+        break;
+    case "MutatedDog":
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/MutatedDog.png'>";
+        break;
+    case "MutatedTurtle":
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/MutatedTurtle.png'>";
+        break;
+    case "TreeTroll":
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/TreeTroll.png'>";
+        break;
+    case "TreeWolf":
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/TreeWolf.png'>";
+        break;
+    case "TreeMutant":
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/TreeMutant.png'>";
+        break;
+    case "TreeGod":
+        $image =  "<img class='Monster' src='http://localhost/Examplecode/Klikspel/img/TreeGod.png'>";
+        break;
     default:
         echo "<span style=\"color:#982356;\">Not the correct monster is showing </span>";
 }
@@ -295,7 +325,7 @@ if(isset($_POST['action'])) {
             // player won
             setStat('gc', $userID, getStat('gc', $userID) + getMonsterStat('gc', $monsterID));
             $smarty->assign('won', 1);
-            $smarty->assign('gold', getMonsterStat('gc', $monsterID));
+            $smarty->assign('gold1', getMonsterStat('gc', $monsterID));
             $rand = rand(0, 100);
             $query = sprintf("SELECT item_id FROM monster_items WHERE monster_id = %s AND rarity >= %s ORDER BY RAND() LIMIT 1",
                 mysqli_real_escape_string($mysqli, $monsterID),
@@ -362,6 +392,12 @@ if(isset($_POST['action'])) {
         }
         elseif (isset($_SESSION['BlockB'])) {
             header('Location: PrisonBlockB.php');
+        }
+        elseif (isset($_SESSION['CaveTown'])) {
+            header('Location: TownCave.php');
+        }
+        elseif (isset($_SESSION['TownYard'])) {
+            header('Location: TownYard.php');
         }
         else {
             header('Location: lake.php');

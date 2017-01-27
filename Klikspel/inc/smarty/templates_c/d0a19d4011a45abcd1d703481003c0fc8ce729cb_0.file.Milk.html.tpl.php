@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-25 10:56:43
+/* Smarty version 3.1.29, created on 2017-01-26 14:40:11
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Milk.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5888765b884b73_14534972',
+  'unifunc' => 'content_5889fc3bc63b72_36506089',
   'file_dependency' => 
   array (
     'd0a19d4011a45abcd1d703481003c0fc8ce729cb' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Milk.html.tpl',
-      1 => 1485337997,
+      1 => 1485350672,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5888765b884b73_14534972 ($_smarty_tpl) {
+function content_5889fc3bc63b72_36506089 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -120,9 +120,11 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
 
     <?php echo '<script'; ?>
  type="text/javascript">
-        document.getElementById('Npc11').innerHTML = "Coach Marieke: are you sure  <br>" +
-                "Perhaps you are look wrong <br>" +
-                "And i am not kidding about that";
+        if (window.name == "Marieke") {
+            document.getElementById('Npc11').innerHTML = "Coach Marieke: are you sure  <br>" +
+                    "Perhaps you are look wrong <br>" +
+                    "And i am not kidding about that";
+        }
     <?php echo '</script'; ?>
 >
 </div>

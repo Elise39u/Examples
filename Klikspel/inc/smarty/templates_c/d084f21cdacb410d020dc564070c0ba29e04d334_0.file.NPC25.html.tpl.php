@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-18 12:10:25
+/* Smarty version 3.1.29, created on 2017-01-27 10:13:46
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\NPC25.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_587f4d21c2db21_00163794',
+  'unifunc' => 'content_588b0f4af23581_61288722',
   'file_dependency' => 
   array (
     'd084f21cdacb410d020dc564070c0ba29e04d334' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\NPC25.html.tpl',
-      1 => 1484737820,
+      1 => 1485172644,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_587f4d21c2db21_00163794 ($_smarty_tpl) {
+function content_588b0f4af23581_61288722 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -47,6 +47,36 @@ function content_587f4d21c2db21_00163794 ($_smarty_tpl) {
 </strong>
         <li>Gold Inbank: <strong><?php echo $_smarty_tpl->tpl_vars['inbank']->value;?>
 </strong></li>
+    </ul>
+
+    <ul>
+        <p class="H1l">Npc`s in you`re party</p>
+        <?php
+$_from = $_smarty_tpl->tpl_vars['party']->value;
+if (!is_array($_from) && !is_object($_from)) {
+settype($_from, 'array');
+}
+$__foreach_i_0_saved_item = isset($_smarty_tpl->tpl_vars['i']) ? $_smarty_tpl->tpl_vars['i'] : false;
+$__foreach_i_0_saved_key = isset($_smarty_tpl->tpl_vars['id']) ? $_smarty_tpl->tpl_vars['id'] : false;
+$_smarty_tpl->tpl_vars['i'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['id'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['i']->_loop = false;
+foreach ($_from as $_smarty_tpl->tpl_vars['id']->value => $_smarty_tpl->tpl_vars['i']->value) {
+$_smarty_tpl->tpl_vars['i']->_loop = true;
+$__foreach_i_0_saved_local_item = $_smarty_tpl->tpl_vars['i'];
+?>
+            <li><?php echo $_smarty_tpl->tpl_vars['i']->value['name'];?>
+</li>
+        <?php
+$_smarty_tpl->tpl_vars['i'] = $__foreach_i_0_saved_local_item;
+}
+if ($__foreach_i_0_saved_item) {
+$_smarty_tpl->tpl_vars['i'] = $__foreach_i_0_saved_item;
+}
+if ($__foreach_i_0_saved_key) {
+$_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
+}
+?>
     </ul>
 
     <h1> Well i am Hans </h1>
@@ -77,14 +107,14 @@ $_from = $_smarty_tpl->tpl_vars['inventory']->value;
 if (!is_array($_from) && !is_object($_from)) {
 settype($_from, 'array');
 }
-$__foreach_i_0_saved_item = isset($_smarty_tpl->tpl_vars['i']) ? $_smarty_tpl->tpl_vars['i'] : false;
-$__foreach_i_0_saved_key = isset($_smarty_tpl->tpl_vars['id']) ? $_smarty_tpl->tpl_vars['id'] : false;
+$__foreach_i_1_saved_item = isset($_smarty_tpl->tpl_vars['i']) ? $_smarty_tpl->tpl_vars['i'] : false;
+$__foreach_i_1_saved_key = isset($_smarty_tpl->tpl_vars['id']) ? $_smarty_tpl->tpl_vars['id'] : false;
 $_smarty_tpl->tpl_vars['i'] = new Smarty_Variable();
 $_smarty_tpl->tpl_vars['id'] = new Smarty_Variable();
 $_smarty_tpl->tpl_vars['i']->_loop = false;
 foreach ($_from as $_smarty_tpl->tpl_vars['id']->value => $_smarty_tpl->tpl_vars['i']->value) {
 $_smarty_tpl->tpl_vars['i']->_loop = true;
-$__foreach_i_0_saved_local_item = $_smarty_tpl->tpl_vars['i'];
+$__foreach_i_1_saved_local_item = $_smarty_tpl->tpl_vars['i'];
 ?>
             <li> <?php echo $_smarty_tpl->tpl_vars['i']->value['player_id'];?>
  <?php echo $_smarty_tpl->tpl_vars['i']->value['item_id'];?>
@@ -92,13 +122,13 @@ $__foreach_i_0_saved_local_item = $_smarty_tpl->tpl_vars['i'];
  <?php echo $_smarty_tpl->tpl_vars['i']->value['quantity'];?>
  </li>
         <?php
-$_smarty_tpl->tpl_vars['i'] = $__foreach_i_0_saved_local_item;
+$_smarty_tpl->tpl_vars['i'] = $__foreach_i_1_saved_local_item;
 }
-if ($__foreach_i_0_saved_item) {
-$_smarty_tpl->tpl_vars['i'] = $__foreach_i_0_saved_item;
+if ($__foreach_i_1_saved_item) {
+$_smarty_tpl->tpl_vars['i'] = $__foreach_i_1_saved_item;
 }
-if ($__foreach_i_0_saved_key) {
-$_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
+if ($__foreach_i_1_saved_key) {
+$_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
 }
 ?>
     </ul>

@@ -32,8 +32,10 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
 }
 
-if (!isset($_COOKIE['Quest13'])) {
-        setcookie('Quest13', false, time() + 2147483647, '', '', '', true);
+if (isset($_SESSION['Laptop'])) {
+        setcookie('Quest13', true, time() + 2147483647, '', '', '', true);
+} else {
+    setcookie('Quest13', false, time() + 2147483647, '', '', '', true);
 }
 if (isset($_COOKIE['Quest13'])) {
     if ($_COOKIE['Quest13'] == true) {

@@ -49,6 +49,7 @@ unset($_SESSION['Sand']);
 unset($_SESSION['Station']);
 unset($_SESSION['Ship']);
 unset($_SESSION['Cave']);
+unset($_SESSION['Town']);
 
 $_SESSION['KichtenHall'] = true;
 unset($_SESSION['iel']);
@@ -60,6 +61,8 @@ unset($_SESSION['Yard']);
 unset($_SESSION['CaveEnd']);
 unset($_SESSION['Deck']);
 unset($_SESSION['BlockB']);
+unset($_SESSION['CaveTown']);
+unset($_SESSION['TownYard']);
 
 $smarty->assign('party', $party);
 $smarty->assign('inventory', $inventory);

@@ -25,7 +25,7 @@
     </ul>
 
     <h1> The WareHouse </h1>
-    <p> Why do i want to use items .... </p>
+    <p> Why do i want to use items ....</p>
     <img src="img/Warehous.png">
 
     <ul>
@@ -44,6 +44,11 @@
     {if isset($One)}
         {if $One ne ''}
             <p class="Got"> {$One} </p>
+        {/if}
+    {/if}
+    {if isset($Delete)}
+        {if $Delete ne ''}
+            <p class="Got"> {$Delete} </p>
         {/if}
     {/if}
     {if isset($Much)}

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-24 12:14:30
+/* Smarty version 3.1.29, created on 2017-01-26 10:42:37
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Street.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58873716ea4de7_52906804',
+  'unifunc' => 'content_5889c48d746af3_15222056',
   'file_dependency' => 
   array (
     '5036c34b61a3181cc05a81611b13b48e31e0e350' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Street.html.tpl',
-      1 => 1485256469,
+      1 => 1485423756,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58873716ea4de7_52906804 ($_smarty_tpl) {
+function content_5889c48d746af3_15222056 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -149,7 +149,7 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
 >
 <?php echo '<script'; ?>
  type="text/javascript">
-        $('#counter-1').timeTo(new Date('06 Feb 2017 09:00:00 GMT+0100 (West-Europa (standaardtijd))'));
+        $('#counter-1').timeTo(new Date('27 jan 2017 15:30:00 GMT+0100 (West-Europa (standaardtijd))'));
 
         $('#reset-1').click(function() {
             $('#counter-1').timeTo('reset');
