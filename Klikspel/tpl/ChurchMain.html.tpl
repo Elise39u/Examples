@@ -15,10 +15,13 @@
         <li>Gold in hand: <strong>{$gold}</strong></li>
         <li>Current HP: <strong>{$currentHP}/{$maximumHP}</strong>
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
+        <li>Current level: <strong>{$level}</strong></li>
+        <li>Experience: <strong>{$experience}</strong></li>
+        <li>Experience needed until level <strong>{$level+1}: {$exp_remaining}</strong></li>
     </ul>
 
     <ul>
-        <p class="H1l">Npc`s in you`re party</p>
+        <p class="H1l">Npc`s in your party</p>
         {foreach from=$party key=id item=i}
             <li>{$i.name}</li>
         {/foreach}
@@ -33,10 +36,10 @@
     <ul>
         <li><a href="ChurchYard.php"> Go back </a></li>
         <li><a href="ChurchDoor.php"> Go to the door </a></li>
-        <li><a href="#"> Go talk to Pastor Thijs </a></li>
-        <li><a href="#"> Go talk to Pregnant Zoëy </a></li>
-        <li><a href="#"> Go talk to teacher Levi </a></li>
-        <li><a href="#"> Go talk to singer Lucas  </a></li>
+        <li><a href="NPC42.php"> Go talk to Pastor Thijs </a></li>
+        <li><a href="Npc43.php"> Go talk to Pregnant Zoëy </a></li>
+        <li><a href="Npc44.php"> Go talk to teacher Levi </a></li>
+        <li><a href="Npc45.php"> Go talk to singer Lucas  </a></li>
     </ul>
 
     <ul>

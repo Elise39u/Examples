@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-26 09:59:28
+/* Smarty version 3.1.29, created on 2017-01-30 12:33:59
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\ChurchYard.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5889ba70374370_77114571',
+  'unifunc' => 'content_588f24a7d5a8b3_68412727',
   'file_dependency' => 
   array (
     'f614996356a0f405f7ca0b644fe8153136aaeb9e' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\ChurchYard.html.tpl',
-      1 => 1485421166,
+      1 => 1485776039,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5889ba70374370_77114571 ($_smarty_tpl) {
+function content_588f24a7d5a8b3_68412727 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -46,10 +46,17 @@ function content_5889ba70374370_77114571 ($_smarty_tpl) {
 </strong>
         <li>Gold Inbank: <strong><?php echo $_smarty_tpl->tpl_vars['inbank']->value;?>
 </strong></li>
+        <li>Current level: <strong><?php echo $_smarty_tpl->tpl_vars['level']->value;?>
+</strong></li>
+        <li>Experience: <strong><?php echo $_smarty_tpl->tpl_vars['experience']->value;?>
+</strong></li>
+        <li>Experience needed until level <strong><?php echo $_smarty_tpl->tpl_vars['level']->value+1;?>
+: <?php echo $_smarty_tpl->tpl_vars['exp_remaining']->value;?>
+</strong></li>
     </ul>
 
     <ul>
-        <p class="H1l">Npc`s in you`re party</p>
+        <p class="H1l">Npc`s in your party</p>
         <?php
 $_from = $_smarty_tpl->tpl_vars['party']->value;
 if (!is_array($_from) && !is_object($_from)) {
@@ -87,8 +94,8 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
     <ul>
         <li><a href="ChurchIS.php"> Go back </a></li>
         <li><a href="ChurchMain.php"> Go on in the church </a></li>
-        <li><a href="#"> Go talk to Kirsten </a></li>
-        <li><a href="#"> Go talk to Gardner Alex </a></li>
+        <li><a href="Npc40.php"> Go talk to Kirsten </a></li>
+        <li><a href="Npc41.php"> Go talk to Gardener Alex </a></li>
     </ul>
 
     <ul>

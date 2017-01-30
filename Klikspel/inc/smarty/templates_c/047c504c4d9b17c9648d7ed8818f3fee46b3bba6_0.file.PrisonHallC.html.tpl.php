@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-23 15:31:26
+/* Smarty version 3.1.29, created on 2017-01-30 15:50:38
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\PrisonHallC.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_588613beb9bfd2_22630403',
+  'unifunc' => 'content_588f52bed30711_04631874',
   'file_dependency' => 
   array (
     '047c504c4d9b17c9648d7ed8818f3fee46b3bba6' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\PrisonHallC.html.tpl',
-      1 => 1485181856,
+      1 => 1485770949,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_588613beb9bfd2_22630403 ($_smarty_tpl) {
+function content_588f52bed30711_04631874 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -46,10 +46,17 @@ function content_588613beb9bfd2_22630403 ($_smarty_tpl) {
 </strong>
         <li>Gold Inbank: <strong><?php echo $_smarty_tpl->tpl_vars['inbank']->value;?>
 </strong></li>
+        <li>Current level: <strong><?php echo $_smarty_tpl->tpl_vars['level']->value;?>
+</strong></li>
+        <li>Experience: <strong><?php echo $_smarty_tpl->tpl_vars['experience']->value;?>
+</strong></li>
+        <li>Experience needed until level <strong><?php echo $_smarty_tpl->tpl_vars['level']->value+1;?>
+: <?php echo $_smarty_tpl->tpl_vars['exp_remaining']->value;?>
+</strong></li>
     </ul>
 
     <ul>
-        <p class="H1l">Npc`s in you`re party</p>
+        <p class="H1l">Npc`s in your party</p>
         <?php
 $_from = $_smarty_tpl->tpl_vars['party']->value;
 if (!is_array($_from) && !is_object($_from)) {

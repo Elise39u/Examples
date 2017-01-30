@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-26 10:46:19
+/* Smarty version 3.1.29, created on 2017-01-30 14:35:23
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\ChurchMain.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5889c56b74e9f2_19056680',
+  'unifunc' => 'content_588f411bca8fe5_41356226',
   'file_dependency' => 
   array (
     '5e59d80b7063df6d12b2e417ed5d62098f3a04ef' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\ChurchMain.html.tpl',
-      1 => 1485423978,
+      1 => 1485782377,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5889c56b74e9f2_19056680 ($_smarty_tpl) {
+function content_588f411bca8fe5_41356226 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -46,10 +46,17 @@ function content_5889c56b74e9f2_19056680 ($_smarty_tpl) {
 </strong>
         <li>Gold Inbank: <strong><?php echo $_smarty_tpl->tpl_vars['inbank']->value;?>
 </strong></li>
+        <li>Current level: <strong><?php echo $_smarty_tpl->tpl_vars['level']->value;?>
+</strong></li>
+        <li>Experience: <strong><?php echo $_smarty_tpl->tpl_vars['experience']->value;?>
+</strong></li>
+        <li>Experience needed until level <strong><?php echo $_smarty_tpl->tpl_vars['level']->value+1;?>
+: <?php echo $_smarty_tpl->tpl_vars['exp_remaining']->value;?>
+</strong></li>
     </ul>
 
     <ul>
-        <p class="H1l">Npc`s in you`re party</p>
+        <p class="H1l">Npc`s in your party</p>
         <?php
 $_from = $_smarty_tpl->tpl_vars['party']->value;
 if (!is_array($_from) && !is_object($_from)) {
@@ -87,10 +94,10 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
     <ul>
         <li><a href="ChurchYard.php"> Go back </a></li>
         <li><a href="ChurchDoor.php"> Go to the door </a></li>
-        <li><a href="#"> Go talk to Pastor Thijs </a></li>
-        <li><a href="#"> Go talk to Pregnant Zoëy </a></li>
-        <li><a href="#"> Go talk to teacher Levi </a></li>
-        <li><a href="#"> Go talk to singer Lucas  </a></li>
+        <li><a href="NPC42.php"> Go talk to Pastor Thijs </a></li>
+        <li><a href="Npc43.php"> Go talk to Pregnant Zoëy </a></li>
+        <li><a href="Npc44.php"> Go talk to teacher Levi </a></li>
+        <li><a href="Npc45.php"> Go talk to singer Lucas  </a></li>
     </ul>
 
     <ul>

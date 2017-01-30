@@ -323,6 +323,58 @@ if(isset($_POST['action'])) {
         setStat('curhp', $userID, $player['curhp']);
         if ($player['curhp'] > 0) {
             // player won
+            $monster_exp = getMonsterStat('exp',$monsterID);
+            $smarty->assign('exp',$monster_exp);
+            $exp_rem = getStat('exp_rem',$userID);
+            $level = getStat('lvl',$userID);
+            $level_up = 0;
+            $level2 = 0;
+            $exp = getStat('exp',$userID);
+            $Lol = $monster_exp + $exp;
+            setStat('exp', $userID, $Lol);
+            $exp_rem -= $monster_exp;
+            if($exp >= $exp_rem) {
+                if ($level >= 10 && $level <= 30) {
+                $Upgrade_lvl = 5500+$exp_rem;
+                setStat('exp_rem', $userID, $Upgrade_lvl);
+                    unset($_SESSION['31t/m45']);
+                    unset($_SESSION['45+']);
+                    unset($_SESSION['10-']);
+                    $_SESSION['10t/m30'] = true;
+                } elseif ($level >= 31 && $level <= 45 ) {
+                    $Upgrade_lvl = 17500+$exp_rem;
+                    setStat('exp_rem', $userID, $Upgrade_lvl);
+                    unset($_SESSION['10t/m30']);
+                    unset($_SESSION['45+']);
+                    unset($_SESSION['-10']);
+                    $_SESSION['31t/m45'] = true;
+                }
+                elseif ($level >= 46) {
+                    $Upgrade_lvl = 450000+$exp_rem;
+                    setStat('exp_rem', $userID, $Upgrade_lvl);
+                    unset($_SESSION['31t/m45']);
+                    unset($_SESSION['10t/m30']);
+                    unset($_SESSION['-10']);
+                    $_SESSION['45+'] = true;
+                }
+                else {
+                    $Upgrade_lvl = 1750+$exp_rem;
+                    setStat('exp_rem', $userID, $Upgrade_lvl);
+                    unset($_SESSION['45+']);
+                    unset($_SESSION['10t/m30']);
+                    unset($_SESSION['31t/m45']);
+                    $_SESSION['-10'] = true;
+                }
+                $level +=1;
+                $level2 = 1;
+                $level_up = 1;
+                setStat('lvl',$userID,$level);
+            }
+            if (isset($level_up)) {
+                if ($level_up > 0) {
+                    $smarty->assign('level_up', $level_up);
+                }
+            }
             setStat('gc', $userID, getStat('gc', $userID) + getMonsterStat('gc', $monsterID));
             $smarty->assign('won', 1);
             $smarty->assign('gold1', getMonsterStat('gc', $monsterID));
@@ -423,6 +475,75 @@ else {
     array_push($party, $row);
 }
 
+$sql = mysqli_query($mysqli, "SELECT * FROM monster_stats WHERE stat_id = 15");
+$num_rows = mysqli_num_rows($sql);
+
+if ($num_rows == 0 ){
+    $query5 = "SELECT id FROM monsters";
+    $result4 = mysqli_query($mysqli, $query5);
+
+    while ($row = mysqli_fetch_array($result4)) {
+        $query6 = "INSERT INTO monster_stats(monster_id, stat_id, content) VALUES($row[0], 15, 100)";
+        mysqli_query($mysqli, $query6);
+    }
+}
+
+if (isset($_POST['submit'])) {
+    if (isset($_POST['Defense'])) {
+        $Defense = getStat('def', $userID);
+        global $Hai;
+        if (isset($_SESSION['-10'])) {
+            $Hai = $Defense + 50;
+        } elseif (isset($_SESSION['10t/m30'])) {
+            $Hai = $Defense + 150;
+        } elseif (isset($_SESSION['31t/m45'])) {
+            $Hai = $Defense + 500;
+        } elseif (isset($_SESSION['45+'])) {
+            $Hai = $Defense + 1500;
+        }
+        if (isset($Hai)) {
+            setStat('def', $userID, $Hai);
+        }
+        $smarty->assign('IncDef', 'Defense increased');
+    } elseif (isset($_POST['Attack'])) {
+        $Attack = getStat('atk', $userID);
+        global $Hai;
+        if (isset($_SESSION['-10'])) {
+            $Hai = $Attack + 50;
+        } elseif (isset($_SESSION['10t/m30'])) {
+            $Hai = $Attack + 150;
+        } elseif (isset($_SESSION['31t/m45'])) {
+            $Hai = $Attack + 500;
+        } elseif (isset($_SESSION['45+'])) {
+            $Hai = $Attack + 1500;
+        }
+        if (isset($Hai)) {
+            setStat('atk', $userID, $Hai);
+        }
+        $smarty->assign('IncAtk', 'Attack increased');
+    }
+    elseif (isset($_POST['MaxHP'])) {
+        global $Hai;
+        $MaxHP = getStat('maxhp', $userID);
+        if (isset($_SESSION['-10'])) {
+            $Hai = $MaxHP + 150;;
+        } elseif (isset($_SESSION['10t/m30'])) {
+            $Hai = $MaxHP + 500;
+        } elseif (isset($_SESSION['31t/m45'])) {
+            $Hai = $MaxHP + 1500;
+        } elseif (isset($_SESSION['45+'])) {
+            $Hai = $MaxHP + 7500;
+        }
+        if (isset($Hai)) {
+            setStat('maxhp', $userID, $Hai);
+        }
+        $smarty->assign('IncHP', 'Max Hp increased');
+    }
+}
+$smarty->assign('level',getStat('lvl',$userID));
+$smarty->assign('experience',getStat('exp',$userID));
+$smarty->assign('exp_remaining',getStat('exp_rem',$userID));
+$smarty->assign('party', $party);
 $smarty->assign('party', $party);
 $smarty->assign('combat', $combat);
 $smarty->assign('img', $image);

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-27 10:16:02
+/* Smarty version 3.1.29, created on 2017-01-30 16:26:59
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\TownMall.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_588b0fd2046956_94465575',
+  'unifunc' => 'content_588f5b43931540_32236295',
   'file_dependency' => 
   array (
     'e5f189045c90423272e197cd56b79571ebca7851' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\TownMall.html.tpl',
-      1 => 1485508463,
+      1 => 1485789967,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_588b0fd2046956_94465575 ($_smarty_tpl) {
+function content_588f5b43931540_32236295 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -46,10 +46,17 @@ function content_588b0fd2046956_94465575 ($_smarty_tpl) {
 </strong>
         <li>Gold Inbank: <strong><?php echo $_smarty_tpl->tpl_vars['inbank']->value;?>
 </strong></li>
+        <li>Current level: <strong><?php echo $_smarty_tpl->tpl_vars['level']->value;?>
+</strong></li>
+        <li>Experience: <strong><?php echo $_smarty_tpl->tpl_vars['experience']->value;?>
+</strong></li>
+        <li>Experience needed until level <strong><?php echo $_smarty_tpl->tpl_vars['level']->value+1;?>
+: <?php echo $_smarty_tpl->tpl_vars['exp_remaining']->value;?>
+</strong></li>
     </ul>
 
     <ul>
-        <p class="H1l">Npc`s in you`re party</p>
+        <p class="H1l">Npc`s in your party</p>
         <?php
 $_from = $_smarty_tpl->tpl_vars['party']->value;
 if (!is_array($_from) && !is_object($_from)) {
@@ -88,11 +95,14 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
         <li><a href="MediaMarkt.php"> Go to the MediaMarkt </a></li>
         <li><a href="Action.php"> Go to the Action </a></li>
         <li><a href="CandyStore.php"> Go to the Candy Store </a></li>
-        <li><a href="#"> Go talk to Pregnant Irene </a></li>
-        <li><a href="#"> Go talk to Shopper Kim </a></li>
+        <li><a href="Npc48.php"> Go talk to Pregnant Irene </a></li>
+        <li><a href="Npc49.php"> Go talk to Shopper Kim </a></li>
         <li><a href="#"> Go talk to Store owner Esremalda </a></li>
         <li><a href="#"> Go talk to Shopper Leo </a></li>
         <li><a href="#"> Go talk to Coach Justin </a></li>
+        <?php if (isset($_SESSION['Second'])) {?>
+            <li><a href="#"> Go on in the city </a></li>
+        <?php }?>
     </ul>
     <ul>
         <?php

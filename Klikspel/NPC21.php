@@ -50,7 +50,7 @@ if (!isset($_COOKIE['Quest21'])) {
     $query = mysqli_query($mysqli, $sql2);
     $row = $query->fetch_row();
 
-    if ($_SESSION['Emma2'] == true) {}
+    if (isset($_SESSION['Emma2'])) {if ($_SESSION['Emma2'] == true) {}}
     elseif (in_array("13", $row)) {
     $update = "UPDATE npc_stats SET stat_id = 14 WHERE npc_id = 21";
     mysqli_query($mysqli, $update);
@@ -101,6 +101,9 @@ else {
     array_push($party, $row);
 }
 
+$smarty->assign('level',getStat('lvl',$userID));
+$smarty->assign('experience',getStat('exp',$userID));
+$smarty->assign('exp_remaining',getStat('exp_rem',$userID));
 $smarty->assign('party', $party);
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));

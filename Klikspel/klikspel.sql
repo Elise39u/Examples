@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Gegenereerd op: 27 jan 2017 om 09:25
+-- Gegenereerd op: 30 jan 2017 om 15:30
 -- Serverversie: 5.7.9
 -- PHP-versie: 5.6.16
 
@@ -163,29 +163,27 @@ CREATE TABLE IF NOT EXISTS `inventory` (
   `space` int(254) NOT NULL,
   `quantity` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=421 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=522 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `inventory`
 --
 
 INSERT INTO `inventory` (`id`, `player_id`, `item_id`, `space`, `quantity`) VALUES
-(420, '2', 124, 35, 1),
-(419, '2', 127, 36, 3),
-(418, '2', 122, 37, 3),
-(417, '2', 123, 38, 2),
-(416, '2', 121, 39, 2),
-(415, '2', 117, 40, 2),
-(414, '2', 29, 29, 1),
-(413, '2', 39, 36, 1),
-(412, '2', 13, 43, 1),
-(411, '2', 118, 44, 4),
-(410, '2', 119, 45, 2),
-(409, '2', 120, 46, 1),
-(408, '2', 113, 47, 1),
-(407, '2', 114, 48, 1),
-(406, '2', 115, 49, 1),
-(405, '2', 58, 50, 1);
+(521, '2', 4, 37, 1),
+(520, '2', 66, 38, 1),
+(519, '2', 49, 39, 1),
+(518, '2', 8, 40, 1),
+(517, '2', 13, 41, 3),
+(516, '2', 83, 42, 1),
+(515, '2', 5, 43, 3),
+(514, '2', 58, 44, 2),
+(513, '2', 91, 45, 1),
+(512, '2', 9, 46, 1),
+(511, '2', 69, 47, 1),
+(510, '2', 1, 48, 2),
+(509, '2', 45, 49, 1),
+(508, '2', 100, 50, 4);
 
 -- --------------------------------------------------------
 
@@ -773,7 +771,7 @@ CREATE TABLE IF NOT EXISTS `monster_stats` (
   `stat_id` int(11) DEFAULT NULL,
   `content` text,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2534 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=2598 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `monster_stats`
@@ -1100,6 +1098,61 @@ INSERT INTO `monster_stats` (`id`, `monster_id`, `stat_id`, `content`) VALUES
 (2254, 29, 5, '100'),
 (2255, 29, 7, '100'),
 (2256, 29, 11, '100'),
+(2589, 54, 15, '190'),
+(2588, 53, 15, '350'),
+(2587, 52, 15, '450'),
+(2586, 51, 15, '3890'),
+(2585, 50, 15, '260'),
+(2584, 49, 15, '390'),
+(2583, 48, 15, '460'),
+(2582, 47, 15, '3800'),
+(2581, 46, 15, '330'),
+(2580, 45, 15, '120'),
+(2579, 44, 15, '170'),
+(2578, 43, 15, '1000'),
+(2577, 42, 15, '240'),
+(2576, 41, 15, '180'),
+(2575, 40, 15, '180'),
+(2574, 39, 15, '220'),
+(2573, 38, 15, '2800'),
+(2572, 37, 15, '800'),
+(2571, 36, 15, '1700'),
+(2570, 35, 15, '800'),
+(2569, 34, 15, '110'),
+(2568, 33, 15, '2200'),
+(2567, 32, 15, '100'),
+(2566, 31, 15, '100'),
+(2565, 30, 15, '100'),
+(2564, 29, 15, '230'),
+(2563, 28, 15, '930'),
+(2562, 27, 15, '140'),
+(2561, 26, 15, '15'),
+(2560, 25, 15, '15'),
+(2559, 24, 15, '120'),
+(2558, 23, 15, '20'),
+(2557, 22, 15, '125'),
+(2556, 21, 15, '1250'),
+(2555, 20, 15, '10'),
+(2554, 19, 15, '1000'),
+(2553, 18, 15, '1100'),
+(2552, 17, 15, '1800'),
+(2551, 16, 15, '100'),
+(2550, 15, 15, '1560'),
+(2549, 14, 15, '970'),
+(2548, 13, 15, '1000'),
+(2547, 12, 15, '1800'),
+(2546, 11, 15, '1950'),
+(2545, 10, 15, '1750'),
+(2544, 9, 15, '1750'),
+(2543, 8, 15, '5'),
+(2542, 7, 15, '100'),
+(2541, 6, 15, '2000'),
+(2540, 5, 15, '30'),
+(2539, 4, 15, '45'),
+(2538, 3, 15, '15'),
+(2537, 2, 15, '1500'),
+(2536, 1, 15, '10'),
+(2534, 4, 8, '100'),
 (2313, 65, 5, '100'),
 (2314, 65, 1, '100'),
 (2315, 65, 7, '100'),
@@ -1307,7 +1360,15 @@ INSERT INTO `monster_stats` (`id`, `monster_id`, `stat_id`, `content`) VALUES
 (2530, 60, 1, '2200000'),
 (2531, 60, 2, '15000000'),
 (2532, 60, 4, '100000000'),
-(2533, 60, 3, '2000000');
+(2533, 60, 3, '2000000'),
+(2590, 55, 15, '190'),
+(2591, 56, 15, '190'),
+(2592, 57, 15, '240'),
+(2593, 58, 15, '270'),
+(2594, 59, 15, '300'),
+(2595, 60, 15, '4500'),
+(2596, 2, 16, '100'),
+(2597, 2, 17, '100');
 
 -- --------------------------------------------------------
 
@@ -1322,7 +1383,7 @@ CREATE TABLE IF NOT EXISTS `npc` (
   `Place` varchar(1024) NOT NULL,
   `Bio` varchar(2048) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=40 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `npc`
@@ -1367,7 +1428,16 @@ INSERT INTO `npc` (`id`, `Name`, `Place`, `Bio`) VALUES
 (36, 'Student Jos', 'SchoolClass6.php', 'BIO: Well stranger i am Jos  <br>" +\n        "I studied It in holland IT for over 5 years <br>" +\n        "After i finshed that i went to studie It here in new york but yeah'),
 (37, 'Student Brain', 'SchoolClass6.php', 'BIO: Well stranger i am brain  <br>" +\n        "I studied It in holland IT for over 3 years <br>" +\n        "After i finshed that i went to studied It here in new york but yeah <br>" +\n        "i was almost done with my study here so i could go back'),
 (38, 'programmer Youri and Pieter', 'SchoolClass7.php', 'BIO: Hi there We are Youri and Pieter <br>" +\n        "We studied software development and for a job moved to new york <br>" +\n        "So we went togther on work search to new york and found a job" +\n        "Never nowing that would end this bad'),
-(39, 'teacher Ingrit', 'SchoolClass7.php', 'BIO: Well hi i am Ingrit <br>" +\n        "I teach here for at least 12,5 years now <br>" +\n        "Wat i teach are It and some lanuguge <br>" +\n        "Maby i did need a holliyday after all');
+(39, 'teacher Ingrit', 'SchoolClass7.php', 'BIO: Well hi i am Ingrit <br>" +\n        "I teach here for at least 12,5 years now <br>" +\n        "Wat i teach are It and some lanuguge <br>" +\n        "Maby i did need a holliyday after all'),
+(40, 'Kirsten', 'ChurchYard.php\r\n', 'BIO: Well i am Kirsten <br>" +\r\n        "I lived in this part of new york for 25 years now <br>" +\r\n        "I was born here studied here even had my job here <br>" +\r\n        "its so sad that this happen so i went directly to the church'),
+(41, 'Gardener Alex', 'ChurchYard.php', 'BIO: So i am alex and i am a gardener for the church <br>" +\r\n        "I do this job already for a decade now so its becomes quite boring sometimes <br>" +\r\n        "I was thinking about a new job but yeah this came and .........'),
+(42, 'Pastoor Thijs', 'ChurchMain.php', 'Well Hi there i am Pastoor of this church <br>" +\r\n        "Call me thijs By side i have been working here for around 25 years now <br>" +\r\n        "I swear that i never leave the church and so will i <br>" +\r\n        "By the way what do you want exactly'),
+(43, 'Pregnant Zoëy ', 'ChurchMain.php', 'BIO: I am Zoëy and i am 6 months pregnant now <br>" +\r\n        "You`re thinking great time to be pregnant he well no one saw this coming <br>" +\r\n        "So i am 27 years old and have a boyfriend called Patrick <br>" +\r\n        "I don`t if he is still alive or not'),
+(44, 'Teacher Levi', 'ChurchMain.php', 'BIO: Hi there i am Levi and i am teaching kids a decade now <br>" +\r\n        "SO i was born lived and grew up here in new york <br>" +\r\n        "For my college i went to mississippi fun place and a nice one <br>" +\r\n        "So i went back to new york to teach and here we are '),
+(45, 'Singer Lucas', 'ChurchMain.php\r\n', 'Well hi there i am Lucas <br>" +\n        "I song in a Koor already for 15 years now <br>" +\n        "We were stars for the church but once the outbreak canme <br>" +\n        "We split up and i ended in this church i don`t know how the rest has made it'),
+(46, 'Farmer Niels', 'TownMarket.php\r\n', 'BIO: Well a stranger come on i dont bit <br>" +\r\n        "Let me introduce myself i am Niels and i work as a farmer in this town <br>" +\r\n        "at least wat is left its one and all urbban city shit <br>" +\r\n        "So what brings you to this place'),
+(47, 'Mayor Ingge', 'TownMarket.php', 'BIO: Hi there i am the mayor <br>" +\r\n        "And my name is called innge and i am mayor for almost 3 decades now <br>" +\r\n        "This work is stressfull and even time consuming <br>" +\r\n        "So i you have a question asked it or go on'),
+(48, 'Pregnant Irene', 'TownMall.php', 'BIO: Well there i am Irene and i am 8 months pregnant <br>" +\r\n        "So you gusses is the paring time or something like that <br>" +\r\n        "Well i am 31 years old and had a boyfriend here called Fred <br>" +\r\n        "i don`t know if he made it we were gonna married in a few months but then this happened"');
 
 -- --------------------------------------------------------
 
@@ -1381,8 +1451,9 @@ CREATE TABLE IF NOT EXISTS `npc_stats` (
   `npc_id` int(11) NOT NULL,
   `stat_id` int(11) NOT NULL,
   `content` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=40 DEFAULT CHARSET=latin1;
+  PRIMARY KEY (`id`),
+  KEY `npc_id_index` (`npc_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `npc_stats`
@@ -1461,7 +1532,7 @@ CREATE TABLE IF NOT EXISTS `party_members` (
   `party_id` int(11) NOT NULL,
   `npc_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=48 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=50 DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -1478,7 +1549,7 @@ CREATE TABLE IF NOT EXISTS `player` (
   `Password` varchar(1024) NOT NULL,
   `Username` varchar(1024) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `player`
@@ -1487,7 +1558,8 @@ CREATE TABLE IF NOT EXISTS `player` (
 INSERT INTO `player` (`id`, `FirstName`, `LastName`, `Email`, `Password`, `Username`) VALUES
 (1, 'Ellen', 'Van de Laar', 'EllenLaar@hotmail,com', 'lololololo', 'EllenJustin'),
 (2, 'Justin', 'Van de Laar', 'justin555@live.nl', 'lololololo', 'juju125'),
-(3, 'Marieke', 'Van Zante', 'mvanzante@davinci.nl', 'Marieke999', 'Marieke43');
+(3, 'Marieke', 'Van Zante', 'mvanzante@davinci.nl', 'Marieke999', 'Marieke43'),
+(4, 'Test', 'Kees', 'Klaapie@hotmail,com', '1234567890', 'TestKees');
 
 -- --------------------------------------------------------
 
@@ -1502,7 +1574,7 @@ CREATE TABLE IF NOT EXISTS `player_stats` (
   `stat_id` int(11) DEFAULT NULL,
   `content` text,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=572 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=583 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `player_stats`
@@ -1516,10 +1588,10 @@ INSERT INTO `player_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
 (5, 1, 4, '300'),
 (6, 1, 7, '50'),
 (7, 1, 6, '25'),
-(545, 2, 9, '68'),
+(545, 2, 9, '63'),
 (571, 3, 9, ''),
 (570, 3, 8, ''),
-(544, 2, 8, '61'),
+(544, 2, 8, '65'),
 (569, 3, 11, '5000'),
 (506, 1, 8, ''),
 (568, 3, 3, '5260'),
@@ -1530,16 +1602,27 @@ INSERT INTO `player_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
 (563, 3, 4, '300'),
 (564, 3, 6, '25'),
 (562, 3, 5, '300'),
-(529, 2, 11, '50000000'),
-(528, 2, 3, '824801520'),
+(529, 2, 11, '5000'),
+(528, 2, 3, '615201950'),
 (527, 2, 7, '50'),
-(526, 2, 2, '7566993'),
-(525, 2, 1, '95016000'),
+(526, 2, 2, '4363450'),
+(525, 2, 1, '22524950'),
 (524, 2, 6, '25'),
-(523, 2, 4, '1687800'),
-(522, 2, 5, '1687800'),
+(523, 2, 4, '906450'),
+(522, 2, 5, '895615'),
 (565, 3, 1, '1080'),
-(510, 1, 11, '5000');
+(510, 1, 11, '5000'),
+(582, 2, 16, '102135'),
+(581, 2, 15, '90240'),
+(572, 4, 5, '175'),
+(573, 4, 4, '300'),
+(574, 4, 6, '25'),
+(575, 4, 1, '80'),
+(576, 4, 2, '100'),
+(577, 4, 7, '50'),
+(578, 4, 3, '1265'),
+(579, 4, 11, '5000'),
+(580, 2, 17, '37');
 
 -- --------------------------------------------------------
 
@@ -1555,7 +1638,7 @@ CREATE TABLE IF NOT EXISTS `quest` (
   `Gold` int(11) DEFAULT NULL,
   `Reward` varchar(1024) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=26 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=27 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `quest`
@@ -1586,7 +1669,8 @@ INSERT INTO `quest` (`id`, `Name`, `Npc_id`, `Gold`, `Reward`) VALUES
 (22, 'Hey Appel KNIFE', 25, 2670, 'NULL'),
 (23, 'Restarting Coaching', 27, 4500, 'NULL'),
 (24, 'Art Skills?', 31, 1250, 'M4a1-s, M4, Rpg'),
-(25, 'Connecting', 34, 1900, 'Light Cyan Potion');
+(25, 'Connecting', 34, 1900, 'Light Cyan Potion'),
+(26, 'Lost Husband', 48, 12000, 'NULL');
 
 -- --------------------------------------------------------
 
@@ -1600,7 +1684,7 @@ CREATE TABLE IF NOT EXISTS `stats` (
   `display_name` varchar(1024) NOT NULL,
   `short_name` varchar(1024) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `stats`
@@ -1619,7 +1703,10 @@ INSERT INTO `stats` (`id`, `display_name`, `short_name`) VALUES
 (11, 'Gold In Bank', 'bankgc'),
 (12, 'Item Use Token', 'token'),
 (13, 'Postion', 'pos'),
-(14, 'InParty', 'par');
+(14, 'InParty', 'par'),
+(15, 'Experience', 'exp'),
+(16, 'Experience Remaining', 'exp_rem'),
+(17, 'Level', 'lvl');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

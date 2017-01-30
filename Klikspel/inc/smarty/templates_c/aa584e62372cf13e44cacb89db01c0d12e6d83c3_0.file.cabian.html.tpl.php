@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-04 08:59:50
+/* Smarty version 3.1.29, created on 2017-01-30 13:43:33
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\cabian.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586cab76bcf638_27481365',
+  'unifunc' => 'content_588f34f5137644_65483800',
   'file_dependency' => 
   array (
     'aa584e62372cf13e44cacb89db01c0d12e6d83c3' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\cabian.html.tpl',
-      1 => 1483431426,
+      1 => 1485770949,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586cab76bcf638_27481365 ($_smarty_tpl) {
+function content_588f34f5137644_65483800 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -46,6 +46,43 @@ function content_586cab76bcf638_27481365 ($_smarty_tpl) {
 </strong>
         <li>Gold Inbank: <strong><?php echo $_smarty_tpl->tpl_vars['inbank']->value;?>
 </strong></li>
+        <li>Current level: <strong><?php echo $_smarty_tpl->tpl_vars['level']->value;?>
+</strong></li>
+        <li>Experience: <strong><?php echo $_smarty_tpl->tpl_vars['experience']->value;?>
+</strong></li>
+        <li>Experience needed until level <strong><?php echo $_smarty_tpl->tpl_vars['level']->value+1;?>
+: <?php echo $_smarty_tpl->tpl_vars['exp_remaining']->value;?>
+</strong></li>
+    </ul>
+
+    <ul>
+        <p class="H1l">Npc`s in your party</p>
+        <?php
+$_from = $_smarty_tpl->tpl_vars['party']->value;
+if (!is_array($_from) && !is_object($_from)) {
+settype($_from, 'array');
+}
+$__foreach_i_0_saved_item = isset($_smarty_tpl->tpl_vars['i']) ? $_smarty_tpl->tpl_vars['i'] : false;
+$__foreach_i_0_saved_key = isset($_smarty_tpl->tpl_vars['id']) ? $_smarty_tpl->tpl_vars['id'] : false;
+$_smarty_tpl->tpl_vars['i'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['id'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['i']->_loop = false;
+foreach ($_from as $_smarty_tpl->tpl_vars['id']->value => $_smarty_tpl->tpl_vars['i']->value) {
+$_smarty_tpl->tpl_vars['i']->_loop = true;
+$__foreach_i_0_saved_local_item = $_smarty_tpl->tpl_vars['i'];
+?>
+            <li><?php echo $_smarty_tpl->tpl_vars['i']->value['name'];?>
+</li>
+        <?php
+$_smarty_tpl->tpl_vars['i'] = $__foreach_i_0_saved_local_item;
+}
+if ($__foreach_i_0_saved_item) {
+$_smarty_tpl->tpl_vars['i'] = $__foreach_i_0_saved_item;
+}
+if ($__foreach_i_0_saved_key) {
+$_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
+}
+?>
     </ul>
 
     <h1> Cabian? </h1>
@@ -68,14 +105,14 @@ $_from = $_smarty_tpl->tpl_vars['inventory']->value;
 if (!is_array($_from) && !is_object($_from)) {
 settype($_from, 'array');
 }
-$__foreach_i_0_saved_item = isset($_smarty_tpl->tpl_vars['i']) ? $_smarty_tpl->tpl_vars['i'] : false;
-$__foreach_i_0_saved_key = isset($_smarty_tpl->tpl_vars['id']) ? $_smarty_tpl->tpl_vars['id'] : false;
+$__foreach_i_1_saved_item = isset($_smarty_tpl->tpl_vars['i']) ? $_smarty_tpl->tpl_vars['i'] : false;
+$__foreach_i_1_saved_key = isset($_smarty_tpl->tpl_vars['id']) ? $_smarty_tpl->tpl_vars['id'] : false;
 $_smarty_tpl->tpl_vars['i'] = new Smarty_Variable();
 $_smarty_tpl->tpl_vars['id'] = new Smarty_Variable();
 $_smarty_tpl->tpl_vars['i']->_loop = false;
 foreach ($_from as $_smarty_tpl->tpl_vars['id']->value => $_smarty_tpl->tpl_vars['i']->value) {
 $_smarty_tpl->tpl_vars['i']->_loop = true;
-$__foreach_i_0_saved_local_item = $_smarty_tpl->tpl_vars['i'];
+$__foreach_i_1_saved_local_item = $_smarty_tpl->tpl_vars['i'];
 ?>
             <li> <?php echo $_smarty_tpl->tpl_vars['i']->value['player_id'];?>
  <?php echo $_smarty_tpl->tpl_vars['i']->value['item_id'];?>
@@ -83,13 +120,13 @@ $__foreach_i_0_saved_local_item = $_smarty_tpl->tpl_vars['i'];
  <?php echo $_smarty_tpl->tpl_vars['i']->value['quantity'];?>
  </li>
         <?php
-$_smarty_tpl->tpl_vars['i'] = $__foreach_i_0_saved_local_item;
+$_smarty_tpl->tpl_vars['i'] = $__foreach_i_1_saved_local_item;
 }
-if ($__foreach_i_0_saved_item) {
-$_smarty_tpl->tpl_vars['i'] = $__foreach_i_0_saved_item;
+if ($__foreach_i_1_saved_item) {
+$_smarty_tpl->tpl_vars['i'] = $__foreach_i_1_saved_item;
 }
-if ($__foreach_i_0_saved_key) {
-$_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
+if ($__foreach_i_1_saved_key) {
+$_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
 }
 ?>
     </ul>

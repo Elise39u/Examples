@@ -141,6 +141,9 @@ else {
     array_push($party, $row);
 }
 
+$smarty->assign('level',getStat('lvl',$userID));
+$smarty->assign('experience',getStat('exp',$userID));
+$smarty->assign('exp_remaining',getStat('exp_rem',$userID));
 $smarty->assign('party', $party);
 $smarty->assign('curhp',getStat('curhp',$userID));
 $smarty->assign('maxhp',getStat('maxhp',$userID));

@@ -64,6 +64,9 @@ unset($_SESSION['CaveEnd']);
 unset($_SESSION['Deck']);
 unset($_SESSION['KichtenHall']);
 
+$smarty->assign('level',getStat('lvl',$userID));
+$smarty->assign('experience',getStat('exp',$userID));
+$smarty->assign('exp_remaining',getStat('exp_rem',$userID));
 $smarty->assign('party', $party);
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));

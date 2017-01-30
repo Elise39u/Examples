@@ -15,10 +15,13 @@
         <li>Gold in hand: <strong>{$gold}</strong></li>
         <li>Current HP: <strong>{$currentHP}/{$maximumHP}</strong>
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
+        <li>Current level: <strong>{$level}</strong></li>
+        <li>Experience: <strong>{$experience}</strong></li>
+        <li>Experience needed until level <strong>{$level+1}: {$exp_remaining}</strong></li>
     </ul>
 
     <ul>
-        <p class="H1l">Npc`s in you`re party</p>
+        <p class="H1l">Npc`s in your party</p>
         {foreach from=$party key=id item=i}
             <li>{$i.name}</li>
         {/foreach}
@@ -40,7 +43,25 @@
             {if isset($won)}
                 {if $won eq 1}
                     <p>You found a <strong>{$item}</strong>!</p>
-                    <p>You killed <strong>{$smarty.post.monster}</strong>! You gained <strong>{$gold1}</strong> gold.</p>
+                    <p>You killed <strong>{$smarty.post.monster}</strong>! You gained <strong>{$gold1}</strong> gold,
+                        and <strong>{$exp}</strong> experience.</p>
+                    {if isset($level_up)}
+                    {if $level_up eq 1}
+                        <p><strong>You gained a level!</strong></p>
+                        <form action="Monster.php" method="post">
+                            <ul>
+                             <p>Which stat do you want to increase?</p>
+                            <li> <p class="H1l"> Attack </p> </li>
+                            <li> <input type="radio" name="Attack" value="Attack"></li>
+                            <li> <p class="H1l"> Defense </p>  </li>
+                            <li> <input type="radio" name="Defense" value="Defense"></li>
+                            <li>  <p class="H1l"> MaxHP </p> </li>
+                            <li> <input type="radio" name="MaxHP" value="MaxHP"></li>
+                            <input type="submit" value="submit" name="submit">
+                                </ul>
+                        </form>
+                    {/if}
+                    {/if}
                     {if $area_id == 1}
                     <p><a href='lake.php'>Go to the lake</a></p>
                     <p><a href="Sand.php">Go  to some sand -.- </a> </p>
@@ -71,13 +92,23 @@
         {/if}
 
     {$img}
-
     <ul>
         {foreach from=$inventory key=id item=i}
             <li> {$i.player_id} {$i.item_id} {$i.space} {$i.quantity} </li>
         {/foreach}
     </ul>
 
+
+
+    {if isset($IncDef)}
+        <p style="color: blue"> {$IncDef} </p>
+    {/if}
+    {if isset($IncAtk)}
+        <p style="color: blue"> {$IncAtk} </p>
+    {/if}
+    {if isset($IncHP)}
+        <p style="color: blue"> {$IncHP} </p>
+    {/if}
 </div>
 </body>
 </html>

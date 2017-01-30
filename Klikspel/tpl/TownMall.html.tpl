@@ -15,10 +15,13 @@
         <li>Gold in hand: <strong>{$gold}</strong></li>
         <li>Current HP: <strong>{$currentHP}/{$maximumHP}</strong>
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
+        <li>Current level: <strong>{$level}</strong></li>
+        <li>Experience: <strong>{$experience}</strong></li>
+        <li>Experience needed until level <strong>{$level+1}: {$exp_remaining}</strong></li>
     </ul>
 
     <ul>
-        <p class="H1l">Npc`s in you`re party</p>
+        <p class="H1l">Npc`s in your party</p>
         {foreach from=$party key=id item=i}
             <li>{$i.name}</li>
         {/foreach}
@@ -34,11 +37,14 @@
         <li><a href="MediaMarkt.php"> Go to the MediaMarkt </a></li>
         <li><a href="Action.php"> Go to the Action </a></li>
         <li><a href="CandyStore.php"> Go to the Candy Store </a></li>
-        <li><a href="#"> Go talk to Pregnant Irene </a></li>
-        <li><a href="#"> Go talk to Shopper Kim </a></li>
+        <li><a href="Npc48.php"> Go talk to Pregnant Irene </a></li>
+        <li><a href="Npc49.php"> Go talk to Shopper Kim </a></li>
         <li><a href="#"> Go talk to Store owner Esremalda </a></li>
         <li><a href="#"> Go talk to Shopper Leo </a></li>
         <li><a href="#"> Go talk to Coach Justin </a></li>
+        {if isset($smarty.session.Second)}
+            <li><a href="#"> Go on in the city </a></li>
+        {/if}
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

@@ -16,10 +16,13 @@
         <li>Gold in hand: <strong>{$gold}</strong></li>
         <li>Current HP: <strong>{$currentHP}/{$maximumHP}</strong>
         <li>Gold Inbank: <strong>{$inbank}</strong></li>
+        <li>Current level: <strong>{$level}</strong></li>
+        <li>Experience: <strong>{$experience}</strong></li>
+        <li>Experience needed until level <strong>{$level+1}: {$exp_remaining}</strong></li>
     </ul>
 
     <ul>
-        <p class="H1l">Npc`s in you`re party</p>
+        <p class="H1l">Npc`s in your party</p>
         {foreach from=$party key=id item=i}
             <li>{$i.name}</li>
         {/foreach}
@@ -61,7 +64,7 @@
 <script>window.jQuery || document.write('<script src="JS/jquery.min.js"><\/script>')</script>
 <script src="JS/jquery.time-to.js"></script>
 <script type="text/javascript">
-        $('#counter-1').timeTo(new Date('27 jan 2017 15:30:00 GMT+0100 (West-Europa (standaardtijd))'));
+        $('#counter-1').timeTo(new Date('6 Feb 2017 10:00:00 GMT+0100 (West-Europa (standaardtijd))'));
 
         $('#reset-1').click(function() {
             $('#counter-1').timeTo('reset');

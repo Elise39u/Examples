@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-26 14:09:52
+/* Smarty version 3.1.29, created on 2017-01-30 12:28:29
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Monster.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5889f520e0dec2_98896109',
+  'unifunc' => 'content_588f235db15ca6_08878957',
   'file_dependency' => 
   array (
     '9edacefcb03fec5e3932add07fcc6040364d0bfb' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Monster.html.tpl',
-      1 => 1485435374,
+      1 => 1485775707,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5889f520e0dec2_98896109 ($_smarty_tpl) {
+function content_588f235db15ca6_08878957 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -46,10 +46,17 @@ function content_5889f520e0dec2_98896109 ($_smarty_tpl) {
 </strong>
         <li>Gold Inbank: <strong><?php echo $_smarty_tpl->tpl_vars['inbank']->value;?>
 </strong></li>
+        <li>Current level: <strong><?php echo $_smarty_tpl->tpl_vars['level']->value;?>
+</strong></li>
+        <li>Experience: <strong><?php echo $_smarty_tpl->tpl_vars['experience']->value;?>
+</strong></li>
+        <li>Experience needed until level <strong><?php echo $_smarty_tpl->tpl_vars['level']->value+1;?>
+: <?php echo $_smarty_tpl->tpl_vars['exp_remaining']->value;?>
+</strong></li>
     </ul>
 
     <ul>
-        <p class="H1l">Npc`s in you`re party</p>
+        <p class="H1l">Npc`s in your party</p>
         <?php
 $_from = $_smarty_tpl->tpl_vars['party']->value;
 if (!is_array($_from) && !is_object($_from)) {
@@ -124,7 +131,26 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
 </strong>!</p>
                     <p>You killed <strong><?php echo $_POST['monster'];?>
 </strong>! You gained <strong><?php echo $_smarty_tpl->tpl_vars['gold1']->value;?>
-</strong> gold.</p>
+</strong> gold,
+                        and <strong><?php echo $_smarty_tpl->tpl_vars['exp']->value;?>
+</strong> experience.</p>
+                    <?php if (isset($_smarty_tpl->tpl_vars['level_up']->value)) {?>
+                    <?php if ($_smarty_tpl->tpl_vars['level_up']->value == 1) {?>
+                        <p><strong>You gained a level!</strong></p>
+                        <form action="Monster.php" method="post">
+                            <ul>
+                             <p>Which stat do you want to increase?</p>
+                            <li> <p class="H1l"> Attack </p> </li>
+                            <li> <input type="radio" name="Attack" value="Attack"></li>
+                            <li> <p class="H1l"> Defense </p>  </li>
+                            <li> <input type="radio" name="Defense" value="Defense"></li>
+                            <li>  <p class="H1l"> MaxHP </p> </li>
+                            <li> <input type="radio" name="MaxHP" value="MaxHP"></li>
+                            <input type="submit" value="submit" name="submit">
+                                </ul>
+                        </form>
+                    <?php }?>
+                    <?php }?>
                     <?php if ($_smarty_tpl->tpl_vars['area_id']->value == 1) {?>
                     <p><a href='lake.php'>Go to the lake</a></p>
                     <p><a href="Sand.php">Go  to some sand -.- </a> </p>
@@ -156,7 +182,6 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
         <?php }?>
 
     <?php echo $_smarty_tpl->tpl_vars['img']->value;?>
-
 
     <ul>
         <?php
@@ -190,6 +215,20 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_2_saved_key;
 ?>
     </ul>
 
+
+
+    <?php if (isset($_smarty_tpl->tpl_vars['IncDef']->value)) {?>
+        <p style="color: blue"> <?php echo $_smarty_tpl->tpl_vars['IncDef']->value;?>
+ </p>
+    <?php }?>
+    <?php if (isset($_smarty_tpl->tpl_vars['IncAtk']->value)) {?>
+        <p style="color: blue"> <?php echo $_smarty_tpl->tpl_vars['IncAtk']->value;?>
+ </p>
+    <?php }?>
+    <?php if (isset($_smarty_tpl->tpl_vars['IncHP']->value)) {?>
+        <p style="color: blue"> <?php echo $_smarty_tpl->tpl_vars['IncHP']->value;?>
+ </p>
+    <?php }?>
 </div>
 </body>
 </html><?php }

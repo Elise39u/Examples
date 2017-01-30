@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-26 10:42:37
+/* Smarty version 3.1.29, created on 2017-01-30 11:24:18
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Street.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5889c48d746af3_15222056',
+  'unifunc' => 'content_588f14529aad52_23657809',
   'file_dependency' => 
   array (
     '5036c34b61a3181cc05a81611b13b48e31e0e350' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Street.html.tpl',
-      1 => 1485423756,
+      1 => 1485771857,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5889c48d746af3_15222056 ($_smarty_tpl) {
+function content_588f14529aad52_23657809 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -47,10 +47,17 @@ function content_5889c48d746af3_15222056 ($_smarty_tpl) {
 </strong>
         <li>Gold Inbank: <strong><?php echo $_smarty_tpl->tpl_vars['inbank']->value;?>
 </strong></li>
+        <li>Current level: <strong><?php echo $_smarty_tpl->tpl_vars['level']->value;?>
+</strong></li>
+        <li>Experience: <strong><?php echo $_smarty_tpl->tpl_vars['experience']->value;?>
+</strong></li>
+        <li>Experience needed until level <strong><?php echo $_smarty_tpl->tpl_vars['level']->value+1;?>
+: <?php echo $_smarty_tpl->tpl_vars['exp_remaining']->value;?>
+</strong></li>
     </ul>
 
     <ul>
-        <p class="H1l">Npc`s in you`re party</p>
+        <p class="H1l">Npc`s in your party</p>
         <?php
 $_from = $_smarty_tpl->tpl_vars['party']->value;
 if (!is_array($_from) && !is_object($_from)) {
@@ -149,7 +156,7 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
 >
 <?php echo '<script'; ?>
  type="text/javascript">
-        $('#counter-1').timeTo(new Date('27 jan 2017 15:30:00 GMT+0100 (West-Europa (standaardtijd))'));
+        $('#counter-1').timeTo(new Date('6 Feb 2017 10:00:00 GMT+0100 (West-Europa (standaardtijd))'));
 
         $('#reset-1').click(function() {
             $('#counter-1').timeTo('reset');

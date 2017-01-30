@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-26 16:03:13
+/* Smarty version 3.1.29, created on 2017-01-30 15:35:40
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\TownMarket.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_588a0fb1a7b361_36597602',
+  'unifunc' => 'content_588f4f3c713f42_35739313',
   'file_dependency' => 
   array (
     '41c1921ed42120411ad0a89ac308dfc8d88ff865' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\TownMarket.html.tpl',
-      1 => 1485442993,
+      1 => 1485786937,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_588a0fb1a7b361_36597602 ($_smarty_tpl) {
+function content_588f4f3c713f42_35739313 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -46,10 +46,17 @@ function content_588a0fb1a7b361_36597602 ($_smarty_tpl) {
 </strong>
         <li>Gold Inbank: <strong><?php echo $_smarty_tpl->tpl_vars['inbank']->value;?>
 </strong></li>
+        <li>Current level: <strong><?php echo $_smarty_tpl->tpl_vars['level']->value;?>
+</strong></li>
+        <li>Experience: <strong><?php echo $_smarty_tpl->tpl_vars['experience']->value;?>
+</strong></li>
+        <li>Experience needed until level <strong><?php echo $_smarty_tpl->tpl_vars['level']->value+1;?>
+: <?php echo $_smarty_tpl->tpl_vars['exp_remaining']->value;?>
+</strong></li>
     </ul>
 
     <ul>
-        <p class="H1l">Npc`s in you`re party</p>
+        <p class="H1l">Npc`s in your party</p>
         <?php
 $_from = $_smarty_tpl->tpl_vars['party']->value;
 if (!is_array($_from) && !is_object($_from)) {
@@ -87,8 +94,8 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
     <ul>
         <li><a href="TownYard.php"> Go back  </a></li>
         <li><a href="TownMall.php"> Go towards the mall </a></li>
-        <li><a href="#"> Go talk to Farmer Niels </a></li>
-        <li><a href="#"> Go talk to Mayor Innge </a></li>
+        <li><a href="Npc46.php"> Go talk to Farmer Niels </a></li>
+        <li><a href="Npc47.php"> Go talk to Mayor Innge </a></li>
     </ul>
     <ul>
         <?php

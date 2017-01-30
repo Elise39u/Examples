@@ -33,6 +33,9 @@ if (isset($_SESSION['username'])) {
         setStat('bankgc', $userID, '5000');
         setStat('phand', $userID, '');
         setStat('shand', $userID, '');
+        setStat('lvl',$userID,'1');
+        setStat('exp',$userID,'0');
+        setStat('exp_rem',$userID,'1500');
         $sql3 = sprintf("DELETE FROM inventory WHERE player_id = (SELECT id FROM player WHERE username = '%s')",
             mysqli_real_escape_string($mysqli, $_SESSION['username']));
         mysqli_query($mysqli, $sql3);
@@ -113,6 +116,9 @@ if (isset($_POST['submit'])) {
             setStat('mdef', $userID, '50');
             setStat('gc', $userID, '250');
             setStat('bankgc', $userID, '5000');
+            setStat('lvl',$userID,'1');
+            setStat('exp',$userID,'0');
+            setStat('exp_rem',$userID,'1500');
         }
     }
 }
@@ -147,6 +153,10 @@ $sql5 = sprintf("DELETE FROM party_members WHERE party_id = (SELECT id FROM part
     mysqli_real_escape_string($mysqli, $_SESSION['username']));
 mysqli_query($mysqli, $sql5);
 
+
+$smarty->assign('level',getStat('lvl',$userID));
+$smarty->assign('experience',getStat('exp',$userID));
+$smarty->assign('exp_remaining',getStat('exp_rem',$userID));
 $smarty->assign('party', $party);
 $smarty->assign('inventory', $inventory);
 $smarty->assign('attack',getStat('atk',$userID));
