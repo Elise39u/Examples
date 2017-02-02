@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Gegenereerd op: 30 jan 2017 om 15:30
+-- Gegenereerd op: 02 feb 2017 om 15:27
 -- Serverversie: 5.7.9
 -- PHP-versie: 5.6.16
 
@@ -152,6 +152,55 @@ INSERT INTO `area_monsters` (`id`, `area`, `monster`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Tabelstructuur voor tabel `chopper_choices`
+--
+
+DROP TABLE IF EXISTS `chopper_choices`;
+CREATE TABLE IF NOT EXISTS `chopper_choices` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(1024) NOT NULL,
+  `from_id` int(11) NOT NULL,
+  `to_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `chopper_choices`
+--
+
+INSERT INTO `chopper_choices` (`id`, `name`, `from_id`, `to_id`) VALUES
+(1, 'Poilce Station', 1, 2),
+(2, 'Electro Store', 1, 3),
+(3, 'Carrier', 2, 1),
+(4, 'Electro Store', 2, 3),
+(5, 'Police Station', 3, 2),
+(6, 'Carrier', 3, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `chopper_location`
+--
+
+DROP TABLE IF EXISTS `chopper_location`;
+CREATE TABLE IF NOT EXISTS `chopper_location` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `place_name` varchar(1024) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `chopper_location`
+--
+
+INSERT INTO `chopper_location` (`id`, `place_name`) VALUES
+(1, 'Deck.php'),
+(2, 'Roof.php'),
+(3, 'eroof.php\r\n');
+
+-- --------------------------------------------------------
+
+--
 -- Tabelstructuur voor tabel `inventory`
 --
 
@@ -163,27 +212,18 @@ CREATE TABLE IF NOT EXISTS `inventory` (
   `space` int(254) NOT NULL,
   `quantity` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=522 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=579 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `inventory`
 --
 
 INSERT INTO `inventory` (`id`, `player_id`, `item_id`, `space`, `quantity`) VALUES
-(521, '2', 4, 37, 1),
-(520, '2', 66, 38, 1),
-(519, '2', 49, 39, 1),
-(518, '2', 8, 40, 1),
-(517, '2', 13, 41, 3),
-(516, '2', 83, 42, 1),
-(515, '2', 5, 43, 3),
-(514, '2', 58, 44, 2),
-(513, '2', 91, 45, 1),
-(512, '2', 9, 46, 1),
-(511, '2', 69, 47, 1),
-(510, '2', 1, 48, 2),
-(509, '2', 45, 49, 1),
-(508, '2', 100, 50, 4);
+(578, '2', 8, 46, 1),
+(574, '2', 66, 50, 1),
+(575, '2', 58, 49, 1),
+(576, '2', 45, 48, 1),
+(577, '2', 69, 47, 1);
 
 -- --------------------------------------------------------
 
@@ -1383,7 +1423,7 @@ CREATE TABLE IF NOT EXISTS `npc` (
   `Place` varchar(1024) NOT NULL,
   `Bio` varchar(2048) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=58 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `npc`
@@ -1437,7 +1477,16 @@ INSERT INTO `npc` (`id`, `Name`, `Place`, `Bio`) VALUES
 (45, 'Singer Lucas', 'ChurchMain.php\r\n', 'Well hi there i am Lucas <br>" +\n        "I song in a Koor already for 15 years now <br>" +\n        "We were stars for the church but once the outbreak canme <br>" +\n        "We split up and i ended in this church i don`t know how the rest has made it'),
 (46, 'Farmer Niels', 'TownMarket.php\r\n', 'BIO: Well a stranger come on i dont bit <br>" +\r\n        "Let me introduce myself i am Niels and i work as a farmer in this town <br>" +\r\n        "at least wat is left its one and all urbban city shit <br>" +\r\n        "So what brings you to this place'),
 (47, 'Mayor Ingge', 'TownMarket.php', 'BIO: Hi there i am the mayor <br>" +\r\n        "And my name is called innge and i am mayor for almost 3 decades now <br>" +\r\n        "This work is stressfull and even time consuming <br>" +\r\n        "So i you have a question asked it or go on'),
-(48, 'Pregnant Irene', 'TownMall.php', 'BIO: Well there i am Irene and i am 8 months pregnant <br>" +\r\n        "So you gusses is the paring time or something like that <br>" +\r\n        "Well i am 31 years old and had a boyfriend here called Fred <br>" +\r\n        "i don`t know if he made it we were gonna married in a few months but then this happened"');
+(48, 'Pregnant Irene', 'TownMall.php', 'BIO: Well there i am Irene and i am 8 months pregnant <br>" +\r\n        "So you gusses is the paring time or something like that <br>" +\r\n        "Well i am 31 years old and had a boyfriend here called Fred <br>" +\r\n        "i don`t know if he made it we were gonna married in a few months but then this happened"'),
+(49, 'Shopper Kim', 'TownMall.php', 'BIO: Well hi there i am Kim <br>" +\r\n        "I know i have a addiction but shopping is so much fun <br>" +\r\n        "And i am only 24 years old but lot omy friends  aren`t in to it <br>" +\r\n        "But i like it and that is enough'),
+(50, 'Store Owner Esremalda', 'TownMall.php', 'BIO: Well Well Well i am Esremalda <br>" +\r\n        "I Owned a store for over the past 15 years and then they came <br>" +\r\n        "They ruined everything and now i am stuck here <br>" +\r\n        "At least i hope someone made it out alive'),
+(51, 'Shopper Leo', 'TownMall.php', 'BIO: Hi there i am Leo <br>" +\r\n        "I lived here in new york for over 35 years now <br>" +\r\n        "Born, worked, colleage, everything i did in this city <br>" +\r\n        "I want to know if the family van de Laar made it out'),
+(52, 'Coach Justin', 'TownMall.php', 'BIO: Hi there i am Justin and i am currently 18 years old <br>" +\r\n        "I was on holiday here together with Marieke and Jeroen and Corine <br>" +\r\n        "They invited me and thought well why no after so time <br>" +\r\n        "and now i am stuck here at least knowing they are alive'),
+(53, 'Head Prisoner David', 'PrisonYard.php', 'BIO: Well Well its always nice to see a newby <br>" +\r\n        "My name is David and i am in charge here so if you need anything ask me <br>" +\r\n        "But i heard you guys looking for a way out so perhaps we can make a deal <br>" +\r\n        "And yes you can trust me'),
+(54, 'Prisoner Guard Mike', 'PrisonYard.php', 'BIO: Well i am Mike and i have been locked here for 5 years <br>" +\r\n        "I did murder someone ou there and had to sit for 25 years <br>" +\r\n        "But when the outbreak cam we took the chance and grab for power <br>" +\r\n        "The last are here and were stuck here'),
+(55, 'Prisoner James', 'PrinsonYard.php', 'BIO: Well I am james and i am stuck here for over 10 years now <br>" +\r\n        "I hate it hear but David says there wil be a way out some time <br>" +\r\n        "I hope that will be soon enough'),
+(56, 'Search Prisoner Ken', 'PrisonYard.php', 'BIO: I am Ken i have lurking around the prison for a while now <br>" +\r\n        "i started when the outbreak came and did to see where we could stay <br>" +\r\n        "Ending up here was not the goal'),
+(57, 'Empty', 'NULL', NULL);
 
 -- --------------------------------------------------------
 
@@ -1453,7 +1502,7 @@ CREATE TABLE IF NOT EXISTS `npc_stats` (
   `content` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `npc_id_index` (`npc_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=58 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `npc_stats`
@@ -1469,8 +1518,8 @@ INSERT INTO `npc_stats` (`id`, `npc_id`, `stat_id`, `content`) VALUES
 (7, 7, 13, NULL),
 (8, 8, 13, NULL),
 (9, 9, 13, NULL),
-(10, 10, 13, NULL),
-(11, 11, 13, NULL),
+(10, 10, 14, NULL),
+(11, 11, 14, NULL),
 (12, 12, 13, NULL),
 (13, 13, 13, NULL),
 (14, 14, 13, NULL),
@@ -1498,7 +1547,25 @@ INSERT INTO `npc_stats` (`id`, `npc_id`, `stat_id`, `content`) VALUES
 (36, 36, 13, NULL),
 (37, 37, 13, NULL),
 (38, 38, 13, NULL),
-(39, 39, 13, NULL);
+(39, 39, 13, NULL),
+(40, 40, 13, NULL),
+(41, 41, 13, NULL),
+(42, 42, 13, NULL),
+(43, 43, 13, NULL),
+(44, 44, 13, NULL),
+(45, 45, 13, NULL),
+(46, 46, 13, NULL),
+(47, 47, 13, NULL),
+(48, 48, 13, NULL),
+(49, 49, 13, NULL),
+(50, 50, 13, NULL),
+(51, 51, 13, NULL),
+(52, 52, 14, NULL),
+(53, 53, 13, NULL),
+(54, 54, 13, NULL),
+(55, 55, 13, NULL),
+(56, 56, 13, NULL),
+(57, 57, 13, NULL);
 
 -- --------------------------------------------------------
 
@@ -1532,7 +1599,16 @@ CREATE TABLE IF NOT EXISTS `party_members` (
   `party_id` int(11) NOT NULL,
   `npc_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=50 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=59 DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `party_members`
+--
+
+INSERT INTO `party_members` (`id`, `party_id`, `npc_id`) VALUES
+(58, 1, 52),
+(57, 1, 11),
+(55, 1, 10);
 
 -- --------------------------------------------------------
 
@@ -1602,18 +1678,18 @@ INSERT INTO `player_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
 (563, 3, 4, '300'),
 (564, 3, 6, '25'),
 (562, 3, 5, '300'),
-(529, 2, 11, '5000'),
-(528, 2, 3, '615201950'),
+(529, 2, 11, '40000'),
+(528, 2, 3, '6698684086'),
 (527, 2, 7, '50'),
-(526, 2, 2, '4363450'),
-(525, 2, 1, '22524950'),
+(526, 2, 2, '4363610'),
+(525, 2, 1, '27832950'),
 (524, 2, 6, '25'),
-(523, 2, 4, '906450'),
-(522, 2, 5, '895615'),
+(523, 2, 4, '19282950'),
+(522, 2, 5, '19282845'),
 (565, 3, 1, '1080'),
 (510, 1, 11, '5000'),
-(582, 2, 16, '102135'),
-(581, 2, 15, '90240'),
+(582, 2, 16, '131835'),
+(581, 2, 15, '123360'),
 (572, 4, 5, '175'),
 (573, 4, 4, '300'),
 (574, 4, 6, '25'),
@@ -1622,7 +1698,7 @@ INSERT INTO `player_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
 (577, 4, 7, '50'),
 (578, 4, 3, '1265'),
 (579, 4, 11, '5000'),
-(580, 2, 17, '37');
+(580, 2, 17, '39');
 
 -- --------------------------------------------------------
 
@@ -1638,7 +1714,7 @@ CREATE TABLE IF NOT EXISTS `quest` (
   `Gold` int(11) DEFAULT NULL,
   `Reward` varchar(1024) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=27 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=31 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `quest`
@@ -1670,7 +1746,11 @@ INSERT INTO `quest` (`id`, `Name`, `Npc_id`, `Gold`, `Reward`) VALUES
 (23, 'Restarting Coaching', 27, 4500, 'NULL'),
 (24, 'Art Skills?', 31, 1250, 'M4a1-s, M4, Rpg'),
 (25, 'Connecting', 34, 1900, 'Light Cyan Potion'),
-(26, 'Lost Husband', 48, 12000, 'NULL');
+(26, 'Lost Husband', 48, 12000, 'NULL'),
+(27, 'Reuinted once agian', 52, 15000, 'Npc52 --> Schoolclass1'),
+(28, 'gang Up', 53, 14500, 'Acces to block b'),
+(29, 'Food And Drinks', 52, 3500, 'Thourgh Yard to the kichten'),
+(30, 'Weaponry', 53, 17800, 'Prison BLock D');
 
 -- --------------------------------------------------------
 

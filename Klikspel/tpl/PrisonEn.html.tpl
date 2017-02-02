@@ -35,6 +35,9 @@
         <li><a href="PrisonHallA.php"> Go towards Block A </a></li>
         <li><a href="PrisonHallB.php"> Go towards Block B </a></li>
         <li><a href="PrisonHallC.php"> Go towards Block C </a></li>
+        {if isset($smarty.session.BlockD)}
+            <li><a href="PrisonHallD.php"> Go towards Block D </a></li>
+        {/if}
         <li><a href="PrisonDocks.php"> Go outside </a></li>
     </ul>
     <ul>

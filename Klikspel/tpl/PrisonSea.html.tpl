@@ -34,7 +34,11 @@
     <img src="img/MineRivier.png">
     <ul>
         <li><a href="HotelDocks.php"> Go back </a></li>
-        <li><a href="Mine.php"> try the chane </a></li>
+        {if isset($smarty.session.Weird)}
+            <li><a href="#"> The prison has been overwelmed</a></li>
+            {else}
+            <li><a href="Mine.php"> try the chane </a></li>
+        {/if}
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

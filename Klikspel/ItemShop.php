@@ -132,6 +132,15 @@ if(isset($_POST['sell-id'])) {
     if ($_POST['sell-id']) {
         $itemID = $_POST['sell-id'];
         $Quantity = $_POST['Quantity'];
+        $query9 = sprintf("SELECT name FROM items WHERE id IN(SELECT $itemID FROM Inventory)",
+            mysqli_real_escape_string($mysqli, $itemID));
+        $result20 = mysqli_query($mysqli, $query9);
+
+        while ($row = mysqli_fetch_assoc($result20)) {
+            $ItemName = $row;
+            $GLOBALS['ItemName'];
+        }
+
         $query = sprintf("SELECT price FROM items WHERE id = '%s'", mysqli_real_escape_string($mysqli, $itemID));
         $result = mysqli_query($mysqli, $query);
         list($cost) = mysqli_fetch_row($result);
@@ -156,7 +165,7 @@ if(isset($_POST['sell-id'])) {
         elseif ($Quantity == "") {
             $Quantity = 1;
             if ($quantity <= $Quantity) {
-                $smarty->assign('Delete', 'Last one used');
+                $smarty->assign('Delete', 'Last one ' . $ItemName['name'] . ' sold ');
                 $query = sprintf("DELETE FROM inventory WHERE player_id = '%s' AND item_id = '%s'",
                     mysqli_real_escape_string($mysqli, $userID),
                     mysqli_real_escape_string($mysqli, $itemID));
@@ -197,12 +206,12 @@ if(isset($_POST['sell-id'])) {
             setStat('gc', $userID, ($gold + $Fine));
         }
         mysqli_query($mysqli, $query);
-        $smarty->assign('message', 'You sold the item.');
+        $smarty->assign('message', 'You sold the ' .  $ItemName['name'] . '.');
     }
 }
 
 
-$query = "SELECT DISTINCT(id), name, price FROM items WHERE type = 'Usable' ORDER BY RAND() LIMIT 5;";
+$query = "SELECT DISTINCT(id), name, price FROM items WHERE type = 'Usable' ORDER BY RAND() LIMIT 10;";
 $result = mysqli_query($mysqli, $query);
 $items = array();
 while($row = mysqli_fetch_assoc($result)) {

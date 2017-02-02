@@ -58,6 +58,12 @@ if(isset($_POST['amount'])) {
 if(isset($_POST['potion-id'])) {
     $potionID = $_POST['potion-id'];
     $Quantity = $_POST['Quantity'];
+
+    $query9 = sprintf("SELECT name FROM items WHERE id IN(SELECT $potionID FROM Inventory)",
+        mysqli_real_escape_string($mysqli, $potionID));
+    $result20 = mysqli_query($mysqli, $query9);
+    $potion = mysqli_fetch_assoc($result20);
+
     $query = sprintf("SELECT price FROM items WHERE id = %s",mysqli_real_escape_string($mysqli, $potionID));
     $result = mysqli_query($mysqli, $query);
     list($cost) = mysqli_fetch_row($result);
@@ -72,7 +78,7 @@ if(isset($_POST['potion-id'])) {
                 $sql = "UPDATE Inventory SET quantity = quantity + 1 WHERE item_id=$potionID";
                 mysqli_query($mysqli, $sql);
                 setStat('gc', $userID, ($gold - $cost));
-                $smarty->assign('message', '1 more Potion added!');
+                $smarty->assign('message', '1 more ' . $potion['name'] . ' added!');
                 $smarty->assign('Nope', 'No number has filled in');
             }
             else {
@@ -86,8 +92,20 @@ if(isset($_POST['potion-id'])) {
                     $sql = "UPDATE Inventory SET quantity = quantity + $Quantity WHERE item_id=$potionID";
                     mysqli_query($mysqli, $sql);
                     setStat('gc', $userID, ($gold - $LOL));
-                    $smarty->assign('message', $Quantity . ' more Potions added!');
+                    $smarty->assign('message', $Quantity . ' more ' .  $potion['name'] . '  added!');
+                    var_dump($sql);
+                    var_dump($Quantity);
+                    var_dump($potion['name']);
+                    var_dump($Quantity);
                 }
+                /*
+                    else {
+                    $sql = "UPDATE Inventory SET quantity = quantity + $Quantity WHERE item_id=$potionID";
+                    mysqli_query($mysqli, $sql);
+                    setStat('gc', $userID, ($gold - $LOL));
+                    $smarty->assign('message', $Quantity . ' more ' .  $potion['name'] . '  added!');
+                }
+                 */
             }
         }
          else {
@@ -99,7 +117,7 @@ if(isset($_POST['potion-id'])) {
                  $sql = "INSERT INTO Inventory(player_id, item_id, space, quantity) VALUES ($userID, '$potionID', '$space', 1)";
                  mysqli_query($mysqli, $sql);
                  setStat('gc', $userID, ($gold - $cost));
-                 $smarty->assign('message', 'You Bought that Potion!');
+                 $smarty->assign('message', 'You Bought that ' .$potion['name'] . ' !');
              }
              else {
                  $LOL = $cost * $Quantity;
@@ -113,16 +131,16 @@ if(isset($_POST['potion-id'])) {
                      $sql = "INSERT INTO Inventory(player_id, item_id, space, quantity) VALUES ($userID, '$potionID', '$space', $Quantity)";
                      mysqli_query($mysqli, $sql);
                      setStat('gc', $userID, ($gold - $LOL));
-                     $smarty->assign('message', 'You Bought ' . $Quantity . ' Potions! ');
+                     $smarty->assign('message', 'You Bought ' . $Quantity . ' of ' . $potion['name'] . ' ! ');
                  }
              }
          }
     }
     else {
-        $smarty->assign('error','You cannot afford that Potion!');
+        $smarty->assign('error','You cannot afford that ' . $potion['name'] . ' !');
     }
 }
-$query = "SELECT DISTINCT(id), name, price FROM items WHERE type = 'Potion' ORDER BY RAND() LIMIT 5;";
+$query = "SELECT DISTINCT(id), name, price FROM items WHERE type = 'Potion' ORDER BY RAND() LIMIT 10;";
 $result = mysqli_query($mysqli, $query);
 $Potion = array();
 while($row = mysqli_fetch_assoc($result)) {

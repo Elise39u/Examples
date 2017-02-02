@@ -154,6 +154,10 @@ $sql5 = sprintf("DELETE FROM party_members WHERE party_id = (SELECT id FROM part
 mysqli_query($mysqli, $sql5);
 
 
+
+$sql6 = "UPDATE npc_stats SET stat_id = 13 WHERE stat_id = 14";
+mysqli_query($mysqli, $sql6);
+
 $smarty->assign('level',getStat('lvl',$userID));
 $smarty->assign('experience',getStat('exp',$userID));
 $smarty->assign('exp_remaining',getStat('exp_rem',$userID));

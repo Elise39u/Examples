@@ -34,12 +34,15 @@
     <img src="img/PrisonYard.png">
     <ul>
         <li><a href="PrisonHallc.php"> Go back </a></li>
-        <li><a href="#"> Go talk to the Head Prisoner David  </a></li>
-        <li><a href="#"> Go talk to Guard Prisoner Mike </a></li>
-        <li><a href="#"> Go talk to Prisoner James </a></li>
-        <li><a href="#"> Go talk to Search Prisoner Ken </a></li>
-        {if isset($smarty.session.Freedom)}
-            {if $smarty.session.Freedom == true}
+        <li><a href="Npc53.php"> Go talk to the Head Prisoner David  </a></li>
+        <li><a href="Npc54.php"> Go talk to Guard Prisoner Mike </a></li>
+        <li><a href="Npc55.php"> Go talk to Prisoner James </a></li>
+        {if isset($smarty.session.Kenie)}
+            {else}
+            <li><a href="Npc56.php"> Go talk to Search Prisoner Ken </a></li>
+        {/if}
+        {if isset($smarty.session.FreeKichten)}
+            {if $smarty.session.FreeKichten == true}
                 <li><a href="PrisonKichten.php"> Go to the Kichten </a></li>
             {/if}
         {/if}

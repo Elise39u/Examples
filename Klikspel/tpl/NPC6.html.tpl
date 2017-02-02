@@ -32,6 +32,7 @@
     <p id="Bio"></p>
     <p id="NPC"></p>
     <p id="Quest"></p>
+    <img src="img/Npcs/Npc6.png">
 
     <!--
     <button type="button" onclick="Clickme(this.id)" id="Player1"> Have you seen anything strange lastly ??</button> <br>

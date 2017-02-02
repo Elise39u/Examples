@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-30 13:43:28
+/* Smarty version 3.1.29, created on 2017-02-02 11:09:34
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Deck.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_588f34f0e71601_66928119',
+  'unifunc' => 'content_5893055e3859c1_71695257',
   'file_dependency' => 
   array (
     '47143545708e990b05d6667b2b680a91c5b87ec6' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Deck.html.tpl',
-      1 => 1485770940,
+      1 => 1486030172,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_588f34f0e71601_66928119 ($_smarty_tpl) {
+function content_5893055e3859c1_71695257 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -28,7 +28,6 @@ function content_588f34f0e71601_66928119 ($_smarty_tpl) {
  </title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-
 <body>
 <div class="plaatje">
 
@@ -92,6 +91,9 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
     <ul>
         <li><a href="Maintance.php"> Go inside </a></li>
         <li><a href="Monster.php"> Climb Down </a> </li>
+        <?php if (isset($_SESSION['Chopper']) || isset($_SESSION['Chop_One'])) {?>
+            <li><a href="Chopper.php"> Use the chopper </a></li>
+        <?php }?>
         <?php if (isset($_SESSION['TomaHawk'])) {?>
             <li><a href="Fire.php"> Fire a missile towards the city</a></li>
          <?php } elseif (isset($_SESSION['Shell'])) {?>

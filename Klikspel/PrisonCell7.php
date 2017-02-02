@@ -19,6 +19,7 @@ $userID = $value;
 
 $pagetitle = "Mine game";
 
+$_SESSION['Helped'] = true;
 $inventory = array();
 $query = sprintf("SELECT * FROM inventory WHERE player_id = '%s'",
     mysqli_real_escape_string($mysqli, $userID));

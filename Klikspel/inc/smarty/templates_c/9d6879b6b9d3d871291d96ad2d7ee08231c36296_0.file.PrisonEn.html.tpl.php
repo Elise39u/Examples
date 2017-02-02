@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-30 15:50:37
+/* Smarty version 3.1.29, created on 2017-02-01 13:55:01
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\PrisonEn.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_588f52bd9c4861_04480655',
+  'unifunc' => 'content_5891daa55a96a8_27003412',
   'file_dependency' => 
   array (
     '9d6879b6b9d3d871291d96ad2d7ee08231c36296' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\PrisonEn.html.tpl',
-      1 => 1485770948,
+      1 => 1485953501,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_588f52bd9c4861_04480655 ($_smarty_tpl) {
+function content_5891daa55a96a8_27003412 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -93,6 +93,9 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
         <li><a href="PrisonHallA.php"> Go towards Block A </a></li>
         <li><a href="PrisonHallB.php"> Go towards Block B </a></li>
         <li><a href="PrisonHallC.php"> Go towards Block C </a></li>
+        <?php if (isset($_SESSION['BlockD'])) {?>
+            <li><a href="PrisonHallD.php"> Go towards Block D </a></li>
+        <?php }?>
         <li><a href="PrisonDocks.php"> Go outside </a></li>
     </ul>
     <ul>

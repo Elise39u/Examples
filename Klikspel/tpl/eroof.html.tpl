@@ -28,7 +28,6 @@
     </ul>
 
     <h1> Roof of the electro store </h1>
-
     <p>  As you standing lookng over the city you`re thinking wat can i do here </p>
 
     <img src="img/RoofEl.png">
@@ -38,6 +37,9 @@
         <li><a href="Message.php"> Build the Antenne </a> </li>
         {else}
         <li><a href="Meme.php"> Nothing Here to see </a> </li>
+        {/if}
+        {if isset($smarty.session.Chop_Three)}
+            <li><a href="Chopper.php"> Use the chopper </a></li>
         {/if}
         <li><a href="KeyPS.php"> a key 0.0?? </a> </li>
     </ul>

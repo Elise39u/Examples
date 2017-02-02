@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-30 15:47:03
+/* Smarty version 3.1.29, created on 2017-02-01 12:31:17
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\PrisonYard.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_588f51e71ef206_42934302',
+  'unifunc' => 'content_5891c705d13c92_29815928',
   'file_dependency' => 
   array (
     '428cd22f0de58a9bcc14dfa358403431ba112590' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\PrisonYard.html.tpl',
-      1 => 1485770948,
+      1 => 1485948532,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_588f51e71ef206_42934302 ($_smarty_tpl) {
+function content_5891c705d13c92_29815928 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -92,12 +92,15 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
     <img src="img/PrisonYard.png">
     <ul>
         <li><a href="PrisonHallc.php"> Go back </a></li>
-        <li><a href="#"> Go talk to the Head Prisoner David  </a></li>
-        <li><a href="#"> Go talk to Guard Prisoner Mike </a></li>
-        <li><a href="#"> Go talk to Prisoner James </a></li>
-        <li><a href="#"> Go talk to Search Prisoner Ken </a></li>
-        <?php if (isset($_SESSION['Freedom'])) {?>
-            <?php if ($_SESSION['Freedom'] == true) {?>
+        <li><a href="Npc53.php"> Go talk to the Head Prisoner David  </a></li>
+        <li><a href="Npc54.php"> Go talk to Guard Prisoner Mike </a></li>
+        <li><a href="Npc55.php"> Go talk to Prisoner James </a></li>
+        <?php if (isset($_SESSION['Kenie'])) {?>
+            <?php } else { ?>
+            <li><a href="Npc56.php"> Go talk to Search Prisoner Ken </a></li>
+        <?php }?>
+        <?php if (isset($_SESSION['FreeKichten'])) {?>
+            <?php if ($_SESSION['FreeKichten'] == true) {?>
                 <li><a href="PrisonKichten.php"> Go to the Kichten </a></li>
             <?php }?>
         <?php }?>

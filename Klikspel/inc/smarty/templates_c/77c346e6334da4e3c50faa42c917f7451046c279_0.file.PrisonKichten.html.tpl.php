@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-30 15:47:48
+/* Smarty version 3.1.29, created on 2017-02-01 13:13:46
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\PrisonKichten.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_588f52143fd2a8_92273413',
+  'unifunc' => 'content_5891d0fa37e576_32866183',
   'file_dependency' => 
   array (
     '77c346e6334da4e3c50faa42c917f7451046c279' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\PrisonKichten.html.tpl',
-      1 => 1485770943,
+      1 => 1485951166,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_588f52143fd2a8_92273413 ($_smarty_tpl) {
+function content_5891d0fa37e576_32866183 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>

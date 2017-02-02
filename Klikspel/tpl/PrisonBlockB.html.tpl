@@ -36,7 +36,9 @@
         <li><a href="PrisonCell5.php"> Go to a cell </a></li>
         <li><a href="PrisonCell6.php"> Go to a cell </a></li>
         <li><a href="PrisonCell7.php"> Go to a cell </a></li>
+        {if isset($smarty.session.Helped)}
         <li><a href="Monster.php"> Go to the kichten </a></li>
+        {/if}
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

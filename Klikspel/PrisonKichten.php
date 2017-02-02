@@ -44,7 +44,7 @@ else {
     array_push($party, $row);
 }
 
-$_SESSION['Freedom'] = true;
+$_SESSION['FreeKichten'] = true;
 $smarty->assign('level',getStat('lvl',$userID));
 $smarty->assign('experience',getStat('exp',$userID));
 $smarty->assign('exp_remaining',getStat('exp_rem',$userID));

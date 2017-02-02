@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-30 15:47:17
+/* Smarty version 3.1.29, created on 2017-02-01 09:47:21
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\PrisonBlockB.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_588f51f536ac83_37816875',
+  'unifunc' => 'content_5891a09947ed25_45859161',
   'file_dependency' => 
   array (
     'b38501e3151eb9ee014a347379e28a57a65b3246' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\PrisonBlockB.html.tpl',
-      1 => 1485770946,
+      1 => 1485938834,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_588f51f536ac83_37816875 ($_smarty_tpl) {
+function content_5891a09947ed25_45859161 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -94,7 +94,9 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
         <li><a href="PrisonCell5.php"> Go to a cell </a></li>
         <li><a href="PrisonCell6.php"> Go to a cell </a></li>
         <li><a href="PrisonCell7.php"> Go to a cell </a></li>
+        <?php if (isset($_SESSION['Helped'])) {?>
         <li><a href="Monster.php"> Go to the kichten </a></li>
+        <?php }?>
     </ul>
     <ul>
         <?php

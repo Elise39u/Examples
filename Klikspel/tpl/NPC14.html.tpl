@@ -33,7 +33,7 @@
     <p id="NPC"></p>
     <p id="Quest"></p>
     <p id="Quest1"></p>
-
+    <img src="img/Npcs/Npc14.png">
     <!--
     <button type="button" onclick="Clickme(this.id)" id="Player1"> Have you seen anything strange lastly ??</button> <br>
     <button type="button" onclick="Clickme(this.id)" id="Player2"> I am in need of items can you help me??</button> <br>

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-30 15:50:52
+/* Smarty version 3.1.29, created on 2017-02-02 11:12:56
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\PrisonSea.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_588f52cc240ce1_18858289',
+  'unifunc' => 'content_589306280df900_01340735',
   'file_dependency' => 
   array (
     '0fd21373211c959625d0333448b7b282909e8d30' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\PrisonSea.html.tpl',
-      1 => 1485770949,
+      1 => 1485953818,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_588f52cc240ce1_18858289 ($_smarty_tpl) {
+function content_589306280df900_01340735 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -92,7 +92,11 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
     <img src="img/MineRivier.png">
     <ul>
         <li><a href="HotelDocks.php"> Go back </a></li>
-        <li><a href="Mine.php"> try the chane </a></li>
+        <?php if (isset($_SESSION['Weird'])) {?>
+            <li><a href="#"> The prison has been overwelmed</a></li>
+            <?php } else { ?>
+            <li><a href="Mine.php"> try the chane </a></li>
+        <?php }?>
     </ul>
     <ul>
         <?php

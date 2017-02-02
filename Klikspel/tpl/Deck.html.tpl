@@ -4,7 +4,6 @@
     <title> {$pagetitle} </title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-
 <body>
 <div class="plaatje">
 
@@ -34,6 +33,9 @@
     <ul>
         <li><a href="Maintance.php"> Go inside </a></li>
         <li><a href="Monster.php"> Climb Down </a> </li>
+        {if isset($smarty.session.Chopper) || isset($smarty.session.Chop_One)}
+            <li><a href="Chopper.php"> Use the chopper </a></li>
+        {/if}
         {if isset($smarty.session.TomaHawk)}
             <li><a href="Fire.php"> Fire a missile towards the city</a></li>
          {elseif isset($smarty.session.Shell)}

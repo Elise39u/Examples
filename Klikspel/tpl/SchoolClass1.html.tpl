@@ -40,6 +40,9 @@
         <li><a href="Npc27.php"> Go talk to coach Corine</a></li>
         {/if}
         <li><a href="Npc28.php"> Go talk to student Dylan </a></li>
+        {if isset($smarty.session.Moved)}
+            <li><a href="Npc52.php">Go talk to coach Justin</a></li>
+        {/if}
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

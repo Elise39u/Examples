@@ -39,9 +39,12 @@
         <li><a href="CandyStore.php"> Go to the Candy Store </a></li>
         <li><a href="Npc48.php"> Go talk to Pregnant Irene </a></li>
         <li><a href="Npc49.php"> Go talk to Shopper Kim </a></li>
-        <li><a href="#"> Go talk to Store owner Esremalda </a></li>
-        <li><a href="#"> Go talk to Shopper Leo </a></li>
-        <li><a href="#"> Go talk to Coach Justin </a></li>
+        <li><a href="Npc50.php"> Go talk to Store owner Esremalda </a></li>
+        <li><a href="Npc51.php"> Go talk to Shopper Leo </a></li>
+        {if isset($smarty.session.Justin)}
+            {else}
+            <li><a href="Npc52.php"> Go talk to Coach Justin </a></li>
+        {/if}
         {if isset($smarty.session.Second)}
             <li><a href="#"> Go on in the city </a></li>
         {/if}

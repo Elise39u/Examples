@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-30 15:50:32
+/* Smarty version 3.1.29, created on 2017-02-01 13:12:48
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\PrisonDoor.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_588f52b83aa690_74001461',
+  'unifunc' => 'content_5891d0c0dce312_04535753',
   'file_dependency' => 
   array (
     '1d52b57b900fbef402c213932d7703ddb7e85103' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\PrisonDoor.html.tpl',
-      1 => 1485770949,
+      1 => 1485951033,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_588f52b83aa690_74001461 ($_smarty_tpl) {
+function content_5891d0c0dce312_04535753 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>

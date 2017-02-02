@@ -50,6 +50,7 @@
             <p style='color:red'>{$error}</p>
         {/if}
     {/if}
+
     {if isset($message)}
         {if $message ne ''}
             <p style='color:green'>{$message}</p>

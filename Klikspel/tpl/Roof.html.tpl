@@ -39,6 +39,9 @@
             {else}
             <li><a href="Meme.php"> Nothing Here </a> </li>
         {/if}
+        {if isset($smarty.session.Chop_two)}
+            <li><a href="Chopper.php"> Use the chopper </a></li>
+        {/if}
         <li><a href="KeyBK.php"> a Key??  </a></li>
     </ul>
 

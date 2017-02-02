@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-30 16:26:59
+/* Smarty version 3.1.29, created on 2017-01-31 15:42:28
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\TownMall.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_588f5b43931540_32236295',
+  'unifunc' => 'content_5890a2541df508_76955647',
   'file_dependency' => 
   array (
     'e5f189045c90423272e197cd56b79571ebca7851' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\TownMall.html.tpl',
-      1 => 1485789967,
+      1 => 1485873043,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_588f5b43931540_32236295 ($_smarty_tpl) {
+function content_5890a2541df508_76955647 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -97,9 +97,12 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
         <li><a href="CandyStore.php"> Go to the Candy Store </a></li>
         <li><a href="Npc48.php"> Go talk to Pregnant Irene </a></li>
         <li><a href="Npc49.php"> Go talk to Shopper Kim </a></li>
-        <li><a href="#"> Go talk to Store owner Esremalda </a></li>
-        <li><a href="#"> Go talk to Shopper Leo </a></li>
-        <li><a href="#"> Go talk to Coach Justin </a></li>
+        <li><a href="Npc50.php"> Go talk to Store owner Esremalda </a></li>
+        <li><a href="Npc51.php"> Go talk to Shopper Leo </a></li>
+        <?php if (isset($_SESSION['Justin'])) {?>
+            <?php } else { ?>
+            <li><a href="Npc52.php"> Go talk to Coach Justin </a></li>
+        <?php }?>
         <?php if (isset($_SESSION['Second'])) {?>
             <li><a href="#"> Go on in the city </a></li>
         <?php }?>

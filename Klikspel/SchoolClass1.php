@@ -44,6 +44,20 @@ else {
     array_push($party, $row);
 }
 
+$sql4 = sprintf("SELECT * FROM party_members");
+$result = mysqli_query($mysqli, $sql4);
+mysqli_fetch_assoc($result);
+foreach ($result as $row) {
+    if ($row['npc_id'] == 52) {
+        $_SESSION['Moved'] = true;
+        $sql2 = "Update npc_stats SET stat_id=13 WHERE npc_id=52";
+        mysqli_query($mysqli, $sql2);
+
+        $sql3 = "DELETE FROM party_members WHERE npc_id = 52";
+        mysqli_query($mysqli, $sql3);
+    }
+}
+
 $smarty->assign('level',getStat('lvl',$userID));
 $smarty->assign('experience',getStat('exp',$userID));
 $smarty->assign('exp_remaining',getStat('exp_rem',$userID));

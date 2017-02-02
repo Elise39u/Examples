@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-24 13:54:51
+/* Smarty version 3.1.29, created on 2017-01-31 15:44:53
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\SchoolClass1.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58874e9b64bc32_58151095',
+  'unifunc' => 'content_5890a2e55e74b3_86958826',
   'file_dependency' => 
   array (
     '2aab64395f7b04445fa016ddd7a0d6bdc6e0a13f' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\SchoolClass1.html.tpl',
-      1 => 1485172896,
+      1 => 1485873727,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58874e9b64bc32_58151095 ($_smarty_tpl) {
+function content_5890a2e55e74b3_86958826 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -45,6 +45,13 @@ function content_58874e9b64bc32_58151095 ($_smarty_tpl) {
 /<?php echo $_smarty_tpl->tpl_vars['maximumHP']->value;?>
 </strong>
         <li>Gold Inbank: <strong><?php echo $_smarty_tpl->tpl_vars['inbank']->value;?>
+</strong></li>
+        <li>Current level: <strong><?php echo $_smarty_tpl->tpl_vars['level']->value;?>
+</strong></li>
+        <li>Experience: <strong><?php echo $_smarty_tpl->tpl_vars['experience']->value;?>
+</strong></li>
+        <li>Experience needed until level <strong><?php echo $_smarty_tpl->tpl_vars['level']->value+1;?>
+: <?php echo $_smarty_tpl->tpl_vars['exp_remaining']->value;?>
 </strong></li>
     </ul>
 
@@ -91,6 +98,9 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
         <li><a href="Npc27.php"> Go talk to coach Corine</a></li>
         <?php }?>
         <li><a href="Npc28.php"> Go talk to student Dylan </a></li>
+        <?php if (isset($_SESSION['Moved'])) {?>
+            <li><a href="Npc52.php">Go talk to coach Justin</a></li>
+        <?php }?>
     </ul>
     <ul>
         <?php

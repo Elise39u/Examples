@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-04 09:02:27
+/* Smarty version 3.1.29, created on 2017-02-02 11:10:53
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\eroof.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_586cac131f5223_65503688',
+  'unifunc' => 'content_589305addfbaf4_97800511',
   'file_dependency' => 
   array (
     '08b5513b450e8a8efcf26071bc5c7d059765eb77' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\eroof.html.tpl',
-      1 => 1483437776,
+      1 => 1486030231,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_586cac131f5223_65503688 ($_smarty_tpl) {
+function content_589305addfbaf4_97800511 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -46,26 +46,19 @@ function content_586cac131f5223_65503688 ($_smarty_tpl) {
 </strong>
         <li>Gold Inbank: <strong><?php echo $_smarty_tpl->tpl_vars['inbank']->value;?>
 </strong></li>
-    </ul>
-
-    <h1> Roof of the electro store </h1>
-
-    <p>  As you standing lookng over the city you`re thinking wat can i do here </p>
-
-    <img src="img/RoofEl.png">
-    <ul>
-        <li><a href="BackE.php"> Go down in the shop </a> </li>
-        <?php if (isset($_SESSION['antenne']) && isset($_SESSION['recvier']) && isset($_SESSION['versterker'])) {?>
-        <li><a href="Message.php"> Build the Antenne </a> </li>
-        <?php } else { ?>
-        <li><a href="Meme.php"> Nothing Here to see </a> </li>
-        <?php }?>
-        <li><a href="KeyPS.php"> a key 0.0?? </a> </li>
+        <li>Current level: <strong><?php echo $_smarty_tpl->tpl_vars['level']->value;?>
+</strong></li>
+        <li>Experience: <strong><?php echo $_smarty_tpl->tpl_vars['experience']->value;?>
+</strong></li>
+        <li>Experience needed until level <strong><?php echo $_smarty_tpl->tpl_vars['level']->value+1;?>
+: <?php echo $_smarty_tpl->tpl_vars['exp_remaining']->value;?>
+</strong></li>
     </ul>
 
     <ul>
+        <p class="H1l">Npc`s in your party</p>
         <?php
-$_from = $_smarty_tpl->tpl_vars['inventory']->value;
+$_from = $_smarty_tpl->tpl_vars['party']->value;
 if (!is_array($_from) && !is_object($_from)) {
 settype($_from, 'array');
 }
@@ -78,11 +71,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['id']->value => $_smarty_tpl->tpl_vars
 $_smarty_tpl->tpl_vars['i']->_loop = true;
 $__foreach_i_0_saved_local_item = $_smarty_tpl->tpl_vars['i'];
 ?>
-            <li> <?php echo $_smarty_tpl->tpl_vars['i']->value['player_id'];?>
- <?php echo $_smarty_tpl->tpl_vars['i']->value['item_id'];?>
- <?php echo $_smarty_tpl->tpl_vars['i']->value['space'];?>
- <?php echo $_smarty_tpl->tpl_vars['i']->value['quantity'];?>
- </li>
+            <li><?php echo $_smarty_tpl->tpl_vars['i']->value['name'];?>
+</li>
         <?php
 $_smarty_tpl->tpl_vars['i'] = $__foreach_i_0_saved_local_item;
 }
@@ -91,6 +81,55 @@ $_smarty_tpl->tpl_vars['i'] = $__foreach_i_0_saved_item;
 }
 if ($__foreach_i_0_saved_key) {
 $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
+}
+?>
+    </ul>
+
+    <h1> Roof of the electro store </h1>
+    <p>  As you standing lookng over the city you`re thinking wat can i do here </p>
+
+    <img src="img/RoofEl.png">
+    <ul>
+        <li><a href="BackE.php"> Go down in the shop </a> </li>
+        <?php if (isset($_SESSION['antenne']) && isset($_SESSION['recvier']) && isset($_SESSION['versterker'])) {?>
+        <li><a href="Message.php"> Build the Antenne </a> </li>
+        <?php } else { ?>
+        <li><a href="Meme.php"> Nothing Here to see </a> </li>
+        <?php }?>
+        <?php if (isset($_SESSION['Chop_Three'])) {?>
+            <li><a href="Chopper.php"> Use the chopper </a></li>
+        <?php }?>
+        <li><a href="KeyPS.php"> a key 0.0?? </a> </li>
+    </ul>
+
+    <ul>
+        <?php
+$_from = $_smarty_tpl->tpl_vars['inventory']->value;
+if (!is_array($_from) && !is_object($_from)) {
+settype($_from, 'array');
+}
+$__foreach_i_1_saved_item = isset($_smarty_tpl->tpl_vars['i']) ? $_smarty_tpl->tpl_vars['i'] : false;
+$__foreach_i_1_saved_key = isset($_smarty_tpl->tpl_vars['id']) ? $_smarty_tpl->tpl_vars['id'] : false;
+$_smarty_tpl->tpl_vars['i'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['id'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['i']->_loop = false;
+foreach ($_from as $_smarty_tpl->tpl_vars['id']->value => $_smarty_tpl->tpl_vars['i']->value) {
+$_smarty_tpl->tpl_vars['i']->_loop = true;
+$__foreach_i_1_saved_local_item = $_smarty_tpl->tpl_vars['i'];
+?>
+            <li> <?php echo $_smarty_tpl->tpl_vars['i']->value['player_id'];?>
+ <?php echo $_smarty_tpl->tpl_vars['i']->value['item_id'];?>
+ <?php echo $_smarty_tpl->tpl_vars['i']->value['space'];?>
+ <?php echo $_smarty_tpl->tpl_vars['i']->value['quantity'];?>
+ </li>
+        <?php
+$_smarty_tpl->tpl_vars['i'] = $__foreach_i_1_saved_local_item;
+}
+if ($__foreach_i_1_saved_item) {
+$_smarty_tpl->tpl_vars['i'] = $__foreach_i_1_saved_item;
+}
+if ($__foreach_i_1_saved_key) {
+$_smarty_tpl->tpl_vars['id'] = $__foreach_i_1_saved_key;
 }
 ?>
     </ul>
