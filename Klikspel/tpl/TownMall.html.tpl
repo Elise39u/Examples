@@ -37,7 +37,10 @@
         <li><a href="MediaMarkt.php"> Go to the MediaMarkt </a></li>
         <li><a href="Action.php"> Go to the Action </a></li>
         <li><a href="CandyStore.php"> Go to the Candy Store </a></li>
+        {if isset($smarty.cookies.Quest48)}
+            {else}
         <li><a href="Npc48.php"> Go talk to Pregnant Irene </a></li>
+        {/if}
         <li><a href="Npc49.php"> Go talk to Shopper Kim </a></li>
         <li><a href="Npc50.php"> Go talk to Store owner Esremalda </a></li>
         <li><a href="Npc51.php"> Go talk to Shopper Leo </a></li>
@@ -46,7 +49,7 @@
             <li><a href="Npc52.php"> Go talk to Coach Justin </a></li>
         {/if}
         {if isset($smarty.session.Second)}
-            <li><a href="#"> Go on in the city </a></li>
+            <li><a href="OutsideMall.php"> Go on in the city </a></li>
         {/if}
     </ul>
     <ul>

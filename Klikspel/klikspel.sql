@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Gegenereerd op: 02 feb 2017 om 15:27
+-- Gegenereerd op: 03 feb 2017 om 12:48
 -- Serverversie: 5.7.9
 -- PHP-versie: 5.6.16
 
@@ -162,7 +162,7 @@ CREATE TABLE IF NOT EXISTS `chopper_choices` (
   `from_id` int(11) NOT NULL,
   `to_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `chopper_choices`
@@ -174,7 +174,13 @@ INSERT INTO `chopper_choices` (`id`, `name`, `from_id`, `to_id`) VALUES
 (3, 'Carrier', 2, 1),
 (4, 'Electro Store', 2, 3),
 (5, 'Police Station', 3, 2),
-(6, 'Carrier', 3, 1);
+(6, 'Carrier', 3, 1),
+(7, 'TownHill', 1, 4),
+(8, 'TownHill', 2, 4),
+(9, 'TownHill', 3, 4),
+(10, 'Carrier', 4, 1),
+(11, 'Police station', 4, 2),
+(12, 'Electro store', 4, 3);
 
 -- --------------------------------------------------------
 
@@ -187,7 +193,7 @@ CREATE TABLE IF NOT EXISTS `chopper_location` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `place_name` varchar(1024) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `chopper_location`
@@ -196,7 +202,8 @@ CREATE TABLE IF NOT EXISTS `chopper_location` (
 INSERT INTO `chopper_location` (`id`, `place_name`) VALUES
 (1, 'Deck.php'),
 (2, 'Roof.php'),
-(3, 'eroof.php\r\n');
+(3, 'eroof.php\r\n'),
+(4, 'TownHill.php');
 
 -- --------------------------------------------------------
 
@@ -212,18 +219,7 @@ CREATE TABLE IF NOT EXISTS `inventory` (
   `space` int(254) NOT NULL,
   `quantity` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=579 DEFAULT CHARSET=latin1;
-
---
--- Gegevens worden geëxporteerd voor tabel `inventory`
---
-
-INSERT INTO `inventory` (`id`, `player_id`, `item_id`, `space`, `quantity`) VALUES
-(578, '2', 8, 46, 1),
-(574, '2', 66, 50, 1),
-(575, '2', 58, 49, 1),
-(576, '2', 45, 48, 1),
-(577, '2', 69, 47, 1);
+) ENGINE=MyISAM AUTO_INCREMENT=607 DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -385,7 +381,7 @@ CREATE TABLE IF NOT EXISTS `item_stats` (
   `stat_id` int(11) DEFAULT NULL,
   `content` text,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=236 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=239 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `item_stats`
@@ -598,7 +594,10 @@ INSERT INTO `item_stats` (`id`, `item_id`, `stat_id`, `content`) VALUES
 (232, 109, 12, '0'),
 (233, 119, 12, '0'),
 (234, 108, 12, '0'),
-(235, 128, 12, '0');
+(235, 128, 12, '0'),
+(236, 123, 12, '0'),
+(237, 127, 12, '0'),
+(238, 103, 12, '0');
 
 -- --------------------------------------------------------
 
@@ -1518,7 +1517,7 @@ INSERT INTO `npc_stats` (`id`, `npc_id`, `stat_id`, `content`) VALUES
 (7, 7, 13, NULL),
 (8, 8, 13, NULL),
 (9, 9, 13, NULL),
-(10, 10, 14, NULL),
+(10, 10, 13, NULL),
 (11, 11, 14, NULL),
 (12, 12, 13, NULL),
 (13, 13, 13, NULL),
@@ -1599,16 +1598,15 @@ CREATE TABLE IF NOT EXISTS `party_members` (
   `party_id` int(11) NOT NULL,
   `npc_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=59 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=62 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `party_members`
 --
 
 INSERT INTO `party_members` (`id`, `party_id`, `npc_id`) VALUES
-(58, 1, 52),
-(57, 1, 11),
-(55, 1, 10);
+(61, 1, 52),
+(60, 1, 11);
 
 -- --------------------------------------------------------
 
@@ -1679,17 +1677,17 @@ INSERT INTO `player_stats` (`id`, `user_id`, `stat_id`, `content`) VALUES
 (564, 3, 6, '25'),
 (562, 3, 5, '300'),
 (529, 2, 11, '40000'),
-(528, 2, 3, '6698684086'),
+(528, 2, 3, '6734483546'),
 (527, 2, 7, '50'),
 (526, 2, 2, '4363610'),
 (525, 2, 1, '27832950'),
 (524, 2, 6, '25'),
 (523, 2, 4, '19282950'),
-(522, 2, 5, '19282845'),
+(522, 2, 5, '19282950'),
 (565, 3, 1, '1080'),
 (510, 1, 11, '5000'),
 (582, 2, 16, '131835'),
-(581, 2, 15, '123360'),
+(581, 2, 15, '130540'),
 (572, 4, 5, '175'),
 (573, 4, 4, '300'),
 (574, 4, 6, '25'),

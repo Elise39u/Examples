@@ -165,7 +165,7 @@ if(isset($_POST['sell-id'])) {
         elseif ($Quantity == "") {
             $Quantity = 1;
             if ($quantity <= $Quantity) {
-                $smarty->assign('Delete', 'Last one ' . $ItemName['name'] . ' sold ');
+                $smarty->assign('Delete', 'Last ' . $ItemName['name'] . ' sold ');
                 $query = sprintf("DELETE FROM inventory WHERE player_id = '%s' AND item_id = '%s'",
                     mysqli_real_escape_string($mysqli, $userID),
                     mysqli_real_escape_string($mysqli, $itemID));

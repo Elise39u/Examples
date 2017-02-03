@@ -91,14 +91,20 @@ if (isset($_POST['item-id'])) {
                 mysqli_real_escape_string($mysqli, $userID),
                 mysqli_real_escape_string($mysqli, $itemID));
             mysqli_query($mysqli, $query);
-            call_user_func($actions[$token]);
+            if ($token == '0') {}
+            else {
+                call_user_func($actions[$token]);
+            }
         } else {
             $smarty->assign('One', 'No number filled in so assume one');
             $query = sprintf("UPDATE inventory SET quantity = quantity - 1 WHERE player_id = '%s' AND item_id = '%s'",
                 mysqli_real_escape_string($mysqli, $userID),
                 mysqli_real_escape_string($mysqli, $itemID));
             mysqli_query($mysqli, $query);
-            call_user_func($actions[$token]);
+            if ($token == '0') {}
+            else {
+                call_user_func($actions[$token]);
+            }
         }
     }
     elseif ($quantity === $Quantity) {
@@ -106,21 +112,30 @@ if (isset($_POST['item-id'])) {
             mysqli_real_escape_string($mysqli, $userID),
             mysqli_real_escape_string($mysqli, $itemID));
         mysqli_query($mysqli, $query);
-        call_user_func($actions[$token]);
+        if ($token == '0') {}
+        else {
+            call_user_func($actions[$token]);
+        }
     }
     elseif ($quantity > 1) {
         $query = sprintf("UPDATE inventory SET quantity = quantity - $Quantity WHERE player_id = '%s' AND item_id = '%s'",
             mysqli_real_escape_string($mysqli, $userID),
             mysqli_real_escape_string($mysqli, $itemID));
         mysqli_query($mysqli, $query);
-        call_user_func($actions[$token]);
+        if ($token == '0') {}
+        else {
+            call_user_func($actions[$token]);
+        }
     }
     else {
         $query = sprintf("DELETE FROM inventory WHERE player_id = '%s' AND item_id = '%s'",
             mysqli_real_escape_string($mysqli, $userID),
             mysqli_real_escape_string($mysqli, $itemID));
         mysqli_query($mysqli, $query);
-        call_user_func($actions[$token]);
+        if ($token == '0') {}
+        else {
+            call_user_func($actions[$token]);
+        }
     }
 }
 

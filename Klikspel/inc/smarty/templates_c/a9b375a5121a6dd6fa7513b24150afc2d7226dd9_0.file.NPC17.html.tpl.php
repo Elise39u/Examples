@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-26 08:50:28
+/* Smarty version 3.1.29, created on 2017-02-03 12:50:52
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\NPC17.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5889aa44966623_33165913',
+  'unifunc' => 'content_58946e9c885ed5_69353730',
   'file_dependency' => 
   array (
     'a9b375a5121a6dd6fa7513b24150afc2d7226dd9' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\NPC17.html.tpl',
-      1 => 1485172592,
+      1 => 1486035975,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5889aa44966623_33165913 ($_smarty_tpl) {
+function content_58946e9c885ed5_69353730 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -46,6 +46,13 @@ function content_5889aa44966623_33165913 ($_smarty_tpl) {
 /<?php echo $_smarty_tpl->tpl_vars['maximumHP']->value;?>
 </strong>
         <li>Gold Inbank: <strong><?php echo $_smarty_tpl->tpl_vars['inbank']->value;?>
+</strong></li>
+        <li>Current level: <strong><?php echo $_smarty_tpl->tpl_vars['level']->value;?>
+</strong></li>
+        <li>Experience: <strong><?php echo $_smarty_tpl->tpl_vars['experience']->value;?>
+</strong></li>
+        <li>Experience needed until level <strong><?php echo $_smarty_tpl->tpl_vars['level']->value+1;?>
+: <?php echo $_smarty_tpl->tpl_vars['exp_remaining']->value;?>
 </strong></li>
     </ul>
 
@@ -84,6 +91,7 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
     <p id="NPC"></p>
     <p id="Quest"></p>
     <p id="Quest1"></p>
+    <img src="img/Npcs/Npc17.png">
 
     <!--
     <button type="button" onclick="Clickme(this.id)" id="Player1"> Have you seen anything strange lastly ??</button> <br>

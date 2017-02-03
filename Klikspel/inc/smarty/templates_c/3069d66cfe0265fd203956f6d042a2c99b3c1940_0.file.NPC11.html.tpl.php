@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-02-01 08:26:01
+/* Smarty version 3.1.29, created on 2017-02-03 08:25:48
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\NPC11.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58918d8944c5d3_83499244',
+  'unifunc' => 'content_5894307cd295b2_53027647',
   'file_dependency' => 
   array (
     '3069d66cfe0265fd203956f6d042a2c99b3c1940' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\NPC11.html.tpl',
-      1 => 1485770952,
+      1 => 1486035900,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58918d8944c5d3_83499244 ($_smarty_tpl) {
+function content_5894307cd295b2_53027647 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -91,6 +91,7 @@ $_smarty_tpl->tpl_vars['id'] = $__foreach_i_0_saved_key;
     <p id="NPC"></p>
     <p id="Quest"></p>
     <p id="Quest1"></p>
+    <img src="img/Npcs/Npc11.png">
 
     <!--
     <button type="button" onclick="Clickme(this.id)" id="Player1"> Have you seen anything strange lastly ??</button> <br>

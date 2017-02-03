@@ -27,14 +27,14 @@
         {/foreach}
     </ul>
 
-    <h1> A small way </h1>
-    <p> I am thinking where the hell goes this way <br>
-    Let it please be the house where Irene was talking about <br>
-    Or else i don`t know it any more</p>
-    <img src="img/TownWay2.png">
+    <h1> Hillss </h1>
+    <p> Well a hill <br>
+    I hope there is something on top of this hill or else i am gonna be mad <br>
+    AND I SWEAR THAT </p>
+    <img src="img/TownUp.png">
     <ul>
-        <li><a href="TownMallAhed.php"> Go back  </a></li>
-        <li><a href="#"> Go on on way 2 </a></li>
+        <li><a href="TownWay2.php"> Go back on way 2  </a></li>
+        <li><a href="TownHill.php"> Go upwards the hill </a></li>
     </ul>
 
     <ul>

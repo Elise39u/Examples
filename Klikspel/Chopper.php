@@ -10,15 +10,18 @@ include_once ('inc/playerstats.php');
 include_once ('inc/Monster.php');
 include_once ('inc/ItemStats.php');
 include_once ('inc/WeaponStat.php');
-include_once ('inc/Location.class.php');
-include_once ('inc/Choice.class.php');
+include_once('inc/ChopperLocation.class.php');
+include_once('inc/ChopperChoice.class.php');
+global $location_id;
 
 if (isset($_SESSION['Chop_Three'])) {
     $location_id = (isset($_GET['location_id']) ? $_GET['location_id'] : 3);   // kijk welke locatie wordt gevraagd
 } elseif (isset($_SESSION['Chop_two'])) {
     $location_id = (isset($_GET['location_id']) ? $_GET['location_id'] : 2);   // kijk welke locatie wordt gevraagd
-}   elseif (isset($_SESSION['Chop_One'])) {
+}   elseif (isset($_SESSION['Chop_One']) || isset($_SESSION['Chopper'])) {
     $location_id = (isset($_GET['location_id']) ? $_GET['location_id'] : 1);   // kijk welke locatie wordt gevraagd
+} elseif (isset($_SESSION['Chop_Four'])) {
+    $location_id = (isset($_GET['location_id']) ? $_GET['location_id'] : 4);   // kijk welke locatie wordt gevraagd
 }
 $chop = new Chopper_Location();  // maak lege locatie aan
 $did_load_work = $chop->LoadFromDb($mysqli, $location_id);       // laad locatie en choices vanuit de database
@@ -59,15 +62,25 @@ else {
 if ($chop->id == 3) {
     unset($_SESSION['Chop_One']);
     unset($_SESSION['Chop_two']);
+    unset($_SESSION['Chop_Four']);
     $_SESSION['Chop_Three'] = true;
 } elseif ($chop->id == 2) {
     $_SESSION['Chop_two'] = true;
     unset($_SESSION['Chop_One']);
     unset($_SESSION['Chop_Three']);
-} else {
+    unset($_SESSION['Chop_Four']);
+}
+elseif ($chop->id == 4) {
+    $_SESSION['Chop_Four'] = true;
+    unset($_SESSION['Chop_One']);
+    unset($_SESSION['Chop_Tow']);
+    unset($_SESSION['Chop_Three']);
+}
+else {
     $_SESSION['Chop_One'] = true;
     unset($_SESSION['Chop_two']);
     unset($_SESSION['Chop_Three']);
+    unset($_SESSION['Chop_Four']);
 }
 
 unset($_SESSION['Chopper']);

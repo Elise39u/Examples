@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-02-02 11:10:34
+/* Smarty version 3.1.29, created on 2017-02-03 11:39:27
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Chopper.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5893059a22a669_86581561',
+  'unifunc' => 'content_58945ddfd75355_16203967',
   'file_dependency' => 
   array (
     'db5f03fa6dff02d38d031e83c0b19ade9c8b7cd1' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Chopper.html.tpl',
-      1 => 1486030204,
+      1 => 1486118353,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5893059a22a669_86581561 ($_smarty_tpl) {
+function content_58945ddfd75355_16203967 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -118,6 +118,8 @@ $_smarty_tpl->tpl_vars['choice'] = $__foreach_choice_1_saved_item;
         <li><a href="eroof.php"> Go back </a></li>
         <?php } elseif ($_smarty_tpl->tpl_vars['location']->value->id == 2) {?>
         <li><a href="Roof.php"> Go back</a></li>
+        <?php } elseif ($_smarty_tpl->tpl_vars['location']->value->id == 4) {?>
+        <li><a href="TownHill.php"> Go back </a> </li>
         <?php } else { ?>
         <li><a href="Deck.php"> Go back</a></li>
     <?php }?>

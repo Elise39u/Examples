@@ -27,27 +27,14 @@
         {/foreach}
     </ul>
 
-    <h1> The mall </h1>
-    <p> There are stores around me <br>
-    Also people but what to do <br>
-    Talk to the people or visting the stores</p>
-    <img src="img/MallYard.png">
+    <h1> So </h1>
+    <p> A urban city <br>
+    Well Irene din`t say where to go <br>
+    So take the gamble </p>
+    <img src="img/OutsideMall.png">
     <ul>
-        <li><a href="TownMarket.php"> Go back  </a></li>
-        <li><a href="MediaMarkt.php"> Go to the MediaMarkt </a></li>
-        <li><a href="Action.php"> Go to the Action </a></li>
-        <li><a href="CandyStore.php"> Go to the Candy Store </a></li>
-        <li><a href="Npc48.php"> Go talk to Pregnant Irene </a></li>
-        <li><a href="Npc49.php"> Go talk to Shopper Kim </a></li>
-        <li><a href="Npc50.php"> Go talk to Store owner Esremalda </a></li>
-        <li><a href="Npc51.php"> Go talk to Shopper Leo </a></li>
-        {if isset($smarty.session.Justin)}
-            {else}
-            <li><a href="Npc52.php"> Go talk to Coach Justin </a></li>
-        {/if}
-        {if isset($smarty.session.Second)}
-            <li><a href="#"> Go on in the city </a></li>
-        {/if}
+        <li><a href="TownMall.php"> Go back inside the mall </a></li>
+        <li><a href="TownMallAhed.php"> Go on in the town</a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

@@ -41,6 +41,8 @@
         <li><a href="eroof.php"> Go back </a></li>
         {elseif $location->id == 2}
         <li><a href="Roof.php"> Go back</a></li>
+        {elseif $location->id == 4}
+        <li><a href="TownHill.php"> Go back </a> </li>
         {else}
         <li><a href="Deck.php"> Go back</a></li>
     {/if}

@@ -32,6 +32,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     array_push($inventory, $row);
 }
 
+$_SESSION['Fred'] = true;
 $party = array();
 $query1 = sprintf("SELECT name FROM npc WHERE id IN(SELECT npc_id FROM party_members WHERE party_id=(
     SELECT id FROM party WHERE player_id=
@@ -57,4 +58,4 @@ $smarty->assign('inbank',getStat('bankgc',$userID));
 $smarty->assign('currentHP',getStat('curhp',$userID));
 $smarty->assign('maximumHP',getStat('maxhp',$userID));
 $smarty->assign('pagetitle', $pagetitle);
-$smarty->display("tpl/TownHouseLive.html.tpl");
+$smarty->display("tpl/TownHouseBalcony.html.tpl");

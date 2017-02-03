@@ -27,14 +27,15 @@
         {/foreach}
     </ul>
 
-    <h1> Finally </h1>
-    <p> is this the house irene was speaking of <br>
-    Or just a aboneded one across the road <br>
-    Well one way to find out </p>
-    <img src="img/TownHouse.png">
+    <h1> Well empty </h1>
+    <p> its like this house has grown here <br>
+    Its sad that the second floor has been blocked of <br>
+        I see a way to a balcony <br>
+    But question remains is fred there </p>
+    <img src="img/TownHouseLiving.png">
     <ul>
-        <li><a href="TownWay1.php"> Go back on the road </a></li>
-        <li><a href="#"> Go inside the house </a></li>
+        <li><a href="Townhouse.php"> Go back outside </a></li>
+        <li><a href="TownHouseBalcony.php"> Go to the balcony </a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

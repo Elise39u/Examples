@@ -66,4 +66,10 @@
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script type="text/javascript" src="JS/NPC/Npc48.js"></script>
+{if isset($smarty.session.Fred)}
+    <script type="text/javascript">
+        document.getElementById('Quest').innerHTML = "Pregnant Irene: What is he dead <br>" +
+                "Well that is sad ahhh don`t mind i dindt liked hem anyway"
+    </script>
+{/if}
 </html>

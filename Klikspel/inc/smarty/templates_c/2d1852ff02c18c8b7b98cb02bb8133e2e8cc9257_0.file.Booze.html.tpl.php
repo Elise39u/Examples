@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2017-01-25 10:19:09
+/* Smarty version 3.1.29, created on 2017-02-03 08:24:58
   from "C:\wamp64\www\Examplecode\Klikspel\tpl\Booze.html.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_58886d8d4e38d9_41239801',
+  'unifunc' => 'content_5894304a9e1c47_14819299',
   'file_dependency' => 
   array (
     '2d1852ff02c18c8b7b98cb02bb8133e2e8cc9257' => 
     array (
       0 => 'C:\\wamp64\\www\\Examplecode\\Klikspel\\tpl\\Booze.html.tpl',
-      1 => 1485171258,
+      1 => 1485770951,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_58886d8d4e38d9_41239801 ($_smarty_tpl) {
+function content_5894304a9e1c47_14819299 ($_smarty_tpl) {
 ?>
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/html">
@@ -45,6 +45,13 @@ function content_58886d8d4e38d9_41239801 ($_smarty_tpl) {
 /<?php echo $_smarty_tpl->tpl_vars['maximumHP']->value;?>
 </strong>
         <li>Gold Inbank: <strong><?php echo $_smarty_tpl->tpl_vars['inbank']->value;?>
+</strong></li>
+        <li>Current level: <strong><?php echo $_smarty_tpl->tpl_vars['level']->value;?>
+</strong></li>
+        <li>Experience: <strong><?php echo $_smarty_tpl->tpl_vars['experience']->value;?>
+</strong></li>
+        <li>Experience needed until level <strong><?php echo $_smarty_tpl->tpl_vars['level']->value+1;?>
+: <?php echo $_smarty_tpl->tpl_vars['exp_remaining']->value;?>
 </strong></li>
     </ul>
 

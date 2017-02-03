@@ -27,14 +27,16 @@
         {/foreach}
     </ul>
 
-    <h1> Third one Futher</h1>
-    <p> Well a overpass and the road goes on <br>
-    But where is the house or is this not the correct way <br>
-    liked it or not but maby continue or stop here</p>
-    <img src="img/TownWay3Futher.png">
+    <h1> Well are you Kidding me</h1>
+    <p> Why Does the road spilt here in two more ways <br>
+    And where is that house irene was talking about <br>
+    Now i question even if that house exist <br>
+    Or is it a house on the side of the town</p>
+    <img src="img/TownBigStart.png">
     <ul>
-        <li><a href="TownWay3.php"> Go back on way 3  </a></li>
-        <li><a href="#"> Go ahed </a></li>
+        <li><a href="TownWay3Futher.php"> Go back on way 3  </a></li>
+        <li><a href="TownFuther.php"> Go to the left </a></li>
+        <li><a href="TownCityYard.php"> Go forward en on </a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

@@ -27,14 +27,14 @@
         {/foreach}
     </ul>
 
-    <h1> so a way </h1>
-    <p> Well this is a narrow path <br>
-    I hope this is the one leading to the house irene talked about <br>
-    Else i dont know what to do</p>
-    <img src="img/TownWay1.png">
+    <h1> Finally </h1>
+    <p> is this the house irene was speaking of <br>
+    Or just a aboneded one across the road <br>
+    Well one way to find out </p>
+    <img src="img/TownHouse.png">
     <ul>
-        <li><a href="TownMallAhed.php"> Go back </a></li>
-        <li><a href="#"> Go on at way 1</a></li>
+        <li><a href="TownWay1.php"> Go back on the road </a></li>
+        <li><a href="TownHouseLive.php"> Go inside the house </a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

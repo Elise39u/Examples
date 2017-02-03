@@ -27,14 +27,16 @@
         {/foreach}
     </ul>
 
-    <h1> A small way </h1>
-    <p> Well a hill <br>
-    I hope there is something on top of this hill or else i am gonna be mad <br>
-    AND I SWEAR THAT </p>
-    <img src="img/TownUp.png">
+    <h1> Goddamm </h1>
+    <p> Well a heli pad <br>
+    Did i walked up the hill for just that godsake <br>
+    Well at least i have a nice view</p>
+    <img src="img/TownHill.png">
     <ul>
-        <li><a href="TownWay2.php"> Go back on way 2  </a></li>
-        <li><a href="#"> Go upwards the hill </a></li>
+        <li><a href="TownUp.php"> Go back down the hill  </a></li>
+        {if isset($smarty.session.Chop_Four)}
+            <li><a href="Chopper.php"> use the chopper</a></li>
+        {/if}
     </ul>
 
     <ul>

@@ -28,15 +28,13 @@
     </ul>
 
     <h1> Well are you Kidding me</h1>
-    <p> Why Does the road spilt here in two more ways <br>
-    And where is that house irene was talking about <br>
-    Now i question even if that house exist <br>
-    Or is it a house on the side of the town</p>
-    <img src="img/TownBigStart.png">
+    <p> Well the roads goes on and on and on <br>
+    I should follow it or else maby go back <br>
+    Its so sad that there is nothing on the way</p>
+    <img src="img/TownFuther.png">
     <ul>
-        <li><a href="TownWay3Futher.php"> Go back on way 3  </a></li>
-        <li><a href="#"> Go to the left </a></li>
-        <li><a href="TownCityYard.php"> Go forward en on </a></li>
+        <li><a href="TownBigStart.php"> Go back  </a></li>
+        <li><a href="TownYard2.php"> Go on the road </a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}

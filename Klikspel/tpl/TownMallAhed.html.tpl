@@ -27,14 +27,17 @@
         {/foreach}
     </ul>
 
-    <h1> So </h1>
-    <p> A urban city <br>
-    Well Irene din`t say where to go <br>
-    So take the gamble </p>
-    <img src="img/OutsideMall.png">
+    <h1> More Ways </h1>
+    <p> Well this is suprising not as expected <br>
+    The road splits here up in 4 ways <br>
+    Now i really need to take a gamble </p>
+    <img src="img/TownMallAhed.png">
     <ul>
-        <li><a href="TownMall.php"> Go back inside the mall </a></li>
-        <li><a href="#"> Go on in the town</a></li>
+        <li><a href="OutsideMall.php"> Go back towards the mall </a></li>
+        <li><a href="TownWay1.php"> take way 1 </a></li>
+        <li><a href="TownWay2.php"> take way 2 </a></li>
+        <li><a href="Townway3.php"> take way 3 </a></li>
+        <li><a href="TownWay4.php"> take way 4 </a></li>
     </ul>
     <ul>
         {foreach from=$inventory key=id item=i}
